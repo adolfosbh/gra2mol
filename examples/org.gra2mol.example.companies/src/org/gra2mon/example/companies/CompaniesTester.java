@@ -9,26 +9,50 @@ import gts.modernization.launcher.Gra2MoLProcessLauncher;
 public class CompaniesTester {
 		
 	static String basePath = "../Grammar2Model.examples.101companies/";
-	
+	static String examplesPath = "./examples/";
 	public static void main(String[] args) {
 	
-		Gra2MoLInterpreterLauncher interpreter = new Gra2MoLInterpreterLauncher(
-				new File(basePath + "gra2mol/src/transformation.g2m"), 
-				new File(basePath + "gra2mol/metamodels/Company.ecore"), 
+		String modelName = args[0];
+		Gra2MoLEnricher enricher = new Gra2MoLEnricher(
+				"company",
+				new File(basePath + "gra2mol/grammars/Company.g"),
+				new File(basePath + "gra2mol/gen/Company.g"));
+		
+		// warmup
+		Gra2MoLInterpreterLauncher warmupInterpreter = new Gra2MoLInterpreterLauncher(
+				new File(basePath + "gra2mol/src/transformation.g2m"),
+				new File(basePath + "gra2mol/metamodels/Company.ecore"),
 				"company", 
-				new File("./resultModel.ecore.xmi"), 
+				new File(examplesPath + "model2.output.xmi"),
 				"Company", 
 				"company", 
-				new File(basePath + "gra2mol/src/example_big.101"));
+				new File(examplesPath + "model2.101"));
+		warmupInterpreter.setCaseSensitive(true);
+		Gra2MoLProcessLauncher processLauncher = new Gra2MoLProcessLauncher(enricher, warmupInterpreter);
+		processLauncher.setActivePhase1(false); // We only need to interpret the transformation
+		
+		for (int i = 0; i < 3000; i++) {
+			processLauncher.launch();
+		}
+		
+		// Model file execution
+		Gra2MoLInterpreterLauncher interpreter = new Gra2MoLInterpreterLauncher(
+						new File(basePath + "gra2mol/src/transformation.g2m"),
+						new File(basePath + "gra2mol/metamodels/Company.ecore"),
+						"company", 
+						new File(examplesPath +  modelName + ".output.xmi"),
+						"Company", 
+						"company", 
+						new File(examplesPath +  modelName + ".101"));
 		interpreter.setCaseSensitive(true);
-		Gra2MoLProcessLauncher processLauncher = new Gra2MoLProcessLauncher(
-				new Gra2MoLEnricher(
-						"company",
-						new File(basePath + "gra2mol/grammars/Company.g"), 
-						new File(basePath + "gra2mol/gen/Company.g")), 
-						interpreter);
-	
-		processLauncher.setActivePhase1(false);
-		processLauncher.launch();
+		System.out.println("*** Executing model " + modelName + ".101");
+		processLauncher = new Gra2MoLProcessLauncher(enricher, interpreter);
+		processLauncher.setActivePhase1(false); // We only need to interpret the transformation
+		for (int i = 0; i < 10; i++) {
+			processLauncher.launch();
+		}
 	}
+	
+	
+	
 }
