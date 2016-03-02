@@ -237,6 +237,7 @@ public class Gra2MoLInterpreter {
 
 		Gra2MoLLogger.getInstance().print("Models created.");
 
+		long start = System.currentTimeMillis();
 		this.executedRules = new HashMap<Rule, HashMap<Element, List<ModelElement>>>();
 
 		// Initialize rules
@@ -270,7 +271,8 @@ public class Gra2MoLInterpreter {
 					
 					for(Element e : initialElements)
 						interpretRule(e, r);
-
+					long end = System.currentTimeMillis();
+					System.out.println("Execution time: " + (end - start) );
 					if(this.targetPath != null) {
 						Gra2MoLLogger.getInstance().print("\nSaving...");
 						mb.save(this.m, targetPath);
