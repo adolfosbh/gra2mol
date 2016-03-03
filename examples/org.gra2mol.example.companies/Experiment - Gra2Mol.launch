@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/org.gra2mol.example.companies/src/org/gra2mon/example/companies/CompaniesTester.java"/>
+<listEntry value="/org.gra2mol.example.companies/src/org/gra2mol/example/companies/CompaniesTester.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
 </listAttribute>
-<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.gra2mon.example.companies.CompaniesTester"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.gra2mol.example.companies.CompaniesTester"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="model1"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="org.gra2mol.example.companies"/>
 <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Xmx4096M"/>

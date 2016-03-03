@@ -1,4 +1,4 @@
-package org.gra2mon.example.companies;
+package org.gra2mol.example.companies;
 
 import java.io.File;
 
