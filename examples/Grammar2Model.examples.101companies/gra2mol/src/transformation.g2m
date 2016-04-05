@@ -26,12 +26,12 @@ rule 'mapEmployee'
 	from employee e
 	to   Employee
 	queries
-	  mElem : //#employee{STRING[0].eq(e.STRING[2])};
+	  
 	mappings
 	  name    = removeQuotes e.STRING[0];
 	  address = removeQuotes e.STRING[1];
 	  salary  = e.FLOAT;
-	  mentor  = mElem;
+	  
 end_rule
 
 
