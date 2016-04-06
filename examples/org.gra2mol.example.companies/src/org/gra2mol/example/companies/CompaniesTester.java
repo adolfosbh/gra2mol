@@ -28,10 +28,10 @@ public class CompaniesTester {
 		} else {
 			if (Usage.SCALABILITY_EXPERIMENT == usage) {
 				NUM_OF_MODELS = 25;
-				MODELS_PATH = "./examples/scalability";
+				MODELS_PATH = "./examples/scalability/";
 			} else {
 				NUM_OF_MODELS = 7;
-				MODELS_PATH = "./examples/topology";
+				MODELS_PATH = "./examples/topology/";
 			}
 		}
 				
