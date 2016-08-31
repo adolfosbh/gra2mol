@@ -1,0 +1,1457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CST:Node xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:CST="http://gts.inf.um.es/modernization/cst" kind="CST">
+  <children xsi:type="CST:Node" kind="file">
+    <children xsi:type="CST:Leaf" kind="path" value="D:\git\gra2mol\examples\org.gra2mol.example.delphi\.\examples\untClFormatos.pas"/>
+    <children xsi:type="CST:Leaf" kind="filename" value="D:\git\gra2mol\examples\org.gra2mol.example.delphi\.\examples\untClFormatos.pas"/>
+    <children xsi:type="CST:Node" kind="mainRule">
+      <children xsi:type="CST:Node" kind="unit">
+        <children xsi:type="CST:Leaf" kind="TOKEN" value="unit" line="1"/>
+        <children xsi:type="CST:Node" kind="ident">
+          <children xsi:type="CST:Leaf" kind="ID" value="untClFormatos" pos="5" line="1"/>
+        </children>
+        <children xsi:type="CST:Leaf" kind="TOKEN" value=";" pos="18" line="1"/>
+        <children xsi:type="CST:Node" kind="interfaceSection">
+          <children xsi:type="CST:Leaf" kind="TOKEN" value="interface" line="3"/>
+          <children xsi:type="CST:Node" kind="usesClause">
+            <children xsi:type="CST:Leaf" kind="TOKEN" value="uses" line="5"/>
+            <children xsi:type="CST:Node" kind="identList">
+              <children xsi:type="CST:Node" kind="ident">
+                <children xsi:type="CST:Leaf" kind="ID" value="SysUtils" pos="4" line="6"/>
+              </children>
+              <children xsi:type="CST:Leaf" kind="TOKEN" value="," pos="34" line="6"/>
+              <children xsi:type="CST:Node" kind="ident">
+                <children xsi:type="CST:Leaf" kind="ID" value="stdCtrls" pos="14"
+                    line="6"/>
+              </children>
+              <children xsi:type="CST:Leaf" kind="TOKEN" value="," pos="34" line="6"/>
+              <children xsi:type="CST:Node" kind="ident">
+                <children xsi:type="CST:Leaf" kind="ID" value="untClMensa" pos="24"
+                    line="6"/>
+              </children>
+              <children xsi:type="CST:Leaf" kind="TOKEN" value="," pos="34" line="6"/>
+              <children xsi:type="CST:Node" kind="ident">
+                <children xsi:type="CST:Leaf" kind="ID" value="StrUtils" pos="36"
+                    line="6"/>
+              </children>
+            </children>
+            <children xsi:type="CST:Leaf" kind="TOKEN" value=";" pos="44" line="6"/>
+          </children>
+          <children xsi:type="CST:Node" kind="interfaceDecl">
+            <children xsi:type="CST:Node" kind="typeSection">
+              <children xsi:type="CST:Leaf" kind="TOKEN" value="type" line="7"/>
+              <children xsi:type="CST:Node" kind="typeDecl">
+                <children xsi:type="CST:Node" kind="ident">
+                  <children xsi:type="CST:Leaf" kind="ID" value="TFecha" pos="4" line="8"/>
+                </children>
+                <children xsi:type="CST:Leaf" kind="TOKEN" value="=" pos="11" line="8"/>
+                <children xsi:type="CST:Node" kind="restrictedType">
+                  <children xsi:type="CST:Node" kind="classType">
+                    <children xsi:type="CST:Leaf" kind="TOKEN" value="class" pos="13"
+                        line="8"/>
+                    <children xsi:type="CST:Node" kind="classMethodList">
+                      <children xsi:type="CST:Node" kind="classMethod">
+                        <children xsi:type="CST:Node" kind="methodList">
+                          <children xsi:type="CST:Node" kind="methodHeading">
+                            <children xsi:type="CST:Node" kind="functionHeading">
+                              <children xsi:type="CST:Leaf" kind="TOKEN" value="class"
+                                  pos="8" line="9"/>
+                              <children xsi:type="CST:Leaf" kind="TOKEN" value="function"
+                                  pos="14" line="9"/>
+                              <children xsi:type="CST:Node" kind="ident">
+                                <children xsi:type="CST:Leaf" kind="ID" value="FechaSql"
+                                    pos="23" line="9"/>
+                              </children>
+                              <children xsi:type="CST:Node" kind="formalParameters">
+                                <children xsi:type="CST:Leaf" kind="TOKEN" value="("
+                                    pos="31" line="9"/>
+                                <children xsi:type="CST:Node" kind="formalParm">
+                                  <children xsi:type="CST:Leaf" kind="TOKEN" value="const"
+                                      pos="32" line="9"/>
+                                  <children xsi:type="CST:Node" kind="parameter">
+                                    <children xsi:type="CST:Node" kind="identList">
+                                      <children xsi:type="CST:Node" kind="ident">
+                                        <children xsi:type="CST:Leaf" kind="ID" value="fecha"
+                                            pos="38" line="9"/>
+                                      </children>
+                                    </children>
+                                    <children xsi:type="CST:Leaf" kind="TOKEN" value=":"
+                                        pos="43" line="9"/>
+                                    <children xsi:type="CST:Node" kind="type">
+                                      <children xsi:type="CST:Node" kind="stringType">
+                                        <children xsi:type="CST:Leaf" kind="TOKEN"
+                                            value="string" pos="45" line="9"/>
+                                      </children>
+                                    </children>
+                                  </children>
+                                </children>
+                                <children xsi:type="CST:Leaf" kind="TOKEN" value=")"
+                                    pos="51" line="9"/>
+                              </children>
+                              <children xsi:type="CST:Leaf" kind="TOKEN" value=":"
+                                  pos="52" line="9"/>
+                              <children xsi:type="CST:Node" kind="type">
+                                <children xsi:type="CST:Node" kind="stringType">
+                                  <children xsi:type="CST:Leaf" kind="TOKEN" value="string"
+                                      pos="53" line="9"/>
+                                </children>
+                              </children>
+                            </children>
+                          </children>
+                          <children xsi:type="CST:Leaf" kind="TOKEN" value=";" pos="59"
+                              line="9"/>
+                          <children xsi:type="CST:Node" kind="directive">
+                            <children xsi:type="CST:Leaf" kind="TOKEN" value="overload"
+                                pos="60" line="9"/>
+                          </children>
+                          <children xsi:type="CST:Leaf" kind="TOKEN" value=";" pos="68"
+                              line="9"/>
+                        </children>
+                      </children>
+                      <children xsi:type="CST:Node" kind="classMethod">
+                        <children xsi:type="CST:Node" kind="methodList">
+                          <children xsi:type="CST:Node" kind="methodHeading">
+                            <children xsi:type="CST:Node" kind="functionHeading">
+                              <children xsi:type="CST:Leaf" kind="TOKEN" value="class"
+                                  pos="8" line="10"/>
+                              <children xsi:type="CST:Leaf" kind="TOKEN" value="function"
+                                  pos="14" line="10"/>
+                              <children xsi:type="CST:Node" kind="ident">
+                                <children xsi:type="CST:Leaf" kind="ID" value="FechaSql"
+                                    pos="23" line="10"/>
+                              </children>
+                              <children xsi:type="CST:Node" kind="formalParameters">
+                                <children xsi:type="CST:Leaf" kind="TOKEN" value="("
+                                    pos="31" line="10"/>
+                                <children xsi:type="CST:Node" kind="formalParm">
+                                  <children xsi:type="CST:Leaf" kind="TOKEN" value="const"
+                                      pos="32" line="10"/>
+                                  <children xsi:type="CST:Node" kind="parameter">
+                                    <children xsi:type="CST:Node" kind="identList">
+                                      <children xsi:type="CST:Node" kind="ident">
+                                        <children xsi:type="CST:Leaf" kind="ID" value="fecha"
+                                            pos="38" line="10"/>
+                                      </children>
+                                    </children>
+                                    <children xsi:type="CST:Leaf" kind="TOKEN" value=":"
+                                        pos="43" line="10"/>
+                                    <children xsi:type="CST:Node" kind="type">
+                                      <children xsi:type="CST:Node" kind="typeId">
+                                        <children xsi:type="CST:Node" kind="qualId">
+                                          <children xsi:type="CST:Node" kind="ident">
+                                            <children xsi:type="CST:Leaf" kind="ID"
+                                                value="TDatetime" pos="45" line="10"/>
+                                          </children>
+                                        </children>
+                                      </children>
+                                    </children>
+                                  </children>
+                                </children>
+                                <children xsi:type="CST:Leaf" kind="TOKEN" value=")"
+                                    pos="54" line="10"/>
+                              </children>
+                              <children xsi:type="CST:Leaf" kind="TOKEN" value=":"
+                                  pos="55" line="10"/>
+                              <children xsi:type="CST:Node" kind="type">
+                                <children xsi:type="CST:Node" kind="stringType">
+                                  <children xsi:type="CST:Leaf" kind="TOKEN" value="string"
+                                      pos="56" line="10"/>
+                                </children>
+                              </children>
+                            </children>
+                          </children>
+                          <children xsi:type="CST:Leaf" kind="TOKEN" value=";" pos="62"
+                              line="10"/>
+                          <children xsi:type="CST:Node" kind="directive">
+                            <children xsi:type="CST:Leaf" kind="TOKEN" value="overload"
+                                pos="63" line="10"/>
+                          </children>
+                          <children xsi:type="CST:Leaf" kind="TOKEN" value=";" pos="71"
+                              line="10"/>
+                        </children>
+                      </children>
+                      <children xsi:type="CST:Node" kind="classMethod">
+                        <children xsi:type="CST:Node" kind="methodList">
+                          <children xsi:type="CST:Node" kind="methodHeading">
+                            <children xsi:type="CST:Node" kind="procedureHeading">
+                              <children xsi:type="CST:Leaf" kind="TOKEN" value="class"
+                                  pos="8" line="11"/>
+                              <children xsi:type="CST:Leaf" kind="TOKEN" value="procedure"
+                                  pos="14" line="11"/>
+                              <children xsi:type="CST:Node" kind="ident">
+                                <children xsi:type="CST:Leaf" kind="ID" value="FechaEdtExit"
+                                    pos="24" line="11"/>
+                              </children>
+                              <children xsi:type="CST:Node" kind="formalParameters">
+                                <children xsi:type="CST:Leaf" kind="TOKEN" value="("
+                                    pos="36" line="11"/>
+                                <children xsi:type="CST:Node" kind="formalParm">
+                                  <children xsi:type="CST:Node" kind="parameter">
+                                    <children xsi:type="CST:Node" kind="identList">
+                                      <children xsi:type="CST:Node" kind="ident">
+                                        <children xsi:type="CST:Leaf" kind="ID" value="ob"
+                                            pos="37" line="11"/>
+                                      </children>
+                                    </children>
+                                    <children xsi:type="CST:Leaf" kind="TOKEN" value=":"
+                                        pos="39" line="11"/>
+                                    <children xsi:type="CST:Node" kind="type">
+                                      <children xsi:type="CST:Node" kind="typeId">
+                                        <children xsi:type="CST:Node" kind="qualId">
+                                          <children xsi:type="CST:Node" kind="ident">
+                                            <children xsi:type="CST:Leaf" kind="ID"
+                                                value="TObject" pos="41" line="11"/>
+                                          </children>
+                                        </children>
+                                      </children>
+                                    </children>
+                                  </children>
+                                </children>
+                                <children xsi:type="CST:Leaf" kind="TOKEN" value=")"
+                                    pos="48" line="11"/>
+                              </children>
+                            </children>
+                          </children>
+                          <children xsi:type="CST:Leaf" kind="TOKEN" value=";" pos="49"
+                              line="11"/>
+                        </children>
+                      </children>
+                    </children>
+                    <children xsi:type="CST:Leaf" kind="TOKEN" value="end" pos="4"
+                        line="12"/>
+                  </children>
+                </children>
+              </children>
+              <children xsi:type="CST:Leaf" kind="TOKEN" value=";" pos="7" line="17"/>
+              <children xsi:type="CST:Node" kind="typeDecl">
+                <children xsi:type="CST:Node" kind="ident">
+                  <children xsi:type="CST:Leaf" kind="ID" value="TNumber" pos="4"
+                      line="14"/>
+                </children>
+                <children xsi:type="CST:Leaf" kind="TOKEN" value="=" pos="12" line="14"/>
+                <children xsi:type="CST:Node" kind="restrictedType">
+                  <children xsi:type="CST:Node" kind="classType">
+                    <children xsi:type="CST:Leaf" kind="TOKEN" value="class" pos="14"
+                        line="14"/>
+                    <children xsi:type="CST:Node" kind="classMethodList">
+                      <children xsi:type="CST:Node" kind="classMethod">
+                        <children xsi:type="CST:Node" kind="methodList">
+                          <children xsi:type="CST:Node" kind="methodHeading">
+                            <children xsi:type="CST:Node" kind="functionHeading">
+                              <children xsi:type="CST:Leaf" kind="TOKEN" value="class"
+                                  pos="6" line="15"/>
+                              <children xsi:type="CST:Leaf" kind="TOKEN" value="function"
+                                  pos="12" line="15"/>
+                              <children xsi:type="CST:Node" kind="ident">
+                                <children xsi:type="CST:Leaf" kind="ID" value="FloatSql"
+                                    pos="22" line="15"/>
+                              </children>
+                              <children xsi:type="CST:Node" kind="formalParameters">
+                                <children xsi:type="CST:Leaf" kind="TOKEN" value="("
+                                    pos="30" line="15"/>
+                                <children xsi:type="CST:Node" kind="formalParm">
+                                  <children xsi:type="CST:Leaf" kind="TOKEN" value="const"
+                                      pos="31" line="15"/>
+                                  <children xsi:type="CST:Node" kind="parameter">
+                                    <children xsi:type="CST:Node" kind="identList">
+                                      <children xsi:type="CST:Node" kind="ident">
+                                        <children xsi:type="CST:Leaf" kind="ID" value="f"
+                                            pos="37" line="15"/>
+                                      </children>
+                                    </children>
+                                    <children xsi:type="CST:Leaf" kind="TOKEN" value=":"
+                                        pos="38" line="15"/>
+                                    <children xsi:type="CST:Node" kind="type">
+                                      <children xsi:type="CST:Node" kind="typeId">
+                                        <children xsi:type="CST:Node" kind="qualId">
+                                          <children xsi:type="CST:Node" kind="ident">
+                                            <children xsi:type="CST:Leaf" kind="ID"
+                                                value="String" pos="40" line="15"/>
+                                          </children>
+                                        </children>
+                                      </children>
+                                    </children>
+                                  </children>
+                                </children>
+                                <children xsi:type="CST:Leaf" kind="TOKEN" value=")"
+                                    pos="46" line="15"/>
+                              </children>
+                              <children xsi:type="CST:Leaf" kind="TOKEN" value=":"
+                                  pos="47" line="15"/>
+                              <children xsi:type="CST:Node" kind="type">
+                                <children xsi:type="CST:Node" kind="stringType">
+                                  <children xsi:type="CST:Leaf" kind="TOKEN" value="string"
+                                      pos="49" line="15"/>
+                                </children>
+                              </children>
+                            </children>
+                          </children>
+                          <children xsi:type="CST:Leaf" kind="TOKEN" value=";" pos="55"
+                              line="15"/>
+                          <children xsi:type="CST:Node" kind="directive">
+                            <children xsi:type="CST:Leaf" kind="TOKEN" value="overload"
+                                pos="56" line="15"/>
+                          </children>
+                          <children xsi:type="CST:Leaf" kind="TOKEN" value=";" pos="64"
+                              line="15"/>
+                        </children>
+                      </children>
+                      <children xsi:type="CST:Node" kind="classMethod">
+                        <children xsi:type="CST:Node" kind="methodList">
+                          <children xsi:type="CST:Node" kind="methodHeading">
+                            <children xsi:type="CST:Node" kind="functionHeading">
+                              <children xsi:type="CST:Leaf" kind="TOKEN" value="class"
+                                  pos="6" line="16"/>
+                              <children xsi:type="CST:Leaf" kind="TOKEN" value="function"
+                                  pos="12" line="16"/>
+                              <children xsi:type="CST:Node" kind="ident">
+                                <children xsi:type="CST:Leaf" kind="ID" value="FloatSql"
+                                    pos="22" line="16"/>
+                              </children>
+                              <children xsi:type="CST:Node" kind="formalParameters">
+                                <children xsi:type="CST:Leaf" kind="TOKEN" value="("
+                                    pos="30" line="16"/>
+                                <children xsi:type="CST:Node" kind="formalParm">
+                                  <children xsi:type="CST:Node" kind="parameter">
+                                    <children xsi:type="CST:Node" kind="identList">
+                                      <children xsi:type="CST:Node" kind="ident">
+                                        <children xsi:type="CST:Leaf" kind="ID" value="f"
+                                            pos="31" line="16"/>
+                                      </children>
+                                    </children>
+                                    <children xsi:type="CST:Leaf" kind="TOKEN" value=":"
+                                        pos="32" line="16"/>
+                                    <children xsi:type="CST:Node" kind="type">
+                                      <children xsi:type="CST:Node" kind="simpleType">
+                                        <children xsi:type="CST:Node" kind="realType">
+                                          <children xsi:type="CST:Leaf" kind="TOKEN"
+                                              value="double" pos="33" line="16"/>
+                                        </children>
+                                      </children>
+                                    </children>
+                                  </children>
+                                </children>
+                                <children xsi:type="CST:Leaf" kind="TOKEN" value=")"
+                                    pos="39" line="16"/>
+                              </children>
+                              <children xsi:type="CST:Leaf" kind="TOKEN" value=":"
+                                  pos="40" line="16"/>
+                              <children xsi:type="CST:Node" kind="type">
+                                <children xsi:type="CST:Node" kind="stringType">
+                                  <children xsi:type="CST:Leaf" kind="TOKEN" value="string"
+                                      pos="41" line="16"/>
+                                </children>
+                              </children>
+                            </children>
+                          </children>
+                          <children xsi:type="CST:Leaf" kind="TOKEN" value=";" pos="47"
+                              line="16"/>
+                          <children xsi:type="CST:Node" kind="directive">
+                            <children xsi:type="CST:Leaf" kind="TOKEN" value="overload"
+                                pos="48" line="16"/>
+                          </children>
+                          <children xsi:type="CST:Leaf" kind="TOKEN" value=";" pos="56"
+                              line="16"/>
+                        </children>
+                      </children>
+                    </children>
+                    <children xsi:type="CST:Leaf" kind="TOKEN" value="end" pos="4"
+                        line="17"/>
+                  </children>
+                </children>
+              </children>
+              <children xsi:type="CST:Leaf" kind="TOKEN" value=";" pos="7" line="17"/>
+            </children>
+          </children>
+        </children>
+        <children xsi:type="CST:Node" kind="implementationSection">
+          <children xsi:type="CST:Leaf" kind="TOKEN" value="implementation" line="18"/>
+          <children xsi:type="CST:Node" kind="declSection">
+            <children xsi:type="CST:Node" kind="procedureDeclSection">
+              <children xsi:type="CST:Node" kind="functionDecl">
+                <children xsi:type="CST:Node" kind="functionHeading">
+                  <children xsi:type="CST:Leaf" kind="TOKEN" value="class" line="22"/>
+                  <children xsi:type="CST:Leaf" kind="TOKEN" value="function" pos="6"
+                      line="22"/>
+                  <children xsi:type="CST:Node" kind="ident">
+                    <children xsi:type="CST:Leaf" kind="ID" value="TFecha" pos="15"
+                        line="22"/>
+                    <children xsi:type="CST:Leaf" kind="TOKEN" value="." pos="21"
+                        line="22"/>
+                    <children xsi:type="CST:Leaf" kind="ID" value="FechaSql" pos="22"
+                        line="22"/>
+                  </children>
+                  <children xsi:type="CST:Node" kind="formalParameters">
+                    <children xsi:type="CST:Leaf" kind="TOKEN" value="(" pos="30"
+                        line="22"/>
+                    <children xsi:type="CST:Node" kind="formalParm">
+                      <children xsi:type="CST:Leaf" kind="TOKEN" value="const" pos="31"
+                          line="22"/>
+                      <children xsi:type="CST:Node" kind="parameter">
+                        <children xsi:type="CST:Node" kind="identList">
+                          <children xsi:type="CST:Node" kind="ident">
+                            <children xsi:type="CST:Leaf" kind="ID" value="fecha"
+                                pos="37" line="22"/>
+                          </children>
+                        </children>
+                        <children xsi:type="CST:Leaf" kind="TOKEN" value=":" pos="42"
+                            line="22"/>
+                        <children xsi:type="CST:Node" kind="type">
+                          <children xsi:type="CST:Node" kind="stringType">
+                            <children xsi:type="CST:Leaf" kind="TOKEN" value="string"
+                                pos="44" line="22"/>
+                          </children>
+                        </children>
+                      </children>
+                    </children>
+                    <children xsi:type="CST:Leaf" kind="TOKEN" value=")" pos="50"
+                        line="22"/>
+                  </children>
+                  <children xsi:type="CST:Leaf" kind="TOKEN" value=":" pos="51" line="22"/>
+                  <children xsi:type="CST:Node" kind="type">
+                    <children xsi:type="CST:Node" kind="stringType">
+                      <children xsi:type="CST:Leaf" kind="TOKEN" value="string" pos="53"
+                          line="22"/>
+                    </children>
+                  </children>
+                </children>
+                <children xsi:type="CST:Leaf" kind="TOKEN" value=";" pos="59" line="22"/>
+                <children xsi:type="CST:Node" kind="block">
+                  <children xsi:type="CST:Node" kind="compoundStmt">
+                    <children xsi:type="CST:Leaf" kind="TOKEN" value="begin" line="23"/>
+                    <children xsi:type="CST:Node" kind="stmtList">
+                      <children xsi:type="CST:Node" kind="statement">
+                        <children xsi:type="CST:Node" kind="simpleStatement">
+                          <children xsi:type="CST:Node" kind="designator">
+                            <children xsi:type="CST:Node" kind="designatorSubPart">
+                              <children xsi:type="CST:Node" kind="designatorPart">
+                                <children xsi:type="CST:Leaf" kind="ID" value="result"
+                                    pos="6" line="24"/>
+                              </children>
+                            </children>
+                          </children>
+                          <children xsi:type="CST:Leaf" kind="TOKEN" value=":=" pos="13"
+                              line="24"/>
+                          <children xsi:type="CST:Node" kind="expression">
+                            <children xsi:type="CST:Node" kind="simpleExpression">
+                              <children xsi:type="CST:Node" kind="term">
+                                <children xsi:type="CST:Node" kind="factor">
+                                  <children xsi:type="CST:Node" kind="string">
+                                    <children xsi:type="CST:Leaf" kind="QVALUE" value="' DateValue('"
+                                        pos="16" line="24"/>
+                                  </children>
+                                </children>
+                              </children>
+                              <children xsi:type="CST:Node" kind="addOp">
+                                <children xsi:type="CST:Leaf" kind="TOKEN" value="+"
+                                    pos="30" line="24"/>
+                              </children>
+                              <children xsi:type="CST:Node" kind="term">
+                                <children xsi:type="CST:Node" kind="factor">
+                                  <children xsi:type="CST:Node" kind="designator">
+                                    <children xsi:type="CST:Node" kind="designatorSubPart">
+                                      <children xsi:type="CST:Node" kind="designatorPart">
+                                        <children xsi:type="CST:Leaf" kind="ID" value="QuotedStr"
+                                            pos="32" line="24"/>
+                                      </children>
+                                    </children>
+                                  </children>
+                                  <children xsi:type="CST:Leaf" kind="TOKEN" value="("
+                                      pos="41" line="24"/>
+                                  <children xsi:type="CST:Node" kind="exprList">
+                                    <children xsi:type="CST:Node" kind="expression">
+                                      <children xsi:type="CST:Node" kind="simpleExpression">
+                                        <children xsi:type="CST:Node" kind="term">
+                                          <children xsi:type="CST:Node" kind="factor">
+                                            <children xsi:type="CST:Node" kind="designator">
+                                              <children xsi:type="CST:Node" kind="designatorSubPart">
+                                                <children xsi:type="CST:Node" kind="designatorPart">
+                                                  <children xsi:type="CST:Leaf" kind="ID"
+                                                      value="fecha" pos="42" line="24"/>
+                                                </children>
+                                              </children>
+                                            </children>
+                                          </children>
+                                        </children>
+                                      </children>
+                                    </children>
+                                  </children>
+                                  <children xsi:type="CST:Leaf" kind="TOKEN" value=")"
+                                      pos="47" line="24"/>
+                                </children>
+                              </children>
+                              <children xsi:type="CST:Node" kind="addOp">
+                                <children xsi:type="CST:Leaf" kind="TOKEN" value="+"
+                                    pos="49" line="24"/>
+                              </children>
+                              <children xsi:type="CST:Node" kind="term">
+                                <children xsi:type="CST:Node" kind="factor">
+                                  <children xsi:type="CST:Node" kind="string">
+                                    <children xsi:type="CST:Leaf" kind="QVALUE" value="')'"
+                                        pos="51" line="24"/>
+                                  </children>
+                                </children>
+                              </children>
+                            </children>
+                          </children>
+                        </children>
+                      </children>
+                      <children xsi:type="CST:Leaf" kind="TOKEN" value=";" pos="54"
+                          line="24"/>
+                    </children>
+                    <children xsi:type="CST:Leaf" kind="TOKEN" value="end" line="25"/>
+                  </children>
+                </children>
+                <children xsi:type="CST:Leaf" kind="TOKEN" value=";" pos="3" line="25"/>
+              </children>
+            </children>
+          </children>
+          <children xsi:type="CST:Node" kind="declSection">
+            <children xsi:type="CST:Node" kind="procedureDeclSection">
+              <children xsi:type="CST:Node" kind="functionDecl">
+                <children xsi:type="CST:Node" kind="functionHeading">
+                  <children xsi:type="CST:Leaf" kind="TOKEN" value="class" line="27"/>
+                  <children xsi:type="CST:Leaf" kind="TOKEN" value="function" pos="6"
+                      line="27"/>
+                  <children xsi:type="CST:Node" kind="ident">
+                    <children xsi:type="CST:Leaf" kind="ID" value="TFecha" pos="15"
+                        line="27"/>
+                    <children xsi:type="CST:Leaf" kind="TOKEN" value="." pos="21"
+                        line="27"/>
+                    <children xsi:type="CST:Leaf" kind="ID" value="FechaSql" pos="22"
+                        line="27"/>
+                  </children>
+                  <children xsi:type="CST:Node" kind="formalParameters">
+                    <children xsi:type="CST:Leaf" kind="TOKEN" value="(" pos="30"
+                        line="27"/>
+                    <children xsi:type="CST:Node" kind="formalParm">
+                      <children xsi:type="CST:Leaf" kind="TOKEN" value="const" pos="31"
+                          line="27"/>
+                      <children xsi:type="CST:Node" kind="parameter">
+                        <children xsi:type="CST:Node" kind="identList">
+                          <children xsi:type="CST:Node" kind="ident">
+                            <children xsi:type="CST:Leaf" kind="ID" value="fecha"
+                                pos="37" line="27"/>
+                          </children>
+                        </children>
+                        <children xsi:type="CST:Leaf" kind="TOKEN" value=":" pos="42"
+                            line="27"/>
+                        <children xsi:type="CST:Node" kind="type">
+                          <children xsi:type="CST:Node" kind="typeId">
+                            <children xsi:type="CST:Node" kind="qualId">
+                              <children xsi:type="CST:Node" kind="ident">
+                                <children xsi:type="CST:Leaf" kind="ID" value="TDatetime"
+                                    pos="44" line="27"/>
+                              </children>
+                            </children>
+                          </children>
+                        </children>
+                      </children>
+                    </children>
+                    <children xsi:type="CST:Leaf" kind="TOKEN" value=")" pos="53"
+                        line="27"/>
+                  </children>
+                  <children xsi:type="CST:Leaf" kind="TOKEN" value=":" pos="54" line="27"/>
+                  <children xsi:type="CST:Node" kind="type">
+                    <children xsi:type="CST:Node" kind="stringType">
+                      <children xsi:type="CST:Leaf" kind="TOKEN" value="string" pos="56"
+                          line="27"/>
+                    </children>
+                  </children>
+                </children>
+                <children xsi:type="CST:Leaf" kind="TOKEN" value=";" pos="62" line="27"/>
+                <children xsi:type="CST:Node" kind="block">
+                  <children xsi:type="CST:Node" kind="compoundStmt">
+                    <children xsi:type="CST:Leaf" kind="TOKEN" value="begin" line="28"/>
+                    <children xsi:type="CST:Node" kind="stmtList">
+                      <children xsi:type="CST:Node" kind="statement">
+                        <children xsi:type="CST:Node" kind="simpleStatement">
+                          <children xsi:type="CST:Node" kind="designator">
+                            <children xsi:type="CST:Node" kind="designatorSubPart">
+                              <children xsi:type="CST:Node" kind="designatorPart">
+                                <children xsi:type="CST:Leaf" kind="ID" value="result"
+                                    pos="4" line="29"/>
+                              </children>
+                            </children>
+                          </children>
+                          <children xsi:type="CST:Leaf" kind="TOKEN" value=":=" pos="11"
+                              line="29"/>
+                          <children xsi:type="CST:Node" kind="expression">
+                            <children xsi:type="CST:Node" kind="simpleExpression">
+                              <children xsi:type="CST:Node" kind="term">
+                                <children xsi:type="CST:Node" kind="factor">
+                                  <children xsi:type="CST:Node" kind="designator">
+                                    <children xsi:type="CST:Node" kind="designatorSubPart">
+                                      <children xsi:type="CST:Node" kind="designatorPart">
+                                        <children xsi:type="CST:Leaf" kind="ID" value="FechaSql"
+                                            pos="14" line="29"/>
+                                      </children>
+                                    </children>
+                                  </children>
+                                  <children xsi:type="CST:Leaf" kind="TOKEN" value="("
+                                      pos="22" line="29"/>
+                                  <children xsi:type="CST:Node" kind="exprList">
+                                    <children xsi:type="CST:Node" kind="expression">
+                                      <children xsi:type="CST:Node" kind="simpleExpression">
+                                        <children xsi:type="CST:Node" kind="term">
+                                          <children xsi:type="CST:Node" kind="factor">
+                                            <children xsi:type="CST:Node" kind="designator">
+                                              <children xsi:type="CST:Node" kind="designatorSubPart">
+                                                <children xsi:type="CST:Node" kind="designatorPart">
+                                                  <children xsi:type="CST:Leaf" kind="ID"
+                                                      value="DateToStr" pos="23" line="29"/>
+                                                </children>
+                                              </children>
+                                            </children>
+                                            <children xsi:type="CST:Leaf" kind="TOKEN"
+                                                value="(" pos="32" line="29"/>
+                                            <children xsi:type="CST:Node" kind="exprList">
+                                              <children xsi:type="CST:Node" kind="expression">
+                                                <children xsi:type="CST:Node" kind="simpleExpression">
+                                                  <children xsi:type="CST:Node" kind="term">
+                                                    <children xsi:type="CST:Node"
+                                                        kind="factor">
+                                                      <children xsi:type="CST:Node"
+                                                          kind="designator">
+                                                        <children xsi:type="CST:Node"
+                                                            kind="designatorSubPart">
+                                                          <children xsi:type="CST:Node"
+                                                              kind="designatorPart">
+                                                            <children xsi:type="CST:Leaf"
+                                                                kind="ID" value="fecha"
+                                                                pos="33" line="29"/>
+                                                          </children>
+                                                        </children>
+                                                      </children>
+                                                    </children>
+                                                  </children>
+                                                </children>
+                                              </children>
+                                            </children>
+                                            <children xsi:type="CST:Leaf" kind="TOKEN"
+                                                value=")" pos="38" line="29"/>
+                                          </children>
+                                        </children>
+                                      </children>
+                                    </children>
+                                  </children>
+                                  <children xsi:type="CST:Leaf" kind="TOKEN" value=")"
+                                      pos="39" line="29"/>
+                                </children>
+                              </children>
+                            </children>
+                          </children>
+                        </children>
+                      </children>
+                      <children xsi:type="CST:Leaf" kind="TOKEN" value=";" pos="40"
+                          line="29"/>
+                    </children>
+                    <children xsi:type="CST:Leaf" kind="TOKEN" value="end" line="30"/>
+                  </children>
+                </children>
+                <children xsi:type="CST:Leaf" kind="TOKEN" value=";" pos="3" line="30"/>
+              </children>
+            </children>
+          </children>
+          <children xsi:type="CST:Node" kind="declSection">
+            <children xsi:type="CST:Node" kind="procedureDeclSection">
+              <children xsi:type="CST:Node" kind="procedureDecl">
+                <children xsi:type="CST:Node" kind="procedureHeading">
+                  <children xsi:type="CST:Leaf" kind="TOKEN" value="class" line="32"/>
+                  <children xsi:type="CST:Leaf" kind="TOKEN" value="procedure" pos="6"
+                      line="32"/>
+                  <children xsi:type="CST:Node" kind="ident">
+                    <children xsi:type="CST:Leaf" kind="ID" value="TFecha" pos="16"
+                        line="32"/>
+                    <children xsi:type="CST:Leaf" kind="TOKEN" value="." pos="22"
+                        line="32"/>
+                    <children xsi:type="CST:Leaf" kind="ID" value="FechaEdtExit" pos="23"
+                        line="32"/>
+                  </children>
+                  <children xsi:type="CST:Node" kind="formalParameters">
+                    <children xsi:type="CST:Leaf" kind="TOKEN" value="(" pos="35"
+                        line="32"/>
+                    <children xsi:type="CST:Node" kind="formalParm">
+                      <children xsi:type="CST:Node" kind="parameter">
+                        <children xsi:type="CST:Node" kind="identList">
+                          <children xsi:type="CST:Node" kind="ident">
+                            <children xsi:type="CST:Leaf" kind="ID" value="ob" pos="36"
+                                line="32"/>
+                          </children>
+                        </children>
+                        <children xsi:type="CST:Leaf" kind="TOKEN" value=":" pos="38"
+                            line="32"/>
+                        <children xsi:type="CST:Node" kind="type">
+                          <children xsi:type="CST:Node" kind="typeId">
+                            <children xsi:type="CST:Node" kind="qualId">
+                              <children xsi:type="CST:Node" kind="ident">
+                                <children xsi:type="CST:Leaf" kind="ID" value="TObject"
+                                    pos="40" line="32"/>
+                              </children>
+                            </children>
+                          </children>
+                        </children>
+                      </children>
+                    </children>
+                    <children xsi:type="CST:Leaf" kind="TOKEN" value=")" pos="47"
+                        line="32"/>
+                  </children>
+                </children>
+                <children xsi:type="CST:Leaf" kind="TOKEN" value=";" pos="48" line="32"/>
+                <children xsi:type="CST:Node" kind="block">
+                  <children xsi:type="CST:Node" kind="declSection">
+                    <children xsi:type="CST:Node" kind="varSection">
+                      <children xsi:type="CST:Leaf" kind="TOKEN" value="var" line="33"/>
+                      <children xsi:type="CST:Node" kind="varDecl">
+                        <children xsi:type="CST:Node" kind="identList">
+                          <children xsi:type="CST:Node" kind="ident">
+                            <children xsi:type="CST:Leaf" kind="ID" value="ed" pos="3"
+                                line="34"/>
+                          </children>
+                        </children>
+                        <children xsi:type="CST:Leaf" kind="TOKEN" value=":" pos="5"
+                            line="34"/>
+                        <children xsi:type="CST:Node" kind="type">
+                          <children xsi:type="CST:Node" kind="typeId">
+                            <children xsi:type="CST:Node" kind="qualId">
+                              <children xsi:type="CST:Node" kind="ident">
+                                <children xsi:type="CST:Leaf" kind="ID" value="TEdit"
+                                    pos="7" line="34"/>
+                              </children>
+                            </children>
+                          </children>
+                        </children>
+                      </children>
+                      <children xsi:type="CST:Leaf" kind="TOKEN" value=";" pos="12"
+                          line="34"/>
+                    </children>
+                  </children>
+                  <children xsi:type="CST:Node" kind="compoundStmt">
+                    <children xsi:type="CST:Leaf" kind="TOKEN" value="begin" line="35"/>
+                    <children xsi:type="CST:Node" kind="stmtList">
+                      <children xsi:type="CST:Node" kind="statement">
+                        <children xsi:type="CST:Node" kind="simpleStatement">
+                          <children xsi:type="CST:Node" kind="designator">
+                            <children xsi:type="CST:Node" kind="designatorSubPart">
+                              <children xsi:type="CST:Node" kind="designatorPart">
+                                <children xsi:type="CST:Leaf" kind="ID" value="Assert"
+                                    pos="3" line="36"/>
+                              </children>
+                            </children>
+                          </children>
+                          <children xsi:type="CST:Leaf" kind="TOKEN" value="(" pos="9"
+                              line="36"/>
+                          <children xsi:type="CST:Node" kind="exprList">
+                            <children xsi:type="CST:Node" kind="expression">
+                              <children xsi:type="CST:Node" kind="simpleExpression">
+                                <children xsi:type="CST:Node" kind="term">
+                                  <children xsi:type="CST:Node" kind="factor">
+                                    <children xsi:type="CST:Node" kind="designator">
+                                      <children xsi:type="CST:Node" kind="designatorSubPart">
+                                        <children xsi:type="CST:Node" kind="designatorPart">
+                                          <children xsi:type="CST:Leaf" kind="ID"
+                                              value="ob" pos="10" line="36"/>
+                                        </children>
+                                      </children>
+                                    </children>
+                                  </children>
+                                </children>
+                              </children>
+                              <children xsi:type="CST:Node" kind="relOp">
+                                <children xsi:type="CST:Leaf" kind="TOKEN" value="is"
+                                    pos="13" line="36"/>
+                              </children>
+                              <children xsi:type="CST:Node" kind="simpleExpression">
+                                <children xsi:type="CST:Node" kind="term">
+                                  <children xsi:type="CST:Node" kind="factor">
+                                    <children xsi:type="CST:Node" kind="designator">
+                                      <children xsi:type="CST:Node" kind="designatorSubPart">
+                                        <children xsi:type="CST:Node" kind="designatorPart">
+                                          <children xsi:type="CST:Leaf" kind="ID"
+                                              value="TEdit" pos="16" line="36"/>
+                                        </children>
+                                      </children>
+                                    </children>
+                                  </children>
+                                </children>
+                              </children>
+                            </children>
+                            <children xsi:type="CST:Leaf" kind="TOKEN" value="," pos="21"
+                                line="36"/>
+                            <children xsi:type="CST:Node" kind="expression">
+                              <children xsi:type="CST:Node" kind="simpleExpression">
+                                <children xsi:type="CST:Node" kind="term">
+                                  <children xsi:type="CST:Node" kind="factor">
+                                    <children xsi:type="CST:Node" kind="string">
+                                      <children xsi:type="CST:Leaf" kind="QVALUE"
+                                          value="'Clase de objeto no válida en el campo fecha'"
+                                          pos="23" line="36"/>
+                                    </children>
+                                  </children>
+                                </children>
+                              </children>
+                            </children>
+                          </children>
+                          <children xsi:type="CST:Leaf" kind="TOKEN" value=")" pos="68"
+                              line="36"/>
+                        </children>
+                      </children>
+                      <children xsi:type="CST:Leaf" kind="TOKEN" value=";" pos="6"
+                          line="45"/>
+                      <children xsi:type="CST:Node" kind="statement">
+                        <children xsi:type="CST:Node" kind="simpleStatement">
+                          <children xsi:type="CST:Node" kind="designator">
+                            <children xsi:type="CST:Node" kind="designatorSubPart">
+                              <children xsi:type="CST:Node" kind="designatorPart">
+                                <children xsi:type="CST:Leaf" kind="ID" value="ed"
+                                    pos="3" line="37"/>
+                              </children>
+                            </children>
+                          </children>
+                          <children xsi:type="CST:Leaf" kind="TOKEN" value=":=" pos="6"
+                              line="37"/>
+                          <children xsi:type="CST:Node" kind="expression">
+                            <children xsi:type="CST:Node" kind="simpleExpression">
+                              <children xsi:type="CST:Node" kind="term">
+                                <children xsi:type="CST:Node" kind="factor">
+                                  <children xsi:type="CST:Node" kind="designator">
+                                    <children xsi:type="CST:Node" kind="designatorSubPart">
+                                      <children xsi:type="CST:Node" kind="designatorPart">
+                                        <children xsi:type="CST:Leaf" kind="ID" value="TEdit"
+                                            pos="9" line="37"/>
+                                      </children>
+                                    </children>
+                                  </children>
+                                  <children xsi:type="CST:Leaf" kind="TOKEN" value="("
+                                      pos="14" line="37"/>
+                                  <children xsi:type="CST:Node" kind="exprList">
+                                    <children xsi:type="CST:Node" kind="expression">
+                                      <children xsi:type="CST:Node" kind="simpleExpression">
+                                        <children xsi:type="CST:Node" kind="term">
+                                          <children xsi:type="CST:Node" kind="factor">
+                                            <children xsi:type="CST:Node" kind="designator">
+                                              <children xsi:type="CST:Node" kind="designatorSubPart">
+                                                <children xsi:type="CST:Node" kind="designatorPart">
+                                                  <children xsi:type="CST:Leaf" kind="ID"
+                                                      value="ob" pos="15" line="37"/>
+                                                </children>
+                                              </children>
+                                            </children>
+                                          </children>
+                                        </children>
+                                      </children>
+                                    </children>
+                                  </children>
+                                  <children xsi:type="CST:Leaf" kind="TOKEN" value=")"
+                                      pos="17" line="37"/>
+                                </children>
+                              </children>
+                            </children>
+                          </children>
+                        </children>
+                      </children>
+                      <children xsi:type="CST:Leaf" kind="TOKEN" value=";" pos="6"
+                          line="45"/>
+                      <children xsi:type="CST:Node" kind="statement">
+                        <children xsi:type="CST:Node" kind="structStmt">
+                          <children xsi:type="CST:Node" kind="tryStmt">
+                            <children xsi:type="CST:Leaf" kind="TOKEN" value="try"
+                                pos="3" line="39"/>
+                            <children xsi:type="CST:Node" kind="stmtList">
+                              <children xsi:type="CST:Node" kind="statement">
+                                <children xsi:type="CST:Node" kind="structStmt">
+                                  <children xsi:type="CST:Node" kind="conditionalStmt">
+                                    <children xsi:type="CST:Node" kind="ifStmt">
+                                      <children xsi:type="CST:Leaf" kind="TOKEN" value="if"
+                                          pos="6" line="40"/>
+                                      <children xsi:type="CST:Node" kind="expression">
+                                        <children xsi:type="CST:Node" kind="simpleExpression">
+                                          <children xsi:type="CST:Node" kind="term">
+                                            <children xsi:type="CST:Node" kind="factor">
+                                              <children xsi:type="CST:Node" kind="designator">
+                                                <children xsi:type="CST:Node" kind="designatorSubPart">
+                                                  <children xsi:type="CST:Node" kind="designatorPart">
+                                                    <children xsi:type="CST:Leaf"
+                                                        kind="ID" value="ed" pos="9"
+                                                        line="40"/>
+                                                  </children>
+                                                </children>
+                                                <children xsi:type="CST:Leaf" kind="TOKEN"
+                                                    value="." pos="11" line="40"/>
+                                                <children xsi:type="CST:Node" kind="designator">
+                                                  <children xsi:type="CST:Node" kind="designatorSubPart">
+                                                    <children xsi:type="CST:Node"
+                                                        kind="designatorPart">
+                                                      <children xsi:type="CST:Leaf"
+                                                          kind="ID" value="Text" pos="12"
+                                                          line="40"/>
+                                                    </children>
+                                                  </children>
+                                                </children>
+                                              </children>
+                                            </children>
+                                          </children>
+                                        </children>
+                                        <children xsi:type="CST:Node" kind="relOp">
+                                          <children xsi:type="CST:Leaf" kind="TOKEN"
+                                              value="&lt;>" pos="17" line="40"/>
+                                        </children>
+                                        <children xsi:type="CST:Node" kind="simpleExpression">
+                                          <children xsi:type="CST:Node" kind="term">
+                                            <children xsi:type="CST:Node" kind="factor">
+                                              <children xsi:type="CST:Node" kind="string">
+                                                <children xsi:type="CST:Leaf" kind="QVALUE"
+                                                    value="''" pos="20" line="40"/>
+                                              </children>
+                                            </children>
+                                          </children>
+                                        </children>
+                                      </children>
+                                      <children xsi:type="CST:Leaf" kind="TOKEN" value="then"
+                                          pos="23" line="40"/>
+                                      <children xsi:type="CST:Node" kind="statement">
+                                        <children xsi:type="CST:Node" kind="simpleStatement">
+                                          <children xsi:type="CST:Node" kind="designator">
+                                            <children xsi:type="CST:Node" kind="designatorSubPart">
+                                              <children xsi:type="CST:Node" kind="designatorPart">
+                                                <children xsi:type="CST:Leaf" kind="ID"
+                                                    value="StrToDate" pos="9" line="41"/>
+                                              </children>
+                                            </children>
+                                          </children>
+                                          <children xsi:type="CST:Leaf" kind="TOKEN"
+                                              value="(" pos="18" line="41"/>
+                                          <children xsi:type="CST:Node" kind="exprList">
+                                            <children xsi:type="CST:Node" kind="expression">
+                                              <children xsi:type="CST:Node" kind="simpleExpression">
+                                                <children xsi:type="CST:Node" kind="term">
+                                                  <children xsi:type="CST:Node" kind="factor">
+                                                    <children xsi:type="CST:Node"
+                                                        kind="designator">
+                                                      <children xsi:type="CST:Node"
+                                                          kind="designatorSubPart">
+                                                        <children xsi:type="CST:Node"
+                                                            kind="designatorPart">
+                                                          <children xsi:type="CST:Leaf"
+                                                              kind="ID" value="Trim"
+                                                              pos="19" line="41"/>
+                                                        </children>
+                                                      </children>
+                                                    </children>
+                                                    <children xsi:type="CST:Leaf"
+                                                        kind="TOKEN" value="(" pos="23"
+                                                        line="41"/>
+                                                    <children xsi:type="CST:Node"
+                                                        kind="exprList">
+                                                      <children xsi:type="CST:Node"
+                                                          kind="expression">
+                                                        <children xsi:type="CST:Node"
+                                                            kind="simpleExpression">
+                                                          <children xsi:type="CST:Node"
+                                                              kind="term">
+                                                            <children xsi:type="CST:Node"
+                                                                kind="factor">
+                                                              <children xsi:type="CST:Node"
+                                                                  kind="designator">
+                                                                <children xsi:type="CST:Node"
+                                                                    kind="designatorSubPart">
+                                                                  <children xsi:type="CST:Node"
+                                                                      kind="designatorPart">
+                                                                    <children xsi:type="CST:Leaf"
+                                                                        kind="ID"
+                                                                        value="ed"
+                                                                        pos="24" line="41"/>
+                                                                  </children>
+                                                                </children>
+                                                                <children xsi:type="CST:Leaf"
+                                                                    kind="TOKEN" value="."
+                                                                    pos="26" line="41"/>
+                                                                <children xsi:type="CST:Node"
+                                                                    kind="designator">
+                                                                  <children xsi:type="CST:Node"
+                                                                      kind="designatorSubPart">
+                                                                    <children xsi:type="CST:Node"
+                                                                        kind="designatorPart">
+                                                                      <children xsi:type="CST:Leaf"
+                                                                          kind="ID"
+                                                                          value="Text"
+                                                                          pos="27"
+                                                                          line="41"/>
+                                                                    </children>
+                                                                  </children>
+                                                                </children>
+                                                              </children>
+                                                            </children>
+                                                          </children>
+                                                        </children>
+                                                      </children>
+                                                    </children>
+                                                    <children xsi:type="CST:Leaf"
+                                                        kind="TOKEN" value=")" pos="31"
+                                                        line="41"/>
+                                                  </children>
+                                                </children>
+                                              </children>
+                                            </children>
+                                          </children>
+                                          <children xsi:type="CST:Leaf" kind="TOKEN"
+                                              value=")" pos="32" line="41"/>
+                                        </children>
+                                      </children>
+                                      <children xsi:type="CST:Leaf" kind="TOKEN" value=";"
+                                          pos="33" line="41"/>
+                                    </children>
+                                  </children>
+                                </children>
+                              </children>
+                            </children>
+                            <children xsi:type="CST:Leaf" kind="TOKEN" value="except"
+                                pos="3" line="42"/>
+                            <children xsi:type="CST:Node" kind="exceptionBlock">
+                              <children xsi:type="CST:Node" kind="stmtList">
+                                <children xsi:type="CST:Node" kind="statement">
+                                  <children xsi:type="CST:Node" kind="simpleStatement">
+                                    <children xsi:type="CST:Node" kind="designator">
+                                      <children xsi:type="CST:Node" kind="designatorSubPart">
+                                        <children xsi:type="CST:Node" kind="designatorPart">
+                                          <children xsi:type="CST:Leaf" kind="ID"
+                                              value="ed" pos="6" line="43"/>
+                                        </children>
+                                      </children>
+                                      <children xsi:type="CST:Leaf" kind="TOKEN" value="."
+                                          pos="8" line="43"/>
+                                      <children xsi:type="CST:Node" kind="designator">
+                                        <children xsi:type="CST:Node" kind="designatorSubPart">
+                                          <children xsi:type="CST:Node" kind="designatorPart">
+                                            <children xsi:type="CST:Leaf" kind="ID"
+                                                value="SetFocus" pos="9" line="43"/>
+                                          </children>
+                                        </children>
+                                      </children>
+                                    </children>
+                                  </children>
+                                </children>
+                                <children xsi:type="CST:Leaf" kind="TOKEN" value=";"
+                                    pos="17" line="43"/>
+                                <children xsi:type="CST:Node" kind="statement">
+                                  <children xsi:type="CST:Node" kind="simpleStatement">
+                                    <children xsi:type="CST:Node" kind="designator">
+                                      <children xsi:type="CST:Node" kind="designatorSubPart">
+                                        <children xsi:type="CST:Node" kind="designatorPart">
+                                          <children xsi:type="CST:Leaf" kind="ID"
+                                              value="TMensa" pos="6" line="44"/>
+                                        </children>
+                                      </children>
+                                      <children xsi:type="CST:Leaf" kind="TOKEN" value="."
+                                          pos="12" line="44"/>
+                                      <children xsi:type="CST:Node" kind="designator">
+                                        <children xsi:type="CST:Node" kind="designatorSubPart">
+                                          <children xsi:type="CST:Node" kind="designatorPart">
+                                            <children xsi:type="CST:Leaf" kind="ID"
+                                                value="Error" pos="13" line="44"/>
+                                          </children>
+                                        </children>
+                                      </children>
+                                    </children>
+                                    <children xsi:type="CST:Leaf" kind="TOKEN" value="("
+                                        pos="18" line="44"/>
+                                    <children xsi:type="CST:Node" kind="exprList">
+                                      <children xsi:type="CST:Node" kind="expression">
+                                        <children xsi:type="CST:Node" kind="simpleExpression">
+                                          <children xsi:type="CST:Node" kind="term">
+                                            <children xsi:type="CST:Node" kind="factor">
+                                              <children xsi:type="CST:Node" kind="designator">
+                                                <children xsi:type="CST:Node" kind="designatorSubPart">
+                                                  <children xsi:type="CST:Node" kind="designatorPart">
+                                                    <children xsi:type="CST:Leaf"
+                                                        kind="ID" value="QuotedStr"
+                                                        pos="19" line="44"/>
+                                                  </children>
+                                                </children>
+                                              </children>
+                                              <children xsi:type="CST:Leaf" kind="TOKEN"
+                                                  value="(" pos="28" line="44"/>
+                                              <children xsi:type="CST:Node" kind="exprList">
+                                                <children xsi:type="CST:Node" kind="expression">
+                                                  <children xsi:type="CST:Node" kind="simpleExpression">
+                                                    <children xsi:type="CST:Node"
+                                                        kind="term">
+                                                      <children xsi:type="CST:Node"
+                                                          kind="factor">
+                                                        <children xsi:type="CST:Node"
+                                                            kind="designator">
+                                                          <children xsi:type="CST:Node"
+                                                              kind="designatorSubPart">
+                                                            <children xsi:type="CST:Node"
+                                                                kind="designatorPart">
+                                                              <children xsi:type="CST:Leaf"
+                                                                  kind="ID" value="ed"
+                                                                  pos="29" line="44"/>
+                                                            </children>
+                                                          </children>
+                                                          <children xsi:type="CST:Leaf"
+                                                              kind="TOKEN" value="."
+                                                              pos="31" line="44"/>
+                                                          <children xsi:type="CST:Node"
+                                                              kind="designator">
+                                                            <children xsi:type="CST:Node"
+                                                                kind="designatorSubPart">
+                                                              <children xsi:type="CST:Node"
+                                                                  kind="designatorPart">
+                                                                <children xsi:type="CST:Leaf"
+                                                                    kind="ID" value="Text"
+                                                                    pos="32" line="44"/>
+                                                              </children>
+                                                            </children>
+                                                          </children>
+                                                        </children>
+                                                      </children>
+                                                    </children>
+                                                  </children>
+                                                </children>
+                                              </children>
+                                              <children xsi:type="CST:Leaf" kind="TOKEN"
+                                                  value=")" pos="36" line="44"/>
+                                            </children>
+                                          </children>
+                                          <children xsi:type="CST:Node" kind="addOp">
+                                            <children xsi:type="CST:Leaf" kind="TOKEN"
+                                                value="+" pos="38" line="44"/>
+                                          </children>
+                                          <children xsi:type="CST:Node" kind="term">
+                                            <children xsi:type="CST:Node" kind="factor">
+                                              <children xsi:type="CST:Node" kind="string">
+                                                <children xsi:type="CST:Leaf" kind="QVALUE"
+                                                    value="' no es una fecha válida'"
+                                                    pos="40" line="44"/>
+                                              </children>
+                                            </children>
+                                          </children>
+                                        </children>
+                                      </children>
+                                    </children>
+                                    <children xsi:type="CST:Leaf" kind="TOKEN" value=")"
+                                        pos="65" line="44"/>
+                                  </children>
+                                </children>
+                                <children xsi:type="CST:Leaf" kind="TOKEN" value=";"
+                                    pos="17" line="43"/>
+                              </children>
+                            </children>
+                            <children xsi:type="CST:Leaf" kind="TOKEN" value="end"
+                                pos="3" line="45"/>
+                          </children>
+                        </children>
+                      </children>
+                      <children xsi:type="CST:Leaf" kind="TOKEN" value=";" pos="6"
+                          line="45"/>
+                    </children>
+                    <children xsi:type="CST:Leaf" kind="TOKEN" value="end" line="46"/>
+                  </children>
+                </children>
+                <children xsi:type="CST:Leaf" kind="TOKEN" value=";" pos="3" line="46"/>
+              </children>
+            </children>
+          </children>
+          <children xsi:type="CST:Node" kind="declSection">
+            <children xsi:type="CST:Node" kind="procedureDeclSection">
+              <children xsi:type="CST:Node" kind="functionDecl">
+                <children xsi:type="CST:Node" kind="functionHeading">
+                  <children xsi:type="CST:Leaf" kind="TOKEN" value="class" line="48"/>
+                  <children xsi:type="CST:Leaf" kind="TOKEN" value="function" pos="6"
+                      line="48"/>
+                  <children xsi:type="CST:Node" kind="ident">
+                    <children xsi:type="CST:Leaf" kind="ID" value="TNumber" pos="15"
+                        line="48"/>
+                    <children xsi:type="CST:Leaf" kind="TOKEN" value="." pos="22"
+                        line="48"/>
+                    <children xsi:type="CST:Leaf" kind="ID" value="FloatSql" pos="23"
+                        line="48"/>
+                  </children>
+                  <children xsi:type="CST:Node" kind="formalParameters">
+                    <children xsi:type="CST:Leaf" kind="TOKEN" value="(" pos="31"
+                        line="48"/>
+                    <children xsi:type="CST:Node" kind="formalParm">
+                      <children xsi:type="CST:Leaf" kind="TOKEN" value="const" pos="32"
+                          line="48"/>
+                      <children xsi:type="CST:Node" kind="parameter">
+                        <children xsi:type="CST:Node" kind="identList">
+                          <children xsi:type="CST:Node" kind="ident">
+                            <children xsi:type="CST:Leaf" kind="ID" value="f" pos="38"
+                                line="48"/>
+                          </children>
+                        </children>
+                        <children xsi:type="CST:Leaf" kind="TOKEN" value=":" pos="39"
+                            line="48"/>
+                        <children xsi:type="CST:Node" kind="type">
+                          <children xsi:type="CST:Node" kind="typeId">
+                            <children xsi:type="CST:Node" kind="qualId">
+                              <children xsi:type="CST:Node" kind="ident">
+                                <children xsi:type="CST:Leaf" kind="ID" value="String"
+                                    pos="41" line="48"/>
+                              </children>
+                            </children>
+                          </children>
+                        </children>
+                      </children>
+                    </children>
+                    <children xsi:type="CST:Leaf" kind="TOKEN" value=")" pos="47"
+                        line="48"/>
+                  </children>
+                  <children xsi:type="CST:Leaf" kind="TOKEN" value=":" pos="48" line="48"/>
+                  <children xsi:type="CST:Node" kind="type">
+                    <children xsi:type="CST:Node" kind="stringType">
+                      <children xsi:type="CST:Leaf" kind="TOKEN" value="string" pos="49"
+                          line="48"/>
+                    </children>
+                  </children>
+                </children>
+                <children xsi:type="CST:Leaf" kind="TOKEN" value=";" pos="55" line="48"/>
+                <children xsi:type="CST:Node" kind="block">
+                  <children xsi:type="CST:Node" kind="compoundStmt">
+                    <children xsi:type="CST:Leaf" kind="TOKEN" value="begin" line="49"/>
+                    <children xsi:type="CST:Node" kind="stmtList">
+                      <children xsi:type="CST:Node" kind="statement">
+                        <children xsi:type="CST:Node" kind="simpleStatement">
+                          <children xsi:type="CST:Node" kind="designator">
+                            <children xsi:type="CST:Node" kind="designatorSubPart">
+                              <children xsi:type="CST:Node" kind="designatorPart">
+                                <children xsi:type="CST:Leaf" kind="ID" value="Result"
+                                    pos="3" line="50"/>
+                              </children>
+                            </children>
+                          </children>
+                          <children xsi:type="CST:Leaf" kind="TOKEN" value=":=" pos="10"
+                              line="50"/>
+                          <children xsi:type="CST:Node" kind="expression">
+                            <children xsi:type="CST:Node" kind="simpleExpression">
+                              <children xsi:type="CST:Node" kind="term">
+                                <children xsi:type="CST:Node" kind="factor">
+                                  <children xsi:type="CST:Node" kind="designator">
+                                    <children xsi:type="CST:Node" kind="designatorSubPart">
+                                      <children xsi:type="CST:Node" kind="designatorPart">
+                                        <children xsi:type="CST:Leaf" kind="ID" value="AnsiReplaceText"
+                                            pos="13" line="50"/>
+                                      </children>
+                                    </children>
+                                  </children>
+                                  <children xsi:type="CST:Leaf" kind="TOKEN" value="("
+                                      pos="28" line="50"/>
+                                  <children xsi:type="CST:Node" kind="exprList">
+                                    <children xsi:type="CST:Node" kind="expression">
+                                      <children xsi:type="CST:Node" kind="simpleExpression">
+                                        <children xsi:type="CST:Node" kind="term">
+                                          <children xsi:type="CST:Node" kind="factor">
+                                            <children xsi:type="CST:Node" kind="designator">
+                                              <children xsi:type="CST:Node" kind="designatorSubPart">
+                                                <children xsi:type="CST:Node" kind="designatorPart">
+                                                  <children xsi:type="CST:Leaf" kind="ID"
+                                                      value="f" pos="29" line="50"/>
+                                                </children>
+                                              </children>
+                                            </children>
+                                          </children>
+                                        </children>
+                                      </children>
+                                    </children>
+                                    <children xsi:type="CST:Leaf" kind="TOKEN" value=","
+                                        pos="35" line="50"/>
+                                    <children xsi:type="CST:Node" kind="expression">
+                                      <children xsi:type="CST:Node" kind="simpleExpression">
+                                        <children xsi:type="CST:Node" kind="term">
+                                          <children xsi:type="CST:Node" kind="factor">
+                                            <children xsi:type="CST:Node" kind="string">
+                                              <children xsi:type="CST:Leaf" kind="QVALUE"
+                                                  value="','" pos="32" line="50"/>
+                                            </children>
+                                          </children>
+                                        </children>
+                                      </children>
+                                    </children>
+                                    <children xsi:type="CST:Leaf" kind="TOKEN" value=","
+                                        pos="35" line="50"/>
+                                    <children xsi:type="CST:Node" kind="expression">
+                                      <children xsi:type="CST:Node" kind="simpleExpression">
+                                        <children xsi:type="CST:Node" kind="term">
+                                          <children xsi:type="CST:Node" kind="factor">
+                                            <children xsi:type="CST:Node" kind="string">
+                                              <children xsi:type="CST:Leaf" kind="QVALUE"
+                                                  value="'.'" pos="37" line="50"/>
+                                            </children>
+                                          </children>
+                                        </children>
+                                      </children>
+                                    </children>
+                                  </children>
+                                  <children xsi:type="CST:Leaf" kind="TOKEN" value=")"
+                                      pos="40" line="50"/>
+                                </children>
+                              </children>
+                            </children>
+                          </children>
+                        </children>
+                      </children>
+                      <children xsi:type="CST:Leaf" kind="TOKEN" value=";" pos="41"
+                          line="50"/>
+                    </children>
+                    <children xsi:type="CST:Leaf" kind="TOKEN" value="end" line="51"/>
+                  </children>
+                </children>
+                <children xsi:type="CST:Leaf" kind="TOKEN" value=";" pos="3" line="51"/>
+              </children>
+            </children>
+          </children>
+          <children xsi:type="CST:Node" kind="declSection">
+            <children xsi:type="CST:Node" kind="procedureDeclSection">
+              <children xsi:type="CST:Node" kind="functionDecl">
+                <children xsi:type="CST:Node" kind="functionHeading">
+                  <children xsi:type="CST:Leaf" kind="TOKEN" value="class" line="53"/>
+                  <children xsi:type="CST:Leaf" kind="TOKEN" value="function" pos="6"
+                      line="53"/>
+                  <children xsi:type="CST:Node" kind="ident">
+                    <children xsi:type="CST:Leaf" kind="ID" value="TNumber" pos="15"
+                        line="53"/>
+                    <children xsi:type="CST:Leaf" kind="TOKEN" value="." pos="22"
+                        line="53"/>
+                    <children xsi:type="CST:Leaf" kind="ID" value="FloatSql" pos="23"
+                        line="53"/>
+                  </children>
+                  <children xsi:type="CST:Node" kind="formalParameters">
+                    <children xsi:type="CST:Leaf" kind="TOKEN" value="(" pos="31"
+                        line="53"/>
+                    <children xsi:type="CST:Node" kind="formalParm">
+                      <children xsi:type="CST:Node" kind="parameter">
+                        <children xsi:type="CST:Node" kind="identList">
+                          <children xsi:type="CST:Node" kind="ident">
+                            <children xsi:type="CST:Leaf" kind="ID" value="f" pos="32"
+                                line="53"/>
+                          </children>
+                        </children>
+                        <children xsi:type="CST:Leaf" kind="TOKEN" value=":" pos="33"
+                            line="53"/>
+                        <children xsi:type="CST:Node" kind="type">
+                          <children xsi:type="CST:Node" kind="simpleType">
+                            <children xsi:type="CST:Node" kind="realType">
+                              <children xsi:type="CST:Leaf" kind="TOKEN" value="double"
+                                  pos="35" line="53"/>
+                            </children>
+                          </children>
+                        </children>
+                      </children>
+                    </children>
+                    <children xsi:type="CST:Leaf" kind="TOKEN" value=")" pos="41"
+                        line="53"/>
+                  </children>
+                  <children xsi:type="CST:Leaf" kind="TOKEN" value=":" pos="42" line="53"/>
+                  <children xsi:type="CST:Node" kind="type">
+                    <children xsi:type="CST:Node" kind="stringType">
+                      <children xsi:type="CST:Leaf" kind="TOKEN" value="string" pos="43"
+                          line="53"/>
+                    </children>
+                  </children>
+                </children>
+                <children xsi:type="CST:Leaf" kind="TOKEN" value=";" pos="49" line="53"/>
+                <children xsi:type="CST:Node" kind="block">
+                  <children xsi:type="CST:Node" kind="compoundStmt">
+                    <children xsi:type="CST:Leaf" kind="TOKEN" value="begin" line="54"/>
+                    <children xsi:type="CST:Node" kind="stmtList">
+                      <children xsi:type="CST:Node" kind="statement">
+                        <children xsi:type="CST:Node" kind="simpleStatement">
+                          <children xsi:type="CST:Node" kind="designator">
+                            <children xsi:type="CST:Node" kind="designatorSubPart">
+                              <children xsi:type="CST:Node" kind="designatorPart">
+                                <children xsi:type="CST:Leaf" kind="ID" value="Result"
+                                    pos="3" line="55"/>
+                              </children>
+                            </children>
+                          </children>
+                          <children xsi:type="CST:Leaf" kind="TOKEN" value=":=" pos="10"
+                              line="55"/>
+                          <children xsi:type="CST:Node" kind="expression">
+                            <children xsi:type="CST:Node" kind="simpleExpression">
+                              <children xsi:type="CST:Node" kind="term">
+                                <children xsi:type="CST:Node" kind="factor">
+                                  <children xsi:type="CST:Node" kind="designator">
+                                    <children xsi:type="CST:Node" kind="designatorSubPart">
+                                      <children xsi:type="CST:Node" kind="designatorPart">
+                                        <children xsi:type="CST:Leaf" kind="ID" value="FloatSql"
+                                            pos="13" line="55"/>
+                                      </children>
+                                    </children>
+                                  </children>
+                                  <children xsi:type="CST:Leaf" kind="TOKEN" value="("
+                                      pos="21" line="55"/>
+                                  <children xsi:type="CST:Node" kind="exprList">
+                                    <children xsi:type="CST:Node" kind="expression">
+                                      <children xsi:type="CST:Node" kind="simpleExpression">
+                                        <children xsi:type="CST:Node" kind="term">
+                                          <children xsi:type="CST:Node" kind="factor">
+                                            <children xsi:type="CST:Node" kind="designator">
+                                              <children xsi:type="CST:Node" kind="designatorSubPart">
+                                                <children xsi:type="CST:Node" kind="designatorPart">
+                                                  <children xsi:type="CST:Leaf" kind="ID"
+                                                      value="FloatToStr" pos="22"
+                                                      line="55"/>
+                                                </children>
+                                              </children>
+                                            </children>
+                                            <children xsi:type="CST:Leaf" kind="TOKEN"
+                                                value="(" pos="32" line="55"/>
+                                            <children xsi:type="CST:Node" kind="exprList">
+                                              <children xsi:type="CST:Node" kind="expression">
+                                                <children xsi:type="CST:Node" kind="simpleExpression">
+                                                  <children xsi:type="CST:Node" kind="term">
+                                                    <children xsi:type="CST:Node"
+                                                        kind="factor">
+                                                      <children xsi:type="CST:Node"
+                                                          kind="designator">
+                                                        <children xsi:type="CST:Node"
+                                                            kind="designatorSubPart">
+                                                          <children xsi:type="CST:Node"
+                                                              kind="designatorPart">
+                                                            <children xsi:type="CST:Leaf"
+                                                                kind="ID" value="f"
+                                                                pos="33" line="55"/>
+                                                          </children>
+                                                        </children>
+                                                      </children>
+                                                    </children>
+                                                  </children>
+                                                </children>
+                                              </children>
+                                            </children>
+                                            <children xsi:type="CST:Leaf" kind="TOKEN"
+                                                value=")" pos="34" line="55"/>
+                                          </children>
+                                        </children>
+                                      </children>
+                                    </children>
+                                  </children>
+                                  <children xsi:type="CST:Leaf" kind="TOKEN" value=")"
+                                      pos="35" line="55"/>
+                                </children>
+                              </children>
+                            </children>
+                          </children>
+                        </children>
+                      </children>
+                      <children xsi:type="CST:Leaf" kind="TOKEN" value=";" pos="36"
+                          line="55"/>
+                    </children>
+                    <children xsi:type="CST:Leaf" kind="TOKEN" value="end" line="56"/>
+                  </children>
+                </children>
+                <children xsi:type="CST:Leaf" kind="TOKEN" value=";" pos="3" line="56"/>
+              </children>
+            </children>
+          </children>
+        </children>
+        <children xsi:type="CST:Node" kind="initSection">
+          <children xsi:type="CST:Leaf" kind="TOKEN" value="end" line="58"/>
+        </children>
+        <children xsi:type="CST:Leaf" kind="TOKEN" value="." pos="3" line="58"/>
+      </children>
+    </children>
+  </children>
+</CST:Node>
