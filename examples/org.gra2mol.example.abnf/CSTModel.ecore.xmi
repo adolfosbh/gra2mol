@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CST:Node xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:CST="http://gts.inf.um.es/modernization/cst" kind="CST">
+  <children xsi:type="CST:Node" kind="file">
+    <children xsi:type="CST:Leaf" kind="path" value="D:\git\gra2mol\examples\org.gra2mol.example.abnf\.\examples\astm.abnf"/>
+    <children xsi:type="CST:Leaf" kind="filename" value="D:\git\gra2mol\examples\org.gra2mol.example.abnf\.\examples\astm.abnf"/>
+    <children xsi:type="CST:Node" kind="abnf_definition"/>
+  </children>
+</CST:Node>
