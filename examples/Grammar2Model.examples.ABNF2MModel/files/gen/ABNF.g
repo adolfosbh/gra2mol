@@ -91,7 +91,7 @@ hierarchy_rule returns [Node returnNode]
 	            } 
 	        }
 	    }
-	
+
 		// Create a special CST Node for terminal subclassIdGen aggregation
 		if($subclassIdGen != null) {
 	    for(int pos = 0; pos < $subclassIdGen.size(); pos++ )  { 
@@ -114,7 +114,7 @@ hierarchy_rule returns [Node returnNode]
 		}
 		}
 		}
-	
+
 	    // Create a Token CST Leaf	
 	    if($TK_0 != null) {
 			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();

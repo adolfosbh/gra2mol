@@ -1,4 +1,4 @@
-// $ANTLR 3.0.1 /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3 2009-05-13 11:37:15
+// $ANTLR 3.2 Sep 23, 2009 12:02:23 ABNF.g 2016-09-02 13:02:04
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -6,264 +6,295 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class ABNFLexer extends Lexer {
-    public static final int WS=8;
-    public static final int ARROW=5;
-    public static final int T10=10;
-    public static final int T11=11;
-    public static final int T12=12;
+    public static final int T__9=9;
     public static final int ABSTRACT=7;
-    public static final int T13=13;
-    public static final int T14=14;
-    public static final int T9=9;
-    public static final int T15=15;
-    public static final int ID=6;
-    public static final int Tokens=18;
-    public static final int T16=16;
-    public static final int EOF=-1;
-    public static final int T17=17;
+    public static final int ARROW=5;
+    public static final int T__15=15;
+    public static final int T__16=16;
+    public static final int T__17=17;
+    public static final int T__11=11;
+    public static final int T__12=12;
+    public static final int T__13=13;
     public static final int DOUBLEARROW=4;
+    public static final int T__14=14;
+    public static final int ID=6;
+    public static final int WS=8;
+    public static final int EOF=-1;
+    public static final int T__10=10;
+
+    // delegates
+    // delegators
+
     public ABNFLexer() {;} 
     public ABNFLexer(CharStream input) {
-        super(input);
+        this(input, new RecognizerSharedState());
     }
-    public String getGrammarFileName() { return "/home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3"; }
+    public ABNFLexer(CharStream input, RecognizerSharedState state) {
+        super(input,state);
 
-    // $ANTLR start T9
-    public final void mT9() throws RecognitionException {
+    }
+    public String getGrammarFileName() { return "ABNF.g"; }
+
+    // $ANTLR start "T__9"
+    public final void mT__9() throws RecognitionException {
         try {
-            int _type = T9;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:3:4: ( ';' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:3:6: ';'
+            int _type = T__9;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // ABNF.g:3:6: ( ';' )
+            // ABNF.g:3:8: ';'
             {
             match(';'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T9
+    // $ANTLR end "T__9"
 
-    // $ANTLR start T10
-    public final void mT10() throws RecognitionException {
+    // $ANTLR start "T__10"
+    public final void mT__10() throws RecognitionException {
         try {
-            int _type = T10;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:4:5: ( '[' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:4:7: '['
+            int _type = T__10;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // ABNF.g:4:7: ( '[' )
+            // ABNF.g:4:9: '['
             {
             match('['); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T10
+    // $ANTLR end "T__10"
 
-    // $ANTLR start T11
-    public final void mT11() throws RecognitionException {
+    // $ANTLR start "T__11"
+    public final void mT__11() throws RecognitionException {
         try {
-            int _type = T11;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:5:5: ( '<' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:5:7: '<'
+            int _type = T__11;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // ABNF.g:5:7: ( '<' )
+            // ABNF.g:5:9: '<'
             {
             match('<'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T11
+    // $ANTLR end "T__11"
 
-    // $ANTLR start T12
-    public final void mT12() throws RecognitionException {
+    // $ANTLR start "T__12"
+    public final void mT__12() throws RecognitionException {
         try {
-            int _type = T12;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:6:5: ( ':' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:6:7: ':'
+            int _type = T__12;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // ABNF.g:6:7: ( ':' )
+            // ABNF.g:6:9: ':'
             {
             match(':'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T12
+    // $ANTLR end "T__12"
 
-    // $ANTLR start T13
-    public final void mT13() throws RecognitionException {
+    // $ANTLR start "T__13"
+    public final void mT__13() throws RecognitionException {
         try {
-            int _type = T13;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:7:5: ( '>' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:7:7: '>'
+            int _type = T__13;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // ABNF.g:7:7: ( '>' )
+            // ABNF.g:7:9: '>'
             {
             match('>'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T13
+    // $ANTLR end "T__13"
 
-    // $ANTLR start T14
-    public final void mT14() throws RecognitionException {
+    // $ANTLR start "T__14"
+    public final void mT__14() throws RecognitionException {
         try {
-            int _type = T14;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:8:5: ( '*' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:8:7: '*'
+            int _type = T__14;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // ABNF.g:8:7: ( '*' )
+            // ABNF.g:8:9: '*'
             {
             match('*'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T14
+    // $ANTLR end "T__14"
 
-    // $ANTLR start T15
-    public final void mT15() throws RecognitionException {
+    // $ANTLR start "T__15"
+    public final void mT__15() throws RecognitionException {
         try {
-            int _type = T15;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:9:5: ( '+' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:9:7: '+'
+            int _type = T__15;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // ABNF.g:9:7: ( '+' )
+            // ABNF.g:9:9: '+'
             {
             match('+'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T15
+    // $ANTLR end "T__15"
 
-    // $ANTLR start T16
-    public final void mT16() throws RecognitionException {
+    // $ANTLR start "T__16"
+    public final void mT__16() throws RecognitionException {
         try {
-            int _type = T16;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:10:5: ( '?' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:10:7: '?'
+            int _type = T__16;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // ABNF.g:10:7: ( '?' )
+            // ABNF.g:10:9: '?'
             {
             match('?'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T16
+    // $ANTLR end "T__16"
 
-    // $ANTLR start T17
-    public final void mT17() throws RecognitionException {
+    // $ANTLR start "T__17"
+    public final void mT__17() throws RecognitionException {
         try {
-            int _type = T17;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:11:5: ( ']' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:11:7: ']'
+            int _type = T__17;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // ABNF.g:11:7: ( ']' )
+            // ABNF.g:11:9: ']'
             {
             match(']'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T17
+    // $ANTLR end "T__17"
 
-    // $ANTLR start ABSTRACT
+    // $ANTLR start "ABSTRACT"
     public final void mABSTRACT() throws RecognitionException {
         try {
             int _type = ABSTRACT;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:349:10: ( '!' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:349:12: '!'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // ABNF.g:349:10: ( '!' )
+            // ABNF.g:349:12: '!'
             {
             match('!'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end ABSTRACT
+    // $ANTLR end "ABSTRACT"
 
-    // $ANTLR start ARROW
+    // $ANTLR start "ARROW"
     public final void mARROW() throws RecognitionException {
         try {
             int _type = ARROW;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:350:8: ( '->' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:350:10: '->'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // ABNF.g:350:8: ( '->' )
+            // ABNF.g:350:10: '->'
             {
             match("->"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end ARROW
+    // $ANTLR end "ARROW"
 
-    // $ANTLR start DOUBLEARROW
+    // $ANTLR start "DOUBLEARROW"
     public final void mDOUBLEARROW() throws RecognitionException {
         try {
             int _type = DOUBLEARROW;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:351:13: ( '=>' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:351:15: '=>'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // ABNF.g:351:13: ( '=>' )
+            // ABNF.g:351:15: '=>'
             {
             match("=>"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end DOUBLEARROW
+    // $ANTLR end "DOUBLEARROW"
 
-    // $ANTLR start ID
+    // $ANTLR start "ID"
     public final void mID() throws RecognitionException {
         try {
             int _type = ID;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:352:7: ( ( 'a' .. 'z' | 'A' .. 'Z' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' | '$' | '#' | '-' )* )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:352:9: ( 'a' .. 'z' | 'A' .. 'Z' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' | '$' | '#' | '-' )*
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // ABNF.g:352:7: ( ( 'a' .. 'z' | 'A' .. 'Z' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' | '$' | '#' | '-' )* )
+            // ABNF.g:352:9: ( 'a' .. 'z' | 'A' .. 'Z' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' | '$' | '#' | '-' )*
             {
             if ( (input.LA(1)>='A' && input.LA(1)<='Z')||(input.LA(1)>='a' && input.LA(1)<='z') ) {
                 input.consume();
 
             }
             else {
-                MismatchedSetException mse =
-                    new MismatchedSetException(null,input);
-                recover(mse);    throw mse;
-            }
+                MismatchedSetException mse = new MismatchedSetException(null,input);
+                recover(mse);
+                throw mse;}
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:352:31: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' | '$' | '#' | '-' )*
+            // ABNF.g:352:31: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' | '$' | '#' | '-' )*
             loop1:
             do {
                 int alt1=2;
@@ -276,17 +307,16 @@ public class ABNFLexer extends Lexer {
 
                 switch (alt1) {
             	case 1 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:
+            	    // ABNF.g:
             	    {
             	    if ( (input.LA(1)>='#' && input.LA(1)<='$')||input.LA(1)=='-'||(input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z') ) {
             	        input.consume();
 
             	    }
             	    else {
-            	        MismatchedSetException mse =
-            	            new MismatchedSetException(null,input);
-            	        recover(mse);    throw mse;
-            	    }
+            	        MismatchedSetException mse = new MismatchedSetException(null,input);
+            	        recover(mse);
+            	        throw mse;}
 
 
             	    }
@@ -300,21 +330,23 @@ public class ABNFLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end ID
+    // $ANTLR end "ID"
 
-    // $ANTLR start WS
+    // $ANTLR start "WS"
     public final void mWS() throws RecognitionException {
         try {
             int _type = WS;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:353:7: ( ( ' ' | '\\t' | '\\n' | '\\r' )+ )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:353:9: ( ' ' | '\\t' | '\\n' | '\\r' )+
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // ABNF.g:353:7: ( ( ' ' | '\\t' | '\\n' | '\\r' )+ )
+            // ABNF.g:353:9: ( ' ' | '\\t' | '\\n' | '\\r' )+
             {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:353:9: ( ' ' | '\\t' | '\\n' | '\\r' )+
+            // ABNF.g:353:9: ( ' ' | '\\t' | '\\n' | '\\r' )+
             int cnt2=0;
             loop2:
             do {
@@ -328,17 +360,16 @@ public class ABNFLexer extends Lexer {
 
                 switch (alt2) {
             	case 1 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:
+            	    // ABNF.g:
             	    {
             	    if ( (input.LA(1)>='\t' && input.LA(1)<='\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
             	        input.consume();
 
             	    }
             	    else {
-            	        MismatchedSetException mse =
-            	            new MismatchedSetException(null,input);
-            	        recover(mse);    throw mse;
-            	    }
+            	        MismatchedSetException mse = new MismatchedSetException(null,input);
+            	        recover(mse);
+            	        throw mse;}
 
 
             	    }
@@ -353,19 +384,20 @@ public class ABNFLexer extends Lexer {
                 cnt2++;
             } while (true);
 
-            channel=HIDDEN;
+            _channel=HIDDEN;
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end WS
+    // $ANTLR end "WS"
 
     public void mTokens() throws RecognitionException {
-        // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:1:8: ( T9 | T10 | T11 | T12 | T13 | T14 | T15 | T16 | T17 | ABSTRACT | ARROW | DOUBLEARROW | ID | WS )
+        // ABNF.g:1:8: ( T__9 | T__10 | T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | ABSTRACT | ARROW | DOUBLEARROW | ID | WS )
         int alt3=14;
         switch ( input.LA(1) ) {
         case ';':
@@ -494,105 +526,105 @@ public class ABNFLexer extends Lexer {
             break;
         default:
             NoViableAltException nvae =
-                new NoViableAltException("1:1: Tokens : ( T9 | T10 | T11 | T12 | T13 | T14 | T15 | T16 | T17 | ABSTRACT | ARROW | DOUBLEARROW | ID | WS );", 3, 0, input);
+                new NoViableAltException("", 3, 0, input);
 
             throw nvae;
         }
 
         switch (alt3) {
             case 1 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:1:10: T9
+                // ABNF.g:1:10: T__9
                 {
-                mT9(); 
+                mT__9(); 
 
                 }
                 break;
             case 2 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:1:13: T10
+                // ABNF.g:1:15: T__10
                 {
-                mT10(); 
+                mT__10(); 
 
                 }
                 break;
             case 3 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:1:17: T11
+                // ABNF.g:1:21: T__11
                 {
-                mT11(); 
+                mT__11(); 
 
                 }
                 break;
             case 4 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:1:21: T12
+                // ABNF.g:1:27: T__12
                 {
-                mT12(); 
+                mT__12(); 
 
                 }
                 break;
             case 5 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:1:25: T13
+                // ABNF.g:1:33: T__13
                 {
-                mT13(); 
+                mT__13(); 
 
                 }
                 break;
             case 6 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:1:29: T14
+                // ABNF.g:1:39: T__14
                 {
-                mT14(); 
+                mT__14(); 
 
                 }
                 break;
             case 7 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:1:33: T15
+                // ABNF.g:1:45: T__15
                 {
-                mT15(); 
+                mT__15(); 
 
                 }
                 break;
             case 8 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:1:37: T16
+                // ABNF.g:1:51: T__16
                 {
-                mT16(); 
+                mT__16(); 
 
                 }
                 break;
             case 9 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:1:41: T17
+                // ABNF.g:1:57: T__17
                 {
-                mT17(); 
+                mT__17(); 
 
                 }
                 break;
             case 10 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:1:45: ABSTRACT
+                // ABNF.g:1:63: ABSTRACT
                 {
                 mABSTRACT(); 
 
                 }
                 break;
             case 11 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:1:54: ARROW
+                // ABNF.g:1:72: ARROW
                 {
                 mARROW(); 
 
                 }
                 break;
             case 12 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:1:60: DOUBLEARROW
+                // ABNF.g:1:78: DOUBLEARROW
                 {
                 mDOUBLEARROW(); 
 
                 }
                 break;
             case 13 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:1:72: ID
+                // ABNF.g:1:90: ID
                 {
                 mID(); 
 
                 }
                 break;
             case 14 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.ABNF2MModel/files/gen/ABNF.ge3:1:75: WS
+                // ABNF.g:1:93: WS
                 {
                 mWS(); 
 
