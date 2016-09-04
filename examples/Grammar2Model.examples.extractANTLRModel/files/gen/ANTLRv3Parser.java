@@ -1,4 +1,4 @@
-// $ANTLR 3.0.1 /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3 2009-01-12 17:09:08
+// $ANTLR 3.2 Sep 23, 2009 12:02:23 ANTLRv3.g 2016-09-04 11:41:22
 
 	import gts.modernization.model.CST.impl.*;
 	import gts.modernization.model.CST.*;
@@ -18,71 +18,108 @@ public class ANTLRv3Parser extends Parser {
     public static final String[] tokenNames = new String[] {
         "<invalid>", "<EOR>", "<DOWN>", "<UP>", "DOC_COMMENT", "PARSER", "LEXER", "RULE", "BLOCK", "OPTIONAL", "CLOSURE", "POSITIVE_CLOSURE", "SYNPRED", "RANGE", "CHAR_RANGE", "EPSILON", "ALT", "EOR", "EOB", "EOA", "ID", "ARG", "ARGLIST", "RET", "LEXER_GRAMMAR", "PARSER_GRAMMAR", "TREE_GRAMMAR", "COMBINED_GRAMMAR", "INITACTION", "LABEL", "TEMPLATE", "SCOPE", "SEMPRED", "GATED_SEMPRED", "SYN_SEMPRED", "BACKTRACK_SEMPRED", "FRAGMENT", "TREE_BEGIN", "ROOT", "BANG", "REWRITE", "TOKENS", "TOKEN_REF", "STRING_LITERAL", "CHAR_LITERAL", "ACTION", "OPTIONS", "INT", "ARG_ACTION", "RULE_REF", "DOUBLE_QUOTE_STRING_LITERAL", "DOUBLE_ANGLE_STRING_LITERAL", "SRC", "SL_COMMENT", "ML_COMMENT", "LITERAL_CHAR", "ESC", "XDIGIT", "NESTED_ARG_ACTION", "ACTION_STRING_LITERAL", "ACTION_CHAR_LITERAL", "NESTED_ACTION", "ACTION_ESC", "WS_LOOP", "WS", "'lexer'", "'parser'", "'tree'", "'grammar'", "';'", "'}'", "'='", "'@'", "'::'", "'*'", "'protected'", "'public'", "'private'", "'returns'", "':'", "'throws'", "','", "'('", "'|'", "')'", "'catch'", "'finally'", "'+='", "'=>'", "'~'", "'?'", "'+'", "'.'", "'$'"
     };
-    public static final int NESTED_ACTION=61;
-    public static final int BACKTRACK_SEMPRED=35;
-    public static final int DOUBLE_ANGLE_STRING_LITERAL=51;
-    public static final int ESC=56;
-    public static final int LEXER_GRAMMAR=24;
-    public static final int FRAGMENT=36;
-    public static final int EOA=19;
-    public static final int ARGLIST=22;
-    public static final int ID=20;
-    public static final int EOF=-1;
-    public static final int TREE_BEGIN=37;
-    public static final int SEMPRED=32;
-    public static final int ACTION=45;
-    public static final int EOB=18;
-    public static final int TOKEN_REF=42;
-    public static final int ML_COMMENT=54;
-    public static final int RET=23;
-    public static final int STRING_LITERAL=43;
-    public static final int ALT=16;
-    public static final int ARG=21;
-    public static final int SCOPE=31;
-    public static final int EOR=17;
-    public static final int ARG_ACTION=48;
-    public static final int DOC_COMMENT=4;
-    public static final int DOUBLE_QUOTE_STRING_LITERAL=50;
-    public static final int NESTED_ARG_ACTION=58;
-    public static final int ACTION_CHAR_LITERAL=60;
-    public static final int INITACTION=28;
-    public static final int RULE=7;
-    public static final int ACTION_ESC=62;
     public static final int PARSER_GRAMMAR=25;
-    public static final int SRC=52;
-    public static final int WS_LOOP=63;
-    public static final int RANGE=13;
-    public static final int TOKENS=41;
-    public static final int LITERAL_CHAR=55;
-    public static final int GATED_SEMPRED=33;
-    public static final int ACTION_STRING_LITERAL=59;
-    public static final int INT=47;
-    public static final int CHAR_RANGE=14;
-    public static final int BANG=39;
-    public static final int EPSILON=15;
-    public static final int ROOT=38;
-    public static final int RULE_REF=49;
     public static final int REWRITE=40;
-    public static final int SYNPRED=12;
-    public static final int OPTIONAL=9;
-    public static final int WS=64;
-    public static final int COMBINED_GRAMMAR=27;
+    public static final int INITACTION=28;
+    public static final int TREE_BEGIN=37;
+    public static final int EPSILON=15;
+    public static final int FRAGMENT=36;
+    public static final int LITERAL_CHAR=55;
+    public static final int WS_LOOP=63;
+    public static final int SEMPRED=32;
+    public static final int ID=20;
+    public static final int ACTION_STRING_LITERAL=59;
+    public static final int LEXER_GRAMMAR=24;
+    public static final int DOUBLE_QUOTE_STRING_LITERAL=50;
+    public static final int PARSER=5;
+    public static final int BANG=39;
+    public static final int OPTIONS=46;
+    public static final int NESTED_ARG_ACTION=58;
+    public static final int ARG=21;
+    public static final int T__66=66;
+    public static final int T__67=67;
+    public static final int T__68=68;
+    public static final int T__69=69;
     public static final int CHAR_LITERAL=44;
+    public static final int SYNPRED=12;
+    public static final int TREE_GRAMMAR=26;
+    public static final int T__65=65;
+    public static final int ACTION_CHAR_LITERAL=60;
+    public static final int TOKENS=41;
+    public static final int DOC_COMMENT=4;
+    public static final int ESC=56;
+    public static final int ARG_ACTION=48;
+    public static final int CLOSURE=10;
+    public static final int SL_COMMENT=53;
+    public static final int T__91=91;
+    public static final int RET=23;
+    public static final int T__92=92;
+    public static final int T__93=93;
+    public static final int SCOPE=31;
+    public static final int T__90=90;
+    public static final int ALT=16;
+    public static final int RULE_REF=49;
+    public static final int BACKTRACK_SEMPRED=35;
+    public static final int OPTIONAL=9;
+    public static final int ACTION_ESC=62;
+    public static final int TOKEN_REF=42;
     public static final int LABEL=29;
     public static final int TEMPLATE=30;
     public static final int SYN_SEMPRED=34;
     public static final int LEXER=6;
-    public static final int XDIGIT=57;
     public static final int BLOCK=8;
-    public static final int SL_COMMENT=53;
-    public static final int TREE_GRAMMAR=26;
-    public static final int CLOSURE=10;
-    public static final int PARSER=5;
+    public static final int ARGLIST=22;
+    public static final int GATED_SEMPRED=33;
+    public static final int RANGE=13;
+    public static final int XDIGIT=57;
+    public static final int T__70=70;
+    public static final int T__71=71;
+    public static final int T__72=72;
+    public static final int ROOT=38;
+    public static final int SRC=52;
+    public static final int INT=47;
+    public static final int CHAR_RANGE=14;
+    public static final int DOUBLE_ANGLE_STRING_LITERAL=51;
+    public static final int EOA=19;
+    public static final int T__77=77;
+    public static final int T__78=78;
+    public static final int EOB=18;
+    public static final int T__79=79;
+    public static final int RULE=7;
+    public static final int T__73=73;
+    public static final int WS=64;
+    public static final int EOF=-1;
+    public static final int T__74=74;
+    public static final int T__75=75;
+    public static final int T__76=76;
+    public static final int T__80=80;
+    public static final int T__81=81;
+    public static final int T__82=82;
+    public static final int T__83=83;
     public static final int POSITIVE_CLOSURE=11;
-    public static final int OPTIONS=46;
+    public static final int EOR=17;
+    public static final int COMBINED_GRAMMAR=27;
+    public static final int ACTION=45;
+    public static final int ML_COMMENT=54;
+    public static final int T__88=88;
+    public static final int T__89=89;
+    public static final int STRING_LITERAL=43;
+    public static final int T__84=84;
+    public static final int T__85=85;
+    public static final int T__86=86;
+    public static final int NESTED_ACTION=61;
+    public static final int T__87=87;
+
+    // delegates
+    // delegators
+
 
         public ANTLRv3Parser(TokenStream input) {
-            super(input);
+            this(input, new RecognizerSharedState());
+        }
+        public ANTLRv3Parser(TokenStream input, RecognizerSharedState state) {
+            super(input, state);
+             
         }
         
     protected StringTemplateGroup templateLib =
@@ -108,10 +145,10 @@ public class ANTLRv3Parser extends Parser {
       }
     }
 
-    public String[] getTokenNames() { return tokenNames; }
-    public String getGrammarFileName() { return "/home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3"; }
+    public String[] getTokenNames() { return ANTLRv3Parser.tokenNames; }
+    public String getGrammarFileName() { return "ANTLRv3.g"; }
 
-    
+
     	int gtype;
 
 
@@ -122,10 +159,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start grammarDef
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:65:1: grammarDef returns [Node returnNode] : (DOC_COMMENTGen= DOC_COMMENT )? (TK_0= 'lexer' | TK_1= 'parser' | TK_2= 'tree' | ) TK_3= 'grammar' idGen+= id TK_4= ';' (optionsSpecGen+= optionsSpec )? (tokensSpecGen+= tokensSpec )? (attrScopeGen+= attrScope )* (actionGen+= action )* (ruleGen+= rule )+ EOFGen= EOF ;
-    public final grammarDef_return grammarDef() throws RecognitionException {
-        grammarDef_return retval = new grammarDef_return();
+    // $ANTLR start "grammarDef"
+    // ANTLRv3.g:65:1: grammarDef returns [Node returnNode] : (DOC_COMMENTGen= DOC_COMMENT )? (TK_0= 'lexer' | TK_1= 'parser' | TK_2= 'tree' | ) TK_3= 'grammar' idGen+= id TK_4= ';' (optionsSpecGen+= optionsSpec )? (tokensSpecGen+= tokensSpec )? (attrScopeGen+= attrScope )* (actionGen+= action )* (ruleGen+= rule )+ EOFGen= EOF ;
+    public final ANTLRv3Parser.grammarDef_return grammarDef() throws RecognitionException {
+        ANTLRv3Parser.grammarDef_return retval = new ANTLRv3Parser.grammarDef_return();
         retval.start = input.LT(1);
 
         Token DOC_COMMENTGen=null;
@@ -148,10 +185,10 @@ public class ANTLRv3Parser extends Parser {
         RuleReturnScope actionGen = null;
         RuleReturnScope ruleGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:66:1: ( (DOC_COMMENTGen= DOC_COMMENT )? (TK_0= 'lexer' | TK_1= 'parser' | TK_2= 'tree' | ) TK_3= 'grammar' idGen+= id TK_4= ';' (optionsSpecGen+= optionsSpec )? (tokensSpecGen+= tokensSpec )? (attrScopeGen+= attrScope )* (actionGen+= action )* (ruleGen+= rule )+ EOFGen= EOF )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:66:5: (DOC_COMMENTGen= DOC_COMMENT )? (TK_0= 'lexer' | TK_1= 'parser' | TK_2= 'tree' | ) TK_3= 'grammar' idGen+= id TK_4= ';' (optionsSpecGen+= optionsSpec )? (tokensSpecGen+= tokensSpec )? (attrScopeGen+= attrScope )* (actionGen+= action )* (ruleGen+= rule )+ EOFGen= EOF
+            // ANTLRv3.g:66:1: ( (DOC_COMMENTGen= DOC_COMMENT )? (TK_0= 'lexer' | TK_1= 'parser' | TK_2= 'tree' | ) TK_3= 'grammar' idGen+= id TK_4= ';' (optionsSpecGen+= optionsSpec )? (tokensSpecGen+= tokensSpec )? (attrScopeGen+= attrScope )* (actionGen+= action )* (ruleGen+= rule )+ EOFGen= EOF )
+            // ANTLRv3.g:66:5: (DOC_COMMENTGen= DOC_COMMENT )? (TK_0= 'lexer' | TK_1= 'parser' | TK_2= 'tree' | ) TK_3= 'grammar' idGen+= id TK_4= ';' (optionsSpecGen+= optionsSpec )? (tokensSpecGen+= tokensSpec )? (attrScopeGen+= attrScope )* (actionGen+= action )* (ruleGen+= rule )+ EOFGen= EOF
             {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:66:19: (DOC_COMMENTGen= DOC_COMMENT )?
+            // ANTLRv3.g:66:19: (DOC_COMMENTGen= DOC_COMMENT )?
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -160,17 +197,16 @@ public class ANTLRv3Parser extends Parser {
             }
             switch (alt1) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:66:19: DOC_COMMENTGen= DOC_COMMENT
+                    // ANTLRv3.g:66:19: DOC_COMMENTGen= DOC_COMMENT
                     {
-                    DOC_COMMENTGen=(Token)input.LT(1);
-                    match(input,DOC_COMMENT,FOLLOW_DOC_COMMENT_in_grammarDef337); 
+                    DOC_COMMENTGen=(Token)match(input,DOC_COMMENT,FOLLOW_DOC_COMMENT_in_grammarDef337); 
 
                     }
                     break;
 
             }
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:67:6: (TK_0= 'lexer' | TK_1= 'parser' | TK_2= 'tree' | )
+            // ANTLRv3.g:67:6: (TK_0= 'lexer' | TK_1= 'parser' | TK_2= 'tree' | )
             int alt2=4;
             switch ( input.LA(1) ) {
             case 65:
@@ -195,56 +231,52 @@ public class ANTLRv3Parser extends Parser {
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("67:6: (TK_0= 'lexer' | TK_1= 'parser' | TK_2= 'tree' | )", 2, 0, input);
+                    new NoViableAltException("", 2, 0, input);
 
                 throw nvae;
             }
 
             switch (alt2) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:67:8: TK_0= 'lexer'
+                    // ANTLRv3.g:67:8: TK_0= 'lexer'
                     {
-                    TK_0=(Token)input.LT(1);
-                    match(input,65,FOLLOW_65_in_grammarDef349); 
+                    TK_0=(Token)match(input,65,FOLLOW_65_in_grammarDef349); 
 
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:68:10: TK_1= 'parser'
+                    // ANTLRv3.g:68:10: TK_1= 'parser'
                     {
-                    TK_1=(Token)input.LT(1);
-                    match(input,66,FOLLOW_66_in_grammarDef363); 
+                    TK_1=(Token)match(input,66,FOLLOW_66_in_grammarDef363); 
 
                     }
                     break;
                 case 3 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:69:10: TK_2= 'tree'
+                    // ANTLRv3.g:69:10: TK_2= 'tree'
                     {
-                    TK_2=(Token)input.LT(1);
-                    match(input,67,FOLLOW_67_in_grammarDef377); 
+                    TK_2=(Token)match(input,67,FOLLOW_67_in_grammarDef377); 
 
                     }
                     break;
                 case 4 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:71:6: 
+                    // ANTLRv3.g:71:6: 
                     {
                     }
                     break;
 
             }
 
-            TK_3=(Token)input.LT(1);
-            match(input,68,FOLLOW_68_in_grammarDef410); 
+            TK_3=(Token)match(input,68,FOLLOW_68_in_grammarDef410); 
             pushFollow(FOLLOW_id_in_grammarDef414);
             idGen=id();
-            _fsp--;
+
+            state._fsp--;
 
             if (list_idGen==null) list_idGen=new ArrayList();
             list_idGen.add(idGen);
 
-            TK_4=(Token)input.LT(1);
-            match(input,69,FOLLOW_69_in_grammarDef418); 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:72:54: (optionsSpecGen+= optionsSpec )?
+            TK_4=(Token)match(input,69,FOLLOW_69_in_grammarDef418); 
+            // ANTLRv3.g:72:54: (optionsSpecGen+= optionsSpec )?
             int alt3=2;
             int LA3_0 = input.LA(1);
 
@@ -253,11 +285,12 @@ public class ANTLRv3Parser extends Parser {
             }
             switch (alt3) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:72:54: optionsSpecGen+= optionsSpec
+                    // ANTLRv3.g:72:54: optionsSpecGen+= optionsSpec
                     {
                     pushFollow(FOLLOW_optionsSpec_in_grammarDef422);
                     optionsSpecGen=optionsSpec();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_optionsSpecGen==null) list_optionsSpecGen=new ArrayList();
                     list_optionsSpecGen.add(optionsSpecGen);
@@ -268,7 +301,7 @@ public class ANTLRv3Parser extends Parser {
 
             }
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:72:82: (tokensSpecGen+= tokensSpec )?
+            // ANTLRv3.g:72:82: (tokensSpecGen+= tokensSpec )?
             int alt4=2;
             int LA4_0 = input.LA(1);
 
@@ -277,11 +310,12 @@ public class ANTLRv3Parser extends Parser {
             }
             switch (alt4) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:72:82: tokensSpecGen+= tokensSpec
+                    // ANTLRv3.g:72:82: tokensSpecGen+= tokensSpec
                     {
                     pushFollow(FOLLOW_tokensSpec_in_grammarDef427);
                     tokensSpecGen=tokensSpec();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_tokensSpecGen==null) list_tokensSpecGen=new ArrayList();
                     list_tokensSpecGen.add(tokensSpecGen);
@@ -292,7 +326,7 @@ public class ANTLRv3Parser extends Parser {
 
             }
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:72:108: (attrScopeGen+= attrScope )*
+            // ANTLRv3.g:72:108: (attrScopeGen+= attrScope )*
             loop5:
             do {
                 int alt5=2;
@@ -305,11 +339,12 @@ public class ANTLRv3Parser extends Parser {
 
                 switch (alt5) {
             	case 1 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:72:108: attrScopeGen+= attrScope
+            	    // ANTLRv3.g:72:108: attrScopeGen+= attrScope
             	    {
             	    pushFollow(FOLLOW_attrScope_in_grammarDef432);
             	    attrScopeGen=attrScope();
-            	    _fsp--;
+
+            	    state._fsp--;
 
             	    if (list_attrScopeGen==null) list_attrScopeGen=new ArrayList();
             	    list_attrScopeGen.add(attrScopeGen);
@@ -323,7 +358,7 @@ public class ANTLRv3Parser extends Parser {
                 }
             } while (true);
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:72:130: (actionGen+= action )*
+            // ANTLRv3.g:72:130: (actionGen+= action )*
             loop6:
             do {
                 int alt6=2;
@@ -336,11 +371,12 @@ public class ANTLRv3Parser extends Parser {
 
                 switch (alt6) {
             	case 1 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:72:130: actionGen+= action
+            	    // ANTLRv3.g:72:130: actionGen+= action
             	    {
             	    pushFollow(FOLLOW_action_in_grammarDef437);
             	    actionGen=action();
-            	    _fsp--;
+
+            	    state._fsp--;
 
             	    if (list_actionGen==null) list_actionGen=new ArrayList();
             	    list_actionGen.add(actionGen);
@@ -354,7 +390,7 @@ public class ANTLRv3Parser extends Parser {
                 }
             } while (true);
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:73:13: (ruleGen+= rule )+
+            // ANTLRv3.g:73:13: (ruleGen+= rule )+
             int cnt7=0;
             loop7:
             do {
@@ -368,11 +404,12 @@ public class ANTLRv3Parser extends Parser {
 
                 switch (alt7) {
             	case 1 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:73:13: ruleGen+= rule
+            	    // ANTLRv3.g:73:13: ruleGen+= rule
             	    {
             	    pushFollow(FOLLOW_rule_in_grammarDef447);
             	    ruleGen=rule();
-            	    _fsp--;
+
+            	    state._fsp--;
 
             	    if (list_ruleGen==null) list_ruleGen=new ArrayList();
             	    list_ruleGen.add(ruleGen);
@@ -390,9 +427,8 @@ public class ANTLRv3Parser extends Parser {
                 cnt7++;
             } while (true);
 
-            EOFGen=(Token)input.LT(1);
-            match(input,EOF,FOLLOW_EOF_in_grammarDef457); 
-            
+            EOFGen=(Token)match(input,EOF,FOLLOW_EOF_in_grammarDef457); 
+
             		// Create return CST Node
             		Node grammarDefReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		grammarDefReturnNode.setKind("grammarDef");
@@ -400,7 +436,7 @@ public class ANTLRv3Parser extends Parser {
             		if(DOC_COMMENTGen != null) {
             			Leaf DOC_COMMENTGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			DOC_COMMENTGenLeaf.setKind("DOC_COMMENT");
-            			DOC_COMMENTGenLeaf.setValue(DOC_COMMENTGen.getText());
+            			DOC_COMMENTGenLeaf.setValue((DOC_COMMENTGen!=null?DOC_COMMENTGen.getText():null));
             			DOC_COMMENTGenLeaf.setPos(DOC_COMMENTGen.getCharPositionInLine());
             			DOC_COMMENTGenLeaf.setLine(DOC_COMMENTGen.getLine());
             			grammarDefReturnNode.getChildren().add(DOC_COMMENTGenLeaf);
@@ -409,7 +445,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_0 != null) {
             			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_0Leaf.setKind("TOKEN");
-            	 		TK_0Leaf.setValue(TK_0.getText());
+            	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
             			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
             			TK_0Leaf.setLine(TK_0.getLine());
             	 		grammarDefReturnNode.getChildren().add(TK_0Leaf);
@@ -418,7 +454,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_1 != null) {
             			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_1Leaf.setKind("TOKEN");
-            	 		TK_1Leaf.setValue(TK_1.getText());
+            	 		TK_1Leaf.setValue((TK_1!=null?TK_1.getText():null));
             			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
             			TK_1Leaf.setLine(TK_1.getLine());
             	 		grammarDefReturnNode.getChildren().add(TK_1Leaf);
@@ -427,7 +463,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_2 != null) {
             			Leaf TK_2Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_2Leaf.setKind("TOKEN");
-            	 		TK_2Leaf.setValue(TK_2.getText());
+            	 		TK_2Leaf.setValue((TK_2!=null?TK_2.getText():null));
             			TK_2Leaf.setPos(TK_2.getCharPositionInLine());
             			TK_2Leaf.setLine(TK_2.getLine());
             	 		grammarDefReturnNode.getChildren().add(TK_2Leaf);
@@ -436,7 +472,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_3 != null) {
             			Leaf TK_3Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_3Leaf.setKind("TOKEN");
-            	 		TK_3Leaf.setValue(TK_3.getText());
+            	 		TK_3Leaf.setValue((TK_3!=null?TK_3.getText():null));
             			TK_3Leaf.setPos(TK_3.getCharPositionInLine());
             			TK_3Leaf.setLine(TK_3.getLine());
             	 		grammarDefReturnNode.getChildren().add(TK_3Leaf);
@@ -455,7 +491,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_4 != null) {
             			Leaf TK_4Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_4Leaf.setKind("TOKEN");
-            	 		TK_4Leaf.setValue(TK_4.getText());
+            	 		TK_4Leaf.setValue((TK_4!=null?TK_4.getText():null));
             			TK_4Leaf.setPos(TK_4.getCharPositionInLine());
             			TK_4Leaf.setLine(TK_4.getLine());
             	 		grammarDefReturnNode.getChildren().add(TK_4Leaf);
@@ -514,7 +550,7 @@ public class ANTLRv3Parser extends Parser {
             		if(EOFGen != null) {
             			Leaf EOFGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			EOFGenLeaf.setKind("EOF");
-            			EOFGenLeaf.setValue(EOFGen.getText());
+            			EOFGenLeaf.setValue((EOFGen!=null?EOFGen.getText():null));
             			EOFGenLeaf.setPos(EOFGen.getCharPositionInLine());
             			EOFGenLeaf.setLine(EOFGen.getLine());
             			grammarDefReturnNode.getChildren().add(EOFGenLeaf);
@@ -536,7 +572,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end grammarDef
+    // $ANTLR end "grammarDef"
 
     public static class tokensSpec_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -545,10 +581,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start tokensSpec
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:207:1: tokensSpec returns [Node returnNode] : TOKENSGen= TOKENS (tokenSpecGen+= tokenSpec )+ TK_0= '}' ;
-    public final tokensSpec_return tokensSpec() throws RecognitionException {
-        tokensSpec_return retval = new tokensSpec_return();
+    // $ANTLR start "tokensSpec"
+    // ANTLRv3.g:207:1: tokensSpec returns [Node returnNode] : TOKENSGen= TOKENS (tokenSpecGen+= tokenSpec )+ TK_0= '}' ;
+    public final ANTLRv3Parser.tokensSpec_return tokensSpec() throws RecognitionException {
+        ANTLRv3Parser.tokensSpec_return retval = new ANTLRv3Parser.tokensSpec_return();
         retval.start = input.LT(1);
 
         Token TOKENSGen=null;
@@ -556,12 +592,11 @@ public class ANTLRv3Parser extends Parser {
         List list_tokenSpecGen=null;
         RuleReturnScope tokenSpecGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:208:1: (TOKENSGen= TOKENS (tokenSpecGen+= tokenSpec )+ TK_0= '}' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:208:3: TOKENSGen= TOKENS (tokenSpecGen+= tokenSpec )+ TK_0= '}'
+            // ANTLRv3.g:208:1: (TOKENSGen= TOKENS (tokenSpecGen+= tokenSpec )+ TK_0= '}' )
+            // ANTLRv3.g:208:3: TOKENSGen= TOKENS (tokenSpecGen+= tokenSpec )+ TK_0= '}'
             {
-            TOKENSGen=(Token)input.LT(1);
-            match(input,TOKENS,FOLLOW_TOKENS_in_tokensSpec481); 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:208:32: (tokenSpecGen+= tokenSpec )+
+            TOKENSGen=(Token)match(input,TOKENS,FOLLOW_TOKENS_in_tokensSpec481); 
+            // ANTLRv3.g:208:32: (tokenSpecGen+= tokenSpec )+
             int cnt8=0;
             loop8:
             do {
@@ -575,11 +610,12 @@ public class ANTLRv3Parser extends Parser {
 
                 switch (alt8) {
             	case 1 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:208:32: tokenSpecGen+= tokenSpec
+            	    // ANTLRv3.g:208:32: tokenSpecGen+= tokenSpec
             	    {
             	    pushFollow(FOLLOW_tokenSpec_in_tokensSpec485);
             	    tokenSpecGen=tokenSpec();
-            	    _fsp--;
+
+            	    state._fsp--;
 
             	    if (list_tokenSpecGen==null) list_tokenSpecGen=new ArrayList();
             	    list_tokenSpecGen.add(tokenSpecGen);
@@ -597,9 +633,8 @@ public class ANTLRv3Parser extends Parser {
                 cnt8++;
             } while (true);
 
-            TK_0=(Token)input.LT(1);
-            match(input,70,FOLLOW_70_in_tokensSpec490); 
-            
+            TK_0=(Token)match(input,70,FOLLOW_70_in_tokensSpec490); 
+
             		// Create return CST Node
             		Node tokensSpecReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		tokensSpecReturnNode.setKind("tokensSpec");
@@ -607,7 +642,7 @@ public class ANTLRv3Parser extends Parser {
             		if(TOKENSGen != null) {
             			Leaf TOKENSGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			TOKENSGenLeaf.setKind("TOKENS");
-            			TOKENSGenLeaf.setValue(TOKENSGen.getText());
+            			TOKENSGenLeaf.setValue((TOKENSGen!=null?TOKENSGen.getText():null));
             			TOKENSGenLeaf.setPos(TOKENSGen.getCharPositionInLine());
             			TOKENSGenLeaf.setLine(TOKENSGen.getLine());
             			tokensSpecReturnNode.getChildren().add(TOKENSGenLeaf);
@@ -626,7 +661,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_0 != null) {
             			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_0Leaf.setKind("TOKEN");
-            	 		TK_0Leaf.setValue(TK_0.getText());
+            	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
             			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
             			TK_0Leaf.setLine(TK_0.getLine());
             	 		tokensSpecReturnNode.getChildren().add(TK_0Leaf);
@@ -648,7 +683,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end tokensSpec
+    // $ANTLR end "tokensSpec"
 
     public static class tokenSpec_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -657,10 +692,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start tokenSpec
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:246:1: tokenSpec returns [Node returnNode] : TOKEN_REFGen= TOKEN_REF (TK_0= '=' (STRING_LITERALGen= STRING_LITERAL | CHAR_LITERALGen= CHAR_LITERAL ) | ) TK_1= ';' ;
-    public final tokenSpec_return tokenSpec() throws RecognitionException {
-        tokenSpec_return retval = new tokenSpec_return();
+    // $ANTLR start "tokenSpec"
+    // ANTLRv3.g:246:1: tokenSpec returns [Node returnNode] : TOKEN_REFGen= TOKEN_REF (TK_0= '=' (STRING_LITERALGen= STRING_LITERAL | CHAR_LITERALGen= CHAR_LITERAL ) | ) TK_1= ';' ;
+    public final ANTLRv3Parser.tokenSpec_return tokenSpec() throws RecognitionException {
+        ANTLRv3Parser.tokenSpec_return retval = new ANTLRv3Parser.tokenSpec_return();
         retval.start = input.LT(1);
 
         Token TOKEN_REFGen=null;
@@ -670,12 +705,11 @@ public class ANTLRv3Parser extends Parser {
         Token TK_1=null;
 
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:247:1: (TOKEN_REFGen= TOKEN_REF (TK_0= '=' (STRING_LITERALGen= STRING_LITERAL | CHAR_LITERALGen= CHAR_LITERAL ) | ) TK_1= ';' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:247:3: TOKEN_REFGen= TOKEN_REF (TK_0= '=' (STRING_LITERALGen= STRING_LITERAL | CHAR_LITERALGen= CHAR_LITERAL ) | ) TK_1= ';'
+            // ANTLRv3.g:247:1: (TOKEN_REFGen= TOKEN_REF (TK_0= '=' (STRING_LITERALGen= STRING_LITERAL | CHAR_LITERALGen= CHAR_LITERAL ) | ) TK_1= ';' )
+            // ANTLRv3.g:247:3: TOKEN_REFGen= TOKEN_REF (TK_0= '=' (STRING_LITERALGen= STRING_LITERAL | CHAR_LITERALGen= CHAR_LITERAL ) | ) TK_1= ';'
             {
-            TOKEN_REFGen=(Token)input.LT(1);
-            match(input,TOKEN_REF,FOLLOW_TOKEN_REF_in_tokenSpec512); 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:248:3: (TK_0= '=' (STRING_LITERALGen= STRING_LITERAL | CHAR_LITERALGen= CHAR_LITERAL ) | )
+            TOKEN_REFGen=(Token)match(input,TOKEN_REF,FOLLOW_TOKEN_REF_in_tokenSpec512); 
+            // ANTLRv3.g:248:3: (TK_0= '=' (STRING_LITERALGen= STRING_LITERAL | CHAR_LITERALGen= CHAR_LITERAL ) | )
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -687,17 +721,16 @@ public class ANTLRv3Parser extends Parser {
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("248:3: (TK_0= '=' (STRING_LITERALGen= STRING_LITERAL | CHAR_LITERALGen= CHAR_LITERAL ) | )", 10, 0, input);
+                    new NoViableAltException("", 10, 0, input);
 
                 throw nvae;
             }
             switch (alt10) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:248:5: TK_0= '=' (STRING_LITERALGen= STRING_LITERAL | CHAR_LITERALGen= CHAR_LITERAL )
+                    // ANTLRv3.g:248:5: TK_0= '=' (STRING_LITERALGen= STRING_LITERAL | CHAR_LITERALGen= CHAR_LITERAL )
                     {
-                    TK_0=(Token)input.LT(1);
-                    match(input,71,FOLLOW_71_in_tokenSpec520); 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:248:14: (STRING_LITERALGen= STRING_LITERAL | CHAR_LITERALGen= CHAR_LITERAL )
+                    TK_0=(Token)match(input,71,FOLLOW_71_in_tokenSpec520); 
+                    // ANTLRv3.g:248:14: (STRING_LITERALGen= STRING_LITERAL | CHAR_LITERALGen= CHAR_LITERAL )
                     int alt9=2;
                     int LA9_0 = input.LA(1);
 
@@ -709,24 +742,22 @@ public class ANTLRv3Parser extends Parser {
                     }
                     else {
                         NoViableAltException nvae =
-                            new NoViableAltException("248:14: (STRING_LITERALGen= STRING_LITERAL | CHAR_LITERALGen= CHAR_LITERAL )", 9, 0, input);
+                            new NoViableAltException("", 9, 0, input);
 
                         throw nvae;
                     }
                     switch (alt9) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:248:15: STRING_LITERALGen= STRING_LITERAL
+                            // ANTLRv3.g:248:15: STRING_LITERALGen= STRING_LITERAL
                             {
-                            STRING_LITERALGen=(Token)input.LT(1);
-                            match(input,STRING_LITERAL,FOLLOW_STRING_LITERAL_in_tokenSpec525); 
+                            STRING_LITERALGen=(Token)match(input,STRING_LITERAL,FOLLOW_STRING_LITERAL_in_tokenSpec525); 
 
                             }
                             break;
                         case 2 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:248:48: CHAR_LITERALGen= CHAR_LITERAL
+                            // ANTLRv3.g:248:48: CHAR_LITERALGen= CHAR_LITERAL
                             {
-                            CHAR_LITERALGen=(Token)input.LT(1);
-                            match(input,CHAR_LITERAL,FOLLOW_CHAR_LITERAL_in_tokenSpec529); 
+                            CHAR_LITERALGen=(Token)match(input,CHAR_LITERAL,FOLLOW_CHAR_LITERAL_in_tokenSpec529); 
 
                             }
                             break;
@@ -737,16 +768,15 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:250:3: 
+                    // ANTLRv3.g:250:3: 
                     {
                     }
                     break;
 
             }
 
-            TK_1=(Token)input.LT(1);
-            match(input,69,FOLLOW_69_in_tokenSpec557); 
-            
+            TK_1=(Token)match(input,69,FOLLOW_69_in_tokenSpec557); 
+
             		// Create return CST Node
             		Node tokenSpecReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		tokenSpecReturnNode.setKind("tokenSpec");
@@ -754,7 +784,7 @@ public class ANTLRv3Parser extends Parser {
             		if(TOKEN_REFGen != null) {
             			Leaf TOKEN_REFGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			TOKEN_REFGenLeaf.setKind("TOKEN_REF");
-            			TOKEN_REFGenLeaf.setValue(TOKEN_REFGen.getText());
+            			TOKEN_REFGenLeaf.setValue((TOKEN_REFGen!=null?TOKEN_REFGen.getText():null));
             			TOKEN_REFGenLeaf.setPos(TOKEN_REFGen.getCharPositionInLine());
             			TOKEN_REFGenLeaf.setLine(TOKEN_REFGen.getLine());
             			tokenSpecReturnNode.getChildren().add(TOKEN_REFGenLeaf);
@@ -763,7 +793,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_0 != null) {
             			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_0Leaf.setKind("TOKEN");
-            	 		TK_0Leaf.setValue(TK_0.getText());
+            	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
             			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
             			TK_0Leaf.setLine(TK_0.getLine());
             	 		tokenSpecReturnNode.getChildren().add(TK_0Leaf);
@@ -772,7 +802,7 @@ public class ANTLRv3Parser extends Parser {
             		if(STRING_LITERALGen != null) {
             			Leaf STRING_LITERALGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			STRING_LITERALGenLeaf.setKind("STRING_LITERAL");
-            			STRING_LITERALGenLeaf.setValue(STRING_LITERALGen.getText());
+            			STRING_LITERALGenLeaf.setValue((STRING_LITERALGen!=null?STRING_LITERALGen.getText():null));
             			STRING_LITERALGenLeaf.setPos(STRING_LITERALGen.getCharPositionInLine());
             			STRING_LITERALGenLeaf.setLine(STRING_LITERALGen.getLine());
             			tokenSpecReturnNode.getChildren().add(STRING_LITERALGenLeaf);
@@ -781,7 +811,7 @@ public class ANTLRv3Parser extends Parser {
             		if(CHAR_LITERALGen != null) {
             			Leaf CHAR_LITERALGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			CHAR_LITERALGenLeaf.setKind("CHAR_LITERAL");
-            			CHAR_LITERALGenLeaf.setValue(CHAR_LITERALGen.getText());
+            			CHAR_LITERALGenLeaf.setValue((CHAR_LITERALGen!=null?CHAR_LITERALGen.getText():null));
             			CHAR_LITERALGenLeaf.setPos(CHAR_LITERALGen.getCharPositionInLine());
             			CHAR_LITERALGenLeaf.setLine(CHAR_LITERALGen.getLine());
             			tokenSpecReturnNode.getChildren().add(CHAR_LITERALGenLeaf);
@@ -790,7 +820,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_1 != null) {
             			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_1Leaf.setKind("TOKEN");
-            	 		TK_1Leaf.setValue(TK_1.getText());
+            	 		TK_1Leaf.setValue((TK_1!=null?TK_1.getText():null));
             			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
             			TK_1Leaf.setLine(TK_1.getLine());
             	 		tokenSpecReturnNode.getChildren().add(TK_1Leaf);
@@ -812,7 +842,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end tokenSpec
+    // $ANTLR end "tokenSpec"
 
     public static class attrScope_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -821,10 +851,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start attrScope
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:306:1: attrScope returns [Node returnNode] : TK_0= 'scope' idGen+= id ACTIONGen= ACTION ;
-    public final attrScope_return attrScope() throws RecognitionException {
-        attrScope_return retval = new attrScope_return();
+    // $ANTLR start "attrScope"
+    // ANTLRv3.g:306:1: attrScope returns [Node returnNode] : TK_0= 'scope' idGen+= id ACTIONGen= ACTION ;
+    public final ANTLRv3Parser.attrScope_return attrScope() throws RecognitionException {
+        ANTLRv3Parser.attrScope_return retval = new ANTLRv3Parser.attrScope_return();
         retval.start = input.LT(1);
 
         Token TK_0=null;
@@ -832,21 +862,20 @@ public class ANTLRv3Parser extends Parser {
         List list_idGen=null;
         RuleReturnScope idGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:307:1: (TK_0= 'scope' idGen+= id ACTIONGen= ACTION )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:307:3: TK_0= 'scope' idGen+= id ACTIONGen= ACTION
+            // ANTLRv3.g:307:1: (TK_0= 'scope' idGen+= id ACTIONGen= ACTION )
+            // ANTLRv3.g:307:3: TK_0= 'scope' idGen+= id ACTIONGen= ACTION
             {
-            TK_0=(Token)input.LT(1);
-            match(input,SCOPE,FOLLOW_SCOPE_in_attrScope578); 
+            TK_0=(Token)match(input,SCOPE,FOLLOW_SCOPE_in_attrScope578); 
             pushFollow(FOLLOW_id_in_attrScope582);
             idGen=id();
-            _fsp--;
+
+            state._fsp--;
 
             if (list_idGen==null) list_idGen=new ArrayList();
             list_idGen.add(idGen);
 
-            ACTIONGen=(Token)input.LT(1);
-            match(input,ACTION,FOLLOW_ACTION_in_attrScope586); 
-            
+            ACTIONGen=(Token)match(input,ACTION,FOLLOW_ACTION_in_attrScope586); 
+
             		// Create return CST Node
             		Node attrScopeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		attrScopeReturnNode.setKind("attrScope");
@@ -854,7 +883,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_0 != null) {
             			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_0Leaf.setKind("TOKEN");
-            	 		TK_0Leaf.setValue(TK_0.getText());
+            	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
             			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
             			TK_0Leaf.setLine(TK_0.getLine());
             	 		attrScopeReturnNode.getChildren().add(TK_0Leaf);
@@ -873,7 +902,7 @@ public class ANTLRv3Parser extends Parser {
             		if(ACTIONGen != null) {
             			Leaf ACTIONGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			ACTIONGenLeaf.setKind("ACTION");
-            			ACTIONGenLeaf.setValue(ACTIONGen.getText());
+            			ACTIONGenLeaf.setValue((ACTIONGen!=null?ACTIONGen.getText():null));
             			ACTIONGenLeaf.setPos(ACTIONGen.getCharPositionInLine());
             			ACTIONGenLeaf.setLine(ACTIONGen.getLine());
             			attrScopeReturnNode.getChildren().add(ACTIONGenLeaf);
@@ -895,7 +924,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end attrScope
+    // $ANTLR end "attrScope"
 
     public static class action_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -904,10 +933,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start action
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:345:1: action returns [Node returnNode] : TK_0= '@' (actionScopeNameGen+= actionScopeName TK_1= '::' )? idGen+= id ACTIONGen= ACTION ;
-    public final action_return action() throws RecognitionException {
-        action_return retval = new action_return();
+    // $ANTLR start "action"
+    // ANTLRv3.g:345:1: action returns [Node returnNode] : TK_0= '@' (actionScopeNameGen+= actionScopeName TK_1= '::' )? idGen+= id ACTIONGen= ACTION ;
+    public final ANTLRv3Parser.action_return action() throws RecognitionException {
+        ANTLRv3Parser.action_return retval = new ANTLRv3Parser.action_return();
         retval.start = input.LT(1);
 
         Token TK_0=null;
@@ -918,12 +947,11 @@ public class ANTLRv3Parser extends Parser {
         RuleReturnScope actionScopeNameGen = null;
         RuleReturnScope idGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:346:1: (TK_0= '@' (actionScopeNameGen+= actionScopeName TK_1= '::' )? idGen+= id ACTIONGen= ACTION )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:346:3: TK_0= '@' (actionScopeNameGen+= actionScopeName TK_1= '::' )? idGen+= id ACTIONGen= ACTION
+            // ANTLRv3.g:346:1: (TK_0= '@' (actionScopeNameGen+= actionScopeName TK_1= '::' )? idGen+= id ACTIONGen= ACTION )
+            // ANTLRv3.g:346:3: TK_0= '@' (actionScopeNameGen+= actionScopeName TK_1= '::' )? idGen+= id ACTIONGen= ACTION
             {
-            TK_0=(Token)input.LT(1);
-            match(input,72,FOLLOW_72_in_action607); 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:346:12: (actionScopeNameGen+= actionScopeName TK_1= '::' )?
+            TK_0=(Token)match(input,72,FOLLOW_72_in_action607); 
+            // ANTLRv3.g:346:12: (actionScopeNameGen+= actionScopeName TK_1= '::' )?
             int alt11=2;
             switch ( input.LA(1) ) {
                 case TOKEN_REF:
@@ -954,17 +982,17 @@ public class ANTLRv3Parser extends Parser {
 
             switch (alt11) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:346:13: actionScopeNameGen+= actionScopeName TK_1= '::'
+                    // ANTLRv3.g:346:13: actionScopeNameGen+= actionScopeName TK_1= '::'
                     {
                     pushFollow(FOLLOW_actionScopeName_in_action612);
                     actionScopeNameGen=actionScopeName();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_actionScopeNameGen==null) list_actionScopeNameGen=new ArrayList();
                     list_actionScopeNameGen.add(actionScopeNameGen);
 
-                    TK_1=(Token)input.LT(1);
-                    match(input,73,FOLLOW_73_in_action616); 
+                    TK_1=(Token)match(input,73,FOLLOW_73_in_action616); 
 
                     }
                     break;
@@ -973,14 +1001,14 @@ public class ANTLRv3Parser extends Parser {
 
             pushFollow(FOLLOW_id_in_action622);
             idGen=id();
-            _fsp--;
+
+            state._fsp--;
 
             if (list_idGen==null) list_idGen=new ArrayList();
             list_idGen.add(idGen);
 
-            ACTIONGen=(Token)input.LT(1);
-            match(input,ACTION,FOLLOW_ACTION_in_action626); 
-            
+            ACTIONGen=(Token)match(input,ACTION,FOLLOW_ACTION_in_action626); 
+
             		// Create return CST Node
             		Node actionReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		actionReturnNode.setKind("action");
@@ -988,7 +1016,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_0 != null) {
             			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_0Leaf.setKind("TOKEN");
-            	 		TK_0Leaf.setValue(TK_0.getText());
+            	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
             			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
             			TK_0Leaf.setLine(TK_0.getLine());
             	 		actionReturnNode.getChildren().add(TK_0Leaf);
@@ -1007,7 +1035,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_1 != null) {
             			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_1Leaf.setKind("TOKEN");
-            	 		TK_1Leaf.setValue(TK_1.getText());
+            	 		TK_1Leaf.setValue((TK_1!=null?TK_1.getText():null));
             			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
             			TK_1Leaf.setLine(TK_1.getLine());
             	 		actionReturnNode.getChildren().add(TK_1Leaf);
@@ -1026,7 +1054,7 @@ public class ANTLRv3Parser extends Parser {
             		if(ACTIONGen != null) {
             			Leaf ACTIONGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			ACTIONGenLeaf.setKind("ACTION");
-            			ACTIONGenLeaf.setValue(ACTIONGen.getText());
+            			ACTIONGenLeaf.setValue((ACTIONGen!=null?ACTIONGen.getText():null));
             			ACTIONGenLeaf.setPos(ACTIONGen.getCharPositionInLine());
             			ACTIONGenLeaf.setLine(ACTIONGen.getLine());
             			actionReturnNode.getChildren().add(ACTIONGenLeaf);
@@ -1048,7 +1076,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end action
+    // $ANTLR end "action"
 
     public static class actionScopeName_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -1057,17 +1085,17 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start actionScopeName
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:404:1: actionScopeName returns [Node returnNode] : (idGen+= id | TK_0= 'lexer' | TK_0= 'parser' );
-    public final actionScopeName_return actionScopeName() throws RecognitionException {
-        actionScopeName_return retval = new actionScopeName_return();
+    // $ANTLR start "actionScopeName"
+    // ANTLRv3.g:404:1: actionScopeName returns [Node returnNode] : (idGen+= id | TK_0= 'lexer' | TK_0= 'parser' );
+    public final ANTLRv3Parser.actionScopeName_return actionScopeName() throws RecognitionException {
+        ANTLRv3Parser.actionScopeName_return retval = new ANTLRv3Parser.actionScopeName_return();
         retval.start = input.LT(1);
 
         Token TK_0=null;
         List list_idGen=null;
         RuleReturnScope idGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:405:1: (idGen+= id | TK_0= 'lexer' | TK_0= 'parser' )
+            // ANTLRv3.g:405:1: (idGen+= id | TK_0= 'lexer' | TK_0= 'parser' )
             int alt12=3;
             switch ( input.LA(1) ) {
             case TOKEN_REF:
@@ -1088,23 +1116,24 @@ public class ANTLRv3Parser extends Parser {
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("404:1: actionScopeName returns [Node returnNode] : (idGen+= id | TK_0= 'lexer' | TK_0= 'parser' );", 12, 0, input);
+                    new NoViableAltException("", 12, 0, input);
 
                 throw nvae;
             }
 
             switch (alt12) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:405:3: idGen+= id
+                    // ANTLRv3.g:405:3: idGen+= id
                     {
                     pushFollow(FOLLOW_id_in_actionScopeName649);
                     idGen=id();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_idGen==null) list_idGen=new ArrayList();
                     list_idGen.add(idGen);
 
-                    
+
                     		// Create return CST Node
                     		Node actionScopeNameReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		actionScopeNameReturnNode.setKind("actionScopeName");
@@ -1125,11 +1154,10 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:423:4: TK_0= 'lexer'
+                    // ANTLRv3.g:423:4: TK_0= 'lexer'
                     {
-                    TK_0=(Token)input.LT(1);
-                    match(input,65,FOLLOW_65_in_actionScopeName660); 
-                    
+                    TK_0=(Token)match(input,65,FOLLOW_65_in_actionScopeName660); 
+
                     		// Create return CST Node
                     		Node actionScopeNameReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		actionScopeNameReturnNode.setKind("actionScopeName");
@@ -1137,7 +1165,7 @@ public class ANTLRv3Parser extends Parser {
                     	    if(TK_0 != null) {
                     			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     	 		TK_0Leaf.setKind("TOKEN");
-                    	 		TK_0Leaf.setValue(TK_0.getText());
+                    	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
                     			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
                     			TK_0Leaf.setLine(TK_0.getLine());
                     	 		actionScopeNameReturnNode.getChildren().add(TK_0Leaf);
@@ -1149,11 +1177,10 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:440:9: TK_0= 'parser'
+                    // ANTLRv3.g:440:9: TK_0= 'parser'
                     {
-                    TK_0=(Token)input.LT(1);
-                    match(input,66,FOLLOW_66_in_actionScopeName677); 
-                    
+                    TK_0=(Token)match(input,66,FOLLOW_66_in_actionScopeName677); 
+
                     		// Create return CST Node
                     		Node actionScopeNameReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		actionScopeNameReturnNode.setKind("actionScopeName");
@@ -1161,7 +1188,7 @@ public class ANTLRv3Parser extends Parser {
                     	    if(TK_0 != null) {
                     			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     	 		TK_0Leaf.setKind("TOKEN");
-                    	 		TK_0Leaf.setValue(TK_0.getText());
+                    	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
                     			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
                     			TK_0Leaf.setLine(TK_0.getLine());
                     	 		actionScopeNameReturnNode.getChildren().add(TK_0Leaf);
@@ -1185,7 +1212,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end actionScopeName
+    // $ANTLR end "actionScopeName"
 
     public static class optionsSpec_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -1194,10 +1221,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start optionsSpec
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:459:1: optionsSpec returns [Node returnNode] : OPTIONSGen= OPTIONS (optionGen+= option TK_0= ';' )+ TK_1= '}' ;
-    public final optionsSpec_return optionsSpec() throws RecognitionException {
-        optionsSpec_return retval = new optionsSpec_return();
+    // $ANTLR start "optionsSpec"
+    // ANTLRv3.g:459:1: optionsSpec returns [Node returnNode] : OPTIONSGen= OPTIONS (optionGen+= option TK_0= ';' )+ TK_1= '}' ;
+    public final ANTLRv3Parser.optionsSpec_return optionsSpec() throws RecognitionException {
+        ANTLRv3Parser.optionsSpec_return retval = new ANTLRv3Parser.optionsSpec_return();
         retval.start = input.LT(1);
 
         Token OPTIONSGen=null;
@@ -1206,12 +1233,11 @@ public class ANTLRv3Parser extends Parser {
         List list_optionGen=null;
         RuleReturnScope optionGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:460:1: (OPTIONSGen= OPTIONS (optionGen+= option TK_0= ';' )+ TK_1= '}' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:460:3: OPTIONSGen= OPTIONS (optionGen+= option TK_0= ';' )+ TK_1= '}'
+            // ANTLRv3.g:460:1: (OPTIONSGen= OPTIONS (optionGen+= option TK_0= ';' )+ TK_1= '}' )
+            // ANTLRv3.g:460:3: OPTIONSGen= OPTIONS (optionGen+= option TK_0= ';' )+ TK_1= '}'
             {
-            OPTIONSGen=(Token)input.LT(1);
-            match(input,OPTIONS,FOLLOW_OPTIONS_in_optionsSpec698); 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:460:22: (optionGen+= option TK_0= ';' )+
+            OPTIONSGen=(Token)match(input,OPTIONS,FOLLOW_OPTIONS_in_optionsSpec698); 
+            // ANTLRv3.g:460:22: (optionGen+= option TK_0= ';' )+
             int cnt13=0;
             loop13:
             do {
@@ -1225,17 +1251,17 @@ public class ANTLRv3Parser extends Parser {
 
                 switch (alt13) {
             	case 1 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:460:23: optionGen+= option TK_0= ';'
+            	    // ANTLRv3.g:460:23: optionGen+= option TK_0= ';'
             	    {
             	    pushFollow(FOLLOW_option_in_optionsSpec703);
             	    optionGen=option();
-            	    _fsp--;
+
+            	    state._fsp--;
 
             	    if (list_optionGen==null) list_optionGen=new ArrayList();
             	    list_optionGen.add(optionGen);
 
-            	    TK_0=(Token)input.LT(1);
-            	    match(input,69,FOLLOW_69_in_optionsSpec707); 
+            	    TK_0=(Token)match(input,69,FOLLOW_69_in_optionsSpec707); 
 
             	    }
             	    break;
@@ -1249,9 +1275,8 @@ public class ANTLRv3Parser extends Parser {
                 cnt13++;
             } while (true);
 
-            TK_1=(Token)input.LT(1);
-            match(input,70,FOLLOW_70_in_optionsSpec713); 
-            
+            TK_1=(Token)match(input,70,FOLLOW_70_in_optionsSpec713); 
+
             		// Create return CST Node
             		Node optionsSpecReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		optionsSpecReturnNode.setKind("optionsSpec");
@@ -1259,12 +1284,12 @@ public class ANTLRv3Parser extends Parser {
             		if(OPTIONSGen != null) {
             			Leaf OPTIONSGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			OPTIONSGenLeaf.setKind("OPTIONS");
-            			OPTIONSGenLeaf.setValue(OPTIONSGen.getText());
+            			OPTIONSGenLeaf.setValue((OPTIONSGen!=null?OPTIONSGen.getText():null));
             			OPTIONSGenLeaf.setPos(OPTIONSGen.getCharPositionInLine());
             			OPTIONSGenLeaf.setLine(OPTIONSGen.getLine());
             			optionsSpecReturnNode.getChildren().add(OPTIONSGenLeaf);
             		}
-            	
+
             		// Create a special CST Node for terminal optionGen aggregation
             		if(list_optionGen != null) {
             	    for(int pos = 0; pos < list_optionGen.size(); pos++ )  { 
@@ -1280,19 +1305,19 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_0 != null) {
             			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_0Leaf.setKind("TOKEN");
-            	 		TK_0Leaf.setValue(TK_0.getText());
+            	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
             			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
             			TK_0Leaf.setLine(TK_0.getLine());
             	 		optionsSpecReturnNode.getChildren().add(TK_0Leaf);
             	 	}
             		}
             		}
-            	
+
             	    // Create a Token CST Leaf	
             	    if(TK_1 != null) {
             			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_1Leaf.setKind("TOKEN");
-            	 		TK_1Leaf.setValue(TK_1.getText());
+            	 		TK_1Leaf.setValue((TK_1!=null?TK_1.getText():null));
             			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
             			TK_1Leaf.setLine(TK_1.getLine());
             	 		optionsSpecReturnNode.getChildren().add(TK_1Leaf);
@@ -1314,7 +1339,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end optionsSpec
+    // $ANTLR end "optionsSpec"
 
     public static class option_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -1323,10 +1348,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start option
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:512:1: option returns [Node returnNode] : idGen+= id TK_0= '=' optionValueGen+= optionValue ;
-    public final option_return option() throws RecognitionException {
-        option_return retval = new option_return();
+    // $ANTLR start "option"
+    // ANTLRv3.g:512:1: option returns [Node returnNode] : idGen+= id TK_0= '=' optionValueGen+= optionValue ;
+    public final ANTLRv3Parser.option_return option() throws RecognitionException {
+        ANTLRv3Parser.option_return retval = new ANTLRv3Parser.option_return();
         retval.start = input.LT(1);
 
         Token TK_0=null;
@@ -1335,26 +1360,27 @@ public class ANTLRv3Parser extends Parser {
         RuleReturnScope idGen = null;
         RuleReturnScope optionValueGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:513:1: (idGen+= id TK_0= '=' optionValueGen+= optionValue )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:513:5: idGen+= id TK_0= '=' optionValueGen+= optionValue
+            // ANTLRv3.g:513:1: (idGen+= id TK_0= '=' optionValueGen+= optionValue )
+            // ANTLRv3.g:513:5: idGen+= id TK_0= '=' optionValueGen+= optionValue
             {
             pushFollow(FOLLOW_id_in_option736);
             idGen=id();
-            _fsp--;
+
+            state._fsp--;
 
             if (list_idGen==null) list_idGen=new ArrayList();
             list_idGen.add(idGen);
 
-            TK_0=(Token)input.LT(1);
-            match(input,71,FOLLOW_71_in_option740); 
+            TK_0=(Token)match(input,71,FOLLOW_71_in_option740); 
             pushFollow(FOLLOW_optionValue_in_option744);
             optionValueGen=optionValue();
-            _fsp--;
+
+            state._fsp--;
 
             if (list_optionValueGen==null) list_optionValueGen=new ArrayList();
             list_optionValueGen.add(optionValueGen);
 
-            
+
             		// Create return CST Node
             		Node optionReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		optionReturnNode.setKind("option");
@@ -1372,7 +1398,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_0 != null) {
             			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_0Leaf.setKind("TOKEN");
-            	 		TK_0Leaf.setValue(TK_0.getText());
+            	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
             			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
             			TK_0Leaf.setLine(TK_0.getLine());
             	 		optionReturnNode.getChildren().add(TK_0Leaf);
@@ -1404,7 +1430,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end option
+    // $ANTLR end "option"
 
     public static class optionValue_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -1413,10 +1439,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start optionValue
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:552:1: optionValue returns [Node returnNode] : (idGen+= id | STRING_LITERALGen= STRING_LITERAL | CHAR_LITERALGen= CHAR_LITERAL | INTGen= INT | s= '*' );
-    public final optionValue_return optionValue() throws RecognitionException {
-        optionValue_return retval = new optionValue_return();
+    // $ANTLR start "optionValue"
+    // ANTLRv3.g:552:1: optionValue returns [Node returnNode] : (idGen+= id | STRING_LITERALGen= STRING_LITERAL | CHAR_LITERALGen= CHAR_LITERAL | INTGen= INT | s= '*' );
+    public final ANTLRv3Parser.optionValue_return optionValue() throws RecognitionException {
+        ANTLRv3Parser.optionValue_return retval = new ANTLRv3Parser.optionValue_return();
         retval.start = input.LT(1);
 
         Token STRING_LITERALGen=null;
@@ -1426,7 +1452,7 @@ public class ANTLRv3Parser extends Parser {
         List list_idGen=null;
         RuleReturnScope idGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:553:1: (idGen+= id | STRING_LITERALGen= STRING_LITERAL | CHAR_LITERALGen= CHAR_LITERAL | INTGen= INT | s= '*' )
+            // ANTLRv3.g:553:1: (idGen+= id | STRING_LITERALGen= STRING_LITERAL | CHAR_LITERALGen= CHAR_LITERAL | INTGen= INT | s= '*' )
             int alt14=5;
             switch ( input.LA(1) ) {
             case TOKEN_REF:
@@ -1457,23 +1483,24 @@ public class ANTLRv3Parser extends Parser {
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("552:1: optionValue returns [Node returnNode] : (idGen+= id | STRING_LITERALGen= STRING_LITERAL | CHAR_LITERALGen= CHAR_LITERAL | INTGen= INT | s= '*' );", 14, 0, input);
+                    new NoViableAltException("", 14, 0, input);
 
                 throw nvae;
             }
 
             switch (alt14) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:553:5: idGen+= id
+                    // ANTLRv3.g:553:5: idGen+= id
                     {
                     pushFollow(FOLLOW_id_in_optionValue771);
                     idGen=id();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_idGen==null) list_idGen=new ArrayList();
                     list_idGen.add(idGen);
 
-                    
+
                     		// Create return CST Node
                     		Node optionValueReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		optionValueReturnNode.setKind("optionValue");
@@ -1494,11 +1521,10 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:571:9: STRING_LITERALGen= STRING_LITERAL
+                    // ANTLRv3.g:571:9: STRING_LITERALGen= STRING_LITERAL
                     {
-                    STRING_LITERALGen=(Token)input.LT(1);
-                    match(input,STRING_LITERAL,FOLLOW_STRING_LITERAL_in_optionValue787); 
-                    
+                    STRING_LITERALGen=(Token)match(input,STRING_LITERAL,FOLLOW_STRING_LITERAL_in_optionValue787); 
+
                     		// Create return CST Node
                     		Node optionValueReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		optionValueReturnNode.setKind("optionValue");
@@ -1506,7 +1532,7 @@ public class ANTLRv3Parser extends Parser {
                     		if(STRING_LITERALGen != null) {
                     			Leaf STRING_LITERALGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			STRING_LITERALGenLeaf.setKind("STRING_LITERAL");
-                    			STRING_LITERALGenLeaf.setValue(STRING_LITERALGen.getText());
+                    			STRING_LITERALGenLeaf.setValue((STRING_LITERALGen!=null?STRING_LITERALGen.getText():null));
                     			STRING_LITERALGenLeaf.setPos(STRING_LITERALGen.getCharPositionInLine());
                     			STRING_LITERALGenLeaf.setLine(STRING_LITERALGen.getLine());
                     			optionValueReturnNode.getChildren().add(STRING_LITERALGenLeaf);
@@ -1518,11 +1544,10 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:588:9: CHAR_LITERALGen= CHAR_LITERAL
+                    // ANTLRv3.g:588:9: CHAR_LITERALGen= CHAR_LITERAL
                     {
-                    CHAR_LITERALGen=(Token)input.LT(1);
-                    match(input,CHAR_LITERAL,FOLLOW_CHAR_LITERAL_in_optionValue803); 
-                    
+                    CHAR_LITERALGen=(Token)match(input,CHAR_LITERAL,FOLLOW_CHAR_LITERAL_in_optionValue803); 
+
                     		// Create return CST Node
                     		Node optionValueReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		optionValueReturnNode.setKind("optionValue");
@@ -1530,7 +1555,7 @@ public class ANTLRv3Parser extends Parser {
                     		if(CHAR_LITERALGen != null) {
                     			Leaf CHAR_LITERALGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			CHAR_LITERALGenLeaf.setKind("CHAR_LITERAL");
-                    			CHAR_LITERALGenLeaf.setValue(CHAR_LITERALGen.getText());
+                    			CHAR_LITERALGenLeaf.setValue((CHAR_LITERALGen!=null?CHAR_LITERALGen.getText():null));
                     			CHAR_LITERALGenLeaf.setPos(CHAR_LITERALGen.getCharPositionInLine());
                     			CHAR_LITERALGenLeaf.setLine(CHAR_LITERALGen.getLine());
                     			optionValueReturnNode.getChildren().add(CHAR_LITERALGenLeaf);
@@ -1542,11 +1567,10 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:605:9: INTGen= INT
+                    // ANTLRv3.g:605:9: INTGen= INT
                     {
-                    INTGen=(Token)input.LT(1);
-                    match(input,INT,FOLLOW_INT_in_optionValue819); 
-                    
+                    INTGen=(Token)match(input,INT,FOLLOW_INT_in_optionValue819); 
+
                     		// Create return CST Node
                     		Node optionValueReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		optionValueReturnNode.setKind("optionValue");
@@ -1554,7 +1578,7 @@ public class ANTLRv3Parser extends Parser {
                     		if(INTGen != null) {
                     			Leaf INTGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			INTGenLeaf.setKind("INT");
-                    			INTGenLeaf.setValue(INTGen.getText());
+                    			INTGenLeaf.setValue((INTGen!=null?INTGen.getText():null));
                     			INTGenLeaf.setPos(INTGen.getCharPositionInLine());
                     			INTGenLeaf.setLine(INTGen.getLine());
                     			optionValueReturnNode.getChildren().add(INTGenLeaf);
@@ -1566,11 +1590,10 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 5 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:622:7: s= '*'
+                    // ANTLRv3.g:622:7: s= '*'
                     {
-                    s=(Token)input.LT(1);
-                    match(input,74,FOLLOW_74_in_optionValue833); 
-                    
+                    s=(Token)match(input,74,FOLLOW_74_in_optionValue833); 
+
                     		// Create return CST Node
                     		Node optionValueReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		optionValueReturnNode.setKind("optionValue");
@@ -1578,7 +1601,7 @@ public class ANTLRv3Parser extends Parser {
                     		if(s != null) {
                     			Leaf sLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			sLeaf.setKind("s");
-                    			sLeaf.setValue(s.getText());
+                    			sLeaf.setValue((s!=null?s.getText():null));
                     			sLeaf.setPos(s.getCharPositionInLine());
                     			sLeaf.setLine(s.getLine());
                     			optionValueReturnNode.getChildren().add(sLeaf);
@@ -1602,7 +1625,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end optionValue
+    // $ANTLR end "optionValue"
 
     public static class rule_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -1611,10 +1634,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start rule
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:641:1: rule returns [Node returnNode] : (DOC_COMMENTGen= DOC_COMMENT )? ( (TK_0= 'protected' | TK_1= 'public' | TK_2= 'private' | TK_3= 'fragment' ) )? ruleName+= id (TK_4= '!' )? (ARG_ACTIONGen= ARG_ACTION )? (TK_5= 'returns' ARG_ACTIONGen_1= ARG_ACTION )? (throwsSpecGen+= throwsSpec )? (optionsSpecGen+= optionsSpec )? (ruleScopeSpecGen+= ruleScopeSpec )? (ruleActionGen+= ruleAction )* TK_6= ':' altListGen+= altList TK_7= ';' (exceptionGroupGen+= exceptionGroup )? ;
-    public final rule_return rule() throws RecognitionException {
-        rule_return retval = new rule_return();
+    // $ANTLR start "rule"
+    // ANTLRv3.g:641:1: rule returns [Node returnNode] : (DOC_COMMENTGen= DOC_COMMENT )? ( (TK_0= 'protected' | TK_1= 'public' | TK_2= 'private' | TK_3= 'fragment' ) )? ruleName+= id (TK_4= '!' )? (ARG_ACTIONGen= ARG_ACTION )? (TK_5= 'returns' ARG_ACTIONGen_1= ARG_ACTION )? (throwsSpecGen+= throwsSpec )? (optionsSpecGen+= optionsSpec )? (ruleScopeSpecGen+= ruleScopeSpec )? (ruleActionGen+= ruleAction )* TK_6= ':' altListGen+= altList TK_7= ';' (exceptionGroupGen+= exceptionGroup )? ;
+    public final ANTLRv3Parser.rule_return rule() throws RecognitionException {
+        ANTLRv3Parser.rule_return retval = new ANTLRv3Parser.rule_return();
         retval.start = input.LT(1);
 
         Token DOC_COMMENTGen=null;
@@ -1643,10 +1666,10 @@ public class ANTLRv3Parser extends Parser {
         RuleReturnScope altListGen = null;
         RuleReturnScope exceptionGroupGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:642:1: ( (DOC_COMMENTGen= DOC_COMMENT )? ( (TK_0= 'protected' | TK_1= 'public' | TK_2= 'private' | TK_3= 'fragment' ) )? ruleName+= id (TK_4= '!' )? (ARG_ACTIONGen= ARG_ACTION )? (TK_5= 'returns' ARG_ACTIONGen_1= ARG_ACTION )? (throwsSpecGen+= throwsSpec )? (optionsSpecGen+= optionsSpec )? (ruleScopeSpecGen+= ruleScopeSpec )? (ruleActionGen+= ruleAction )* TK_6= ':' altListGen+= altList TK_7= ';' (exceptionGroupGen+= exceptionGroup )? )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:642:3: (DOC_COMMENTGen= DOC_COMMENT )? ( (TK_0= 'protected' | TK_1= 'public' | TK_2= 'private' | TK_3= 'fragment' ) )? ruleName+= id (TK_4= '!' )? (ARG_ACTIONGen= ARG_ACTION )? (TK_5= 'returns' ARG_ACTIONGen_1= ARG_ACTION )? (throwsSpecGen+= throwsSpec )? (optionsSpecGen+= optionsSpec )? (ruleScopeSpecGen+= ruleScopeSpec )? (ruleActionGen+= ruleAction )* TK_6= ':' altListGen+= altList TK_7= ';' (exceptionGroupGen+= exceptionGroup )?
+            // ANTLRv3.g:642:1: ( (DOC_COMMENTGen= DOC_COMMENT )? ( (TK_0= 'protected' | TK_1= 'public' | TK_2= 'private' | TK_3= 'fragment' ) )? ruleName+= id (TK_4= '!' )? (ARG_ACTIONGen= ARG_ACTION )? (TK_5= 'returns' ARG_ACTIONGen_1= ARG_ACTION )? (throwsSpecGen+= throwsSpec )? (optionsSpecGen+= optionsSpec )? (ruleScopeSpecGen+= ruleScopeSpec )? (ruleActionGen+= ruleAction )* TK_6= ':' altListGen+= altList TK_7= ';' (exceptionGroupGen+= exceptionGroup )? )
+            // ANTLRv3.g:642:3: (DOC_COMMENTGen= DOC_COMMENT )? ( (TK_0= 'protected' | TK_1= 'public' | TK_2= 'private' | TK_3= 'fragment' ) )? ruleName+= id (TK_4= '!' )? (ARG_ACTIONGen= ARG_ACTION )? (TK_5= 'returns' ARG_ACTIONGen_1= ARG_ACTION )? (throwsSpecGen+= throwsSpec )? (optionsSpecGen+= optionsSpec )? (ruleScopeSpecGen+= ruleScopeSpec )? (ruleActionGen+= ruleAction )* TK_6= ':' altListGen+= altList TK_7= ';' (exceptionGroupGen+= exceptionGroup )?
             {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:642:17: (DOC_COMMENTGen= DOC_COMMENT )?
+            // ANTLRv3.g:642:17: (DOC_COMMENTGen= DOC_COMMENT )?
             int alt15=2;
             int LA15_0 = input.LA(1);
 
@@ -1655,17 +1678,16 @@ public class ANTLRv3Parser extends Parser {
             }
             switch (alt15) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:642:17: DOC_COMMENTGen= DOC_COMMENT
+                    // ANTLRv3.g:642:17: DOC_COMMENTGen= DOC_COMMENT
                     {
-                    DOC_COMMENTGen=(Token)input.LT(1);
-                    match(input,DOC_COMMENT,FOLLOW_DOC_COMMENT_in_rule858); 
+                    DOC_COMMENTGen=(Token)match(input,DOC_COMMENT,FOLLOW_DOC_COMMENT_in_rule858); 
 
                     }
                     break;
 
             }
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:643:3: ( (TK_0= 'protected' | TK_1= 'public' | TK_2= 'private' | TK_3= 'fragment' ) )?
+            // ANTLRv3.g:643:3: ( (TK_0= 'protected' | TK_1= 'public' | TK_2= 'private' | TK_3= 'fragment' ) )?
             int alt17=2;
             int LA17_0 = input.LA(1);
 
@@ -1674,9 +1696,9 @@ public class ANTLRv3Parser extends Parser {
             }
             switch (alt17) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:643:5: (TK_0= 'protected' | TK_1= 'public' | TK_2= 'private' | TK_3= 'fragment' )
+                    // ANTLRv3.g:643:5: (TK_0= 'protected' | TK_1= 'public' | TK_2= 'private' | TK_3= 'fragment' )
                     {
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:643:5: (TK_0= 'protected' | TK_1= 'public' | TK_2= 'private' | TK_3= 'fragment' )
+                    // ANTLRv3.g:643:5: (TK_0= 'protected' | TK_1= 'public' | TK_2= 'private' | TK_3= 'fragment' )
                     int alt16=4;
                     switch ( input.LA(1) ) {
                     case 75:
@@ -1701,41 +1723,37 @@ public class ANTLRv3Parser extends Parser {
                         break;
                     default:
                         NoViableAltException nvae =
-                            new NoViableAltException("643:5: (TK_0= 'protected' | TK_1= 'public' | TK_2= 'private' | TK_3= 'fragment' )", 16, 0, input);
+                            new NoViableAltException("", 16, 0, input);
 
                         throw nvae;
                     }
 
                     switch (alt16) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:643:6: TK_0= 'protected'
+                            // ANTLRv3.g:643:6: TK_0= 'protected'
                             {
-                            TK_0=(Token)input.LT(1);
-                            match(input,75,FOLLOW_75_in_rule868); 
+                            TK_0=(Token)match(input,75,FOLLOW_75_in_rule868); 
 
                             }
                             break;
                         case 2 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:643:23: TK_1= 'public'
+                            // ANTLRv3.g:643:23: TK_1= 'public'
                             {
-                            TK_1=(Token)input.LT(1);
-                            match(input,76,FOLLOW_76_in_rule872); 
+                            TK_1=(Token)match(input,76,FOLLOW_76_in_rule872); 
 
                             }
                             break;
                         case 3 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:643:37: TK_2= 'private'
+                            // ANTLRv3.g:643:37: TK_2= 'private'
                             {
-                            TK_2=(Token)input.LT(1);
-                            match(input,77,FOLLOW_77_in_rule876); 
+                            TK_2=(Token)match(input,77,FOLLOW_77_in_rule876); 
 
                             }
                             break;
                         case 4 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:643:52: TK_3= 'fragment'
+                            // ANTLRv3.g:643:52: TK_3= 'fragment'
                             {
-                            TK_3=(Token)input.LT(1);
-                            match(input,FRAGMENT,FOLLOW_FRAGMENT_in_rule880); 
+                            TK_3=(Token)match(input,FRAGMENT,FOLLOW_FRAGMENT_in_rule880); 
 
                             }
                             break;
@@ -1750,12 +1768,13 @@ public class ANTLRv3Parser extends Parser {
 
             pushFollow(FOLLOW_id_in_rule890);
             ruleName=id();
-            _fsp--;
+
+            state._fsp--;
 
             if (list_ruleName==null) list_ruleName=new ArrayList();
             list_ruleName.add(ruleName);
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:645:7: (TK_4= '!' )?
+            // ANTLRv3.g:645:7: (TK_4= '!' )?
             int alt18=2;
             int LA18_0 = input.LA(1);
 
@@ -1764,17 +1783,16 @@ public class ANTLRv3Parser extends Parser {
             }
             switch (alt18) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:645:7: TK_4= '!'
+                    // ANTLRv3.g:645:7: TK_4= '!'
                     {
-                    TK_4=(Token)input.LT(1);
-                    match(input,BANG,FOLLOW_BANG_in_rule897); 
+                    TK_4=(Token)match(input,BANG,FOLLOW_BANG_in_rule897); 
 
                     }
                     break;
 
             }
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:646:3: (ARG_ACTIONGen= ARG_ACTION )?
+            // ANTLRv3.g:646:3: (ARG_ACTIONGen= ARG_ACTION )?
             int alt19=2;
             int LA19_0 = input.LA(1);
 
@@ -1783,17 +1801,16 @@ public class ANTLRv3Parser extends Parser {
             }
             switch (alt19) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:646:5: ARG_ACTIONGen= ARG_ACTION
+                    // ANTLRv3.g:646:5: ARG_ACTIONGen= ARG_ACTION
                     {
-                    ARG_ACTIONGen=(Token)input.LT(1);
-                    match(input,ARG_ACTION,FOLLOW_ARG_ACTION_in_rule906); 
+                    ARG_ACTIONGen=(Token)match(input,ARG_ACTION,FOLLOW_ARG_ACTION_in_rule906); 
 
                     }
                     break;
 
             }
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:647:3: (TK_5= 'returns' ARG_ACTIONGen_1= ARG_ACTION )?
+            // ANTLRv3.g:647:3: (TK_5= 'returns' ARG_ACTIONGen_1= ARG_ACTION )?
             int alt20=2;
             int LA20_0 = input.LA(1);
 
@@ -1802,19 +1819,17 @@ public class ANTLRv3Parser extends Parser {
             }
             switch (alt20) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:647:5: TK_5= 'returns' ARG_ACTIONGen_1= ARG_ACTION
+                    // ANTLRv3.g:647:5: TK_5= 'returns' ARG_ACTIONGen_1= ARG_ACTION
                     {
-                    TK_5=(Token)input.LT(1);
-                    match(input,78,FOLLOW_78_in_rule917); 
-                    ARG_ACTIONGen_1=(Token)input.LT(1);
-                    match(input,ARG_ACTION,FOLLOW_ARG_ACTION_in_rule921); 
+                    TK_5=(Token)match(input,78,FOLLOW_78_in_rule917); 
+                    ARG_ACTIONGen_1=(Token)match(input,ARG_ACTION,FOLLOW_ARG_ACTION_in_rule921); 
 
                     }
                     break;
 
             }
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:648:16: (throwsSpecGen+= throwsSpec )?
+            // ANTLRv3.g:648:16: (throwsSpecGen+= throwsSpec )?
             int alt21=2;
             int LA21_0 = input.LA(1);
 
@@ -1823,11 +1838,12 @@ public class ANTLRv3Parser extends Parser {
             }
             switch (alt21) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:648:16: throwsSpecGen+= throwsSpec
+                    // ANTLRv3.g:648:16: throwsSpecGen+= throwsSpec
                     {
                     pushFollow(FOLLOW_throwsSpec_in_rule931);
                     throwsSpecGen=throwsSpec();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_throwsSpecGen==null) list_throwsSpecGen=new ArrayList();
                     list_throwsSpecGen.add(throwsSpecGen);
@@ -1838,7 +1854,7 @@ public class ANTLRv3Parser extends Parser {
 
             }
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:648:44: (optionsSpecGen+= optionsSpec )?
+            // ANTLRv3.g:648:44: (optionsSpecGen+= optionsSpec )?
             int alt22=2;
             int LA22_0 = input.LA(1);
 
@@ -1847,11 +1863,12 @@ public class ANTLRv3Parser extends Parser {
             }
             switch (alt22) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:648:44: optionsSpecGen+= optionsSpec
+                    // ANTLRv3.g:648:44: optionsSpecGen+= optionsSpec
                     {
                     pushFollow(FOLLOW_optionsSpec_in_rule936);
                     optionsSpecGen=optionsSpec();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_optionsSpecGen==null) list_optionsSpecGen=new ArrayList();
                     list_optionsSpecGen.add(optionsSpecGen);
@@ -1862,7 +1879,7 @@ public class ANTLRv3Parser extends Parser {
 
             }
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:648:75: (ruleScopeSpecGen+= ruleScopeSpec )?
+            // ANTLRv3.g:648:75: (ruleScopeSpecGen+= ruleScopeSpec )?
             int alt23=2;
             int LA23_0 = input.LA(1);
 
@@ -1871,11 +1888,12 @@ public class ANTLRv3Parser extends Parser {
             }
             switch (alt23) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:648:75: ruleScopeSpecGen+= ruleScopeSpec
+                    // ANTLRv3.g:648:75: ruleScopeSpecGen+= ruleScopeSpec
                     {
                     pushFollow(FOLLOW_ruleScopeSpec_in_rule941);
                     ruleScopeSpecGen=ruleScopeSpec();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_ruleScopeSpecGen==null) list_ruleScopeSpecGen=new ArrayList();
                     list_ruleScopeSpecGen.add(ruleScopeSpecGen);
@@ -1886,7 +1904,7 @@ public class ANTLRv3Parser extends Parser {
 
             }
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:648:105: (ruleActionGen+= ruleAction )*
+            // ANTLRv3.g:648:105: (ruleActionGen+= ruleAction )*
             loop24:
             do {
                 int alt24=2;
@@ -1899,11 +1917,12 @@ public class ANTLRv3Parser extends Parser {
 
                 switch (alt24) {
             	case 1 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:648:105: ruleActionGen+= ruleAction
+            	    // ANTLRv3.g:648:105: ruleActionGen+= ruleAction
             	    {
             	    pushFollow(FOLLOW_ruleAction_in_rule946);
             	    ruleActionGen=ruleAction();
-            	    _fsp--;
+
+            	    state._fsp--;
 
             	    if (list_ruleActionGen==null) list_ruleActionGen=new ArrayList();
             	    list_ruleActionGen.add(ruleActionGen);
@@ -1917,18 +1936,17 @@ public class ANTLRv3Parser extends Parser {
                 }
             } while (true);
 
-            TK_6=(Token)input.LT(1);
-            match(input,79,FOLLOW_79_in_rule953); 
+            TK_6=(Token)match(input,79,FOLLOW_79_in_rule953); 
             pushFollow(FOLLOW_altList_in_rule957);
             altListGen=altList();
-            _fsp--;
+
+            state._fsp--;
 
             if (list_altListGen==null) list_altListGen=new ArrayList();
             list_altListGen.add(altListGen);
 
-            TK_7=(Token)input.LT(1);
-            match(input,69,FOLLOW_69_in_rule961); 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:650:20: (exceptionGroupGen+= exceptionGroup )?
+            TK_7=(Token)match(input,69,FOLLOW_69_in_rule961); 
+            // ANTLRv3.g:650:20: (exceptionGroupGen+= exceptionGroup )?
             int alt25=2;
             int LA25_0 = input.LA(1);
 
@@ -1937,11 +1955,12 @@ public class ANTLRv3Parser extends Parser {
             }
             switch (alt25) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:650:20: exceptionGroupGen+= exceptionGroup
+                    // ANTLRv3.g:650:20: exceptionGroupGen+= exceptionGroup
                     {
                     pushFollow(FOLLOW_exceptionGroup_in_rule967);
                     exceptionGroupGen=exceptionGroup();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_exceptionGroupGen==null) list_exceptionGroupGen=new ArrayList();
                     list_exceptionGroupGen.add(exceptionGroupGen);
@@ -1952,7 +1971,7 @@ public class ANTLRv3Parser extends Parser {
 
             }
 
-            
+
             		// Create return CST Node
             		Node ruleReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		ruleReturnNode.setKind("rule");
@@ -1960,7 +1979,7 @@ public class ANTLRv3Parser extends Parser {
             		if(DOC_COMMENTGen != null) {
             			Leaf DOC_COMMENTGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			DOC_COMMENTGenLeaf.setKind("DOC_COMMENT");
-            			DOC_COMMENTGenLeaf.setValue(DOC_COMMENTGen.getText());
+            			DOC_COMMENTGenLeaf.setValue((DOC_COMMENTGen!=null?DOC_COMMENTGen.getText():null));
             			DOC_COMMENTGenLeaf.setPos(DOC_COMMENTGen.getCharPositionInLine());
             			DOC_COMMENTGenLeaf.setLine(DOC_COMMENTGen.getLine());
             			ruleReturnNode.getChildren().add(DOC_COMMENTGenLeaf);
@@ -1969,7 +1988,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_0 != null) {
             			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_0Leaf.setKind("TOKEN");
-            	 		TK_0Leaf.setValue(TK_0.getText());
+            	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
             			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
             			TK_0Leaf.setLine(TK_0.getLine());
             	 		ruleReturnNode.getChildren().add(TK_0Leaf);
@@ -1978,7 +1997,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_1 != null) {
             			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_1Leaf.setKind("TOKEN");
-            	 		TK_1Leaf.setValue(TK_1.getText());
+            	 		TK_1Leaf.setValue((TK_1!=null?TK_1.getText():null));
             			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
             			TK_1Leaf.setLine(TK_1.getLine());
             	 		ruleReturnNode.getChildren().add(TK_1Leaf);
@@ -1987,7 +2006,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_2 != null) {
             			Leaf TK_2Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_2Leaf.setKind("TOKEN");
-            	 		TK_2Leaf.setValue(TK_2.getText());
+            	 		TK_2Leaf.setValue((TK_2!=null?TK_2.getText():null));
             			TK_2Leaf.setPos(TK_2.getCharPositionInLine());
             			TK_2Leaf.setLine(TK_2.getLine());
             	 		ruleReturnNode.getChildren().add(TK_2Leaf);
@@ -1996,7 +2015,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_3 != null) {
             			Leaf TK_3Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_3Leaf.setKind("TOKEN");
-            	 		TK_3Leaf.setValue(TK_3.getText());
+            	 		TK_3Leaf.setValue((TK_3!=null?TK_3.getText():null));
             			TK_3Leaf.setPos(TK_3.getCharPositionInLine());
             			TK_3Leaf.setLine(TK_3.getLine());
             	 		ruleReturnNode.getChildren().add(TK_3Leaf);
@@ -2015,7 +2034,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_4 != null) {
             			Leaf TK_4Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_4Leaf.setKind("TOKEN");
-            	 		TK_4Leaf.setValue(TK_4.getText());
+            	 		TK_4Leaf.setValue((TK_4!=null?TK_4.getText():null));
             			TK_4Leaf.setPos(TK_4.getCharPositionInLine());
             			TK_4Leaf.setLine(TK_4.getLine());
             	 		ruleReturnNode.getChildren().add(TK_4Leaf);
@@ -2024,7 +2043,7 @@ public class ANTLRv3Parser extends Parser {
             		if(ARG_ACTIONGen != null) {
             			Leaf ARG_ACTIONGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			ARG_ACTIONGenLeaf.setKind("ARG_ACTION");
-            			ARG_ACTIONGenLeaf.setValue(ARG_ACTIONGen.getText());
+            			ARG_ACTIONGenLeaf.setValue((ARG_ACTIONGen!=null?ARG_ACTIONGen.getText():null));
             			ARG_ACTIONGenLeaf.setPos(ARG_ACTIONGen.getCharPositionInLine());
             			ARG_ACTIONGenLeaf.setLine(ARG_ACTIONGen.getLine());
             			ruleReturnNode.getChildren().add(ARG_ACTIONGenLeaf);
@@ -2033,7 +2052,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_5 != null) {
             			Leaf TK_5Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_5Leaf.setKind("TOKEN");
-            	 		TK_5Leaf.setValue(TK_5.getText());
+            	 		TK_5Leaf.setValue((TK_5!=null?TK_5.getText():null));
             			TK_5Leaf.setPos(TK_5.getCharPositionInLine());
             			TK_5Leaf.setLine(TK_5.getLine());
             	 		ruleReturnNode.getChildren().add(TK_5Leaf);
@@ -2042,7 +2061,7 @@ public class ANTLRv3Parser extends Parser {
             		if(ARG_ACTIONGen_1 != null) {
             			Leaf ARG_ACTIONGen_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			ARG_ACTIONGen_1Leaf.setKind("ARG_ACTION");
-            			ARG_ACTIONGen_1Leaf.setValue(ARG_ACTIONGen_1.getText());
+            			ARG_ACTIONGen_1Leaf.setValue((ARG_ACTIONGen_1!=null?ARG_ACTIONGen_1.getText():null));
             			ARG_ACTIONGen_1Leaf.setPos(ARG_ACTIONGen_1.getCharPositionInLine());
             			ARG_ACTIONGen_1Leaf.setLine(ARG_ACTIONGen_1.getLine());
             			ruleReturnNode.getChildren().add(ARG_ACTIONGen_1Leaf);
@@ -2091,7 +2110,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_6 != null) {
             			Leaf TK_6Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_6Leaf.setKind("TOKEN");
-            	 		TK_6Leaf.setValue(TK_6.getText());
+            	 		TK_6Leaf.setValue((TK_6!=null?TK_6.getText():null));
             			TK_6Leaf.setPos(TK_6.getCharPositionInLine());
             			TK_6Leaf.setLine(TK_6.getLine());
             	 		ruleReturnNode.getChildren().add(TK_6Leaf);
@@ -2110,7 +2129,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_7 != null) {
             			Leaf TK_7Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_7Leaf.setKind("TOKEN");
-            	 		TK_7Leaf.setValue(TK_7.getText());
+            	 		TK_7Leaf.setValue((TK_7!=null?TK_7.getText():null));
             			TK_7Leaf.setPos(TK_7.getCharPositionInLine());
             			TK_7Leaf.setLine(TK_7.getLine());
             	 		ruleReturnNode.getChildren().add(TK_7Leaf);
@@ -2142,7 +2161,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end rule
+    // $ANTLR end "rule"
 
     public static class ruleAction_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -2151,10 +2170,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start ruleAction
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:829:1: ruleAction returns [Node returnNode] : TK_0= '@' idGen+= id ACTIONGen= ACTION ;
-    public final ruleAction_return ruleAction() throws RecognitionException {
-        ruleAction_return retval = new ruleAction_return();
+    // $ANTLR start "ruleAction"
+    // ANTLRv3.g:829:1: ruleAction returns [Node returnNode] : TK_0= '@' idGen+= id ACTIONGen= ACTION ;
+    public final ANTLRv3Parser.ruleAction_return ruleAction() throws RecognitionException {
+        ANTLRv3Parser.ruleAction_return retval = new ANTLRv3Parser.ruleAction_return();
         retval.start = input.LT(1);
 
         Token TK_0=null;
@@ -2162,21 +2181,20 @@ public class ANTLRv3Parser extends Parser {
         List list_idGen=null;
         RuleReturnScope idGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:830:1: (TK_0= '@' idGen+= id ACTIONGen= ACTION )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:830:3: TK_0= '@' idGen+= id ACTIONGen= ACTION
+            // ANTLRv3.g:830:1: (TK_0= '@' idGen+= id ACTIONGen= ACTION )
+            // ANTLRv3.g:830:3: TK_0= '@' idGen+= id ACTIONGen= ACTION
             {
-            TK_0=(Token)input.LT(1);
-            match(input,72,FOLLOW_72_in_ruleAction989); 
+            TK_0=(Token)match(input,72,FOLLOW_72_in_ruleAction989); 
             pushFollow(FOLLOW_id_in_ruleAction993);
             idGen=id();
-            _fsp--;
+
+            state._fsp--;
 
             if (list_idGen==null) list_idGen=new ArrayList();
             list_idGen.add(idGen);
 
-            ACTIONGen=(Token)input.LT(1);
-            match(input,ACTION,FOLLOW_ACTION_in_ruleAction997); 
-            
+            ACTIONGen=(Token)match(input,ACTION,FOLLOW_ACTION_in_ruleAction997); 
+
             		// Create return CST Node
             		Node ruleActionReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		ruleActionReturnNode.setKind("ruleAction");
@@ -2184,7 +2202,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_0 != null) {
             			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_0Leaf.setKind("TOKEN");
-            	 		TK_0Leaf.setValue(TK_0.getText());
+            	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
             			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
             			TK_0Leaf.setLine(TK_0.getLine());
             	 		ruleActionReturnNode.getChildren().add(TK_0Leaf);
@@ -2203,7 +2221,7 @@ public class ANTLRv3Parser extends Parser {
             		if(ACTIONGen != null) {
             			Leaf ACTIONGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			ACTIONGenLeaf.setKind("ACTION");
-            			ACTIONGenLeaf.setValue(ACTIONGen.getText());
+            			ACTIONGenLeaf.setValue((ACTIONGen!=null?ACTIONGen.getText():null));
             			ACTIONGenLeaf.setPos(ACTIONGen.getCharPositionInLine());
             			ACTIONGenLeaf.setLine(ACTIONGen.getLine());
             			ruleActionReturnNode.getChildren().add(ACTIONGenLeaf);
@@ -2225,7 +2243,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end ruleAction
+    // $ANTLR end "ruleAction"
 
     public static class throwsSpec_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -2234,10 +2252,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start throwsSpec
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:868:1: throwsSpec returns [Node returnNode] : TK_0= 'throws' idGen+= id (TK_1= ',' idGen_1+= id )* ;
-    public final throwsSpec_return throwsSpec() throws RecognitionException {
-        throwsSpec_return retval = new throwsSpec_return();
+    // $ANTLR start "throwsSpec"
+    // ANTLRv3.g:868:1: throwsSpec returns [Node returnNode] : TK_0= 'throws' idGen+= id (TK_1= ',' idGen_1+= id )* ;
+    public final ANTLRv3Parser.throwsSpec_return throwsSpec() throws RecognitionException {
+        ANTLRv3Parser.throwsSpec_return retval = new ANTLRv3Parser.throwsSpec_return();
         retval.start = input.LT(1);
 
         Token TK_0=null;
@@ -2247,19 +2265,19 @@ public class ANTLRv3Parser extends Parser {
         RuleReturnScope idGen = null;
         RuleReturnScope idGen_1 = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:869:1: (TK_0= 'throws' idGen+= id (TK_1= ',' idGen_1+= id )* )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:869:3: TK_0= 'throws' idGen+= id (TK_1= ',' idGen_1+= id )*
+            // ANTLRv3.g:869:1: (TK_0= 'throws' idGen+= id (TK_1= ',' idGen_1+= id )* )
+            // ANTLRv3.g:869:3: TK_0= 'throws' idGen+= id (TK_1= ',' idGen_1+= id )*
             {
-            TK_0=(Token)input.LT(1);
-            match(input,80,FOLLOW_80_in_throwsSpec1018); 
+            TK_0=(Token)match(input,80,FOLLOW_80_in_throwsSpec1018); 
             pushFollow(FOLLOW_id_in_throwsSpec1022);
             idGen=id();
-            _fsp--;
+
+            state._fsp--;
 
             if (list_idGen==null) list_idGen=new ArrayList();
             list_idGen.add(idGen);
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:869:27: (TK_1= ',' idGen_1+= id )*
+            // ANTLRv3.g:869:27: (TK_1= ',' idGen_1+= id )*
             loop26:
             do {
                 int alt26=2;
@@ -2272,13 +2290,13 @@ public class ANTLRv3Parser extends Parser {
 
                 switch (alt26) {
             	case 1 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:869:29: TK_1= ',' idGen_1+= id
+            	    // ANTLRv3.g:869:29: TK_1= ',' idGen_1+= id
             	    {
-            	    TK_1=(Token)input.LT(1);
-            	    match(input,81,FOLLOW_81_in_throwsSpec1028); 
+            	    TK_1=(Token)match(input,81,FOLLOW_81_in_throwsSpec1028); 
             	    pushFollow(FOLLOW_id_in_throwsSpec1032);
             	    idGen_1=id();
-            	    _fsp--;
+
+            	    state._fsp--;
 
             	    if (list_idGen_1==null) list_idGen_1=new ArrayList();
             	    list_idGen_1.add(idGen_1);
@@ -2292,7 +2310,7 @@ public class ANTLRv3Parser extends Parser {
                 }
             } while (true);
 
-            
+
             		// Create return CST Node
             		Node throwsSpecReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		throwsSpecReturnNode.setKind("throwsSpec");
@@ -2300,7 +2318,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_0 != null) {
             			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_0Leaf.setKind("TOKEN");
-            	 		TK_0Leaf.setValue(TK_0.getText());
+            	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
             			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
             			TK_0Leaf.setLine(TK_0.getLine());
             	 		throwsSpecReturnNode.getChildren().add(TK_0Leaf);
@@ -2315,7 +2333,7 @@ public class ANTLRv3Parser extends Parser {
             	            } 
             	        }
             	    }
-            	
+
             		// Create a special CST Node for terminal idGen_1 aggregation
             		if(list_idGen_1 != null) {
             	    for(int pos = 0; pos < list_idGen_1.size(); pos++ )  { 
@@ -2323,7 +2341,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_1 != null) {
             			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_1Leaf.setKind("TOKEN");
-            	 		TK_1Leaf.setValue(TK_1.getText());
+            	 		TK_1Leaf.setValue((TK_1!=null?TK_1.getText():null));
             			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
             			TK_1Leaf.setLine(TK_1.getLine());
             	 		throwsSpecReturnNode.getChildren().add(TK_1Leaf);
@@ -2338,7 +2356,7 @@ public class ANTLRv3Parser extends Parser {
             		}
             		}
             		}
-            	
+
             		// Returns the Node with CST Leaves/Nodes
             		retval.returnNode = throwsSpecReturnNode;
             	
@@ -2356,7 +2374,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end throwsSpec
+    // $ANTLR end "throwsSpec"
 
     public static class ruleScopeSpec_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -2365,10 +2383,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start ruleScopeSpec
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:922:1: ruleScopeSpec returns [Node returnNode] : (TK_0= 'scope' ACTIONGen= ACTION | TK_0= 'scope' idGen+= id (TK_1= ',' idGen_1+= id )* TK_2= ';' | TK_0= 'scope' ACTIONGen= ACTION TK_1= 'scope' idGen+= id (TK_2= ',' idGen_1+= id )* TK_3= ';' );
-    public final ruleScopeSpec_return ruleScopeSpec() throws RecognitionException {
-        ruleScopeSpec_return retval = new ruleScopeSpec_return();
+    // $ANTLR start "ruleScopeSpec"
+    // ANTLRv3.g:922:1: ruleScopeSpec returns [Node returnNode] : (TK_0= 'scope' ACTIONGen= ACTION | TK_0= 'scope' idGen+= id (TK_1= ',' idGen_1+= id )* TK_2= ';' | TK_0= 'scope' ACTIONGen= ACTION TK_1= 'scope' idGen+= id (TK_2= ',' idGen_1+= id )* TK_3= ';' );
+    public final ANTLRv3Parser.ruleScopeSpec_return ruleScopeSpec() throws RecognitionException {
+        ANTLRv3Parser.ruleScopeSpec_return retval = new ANTLRv3Parser.ruleScopeSpec_return();
         retval.start = input.LT(1);
 
         Token TK_0=null;
@@ -2381,7 +2399,7 @@ public class ANTLRv3Parser extends Parser {
         RuleReturnScope idGen = null;
         RuleReturnScope idGen_1 = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:923:1: (TK_0= 'scope' ACTIONGen= ACTION | TK_0= 'scope' idGen+= id (TK_1= ',' idGen_1+= id )* TK_2= ';' | TK_0= 'scope' ACTIONGen= ACTION TK_1= 'scope' idGen+= id (TK_2= ',' idGen_1+= id )* TK_3= ';' )
+            // ANTLRv3.g:923:1: (TK_0= 'scope' ACTIONGen= ACTION | TK_0= 'scope' idGen+= id (TK_1= ',' idGen_1+= id )* TK_2= ';' | TK_0= 'scope' ACTIONGen= ACTION TK_1= 'scope' idGen+= id (TK_2= ',' idGen_1+= id )* TK_3= ';' )
             int alt29=3;
             int LA29_0 = input.LA(1);
 
@@ -2399,7 +2417,7 @@ public class ANTLRv3Parser extends Parser {
                     }
                     else {
                         NoViableAltException nvae =
-                            new NoViableAltException("922:1: ruleScopeSpec returns [Node returnNode] : (TK_0= 'scope' ACTIONGen= ACTION | TK_0= 'scope' idGen+= id (TK_1= ',' idGen_1+= id )* TK_2= ';' | TK_0= 'scope' ACTIONGen= ACTION TK_1= 'scope' idGen+= id (TK_2= ',' idGen_1+= id )* TK_3= ';' );", 29, 2, input);
+                            new NoViableAltException("", 29, 2, input);
 
                         throw nvae;
                     }
@@ -2409,26 +2427,24 @@ public class ANTLRv3Parser extends Parser {
                 }
                 else {
                     NoViableAltException nvae =
-                        new NoViableAltException("922:1: ruleScopeSpec returns [Node returnNode] : (TK_0= 'scope' ACTIONGen= ACTION | TK_0= 'scope' idGen+= id (TK_1= ',' idGen_1+= id )* TK_2= ';' | TK_0= 'scope' ACTIONGen= ACTION TK_1= 'scope' idGen+= id (TK_2= ',' idGen_1+= id )* TK_3= ';' );", 29, 1, input);
+                        new NoViableAltException("", 29, 1, input);
 
                     throw nvae;
                 }
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("922:1: ruleScopeSpec returns [Node returnNode] : (TK_0= 'scope' ACTIONGen= ACTION | TK_0= 'scope' idGen+= id (TK_1= ',' idGen_1+= id )* TK_2= ';' | TK_0= 'scope' ACTIONGen= ACTION TK_1= 'scope' idGen+= id (TK_2= ',' idGen_1+= id )* TK_3= ';' );", 29, 0, input);
+                    new NoViableAltException("", 29, 0, input);
 
                 throw nvae;
             }
             switch (alt29) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:923:3: TK_0= 'scope' ACTIONGen= ACTION
+                    // ANTLRv3.g:923:3: TK_0= 'scope' ACTIONGen= ACTION
                     {
-                    TK_0=(Token)input.LT(1);
-                    match(input,SCOPE,FOLLOW_SCOPE_in_ruleScopeSpec1057); 
-                    ACTIONGen=(Token)input.LT(1);
-                    match(input,ACTION,FOLLOW_ACTION_in_ruleScopeSpec1061); 
-                    
+                    TK_0=(Token)match(input,SCOPE,FOLLOW_SCOPE_in_ruleScopeSpec1057); 
+                    ACTIONGen=(Token)match(input,ACTION,FOLLOW_ACTION_in_ruleScopeSpec1061); 
+
                     		// Create return CST Node
                     		Node ruleScopeSpecReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		ruleScopeSpecReturnNode.setKind("ruleScopeSpec");
@@ -2436,7 +2452,7 @@ public class ANTLRv3Parser extends Parser {
                     	    if(TK_0 != null) {
                     			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     	 		TK_0Leaf.setKind("TOKEN");
-                    	 		TK_0Leaf.setValue(TK_0.getText());
+                    	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
                     			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
                     			TK_0Leaf.setLine(TK_0.getLine());
                     	 		ruleScopeSpecReturnNode.getChildren().add(TK_0Leaf);
@@ -2445,7 +2461,7 @@ public class ANTLRv3Parser extends Parser {
                     		if(ACTIONGen != null) {
                     			Leaf ACTIONGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			ACTIONGenLeaf.setKind("ACTION");
-                    			ACTIONGenLeaf.setValue(ACTIONGen.getText());
+                    			ACTIONGenLeaf.setValue((ACTIONGen!=null?ACTIONGen.getText():null));
                     			ACTIONGenLeaf.setPos(ACTIONGen.getCharPositionInLine());
                     			ACTIONGenLeaf.setLine(ACTIONGen.getLine());
                     			ruleScopeSpecReturnNode.getChildren().add(ACTIONGenLeaf);
@@ -2457,18 +2473,18 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:949:4: TK_0= 'scope' idGen+= id (TK_1= ',' idGen_1+= id )* TK_2= ';'
+                    // ANTLRv3.g:949:4: TK_0= 'scope' idGen+= id (TK_1= ',' idGen_1+= id )* TK_2= ';'
                     {
-                    TK_0=(Token)input.LT(1);
-                    match(input,SCOPE,FOLLOW_SCOPE_in_ruleScopeSpec1073); 
+                    TK_0=(Token)match(input,SCOPE,FOLLOW_SCOPE_in_ruleScopeSpec1073); 
                     pushFollow(FOLLOW_id_in_ruleScopeSpec1077);
                     idGen=id();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_idGen==null) list_idGen=new ArrayList();
                     list_idGen.add(idGen);
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:949:27: (TK_1= ',' idGen_1+= id )*
+                    // ANTLRv3.g:949:27: (TK_1= ',' idGen_1+= id )*
                     loop27:
                     do {
                         int alt27=2;
@@ -2481,13 +2497,13 @@ public class ANTLRv3Parser extends Parser {
 
                         switch (alt27) {
                     	case 1 :
-                    	    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:949:28: TK_1= ',' idGen_1+= id
+                    	    // ANTLRv3.g:949:28: TK_1= ',' idGen_1+= id
                     	    {
-                    	    TK_1=(Token)input.LT(1);
-                    	    match(input,81,FOLLOW_81_in_ruleScopeSpec1082); 
+                    	    TK_1=(Token)match(input,81,FOLLOW_81_in_ruleScopeSpec1082); 
                     	    pushFollow(FOLLOW_id_in_ruleScopeSpec1086);
                     	    idGen_1=id();
-                    	    _fsp--;
+
+                    	    state._fsp--;
 
                     	    if (list_idGen_1==null) list_idGen_1=new ArrayList();
                     	    list_idGen_1.add(idGen_1);
@@ -2501,9 +2517,8 @@ public class ANTLRv3Parser extends Parser {
                         }
                     } while (true);
 
-                    TK_2=(Token)input.LT(1);
-                    match(input,69,FOLLOW_69_in_ruleScopeSpec1092); 
-                    
+                    TK_2=(Token)match(input,69,FOLLOW_69_in_ruleScopeSpec1092); 
+
                     		// Create return CST Node
                     		Node ruleScopeSpecReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		ruleScopeSpecReturnNode.setKind("ruleScopeSpec");
@@ -2511,7 +2526,7 @@ public class ANTLRv3Parser extends Parser {
                     	    if(TK_0 != null) {
                     			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     	 		TK_0Leaf.setKind("TOKEN");
-                    	 		TK_0Leaf.setValue(TK_0.getText());
+                    	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
                     			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
                     			TK_0Leaf.setLine(TK_0.getLine());
                     	 		ruleScopeSpecReturnNode.getChildren().add(TK_0Leaf);
@@ -2526,7 +2541,7 @@ public class ANTLRv3Parser extends Parser {
                     	            } 
                     	        }
                     	    }
-                    	
+
                     		// Create a special CST Node for terminal idGen_1 aggregation
                     		if(list_idGen_1 != null) {
                     	    for(int pos = 0; pos < list_idGen_1.size(); pos++ )  { 
@@ -2534,7 +2549,7 @@ public class ANTLRv3Parser extends Parser {
                     	    if(TK_1 != null) {
                     			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     	 		TK_1Leaf.setKind("TOKEN");
-                    	 		TK_1Leaf.setValue(TK_1.getText());
+                    	 		TK_1Leaf.setValue((TK_1!=null?TK_1.getText():null));
                     			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
                     			TK_1Leaf.setLine(TK_1.getLine());
                     	 		ruleScopeSpecReturnNode.getChildren().add(TK_1Leaf);
@@ -2549,12 +2564,12 @@ public class ANTLRv3Parser extends Parser {
                     		}
                     		}
                     		}
-                    	
+
                     	    // Create a Token CST Leaf	
                     	    if(TK_2 != null) {
                     			Leaf TK_2Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     	 		TK_2Leaf.setKind("TOKEN");
-                    	 		TK_2Leaf.setValue(TK_2.getText());
+                    	 		TK_2Leaf.setValue((TK_2!=null?TK_2.getText():null));
                     			TK_2Leaf.setPos(TK_2.getCharPositionInLine());
                     			TK_2Leaf.setLine(TK_2.getLine());
                     	 		ruleScopeSpecReturnNode.getChildren().add(TK_2Leaf);
@@ -2566,22 +2581,20 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1009:4: TK_0= 'scope' ACTIONGen= ACTION TK_1= 'scope' idGen+= id (TK_2= ',' idGen_1+= id )* TK_3= ';'
+                    // ANTLRv3.g:1009:4: TK_0= 'scope' ACTIONGen= ACTION TK_1= 'scope' idGen+= id (TK_2= ',' idGen_1+= id )* TK_3= ';'
                     {
-                    TK_0=(Token)input.LT(1);
-                    match(input,SCOPE,FOLLOW_SCOPE_in_ruleScopeSpec1104); 
-                    ACTIONGen=(Token)input.LT(1);
-                    match(input,ACTION,FOLLOW_ACTION_in_ruleScopeSpec1108); 
-                    TK_1=(Token)input.LT(1);
-                    match(input,SCOPE,FOLLOW_SCOPE_in_ruleScopeSpec1114); 
+                    TK_0=(Token)match(input,SCOPE,FOLLOW_SCOPE_in_ruleScopeSpec1104); 
+                    ACTIONGen=(Token)match(input,ACTION,FOLLOW_ACTION_in_ruleScopeSpec1108); 
+                    TK_1=(Token)match(input,SCOPE,FOLLOW_SCOPE_in_ruleScopeSpec1114); 
                     pushFollow(FOLLOW_id_in_ruleScopeSpec1118);
                     idGen=id();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_idGen==null) list_idGen=new ArrayList();
                     list_idGen.add(idGen);
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1010:26: (TK_2= ',' idGen_1+= id )*
+                    // ANTLRv3.g:1010:26: (TK_2= ',' idGen_1+= id )*
                     loop28:
                     do {
                         int alt28=2;
@@ -2594,13 +2607,13 @@ public class ANTLRv3Parser extends Parser {
 
                         switch (alt28) {
                     	case 1 :
-                    	    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1010:27: TK_2= ',' idGen_1+= id
+                    	    // ANTLRv3.g:1010:27: TK_2= ',' idGen_1+= id
                     	    {
-                    	    TK_2=(Token)input.LT(1);
-                    	    match(input,81,FOLLOW_81_in_ruleScopeSpec1123); 
+                    	    TK_2=(Token)match(input,81,FOLLOW_81_in_ruleScopeSpec1123); 
                     	    pushFollow(FOLLOW_id_in_ruleScopeSpec1127);
                     	    idGen_1=id();
-                    	    _fsp--;
+
+                    	    state._fsp--;
 
                     	    if (list_idGen_1==null) list_idGen_1=new ArrayList();
                     	    list_idGen_1.add(idGen_1);
@@ -2614,9 +2627,8 @@ public class ANTLRv3Parser extends Parser {
                         }
                     } while (true);
 
-                    TK_3=(Token)input.LT(1);
-                    match(input,69,FOLLOW_69_in_ruleScopeSpec1133); 
-                    
+                    TK_3=(Token)match(input,69,FOLLOW_69_in_ruleScopeSpec1133); 
+
                     		// Create return CST Node
                     		Node ruleScopeSpecReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		ruleScopeSpecReturnNode.setKind("ruleScopeSpec");
@@ -2624,7 +2636,7 @@ public class ANTLRv3Parser extends Parser {
                     	    if(TK_0 != null) {
                     			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     	 		TK_0Leaf.setKind("TOKEN");
-                    	 		TK_0Leaf.setValue(TK_0.getText());
+                    	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
                     			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
                     			TK_0Leaf.setLine(TK_0.getLine());
                     	 		ruleScopeSpecReturnNode.getChildren().add(TK_0Leaf);
@@ -2633,7 +2645,7 @@ public class ANTLRv3Parser extends Parser {
                     		if(ACTIONGen != null) {
                     			Leaf ACTIONGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			ACTIONGenLeaf.setKind("ACTION");
-                    			ACTIONGenLeaf.setValue(ACTIONGen.getText());
+                    			ACTIONGenLeaf.setValue((ACTIONGen!=null?ACTIONGen.getText():null));
                     			ACTIONGenLeaf.setPos(ACTIONGen.getCharPositionInLine());
                     			ACTIONGenLeaf.setLine(ACTIONGen.getLine());
                     			ruleScopeSpecReturnNode.getChildren().add(ACTIONGenLeaf);
@@ -2642,7 +2654,7 @@ public class ANTLRv3Parser extends Parser {
                     	    if(TK_1 != null) {
                     			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     	 		TK_1Leaf.setKind("TOKEN");
-                    	 		TK_1Leaf.setValue(TK_1.getText());
+                    	 		TK_1Leaf.setValue((TK_1!=null?TK_1.getText():null));
                     			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
                     			TK_1Leaf.setLine(TK_1.getLine());
                     	 		ruleScopeSpecReturnNode.getChildren().add(TK_1Leaf);
@@ -2657,7 +2669,7 @@ public class ANTLRv3Parser extends Parser {
                     	            } 
                     	        }
                     	    }
-                    	
+
                     		// Create a special CST Node for terminal idGen_1 aggregation
                     		if(list_idGen_1 != null) {
                     	    for(int pos = 0; pos < list_idGen_1.size(); pos++ )  { 
@@ -2665,7 +2677,7 @@ public class ANTLRv3Parser extends Parser {
                     	    if(TK_2 != null) {
                     			Leaf TK_2Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     	 		TK_2Leaf.setKind("TOKEN");
-                    	 		TK_2Leaf.setValue(TK_2.getText());
+                    	 		TK_2Leaf.setValue((TK_2!=null?TK_2.getText():null));
                     			TK_2Leaf.setPos(TK_2.getCharPositionInLine());
                     			TK_2Leaf.setLine(TK_2.getLine());
                     	 		ruleScopeSpecReturnNode.getChildren().add(TK_2Leaf);
@@ -2680,12 +2692,12 @@ public class ANTLRv3Parser extends Parser {
                     		}
                     		}
                     		}
-                    	
+
                     	    // Create a Token CST Leaf	
                     	    if(TK_3 != null) {
                     			Leaf TK_3Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     	 		TK_3Leaf.setKind("TOKEN");
-                    	 		TK_3Leaf.setValue(TK_3.getText());
+                    	 		TK_3Leaf.setValue((TK_3!=null?TK_3.getText():null));
                     			TK_3Leaf.setPos(TK_3.getCharPositionInLine());
                     			TK_3Leaf.setLine(TK_3.getLine());
                     	 		ruleScopeSpecReturnNode.getChildren().add(TK_3Leaf);
@@ -2709,7 +2721,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end ruleScopeSpec
+    // $ANTLR end "ruleScopeSpec"
 
     public static class block_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -2718,10 +2730,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start block
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1090:1: block returns [Node returnNode] : TK_0= '(' ( (optionsSpecGen+= optionsSpec )? TK_1= ':' )? alternativeGen+= alternative rewriteGen+= rewrite (TK_2= '|' alternativeGen_1+= alternative rewriteGen_1+= rewrite )* TK_3= ')' ;
-    public final block_return block() throws RecognitionException {
-        block_return retval = new block_return();
+    // $ANTLR start "block"
+    // ANTLRv3.g:1090:1: block returns [Node returnNode] : TK_0= '(' ( (optionsSpecGen+= optionsSpec )? TK_1= ':' )? alternativeGen+= alternative rewriteGen+= rewrite (TK_2= '|' alternativeGen_1+= alternative rewriteGen_1+= rewrite )* TK_3= ')' ;
+    public final ANTLRv3Parser.block_return block() throws RecognitionException {
+        ANTLRv3Parser.block_return retval = new ANTLRv3Parser.block_return();
         retval.start = input.LT(1);
 
         Token TK_0=null;
@@ -2739,12 +2751,11 @@ public class ANTLRv3Parser extends Parser {
         RuleReturnScope alternativeGen_1 = null;
         RuleReturnScope rewriteGen_1 = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1091:1: (TK_0= '(' ( (optionsSpecGen+= optionsSpec )? TK_1= ':' )? alternativeGen+= alternative rewriteGen+= rewrite (TK_2= '|' alternativeGen_1+= alternative rewriteGen_1+= rewrite )* TK_3= ')' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1091:5: TK_0= '(' ( (optionsSpecGen+= optionsSpec )? TK_1= ':' )? alternativeGen+= alternative rewriteGen+= rewrite (TK_2= '|' alternativeGen_1+= alternative rewriteGen_1+= rewrite )* TK_3= ')'
+            // ANTLRv3.g:1091:1: (TK_0= '(' ( (optionsSpecGen+= optionsSpec )? TK_1= ':' )? alternativeGen+= alternative rewriteGen+= rewrite (TK_2= '|' alternativeGen_1+= alternative rewriteGen_1+= rewrite )* TK_3= ')' )
+            // ANTLRv3.g:1091:5: TK_0= '(' ( (optionsSpecGen+= optionsSpec )? TK_1= ':' )? alternativeGen+= alternative rewriteGen+= rewrite (TK_2= '|' alternativeGen_1+= alternative rewriteGen_1+= rewrite )* TK_3= ')'
             {
-            TK_0=(Token)input.LT(1);
-            match(input,82,FOLLOW_82_in_block1156); 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1092:3: ( (optionsSpecGen+= optionsSpec )? TK_1= ':' )?
+            TK_0=(Token)match(input,82,FOLLOW_82_in_block1156); 
+            // ANTLRv3.g:1092:3: ( (optionsSpecGen+= optionsSpec )? TK_1= ':' )?
             int alt31=2;
             int LA31_0 = input.LA(1);
 
@@ -2753,9 +2764,9 @@ public class ANTLRv3Parser extends Parser {
             }
             switch (alt31) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1092:5: (optionsSpecGen+= optionsSpec )? TK_1= ':'
+                    // ANTLRv3.g:1092:5: (optionsSpecGen+= optionsSpec )? TK_1= ':'
                     {
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1092:5: (optionsSpecGen+= optionsSpec )?
+                    // ANTLRv3.g:1092:5: (optionsSpecGen+= optionsSpec )?
                     int alt30=2;
                     int LA30_0 = input.LA(1);
 
@@ -2764,11 +2775,12 @@ public class ANTLRv3Parser extends Parser {
                     }
                     switch (alt30) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1092:6: optionsSpecGen+= optionsSpec
+                            // ANTLRv3.g:1092:6: optionsSpecGen+= optionsSpec
                             {
                             pushFollow(FOLLOW_optionsSpec_in_block1165);
                             optionsSpecGen=optionsSpec();
-                            _fsp--;
+
+                            state._fsp--;
 
                             if (list_optionsSpecGen==null) list_optionsSpecGen=new ArrayList();
                             list_optionsSpecGen.add(optionsSpecGen);
@@ -2779,8 +2791,7 @@ public class ANTLRv3Parser extends Parser {
 
                     }
 
-                    TK_1=(Token)input.LT(1);
-                    match(input,79,FOLLOW_79_in_block1171); 
+                    TK_1=(Token)match(input,79,FOLLOW_79_in_block1171); 
 
                     }
                     break;
@@ -2789,19 +2800,21 @@ public class ANTLRv3Parser extends Parser {
 
             pushFollow(FOLLOW_alternative_in_block1180);
             alternativeGen=alternative();
-            _fsp--;
+
+            state._fsp--;
 
             if (list_alternativeGen==null) list_alternativeGen=new ArrayList();
             list_alternativeGen.add(alternativeGen);
 
             pushFollow(FOLLOW_rewrite_in_block1184);
             rewriteGen=rewrite();
-            _fsp--;
+
+            state._fsp--;
 
             if (list_rewriteGen==null) list_rewriteGen=new ArrayList();
             list_rewriteGen.add(rewriteGen);
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1093:51: (TK_2= '|' alternativeGen_1+= alternative rewriteGen_1+= rewrite )*
+            // ANTLRv3.g:1093:51: (TK_2= '|' alternativeGen_1+= alternative rewriteGen_1+= rewrite )*
             loop32:
             do {
                 int alt32=2;
@@ -2814,20 +2827,21 @@ public class ANTLRv3Parser extends Parser {
 
                 switch (alt32) {
             	case 1 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1093:53: TK_2= '|' alternativeGen_1+= alternative rewriteGen_1+= rewrite
+            	    // ANTLRv3.g:1093:53: TK_2= '|' alternativeGen_1+= alternative rewriteGen_1+= rewrite
             	    {
-            	    TK_2=(Token)input.LT(1);
-            	    match(input,83,FOLLOW_83_in_block1190); 
+            	    TK_2=(Token)match(input,83,FOLLOW_83_in_block1190); 
             	    pushFollow(FOLLOW_alternative_in_block1194);
             	    alternativeGen_1=alternative();
-            	    _fsp--;
+
+            	    state._fsp--;
 
             	    if (list_alternativeGen_1==null) list_alternativeGen_1=new ArrayList();
             	    list_alternativeGen_1.add(alternativeGen_1);
 
             	    pushFollow(FOLLOW_rewrite_in_block1198);
             	    rewriteGen_1=rewrite();
-            	    _fsp--;
+
+            	    state._fsp--;
 
             	    if (list_rewriteGen_1==null) list_rewriteGen_1=new ArrayList();
             	    list_rewriteGen_1.add(rewriteGen_1);
@@ -2841,9 +2855,8 @@ public class ANTLRv3Parser extends Parser {
                 }
             } while (true);
 
-            TK_3=(Token)input.LT(1);
-            match(input,84,FOLLOW_84_in_block1213); 
-            
+            TK_3=(Token)match(input,84,FOLLOW_84_in_block1213); 
+
             		// Create return CST Node
             		Node blockReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		blockReturnNode.setKind("block");
@@ -2851,7 +2864,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_0 != null) {
             			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_0Leaf.setKind("TOKEN");
-            	 		TK_0Leaf.setValue(TK_0.getText());
+            	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
             			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
             			TK_0Leaf.setLine(TK_0.getLine());
             	 		blockReturnNode.getChildren().add(TK_0Leaf);
@@ -2870,7 +2883,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_1 != null) {
             			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_1Leaf.setKind("TOKEN");
-            	 		TK_1Leaf.setValue(TK_1.getText());
+            	 		TK_1Leaf.setValue((TK_1!=null?TK_1.getText():null));
             			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
             			TK_1Leaf.setLine(TK_1.getLine());
             	 		blockReturnNode.getChildren().add(TK_1Leaf);
@@ -2895,7 +2908,7 @@ public class ANTLRv3Parser extends Parser {
             	            } 
             	        }
             	    }
-            	
+
             		// Create a special CST Node for terminal alternativeGen_1 aggregation
             		if(list_alternativeGen_1 != null) {
             	    for(int pos = 0; pos < list_alternativeGen_1.size(); pos++ )  { 
@@ -2903,7 +2916,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_2 != null) {
             			Leaf TK_2Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_2Leaf.setKind("TOKEN");
-            	 		TK_2Leaf.setValue(TK_2.getText());
+            	 		TK_2Leaf.setValue((TK_2!=null?TK_2.getText():null));
             			TK_2Leaf.setPos(TK_2.getCharPositionInLine());
             			TK_2Leaf.setLine(TK_2.getLine());
             	 		blockReturnNode.getChildren().add(TK_2Leaf);
@@ -2926,12 +2939,12 @@ public class ANTLRv3Parser extends Parser {
             		}
             		}
             		}
-            	
+
             	    // Create a Token CST Leaf	
             	    if(TK_3 != null) {
             			Leaf TK_3Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_3Leaf.setKind("TOKEN");
-            	 		TK_3Leaf.setValue(TK_3.getText());
+            	 		TK_3Leaf.setValue((TK_3!=null?TK_3.getText():null));
             			TK_3Leaf.setPos(TK_3.getCharPositionInLine());
             			TK_3Leaf.setLine(TK_3.getLine());
             	 		blockReturnNode.getChildren().add(TK_3Leaf);
@@ -2953,7 +2966,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end block
+    // $ANTLR end "block"
 
     public static class altList_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -2962,10 +2975,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start altList
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1193:1: altList returns [Node returnNode] : a1+= alternative rewriteGen+= rewrite (TK_0= '|' a2+= alternative rewriteGen_1+= rewrite )* ;
-    public final altList_return altList() throws RecognitionException {
-        altList_return retval = new altList_return();
+    // $ANTLR start "altList"
+    // ANTLRv3.g:1193:1: altList returns [Node returnNode] : a1+= alternative rewriteGen+= rewrite (TK_0= '|' a2+= alternative rewriteGen_1+= rewrite )* ;
+    public final ANTLRv3Parser.altList_return altList() throws RecognitionException {
+        ANTLRv3Parser.altList_return retval = new ANTLRv3Parser.altList_return();
         retval.start = input.LT(1);
 
         Token TK_0=null;
@@ -2978,24 +2991,26 @@ public class ANTLRv3Parser extends Parser {
         RuleReturnScope a2 = null;
         RuleReturnScope rewriteGen_1 = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1194:1: (a1+= alternative rewriteGen+= rewrite (TK_0= '|' a2+= alternative rewriteGen_1+= rewrite )* )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1194:5: a1+= alternative rewriteGen+= rewrite (TK_0= '|' a2+= alternative rewriteGen_1+= rewrite )*
+            // ANTLRv3.g:1194:1: (a1+= alternative rewriteGen+= rewrite (TK_0= '|' a2+= alternative rewriteGen_1+= rewrite )* )
+            // ANTLRv3.g:1194:5: a1+= alternative rewriteGen+= rewrite (TK_0= '|' a2+= alternative rewriteGen_1+= rewrite )*
             {
             pushFollow(FOLLOW_alternative_in_altList1239);
             a1=alternative();
-            _fsp--;
+
+            state._fsp--;
 
             if (list_a1==null) list_a1=new ArrayList();
             list_a1.add(a1);
 
             pushFollow(FOLLOW_rewrite_in_altList1243);
             rewriteGen=rewrite();
-            _fsp--;
+
+            state._fsp--;
 
             if (list_rewriteGen==null) list_rewriteGen=new ArrayList();
             list_rewriteGen.add(rewriteGen);
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1194:41: (TK_0= '|' a2+= alternative rewriteGen_1+= rewrite )*
+            // ANTLRv3.g:1194:41: (TK_0= '|' a2+= alternative rewriteGen_1+= rewrite )*
             loop33:
             do {
                 int alt33=2;
@@ -3008,20 +3023,21 @@ public class ANTLRv3Parser extends Parser {
 
                 switch (alt33) {
             	case 1 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1194:43: TK_0= '|' a2+= alternative rewriteGen_1+= rewrite
+            	    // ANTLRv3.g:1194:43: TK_0= '|' a2+= alternative rewriteGen_1+= rewrite
             	    {
-            	    TK_0=(Token)input.LT(1);
-            	    match(input,83,FOLLOW_83_in_altList1249); 
+            	    TK_0=(Token)match(input,83,FOLLOW_83_in_altList1249); 
             	    pushFollow(FOLLOW_alternative_in_altList1253);
             	    a2=alternative();
-            	    _fsp--;
+
+            	    state._fsp--;
 
             	    if (list_a2==null) list_a2=new ArrayList();
             	    list_a2.add(a2);
 
             	    pushFollow(FOLLOW_rewrite_in_altList1257);
             	    rewriteGen_1=rewrite();
-            	    _fsp--;
+
+            	    state._fsp--;
 
             	    if (list_rewriteGen_1==null) list_rewriteGen_1=new ArrayList();
             	    list_rewriteGen_1.add(rewriteGen_1);
@@ -3035,7 +3051,7 @@ public class ANTLRv3Parser extends Parser {
                 }
             } while (true);
 
-            
+
             		// Create return CST Node
             		Node altListReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		altListReturnNode.setKind("altList");
@@ -3059,7 +3075,7 @@ public class ANTLRv3Parser extends Parser {
             	            } 
             	        }
             	    }
-            	
+
             		// Create a special CST Node for terminal a2 aggregation
             		if(list_a2 != null) {
             	    for(int pos = 0; pos < list_a2.size(); pos++ )  { 
@@ -3067,7 +3083,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_0 != null) {
             			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_0Leaf.setKind("TOKEN");
-            	 		TK_0Leaf.setValue(TK_0.getText());
+            	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
             			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
             			TK_0Leaf.setLine(TK_0.getLine());
             	 		altListReturnNode.getChildren().add(TK_0Leaf);
@@ -3090,7 +3106,7 @@ public class ANTLRv3Parser extends Parser {
             		}
             		}
             		}
-            	
+
             		// Returns the Node with CST Leaves/Nodes
             		retval.returnNode = altListReturnNode;
             	
@@ -3108,7 +3124,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end altList
+    // $ANTLR end "altList"
 
     public static class alternative_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -3117,16 +3133,16 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start alternative
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1256:1: alternative returns [Node returnNode] : ( (elementGen+= element )+ | );
-    public final alternative_return alternative() throws RecognitionException {
-        alternative_return retval = new alternative_return();
+    // $ANTLR start "alternative"
+    // ANTLRv3.g:1256:1: alternative returns [Node returnNode] : ( (elementGen+= element )+ | );
+    public final ANTLRv3Parser.alternative_return alternative() throws RecognitionException {
+        ANTLRv3Parser.alternative_return retval = new ANTLRv3Parser.alternative_return();
         retval.start = input.LT(1);
 
         List list_elementGen=null;
         RuleReturnScope elementGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1257:1: ( (elementGen+= element )+ | )
+            // ANTLRv3.g:1257:1: ( (elementGen+= element )+ | )
             int alt35=2;
             int LA35_0 = input.LA(1);
 
@@ -3138,15 +3154,15 @@ public class ANTLRv3Parser extends Parser {
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("1256:1: alternative returns [Node returnNode] : ( (elementGen+= element )+ | );", 35, 0, input);
+                    new NoViableAltException("", 35, 0, input);
 
                 throw nvae;
             }
             switch (alt35) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1257:5: (elementGen+= element )+
+                    // ANTLRv3.g:1257:5: (elementGen+= element )+
                     {
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1257:15: (elementGen+= element )+
+                    // ANTLRv3.g:1257:15: (elementGen+= element )+
                     int cnt34=0;
                     loop34:
                     do {
@@ -3160,11 +3176,12 @@ public class ANTLRv3Parser extends Parser {
 
                         switch (alt34) {
                     	case 1 :
-                    	    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1257:15: elementGen+= element
+                    	    // ANTLRv3.g:1257:15: elementGen+= element
                     	    {
                     	    pushFollow(FOLLOW_element_in_alternative1286);
                     	    elementGen=element();
-                    	    _fsp--;
+
+                    	    state._fsp--;
 
                     	    if (list_elementGen==null) list_elementGen=new ArrayList();
                     	    list_elementGen.add(elementGen);
@@ -3182,7 +3199,7 @@ public class ANTLRv3Parser extends Parser {
                         cnt34++;
                     } while (true);
 
-                    
+
                     		// Create return CST Node
                     		Node alternativeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		alternativeReturnNode.setKind("alternative");
@@ -3203,7 +3220,7 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1276:5: 
+                    // ANTLRv3.g:1276:5: 
                     {
                     }
                     break;
@@ -3220,7 +3237,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end alternative
+    // $ANTLR end "alternative"
 
     public static class exceptionGroup_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -3229,10 +3246,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start exceptionGroup
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1278:1: exceptionGroup returns [Node returnNode] : ( (exceptionHandlerGen+= exceptionHandler )+ (finallyClauseGen+= finallyClause )? | finallyClauseGen+= finallyClause );
-    public final exceptionGroup_return exceptionGroup() throws RecognitionException {
-        exceptionGroup_return retval = new exceptionGroup_return();
+    // $ANTLR start "exceptionGroup"
+    // ANTLRv3.g:1278:1: exceptionGroup returns [Node returnNode] : ( (exceptionHandlerGen+= exceptionHandler )+ (finallyClauseGen+= finallyClause )? | finallyClauseGen+= finallyClause );
+    public final ANTLRv3Parser.exceptionGroup_return exceptionGroup() throws RecognitionException {
+        ANTLRv3Parser.exceptionGroup_return retval = new ANTLRv3Parser.exceptionGroup_return();
         retval.start = input.LT(1);
 
         List list_exceptionHandlerGen=null;
@@ -3240,7 +3257,7 @@ public class ANTLRv3Parser extends Parser {
         RuleReturnScope exceptionHandlerGen = null;
         RuleReturnScope finallyClauseGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1279:1: ( (exceptionHandlerGen+= exceptionHandler )+ (finallyClauseGen+= finallyClause )? | finallyClauseGen+= finallyClause )
+            // ANTLRv3.g:1279:1: ( (exceptionHandlerGen+= exceptionHandler )+ (finallyClauseGen+= finallyClause )? | finallyClauseGen+= finallyClause )
             int alt38=2;
             int LA38_0 = input.LA(1);
 
@@ -3252,15 +3269,15 @@ public class ANTLRv3Parser extends Parser {
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("1278:1: exceptionGroup returns [Node returnNode] : ( (exceptionHandlerGen+= exceptionHandler )+ (finallyClauseGen+= finallyClause )? | finallyClauseGen+= finallyClause );", 38, 0, input);
+                    new NoViableAltException("", 38, 0, input);
 
                 throw nvae;
             }
             switch (alt38) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1279:3: (exceptionHandlerGen+= exceptionHandler )+ (finallyClauseGen+= finallyClause )?
+                    // ANTLRv3.g:1279:3: (exceptionHandlerGen+= exceptionHandler )+ (finallyClauseGen+= finallyClause )?
                     {
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1279:3: (exceptionHandlerGen+= exceptionHandler )+
+                    // ANTLRv3.g:1279:3: (exceptionHandlerGen+= exceptionHandler )+
                     int cnt36=0;
                     loop36:
                     do {
@@ -3274,11 +3291,12 @@ public class ANTLRv3Parser extends Parser {
 
                         switch (alt36) {
                     	case 1 :
-                    	    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1279:5: exceptionHandlerGen+= exceptionHandler
+                    	    // ANTLRv3.g:1279:5: exceptionHandlerGen+= exceptionHandler
                     	    {
                     	    pushFollow(FOLLOW_exceptionHandler_in_exceptionGroup1323);
                     	    exceptionHandlerGen=exceptionHandler();
-                    	    _fsp--;
+
+                    	    state._fsp--;
 
                     	    if (list_exceptionHandlerGen==null) list_exceptionHandlerGen=new ArrayList();
                     	    list_exceptionHandlerGen.add(exceptionHandlerGen);
@@ -3296,7 +3314,7 @@ public class ANTLRv3Parser extends Parser {
                         cnt36++;
                     } while (true);
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1279:46: (finallyClauseGen+= finallyClause )?
+                    // ANTLRv3.g:1279:46: (finallyClauseGen+= finallyClause )?
                     int alt37=2;
                     int LA37_0 = input.LA(1);
 
@@ -3305,11 +3323,12 @@ public class ANTLRv3Parser extends Parser {
                     }
                     switch (alt37) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1279:48: finallyClauseGen+= finallyClause
+                            // ANTLRv3.g:1279:48: finallyClauseGen+= finallyClause
                             {
                             pushFollow(FOLLOW_finallyClause_in_exceptionGroup1332);
                             finallyClauseGen=finallyClause();
-                            _fsp--;
+
+                            state._fsp--;
 
                             if (list_finallyClauseGen==null) list_finallyClauseGen=new ArrayList();
                             list_finallyClauseGen.add(finallyClauseGen);
@@ -3320,7 +3339,7 @@ public class ANTLRv3Parser extends Parser {
 
                     }
 
-                    
+
                     		// Create return CST Node
                     		Node exceptionGroupReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		exceptionGroupReturnNode.setKind("exceptionGroup");
@@ -3351,16 +3370,17 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1307:4: finallyClauseGen+= finallyClause
+                    // ANTLRv3.g:1307:4: finallyClauseGen+= finallyClause
                     {
                     pushFollow(FOLLOW_finallyClause_in_exceptionGroup1346);
                     finallyClauseGen=finallyClause();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_finallyClauseGen==null) list_finallyClauseGen=new ArrayList();
                     list_finallyClauseGen.add(finallyClauseGen);
 
-                    
+
                     		// Create return CST Node
                     		Node exceptionGroupReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		exceptionGroupReturnNode.setKind("exceptionGroup");
@@ -3393,7 +3413,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end exceptionGroup
+    // $ANTLR end "exceptionGroup"
 
     public static class exceptionHandler_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -3402,10 +3422,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start exceptionHandler
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1327:1: exceptionHandler returns [Node returnNode] : TK_0= 'catch' ARG_ACTIONGen= ARG_ACTION ACTIONGen= ACTION ;
-    public final exceptionHandler_return exceptionHandler() throws RecognitionException {
-        exceptionHandler_return retval = new exceptionHandler_return();
+    // $ANTLR start "exceptionHandler"
+    // ANTLRv3.g:1327:1: exceptionHandler returns [Node returnNode] : TK_0= 'catch' ARG_ACTIONGen= ARG_ACTION ACTIONGen= ACTION ;
+    public final ANTLRv3Parser.exceptionHandler_return exceptionHandler() throws RecognitionException {
+        ANTLRv3Parser.exceptionHandler_return retval = new ANTLRv3Parser.exceptionHandler_return();
         retval.start = input.LT(1);
 
         Token TK_0=null;
@@ -3413,16 +3433,13 @@ public class ANTLRv3Parser extends Parser {
         Token ACTIONGen=null;
 
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1328:1: (TK_0= 'catch' ARG_ACTIONGen= ARG_ACTION ACTIONGen= ACTION )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1328:6: TK_0= 'catch' ARG_ACTIONGen= ARG_ACTION ACTIONGen= ACTION
+            // ANTLRv3.g:1328:1: (TK_0= 'catch' ARG_ACTIONGen= ARG_ACTION ACTIONGen= ACTION )
+            // ANTLRv3.g:1328:6: TK_0= 'catch' ARG_ACTIONGen= ARG_ACTION ACTIONGen= ACTION
             {
-            TK_0=(Token)input.LT(1);
-            match(input,85,FOLLOW_85_in_exceptionHandler1373); 
-            ARG_ACTIONGen=(Token)input.LT(1);
-            match(input,ARG_ACTION,FOLLOW_ARG_ACTION_in_exceptionHandler1377); 
-            ACTIONGen=(Token)input.LT(1);
-            match(input,ACTION,FOLLOW_ACTION_in_exceptionHandler1381); 
-            
+            TK_0=(Token)match(input,85,FOLLOW_85_in_exceptionHandler1373); 
+            ARG_ACTIONGen=(Token)match(input,ARG_ACTION,FOLLOW_ARG_ACTION_in_exceptionHandler1377); 
+            ACTIONGen=(Token)match(input,ACTION,FOLLOW_ACTION_in_exceptionHandler1381); 
+
             		// Create return CST Node
             		Node exceptionHandlerReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		exceptionHandlerReturnNode.setKind("exceptionHandler");
@@ -3430,7 +3447,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_0 != null) {
             			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_0Leaf.setKind("TOKEN");
-            	 		TK_0Leaf.setValue(TK_0.getText());
+            	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
             			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
             			TK_0Leaf.setLine(TK_0.getLine());
             	 		exceptionHandlerReturnNode.getChildren().add(TK_0Leaf);
@@ -3439,7 +3456,7 @@ public class ANTLRv3Parser extends Parser {
             		if(ARG_ACTIONGen != null) {
             			Leaf ARG_ACTIONGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			ARG_ACTIONGenLeaf.setKind("ARG_ACTION");
-            			ARG_ACTIONGenLeaf.setValue(ARG_ACTIONGen.getText());
+            			ARG_ACTIONGenLeaf.setValue((ARG_ACTIONGen!=null?ARG_ACTIONGen.getText():null));
             			ARG_ACTIONGenLeaf.setPos(ARG_ACTIONGen.getCharPositionInLine());
             			ARG_ACTIONGenLeaf.setLine(ARG_ACTIONGen.getLine());
             			exceptionHandlerReturnNode.getChildren().add(ARG_ACTIONGenLeaf);
@@ -3448,7 +3465,7 @@ public class ANTLRv3Parser extends Parser {
             		if(ACTIONGen != null) {
             			Leaf ACTIONGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			ACTIONGenLeaf.setKind("ACTION");
-            			ACTIONGenLeaf.setValue(ACTIONGen.getText());
+            			ACTIONGenLeaf.setValue((ACTIONGen!=null?ACTIONGen.getText():null));
             			ACTIONGenLeaf.setPos(ACTIONGen.getCharPositionInLine());
             			ACTIONGenLeaf.setLine(ACTIONGen.getLine());
             			exceptionHandlerReturnNode.getChildren().add(ACTIONGenLeaf);
@@ -3470,7 +3487,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end exceptionHandler
+    // $ANTLR end "exceptionHandler"
 
     public static class finallyClause_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -3479,24 +3496,22 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start finallyClause
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1365:1: finallyClause returns [Node returnNode] : TK_0= 'finally' ACTIONGen= ACTION ;
-    public final finallyClause_return finallyClause() throws RecognitionException {
-        finallyClause_return retval = new finallyClause_return();
+    // $ANTLR start "finallyClause"
+    // ANTLRv3.g:1365:1: finallyClause returns [Node returnNode] : TK_0= 'finally' ACTIONGen= ACTION ;
+    public final ANTLRv3Parser.finallyClause_return finallyClause() throws RecognitionException {
+        ANTLRv3Parser.finallyClause_return retval = new ANTLRv3Parser.finallyClause_return();
         retval.start = input.LT(1);
 
         Token TK_0=null;
         Token ACTIONGen=null;
 
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1366:1: (TK_0= 'finally' ACTIONGen= ACTION )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1366:6: TK_0= 'finally' ACTIONGen= ACTION
+            // ANTLRv3.g:1366:1: (TK_0= 'finally' ACTIONGen= ACTION )
+            // ANTLRv3.g:1366:6: TK_0= 'finally' ACTIONGen= ACTION
             {
-            TK_0=(Token)input.LT(1);
-            match(input,86,FOLLOW_86_in_finallyClause1409); 
-            ACTIONGen=(Token)input.LT(1);
-            match(input,ACTION,FOLLOW_ACTION_in_finallyClause1413); 
-            
+            TK_0=(Token)match(input,86,FOLLOW_86_in_finallyClause1409); 
+            ACTIONGen=(Token)match(input,ACTION,FOLLOW_ACTION_in_finallyClause1413); 
+
             		// Create return CST Node
             		Node finallyClauseReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		finallyClauseReturnNode.setKind("finallyClause");
@@ -3504,7 +3519,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_0 != null) {
             			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_0Leaf.setKind("TOKEN");
-            	 		TK_0Leaf.setValue(TK_0.getText());
+            	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
             			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
             			TK_0Leaf.setLine(TK_0.getLine());
             	 		finallyClauseReturnNode.getChildren().add(TK_0Leaf);
@@ -3513,7 +3528,7 @@ public class ANTLRv3Parser extends Parser {
             		if(ACTIONGen != null) {
             			Leaf ACTIONGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			ACTIONGenLeaf.setKind("ACTION");
-            			ACTIONGenLeaf.setValue(ACTIONGen.getText());
+            			ACTIONGenLeaf.setValue((ACTIONGen!=null?ACTIONGen.getText():null));
             			ACTIONGenLeaf.setPos(ACTIONGen.getCharPositionInLine());
             			ACTIONGenLeaf.setLine(ACTIONGen.getLine());
             			finallyClauseReturnNode.getChildren().add(ACTIONGenLeaf);
@@ -3535,7 +3550,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end finallyClause
+    // $ANTLR end "finallyClause"
 
     public static class element_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -3544,26 +3559,27 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start element
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1394:1: element returns [Node returnNode] : elementNoOptionSpecGen+= elementNoOptionSpec ;
-    public final element_return element() throws RecognitionException {
-        element_return retval = new element_return();
+    // $ANTLR start "element"
+    // ANTLRv3.g:1394:1: element returns [Node returnNode] : elementNoOptionSpecGen+= elementNoOptionSpec ;
+    public final ANTLRv3Parser.element_return element() throws RecognitionException {
+        ANTLRv3Parser.element_return retval = new ANTLRv3Parser.element_return();
         retval.start = input.LT(1);
 
         List list_elementNoOptionSpecGen=null;
         RuleReturnScope elementNoOptionSpecGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1395:1: (elementNoOptionSpecGen+= elementNoOptionSpec )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1395:3: elementNoOptionSpecGen+= elementNoOptionSpec
+            // ANTLRv3.g:1395:1: (elementNoOptionSpecGen+= elementNoOptionSpec )
+            // ANTLRv3.g:1395:3: elementNoOptionSpecGen+= elementNoOptionSpec
             {
             pushFollow(FOLLOW_elementNoOptionSpec_in_element1438);
             elementNoOptionSpecGen=elementNoOptionSpec();
-            _fsp--;
+
+            state._fsp--;
 
             if (list_elementNoOptionSpecGen==null) list_elementNoOptionSpecGen=new ArrayList();
             list_elementNoOptionSpecGen.add(elementNoOptionSpecGen);
 
-            
+
             		// Create return CST Node
             		Node elementReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		elementReturnNode.setKind("element");
@@ -3594,7 +3610,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end element
+    // $ANTLR end "element"
 
     public static class elementNoOptionSpec_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -3603,10 +3619,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start elementNoOptionSpec
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1415:1: elementNoOptionSpec returns [Node returnNode] : (idGen+= id (TK_0= '=' | TK_1= '+=' ) ruleName+= atom (ebnfSuffixGen+= ebnfSuffix | ) | idGen+= id (TK_0= '=' | TK_1= '+=' ) blockGen+= block (ebnfSuffixGen+= ebnfSuffix | ) | ruleName+= atom (ebnfSuffixGen+= ebnfSuffix | ) | ebnfGen+= ebnf | ACTIONGen= ACTION | SEMPREDGen= SEMPRED (TK_0= '=>' | ) | treeSpecGen+= treeSpec );
-    public final elementNoOptionSpec_return elementNoOptionSpec() throws RecognitionException {
-        elementNoOptionSpec_return retval = new elementNoOptionSpec_return();
+    // $ANTLR start "elementNoOptionSpec"
+    // ANTLRv3.g:1415:1: elementNoOptionSpec returns [Node returnNode] : (idGen+= id (TK_0= '=' | TK_1= '+=' ) ruleName+= atom (ebnfSuffixGen+= ebnfSuffix | ) | idGen+= id (TK_0= '=' | TK_1= '+=' ) blockGen+= block (ebnfSuffixGen+= ebnfSuffix | ) | ruleName+= atom (ebnfSuffixGen+= ebnfSuffix | ) | ebnfGen+= ebnf | ACTIONGen= ACTION | SEMPREDGen= SEMPRED (TK_0= '=>' | ) | treeSpecGen+= treeSpec );
+    public final ANTLRv3Parser.elementNoOptionSpec_return elementNoOptionSpec() throws RecognitionException {
+        ANTLRv3Parser.elementNoOptionSpec_return retval = new ANTLRv3Parser.elementNoOptionSpec_return();
         retval.start = input.LT(1);
 
         Token TK_0=null;
@@ -3626,200 +3642,22 @@ public class ANTLRv3Parser extends Parser {
         RuleReturnScope ebnfGen = null;
         RuleReturnScope treeSpecGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1416:1: (idGen+= id (TK_0= '=' | TK_1= '+=' ) ruleName+= atom (ebnfSuffixGen+= ebnfSuffix | ) | idGen+= id (TK_0= '=' | TK_1= '+=' ) blockGen+= block (ebnfSuffixGen+= ebnfSuffix | ) | ruleName+= atom (ebnfSuffixGen+= ebnfSuffix | ) | ebnfGen+= ebnf | ACTIONGen= ACTION | SEMPREDGen= SEMPRED (TK_0= '=>' | ) | treeSpecGen+= treeSpec )
+            // ANTLRv3.g:1416:1: (idGen+= id (TK_0= '=' | TK_1= '+=' ) ruleName+= atom (ebnfSuffixGen+= ebnfSuffix | ) | idGen+= id (TK_0= '=' | TK_1= '+=' ) blockGen+= block (ebnfSuffixGen+= ebnfSuffix | ) | ruleName+= atom (ebnfSuffixGen+= ebnfSuffix | ) | ebnfGen+= ebnf | ACTIONGen= ACTION | SEMPREDGen= SEMPRED (TK_0= '=>' | ) | treeSpecGen+= treeSpec )
             int alt45=7;
-            switch ( input.LA(1) ) {
-            case TOKEN_REF:
-                {
-                switch ( input.LA(2) ) {
-                case 71:
-                    {
-                    int LA45_8 = input.LA(3);
-
-                    if ( (LA45_8==82) ) {
-                        alt45=2;
-                    }
-                    else if ( ((LA45_8>=TOKEN_REF && LA45_8<=CHAR_LITERAL)||LA45_8==RULE_REF||LA45_8==89||LA45_8==92) ) {
-                        alt45=1;
-                    }
-                    else {
-                        NoViableAltException nvae =
-                            new NoViableAltException("1415:1: elementNoOptionSpec returns [Node returnNode] : (idGen+= id (TK_0= '=' | TK_1= '+=' ) ruleName+= atom (ebnfSuffixGen+= ebnfSuffix | ) | idGen+= id (TK_0= '=' | TK_1= '+=' ) blockGen+= block (ebnfSuffixGen+= ebnfSuffix | ) | ruleName+= atom (ebnfSuffixGen+= ebnfSuffix | ) | ebnfGen+= ebnf | ACTIONGen= ACTION | SEMPREDGen= SEMPRED (TK_0= '=>' | ) | treeSpecGen+= treeSpec );", 45, 8, input);
-
-                        throw nvae;
-                    }
-                    }
-                    break;
-                case 87:
-                    {
-                    int LA45_9 = input.LA(3);
-
-                    if ( (LA45_9==82) ) {
-                        alt45=2;
-                    }
-                    else if ( ((LA45_9>=TOKEN_REF && LA45_9<=CHAR_LITERAL)||LA45_9==RULE_REF||LA45_9==89||LA45_9==92) ) {
-                        alt45=1;
-                    }
-                    else {
-                        NoViableAltException nvae =
-                            new NoViableAltException("1415:1: elementNoOptionSpec returns [Node returnNode] : (idGen+= id (TK_0= '=' | TK_1= '+=' ) ruleName+= atom (ebnfSuffixGen+= ebnfSuffix | ) | idGen+= id (TK_0= '=' | TK_1= '+=' ) blockGen+= block (ebnfSuffixGen+= ebnfSuffix | ) | ruleName+= atom (ebnfSuffixGen+= ebnfSuffix | ) | ebnfGen+= ebnf | ACTIONGen= ACTION | SEMPREDGen= SEMPRED (TK_0= '=>' | ) | treeSpecGen+= treeSpec );", 45, 9, input);
-
-                        throw nvae;
-                    }
-                    }
-                    break;
-                case SEMPRED:
-                case TREE_BEGIN:
-                case ROOT:
-                case BANG:
-                case REWRITE:
-                case TOKEN_REF:
-                case STRING_LITERAL:
-                case CHAR_LITERAL:
-                case ACTION:
-                case ARG_ACTION:
-                case RULE_REF:
-                case 69:
-                case 74:
-                case 82:
-                case 83:
-                case 84:
-                case 89:
-                case 90:
-                case 91:
-                case 92:
-                    {
-                    alt45=3;
-                    }
-                    break;
-                default:
-                    NoViableAltException nvae =
-                        new NoViableAltException("1415:1: elementNoOptionSpec returns [Node returnNode] : (idGen+= id (TK_0= '=' | TK_1= '+=' ) ruleName+= atom (ebnfSuffixGen+= ebnfSuffix | ) | idGen+= id (TK_0= '=' | TK_1= '+=' ) blockGen+= block (ebnfSuffixGen+= ebnfSuffix | ) | ruleName+= atom (ebnfSuffixGen+= ebnfSuffix | ) | ebnfGen+= ebnf | ACTIONGen= ACTION | SEMPREDGen= SEMPRED (TK_0= '=>' | ) | treeSpecGen+= treeSpec );", 45, 1, input);
-
-                    throw nvae;
-                }
-
-                }
-                break;
-            case RULE_REF:
-                {
-                switch ( input.LA(2) ) {
-                case 71:
-                    {
-                    int LA45_8 = input.LA(3);
-
-                    if ( (LA45_8==82) ) {
-                        alt45=2;
-                    }
-                    else if ( ((LA45_8>=TOKEN_REF && LA45_8<=CHAR_LITERAL)||LA45_8==RULE_REF||LA45_8==89||LA45_8==92) ) {
-                        alt45=1;
-                    }
-                    else {
-                        NoViableAltException nvae =
-                            new NoViableAltException("1415:1: elementNoOptionSpec returns [Node returnNode] : (idGen+= id (TK_0= '=' | TK_1= '+=' ) ruleName+= atom (ebnfSuffixGen+= ebnfSuffix | ) | idGen+= id (TK_0= '=' | TK_1= '+=' ) blockGen+= block (ebnfSuffixGen+= ebnfSuffix | ) | ruleName+= atom (ebnfSuffixGen+= ebnfSuffix | ) | ebnfGen+= ebnf | ACTIONGen= ACTION | SEMPREDGen= SEMPRED (TK_0= '=>' | ) | treeSpecGen+= treeSpec );", 45, 8, input);
-
-                        throw nvae;
-                    }
-                    }
-                    break;
-                case 87:
-                    {
-                    int LA45_9 = input.LA(3);
-
-                    if ( (LA45_9==82) ) {
-                        alt45=2;
-                    }
-                    else if ( ((LA45_9>=TOKEN_REF && LA45_9<=CHAR_LITERAL)||LA45_9==RULE_REF||LA45_9==89||LA45_9==92) ) {
-                        alt45=1;
-                    }
-                    else {
-                        NoViableAltException nvae =
-                            new NoViableAltException("1415:1: elementNoOptionSpec returns [Node returnNode] : (idGen+= id (TK_0= '=' | TK_1= '+=' ) ruleName+= atom (ebnfSuffixGen+= ebnfSuffix | ) | idGen+= id (TK_0= '=' | TK_1= '+=' ) blockGen+= block (ebnfSuffixGen+= ebnfSuffix | ) | ruleName+= atom (ebnfSuffixGen+= ebnfSuffix | ) | ebnfGen+= ebnf | ACTIONGen= ACTION | SEMPREDGen= SEMPRED (TK_0= '=>' | ) | treeSpecGen+= treeSpec );", 45, 9, input);
-
-                        throw nvae;
-                    }
-                    }
-                    break;
-                case SEMPRED:
-                case TREE_BEGIN:
-                case ROOT:
-                case BANG:
-                case REWRITE:
-                case TOKEN_REF:
-                case STRING_LITERAL:
-                case CHAR_LITERAL:
-                case ACTION:
-                case ARG_ACTION:
-                case RULE_REF:
-                case 69:
-                case 74:
-                case 82:
-                case 83:
-                case 84:
-                case 89:
-                case 90:
-                case 91:
-                case 92:
-                    {
-                    alt45=3;
-                    }
-                    break;
-                default:
-                    NoViableAltException nvae =
-                        new NoViableAltException("1415:1: elementNoOptionSpec returns [Node returnNode] : (idGen+= id (TK_0= '=' | TK_1= '+=' ) ruleName+= atom (ebnfSuffixGen+= ebnfSuffix | ) | idGen+= id (TK_0= '=' | TK_1= '+=' ) blockGen+= block (ebnfSuffixGen+= ebnfSuffix | ) | ruleName+= atom (ebnfSuffixGen+= ebnfSuffix | ) | ebnfGen+= ebnf | ACTIONGen= ACTION | SEMPREDGen= SEMPRED (TK_0= '=>' | ) | treeSpecGen+= treeSpec );", 45, 2, input);
-
-                    throw nvae;
-                }
-
-                }
-                break;
-            case STRING_LITERAL:
-            case CHAR_LITERAL:
-            case 89:
-            case 92:
-                {
-                alt45=3;
-                }
-                break;
-            case 82:
-                {
-                alt45=4;
-                }
-                break;
-            case ACTION:
-                {
-                alt45=5;
-                }
-                break;
-            case SEMPRED:
-                {
-                alt45=6;
-                }
-                break;
-            case TREE_BEGIN:
-                {
-                alt45=7;
-                }
-                break;
-            default:
-                NoViableAltException nvae =
-                    new NoViableAltException("1415:1: elementNoOptionSpec returns [Node returnNode] : (idGen+= id (TK_0= '=' | TK_1= '+=' ) ruleName+= atom (ebnfSuffixGen+= ebnfSuffix | ) | idGen+= id (TK_0= '=' | TK_1= '+=' ) blockGen+= block (ebnfSuffixGen+= ebnfSuffix | ) | ruleName+= atom (ebnfSuffixGen+= ebnfSuffix | ) | ebnfGen+= ebnf | ACTIONGen= ACTION | SEMPREDGen= SEMPRED (TK_0= '=>' | ) | treeSpecGen+= treeSpec );", 45, 0, input);
-
-                throw nvae;
-            }
-
+            alt45 = dfa45.predict(input);
             switch (alt45) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1416:3: idGen+= id (TK_0= '=' | TK_1= '+=' ) ruleName+= atom (ebnfSuffixGen+= ebnfSuffix | )
+                    // ANTLRv3.g:1416:3: idGen+= id (TK_0= '=' | TK_1= '+=' ) ruleName+= atom (ebnfSuffixGen+= ebnfSuffix | )
                     {
                     pushFollow(FOLLOW_id_in_elementNoOptionSpec1459);
                     idGen=id();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_idGen==null) list_idGen=new ArrayList();
                     list_idGen.add(idGen);
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1416:13: (TK_0= '=' | TK_1= '+=' )
+                    // ANTLRv3.g:1416:13: (TK_0= '=' | TK_1= '+=' )
                     int alt39=2;
                     int LA39_0 = input.LA(1);
 
@@ -3831,24 +3669,22 @@ public class ANTLRv3Parser extends Parser {
                     }
                     else {
                         NoViableAltException nvae =
-                            new NoViableAltException("1416:13: (TK_0= '=' | TK_1= '+=' )", 39, 0, input);
+                            new NoViableAltException("", 39, 0, input);
 
                         throw nvae;
                     }
                     switch (alt39) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1416:14: TK_0= '='
+                            // ANTLRv3.g:1416:14: TK_0= '='
                             {
-                            TK_0=(Token)input.LT(1);
-                            match(input,71,FOLLOW_71_in_elementNoOptionSpec1464); 
+                            TK_0=(Token)match(input,71,FOLLOW_71_in_elementNoOptionSpec1464); 
 
                             }
                             break;
                         case 2 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1416:23: TK_1= '+='
+                            // ANTLRv3.g:1416:23: TK_1= '+='
                             {
-                            TK_1=(Token)input.LT(1);
-                            match(input,87,FOLLOW_87_in_elementNoOptionSpec1468); 
+                            TK_1=(Token)match(input,87,FOLLOW_87_in_elementNoOptionSpec1468); 
 
                             }
                             break;
@@ -3857,12 +3693,13 @@ public class ANTLRv3Parser extends Parser {
 
                     pushFollow(FOLLOW_atom_in_elementNoOptionSpec1473);
                     ruleName=atom();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_ruleName==null) list_ruleName=new ArrayList();
                     list_ruleName.add(ruleName);
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1417:3: (ebnfSuffixGen+= ebnfSuffix | )
+                    // ANTLRv3.g:1417:3: (ebnfSuffixGen+= ebnfSuffix | )
                     int alt40=2;
                     int LA40_0 = input.LA(1);
 
@@ -3874,17 +3711,18 @@ public class ANTLRv3Parser extends Parser {
                     }
                     else {
                         NoViableAltException nvae =
-                            new NoViableAltException("1417:3: (ebnfSuffixGen+= ebnfSuffix | )", 40, 0, input);
+                            new NoViableAltException("", 40, 0, input);
 
                         throw nvae;
                     }
                     switch (alt40) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1417:5: ebnfSuffixGen+= ebnfSuffix
+                            // ANTLRv3.g:1417:5: ebnfSuffixGen+= ebnfSuffix
                             {
                             pushFollow(FOLLOW_ebnfSuffix_in_elementNoOptionSpec1481);
                             ebnfSuffixGen=ebnfSuffix();
-                            _fsp--;
+
+                            state._fsp--;
 
                             if (list_ebnfSuffixGen==null) list_ebnfSuffixGen=new ArrayList();
                             list_ebnfSuffixGen.add(ebnfSuffixGen);
@@ -3893,14 +3731,14 @@ public class ANTLRv3Parser extends Parser {
                             }
                             break;
                         case 2 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1419:3: 
+                            // ANTLRv3.g:1419:3: 
                             {
                             }
                             break;
 
                     }
 
-                    
+
                     		// Create return CST Node
                     		Node elementNoOptionSpecReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		elementNoOptionSpecReturnNode.setKind("elementNoOptionSpec");
@@ -3918,7 +3756,7 @@ public class ANTLRv3Parser extends Parser {
                     	    if(TK_0 != null) {
                     			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     	 		TK_0Leaf.setKind("TOKEN");
-                    	 		TK_0Leaf.setValue(TK_0.getText());
+                    	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
                     			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
                     			TK_0Leaf.setLine(TK_0.getLine());
                     	 		elementNoOptionSpecReturnNode.getChildren().add(TK_0Leaf);
@@ -3927,7 +3765,7 @@ public class ANTLRv3Parser extends Parser {
                     	    if(TK_1 != null) {
                     			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     	 		TK_1Leaf.setKind("TOKEN");
-                    	 		TK_1Leaf.setValue(TK_1.getText());
+                    	 		TK_1Leaf.setValue((TK_1!=null?TK_1.getText():null));
                     			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
                     			TK_1Leaf.setLine(TK_1.getLine());
                     	 		elementNoOptionSpecReturnNode.getChildren().add(TK_1Leaf);
@@ -3959,16 +3797,17 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1475:4: idGen+= id (TK_0= '=' | TK_1= '+=' ) blockGen+= block (ebnfSuffixGen+= ebnfSuffix | )
+                    // ANTLRv3.g:1475:4: idGen+= id (TK_0= '=' | TK_1= '+=' ) blockGen+= block (ebnfSuffixGen+= ebnfSuffix | )
                     {
                     pushFollow(FOLLOW_id_in_elementNoOptionSpec1505);
                     idGen=id();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_idGen==null) list_idGen=new ArrayList();
                     list_idGen.add(idGen);
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1475:14: (TK_0= '=' | TK_1= '+=' )
+                    // ANTLRv3.g:1475:14: (TK_0= '=' | TK_1= '+=' )
                     int alt41=2;
                     int LA41_0 = input.LA(1);
 
@@ -3980,24 +3819,22 @@ public class ANTLRv3Parser extends Parser {
                     }
                     else {
                         NoViableAltException nvae =
-                            new NoViableAltException("1475:14: (TK_0= '=' | TK_1= '+=' )", 41, 0, input);
+                            new NoViableAltException("", 41, 0, input);
 
                         throw nvae;
                     }
                     switch (alt41) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1475:15: TK_0= '='
+                            // ANTLRv3.g:1475:15: TK_0= '='
                             {
-                            TK_0=(Token)input.LT(1);
-                            match(input,71,FOLLOW_71_in_elementNoOptionSpec1510); 
+                            TK_0=(Token)match(input,71,FOLLOW_71_in_elementNoOptionSpec1510); 
 
                             }
                             break;
                         case 2 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1475:24: TK_1= '+='
+                            // ANTLRv3.g:1475:24: TK_1= '+='
                             {
-                            TK_1=(Token)input.LT(1);
-                            match(input,87,FOLLOW_87_in_elementNoOptionSpec1514); 
+                            TK_1=(Token)match(input,87,FOLLOW_87_in_elementNoOptionSpec1514); 
 
                             }
                             break;
@@ -4006,12 +3843,13 @@ public class ANTLRv3Parser extends Parser {
 
                     pushFollow(FOLLOW_block_in_elementNoOptionSpec1519);
                     blockGen=block();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_blockGen==null) list_blockGen=new ArrayList();
                     list_blockGen.add(blockGen);
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1476:3: (ebnfSuffixGen+= ebnfSuffix | )
+                    // ANTLRv3.g:1476:3: (ebnfSuffixGen+= ebnfSuffix | )
                     int alt42=2;
                     int LA42_0 = input.LA(1);
 
@@ -4023,17 +3861,18 @@ public class ANTLRv3Parser extends Parser {
                     }
                     else {
                         NoViableAltException nvae =
-                            new NoViableAltException("1476:3: (ebnfSuffixGen+= ebnfSuffix | )", 42, 0, input);
+                            new NoViableAltException("", 42, 0, input);
 
                         throw nvae;
                     }
                     switch (alt42) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1476:5: ebnfSuffixGen+= ebnfSuffix
+                            // ANTLRv3.g:1476:5: ebnfSuffixGen+= ebnfSuffix
                             {
                             pushFollow(FOLLOW_ebnfSuffix_in_elementNoOptionSpec1527);
                             ebnfSuffixGen=ebnfSuffix();
-                            _fsp--;
+
+                            state._fsp--;
 
                             if (list_ebnfSuffixGen==null) list_ebnfSuffixGen=new ArrayList();
                             list_ebnfSuffixGen.add(ebnfSuffixGen);
@@ -4042,14 +3881,14 @@ public class ANTLRv3Parser extends Parser {
                             }
                             break;
                         case 2 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1478:3: 
+                            // ANTLRv3.g:1478:3: 
                             {
                             }
                             break;
 
                     }
 
-                    
+
                     		// Create return CST Node
                     		Node elementNoOptionSpecReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		elementNoOptionSpecReturnNode.setKind("elementNoOptionSpec");
@@ -4067,7 +3906,7 @@ public class ANTLRv3Parser extends Parser {
                     	    if(TK_0 != null) {
                     			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     	 		TK_0Leaf.setKind("TOKEN");
-                    	 		TK_0Leaf.setValue(TK_0.getText());
+                    	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
                     			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
                     			TK_0Leaf.setLine(TK_0.getLine());
                     	 		elementNoOptionSpecReturnNode.getChildren().add(TK_0Leaf);
@@ -4076,7 +3915,7 @@ public class ANTLRv3Parser extends Parser {
                     	    if(TK_1 != null) {
                     			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     	 		TK_1Leaf.setKind("TOKEN");
-                    	 		TK_1Leaf.setValue(TK_1.getText());
+                    	 		TK_1Leaf.setValue((TK_1!=null?TK_1.getText():null));
                     			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
                     			TK_1Leaf.setLine(TK_1.getLine());
                     	 		elementNoOptionSpecReturnNode.getChildren().add(TK_1Leaf);
@@ -4108,16 +3947,17 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1534:4: ruleName+= atom (ebnfSuffixGen+= ebnfSuffix | )
+                    // ANTLRv3.g:1534:4: ruleName+= atom (ebnfSuffixGen+= ebnfSuffix | )
                     {
                     pushFollow(FOLLOW_atom_in_elementNoOptionSpec1551);
                     ruleName=atom();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_ruleName==null) list_ruleName=new ArrayList();
                     list_ruleName.add(ruleName);
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1535:3: (ebnfSuffixGen+= ebnfSuffix | )
+                    // ANTLRv3.g:1535:3: (ebnfSuffixGen+= ebnfSuffix | )
                     int alt43=2;
                     int LA43_0 = input.LA(1);
 
@@ -4129,17 +3969,18 @@ public class ANTLRv3Parser extends Parser {
                     }
                     else {
                         NoViableAltException nvae =
-                            new NoViableAltException("1535:3: (ebnfSuffixGen+= ebnfSuffix | )", 43, 0, input);
+                            new NoViableAltException("", 43, 0, input);
 
                         throw nvae;
                     }
                     switch (alt43) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1535:5: ebnfSuffixGen+= ebnfSuffix
+                            // ANTLRv3.g:1535:5: ebnfSuffixGen+= ebnfSuffix
                             {
                             pushFollow(FOLLOW_ebnfSuffix_in_elementNoOptionSpec1559);
                             ebnfSuffixGen=ebnfSuffix();
-                            _fsp--;
+
+                            state._fsp--;
 
                             if (list_ebnfSuffixGen==null) list_ebnfSuffixGen=new ArrayList();
                             list_ebnfSuffixGen.add(ebnfSuffixGen);
@@ -4148,14 +3989,14 @@ public class ANTLRv3Parser extends Parser {
                             }
                             break;
                         case 2 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1537:3: 
+                            // ANTLRv3.g:1537:3: 
                             {
                             }
                             break;
 
                     }
 
-                    
+
                     		// Create return CST Node
                     		Node elementNoOptionSpecReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		elementNoOptionSpecReturnNode.setKind("elementNoOptionSpec");
@@ -4186,16 +4027,17 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1565:4: ebnfGen+= ebnf
+                    // ANTLRv3.g:1565:4: ebnfGen+= ebnf
                     {
                     pushFollow(FOLLOW_ebnf_in_elementNoOptionSpec1583);
                     ebnfGen=ebnf();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_ebnfGen==null) list_ebnfGen=new ArrayList();
                     list_ebnfGen.add(ebnfGen);
 
-                    
+
                     		// Create return CST Node
                     		Node elementNoOptionSpecReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		elementNoOptionSpecReturnNode.setKind("elementNoOptionSpec");
@@ -4216,11 +4058,10 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 5 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1583:6: ACTIONGen= ACTION
+                    // ANTLRv3.g:1583:6: ACTIONGen= ACTION
                     {
-                    ACTIONGen=(Token)input.LT(1);
-                    match(input,ACTION,FOLLOW_ACTION_in_elementNoOptionSpec1596); 
-                    
+                    ACTIONGen=(Token)match(input,ACTION,FOLLOW_ACTION_in_elementNoOptionSpec1596); 
+
                     		// Create return CST Node
                     		Node elementNoOptionSpecReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		elementNoOptionSpecReturnNode.setKind("elementNoOptionSpec");
@@ -4228,7 +4069,7 @@ public class ANTLRv3Parser extends Parser {
                     		if(ACTIONGen != null) {
                     			Leaf ACTIONGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			ACTIONGenLeaf.setKind("ACTION");
-                    			ACTIONGenLeaf.setValue(ACTIONGen.getText());
+                    			ACTIONGenLeaf.setValue((ACTIONGen!=null?ACTIONGen.getText():null));
                     			ACTIONGenLeaf.setPos(ACTIONGen.getCharPositionInLine());
                     			ACTIONGenLeaf.setLine(ACTIONGen.getLine());
                     			elementNoOptionSpecReturnNode.getChildren().add(ACTIONGenLeaf);
@@ -4240,11 +4081,10 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 6 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1600:6: SEMPREDGen= SEMPRED (TK_0= '=>' | )
+                    // ANTLRv3.g:1600:6: SEMPREDGen= SEMPRED (TK_0= '=>' | )
                     {
-                    SEMPREDGen=(Token)input.LT(1);
-                    match(input,SEMPRED,FOLLOW_SEMPRED_in_elementNoOptionSpec1609); 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1600:25: (TK_0= '=>' | )
+                    SEMPREDGen=(Token)match(input,SEMPRED,FOLLOW_SEMPRED_in_elementNoOptionSpec1609); 
+                    // ANTLRv3.g:1600:25: (TK_0= '=>' | )
                     int alt44=2;
                     int LA44_0 = input.LA(1);
 
@@ -4256,28 +4096,27 @@ public class ANTLRv3Parser extends Parser {
                     }
                     else {
                         NoViableAltException nvae =
-                            new NoViableAltException("1600:25: (TK_0= '=>' | )", 44, 0, input);
+                            new NoViableAltException("", 44, 0, input);
 
                         throw nvae;
                     }
                     switch (alt44) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1600:27: TK_0= '=>'
+                            // ANTLRv3.g:1600:27: TK_0= '=>'
                             {
-                            TK_0=(Token)input.LT(1);
-                            match(input,88,FOLLOW_88_in_elementNoOptionSpec1615); 
+                            TK_0=(Token)match(input,88,FOLLOW_88_in_elementNoOptionSpec1615); 
 
                             }
                             break;
                         case 2 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1600:40: 
+                            // ANTLRv3.g:1600:40: 
                             {
                             }
                             break;
 
                     }
 
-                    
+
                     		// Create return CST Node
                     		Node elementNoOptionSpecReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		elementNoOptionSpecReturnNode.setKind("elementNoOptionSpec");
@@ -4285,7 +4124,7 @@ public class ANTLRv3Parser extends Parser {
                     		if(SEMPREDGen != null) {
                     			Leaf SEMPREDGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			SEMPREDGenLeaf.setKind("SEMPRED");
-                    			SEMPREDGenLeaf.setValue(SEMPREDGen.getText());
+                    			SEMPREDGenLeaf.setValue((SEMPREDGen!=null?SEMPREDGen.getText():null));
                     			SEMPREDGenLeaf.setPos(SEMPREDGen.getCharPositionInLine());
                     			SEMPREDGenLeaf.setLine(SEMPREDGen.getLine());
                     			elementNoOptionSpecReturnNode.getChildren().add(SEMPREDGenLeaf);
@@ -4294,7 +4133,7 @@ public class ANTLRv3Parser extends Parser {
                     	    if(TK_0 != null) {
                     			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     	 		TK_0Leaf.setKind("TOKEN");
-                    	 		TK_0Leaf.setValue(TK_0.getText());
+                    	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
                     			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
                     			TK_0Leaf.setLine(TK_0.getLine());
                     	 		elementNoOptionSpecReturnNode.getChildren().add(TK_0Leaf);
@@ -4306,16 +4145,17 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 7 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1626:6: treeSpecGen+= treeSpec
+                    // ANTLRv3.g:1626:6: treeSpecGen+= treeSpec
                     {
                     pushFollow(FOLLOW_treeSpec_in_elementNoOptionSpec1633);
                     treeSpecGen=treeSpec();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_treeSpecGen==null) list_treeSpecGen=new ArrayList();
                     list_treeSpecGen.add(treeSpecGen);
 
-                    
+
                     		// Create return CST Node
                     		Node elementNoOptionSpecReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		elementNoOptionSpecReturnNode.setKind("elementNoOptionSpec");
@@ -4348,7 +4188,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end elementNoOptionSpec
+    // $ANTLR end "elementNoOptionSpec"
 
     public static class atom_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -4357,10 +4197,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start atom
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1646:1: atom returns [Node returnNode] : (rangeGen+= range ( (TK_0= '^' | TK_1= '!' ) | ) | terminalGen+= terminal | notSetGen+= notSet ( (TK_0= '^' | TK_1= '!' ) | ) | RULE_REFGen= RULE_REF (arg= ARG_ACTION )? ( (op= '^' | op= '!' ) )? );
-    public final atom_return atom() throws RecognitionException {
-        atom_return retval = new atom_return();
+    // $ANTLR start "atom"
+    // ANTLRv3.g:1646:1: atom returns [Node returnNode] : (rangeGen+= range ( (TK_0= '^' | TK_1= '!' ) | ) | terminalGen+= terminal | notSetGen+= notSet ( (TK_0= '^' | TK_1= '!' ) | ) | RULE_REFGen= RULE_REF (arg= ARG_ACTION )? ( (op= '^' | op= '!' ) )? );
+    public final ANTLRv3Parser.atom_return atom() throws RecognitionException {
+        ANTLRv3Parser.atom_return retval = new ANTLRv3Parser.atom_return();
         retval.start = input.LT(1);
 
         Token TK_0=null;
@@ -4375,7 +4215,7 @@ public class ANTLRv3Parser extends Parser {
         RuleReturnScope terminalGen = null;
         RuleReturnScope notSetGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1647:1: (rangeGen+= range ( (TK_0= '^' | TK_1= '!' ) | ) | terminalGen+= terminal | notSetGen+= notSet ( (TK_0= '^' | TK_1= '!' ) | ) | RULE_REFGen= RULE_REF (arg= ARG_ACTION )? ( (op= '^' | op= '!' ) )? )
+            // ANTLRv3.g:1647:1: (rangeGen+= range ( (TK_0= '^' | TK_1= '!' ) | ) | terminalGen+= terminal | notSetGen+= notSet ( (TK_0= '^' | TK_1= '!' ) | ) | RULE_REFGen= RULE_REF (arg= ARG_ACTION )? ( (op= '^' | op= '!' ) )? )
             int alt53=4;
             switch ( input.LA(1) ) {
             case CHAR_LITERAL:
@@ -4390,7 +4230,7 @@ public class ANTLRv3Parser extends Parser {
                 }
                 else {
                     NoViableAltException nvae =
-                        new NoViableAltException("1646:1: atom returns [Node returnNode] : (rangeGen+= range ( (TK_0= '^' | TK_1= '!' ) | ) | terminalGen+= terminal | notSetGen+= notSet ( (TK_0= '^' | TK_1= '!' ) | ) | RULE_REFGen= RULE_REF (arg= ARG_ACTION )? ( (op= '^' | op= '!' ) )? );", 53, 1, input);
+                        new NoViableAltException("", 53, 1, input);
 
                     throw nvae;
                 }
@@ -4415,23 +4255,24 @@ public class ANTLRv3Parser extends Parser {
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("1646:1: atom returns [Node returnNode] : (rangeGen+= range ( (TK_0= '^' | TK_1= '!' ) | ) | terminalGen+= terminal | notSetGen+= notSet ( (TK_0= '^' | TK_1= '!' ) | ) | RULE_REFGen= RULE_REF (arg= ARG_ACTION )? ( (op= '^' | op= '!' ) )? );", 53, 0, input);
+                    new NoViableAltException("", 53, 0, input);
 
                 throw nvae;
             }
 
             switch (alt53) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1647:5: rangeGen+= range ( (TK_0= '^' | TK_1= '!' ) | )
+                    // ANTLRv3.g:1647:5: rangeGen+= range ( (TK_0= '^' | TK_1= '!' ) | )
                     {
                     pushFollow(FOLLOW_range_in_atom1656);
                     rangeGen=range();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_rangeGen==null) list_rangeGen=new ArrayList();
                     list_rangeGen.add(rangeGen);
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1647:21: ( (TK_0= '^' | TK_1= '!' ) | )
+                    // ANTLRv3.g:1647:21: ( (TK_0= '^' | TK_1= '!' ) | )
                     int alt47=2;
                     int LA47_0 = input.LA(1);
 
@@ -4443,15 +4284,15 @@ public class ANTLRv3Parser extends Parser {
                     }
                     else {
                         NoViableAltException nvae =
-                            new NoViableAltException("1647:21: ( (TK_0= '^' | TK_1= '!' ) | )", 47, 0, input);
+                            new NoViableAltException("", 47, 0, input);
 
                         throw nvae;
                     }
                     switch (alt47) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1647:23: (TK_0= '^' | TK_1= '!' )
+                            // ANTLRv3.g:1647:23: (TK_0= '^' | TK_1= '!' )
                             {
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1647:23: (TK_0= '^' | TK_1= '!' )
+                            // ANTLRv3.g:1647:23: (TK_0= '^' | TK_1= '!' )
                             int alt46=2;
                             int LA46_0 = input.LA(1);
 
@@ -4463,24 +4304,22 @@ public class ANTLRv3Parser extends Parser {
                             }
                             else {
                                 NoViableAltException nvae =
-                                    new NoViableAltException("1647:23: (TK_0= '^' | TK_1= '!' )", 46, 0, input);
+                                    new NoViableAltException("", 46, 0, input);
 
                                 throw nvae;
                             }
                             switch (alt46) {
                                 case 1 :
-                                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1647:24: TK_0= '^'
+                                    // ANTLRv3.g:1647:24: TK_0= '^'
                                     {
-                                    TK_0=(Token)input.LT(1);
-                                    match(input,ROOT,FOLLOW_ROOT_in_atom1663); 
+                                    TK_0=(Token)match(input,ROOT,FOLLOW_ROOT_in_atom1663); 
 
                                     }
                                     break;
                                 case 2 :
-                                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1647:33: TK_1= '!'
+                                    // ANTLRv3.g:1647:33: TK_1= '!'
                                     {
-                                    TK_1=(Token)input.LT(1);
-                                    match(input,BANG,FOLLOW_BANG_in_atom1667); 
+                                    TK_1=(Token)match(input,BANG,FOLLOW_BANG_in_atom1667); 
 
                                     }
                                     break;
@@ -4491,14 +4330,14 @@ public class ANTLRv3Parser extends Parser {
                             }
                             break;
                         case 2 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1647:47: 
+                            // ANTLRv3.g:1647:47: 
                             {
                             }
                             break;
 
                     }
 
-                    
+
                     		// Create return CST Node
                     		Node atomReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		atomReturnNode.setKind("atom");
@@ -4516,7 +4355,7 @@ public class ANTLRv3Parser extends Parser {
                     	    if(TK_0 != null) {
                     			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     	 		TK_0Leaf.setKind("TOKEN");
-                    	 		TK_0Leaf.setValue(TK_0.getText());
+                    	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
                     			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
                     			TK_0Leaf.setLine(TK_0.getLine());
                     	 		atomReturnNode.getChildren().add(TK_0Leaf);
@@ -4525,7 +4364,7 @@ public class ANTLRv3Parser extends Parser {
                     	    if(TK_1 != null) {
                     			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     	 		TK_1Leaf.setKind("TOKEN");
-                    	 		TK_1Leaf.setValue(TK_1.getText());
+                    	 		TK_1Leaf.setValue((TK_1!=null?TK_1.getText():null));
                     			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
                     			TK_1Leaf.setLine(TK_1.getLine());
                     	 		atomReturnNode.getChildren().add(TK_1Leaf);
@@ -4537,16 +4376,17 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1683:9: terminalGen+= terminal
+                    // ANTLRv3.g:1683:9: terminalGen+= terminal
                     {
                     pushFollow(FOLLOW_terminal_in_atom1690);
                     terminalGen=terminal();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_terminalGen==null) list_terminalGen=new ArrayList();
                     list_terminalGen.add(terminalGen);
 
-                    
+
                     		// Create return CST Node
                     		Node atomReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		atomReturnNode.setKind("atom");
@@ -4567,16 +4407,17 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1701:7: notSetGen+= notSet ( (TK_0= '^' | TK_1= '!' ) | )
+                    // ANTLRv3.g:1701:7: notSetGen+= notSet ( (TK_0= '^' | TK_1= '!' ) | )
                     {
                     pushFollow(FOLLOW_notSet_in_atom1704);
                     notSetGen=notSet();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_notSetGen==null) list_notSetGen=new ArrayList();
                     list_notSetGen.add(notSetGen);
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1701:25: ( (TK_0= '^' | TK_1= '!' ) | )
+                    // ANTLRv3.g:1701:25: ( (TK_0= '^' | TK_1= '!' ) | )
                     int alt49=2;
                     int LA49_0 = input.LA(1);
 
@@ -4588,15 +4429,15 @@ public class ANTLRv3Parser extends Parser {
                     }
                     else {
                         NoViableAltException nvae =
-                            new NoViableAltException("1701:25: ( (TK_0= '^' | TK_1= '!' ) | )", 49, 0, input);
+                            new NoViableAltException("", 49, 0, input);
 
                         throw nvae;
                     }
                     switch (alt49) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1701:27: (TK_0= '^' | TK_1= '!' )
+                            // ANTLRv3.g:1701:27: (TK_0= '^' | TK_1= '!' )
                             {
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1701:27: (TK_0= '^' | TK_1= '!' )
+                            // ANTLRv3.g:1701:27: (TK_0= '^' | TK_1= '!' )
                             int alt48=2;
                             int LA48_0 = input.LA(1);
 
@@ -4608,24 +4449,22 @@ public class ANTLRv3Parser extends Parser {
                             }
                             else {
                                 NoViableAltException nvae =
-                                    new NoViableAltException("1701:27: (TK_0= '^' | TK_1= '!' )", 48, 0, input);
+                                    new NoViableAltException("", 48, 0, input);
 
                                 throw nvae;
                             }
                             switch (alt48) {
                                 case 1 :
-                                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1701:28: TK_0= '^'
+                                    // ANTLRv3.g:1701:28: TK_0= '^'
                                     {
-                                    TK_0=(Token)input.LT(1);
-                                    match(input,ROOT,FOLLOW_ROOT_in_atom1711); 
+                                    TK_0=(Token)match(input,ROOT,FOLLOW_ROOT_in_atom1711); 
 
                                     }
                                     break;
                                 case 2 :
-                                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1701:37: TK_1= '!'
+                                    // ANTLRv3.g:1701:37: TK_1= '!'
                                     {
-                                    TK_1=(Token)input.LT(1);
-                                    match(input,BANG,FOLLOW_BANG_in_atom1715); 
+                                    TK_1=(Token)match(input,BANG,FOLLOW_BANG_in_atom1715); 
 
                                     }
                                     break;
@@ -4636,14 +4475,14 @@ public class ANTLRv3Parser extends Parser {
                             }
                             break;
                         case 2 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1701:51: 
+                            // ANTLRv3.g:1701:51: 
                             {
                             }
                             break;
 
                     }
 
-                    
+
                     		// Create return CST Node
                     		Node atomReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		atomReturnNode.setKind("atom");
@@ -4661,7 +4500,7 @@ public class ANTLRv3Parser extends Parser {
                     	    if(TK_0 != null) {
                     			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     	 		TK_0Leaf.setKind("TOKEN");
-                    	 		TK_0Leaf.setValue(TK_0.getText());
+                    	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
                     			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
                     			TK_0Leaf.setLine(TK_0.getLine());
                     	 		atomReturnNode.getChildren().add(TK_0Leaf);
@@ -4670,7 +4509,7 @@ public class ANTLRv3Parser extends Parser {
                     	    if(TK_1 != null) {
                     			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     	 		TK_1Leaf.setKind("TOKEN");
-                    	 		TK_1Leaf.setValue(TK_1.getText());
+                    	 		TK_1Leaf.setValue((TK_1!=null?TK_1.getText():null));
                     			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
                     			TK_1Leaf.setLine(TK_1.getLine());
                     	 		atomReturnNode.getChildren().add(TK_1Leaf);
@@ -4682,11 +4521,10 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1737:9: RULE_REFGen= RULE_REF (arg= ARG_ACTION )? ( (op= '^' | op= '!' ) )?
+                    // ANTLRv3.g:1737:9: RULE_REFGen= RULE_REF (arg= ARG_ACTION )? ( (op= '^' | op= '!' ) )?
                     {
-                    RULE_REFGen=(Token)input.LT(1);
-                    match(input,RULE_REF,FOLLOW_RULE_REF_in_atom1738); 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1737:30: (arg= ARG_ACTION )?
+                    RULE_REFGen=(Token)match(input,RULE_REF,FOLLOW_RULE_REF_in_atom1738); 
+                    // ANTLRv3.g:1737:30: (arg= ARG_ACTION )?
                     int alt50=2;
                     int LA50_0 = input.LA(1);
 
@@ -4695,17 +4533,16 @@ public class ANTLRv3Parser extends Parser {
                     }
                     switch (alt50) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1737:32: arg= ARG_ACTION
+                            // ANTLRv3.g:1737:32: arg= ARG_ACTION
                             {
-                            arg=(Token)input.LT(1);
-                            match(input,ARG_ACTION,FOLLOW_ARG_ACTION_in_atom1744); 
+                            arg=(Token)match(input,ARG_ACTION,FOLLOW_ARG_ACTION_in_atom1744); 
 
                             }
                             break;
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1737:50: ( (op= '^' | op= '!' ) )?
+                    // ANTLRv3.g:1737:50: ( (op= '^' | op= '!' ) )?
                     int alt52=2;
                     int LA52_0 = input.LA(1);
 
@@ -4714,9 +4551,9 @@ public class ANTLRv3Parser extends Parser {
                     }
                     switch (alt52) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1737:52: (op= '^' | op= '!' )
+                            // ANTLRv3.g:1737:52: (op= '^' | op= '!' )
                             {
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1737:52: (op= '^' | op= '!' )
+                            // ANTLRv3.g:1737:52: (op= '^' | op= '!' )
                             int alt51=2;
                             int LA51_0 = input.LA(1);
 
@@ -4728,24 +4565,22 @@ public class ANTLRv3Parser extends Parser {
                             }
                             else {
                                 NoViableAltException nvae =
-                                    new NoViableAltException("1737:52: (op= '^' | op= '!' )", 51, 0, input);
+                                    new NoViableAltException("", 51, 0, input);
 
                                 throw nvae;
                             }
                             switch (alt51) {
                                 case 1 :
-                                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1737:53: op= '^'
+                                    // ANTLRv3.g:1737:53: op= '^'
                                     {
-                                    op=(Token)input.LT(1);
-                                    match(input,ROOT,FOLLOW_ROOT_in_atom1754); 
+                                    op=(Token)match(input,ROOT,FOLLOW_ROOT_in_atom1754); 
 
                                     }
                                     break;
                                 case 2 :
-                                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1737:60: op= '!'
+                                    // ANTLRv3.g:1737:60: op= '!'
                                     {
-                                    op=(Token)input.LT(1);
-                                    match(input,BANG,FOLLOW_BANG_in_atom1758); 
+                                    op=(Token)match(input,BANG,FOLLOW_BANG_in_atom1758); 
 
                                     }
                                     break;
@@ -4758,7 +4593,7 @@ public class ANTLRv3Parser extends Parser {
 
                     }
 
-                    
+
                     		// Create return CST Node
                     		Node atomReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		atomReturnNode.setKind("atom");
@@ -4766,7 +4601,7 @@ public class ANTLRv3Parser extends Parser {
                     		if(RULE_REFGen != null) {
                     			Leaf RULE_REFGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			RULE_REFGenLeaf.setKind("RULE_REF");
-                    			RULE_REFGenLeaf.setValue(RULE_REFGen.getText());
+                    			RULE_REFGenLeaf.setValue((RULE_REFGen!=null?RULE_REFGen.getText():null));
                     			RULE_REFGenLeaf.setPos(RULE_REFGen.getCharPositionInLine());
                     			RULE_REFGenLeaf.setLine(RULE_REFGen.getLine());
                     			atomReturnNode.getChildren().add(RULE_REFGenLeaf);
@@ -4775,7 +4610,7 @@ public class ANTLRv3Parser extends Parser {
                     		if(arg != null) {
                     			Leaf argLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			argLeaf.setKind("arg");
-                    			argLeaf.setValue(arg.getText());
+                    			argLeaf.setValue((arg!=null?arg.getText():null));
                     			argLeaf.setPos(arg.getCharPositionInLine());
                     			argLeaf.setLine(arg.getLine());
                     			atomReturnNode.getChildren().add(argLeaf);
@@ -4784,7 +4619,7 @@ public class ANTLRv3Parser extends Parser {
                     		if(op != null) {
                     			Leaf opLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			opLeaf.setKind("op");
-                    			opLeaf.setValue(op.getText());
+                    			opLeaf.setValue((op!=null?op.getText():null));
                     			opLeaf.setPos(op.getCharPositionInLine());
                     			opLeaf.setLine(op.getLine());
                     			atomReturnNode.getChildren().add(opLeaf);
@@ -4793,7 +4628,7 @@ public class ANTLRv3Parser extends Parser {
                     		if(op != null) {
                     			Leaf opLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			opLeaf.setKind("op");
-                    			opLeaf.setValue(op.getText());
+                    			opLeaf.setValue((op!=null?op.getText():null));
                     			opLeaf.setPos(op.getCharPositionInLine());
                     			opLeaf.setLine(op.getLine());
                     			atomReturnNode.getChildren().add(opLeaf);
@@ -4817,7 +4652,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end atom
+    // $ANTLR end "atom"
 
     public static class notSet_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -4826,10 +4661,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start notSet
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1783:1: notSet returns [Node returnNode] : TK_0= '~' (notTerminalGen+= notTerminal | blockGen+= block ) ;
-    public final notSet_return notSet() throws RecognitionException {
-        notSet_return retval = new notSet_return();
+    // $ANTLR start "notSet"
+    // ANTLRv3.g:1783:1: notSet returns [Node returnNode] : TK_0= '~' (notTerminalGen+= notTerminal | blockGen+= block ) ;
+    public final ANTLRv3Parser.notSet_return notSet() throws RecognitionException {
+        ANTLRv3Parser.notSet_return retval = new ANTLRv3Parser.notSet_return();
         retval.start = input.LT(1);
 
         Token TK_0=null;
@@ -4838,12 +4673,11 @@ public class ANTLRv3Parser extends Parser {
         RuleReturnScope notTerminalGen = null;
         RuleReturnScope blockGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1784:1: (TK_0= '~' (notTerminalGen+= notTerminal | blockGen+= block ) )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1784:3: TK_0= '~' (notTerminalGen+= notTerminal | blockGen+= block )
+            // ANTLRv3.g:1784:1: (TK_0= '~' (notTerminalGen+= notTerminal | blockGen+= block ) )
+            // ANTLRv3.g:1784:3: TK_0= '~' (notTerminalGen+= notTerminal | blockGen+= block )
             {
-            TK_0=(Token)input.LT(1);
-            match(input,89,FOLLOW_89_in_notSet1786); 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1785:3: (notTerminalGen+= notTerminal | blockGen+= block )
+            TK_0=(Token)match(input,89,FOLLOW_89_in_notSet1786); 
+            // ANTLRv3.g:1785:3: (notTerminalGen+= notTerminal | blockGen+= block )
             int alt54=2;
             int LA54_0 = input.LA(1);
 
@@ -4855,17 +4689,18 @@ public class ANTLRv3Parser extends Parser {
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("1785:3: (notTerminalGen+= notTerminal | blockGen+= block )", 54, 0, input);
+                    new NoViableAltException("", 54, 0, input);
 
                 throw nvae;
             }
             switch (alt54) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1785:5: notTerminalGen+= notTerminal
+                    // ANTLRv3.g:1785:5: notTerminalGen+= notTerminal
                     {
                     pushFollow(FOLLOW_notTerminal_in_notSet1794);
                     notTerminalGen=notTerminal();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_notTerminalGen==null) list_notTerminalGen=new ArrayList();
                     list_notTerminalGen.add(notTerminalGen);
@@ -4874,11 +4709,12 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1786:5: blockGen+= block
+                    // ANTLRv3.g:1786:5: blockGen+= block
                     {
                     pushFollow(FOLLOW_block_in_notSet1803);
                     blockGen=block();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_blockGen==null) list_blockGen=new ArrayList();
                     list_blockGen.add(blockGen);
@@ -4889,7 +4725,7 @@ public class ANTLRv3Parser extends Parser {
 
             }
 
-            
+
             		// Create return CST Node
             		Node notSetReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		notSetReturnNode.setKind("notSet");
@@ -4897,7 +4733,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_0 != null) {
             			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_0Leaf.setKind("TOKEN");
-            	 		TK_0Leaf.setValue(TK_0.getText());
+            	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
             			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
             			TK_0Leaf.setLine(TK_0.getLine());
             	 		notSetReturnNode.getChildren().add(TK_0Leaf);
@@ -4939,7 +4775,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end notSet
+    // $ANTLR end "notSet"
 
     public static class treeSpec_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -4948,10 +4784,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start treeSpec
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1826:1: treeSpec returns [Node returnNode] : TK_0= '^(' elementGen+= element (elementGen_1+= element )+ TK_1= ')' ;
-    public final treeSpec_return treeSpec() throws RecognitionException {
-        treeSpec_return retval = new treeSpec_return();
+    // $ANTLR start "treeSpec"
+    // ANTLRv3.g:1826:1: treeSpec returns [Node returnNode] : TK_0= '^(' elementGen+= element (elementGen_1+= element )+ TK_1= ')' ;
+    public final ANTLRv3Parser.treeSpec_return treeSpec() throws RecognitionException {
+        ANTLRv3Parser.treeSpec_return retval = new ANTLRv3Parser.treeSpec_return();
         retval.start = input.LT(1);
 
         Token TK_0=null;
@@ -4961,19 +4797,19 @@ public class ANTLRv3Parser extends Parser {
         RuleReturnScope elementGen = null;
         RuleReturnScope elementGen_1 = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1827:1: (TK_0= '^(' elementGen+= element (elementGen_1+= element )+ TK_1= ')' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1827:3: TK_0= '^(' elementGen+= element (elementGen_1+= element )+ TK_1= ')'
+            // ANTLRv3.g:1827:1: (TK_0= '^(' elementGen+= element (elementGen_1+= element )+ TK_1= ')' )
+            // ANTLRv3.g:1827:3: TK_0= '^(' elementGen+= element (elementGen_1+= element )+ TK_1= ')'
             {
-            TK_0=(Token)input.LT(1);
-            match(input,TREE_BEGIN,FOLLOW_TREE_BEGIN_in_treeSpec1830); 
+            TK_0=(Token)match(input,TREE_BEGIN,FOLLOW_TREE_BEGIN_in_treeSpec1830); 
             pushFollow(FOLLOW_element_in_treeSpec1834);
             elementGen=element();
-            _fsp--;
+
+            state._fsp--;
 
             if (list_elementGen==null) list_elementGen=new ArrayList();
             list_elementGen.add(elementGen);
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1827:33: (elementGen_1+= element )+
+            // ANTLRv3.g:1827:33: (elementGen_1+= element )+
             int cnt55=0;
             loop55:
             do {
@@ -4987,11 +4823,12 @@ public class ANTLRv3Parser extends Parser {
 
                 switch (alt55) {
             	case 1 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1827:35: elementGen_1+= element
+            	    // ANTLRv3.g:1827:35: elementGen_1+= element
             	    {
             	    pushFollow(FOLLOW_element_in_treeSpec1840);
             	    elementGen_1=element();
-            	    _fsp--;
+
+            	    state._fsp--;
 
             	    if (list_elementGen_1==null) list_elementGen_1=new ArrayList();
             	    list_elementGen_1.add(elementGen_1);
@@ -5009,9 +4846,8 @@ public class ANTLRv3Parser extends Parser {
                 cnt55++;
             } while (true);
 
-            TK_1=(Token)input.LT(1);
-            match(input,84,FOLLOW_84_in_treeSpec1847); 
-            
+            TK_1=(Token)match(input,84,FOLLOW_84_in_treeSpec1847); 
+
             		// Create return CST Node
             		Node treeSpecReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		treeSpecReturnNode.setKind("treeSpec");
@@ -5019,7 +4855,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_0 != null) {
             			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_0Leaf.setKind("TOKEN");
-            	 		TK_0Leaf.setValue(TK_0.getText());
+            	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
             			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
             			TK_0Leaf.setLine(TK_0.getLine());
             	 		treeSpecReturnNode.getChildren().add(TK_0Leaf);
@@ -5048,7 +4884,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_1 != null) {
             			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_1Leaf.setKind("TOKEN");
-            	 		TK_1Leaf.setValue(TK_1.getText());
+            	 		TK_1Leaf.setValue((TK_1!=null?TK_1.getText():null));
             			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
             			TK_1Leaf.setLine(TK_1.getLine());
             	 		treeSpecReturnNode.getChildren().add(TK_1Leaf);
@@ -5070,7 +4906,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end treeSpec
+    // $ANTLR end "treeSpec"
 
     public static class ebnf_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -5079,10 +4915,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start ebnf
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1876:1: ebnf returns [Node returnNode] : blockGen+= block (TK_0= '?' | TK_1= '*' | TK_2= '+' | TK_3= '^' | TK_4= '!' | TK_5= '=>' | ) ;
-    public final ebnf_return ebnf() throws RecognitionException {
-        ebnf_return retval = new ebnf_return();
+    // $ANTLR start "ebnf"
+    // ANTLRv3.g:1876:1: ebnf returns [Node returnNode] : blockGen+= block (TK_0= '?' | TK_1= '*' | TK_2= '+' | TK_3= '^' | TK_4= '!' | TK_5= '=>' | ) ;
+    public final ANTLRv3Parser.ebnf_return ebnf() throws RecognitionException {
+        ANTLRv3Parser.ebnf_return retval = new ANTLRv3Parser.ebnf_return();
         retval.start = input.LT(1);
 
         Token TK_0=null;
@@ -5094,18 +4930,19 @@ public class ANTLRv3Parser extends Parser {
         List list_blockGen=null;
         RuleReturnScope blockGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1877:1: (blockGen+= block (TK_0= '?' | TK_1= '*' | TK_2= '+' | TK_3= '^' | TK_4= '!' | TK_5= '=>' | ) )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1877:3: blockGen+= block (TK_0= '?' | TK_1= '*' | TK_2= '+' | TK_3= '^' | TK_4= '!' | TK_5= '=>' | )
+            // ANTLRv3.g:1877:1: (blockGen+= block (TK_0= '?' | TK_1= '*' | TK_2= '+' | TK_3= '^' | TK_4= '!' | TK_5= '=>' | ) )
+            // ANTLRv3.g:1877:3: blockGen+= block (TK_0= '?' | TK_1= '*' | TK_2= '+' | TK_3= '^' | TK_4= '!' | TK_5= '=>' | )
             {
             pushFollow(FOLLOW_block_in_ebnf1870);
             blockGen=block();
-            _fsp--;
+
+            state._fsp--;
 
             if (list_blockGen==null) list_blockGen=new ArrayList();
             list_blockGen.add(blockGen);
 
             Token op=input.LT(1);
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1878:3: (TK_0= '?' | TK_1= '*' | TK_2= '+' | TK_3= '^' | TK_4= '!' | TK_5= '=>' | )
+            // ANTLRv3.g:1878:3: (TK_0= '?' | TK_1= '*' | TK_2= '+' | TK_3= '^' | TK_4= '!' | TK_5= '=>' | )
             int alt56=7;
             switch ( input.LA(1) ) {
             case 90:
@@ -5158,69 +4995,63 @@ public class ANTLRv3Parser extends Parser {
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("1878:3: (TK_0= '?' | TK_1= '*' | TK_2= '+' | TK_3= '^' | TK_4= '!' | TK_5= '=>' | )", 56, 0, input);
+                    new NoViableAltException("", 56, 0, input);
 
                 throw nvae;
             }
 
             switch (alt56) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1878:5: TK_0= '?'
+                    // ANTLRv3.g:1878:5: TK_0= '?'
                     {
-                    TK_0=(Token)input.LT(1);
-                    match(input,90,FOLLOW_90_in_ebnf1880); 
+                    TK_0=(Token)match(input,90,FOLLOW_90_in_ebnf1880); 
 
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1879:5: TK_1= '*'
+                    // ANTLRv3.g:1879:5: TK_1= '*'
                     {
-                    TK_1=(Token)input.LT(1);
-                    match(input,74,FOLLOW_74_in_ebnf1890); 
+                    TK_1=(Token)match(input,74,FOLLOW_74_in_ebnf1890); 
 
                     }
                     break;
                 case 3 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1880:5: TK_2= '+'
+                    // ANTLRv3.g:1880:5: TK_2= '+'
                     {
-                    TK_2=(Token)input.LT(1);
-                    match(input,91,FOLLOW_91_in_ebnf1900); 
+                    TK_2=(Token)match(input,91,FOLLOW_91_in_ebnf1900); 
 
                     }
                     break;
                 case 4 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1881:7: TK_3= '^'
+                    // ANTLRv3.g:1881:7: TK_3= '^'
                     {
-                    TK_3=(Token)input.LT(1);
-                    match(input,ROOT,FOLLOW_ROOT_in_ebnf1912); 
+                    TK_3=(Token)match(input,ROOT,FOLLOW_ROOT_in_ebnf1912); 
 
                     }
                     break;
                 case 5 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1882:7: TK_4= '!'
+                    // ANTLRv3.g:1882:7: TK_4= '!'
                     {
-                    TK_4=(Token)input.LT(1);
-                    match(input,BANG,FOLLOW_BANG_in_ebnf1924); 
+                    TK_4=(Token)match(input,BANG,FOLLOW_BANG_in_ebnf1924); 
 
                     }
                     break;
                 case 6 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1883:7: TK_5= '=>'
+                    // ANTLRv3.g:1883:7: TK_5= '=>'
                     {
-                    TK_5=(Token)input.LT(1);
-                    match(input,88,FOLLOW_88_in_ebnf1936); 
+                    TK_5=(Token)match(input,88,FOLLOW_88_in_ebnf1936); 
 
                     }
                     break;
                 case 7 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1885:3: 
+                    // ANTLRv3.g:1885:3: 
                     {
                     }
                     break;
 
             }
 
-            
+
             		// Create return CST Node
             		Node ebnfReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		ebnfReturnNode.setKind("ebnf");
@@ -5238,7 +5069,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_0 != null) {
             			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_0Leaf.setKind("TOKEN");
-            	 		TK_0Leaf.setValue(TK_0.getText());
+            	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
             			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
             			TK_0Leaf.setLine(TK_0.getLine());
             	 		ebnfReturnNode.getChildren().add(TK_0Leaf);
@@ -5247,7 +5078,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_1 != null) {
             			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_1Leaf.setKind("TOKEN");
-            	 		TK_1Leaf.setValue(TK_1.getText());
+            	 		TK_1Leaf.setValue((TK_1!=null?TK_1.getText():null));
             			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
             			TK_1Leaf.setLine(TK_1.getLine());
             	 		ebnfReturnNode.getChildren().add(TK_1Leaf);
@@ -5256,7 +5087,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_2 != null) {
             			Leaf TK_2Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_2Leaf.setKind("TOKEN");
-            	 		TK_2Leaf.setValue(TK_2.getText());
+            	 		TK_2Leaf.setValue((TK_2!=null?TK_2.getText():null));
             			TK_2Leaf.setPos(TK_2.getCharPositionInLine());
             			TK_2Leaf.setLine(TK_2.getLine());
             	 		ebnfReturnNode.getChildren().add(TK_2Leaf);
@@ -5265,7 +5096,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_3 != null) {
             			Leaf TK_3Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_3Leaf.setKind("TOKEN");
-            	 		TK_3Leaf.setValue(TK_3.getText());
+            	 		TK_3Leaf.setValue((TK_3!=null?TK_3.getText():null));
             			TK_3Leaf.setPos(TK_3.getCharPositionInLine());
             			TK_3Leaf.setLine(TK_3.getLine());
             	 		ebnfReturnNode.getChildren().add(TK_3Leaf);
@@ -5274,7 +5105,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_4 != null) {
             			Leaf TK_4Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_4Leaf.setKind("TOKEN");
-            	 		TK_4Leaf.setValue(TK_4.getText());
+            	 		TK_4Leaf.setValue((TK_4!=null?TK_4.getText():null));
             			TK_4Leaf.setPos(TK_4.getCharPositionInLine());
             			TK_4Leaf.setLine(TK_4.getLine());
             	 		ebnfReturnNode.getChildren().add(TK_4Leaf);
@@ -5283,7 +5114,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_5 != null) {
             			Leaf TK_5Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_5Leaf.setKind("TOKEN");
-            	 		TK_5Leaf.setValue(TK_5.getText());
+            	 		TK_5Leaf.setValue((TK_5!=null?TK_5.getText():null));
             			TK_5Leaf.setPos(TK_5.getCharPositionInLine());
             			TK_5Leaf.setLine(TK_5.getLine());
             	 		ebnfReturnNode.getChildren().add(TK_5Leaf);
@@ -5305,7 +5136,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end ebnf
+    // $ANTLR end "ebnf"
 
     public static class range_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -5314,10 +5145,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start range
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1959:1: range returns [Node returnNode] : CHAR_LITERALGen= CHAR_LITERAL RANGEGen= RANGE CHAR_LITERALGen_1= CHAR_LITERAL ;
-    public final range_return range() throws RecognitionException {
-        range_return retval = new range_return();
+    // $ANTLR start "range"
+    // ANTLRv3.g:1959:1: range returns [Node returnNode] : CHAR_LITERALGen= CHAR_LITERAL RANGEGen= RANGE CHAR_LITERALGen_1= CHAR_LITERAL ;
+    public final ANTLRv3Parser.range_return range() throws RecognitionException {
+        ANTLRv3Parser.range_return retval = new ANTLRv3Parser.range_return();
         retval.start = input.LT(1);
 
         Token CHAR_LITERALGen=null;
@@ -5325,16 +5156,13 @@ public class ANTLRv3Parser extends Parser {
         Token CHAR_LITERALGen_1=null;
 
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1960:1: (CHAR_LITERALGen= CHAR_LITERAL RANGEGen= RANGE CHAR_LITERALGen_1= CHAR_LITERAL )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1960:3: CHAR_LITERALGen= CHAR_LITERAL RANGEGen= RANGE CHAR_LITERALGen_1= CHAR_LITERAL
+            // ANTLRv3.g:1960:1: (CHAR_LITERALGen= CHAR_LITERAL RANGEGen= RANGE CHAR_LITERALGen_1= CHAR_LITERAL )
+            // ANTLRv3.g:1960:3: CHAR_LITERALGen= CHAR_LITERAL RANGEGen= RANGE CHAR_LITERALGen_1= CHAR_LITERAL
             {
-            CHAR_LITERALGen=(Token)input.LT(1);
-            match(input,CHAR_LITERAL,FOLLOW_CHAR_LITERAL_in_range1976); 
-            RANGEGen=(Token)input.LT(1);
-            match(input,RANGE,FOLLOW_RANGE_in_range1980); 
-            CHAR_LITERALGen_1=(Token)input.LT(1);
-            match(input,CHAR_LITERAL,FOLLOW_CHAR_LITERAL_in_range1984); 
-            
+            CHAR_LITERALGen=(Token)match(input,CHAR_LITERAL,FOLLOW_CHAR_LITERAL_in_range1975); 
+            RANGEGen=(Token)match(input,RANGE,FOLLOW_RANGE_in_range1979); 
+            CHAR_LITERALGen_1=(Token)match(input,CHAR_LITERAL,FOLLOW_CHAR_LITERAL_in_range1983); 
+
             		// Create return CST Node
             		Node rangeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		rangeReturnNode.setKind("range");
@@ -5342,7 +5170,7 @@ public class ANTLRv3Parser extends Parser {
             		if(CHAR_LITERALGen != null) {
             			Leaf CHAR_LITERALGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			CHAR_LITERALGenLeaf.setKind("CHAR_LITERAL");
-            			CHAR_LITERALGenLeaf.setValue(CHAR_LITERALGen.getText());
+            			CHAR_LITERALGenLeaf.setValue((CHAR_LITERALGen!=null?CHAR_LITERALGen.getText():null));
             			CHAR_LITERALGenLeaf.setPos(CHAR_LITERALGen.getCharPositionInLine());
             			CHAR_LITERALGenLeaf.setLine(CHAR_LITERALGen.getLine());
             			rangeReturnNode.getChildren().add(CHAR_LITERALGenLeaf);
@@ -5351,7 +5179,7 @@ public class ANTLRv3Parser extends Parser {
             		if(RANGEGen != null) {
             			Leaf RANGEGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			RANGEGenLeaf.setKind("RANGE");
-            			RANGEGenLeaf.setValue(RANGEGen.getText());
+            			RANGEGenLeaf.setValue((RANGEGen!=null?RANGEGen.getText():null));
             			RANGEGenLeaf.setPos(RANGEGen.getCharPositionInLine());
             			RANGEGenLeaf.setLine(RANGEGen.getLine());
             			rangeReturnNode.getChildren().add(RANGEGenLeaf);
@@ -5360,7 +5188,7 @@ public class ANTLRv3Parser extends Parser {
             		if(CHAR_LITERALGen_1 != null) {
             			Leaf CHAR_LITERALGen_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			CHAR_LITERALGen_1Leaf.setKind("CHAR_LITERAL");
-            			CHAR_LITERALGen_1Leaf.setValue(CHAR_LITERALGen_1.getText());
+            			CHAR_LITERALGen_1Leaf.setValue((CHAR_LITERALGen_1!=null?CHAR_LITERALGen_1.getText():null));
             			CHAR_LITERALGen_1Leaf.setPos(CHAR_LITERALGen_1.getCharPositionInLine());
             			CHAR_LITERALGen_1Leaf.setLine(CHAR_LITERALGen_1.getLine());
             			rangeReturnNode.getChildren().add(CHAR_LITERALGen_1Leaf);
@@ -5382,7 +5210,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end range
+    // $ANTLR end "range"
 
     public static class terminal_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -5391,10 +5219,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start terminal
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1997:1: terminal returns [Node returnNode] : (CHAR_LITERALGen= CHAR_LITERAL | TOKEN_REFGen= TOKEN_REF (ARG_ACTIONGen= ARG_ACTION | ) | STRING_LITERALGen= STRING_LITERAL | TK_0= '.' ) (TK_1= '^' | TK_2= '!' )? ;
-    public final terminal_return terminal() throws RecognitionException {
-        terminal_return retval = new terminal_return();
+    // $ANTLR start "terminal"
+    // ANTLRv3.g:1997:1: terminal returns [Node returnNode] : (CHAR_LITERALGen= CHAR_LITERAL | TOKEN_REFGen= TOKEN_REF (ARG_ACTIONGen= ARG_ACTION | ) | STRING_LITERALGen= STRING_LITERAL | TK_0= '.' ) (TK_1= '^' | TK_2= '!' )? ;
+    public final ANTLRv3Parser.terminal_return terminal() throws RecognitionException {
+        ANTLRv3Parser.terminal_return retval = new ANTLRv3Parser.terminal_return();
         retval.start = input.LT(1);
 
         Token CHAR_LITERALGen=null;
@@ -5406,10 +5234,10 @@ public class ANTLRv3Parser extends Parser {
         Token TK_2=null;
 
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1998:1: ( (CHAR_LITERALGen= CHAR_LITERAL | TOKEN_REFGen= TOKEN_REF (ARG_ACTIONGen= ARG_ACTION | ) | STRING_LITERALGen= STRING_LITERAL | TK_0= '.' ) (TK_1= '^' | TK_2= '!' )? )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1998:5: (CHAR_LITERALGen= CHAR_LITERAL | TOKEN_REFGen= TOKEN_REF (ARG_ACTIONGen= ARG_ACTION | ) | STRING_LITERALGen= STRING_LITERAL | TK_0= '.' ) (TK_1= '^' | TK_2= '!' )?
+            // ANTLRv3.g:1998:1: ( (CHAR_LITERALGen= CHAR_LITERAL | TOKEN_REFGen= TOKEN_REF (ARG_ACTIONGen= ARG_ACTION | ) | STRING_LITERALGen= STRING_LITERAL | TK_0= '.' ) (TK_1= '^' | TK_2= '!' )? )
+            // ANTLRv3.g:1998:5: (CHAR_LITERALGen= CHAR_LITERAL | TOKEN_REFGen= TOKEN_REF (ARG_ACTIONGen= ARG_ACTION | ) | STRING_LITERALGen= STRING_LITERAL | TK_0= '.' ) (TK_1= '^' | TK_2= '!' )?
             {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1998:5: (CHAR_LITERALGen= CHAR_LITERAL | TOKEN_REFGen= TOKEN_REF (ARG_ACTIONGen= ARG_ACTION | ) | STRING_LITERALGen= STRING_LITERAL | TK_0= '.' )
+            // ANTLRv3.g:1998:5: (CHAR_LITERALGen= CHAR_LITERAL | TOKEN_REFGen= TOKEN_REF (ARG_ACTIONGen= ARG_ACTION | ) | STRING_LITERALGen= STRING_LITERAL | TK_0= '.' )
             int alt58=4;
             switch ( input.LA(1) ) {
             case CHAR_LITERAL:
@@ -5434,26 +5262,24 @@ public class ANTLRv3Parser extends Parser {
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("1998:5: (CHAR_LITERALGen= CHAR_LITERAL | TOKEN_REFGen= TOKEN_REF (ARG_ACTIONGen= ARG_ACTION | ) | STRING_LITERALGen= STRING_LITERAL | TK_0= '.' )", 58, 0, input);
+                    new NoViableAltException("", 58, 0, input);
 
                 throw nvae;
             }
 
             switch (alt58) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1998:7: CHAR_LITERALGen= CHAR_LITERAL
+                    // ANTLRv3.g:1998:7: CHAR_LITERALGen= CHAR_LITERAL
                     {
-                    CHAR_LITERALGen=(Token)input.LT(1);
-                    match(input,CHAR_LITERAL,FOLLOW_CHAR_LITERAL_in_terminal2009); 
+                    CHAR_LITERALGen=(Token)match(input,CHAR_LITERAL,FOLLOW_CHAR_LITERAL_in_terminal2008); 
 
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:1999:7: TOKEN_REFGen= TOKEN_REF (ARG_ACTIONGen= ARG_ACTION | )
+                    // ANTLRv3.g:1999:7: TOKEN_REFGen= TOKEN_REF (ARG_ACTIONGen= ARG_ACTION | )
                     {
-                    TOKEN_REFGen=(Token)input.LT(1);
-                    match(input,TOKEN_REF,FOLLOW_TOKEN_REF_in_terminal2023); 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2000:4: (ARG_ACTIONGen= ARG_ACTION | )
+                    TOKEN_REFGen=(Token)match(input,TOKEN_REF,FOLLOW_TOKEN_REF_in_terminal2022); 
+                    // ANTLRv3.g:2000:4: (ARG_ACTIONGen= ARG_ACTION | )
                     int alt57=2;
                     int LA57_0 = input.LA(1);
 
@@ -5465,21 +5291,20 @@ public class ANTLRv3Parser extends Parser {
                     }
                     else {
                         NoViableAltException nvae =
-                            new NoViableAltException("2000:4: (ARG_ACTIONGen= ARG_ACTION | )", 57, 0, input);
+                            new NoViableAltException("", 57, 0, input);
 
                         throw nvae;
                     }
                     switch (alt57) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2000:6: ARG_ACTIONGen= ARG_ACTION
+                            // ANTLRv3.g:2000:6: ARG_ACTIONGen= ARG_ACTION
                             {
-                            ARG_ACTIONGen=(Token)input.LT(1);
-                            match(input,ARG_ACTION,FOLLOW_ARG_ACTION_in_terminal2032); 
+                            ARG_ACTIONGen=(Token)match(input,ARG_ACTION,FOLLOW_ARG_ACTION_in_terminal2031); 
 
                             }
                             break;
                         case 2 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2002:4: 
+                            // ANTLRv3.g:2002:4: 
                             {
                             }
                             break;
@@ -5490,25 +5315,23 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2003:7: STRING_LITERALGen= STRING_LITERAL
+                    // ANTLRv3.g:2003:7: STRING_LITERALGen= STRING_LITERAL
                     {
-                    STRING_LITERALGen=(Token)input.LT(1);
-                    match(input,STRING_LITERAL,FOLLOW_STRING_LITERAL_in_terminal2062); 
+                    STRING_LITERALGen=(Token)match(input,STRING_LITERAL,FOLLOW_STRING_LITERAL_in_terminal2061); 
 
                     }
                     break;
                 case 4 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2004:7: TK_0= '.'
+                    // ANTLRv3.g:2004:7: TK_0= '.'
                     {
-                    TK_0=(Token)input.LT(1);
-                    match(input,92,FOLLOW_92_in_terminal2076); 
+                    TK_0=(Token)match(input,92,FOLLOW_92_in_terminal2075); 
 
                     }
                     break;
 
             }
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2006:3: (TK_1= '^' | TK_2= '!' )?
+            // ANTLRv3.g:2006:3: (TK_1= '^' | TK_2= '!' )?
             int alt59=3;
             int LA59_0 = input.LA(1);
 
@@ -5520,25 +5343,23 @@ public class ANTLRv3Parser extends Parser {
             }
             switch (alt59) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2006:5: TK_1= '^'
+                    // ANTLRv3.g:2006:5: TK_1= '^'
                     {
-                    TK_1=(Token)input.LT(1);
-                    match(input,ROOT,FOLLOW_ROOT_in_terminal2096); 
+                    TK_1=(Token)match(input,ROOT,FOLLOW_ROOT_in_terminal2095); 
 
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2007:5: TK_2= '!'
+                    // ANTLRv3.g:2007:5: TK_2= '!'
                     {
-                    TK_2=(Token)input.LT(1);
-                    match(input,BANG,FOLLOW_BANG_in_terminal2111); 
+                    TK_2=(Token)match(input,BANG,FOLLOW_BANG_in_terminal2110); 
 
                     }
                     break;
 
             }
 
-            
+
             		// Create return CST Node
             		Node terminalReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		terminalReturnNode.setKind("terminal");
@@ -5546,7 +5367,7 @@ public class ANTLRv3Parser extends Parser {
             		if(CHAR_LITERALGen != null) {
             			Leaf CHAR_LITERALGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			CHAR_LITERALGenLeaf.setKind("CHAR_LITERAL");
-            			CHAR_LITERALGenLeaf.setValue(CHAR_LITERALGen.getText());
+            			CHAR_LITERALGenLeaf.setValue((CHAR_LITERALGen!=null?CHAR_LITERALGen.getText():null));
             			CHAR_LITERALGenLeaf.setPos(CHAR_LITERALGen.getCharPositionInLine());
             			CHAR_LITERALGenLeaf.setLine(CHAR_LITERALGen.getLine());
             			terminalReturnNode.getChildren().add(CHAR_LITERALGenLeaf);
@@ -5555,7 +5376,7 @@ public class ANTLRv3Parser extends Parser {
             		if(TOKEN_REFGen != null) {
             			Leaf TOKEN_REFGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			TOKEN_REFGenLeaf.setKind("TOKEN_REF");
-            			TOKEN_REFGenLeaf.setValue(TOKEN_REFGen.getText());
+            			TOKEN_REFGenLeaf.setValue((TOKEN_REFGen!=null?TOKEN_REFGen.getText():null));
             			TOKEN_REFGenLeaf.setPos(TOKEN_REFGen.getCharPositionInLine());
             			TOKEN_REFGenLeaf.setLine(TOKEN_REFGen.getLine());
             			terminalReturnNode.getChildren().add(TOKEN_REFGenLeaf);
@@ -5564,7 +5385,7 @@ public class ANTLRv3Parser extends Parser {
             		if(ARG_ACTIONGen != null) {
             			Leaf ARG_ACTIONGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			ARG_ACTIONGenLeaf.setKind("ARG_ACTION");
-            			ARG_ACTIONGenLeaf.setValue(ARG_ACTIONGen.getText());
+            			ARG_ACTIONGenLeaf.setValue((ARG_ACTIONGen!=null?ARG_ACTIONGen.getText():null));
             			ARG_ACTIONGenLeaf.setPos(ARG_ACTIONGen.getCharPositionInLine());
             			ARG_ACTIONGenLeaf.setLine(ARG_ACTIONGen.getLine());
             			terminalReturnNode.getChildren().add(ARG_ACTIONGenLeaf);
@@ -5573,7 +5394,7 @@ public class ANTLRv3Parser extends Parser {
             		if(STRING_LITERALGen != null) {
             			Leaf STRING_LITERALGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			STRING_LITERALGenLeaf.setKind("STRING_LITERAL");
-            			STRING_LITERALGenLeaf.setValue(STRING_LITERALGen.getText());
+            			STRING_LITERALGenLeaf.setValue((STRING_LITERALGen!=null?STRING_LITERALGen.getText():null));
             			STRING_LITERALGenLeaf.setPos(STRING_LITERALGen.getCharPositionInLine());
             			STRING_LITERALGenLeaf.setLine(STRING_LITERALGen.getLine());
             			terminalReturnNode.getChildren().add(STRING_LITERALGenLeaf);
@@ -5582,7 +5403,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_0 != null) {
             			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_0Leaf.setKind("TOKEN");
-            	 		TK_0Leaf.setValue(TK_0.getText());
+            	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
             			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
             			TK_0Leaf.setLine(TK_0.getLine());
             	 		terminalReturnNode.getChildren().add(TK_0Leaf);
@@ -5591,7 +5412,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_1 != null) {
             			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_1Leaf.setKind("TOKEN");
-            	 		TK_1Leaf.setValue(TK_1.getText());
+            	 		TK_1Leaf.setValue((TK_1!=null?TK_1.getText():null));
             			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
             			TK_1Leaf.setLine(TK_1.getLine());
             	 		terminalReturnNode.getChildren().add(TK_1Leaf);
@@ -5600,7 +5421,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_2 != null) {
             			Leaf TK_2Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_2Leaf.setKind("TOKEN");
-            	 		TK_2Leaf.setValue(TK_2.getText());
+            	 		TK_2Leaf.setValue((TK_2!=null?TK_2.getText():null));
             			TK_2Leaf.setPos(TK_2.getCharPositionInLine());
             			TK_2Leaf.setLine(TK_2.getLine());
             	 		terminalReturnNode.getChildren().add(TK_2Leaf);
@@ -5622,7 +5443,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end terminal
+    // $ANTLR end "terminal"
 
     public static class notTerminal_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -5631,10 +5452,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start notTerminal
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2081:1: notTerminal returns [Node returnNode] : (CHAR_LITERALGen= CHAR_LITERAL | TOKEN_REFGen= TOKEN_REF | STRING_LITERALGen= STRING_LITERAL );
-    public final notTerminal_return notTerminal() throws RecognitionException {
-        notTerminal_return retval = new notTerminal_return();
+    // $ANTLR start "notTerminal"
+    // ANTLRv3.g:2081:1: notTerminal returns [Node returnNode] : (CHAR_LITERALGen= CHAR_LITERAL | TOKEN_REFGen= TOKEN_REF | STRING_LITERALGen= STRING_LITERAL );
+    public final ANTLRv3Parser.notTerminal_return notTerminal() throws RecognitionException {
+        ANTLRv3Parser.notTerminal_return retval = new ANTLRv3Parser.notTerminal_return();
         retval.start = input.LT(1);
 
         Token CHAR_LITERALGen=null;
@@ -5642,7 +5463,7 @@ public class ANTLRv3Parser extends Parser {
         Token STRING_LITERALGen=null;
 
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2082:1: (CHAR_LITERALGen= CHAR_LITERAL | TOKEN_REFGen= TOKEN_REF | STRING_LITERALGen= STRING_LITERAL )
+            // ANTLRv3.g:2082:1: (CHAR_LITERALGen= CHAR_LITERAL | TOKEN_REFGen= TOKEN_REF | STRING_LITERALGen= STRING_LITERAL )
             int alt60=3;
             switch ( input.LA(1) ) {
             case CHAR_LITERAL:
@@ -5662,18 +5483,17 @@ public class ANTLRv3Parser extends Parser {
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("2081:1: notTerminal returns [Node returnNode] : (CHAR_LITERALGen= CHAR_LITERAL | TOKEN_REFGen= TOKEN_REF | STRING_LITERALGen= STRING_LITERAL );", 60, 0, input);
+                    new NoViableAltException("", 60, 0, input);
 
                 throw nvae;
             }
 
             switch (alt60) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2082:5: CHAR_LITERALGen= CHAR_LITERAL
+                    // ANTLRv3.g:2082:5: CHAR_LITERALGen= CHAR_LITERAL
                     {
-                    CHAR_LITERALGen=(Token)input.LT(1);
-                    match(input,CHAR_LITERAL,FOLLOW_CHAR_LITERAL_in_notTerminal2146); 
-                    
+                    CHAR_LITERALGen=(Token)match(input,CHAR_LITERAL,FOLLOW_CHAR_LITERAL_in_notTerminal2145); 
+
                     		// Create return CST Node
                     		Node notTerminalReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		notTerminalReturnNode.setKind("notTerminal");
@@ -5681,7 +5501,7 @@ public class ANTLRv3Parser extends Parser {
                     		if(CHAR_LITERALGen != null) {
                     			Leaf CHAR_LITERALGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			CHAR_LITERALGenLeaf.setKind("CHAR_LITERAL");
-                    			CHAR_LITERALGenLeaf.setValue(CHAR_LITERALGen.getText());
+                    			CHAR_LITERALGenLeaf.setValue((CHAR_LITERALGen!=null?CHAR_LITERALGen.getText():null));
                     			CHAR_LITERALGenLeaf.setPos(CHAR_LITERALGen.getCharPositionInLine());
                     			CHAR_LITERALGenLeaf.setLine(CHAR_LITERALGen.getLine());
                     			notTerminalReturnNode.getChildren().add(CHAR_LITERALGenLeaf);
@@ -5693,11 +5513,10 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2099:4: TOKEN_REFGen= TOKEN_REF
+                    // ANTLRv3.g:2099:4: TOKEN_REFGen= TOKEN_REF
                     {
-                    TOKEN_REFGen=(Token)input.LT(1);
-                    match(input,TOKEN_REF,FOLLOW_TOKEN_REF_in_notTerminal2157); 
-                    
+                    TOKEN_REFGen=(Token)match(input,TOKEN_REF,FOLLOW_TOKEN_REF_in_notTerminal2156); 
+
                     		// Create return CST Node
                     		Node notTerminalReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		notTerminalReturnNode.setKind("notTerminal");
@@ -5705,7 +5524,7 @@ public class ANTLRv3Parser extends Parser {
                     		if(TOKEN_REFGen != null) {
                     			Leaf TOKEN_REFGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			TOKEN_REFGenLeaf.setKind("TOKEN_REF");
-                    			TOKEN_REFGenLeaf.setValue(TOKEN_REFGen.getText());
+                    			TOKEN_REFGenLeaf.setValue((TOKEN_REFGen!=null?TOKEN_REFGen.getText():null));
                     			TOKEN_REFGenLeaf.setPos(TOKEN_REFGen.getCharPositionInLine());
                     			TOKEN_REFGenLeaf.setLine(TOKEN_REFGen.getLine());
                     			notTerminalReturnNode.getChildren().add(TOKEN_REFGenLeaf);
@@ -5717,11 +5536,10 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2116:4: STRING_LITERALGen= STRING_LITERAL
+                    // ANTLRv3.g:2116:4: STRING_LITERALGen= STRING_LITERAL
                     {
-                    STRING_LITERALGen=(Token)input.LT(1);
-                    match(input,STRING_LITERAL,FOLLOW_STRING_LITERAL_in_notTerminal2168); 
-                    
+                    STRING_LITERALGen=(Token)match(input,STRING_LITERAL,FOLLOW_STRING_LITERAL_in_notTerminal2167); 
+
                     		// Create return CST Node
                     		Node notTerminalReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		notTerminalReturnNode.setKind("notTerminal");
@@ -5729,7 +5547,7 @@ public class ANTLRv3Parser extends Parser {
                     		if(STRING_LITERALGen != null) {
                     			Leaf STRING_LITERALGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			STRING_LITERALGenLeaf.setKind("STRING_LITERAL");
-                    			STRING_LITERALGenLeaf.setValue(STRING_LITERALGen.getText());
+                    			STRING_LITERALGenLeaf.setValue((STRING_LITERALGen!=null?STRING_LITERALGen.getText():null));
                     			STRING_LITERALGenLeaf.setPos(STRING_LITERALGen.getCharPositionInLine());
                     			STRING_LITERALGenLeaf.setLine(STRING_LITERALGen.getLine());
                     			notTerminalReturnNode.getChildren().add(STRING_LITERALGenLeaf);
@@ -5753,7 +5571,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end notTerminal
+    // $ANTLR end "notTerminal"
 
     public static class ebnfSuffix_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -5762,16 +5580,16 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start ebnfSuffix
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2135:1: ebnfSuffix returns [Node returnNode] : (TK_0= '?' | TK_0= '*' | TK_0= '+' );
-    public final ebnfSuffix_return ebnfSuffix() throws RecognitionException {
-        ebnfSuffix_return retval = new ebnfSuffix_return();
+    // $ANTLR start "ebnfSuffix"
+    // ANTLRv3.g:2135:1: ebnfSuffix returns [Node returnNode] : (TK_0= '?' | TK_0= '*' | TK_0= '+' );
+    public final ANTLRv3Parser.ebnfSuffix_return ebnfSuffix() throws RecognitionException {
+        ANTLRv3Parser.ebnfSuffix_return retval = new ANTLRv3Parser.ebnfSuffix_return();
         retval.start = input.LT(1);
 
         Token TK_0=null;
 
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2136:1: (TK_0= '?' | TK_0= '*' | TK_0= '+' )
+            // ANTLRv3.g:2136:1: (TK_0= '?' | TK_0= '*' | TK_0= '+' )
             int alt61=3;
             switch ( input.LA(1) ) {
             case 90:
@@ -5791,18 +5609,17 @@ public class ANTLRv3Parser extends Parser {
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("2135:1: ebnfSuffix returns [Node returnNode] : (TK_0= '?' | TK_0= '*' | TK_0= '+' );", 61, 0, input);
+                    new NoViableAltException("", 61, 0, input);
 
                 throw nvae;
             }
 
             switch (alt61) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2136:3: TK_0= '?'
+                    // ANTLRv3.g:2136:3: TK_0= '?'
                     {
-                    TK_0=(Token)input.LT(1);
-                    match(input,90,FOLLOW_90_in_ebnfSuffix2190); 
-                    
+                    TK_0=(Token)match(input,90,FOLLOW_90_in_ebnfSuffix2189); 
+
                     		// Create return CST Node
                     		Node ebnfSuffixReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		ebnfSuffixReturnNode.setKind("ebnfSuffix");
@@ -5810,7 +5627,7 @@ public class ANTLRv3Parser extends Parser {
                     	    if(TK_0 != null) {
                     			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     	 		TK_0Leaf.setKind("TOKEN");
-                    	 		TK_0Leaf.setValue(TK_0.getText());
+                    	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
                     			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
                     			TK_0Leaf.setLine(TK_0.getLine());
                     	 		ebnfSuffixReturnNode.getChildren().add(TK_0Leaf);
@@ -5822,11 +5639,10 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2153:6: TK_0= '*'
+                    // ANTLRv3.g:2153:6: TK_0= '*'
                     {
-                    TK_0=(Token)input.LT(1);
-                    match(input,74,FOLLOW_74_in_ebnfSuffix2203); 
-                    
+                    TK_0=(Token)match(input,74,FOLLOW_74_in_ebnfSuffix2202); 
+
                     		// Create return CST Node
                     		Node ebnfSuffixReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		ebnfSuffixReturnNode.setKind("ebnfSuffix");
@@ -5834,7 +5650,7 @@ public class ANTLRv3Parser extends Parser {
                     	    if(TK_0 != null) {
                     			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     	 		TK_0Leaf.setKind("TOKEN");
-                    	 		TK_0Leaf.setValue(TK_0.getText());
+                    	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
                     			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
                     			TK_0Leaf.setLine(TK_0.getLine());
                     	 		ebnfSuffixReturnNode.getChildren().add(TK_0Leaf);
@@ -5846,11 +5662,10 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2170:7: TK_0= '+'
+                    // ANTLRv3.g:2170:7: TK_0= '+'
                     {
-                    TK_0=(Token)input.LT(1);
-                    match(input,91,FOLLOW_91_in_ebnfSuffix2217); 
-                    
+                    TK_0=(Token)match(input,91,FOLLOW_91_in_ebnfSuffix2216); 
+
                     		// Create return CST Node
                     		Node ebnfSuffixReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		ebnfSuffixReturnNode.setKind("ebnfSuffix");
@@ -5858,7 +5673,7 @@ public class ANTLRv3Parser extends Parser {
                     	    if(TK_0 != null) {
                     			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     	 		TK_0Leaf.setKind("TOKEN");
-                    	 		TK_0Leaf.setValue(TK_0.getText());
+                    	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
                     			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
                     			TK_0Leaf.setLine(TK_0.getLine());
                     	 		ebnfSuffixReturnNode.getChildren().add(TK_0Leaf);
@@ -5882,7 +5697,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end ebnfSuffix
+    // $ANTLR end "ebnfSuffix"
 
     public static class rewrite_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -5891,10 +5706,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start rewrite
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2193:1: rewrite returns [Node returnNode] : ( (TK_0= '->' SEMPREDGen_List+= SEMPRED rewrite_alternativeGen+= rewrite_alternative )* TK_1= '->' rewrite_alternativeGen_1+= rewrite_alternative | );
-    public final rewrite_return rewrite() throws RecognitionException {
-        rewrite_return retval = new rewrite_return();
+    // $ANTLR start "rewrite"
+    // ANTLRv3.g:2193:1: rewrite returns [Node returnNode] : ( (TK_0= '->' SEMPREDGen_List+= SEMPRED rewrite_alternativeGen+= rewrite_alternative )* TK_1= '->' rewrite_alternativeGen_1+= rewrite_alternative | );
+    public final ANTLRv3Parser.rewrite_return rewrite() throws RecognitionException {
+        ANTLRv3Parser.rewrite_return retval = new ANTLRv3Parser.rewrite_return();
         retval.start = input.LT(1);
 
         Token TK_0=null;
@@ -5906,7 +5721,7 @@ public class ANTLRv3Parser extends Parser {
         RuleReturnScope rewrite_alternativeGen = null;
         RuleReturnScope rewrite_alternativeGen_1 = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2194:1: ( (TK_0= '->' SEMPREDGen_List+= SEMPRED rewrite_alternativeGen+= rewrite_alternative )* TK_1= '->' rewrite_alternativeGen_1+= rewrite_alternative | )
+            // ANTLRv3.g:2194:1: ( (TK_0= '->' SEMPREDGen_List+= SEMPRED rewrite_alternativeGen+= rewrite_alternative )* TK_1= '->' rewrite_alternativeGen_1+= rewrite_alternative | )
             int alt63=2;
             int LA63_0 = input.LA(1);
 
@@ -5918,15 +5733,15 @@ public class ANTLRv3Parser extends Parser {
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("2193:1: rewrite returns [Node returnNode] : ( (TK_0= '->' SEMPREDGen_List+= SEMPRED rewrite_alternativeGen+= rewrite_alternative )* TK_1= '->' rewrite_alternativeGen_1+= rewrite_alternative | );", 63, 0, input);
+                    new NoViableAltException("", 63, 0, input);
 
                 throw nvae;
             }
             switch (alt63) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2194:3: (TK_0= '->' SEMPREDGen_List+= SEMPRED rewrite_alternativeGen+= rewrite_alternative )* TK_1= '->' rewrite_alternativeGen_1+= rewrite_alternative
+                    // ANTLRv3.g:2194:3: (TK_0= '->' SEMPREDGen_List+= SEMPRED rewrite_alternativeGen+= rewrite_alternative )* TK_1= '->' rewrite_alternativeGen_1+= rewrite_alternative
                     {
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2194:3: (TK_0= '->' SEMPREDGen_List+= SEMPRED rewrite_alternativeGen+= rewrite_alternative )*
+                    // ANTLRv3.g:2194:3: (TK_0= '->' SEMPREDGen_List+= SEMPRED rewrite_alternativeGen+= rewrite_alternative )*
                     loop62:
                     do {
                         int alt62=2;
@@ -5945,18 +5760,17 @@ public class ANTLRv3Parser extends Parser {
 
                         switch (alt62) {
                     	case 1 :
-                    	    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2194:4: TK_0= '->' SEMPREDGen_List+= SEMPRED rewrite_alternativeGen+= rewrite_alternative
+                    	    // ANTLRv3.g:2194:4: TK_0= '->' SEMPREDGen_List+= SEMPRED rewrite_alternativeGen+= rewrite_alternative
                     	    {
-                    	    TK_0=(Token)input.LT(1);
-                    	    match(input,REWRITE,FOLLOW_REWRITE_in_rewrite2244); 
-                    	    SEMPREDGen_List=(Token)input.LT(1);
-                    	    match(input,SEMPRED,FOLLOW_SEMPRED_in_rewrite2248); 
+                    	    TK_0=(Token)match(input,REWRITE,FOLLOW_REWRITE_in_rewrite2243); 
+                    	    SEMPREDGen_List=(Token)match(input,SEMPRED,FOLLOW_SEMPRED_in_rewrite2247); 
                     	    if (list_SEMPREDGen_List==null) list_SEMPREDGen_List=new ArrayList();
                     	    list_SEMPREDGen_List.add(SEMPREDGen_List);
 
-                    	    pushFollow(FOLLOW_rewrite_alternative_in_rewrite2252);
+                    	    pushFollow(FOLLOW_rewrite_alternative_in_rewrite2251);
                     	    rewrite_alternativeGen=rewrite_alternative();
-                    	    _fsp--;
+
+                    	    state._fsp--;
 
                     	    if (list_rewrite_alternativeGen==null) list_rewrite_alternativeGen=new ArrayList();
                     	    list_rewrite_alternativeGen.add(rewrite_alternativeGen);
@@ -5970,20 +5784,20 @@ public class ANTLRv3Parser extends Parser {
                         }
                     } while (true);
 
-                    TK_1=(Token)input.LT(1);
-                    match(input,REWRITE,FOLLOW_REWRITE_in_rewrite2261); 
-                    pushFollow(FOLLOW_rewrite_alternative_in_rewrite2265);
+                    TK_1=(Token)match(input,REWRITE,FOLLOW_REWRITE_in_rewrite2260); 
+                    pushFollow(FOLLOW_rewrite_alternative_in_rewrite2264);
                     rewrite_alternativeGen_1=rewrite_alternative();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_rewrite_alternativeGen_1==null) list_rewrite_alternativeGen_1=new ArrayList();
                     list_rewrite_alternativeGen_1.add(rewrite_alternativeGen_1);
 
-                    
+
                     		// Create return CST Node
                     		Node rewriteReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		rewriteReturnNode.setKind("rewrite");
-                    	
+
                     		// Create a special CST Node for terminal SEMPREDGen_List aggregation
                     		if(list_SEMPREDGen_List != null) {
                     	    for(int pos = 0; pos < list_SEMPREDGen_List.size(); pos++ )  { 
@@ -5991,7 +5805,7 @@ public class ANTLRv3Parser extends Parser {
                     	    if(TK_0 != null) {
                     			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     	 		TK_0Leaf.setKind("TOKEN");
-                    	 		TK_0Leaf.setValue(TK_0.getText());
+                    	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
                     			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
                     			TK_0Leaf.setLine(TK_0.getLine());
                     	 		rewriteReturnNode.getChildren().add(TK_0Leaf);
@@ -6016,12 +5830,12 @@ public class ANTLRv3Parser extends Parser {
                     		}
                     		}
                     		}
-                    	
+
                     	    // Create a Token CST Leaf	
                     	    if(TK_1 != null) {
                     			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     	 		TK_1Leaf.setKind("TOKEN");
-                    	 		TK_1Leaf.setValue(TK_1.getText());
+                    	 		TK_1Leaf.setValue((TK_1!=null?TK_1.getText():null));
                     			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
                     			TK_1Leaf.setLine(TK_1.getLine());
                     	 		rewriteReturnNode.getChildren().add(TK_1Leaf);
@@ -6043,7 +5857,7 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2257:2: 
+                    // ANTLRv3.g:2257:2: 
                     {
                     }
                     break;
@@ -6060,7 +5874,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end rewrite
+    // $ANTLR end "rewrite"
 
     public static class rewrite_alternative_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -6069,10 +5883,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start rewrite_alternative
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2259:1: rewrite_alternative returns [Node returnNode] : (rewrite_templateGen+= rewrite_template | rewrite_tree_alternativeGen+= rewrite_tree_alternative | );
-    public final rewrite_alternative_return rewrite_alternative() throws RecognitionException {
-        rewrite_alternative_return retval = new rewrite_alternative_return();
+    // $ANTLR start "rewrite_alternative"
+    // ANTLRv3.g:2259:1: rewrite_alternative returns [Node returnNode] : (rewrite_templateGen+= rewrite_template | rewrite_tree_alternativeGen+= rewrite_tree_alternative | );
+    public final ANTLRv3Parser.rewrite_alternative_return rewrite_alternative() throws RecognitionException {
+        ANTLRv3Parser.rewrite_alternative_return retval = new ANTLRv3Parser.rewrite_alternative_return();
         retval.start = input.LT(1);
 
         List list_rewrite_templateGen=null;
@@ -6080,245 +5894,22 @@ public class ANTLRv3Parser extends Parser {
         RuleReturnScope rewrite_templateGen = null;
         RuleReturnScope rewrite_tree_alternativeGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2260:1: (rewrite_templateGen+= rewrite_template | rewrite_tree_alternativeGen+= rewrite_tree_alternative | )
+            // ANTLRv3.g:2260:1: (rewrite_templateGen+= rewrite_template | rewrite_tree_alternativeGen+= rewrite_tree_alternative | )
             int alt64=3;
-            switch ( input.LA(1) ) {
-            case TOKEN_REF:
-                {
-                int LA64_1 = input.LA(2);
-
-                if ( (LA64_1==TREE_BEGIN||LA64_1==REWRITE||(LA64_1>=TOKEN_REF && LA64_1<=ACTION)||(LA64_1>=ARG_ACTION && LA64_1<=RULE_REF)||LA64_1==69||LA64_1==74||(LA64_1>=83 && LA64_1<=84)||(LA64_1>=90 && LA64_1<=91)||LA64_1==93) ) {
-                    alt64=2;
-                }
-                else if ( (LA64_1==82) ) {
-                    switch ( input.LA(3) ) {
-                    case TOKEN_REF:
-                        {
-                        int LA64_9 = input.LA(4);
-
-                        if ( (LA64_9==71) ) {
-                            alt64=1;
-                        }
-                        else if ( (LA64_9==TREE_BEGIN||(LA64_9>=TOKEN_REF && LA64_9<=ACTION)||(LA64_9>=ARG_ACTION && LA64_9<=RULE_REF)||LA64_9==74||LA64_9==82||LA64_9==84||(LA64_9>=90 && LA64_9<=91)||LA64_9==93) ) {
-                            alt64=2;
-                        }
-                        else {
-                            NoViableAltException nvae =
-                                new NoViableAltException("2259:1: rewrite_alternative returns [Node returnNode] : (rewrite_templateGen+= rewrite_template | rewrite_tree_alternativeGen+= rewrite_tree_alternative | );", 64, 9, input);
-
-                            throw nvae;
-                        }
-                        }
-                        break;
-                    case RULE_REF:
-                        {
-                        int LA64_10 = input.LA(4);
-
-                        if ( (LA64_10==TREE_BEGIN||(LA64_10>=TOKEN_REF && LA64_10<=ACTION)||LA64_10==RULE_REF||LA64_10==74||LA64_10==82||LA64_10==84||(LA64_10>=90 && LA64_10<=91)||LA64_10==93) ) {
-                            alt64=2;
-                        }
-                        else if ( (LA64_10==71) ) {
-                            alt64=1;
-                        }
-                        else {
-                            NoViableAltException nvae =
-                                new NoViableAltException("2259:1: rewrite_alternative returns [Node returnNode] : (rewrite_templateGen+= rewrite_template | rewrite_tree_alternativeGen+= rewrite_tree_alternative | );", 64, 10, input);
-
-                            throw nvae;
-                        }
-                        }
-                        break;
-                    case 84:
-                        {
-                        alt64=1;
-                        }
-                        break;
-                    case TREE_BEGIN:
-                    case STRING_LITERAL:
-                    case CHAR_LITERAL:
-                    case ACTION:
-                    case 82:
-                    case 93:
-                        {
-                        alt64=2;
-                        }
-                        break;
-                    default:
-                        NoViableAltException nvae =
-                            new NoViableAltException("2259:1: rewrite_alternative returns [Node returnNode] : (rewrite_templateGen+= rewrite_template | rewrite_tree_alternativeGen+= rewrite_tree_alternative | );", 64, 7, input);
-
-                        throw nvae;
-                    }
-
-                }
-                else {
-                    NoViableAltException nvae =
-                        new NoViableAltException("2259:1: rewrite_alternative returns [Node returnNode] : (rewrite_templateGen+= rewrite_template | rewrite_tree_alternativeGen+= rewrite_tree_alternative | );", 64, 1, input);
-
-                    throw nvae;
-                }
-                }
-                break;
-            case RULE_REF:
-                {
-                int LA64_2 = input.LA(2);
-
-                if ( (LA64_2==82) ) {
-                    switch ( input.LA(3) ) {
-                    case TOKEN_REF:
-                        {
-                        int LA64_9 = input.LA(4);
-
-                        if ( (LA64_9==71) ) {
-                            alt64=1;
-                        }
-                        else if ( (LA64_9==TREE_BEGIN||(LA64_9>=TOKEN_REF && LA64_9<=ACTION)||(LA64_9>=ARG_ACTION && LA64_9<=RULE_REF)||LA64_9==74||LA64_9==82||LA64_9==84||(LA64_9>=90 && LA64_9<=91)||LA64_9==93) ) {
-                            alt64=2;
-                        }
-                        else {
-                            NoViableAltException nvae =
-                                new NoViableAltException("2259:1: rewrite_alternative returns [Node returnNode] : (rewrite_templateGen+= rewrite_template | rewrite_tree_alternativeGen+= rewrite_tree_alternative | );", 64, 9, input);
-
-                            throw nvae;
-                        }
-                        }
-                        break;
-                    case RULE_REF:
-                        {
-                        int LA64_10 = input.LA(4);
-
-                        if ( (LA64_10==TREE_BEGIN||(LA64_10>=TOKEN_REF && LA64_10<=ACTION)||LA64_10==RULE_REF||LA64_10==74||LA64_10==82||LA64_10==84||(LA64_10>=90 && LA64_10<=91)||LA64_10==93) ) {
-                            alt64=2;
-                        }
-                        else if ( (LA64_10==71) ) {
-                            alt64=1;
-                        }
-                        else {
-                            NoViableAltException nvae =
-                                new NoViableAltException("2259:1: rewrite_alternative returns [Node returnNode] : (rewrite_templateGen+= rewrite_template | rewrite_tree_alternativeGen+= rewrite_tree_alternative | );", 64, 10, input);
-
-                            throw nvae;
-                        }
-                        }
-                        break;
-                    case 84:
-                        {
-                        alt64=1;
-                        }
-                        break;
-                    case TREE_BEGIN:
-                    case STRING_LITERAL:
-                    case CHAR_LITERAL:
-                    case ACTION:
-                    case 82:
-                    case 93:
-                        {
-                        alt64=2;
-                        }
-                        break;
-                    default:
-                        NoViableAltException nvae =
-                            new NoViableAltException("2259:1: rewrite_alternative returns [Node returnNode] : (rewrite_templateGen+= rewrite_template | rewrite_tree_alternativeGen+= rewrite_tree_alternative | );", 64, 7, input);
-
-                        throw nvae;
-                    }
-
-                }
-                else if ( (LA64_2==TREE_BEGIN||LA64_2==REWRITE||(LA64_2>=TOKEN_REF && LA64_2<=ACTION)||LA64_2==RULE_REF||LA64_2==69||LA64_2==74||(LA64_2>=83 && LA64_2<=84)||(LA64_2>=90 && LA64_2<=91)||LA64_2==93) ) {
-                    alt64=2;
-                }
-                else {
-                    NoViableAltException nvae =
-                        new NoViableAltException("2259:1: rewrite_alternative returns [Node returnNode] : (rewrite_templateGen+= rewrite_template | rewrite_tree_alternativeGen+= rewrite_tree_alternative | );", 64, 2, input);
-
-                    throw nvae;
-                }
-                }
-                break;
-            case 82:
-                {
-                int LA64_3 = input.LA(2);
-
-                if ( (LA64_3==ACTION) ) {
-                    int LA64_8 = input.LA(3);
-
-                    if ( (LA64_8==84) ) {
-                        int LA64_11 = input.LA(4);
-
-                        if ( (LA64_11==82) ) {
-                            alt64=1;
-                        }
-                        else if ( (LA64_11==74||(LA64_11>=90 && LA64_11<=91)) ) {
-                            alt64=2;
-                        }
-                        else {
-                            NoViableAltException nvae =
-                                new NoViableAltException("2259:1: rewrite_alternative returns [Node returnNode] : (rewrite_templateGen+= rewrite_template | rewrite_tree_alternativeGen+= rewrite_tree_alternative | );", 64, 11, input);
-
-                            throw nvae;
-                        }
-                    }
-                    else if ( (LA64_8==TREE_BEGIN||(LA64_8>=TOKEN_REF && LA64_8<=ACTION)||LA64_8==RULE_REF||LA64_8==74||LA64_8==82||(LA64_8>=90 && LA64_8<=91)||LA64_8==93) ) {
-                        alt64=2;
-                    }
-                    else {
-                        NoViableAltException nvae =
-                            new NoViableAltException("2259:1: rewrite_alternative returns [Node returnNode] : (rewrite_templateGen+= rewrite_template | rewrite_tree_alternativeGen+= rewrite_tree_alternative | );", 64, 8, input);
-
-                        throw nvae;
-                    }
-                }
-                else if ( (LA64_3==TREE_BEGIN||(LA64_3>=TOKEN_REF && LA64_3<=CHAR_LITERAL)||LA64_3==RULE_REF||LA64_3==82||LA64_3==93) ) {
-                    alt64=2;
-                }
-                else {
-                    NoViableAltException nvae =
-                        new NoViableAltException("2259:1: rewrite_alternative returns [Node returnNode] : (rewrite_templateGen+= rewrite_template | rewrite_tree_alternativeGen+= rewrite_tree_alternative | );", 64, 3, input);
-
-                    throw nvae;
-                }
-                }
-                break;
-            case ACTION:
-                {
-                alt64=1;
-                }
-                break;
-            case TREE_BEGIN:
-            case STRING_LITERAL:
-            case CHAR_LITERAL:
-            case 93:
-                {
-                alt64=2;
-                }
-                break;
-            case REWRITE:
-            case 69:
-            case 83:
-            case 84:
-                {
-                alt64=3;
-                }
-                break;
-            default:
-                NoViableAltException nvae =
-                    new NoViableAltException("2259:1: rewrite_alternative returns [Node returnNode] : (rewrite_templateGen+= rewrite_template | rewrite_tree_alternativeGen+= rewrite_tree_alternative | );", 64, 0, input);
-
-                throw nvae;
-            }
-
+            alt64 = dfa64.predict(input);
             switch (alt64) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2260:3: rewrite_templateGen+= rewrite_template
+                    // ANTLRv3.g:2260:3: rewrite_templateGen+= rewrite_template
                     {
-                    pushFollow(FOLLOW_rewrite_template_in_rewrite_alternative2289);
+                    pushFollow(FOLLOW_rewrite_template_in_rewrite_alternative2288);
                     rewrite_templateGen=rewrite_template();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_rewrite_templateGen==null) list_rewrite_templateGen=new ArrayList();
                     list_rewrite_templateGen.add(rewrite_templateGen);
 
-                    
+
                     		// Create return CST Node
                     		Node rewrite_alternativeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		rewrite_alternativeReturnNode.setKind("rewrite_alternative");
@@ -6339,16 +5930,17 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2278:4: rewrite_tree_alternativeGen+= rewrite_tree_alternative
+                    // ANTLRv3.g:2278:4: rewrite_tree_alternativeGen+= rewrite_tree_alternative
                     {
-                    pushFollow(FOLLOW_rewrite_tree_alternative_in_rewrite_alternative2300);
+                    pushFollow(FOLLOW_rewrite_tree_alternative_in_rewrite_alternative2299);
                     rewrite_tree_alternativeGen=rewrite_tree_alternative();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_rewrite_tree_alternativeGen==null) list_rewrite_tree_alternativeGen=new ArrayList();
                     list_rewrite_tree_alternativeGen.add(rewrite_tree_alternativeGen);
 
-                    
+
                     		// Create return CST Node
                     		Node rewrite_alternativeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		rewrite_alternativeReturnNode.setKind("rewrite_alternative");
@@ -6369,7 +5961,7 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2297:2: 
+                    // ANTLRv3.g:2297:2: 
                     {
                     }
                     break;
@@ -6386,7 +5978,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end rewrite_alternative
+    // $ANTLR end "rewrite_alternative"
 
     public static class rewrite_template_block_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -6395,10 +5987,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start rewrite_template_block
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2299:1: rewrite_template_block returns [Node returnNode] : TK_0= '(' rewrite_templateGen+= rewrite_template TK_1= ')' ;
-    public final rewrite_template_block_return rewrite_template_block() throws RecognitionException {
-        rewrite_template_block_return retval = new rewrite_template_block_return();
+    // $ANTLR start "rewrite_template_block"
+    // ANTLRv3.g:2299:1: rewrite_template_block returns [Node returnNode] : TK_0= '(' rewrite_templateGen+= rewrite_template TK_1= ')' ;
+    public final ANTLRv3Parser.rewrite_template_block_return rewrite_template_block() throws RecognitionException {
+        ANTLRv3Parser.rewrite_template_block_return retval = new ANTLRv3Parser.rewrite_template_block_return();
         retval.start = input.LT(1);
 
         Token TK_0=null;
@@ -6406,21 +5998,20 @@ public class ANTLRv3Parser extends Parser {
         List list_rewrite_templateGen=null;
         RuleReturnScope rewrite_templateGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2300:1: (TK_0= '(' rewrite_templateGen+= rewrite_template TK_1= ')' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2300:5: TK_0= '(' rewrite_templateGen+= rewrite_template TK_1= ')'
+            // ANTLRv3.g:2300:1: (TK_0= '(' rewrite_templateGen+= rewrite_template TK_1= ')' )
+            // ANTLRv3.g:2300:5: TK_0= '(' rewrite_templateGen+= rewrite_template TK_1= ')'
             {
-            TK_0=(Token)input.LT(1);
-            match(input,82,FOLLOW_82_in_rewrite_template_block2335); 
-            pushFollow(FOLLOW_rewrite_template_in_rewrite_template_block2339);
+            TK_0=(Token)match(input,82,FOLLOW_82_in_rewrite_template_block2334); 
+            pushFollow(FOLLOW_rewrite_template_in_rewrite_template_block2338);
             rewrite_templateGen=rewrite_template();
-            _fsp--;
+
+            state._fsp--;
 
             if (list_rewrite_templateGen==null) list_rewrite_templateGen=new ArrayList();
             list_rewrite_templateGen.add(rewrite_templateGen);
 
-            TK_1=(Token)input.LT(1);
-            match(input,84,FOLLOW_84_in_rewrite_template_block2343); 
-            
+            TK_1=(Token)match(input,84,FOLLOW_84_in_rewrite_template_block2342); 
+
             		// Create return CST Node
             		Node rewrite_template_blockReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		rewrite_template_blockReturnNode.setKind("rewrite_template_block");
@@ -6428,7 +6019,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_0 != null) {
             			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_0Leaf.setKind("TOKEN");
-            	 		TK_0Leaf.setValue(TK_0.getText());
+            	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
             			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
             			TK_0Leaf.setLine(TK_0.getLine());
             	 		rewrite_template_blockReturnNode.getChildren().add(TK_0Leaf);
@@ -6447,7 +6038,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_1 != null) {
             			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_1Leaf.setKind("TOKEN");
-            	 		TK_1Leaf.setValue(TK_1.getText());
+            	 		TK_1Leaf.setValue((TK_1!=null?TK_1.getText():null));
             			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
             			TK_1Leaf.setLine(TK_1.getLine());
             	 		rewrite_template_blockReturnNode.getChildren().add(TK_1Leaf);
@@ -6469,7 +6060,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end rewrite_template_block
+    // $ANTLR end "rewrite_template_block"
 
     public static class rewrite_tree_block_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -6478,10 +6069,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start rewrite_tree_block
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2338:1: rewrite_tree_block returns [Node returnNode] : TK_0= '(' rewrite_tree_alternativeGen+= rewrite_tree_alternative TK_1= ')' ;
-    public final rewrite_tree_block_return rewrite_tree_block() throws RecognitionException {
-        rewrite_tree_block_return retval = new rewrite_tree_block_return();
+    // $ANTLR start "rewrite_tree_block"
+    // ANTLRv3.g:2338:1: rewrite_tree_block returns [Node returnNode] : TK_0= '(' rewrite_tree_alternativeGen+= rewrite_tree_alternative TK_1= ')' ;
+    public final ANTLRv3Parser.rewrite_tree_block_return rewrite_tree_block() throws RecognitionException {
+        ANTLRv3Parser.rewrite_tree_block_return retval = new ANTLRv3Parser.rewrite_tree_block_return();
         retval.start = input.LT(1);
 
         Token TK_0=null;
@@ -6489,21 +6080,20 @@ public class ANTLRv3Parser extends Parser {
         List list_rewrite_tree_alternativeGen=null;
         RuleReturnScope rewrite_tree_alternativeGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2339:1: (TK_0= '(' rewrite_tree_alternativeGen+= rewrite_tree_alternative TK_1= ')' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2339:5: TK_0= '(' rewrite_tree_alternativeGen+= rewrite_tree_alternative TK_1= ')'
+            // ANTLRv3.g:2339:1: (TK_0= '(' rewrite_tree_alternativeGen+= rewrite_tree_alternative TK_1= ')' )
+            // ANTLRv3.g:2339:5: TK_0= '(' rewrite_tree_alternativeGen+= rewrite_tree_alternative TK_1= ')'
             {
-            TK_0=(Token)input.LT(1);
-            match(input,82,FOLLOW_82_in_rewrite_tree_block2369); 
-            pushFollow(FOLLOW_rewrite_tree_alternative_in_rewrite_tree_block2373);
+            TK_0=(Token)match(input,82,FOLLOW_82_in_rewrite_tree_block2368); 
+            pushFollow(FOLLOW_rewrite_tree_alternative_in_rewrite_tree_block2372);
             rewrite_tree_alternativeGen=rewrite_tree_alternative();
-            _fsp--;
+
+            state._fsp--;
 
             if (list_rewrite_tree_alternativeGen==null) list_rewrite_tree_alternativeGen=new ArrayList();
             list_rewrite_tree_alternativeGen.add(rewrite_tree_alternativeGen);
 
-            TK_1=(Token)input.LT(1);
-            match(input,84,FOLLOW_84_in_rewrite_tree_block2377); 
-            
+            TK_1=(Token)match(input,84,FOLLOW_84_in_rewrite_tree_block2376); 
+
             		// Create return CST Node
             		Node rewrite_tree_blockReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		rewrite_tree_blockReturnNode.setKind("rewrite_tree_block");
@@ -6511,7 +6101,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_0 != null) {
             			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_0Leaf.setKind("TOKEN");
-            	 		TK_0Leaf.setValue(TK_0.getText());
+            	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
             			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
             			TK_0Leaf.setLine(TK_0.getLine());
             	 		rewrite_tree_blockReturnNode.getChildren().add(TK_0Leaf);
@@ -6530,7 +6120,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_1 != null) {
             			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_1Leaf.setKind("TOKEN");
-            	 		TK_1Leaf.setValue(TK_1.getText());
+            	 		TK_1Leaf.setValue((TK_1!=null?TK_1.getText():null));
             			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
             			TK_1Leaf.setLine(TK_1.getLine());
             	 		rewrite_tree_blockReturnNode.getChildren().add(TK_1Leaf);
@@ -6552,7 +6142,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end rewrite_tree_block
+    // $ANTLR end "rewrite_tree_block"
 
     public static class rewrite_tree_alternative_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -6561,19 +6151,19 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start rewrite_tree_alternative
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2377:1: rewrite_tree_alternative returns [Node returnNode] : (rewrite_tree_elementGen+= rewrite_tree_element )+ ;
-    public final rewrite_tree_alternative_return rewrite_tree_alternative() throws RecognitionException {
-        rewrite_tree_alternative_return retval = new rewrite_tree_alternative_return();
+    // $ANTLR start "rewrite_tree_alternative"
+    // ANTLRv3.g:2377:1: rewrite_tree_alternative returns [Node returnNode] : (rewrite_tree_elementGen+= rewrite_tree_element )+ ;
+    public final ANTLRv3Parser.rewrite_tree_alternative_return rewrite_tree_alternative() throws RecognitionException {
+        ANTLRv3Parser.rewrite_tree_alternative_return retval = new ANTLRv3Parser.rewrite_tree_alternative_return();
         retval.start = input.LT(1);
 
         List list_rewrite_tree_elementGen=null;
         RuleReturnScope rewrite_tree_elementGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2378:1: ( (rewrite_tree_elementGen+= rewrite_tree_element )+ )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2378:3: (rewrite_tree_elementGen+= rewrite_tree_element )+
+            // ANTLRv3.g:2378:1: ( (rewrite_tree_elementGen+= rewrite_tree_element )+ )
+            // ANTLRv3.g:2378:3: (rewrite_tree_elementGen+= rewrite_tree_element )+
             {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2378:26: (rewrite_tree_elementGen+= rewrite_tree_element )+
+            // ANTLRv3.g:2378:26: (rewrite_tree_elementGen+= rewrite_tree_element )+
             int cnt65=0;
             loop65:
             do {
@@ -6587,11 +6177,12 @@ public class ANTLRv3Parser extends Parser {
 
                 switch (alt65) {
             	case 1 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2378:26: rewrite_tree_elementGen+= rewrite_tree_element
+            	    // ANTLRv3.g:2378:26: rewrite_tree_elementGen+= rewrite_tree_element
             	    {
-            	    pushFollow(FOLLOW_rewrite_tree_element_in_rewrite_tree_alternative2401);
+            	    pushFollow(FOLLOW_rewrite_tree_element_in_rewrite_tree_alternative2400);
             	    rewrite_tree_elementGen=rewrite_tree_element();
-            	    _fsp--;
+
+            	    state._fsp--;
 
             	    if (list_rewrite_tree_elementGen==null) list_rewrite_tree_elementGen=new ArrayList();
             	    list_rewrite_tree_elementGen.add(rewrite_tree_elementGen);
@@ -6609,7 +6200,7 @@ public class ANTLRv3Parser extends Parser {
                 cnt65++;
             } while (true);
 
-            
+
             		// Create return CST Node
             		Node rewrite_tree_alternativeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		rewrite_tree_alternativeReturnNode.setKind("rewrite_tree_alternative");
@@ -6640,7 +6231,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end rewrite_tree_alternative
+    // $ANTLR end "rewrite_tree_alternative"
 
     public static class rewrite_tree_element_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -6649,10 +6240,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start rewrite_tree_element
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2398:1: rewrite_tree_element returns [Node returnNode] : (rewrite_tree_atomGen+= rewrite_tree_atom | rewrite_tree_atomGen+= rewrite_tree_atom ebnfSuffixGen+= ebnfSuffix | rewrite_treeGen+= rewrite_tree (ebnfSuffixGen+= ebnfSuffix | ) | rewrite_tree_ebnfGen+= rewrite_tree_ebnf );
-    public final rewrite_tree_element_return rewrite_tree_element() throws RecognitionException {
-        rewrite_tree_element_return retval = new rewrite_tree_element_return();
+    // $ANTLR start "rewrite_tree_element"
+    // ANTLRv3.g:2398:1: rewrite_tree_element returns [Node returnNode] : (rewrite_tree_atomGen+= rewrite_tree_atom | rewrite_tree_atomGen+= rewrite_tree_atom ebnfSuffixGen+= ebnfSuffix | rewrite_treeGen+= rewrite_tree (ebnfSuffixGen+= ebnfSuffix | ) | rewrite_tree_ebnfGen+= rewrite_tree_ebnf );
+    public final ANTLRv3Parser.rewrite_tree_element_return rewrite_tree_element() throws RecognitionException {
+        ANTLRv3Parser.rewrite_tree_element_return retval = new ANTLRv3Parser.rewrite_tree_element_return();
         retval.start = input.LT(1);
 
         List list_rewrite_tree_atomGen=null;
@@ -6664,181 +6255,22 @@ public class ANTLRv3Parser extends Parser {
         RuleReturnScope rewrite_treeGen = null;
         RuleReturnScope rewrite_tree_ebnfGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2399:1: (rewrite_tree_atomGen+= rewrite_tree_atom | rewrite_tree_atomGen+= rewrite_tree_atom ebnfSuffixGen+= ebnfSuffix | rewrite_treeGen+= rewrite_tree (ebnfSuffixGen+= ebnfSuffix | ) | rewrite_tree_ebnfGen+= rewrite_tree_ebnf )
+            // ANTLRv3.g:2399:1: (rewrite_tree_atomGen+= rewrite_tree_atom | rewrite_tree_atomGen+= rewrite_tree_atom ebnfSuffixGen+= ebnfSuffix | rewrite_treeGen+= rewrite_tree (ebnfSuffixGen+= ebnfSuffix | ) | rewrite_tree_ebnfGen+= rewrite_tree_ebnf )
             int alt67=4;
-            switch ( input.LA(1) ) {
-            case CHAR_LITERAL:
-                {
-                int LA67_1 = input.LA(2);
-
-                if ( (LA67_1==74||(LA67_1>=90 && LA67_1<=91)) ) {
-                    alt67=2;
-                }
-                else if ( (LA67_1==TREE_BEGIN||LA67_1==REWRITE||(LA67_1>=TOKEN_REF && LA67_1<=ACTION)||LA67_1==RULE_REF||LA67_1==69||(LA67_1>=82 && LA67_1<=84)||LA67_1==93) ) {
-                    alt67=1;
-                }
-                else {
-                    NoViableAltException nvae =
-                        new NoViableAltException("2398:1: rewrite_tree_element returns [Node returnNode] : (rewrite_tree_atomGen+= rewrite_tree_atom | rewrite_tree_atomGen+= rewrite_tree_atom ebnfSuffixGen+= ebnfSuffix | rewrite_treeGen+= rewrite_tree (ebnfSuffixGen+= ebnfSuffix | ) | rewrite_tree_ebnfGen+= rewrite_tree_ebnf );", 67, 1, input);
-
-                    throw nvae;
-                }
-                }
-                break;
-            case TOKEN_REF:
-                {
-                switch ( input.LA(2) ) {
-                case ARG_ACTION:
-                    {
-                    int LA67_11 = input.LA(3);
-
-                    if ( (LA67_11==TREE_BEGIN||LA67_11==REWRITE||(LA67_11>=TOKEN_REF && LA67_11<=ACTION)||LA67_11==RULE_REF||LA67_11==69||(LA67_11>=82 && LA67_11<=84)||LA67_11==93) ) {
-                        alt67=1;
-                    }
-                    else if ( (LA67_11==74||(LA67_11>=90 && LA67_11<=91)) ) {
-                        alt67=2;
-                    }
-                    else {
-                        NoViableAltException nvae =
-                            new NoViableAltException("2398:1: rewrite_tree_element returns [Node returnNode] : (rewrite_tree_atomGen+= rewrite_tree_atom | rewrite_tree_atomGen+= rewrite_tree_atom ebnfSuffixGen+= ebnfSuffix | rewrite_treeGen+= rewrite_tree (ebnfSuffixGen+= ebnfSuffix | ) | rewrite_tree_ebnfGen+= rewrite_tree_ebnf );", 67, 11, input);
-
-                        throw nvae;
-                    }
-                    }
-                    break;
-                case TREE_BEGIN:
-                case REWRITE:
-                case TOKEN_REF:
-                case STRING_LITERAL:
-                case CHAR_LITERAL:
-                case ACTION:
-                case RULE_REF:
-                case 69:
-                case 82:
-                case 83:
-                case 84:
-                case 93:
-                    {
-                    alt67=1;
-                    }
-                    break;
-                case 74:
-                case 90:
-                case 91:
-                    {
-                    alt67=2;
-                    }
-                    break;
-                default:
-                    NoViableAltException nvae =
-                        new NoViableAltException("2398:1: rewrite_tree_element returns [Node returnNode] : (rewrite_tree_atomGen+= rewrite_tree_atom | rewrite_tree_atomGen+= rewrite_tree_atom ebnfSuffixGen+= ebnfSuffix | rewrite_treeGen+= rewrite_tree (ebnfSuffixGen+= ebnfSuffix | ) | rewrite_tree_ebnfGen+= rewrite_tree_ebnf );", 67, 2, input);
-
-                    throw nvae;
-                }
-
-                }
-                break;
-            case RULE_REF:
-                {
-                int LA67_3 = input.LA(2);
-
-                if ( (LA67_3==TREE_BEGIN||LA67_3==REWRITE||(LA67_3>=TOKEN_REF && LA67_3<=ACTION)||LA67_3==RULE_REF||LA67_3==69||(LA67_3>=82 && LA67_3<=84)||LA67_3==93) ) {
-                    alt67=1;
-                }
-                else if ( (LA67_3==74||(LA67_3>=90 && LA67_3<=91)) ) {
-                    alt67=2;
-                }
-                else {
-                    NoViableAltException nvae =
-                        new NoViableAltException("2398:1: rewrite_tree_element returns [Node returnNode] : (rewrite_tree_atomGen+= rewrite_tree_atom | rewrite_tree_atomGen+= rewrite_tree_atom ebnfSuffixGen+= ebnfSuffix | rewrite_treeGen+= rewrite_tree (ebnfSuffixGen+= ebnfSuffix | ) | rewrite_tree_ebnfGen+= rewrite_tree_ebnf );", 67, 3, input);
-
-                    throw nvae;
-                }
-                }
-                break;
-            case STRING_LITERAL:
-                {
-                int LA67_4 = input.LA(2);
-
-                if ( (LA67_4==74||(LA67_4>=90 && LA67_4<=91)) ) {
-                    alt67=2;
-                }
-                else if ( (LA67_4==TREE_BEGIN||LA67_4==REWRITE||(LA67_4>=TOKEN_REF && LA67_4<=ACTION)||LA67_4==RULE_REF||LA67_4==69||(LA67_4>=82 && LA67_4<=84)||LA67_4==93) ) {
-                    alt67=1;
-                }
-                else {
-                    NoViableAltException nvae =
-                        new NoViableAltException("2398:1: rewrite_tree_element returns [Node returnNode] : (rewrite_tree_atomGen+= rewrite_tree_atom | rewrite_tree_atomGen+= rewrite_tree_atom ebnfSuffixGen+= ebnfSuffix | rewrite_treeGen+= rewrite_tree (ebnfSuffixGen+= ebnfSuffix | ) | rewrite_tree_ebnfGen+= rewrite_tree_ebnf );", 67, 4, input);
-
-                    throw nvae;
-                }
-                }
-                break;
-            case 93:
-                {
-                int LA67_5 = input.LA(2);
-
-                if ( (LA67_5==TREE_BEGIN||LA67_5==REWRITE||(LA67_5>=TOKEN_REF && LA67_5<=ACTION)||LA67_5==RULE_REF||LA67_5==69||(LA67_5>=82 && LA67_5<=84)||LA67_5==93) ) {
-                    alt67=1;
-                }
-                else if ( (LA67_5==74||(LA67_5>=90 && LA67_5<=91)) ) {
-                    alt67=2;
-                }
-                else {
-                    NoViableAltException nvae =
-                        new NoViableAltException("2398:1: rewrite_tree_element returns [Node returnNode] : (rewrite_tree_atomGen+= rewrite_tree_atom | rewrite_tree_atomGen+= rewrite_tree_atom ebnfSuffixGen+= ebnfSuffix | rewrite_treeGen+= rewrite_tree (ebnfSuffixGen+= ebnfSuffix | ) | rewrite_tree_ebnfGen+= rewrite_tree_ebnf );", 67, 5, input);
-
-                    throw nvae;
-                }
-                }
-                break;
-            case ACTION:
-                {
-                int LA67_6 = input.LA(2);
-
-                if ( (LA67_6==74||(LA67_6>=90 && LA67_6<=91)) ) {
-                    alt67=2;
-                }
-                else if ( (LA67_6==TREE_BEGIN||LA67_6==REWRITE||(LA67_6>=TOKEN_REF && LA67_6<=ACTION)||LA67_6==RULE_REF||LA67_6==69||(LA67_6>=82 && LA67_6<=84)||LA67_6==93) ) {
-                    alt67=1;
-                }
-                else {
-                    NoViableAltException nvae =
-                        new NoViableAltException("2398:1: rewrite_tree_element returns [Node returnNode] : (rewrite_tree_atomGen+= rewrite_tree_atom | rewrite_tree_atomGen+= rewrite_tree_atom ebnfSuffixGen+= ebnfSuffix | rewrite_treeGen+= rewrite_tree (ebnfSuffixGen+= ebnfSuffix | ) | rewrite_tree_ebnfGen+= rewrite_tree_ebnf );", 67, 6, input);
-
-                    throw nvae;
-                }
-                }
-                break;
-            case TREE_BEGIN:
-                {
-                alt67=3;
-                }
-                break;
-            case 82:
-                {
-                alt67=4;
-                }
-                break;
-            default:
-                NoViableAltException nvae =
-                    new NoViableAltException("2398:1: rewrite_tree_element returns [Node returnNode] : (rewrite_tree_atomGen+= rewrite_tree_atom | rewrite_tree_atomGen+= rewrite_tree_atom ebnfSuffixGen+= ebnfSuffix | rewrite_treeGen+= rewrite_tree (ebnfSuffixGen+= ebnfSuffix | ) | rewrite_tree_ebnfGen+= rewrite_tree_ebnf );", 67, 0, input);
-
-                throw nvae;
-            }
-
+            alt67 = dfa67.predict(input);
             switch (alt67) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2399:3: rewrite_tree_atomGen+= rewrite_tree_atom
+                    // ANTLRv3.g:2399:3: rewrite_tree_atomGen+= rewrite_tree_atom
                     {
-                    pushFollow(FOLLOW_rewrite_tree_atom_in_rewrite_tree_element2427);
+                    pushFollow(FOLLOW_rewrite_tree_atom_in_rewrite_tree_element2426);
                     rewrite_tree_atomGen=rewrite_tree_atom();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_rewrite_tree_atomGen==null) list_rewrite_tree_atomGen=new ArrayList();
                     list_rewrite_tree_atomGen.add(rewrite_tree_atomGen);
 
-                    
+
                     		// Create return CST Node
                     		Node rewrite_tree_elementReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		rewrite_tree_elementReturnNode.setKind("rewrite_tree_element");
@@ -6859,23 +6291,25 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2417:4: rewrite_tree_atomGen+= rewrite_tree_atom ebnfSuffixGen+= ebnfSuffix
+                    // ANTLRv3.g:2417:4: rewrite_tree_atomGen+= rewrite_tree_atom ebnfSuffixGen+= ebnfSuffix
                     {
-                    pushFollow(FOLLOW_rewrite_tree_atom_in_rewrite_tree_element2438);
+                    pushFollow(FOLLOW_rewrite_tree_atom_in_rewrite_tree_element2437);
                     rewrite_tree_atomGen=rewrite_tree_atom();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_rewrite_tree_atomGen==null) list_rewrite_tree_atomGen=new ArrayList();
                     list_rewrite_tree_atomGen.add(rewrite_tree_atomGen);
 
-                    pushFollow(FOLLOW_ebnfSuffix_in_rewrite_tree_element2442);
+                    pushFollow(FOLLOW_ebnfSuffix_in_rewrite_tree_element2441);
                     ebnfSuffixGen=ebnfSuffix();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_ebnfSuffixGen==null) list_ebnfSuffixGen=new ArrayList();
                     list_ebnfSuffixGen.add(ebnfSuffixGen);
 
-                    
+
                     		// Create return CST Node
                     		Node rewrite_tree_elementReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		rewrite_tree_elementReturnNode.setKind("rewrite_tree_element");
@@ -6906,16 +6340,17 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2445:6: rewrite_treeGen+= rewrite_tree (ebnfSuffixGen+= ebnfSuffix | )
+                    // ANTLRv3.g:2445:6: rewrite_treeGen+= rewrite_tree (ebnfSuffixGen+= ebnfSuffix | )
                     {
-                    pushFollow(FOLLOW_rewrite_tree_in_rewrite_tree_element2455);
+                    pushFollow(FOLLOW_rewrite_tree_in_rewrite_tree_element2454);
                     rewrite_treeGen=rewrite_tree();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_rewrite_treeGen==null) list_rewrite_treeGen=new ArrayList();
                     list_rewrite_treeGen.add(rewrite_treeGen);
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2446:3: (ebnfSuffixGen+= ebnfSuffix | )
+                    // ANTLRv3.g:2446:3: (ebnfSuffixGen+= ebnfSuffix | )
                     int alt66=2;
                     int LA66_0 = input.LA(1);
 
@@ -6927,17 +6362,18 @@ public class ANTLRv3Parser extends Parser {
                     }
                     else {
                         NoViableAltException nvae =
-                            new NoViableAltException("2446:3: (ebnfSuffixGen+= ebnfSuffix | )", 66, 0, input);
+                            new NoViableAltException("", 66, 0, input);
 
                         throw nvae;
                     }
                     switch (alt66) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2446:5: ebnfSuffixGen+= ebnfSuffix
+                            // ANTLRv3.g:2446:5: ebnfSuffixGen+= ebnfSuffix
                             {
-                            pushFollow(FOLLOW_ebnfSuffix_in_rewrite_tree_element2463);
+                            pushFollow(FOLLOW_ebnfSuffix_in_rewrite_tree_element2462);
                             ebnfSuffixGen=ebnfSuffix();
-                            _fsp--;
+
+                            state._fsp--;
 
                             if (list_ebnfSuffixGen==null) list_ebnfSuffixGen=new ArrayList();
                             list_ebnfSuffixGen.add(ebnfSuffixGen);
@@ -6946,14 +6382,14 @@ public class ANTLRv3Parser extends Parser {
                             }
                             break;
                         case 2 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2448:3: 
+                            // ANTLRv3.g:2448:3: 
                             {
                             }
                             break;
 
                     }
 
-                    
+
                     		// Create return CST Node
                     		Node rewrite_tree_elementReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		rewrite_tree_elementReturnNode.setKind("rewrite_tree_element");
@@ -6984,16 +6420,17 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2476:6: rewrite_tree_ebnfGen+= rewrite_tree_ebnf
+                    // ANTLRv3.g:2476:6: rewrite_tree_ebnfGen+= rewrite_tree_ebnf
                     {
-                    pushFollow(FOLLOW_rewrite_tree_ebnf_in_rewrite_tree_element2485);
+                    pushFollow(FOLLOW_rewrite_tree_ebnf_in_rewrite_tree_element2484);
                     rewrite_tree_ebnfGen=rewrite_tree_ebnf();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_rewrite_tree_ebnfGen==null) list_rewrite_tree_ebnfGen=new ArrayList();
                     list_rewrite_tree_ebnfGen.add(rewrite_tree_ebnfGen);
 
-                    
+
                     		// Create return CST Node
                     		Node rewrite_tree_elementReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		rewrite_tree_elementReturnNode.setKind("rewrite_tree_element");
@@ -7026,7 +6463,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end rewrite_tree_element
+    // $ANTLR end "rewrite_tree_element"
 
     public static class rewrite_tree_atom_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -7035,10 +6472,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start rewrite_tree_atom
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2496:1: rewrite_tree_atom returns [Node returnNode] : (CHAR_LITERALGen= CHAR_LITERAL | TOKEN_REFGen= TOKEN_REF (ARG_ACTIONGen= ARG_ACTION )? | RULE_REFGen= RULE_REF | STRING_LITERALGen= STRING_LITERAL | TK_0= '$' | ACTIONGen= ACTION );
-    public final rewrite_tree_atom_return rewrite_tree_atom() throws RecognitionException {
-        rewrite_tree_atom_return retval = new rewrite_tree_atom_return();
+    // $ANTLR start "rewrite_tree_atom"
+    // ANTLRv3.g:2496:1: rewrite_tree_atom returns [Node returnNode] : (CHAR_LITERALGen= CHAR_LITERAL | TOKEN_REFGen= TOKEN_REF (ARG_ACTIONGen= ARG_ACTION )? | RULE_REFGen= RULE_REF | STRING_LITERALGen= STRING_LITERAL | TK_0= '$' | ACTIONGen= ACTION );
+    public final ANTLRv3Parser.rewrite_tree_atom_return rewrite_tree_atom() throws RecognitionException {
+        ANTLRv3Parser.rewrite_tree_atom_return retval = new ANTLRv3Parser.rewrite_tree_atom_return();
         retval.start = input.LT(1);
 
         Token CHAR_LITERALGen=null;
@@ -7050,7 +6487,7 @@ public class ANTLRv3Parser extends Parser {
         Token ACTIONGen=null;
 
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2497:1: (CHAR_LITERALGen= CHAR_LITERAL | TOKEN_REFGen= TOKEN_REF (ARG_ACTIONGen= ARG_ACTION )? | RULE_REFGen= RULE_REF | STRING_LITERALGen= STRING_LITERAL | TK_0= '$' | ACTIONGen= ACTION )
+            // ANTLRv3.g:2497:1: (CHAR_LITERALGen= CHAR_LITERAL | TOKEN_REFGen= TOKEN_REF (ARG_ACTIONGen= ARG_ACTION )? | RULE_REFGen= RULE_REF | STRING_LITERALGen= STRING_LITERAL | TK_0= '$' | ACTIONGen= ACTION )
             int alt69=6;
             switch ( input.LA(1) ) {
             case CHAR_LITERAL:
@@ -7085,18 +6522,17 @@ public class ANTLRv3Parser extends Parser {
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("2496:1: rewrite_tree_atom returns [Node returnNode] : (CHAR_LITERALGen= CHAR_LITERAL | TOKEN_REFGen= TOKEN_REF (ARG_ACTIONGen= ARG_ACTION )? | RULE_REFGen= RULE_REF | STRING_LITERALGen= STRING_LITERAL | TK_0= '$' | ACTIONGen= ACTION );", 69, 0, input);
+                    new NoViableAltException("", 69, 0, input);
 
                 throw nvae;
             }
 
             switch (alt69) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2497:5: CHAR_LITERALGen= CHAR_LITERAL
+                    // ANTLRv3.g:2497:5: CHAR_LITERALGen= CHAR_LITERAL
                     {
-                    CHAR_LITERALGen=(Token)input.LT(1);
-                    match(input,CHAR_LITERAL,FOLLOW_CHAR_LITERAL_in_rewrite_tree_atom2508); 
-                    
+                    CHAR_LITERALGen=(Token)match(input,CHAR_LITERAL,FOLLOW_CHAR_LITERAL_in_rewrite_tree_atom2507); 
+
                     		// Create return CST Node
                     		Node rewrite_tree_atomReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		rewrite_tree_atomReturnNode.setKind("rewrite_tree_atom");
@@ -7104,7 +6540,7 @@ public class ANTLRv3Parser extends Parser {
                     		if(CHAR_LITERALGen != null) {
                     			Leaf CHAR_LITERALGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			CHAR_LITERALGenLeaf.setKind("CHAR_LITERAL");
-                    			CHAR_LITERALGenLeaf.setValue(CHAR_LITERALGen.getText());
+                    			CHAR_LITERALGenLeaf.setValue((CHAR_LITERALGen!=null?CHAR_LITERALGen.getText():null));
                     			CHAR_LITERALGenLeaf.setPos(CHAR_LITERALGen.getCharPositionInLine());
                     			CHAR_LITERALGenLeaf.setLine(CHAR_LITERALGen.getLine());
                     			rewrite_tree_atomReturnNode.getChildren().add(CHAR_LITERALGenLeaf);
@@ -7116,11 +6552,10 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2514:6: TOKEN_REFGen= TOKEN_REF (ARG_ACTIONGen= ARG_ACTION )?
+                    // ANTLRv3.g:2514:6: TOKEN_REFGen= TOKEN_REF (ARG_ACTIONGen= ARG_ACTION )?
                     {
-                    TOKEN_REFGen=(Token)input.LT(1);
-                    match(input,TOKEN_REF,FOLLOW_TOKEN_REF_in_rewrite_tree_atom2521); 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2514:42: (ARG_ACTIONGen= ARG_ACTION )?
+                    TOKEN_REFGen=(Token)match(input,TOKEN_REF,FOLLOW_TOKEN_REF_in_rewrite_tree_atom2520); 
+                    // ANTLRv3.g:2514:42: (ARG_ACTIONGen= ARG_ACTION )?
                     int alt68=2;
                     int LA68_0 = input.LA(1);
 
@@ -7129,17 +6564,16 @@ public class ANTLRv3Parser extends Parser {
                     }
                     switch (alt68) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2514:42: ARG_ACTIONGen= ARG_ACTION
+                            // ANTLRv3.g:2514:42: ARG_ACTIONGen= ARG_ACTION
                             {
-                            ARG_ACTIONGen=(Token)input.LT(1);
-                            match(input,ARG_ACTION,FOLLOW_ARG_ACTION_in_rewrite_tree_atom2525); 
+                            ARG_ACTIONGen=(Token)match(input,ARG_ACTION,FOLLOW_ARG_ACTION_in_rewrite_tree_atom2524); 
 
                             }
                             break;
 
                     }
 
-                    
+
                     		// Create return CST Node
                     		Node rewrite_tree_atomReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		rewrite_tree_atomReturnNode.setKind("rewrite_tree_atom");
@@ -7147,7 +6581,7 @@ public class ANTLRv3Parser extends Parser {
                     		if(TOKEN_REFGen != null) {
                     			Leaf TOKEN_REFGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			TOKEN_REFGenLeaf.setKind("TOKEN_REF");
-                    			TOKEN_REFGenLeaf.setValue(TOKEN_REFGen.getText());
+                    			TOKEN_REFGenLeaf.setValue((TOKEN_REFGen!=null?TOKEN_REFGen.getText():null));
                     			TOKEN_REFGenLeaf.setPos(TOKEN_REFGen.getCharPositionInLine());
                     			TOKEN_REFGenLeaf.setLine(TOKEN_REFGen.getLine());
                     			rewrite_tree_atomReturnNode.getChildren().add(TOKEN_REFGenLeaf);
@@ -7156,7 +6590,7 @@ public class ANTLRv3Parser extends Parser {
                     		if(ARG_ACTIONGen != null) {
                     			Leaf ARG_ACTIONGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			ARG_ACTIONGenLeaf.setKind("ARG_ACTION");
-                    			ARG_ACTIONGenLeaf.setValue(ARG_ACTIONGen.getText());
+                    			ARG_ACTIONGenLeaf.setValue((ARG_ACTIONGen!=null?ARG_ACTIONGen.getText():null));
                     			ARG_ACTIONGenLeaf.setPos(ARG_ACTIONGen.getCharPositionInLine());
                     			ARG_ACTIONGenLeaf.setLine(ARG_ACTIONGen.getLine());
                     			rewrite_tree_atomReturnNode.getChildren().add(ARG_ACTIONGenLeaf);
@@ -7168,11 +6602,10 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2540:9: RULE_REFGen= RULE_REF
+                    // ANTLRv3.g:2540:9: RULE_REFGen= RULE_REF
                     {
-                    RULE_REFGen=(Token)input.LT(1);
-                    match(input,RULE_REF,FOLLOW_RULE_REF_in_rewrite_tree_atom2543); 
-                    
+                    RULE_REFGen=(Token)match(input,RULE_REF,FOLLOW_RULE_REF_in_rewrite_tree_atom2542); 
+
                     		// Create return CST Node
                     		Node rewrite_tree_atomReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		rewrite_tree_atomReturnNode.setKind("rewrite_tree_atom");
@@ -7180,7 +6613,7 @@ public class ANTLRv3Parser extends Parser {
                     		if(RULE_REFGen != null) {
                     			Leaf RULE_REFGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			RULE_REFGenLeaf.setKind("RULE_REF");
-                    			RULE_REFGenLeaf.setValue(RULE_REFGen.getText());
+                    			RULE_REFGenLeaf.setValue((RULE_REFGen!=null?RULE_REFGen.getText():null));
                     			RULE_REFGenLeaf.setPos(RULE_REFGen.getCharPositionInLine());
                     			RULE_REFGenLeaf.setLine(RULE_REFGen.getLine());
                     			rewrite_tree_atomReturnNode.getChildren().add(RULE_REFGenLeaf);
@@ -7192,11 +6625,10 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2557:6: STRING_LITERALGen= STRING_LITERAL
+                    // ANTLRv3.g:2557:6: STRING_LITERALGen= STRING_LITERAL
                     {
-                    STRING_LITERALGen=(Token)input.LT(1);
-                    match(input,STRING_LITERAL,FOLLOW_STRING_LITERAL_in_rewrite_tree_atom2556); 
-                    
+                    STRING_LITERALGen=(Token)match(input,STRING_LITERAL,FOLLOW_STRING_LITERAL_in_rewrite_tree_atom2555); 
+
                     		// Create return CST Node
                     		Node rewrite_tree_atomReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		rewrite_tree_atomReturnNode.setKind("rewrite_tree_atom");
@@ -7204,7 +6636,7 @@ public class ANTLRv3Parser extends Parser {
                     		if(STRING_LITERALGen != null) {
                     			Leaf STRING_LITERALGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			STRING_LITERALGenLeaf.setKind("STRING_LITERAL");
-                    			STRING_LITERALGenLeaf.setValue(STRING_LITERALGen.getText());
+                    			STRING_LITERALGenLeaf.setValue((STRING_LITERALGen!=null?STRING_LITERALGen.getText():null));
                     			STRING_LITERALGenLeaf.setPos(STRING_LITERALGen.getCharPositionInLine());
                     			STRING_LITERALGenLeaf.setLine(STRING_LITERALGen.getLine());
                     			rewrite_tree_atomReturnNode.getChildren().add(STRING_LITERALGenLeaf);
@@ -7216,11 +6648,10 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 5 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2574:6: TK_0= '$'
+                    // ANTLRv3.g:2574:6: TK_0= '$'
                     {
-                    TK_0=(Token)input.LT(1);
-                    match(input,93,FOLLOW_93_in_rewrite_tree_atom2569); 
-                    
+                    TK_0=(Token)match(input,93,FOLLOW_93_in_rewrite_tree_atom2568); 
+
                     		// Create return CST Node
                     		Node rewrite_tree_atomReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		rewrite_tree_atomReturnNode.setKind("rewrite_tree_atom");
@@ -7228,7 +6659,7 @@ public class ANTLRv3Parser extends Parser {
                     	    if(TK_0 != null) {
                     			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     	 		TK_0Leaf.setKind("TOKEN");
-                    	 		TK_0Leaf.setValue(TK_0.getText());
+                    	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
                     			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
                     			TK_0Leaf.setLine(TK_0.getLine());
                     	 		rewrite_tree_atomReturnNode.getChildren().add(TK_0Leaf);
@@ -7240,11 +6671,10 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 6 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2591:4: ACTIONGen= ACTION
+                    // ANTLRv3.g:2591:4: ACTIONGen= ACTION
                     {
-                    ACTIONGen=(Token)input.LT(1);
-                    match(input,ACTION,FOLLOW_ACTION_in_rewrite_tree_atom2581); 
-                    
+                    ACTIONGen=(Token)match(input,ACTION,FOLLOW_ACTION_in_rewrite_tree_atom2580); 
+
                     		// Create return CST Node
                     		Node rewrite_tree_atomReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		rewrite_tree_atomReturnNode.setKind("rewrite_tree_atom");
@@ -7252,7 +6682,7 @@ public class ANTLRv3Parser extends Parser {
                     		if(ACTIONGen != null) {
                     			Leaf ACTIONGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			ACTIONGenLeaf.setKind("ACTION");
-                    			ACTIONGenLeaf.setValue(ACTIONGen.getText());
+                    			ACTIONGenLeaf.setValue((ACTIONGen!=null?ACTIONGen.getText():null));
                     			ACTIONGenLeaf.setPos(ACTIONGen.getCharPositionInLine());
                     			ACTIONGenLeaf.setLine(ACTIONGen.getLine());
                     			rewrite_tree_atomReturnNode.getChildren().add(ACTIONGenLeaf);
@@ -7276,7 +6706,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end rewrite_tree_atom
+    // $ANTLR end "rewrite_tree_atom"
 
     public static class rewrite_tree_ebnf_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -7285,10 +6715,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start rewrite_tree_ebnf
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2610:1: rewrite_tree_ebnf returns [Node returnNode] : rewrite_tree_blockGen+= rewrite_tree_block ebnfSuffixGen+= ebnfSuffix ;
-    public final rewrite_tree_ebnf_return rewrite_tree_ebnf() throws RecognitionException {
-        rewrite_tree_ebnf_return retval = new rewrite_tree_ebnf_return();
+    // $ANTLR start "rewrite_tree_ebnf"
+    // ANTLRv3.g:2610:1: rewrite_tree_ebnf returns [Node returnNode] : rewrite_tree_blockGen+= rewrite_tree_block ebnfSuffixGen+= ebnfSuffix ;
+    public final ANTLRv3Parser.rewrite_tree_ebnf_return rewrite_tree_ebnf() throws RecognitionException {
+        ANTLRv3Parser.rewrite_tree_ebnf_return retval = new ANTLRv3Parser.rewrite_tree_ebnf_return();
         retval.start = input.LT(1);
 
         List list_rewrite_tree_blockGen=null;
@@ -7296,24 +6726,26 @@ public class ANTLRv3Parser extends Parser {
         RuleReturnScope rewrite_tree_blockGen = null;
         RuleReturnScope ebnfSuffixGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2611:1: (rewrite_tree_blockGen+= rewrite_tree_block ebnfSuffixGen+= ebnfSuffix )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2611:3: rewrite_tree_blockGen+= rewrite_tree_block ebnfSuffixGen+= ebnfSuffix
+            // ANTLRv3.g:2611:1: (rewrite_tree_blockGen+= rewrite_tree_block ebnfSuffixGen+= ebnfSuffix )
+            // ANTLRv3.g:2611:3: rewrite_tree_blockGen+= rewrite_tree_block ebnfSuffixGen+= ebnfSuffix
             {
-            pushFollow(FOLLOW_rewrite_tree_block_in_rewrite_tree_ebnf2602);
+            pushFollow(FOLLOW_rewrite_tree_block_in_rewrite_tree_ebnf2601);
             rewrite_tree_blockGen=rewrite_tree_block();
-            _fsp--;
+
+            state._fsp--;
 
             if (list_rewrite_tree_blockGen==null) list_rewrite_tree_blockGen=new ArrayList();
             list_rewrite_tree_blockGen.add(rewrite_tree_blockGen);
 
-            pushFollow(FOLLOW_ebnfSuffix_in_rewrite_tree_ebnf2606);
+            pushFollow(FOLLOW_ebnfSuffix_in_rewrite_tree_ebnf2605);
             ebnfSuffixGen=ebnfSuffix();
-            _fsp--;
+
+            state._fsp--;
 
             if (list_ebnfSuffixGen==null) list_ebnfSuffixGen=new ArrayList();
             list_ebnfSuffixGen.add(ebnfSuffixGen);
 
-            
+
             		// Create return CST Node
             		Node rewrite_tree_ebnfReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		rewrite_tree_ebnfReturnNode.setKind("rewrite_tree_ebnf");
@@ -7354,7 +6786,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end rewrite_tree_ebnf
+    // $ANTLR end "rewrite_tree_ebnf"
 
     public static class rewrite_tree_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -7363,10 +6795,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start rewrite_tree
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2641:1: rewrite_tree returns [Node returnNode] : TK_0= '^(' rewrite_tree_atomGen+= rewrite_tree_atom (rewrite_tree_elementGen+= rewrite_tree_element )* TK_1= ')' ;
-    public final rewrite_tree_return rewrite_tree() throws RecognitionException {
-        rewrite_tree_return retval = new rewrite_tree_return();
+    // $ANTLR start "rewrite_tree"
+    // ANTLRv3.g:2641:1: rewrite_tree returns [Node returnNode] : TK_0= '^(' rewrite_tree_atomGen+= rewrite_tree_atom (rewrite_tree_elementGen+= rewrite_tree_element )* TK_1= ')' ;
+    public final ANTLRv3Parser.rewrite_tree_return rewrite_tree() throws RecognitionException {
+        ANTLRv3Parser.rewrite_tree_return retval = new ANTLRv3Parser.rewrite_tree_return();
         retval.start = input.LT(1);
 
         Token TK_0=null;
@@ -7376,19 +6808,19 @@ public class ANTLRv3Parser extends Parser {
         RuleReturnScope rewrite_tree_atomGen = null;
         RuleReturnScope rewrite_tree_elementGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2642:1: (TK_0= '^(' rewrite_tree_atomGen+= rewrite_tree_atom (rewrite_tree_elementGen+= rewrite_tree_element )* TK_1= ')' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2642:3: TK_0= '^(' rewrite_tree_atomGen+= rewrite_tree_atom (rewrite_tree_elementGen+= rewrite_tree_element )* TK_1= ')'
+            // ANTLRv3.g:2642:1: (TK_0= '^(' rewrite_tree_atomGen+= rewrite_tree_atom (rewrite_tree_elementGen+= rewrite_tree_element )* TK_1= ')' )
+            // ANTLRv3.g:2642:3: TK_0= '^(' rewrite_tree_atomGen+= rewrite_tree_atom (rewrite_tree_elementGen+= rewrite_tree_element )* TK_1= ')'
             {
-            TK_0=(Token)input.LT(1);
-            match(input,TREE_BEGIN,FOLLOW_TREE_BEGIN_in_rewrite_tree2629); 
-            pushFollow(FOLLOW_rewrite_tree_atom_in_rewrite_tree2633);
+            TK_0=(Token)match(input,TREE_BEGIN,FOLLOW_TREE_BEGIN_in_rewrite_tree2628); 
+            pushFollow(FOLLOW_rewrite_tree_atom_in_rewrite_tree2632);
             rewrite_tree_atomGen=rewrite_tree_atom();
-            _fsp--;
+
+            state._fsp--;
 
             if (list_rewrite_tree_atomGen==null) list_rewrite_tree_atomGen=new ArrayList();
             list_rewrite_tree_atomGen.add(rewrite_tree_atomGen);
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2642:76: (rewrite_tree_elementGen+= rewrite_tree_element )*
+            // ANTLRv3.g:2642:76: (rewrite_tree_elementGen+= rewrite_tree_element )*
             loop70:
             do {
                 int alt70=2;
@@ -7401,11 +6833,12 @@ public class ANTLRv3Parser extends Parser {
 
                 switch (alt70) {
             	case 1 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2642:76: rewrite_tree_elementGen+= rewrite_tree_element
+            	    // ANTLRv3.g:2642:76: rewrite_tree_elementGen+= rewrite_tree_element
             	    {
-            	    pushFollow(FOLLOW_rewrite_tree_element_in_rewrite_tree2637);
+            	    pushFollow(FOLLOW_rewrite_tree_element_in_rewrite_tree2636);
             	    rewrite_tree_elementGen=rewrite_tree_element();
-            	    _fsp--;
+
+            	    state._fsp--;
 
             	    if (list_rewrite_tree_elementGen==null) list_rewrite_tree_elementGen=new ArrayList();
             	    list_rewrite_tree_elementGen.add(rewrite_tree_elementGen);
@@ -7419,9 +6852,8 @@ public class ANTLRv3Parser extends Parser {
                 }
             } while (true);
 
-            TK_1=(Token)input.LT(1);
-            match(input,84,FOLLOW_84_in_rewrite_tree2642); 
-            
+            TK_1=(Token)match(input,84,FOLLOW_84_in_rewrite_tree2641); 
+
             		// Create return CST Node
             		Node rewrite_treeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		rewrite_treeReturnNode.setKind("rewrite_tree");
@@ -7429,7 +6861,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_0 != null) {
             			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_0Leaf.setKind("TOKEN");
-            	 		TK_0Leaf.setValue(TK_0.getText());
+            	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
             			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
             			TK_0Leaf.setLine(TK_0.getLine());
             	 		rewrite_treeReturnNode.getChildren().add(TK_0Leaf);
@@ -7458,7 +6890,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_1 != null) {
             			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_1Leaf.setKind("TOKEN");
-            	 		TK_1Leaf.setValue(TK_1.getText());
+            	 		TK_1Leaf.setValue((TK_1!=null?TK_1.getText():null));
             			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
             			TK_1Leaf.setLine(TK_1.getLine());
             	 		rewrite_treeReturnNode.getChildren().add(TK_1Leaf);
@@ -7480,7 +6912,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end rewrite_tree
+    // $ANTLR end "rewrite_tree"
 
     public static class rewrite_template_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -7489,10 +6921,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start rewrite_template
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2690:1: rewrite_template returns [Node returnNode] : (idGen+= id TK_0= '(' rewrite_template_argsGen+= rewrite_template_args TK_1= ')' (DOUBLE_QUOTE_STRING_LITERALGen= DOUBLE_QUOTE_STRING_LITERAL | DOUBLE_ANGLE_STRING_LITERALGen= DOUBLE_ANGLE_STRING_LITERAL ) | rewrite_template_refGen+= rewrite_template_ref | rewrite_indirect_template_headGen+= rewrite_indirect_template_head | ACTIONGen= ACTION );
-    public final rewrite_template_return rewrite_template() throws RecognitionException {
-        rewrite_template_return retval = new rewrite_template_return();
+    // $ANTLR start "rewrite_template"
+    // ANTLRv3.g:2690:1: rewrite_template returns [Node returnNode] : (idGen+= id TK_0= '(' rewrite_template_argsGen+= rewrite_template_args TK_1= ')' (DOUBLE_QUOTE_STRING_LITERALGen= DOUBLE_QUOTE_STRING_LITERAL | DOUBLE_ANGLE_STRING_LITERALGen= DOUBLE_ANGLE_STRING_LITERAL ) | rewrite_template_refGen+= rewrite_template_ref | rewrite_indirect_template_headGen+= rewrite_indirect_template_head | ACTIONGen= ACTION );
+    public final ANTLRv3Parser.rewrite_template_return rewrite_template() throws RecognitionException {
+        ANTLRv3Parser.rewrite_template_return retval = new ANTLRv3Parser.rewrite_template_return();
         retval.start = input.LT(1);
 
         Token TK_0=null;
@@ -7509,32 +6941,32 @@ public class ANTLRv3Parser extends Parser {
         RuleReturnScope rewrite_template_refGen = null;
         RuleReturnScope rewrite_indirect_template_headGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2691:1: (idGen+= id TK_0= '(' rewrite_template_argsGen+= rewrite_template_args TK_1= ')' (DOUBLE_QUOTE_STRING_LITERALGen= DOUBLE_QUOTE_STRING_LITERAL | DOUBLE_ANGLE_STRING_LITERALGen= DOUBLE_ANGLE_STRING_LITERAL ) | rewrite_template_refGen+= rewrite_template_ref | rewrite_indirect_template_headGen+= rewrite_indirect_template_head | ACTIONGen= ACTION )
+            // ANTLRv3.g:2691:1: (idGen+= id TK_0= '(' rewrite_template_argsGen+= rewrite_template_args TK_1= ')' (DOUBLE_QUOTE_STRING_LITERALGen= DOUBLE_QUOTE_STRING_LITERAL | DOUBLE_ANGLE_STRING_LITERALGen= DOUBLE_ANGLE_STRING_LITERAL ) | rewrite_template_refGen+= rewrite_template_ref | rewrite_indirect_template_headGen+= rewrite_indirect_template_head | ACTIONGen= ACTION )
             int alt72=4;
             alt72 = dfa72.predict(input);
             switch (alt72) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2691:5: idGen+= id TK_0= '(' rewrite_template_argsGen+= rewrite_template_args TK_1= ')' (DOUBLE_QUOTE_STRING_LITERALGen= DOUBLE_QUOTE_STRING_LITERAL | DOUBLE_ANGLE_STRING_LITERALGen= DOUBLE_ANGLE_STRING_LITERAL )
+                    // ANTLRv3.g:2691:5: idGen+= id TK_0= '(' rewrite_template_argsGen+= rewrite_template_args TK_1= ')' (DOUBLE_QUOTE_STRING_LITERALGen= DOUBLE_QUOTE_STRING_LITERAL | DOUBLE_ANGLE_STRING_LITERALGen= DOUBLE_ANGLE_STRING_LITERAL )
                     {
-                    pushFollow(FOLLOW_id_in_rewrite_template2665);
+                    pushFollow(FOLLOW_id_in_rewrite_template2664);
                     idGen=id();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_idGen==null) list_idGen=new ArrayList();
                     list_idGen.add(idGen);
 
-                    TK_0=(Token)input.LT(1);
-                    match(input,82,FOLLOW_82_in_rewrite_template2669); 
-                    pushFollow(FOLLOW_rewrite_template_args_in_rewrite_template2673);
+                    TK_0=(Token)match(input,82,FOLLOW_82_in_rewrite_template2668); 
+                    pushFollow(FOLLOW_rewrite_template_args_in_rewrite_template2672);
                     rewrite_template_argsGen=rewrite_template_args();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_rewrite_template_argsGen==null) list_rewrite_template_argsGen=new ArrayList();
                     list_rewrite_template_argsGen.add(rewrite_template_argsGen);
 
-                    TK_1=(Token)input.LT(1);
-                    match(input,84,FOLLOW_84_in_rewrite_template2677); 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2692:3: (DOUBLE_QUOTE_STRING_LITERALGen= DOUBLE_QUOTE_STRING_LITERAL | DOUBLE_ANGLE_STRING_LITERALGen= DOUBLE_ANGLE_STRING_LITERAL )
+                    TK_1=(Token)match(input,84,FOLLOW_84_in_rewrite_template2676); 
+                    // ANTLRv3.g:2692:3: (DOUBLE_QUOTE_STRING_LITERALGen= DOUBLE_QUOTE_STRING_LITERAL | DOUBLE_ANGLE_STRING_LITERALGen= DOUBLE_ANGLE_STRING_LITERAL )
                     int alt71=2;
                     int LA71_0 = input.LA(1);
 
@@ -7546,31 +6978,29 @@ public class ANTLRv3Parser extends Parser {
                     }
                     else {
                         NoViableAltException nvae =
-                            new NoViableAltException("2692:3: (DOUBLE_QUOTE_STRING_LITERALGen= DOUBLE_QUOTE_STRING_LITERAL | DOUBLE_ANGLE_STRING_LITERALGen= DOUBLE_ANGLE_STRING_LITERAL )", 71, 0, input);
+                            new NoViableAltException("", 71, 0, input);
 
                         throw nvae;
                     }
                     switch (alt71) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2692:5: DOUBLE_QUOTE_STRING_LITERALGen= DOUBLE_QUOTE_STRING_LITERAL
+                            // ANTLRv3.g:2692:5: DOUBLE_QUOTE_STRING_LITERALGen= DOUBLE_QUOTE_STRING_LITERAL
                             {
-                            DOUBLE_QUOTE_STRING_LITERALGen=(Token)input.LT(1);
-                            match(input,DOUBLE_QUOTE_STRING_LITERAL,FOLLOW_DOUBLE_QUOTE_STRING_LITERAL_in_rewrite_template2685); 
+                            DOUBLE_QUOTE_STRING_LITERALGen=(Token)match(input,DOUBLE_QUOTE_STRING_LITERAL,FOLLOW_DOUBLE_QUOTE_STRING_LITERAL_in_rewrite_template2684); 
 
                             }
                             break;
                         case 2 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2692:66: DOUBLE_ANGLE_STRING_LITERALGen= DOUBLE_ANGLE_STRING_LITERAL
+                            // ANTLRv3.g:2692:66: DOUBLE_ANGLE_STRING_LITERALGen= DOUBLE_ANGLE_STRING_LITERAL
                             {
-                            DOUBLE_ANGLE_STRING_LITERALGen=(Token)input.LT(1);
-                            match(input,DOUBLE_ANGLE_STRING_LITERAL,FOLLOW_DOUBLE_ANGLE_STRING_LITERAL_in_rewrite_template2691); 
+                            DOUBLE_ANGLE_STRING_LITERALGen=(Token)match(input,DOUBLE_ANGLE_STRING_LITERAL,FOLLOW_DOUBLE_ANGLE_STRING_LITERAL_in_rewrite_template2690); 
 
                             }
                             break;
 
                     }
 
-                    
+
                     		// Create return CST Node
                     		Node rewrite_templateReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		rewrite_templateReturnNode.setKind("rewrite_template");
@@ -7588,7 +7018,7 @@ public class ANTLRv3Parser extends Parser {
                     	    if(TK_0 != null) {
                     			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     	 		TK_0Leaf.setKind("TOKEN");
-                    	 		TK_0Leaf.setValue(TK_0.getText());
+                    	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
                     			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
                     			TK_0Leaf.setLine(TK_0.getLine());
                     	 		rewrite_templateReturnNode.getChildren().add(TK_0Leaf);
@@ -7607,7 +7037,7 @@ public class ANTLRv3Parser extends Parser {
                     	    if(TK_1 != null) {
                     			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     	 		TK_1Leaf.setKind("TOKEN");
-                    	 		TK_1Leaf.setValue(TK_1.getText());
+                    	 		TK_1Leaf.setValue((TK_1!=null?TK_1.getText():null));
                     			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
                     			TK_1Leaf.setLine(TK_1.getLine());
                     	 		rewrite_templateReturnNode.getChildren().add(TK_1Leaf);
@@ -7616,7 +7046,7 @@ public class ANTLRv3Parser extends Parser {
                     		if(DOUBLE_QUOTE_STRING_LITERALGen != null) {
                     			Leaf DOUBLE_QUOTE_STRING_LITERALGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			DOUBLE_QUOTE_STRING_LITERALGenLeaf.setKind("DOUBLE_QUOTE_STRING_LITERAL");
-                    			DOUBLE_QUOTE_STRING_LITERALGenLeaf.setValue(DOUBLE_QUOTE_STRING_LITERALGen.getText());
+                    			DOUBLE_QUOTE_STRING_LITERALGenLeaf.setValue((DOUBLE_QUOTE_STRING_LITERALGen!=null?DOUBLE_QUOTE_STRING_LITERALGen.getText():null));
                     			DOUBLE_QUOTE_STRING_LITERALGenLeaf.setPos(DOUBLE_QUOTE_STRING_LITERALGen.getCharPositionInLine());
                     			DOUBLE_QUOTE_STRING_LITERALGenLeaf.setLine(DOUBLE_QUOTE_STRING_LITERALGen.getLine());
                     			rewrite_templateReturnNode.getChildren().add(DOUBLE_QUOTE_STRING_LITERALGenLeaf);
@@ -7625,7 +7055,7 @@ public class ANTLRv3Parser extends Parser {
                     		if(DOUBLE_ANGLE_STRING_LITERALGen != null) {
                     			Leaf DOUBLE_ANGLE_STRING_LITERALGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			DOUBLE_ANGLE_STRING_LITERALGenLeaf.setKind("DOUBLE_ANGLE_STRING_LITERAL");
-                    			DOUBLE_ANGLE_STRING_LITERALGenLeaf.setValue(DOUBLE_ANGLE_STRING_LITERALGen.getText());
+                    			DOUBLE_ANGLE_STRING_LITERALGenLeaf.setValue((DOUBLE_ANGLE_STRING_LITERALGen!=null?DOUBLE_ANGLE_STRING_LITERALGen.getText():null));
                     			DOUBLE_ANGLE_STRING_LITERALGenLeaf.setPos(DOUBLE_ANGLE_STRING_LITERALGen.getCharPositionInLine());
                     			DOUBLE_ANGLE_STRING_LITERALGenLeaf.setLine(DOUBLE_ANGLE_STRING_LITERALGen.getLine());
                     			rewrite_templateReturnNode.getChildren().add(DOUBLE_ANGLE_STRING_LITERALGenLeaf);
@@ -7637,16 +7067,17 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2756:4: rewrite_template_refGen+= rewrite_template_ref
+                    // ANTLRv3.g:2756:4: rewrite_template_refGen+= rewrite_template_ref
                     {
-                    pushFollow(FOLLOW_rewrite_template_ref_in_rewrite_template2704);
+                    pushFollow(FOLLOW_rewrite_template_ref_in_rewrite_template2703);
                     rewrite_template_refGen=rewrite_template_ref();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_rewrite_template_refGen==null) list_rewrite_template_refGen=new ArrayList();
                     list_rewrite_template_refGen.add(rewrite_template_refGen);
 
-                    
+
                     		// Create return CST Node
                     		Node rewrite_templateReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		rewrite_templateReturnNode.setKind("rewrite_template");
@@ -7667,16 +7098,17 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2774:4: rewrite_indirect_template_headGen+= rewrite_indirect_template_head
+                    // ANTLRv3.g:2774:4: rewrite_indirect_template_headGen+= rewrite_indirect_template_head
                     {
-                    pushFollow(FOLLOW_rewrite_indirect_template_head_in_rewrite_template2715);
+                    pushFollow(FOLLOW_rewrite_indirect_template_head_in_rewrite_template2714);
                     rewrite_indirect_template_headGen=rewrite_indirect_template_head();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_rewrite_indirect_template_headGen==null) list_rewrite_indirect_template_headGen=new ArrayList();
                     list_rewrite_indirect_template_headGen.add(rewrite_indirect_template_headGen);
 
-                    
+
                     		// Create return CST Node
                     		Node rewrite_templateReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		rewrite_templateReturnNode.setKind("rewrite_template");
@@ -7697,11 +7129,10 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2792:4: ACTIONGen= ACTION
+                    // ANTLRv3.g:2792:4: ACTIONGen= ACTION
                     {
-                    ACTIONGen=(Token)input.LT(1);
-                    match(input,ACTION,FOLLOW_ACTION_in_rewrite_template2726); 
-                    
+                    ACTIONGen=(Token)match(input,ACTION,FOLLOW_ACTION_in_rewrite_template2725); 
+
                     		// Create return CST Node
                     		Node rewrite_templateReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		rewrite_templateReturnNode.setKind("rewrite_template");
@@ -7709,7 +7140,7 @@ public class ANTLRv3Parser extends Parser {
                     		if(ACTIONGen != null) {
                     			Leaf ACTIONGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			ACTIONGenLeaf.setKind("ACTION");
-                    			ACTIONGenLeaf.setValue(ACTIONGen.getText());
+                    			ACTIONGenLeaf.setValue((ACTIONGen!=null?ACTIONGen.getText():null));
                     			ACTIONGenLeaf.setPos(ACTIONGen.getCharPositionInLine());
                     			ACTIONGenLeaf.setLine(ACTIONGen.getLine());
                     			rewrite_templateReturnNode.getChildren().add(ACTIONGenLeaf);
@@ -7733,7 +7164,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end rewrite_template
+    // $ANTLR end "rewrite_template"
 
     public static class rewrite_template_ref_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -7742,10 +7173,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start rewrite_template_ref
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2811:1: rewrite_template_ref returns [Node returnNode] : idGen+= id TK_0= '(' rewrite_template_argsGen+= rewrite_template_args TK_1= ')' ;
-    public final rewrite_template_ref_return rewrite_template_ref() throws RecognitionException {
-        rewrite_template_ref_return retval = new rewrite_template_ref_return();
+    // $ANTLR start "rewrite_template_ref"
+    // ANTLRv3.g:2811:1: rewrite_template_ref returns [Node returnNode] : idGen+= id TK_0= '(' rewrite_template_argsGen+= rewrite_template_args TK_1= ')' ;
+    public final ANTLRv3Parser.rewrite_template_ref_return rewrite_template_ref() throws RecognitionException {
+        ANTLRv3Parser.rewrite_template_ref_return retval = new ANTLRv3Parser.rewrite_template_ref_return();
         retval.start = input.LT(1);
 
         Token TK_0=null;
@@ -7755,28 +7186,28 @@ public class ANTLRv3Parser extends Parser {
         RuleReturnScope idGen = null;
         RuleReturnScope rewrite_template_argsGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2812:1: (idGen+= id TK_0= '(' rewrite_template_argsGen+= rewrite_template_args TK_1= ')' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2812:3: idGen+= id TK_0= '(' rewrite_template_argsGen+= rewrite_template_args TK_1= ')'
+            // ANTLRv3.g:2812:1: (idGen+= id TK_0= '(' rewrite_template_argsGen+= rewrite_template_args TK_1= ')' )
+            // ANTLRv3.g:2812:3: idGen+= id TK_0= '(' rewrite_template_argsGen+= rewrite_template_args TK_1= ')'
             {
-            pushFollow(FOLLOW_id_in_rewrite_template_ref2747);
+            pushFollow(FOLLOW_id_in_rewrite_template_ref2746);
             idGen=id();
-            _fsp--;
+
+            state._fsp--;
 
             if (list_idGen==null) list_idGen=new ArrayList();
             list_idGen.add(idGen);
 
-            TK_0=(Token)input.LT(1);
-            match(input,82,FOLLOW_82_in_rewrite_template_ref2751); 
-            pushFollow(FOLLOW_rewrite_template_args_in_rewrite_template_ref2755);
+            TK_0=(Token)match(input,82,FOLLOW_82_in_rewrite_template_ref2750); 
+            pushFollow(FOLLOW_rewrite_template_args_in_rewrite_template_ref2754);
             rewrite_template_argsGen=rewrite_template_args();
-            _fsp--;
+
+            state._fsp--;
 
             if (list_rewrite_template_argsGen==null) list_rewrite_template_argsGen=new ArrayList();
             list_rewrite_template_argsGen.add(rewrite_template_argsGen);
 
-            TK_1=(Token)input.LT(1);
-            match(input,84,FOLLOW_84_in_rewrite_template_ref2759); 
-            
+            TK_1=(Token)match(input,84,FOLLOW_84_in_rewrite_template_ref2758); 
+
             		// Create return CST Node
             		Node rewrite_template_refReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		rewrite_template_refReturnNode.setKind("rewrite_template_ref");
@@ -7794,7 +7225,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_0 != null) {
             			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_0Leaf.setKind("TOKEN");
-            	 		TK_0Leaf.setValue(TK_0.getText());
+            	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
             			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
             			TK_0Leaf.setLine(TK_0.getLine());
             	 		rewrite_template_refReturnNode.getChildren().add(TK_0Leaf);
@@ -7813,7 +7244,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_1 != null) {
             			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_1Leaf.setKind("TOKEN");
-            	 		TK_1Leaf.setValue(TK_1.getText());
+            	 		TK_1Leaf.setValue((TK_1!=null?TK_1.getText():null));
             			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
             			TK_1Leaf.setLine(TK_1.getLine());
             	 		rewrite_template_refReturnNode.getChildren().add(TK_1Leaf);
@@ -7835,7 +7266,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end rewrite_template_ref
+    // $ANTLR end "rewrite_template_ref"
 
     public static class rewrite_indirect_template_head_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -7844,10 +7275,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start rewrite_indirect_template_head
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2860:1: rewrite_indirect_template_head returns [Node returnNode] : TK_0= '(' ACTIONGen= ACTION TK_1= ')' TK_2= '(' rewrite_template_argsGen+= rewrite_template_args TK_3= ')' ;
-    public final rewrite_indirect_template_head_return rewrite_indirect_template_head() throws RecognitionException {
-        rewrite_indirect_template_head_return retval = new rewrite_indirect_template_head_return();
+    // $ANTLR start "rewrite_indirect_template_head"
+    // ANTLRv3.g:2860:1: rewrite_indirect_template_head returns [Node returnNode] : TK_0= '(' ACTIONGen= ACTION TK_1= ')' TK_2= '(' rewrite_template_argsGen+= rewrite_template_args TK_3= ')' ;
+    public final ANTLRv3Parser.rewrite_indirect_template_head_return rewrite_indirect_template_head() throws RecognitionException {
+        ANTLRv3Parser.rewrite_indirect_template_head_return retval = new ANTLRv3Parser.rewrite_indirect_template_head_return();
         retval.start = input.LT(1);
 
         Token TK_0=null;
@@ -7858,27 +7289,23 @@ public class ANTLRv3Parser extends Parser {
         List list_rewrite_template_argsGen=null;
         RuleReturnScope rewrite_template_argsGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2861:1: (TK_0= '(' ACTIONGen= ACTION TK_1= ')' TK_2= '(' rewrite_template_argsGen+= rewrite_template_args TK_3= ')' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2861:3: TK_0= '(' ACTIONGen= ACTION TK_1= ')' TK_2= '(' rewrite_template_argsGen+= rewrite_template_args TK_3= ')'
+            // ANTLRv3.g:2861:1: (TK_0= '(' ACTIONGen= ACTION TK_1= ')' TK_2= '(' rewrite_template_argsGen+= rewrite_template_args TK_3= ')' )
+            // ANTLRv3.g:2861:3: TK_0= '(' ACTIONGen= ACTION TK_1= ')' TK_2= '(' rewrite_template_argsGen+= rewrite_template_args TK_3= ')'
             {
-            TK_0=(Token)input.LT(1);
-            match(input,82,FOLLOW_82_in_rewrite_indirect_template_head2780); 
-            ACTIONGen=(Token)input.LT(1);
-            match(input,ACTION,FOLLOW_ACTION_in_rewrite_indirect_template_head2784); 
-            TK_1=(Token)input.LT(1);
-            match(input,84,FOLLOW_84_in_rewrite_indirect_template_head2788); 
-            TK_2=(Token)input.LT(1);
-            match(input,82,FOLLOW_82_in_rewrite_indirect_template_head2792); 
-            pushFollow(FOLLOW_rewrite_template_args_in_rewrite_indirect_template_head2796);
+            TK_0=(Token)match(input,82,FOLLOW_82_in_rewrite_indirect_template_head2779); 
+            ACTIONGen=(Token)match(input,ACTION,FOLLOW_ACTION_in_rewrite_indirect_template_head2783); 
+            TK_1=(Token)match(input,84,FOLLOW_84_in_rewrite_indirect_template_head2787); 
+            TK_2=(Token)match(input,82,FOLLOW_82_in_rewrite_indirect_template_head2791); 
+            pushFollow(FOLLOW_rewrite_template_args_in_rewrite_indirect_template_head2795);
             rewrite_template_argsGen=rewrite_template_args();
-            _fsp--;
+
+            state._fsp--;
 
             if (list_rewrite_template_argsGen==null) list_rewrite_template_argsGen=new ArrayList();
             list_rewrite_template_argsGen.add(rewrite_template_argsGen);
 
-            TK_3=(Token)input.LT(1);
-            match(input,84,FOLLOW_84_in_rewrite_indirect_template_head2800); 
-            
+            TK_3=(Token)match(input,84,FOLLOW_84_in_rewrite_indirect_template_head2799); 
+
             		// Create return CST Node
             		Node rewrite_indirect_template_headReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		rewrite_indirect_template_headReturnNode.setKind("rewrite_indirect_template_head");
@@ -7886,7 +7313,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_0 != null) {
             			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_0Leaf.setKind("TOKEN");
-            	 		TK_0Leaf.setValue(TK_0.getText());
+            	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
             			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
             			TK_0Leaf.setLine(TK_0.getLine());
             	 		rewrite_indirect_template_headReturnNode.getChildren().add(TK_0Leaf);
@@ -7895,7 +7322,7 @@ public class ANTLRv3Parser extends Parser {
             		if(ACTIONGen != null) {
             			Leaf ACTIONGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			ACTIONGenLeaf.setKind("ACTION");
-            			ACTIONGenLeaf.setValue(ACTIONGen.getText());
+            			ACTIONGenLeaf.setValue((ACTIONGen!=null?ACTIONGen.getText():null));
             			ACTIONGenLeaf.setPos(ACTIONGen.getCharPositionInLine());
             			ACTIONGenLeaf.setLine(ACTIONGen.getLine());
             			rewrite_indirect_template_headReturnNode.getChildren().add(ACTIONGenLeaf);
@@ -7904,7 +7331,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_1 != null) {
             			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_1Leaf.setKind("TOKEN");
-            	 		TK_1Leaf.setValue(TK_1.getText());
+            	 		TK_1Leaf.setValue((TK_1!=null?TK_1.getText():null));
             			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
             			TK_1Leaf.setLine(TK_1.getLine());
             	 		rewrite_indirect_template_headReturnNode.getChildren().add(TK_1Leaf);
@@ -7913,7 +7340,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_2 != null) {
             			Leaf TK_2Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_2Leaf.setKind("TOKEN");
-            	 		TK_2Leaf.setValue(TK_2.getText());
+            	 		TK_2Leaf.setValue((TK_2!=null?TK_2.getText():null));
             			TK_2Leaf.setPos(TK_2.getCharPositionInLine());
             			TK_2Leaf.setLine(TK_2.getLine());
             	 		rewrite_indirect_template_headReturnNode.getChildren().add(TK_2Leaf);
@@ -7932,7 +7359,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_3 != null) {
             			Leaf TK_3Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_3Leaf.setKind("TOKEN");
-            	 		TK_3Leaf.setValue(TK_3.getText());
+            	 		TK_3Leaf.setValue((TK_3!=null?TK_3.getText():null));
             			TK_3Leaf.setPos(TK_3.getCharPositionInLine());
             			TK_3Leaf.setLine(TK_3.getLine());
             	 		rewrite_indirect_template_headReturnNode.getChildren().add(TK_3Leaf);
@@ -7954,7 +7381,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end rewrite_indirect_template_head
+    // $ANTLR end "rewrite_indirect_template_head"
 
     public static class rewrite_template_args_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -7963,10 +7390,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start rewrite_template_args
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2926:1: rewrite_template_args returns [Node returnNode] : (rewrite_template_argGen+= rewrite_template_arg (TK_0= ',' rewrite_template_argGen_1+= rewrite_template_arg )* | );
-    public final rewrite_template_args_return rewrite_template_args() throws RecognitionException {
-        rewrite_template_args_return retval = new rewrite_template_args_return();
+    // $ANTLR start "rewrite_template_args"
+    // ANTLRv3.g:2926:1: rewrite_template_args returns [Node returnNode] : (rewrite_template_argGen+= rewrite_template_arg (TK_0= ',' rewrite_template_argGen_1+= rewrite_template_arg )* | );
+    public final ANTLRv3Parser.rewrite_template_args_return rewrite_template_args() throws RecognitionException {
+        ANTLRv3Parser.rewrite_template_args_return retval = new ANTLRv3Parser.rewrite_template_args_return();
         retval.start = input.LT(1);
 
         Token TK_0=null;
@@ -7975,7 +7402,7 @@ public class ANTLRv3Parser extends Parser {
         RuleReturnScope rewrite_template_argGen = null;
         RuleReturnScope rewrite_template_argGen_1 = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2927:1: (rewrite_template_argGen+= rewrite_template_arg (TK_0= ',' rewrite_template_argGen_1+= rewrite_template_arg )* | )
+            // ANTLRv3.g:2927:1: (rewrite_template_argGen+= rewrite_template_arg (TK_0= ',' rewrite_template_argGen_1+= rewrite_template_arg )* | )
             int alt74=2;
             int LA74_0 = input.LA(1);
 
@@ -7987,22 +7414,23 @@ public class ANTLRv3Parser extends Parser {
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("2926:1: rewrite_template_args returns [Node returnNode] : (rewrite_template_argGen+= rewrite_template_arg (TK_0= ',' rewrite_template_argGen_1+= rewrite_template_arg )* | );", 74, 0, input);
+                    new NoViableAltException("", 74, 0, input);
 
                 throw nvae;
             }
             switch (alt74) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2927:3: rewrite_template_argGen+= rewrite_template_arg (TK_0= ',' rewrite_template_argGen_1+= rewrite_template_arg )*
+                    // ANTLRv3.g:2927:3: rewrite_template_argGen+= rewrite_template_arg (TK_0= ',' rewrite_template_argGen_1+= rewrite_template_arg )*
                     {
-                    pushFollow(FOLLOW_rewrite_template_arg_in_rewrite_template_args2821);
+                    pushFollow(FOLLOW_rewrite_template_arg_in_rewrite_template_args2820);
                     rewrite_template_argGen=rewrite_template_arg();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_rewrite_template_argGen==null) list_rewrite_template_argGen=new ArrayList();
                     list_rewrite_template_argGen.add(rewrite_template_argGen);
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2927:49: (TK_0= ',' rewrite_template_argGen_1+= rewrite_template_arg )*
+                    // ANTLRv3.g:2927:49: (TK_0= ',' rewrite_template_argGen_1+= rewrite_template_arg )*
                     loop73:
                     do {
                         int alt73=2;
@@ -8015,13 +7443,13 @@ public class ANTLRv3Parser extends Parser {
 
                         switch (alt73) {
                     	case 1 :
-                    	    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2927:50: TK_0= ',' rewrite_template_argGen_1+= rewrite_template_arg
+                    	    // ANTLRv3.g:2927:50: TK_0= ',' rewrite_template_argGen_1+= rewrite_template_arg
                     	    {
-                    	    TK_0=(Token)input.LT(1);
-                    	    match(input,81,FOLLOW_81_in_rewrite_template_args2826); 
-                    	    pushFollow(FOLLOW_rewrite_template_arg_in_rewrite_template_args2830);
+                    	    TK_0=(Token)match(input,81,FOLLOW_81_in_rewrite_template_args2825); 
+                    	    pushFollow(FOLLOW_rewrite_template_arg_in_rewrite_template_args2829);
                     	    rewrite_template_argGen_1=rewrite_template_arg();
-                    	    _fsp--;
+
+                    	    state._fsp--;
 
                     	    if (list_rewrite_template_argGen_1==null) list_rewrite_template_argGen_1=new ArrayList();
                     	    list_rewrite_template_argGen_1.add(rewrite_template_argGen_1);
@@ -8035,7 +7463,7 @@ public class ANTLRv3Parser extends Parser {
                         }
                     } while (true);
 
-                    
+
                     		// Create return CST Node
                     		Node rewrite_template_argsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		rewrite_template_argsReturnNode.setKind("rewrite_template_args");
@@ -8049,7 +7477,7 @@ public class ANTLRv3Parser extends Parser {
                     	            } 
                     	        }
                     	    }
-                    	
+
                     		// Create a special CST Node for terminal rewrite_template_argGen_1 aggregation
                     		if(list_rewrite_template_argGen_1 != null) {
                     	    for(int pos = 0; pos < list_rewrite_template_argGen_1.size(); pos++ )  { 
@@ -8057,7 +7485,7 @@ public class ANTLRv3Parser extends Parser {
                     	    if(TK_0 != null) {
                     			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     	 		TK_0Leaf.setKind("TOKEN");
-                    	 		TK_0Leaf.setValue(TK_0.getText());
+                    	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
                     			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
                     			TK_0Leaf.setLine(TK_0.getLine());
                     	 		rewrite_template_argsReturnNode.getChildren().add(TK_0Leaf);
@@ -8072,7 +7500,7 @@ public class ANTLRv3Parser extends Parser {
                     		}
                     		}
                     		}
-                    	
+
                     		// Returns the Node with CST Leaves/Nodes
                     		retval.returnNode = rewrite_template_argsReturnNode;
                     	
@@ -8080,7 +7508,7 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2970:2: 
+                    // ANTLRv3.g:2970:2: 
                     {
                     }
                     break;
@@ -8097,7 +7525,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end rewrite_template_args
+    // $ANTLR end "rewrite_template_args"
 
     public static class rewrite_template_arg_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -8106,10 +7534,10 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start rewrite_template_arg
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2972:1: rewrite_template_arg returns [Node returnNode] : idGen+= id TK_0= '=' ACTIONGen= ACTION ;
-    public final rewrite_template_arg_return rewrite_template_arg() throws RecognitionException {
-        rewrite_template_arg_return retval = new rewrite_template_arg_return();
+    // $ANTLR start "rewrite_template_arg"
+    // ANTLRv3.g:2972:1: rewrite_template_arg returns [Node returnNode] : idGen+= id TK_0= '=' ACTIONGen= ACTION ;
+    public final ANTLRv3Parser.rewrite_template_arg_return rewrite_template_arg() throws RecognitionException {
+        ANTLRv3Parser.rewrite_template_arg_return retval = new ANTLRv3Parser.rewrite_template_arg_return();
         retval.start = input.LT(1);
 
         Token TK_0=null;
@@ -8117,21 +7545,20 @@ public class ANTLRv3Parser extends Parser {
         List list_idGen=null;
         RuleReturnScope idGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2973:1: (idGen+= id TK_0= '=' ACTIONGen= ACTION )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:2973:5: idGen+= id TK_0= '=' ACTIONGen= ACTION
+            // ANTLRv3.g:2973:1: (idGen+= id TK_0= '=' ACTIONGen= ACTION )
+            // ANTLRv3.g:2973:5: idGen+= id TK_0= '=' ACTIONGen= ACTION
             {
-            pushFollow(FOLLOW_id_in_rewrite_template_arg2859);
+            pushFollow(FOLLOW_id_in_rewrite_template_arg2858);
             idGen=id();
-            _fsp--;
+
+            state._fsp--;
 
             if (list_idGen==null) list_idGen=new ArrayList();
             list_idGen.add(idGen);
 
-            TK_0=(Token)input.LT(1);
-            match(input,71,FOLLOW_71_in_rewrite_template_arg2863); 
-            ACTIONGen=(Token)input.LT(1);
-            match(input,ACTION,FOLLOW_ACTION_in_rewrite_template_arg2867); 
-            
+            TK_0=(Token)match(input,71,FOLLOW_71_in_rewrite_template_arg2862); 
+            ACTIONGen=(Token)match(input,ACTION,FOLLOW_ACTION_in_rewrite_template_arg2866); 
+
             		// Create return CST Node
             		Node rewrite_template_argReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		rewrite_template_argReturnNode.setKind("rewrite_template_arg");
@@ -8149,7 +7576,7 @@ public class ANTLRv3Parser extends Parser {
             	    if(TK_0 != null) {
             			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_0Leaf.setKind("TOKEN");
-            	 		TK_0Leaf.setValue(TK_0.getText());
+            	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
             			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
             			TK_0Leaf.setLine(TK_0.getLine());
             	 		rewrite_template_argReturnNode.getChildren().add(TK_0Leaf);
@@ -8158,7 +7585,7 @@ public class ANTLRv3Parser extends Parser {
             		if(ACTIONGen != null) {
             			Leaf ACTIONGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			ACTIONGenLeaf.setKind("ACTION");
-            			ACTIONGenLeaf.setValue(ACTIONGen.getText());
+            			ACTIONGenLeaf.setValue((ACTIONGen!=null?ACTIONGen.getText():null));
             			ACTIONGenLeaf.setPos(ACTIONGen.getCharPositionInLine());
             			ACTIONGenLeaf.setLine(ACTIONGen.getLine());
             			rewrite_template_argReturnNode.getChildren().add(ACTIONGenLeaf);
@@ -8180,7 +7607,7 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end rewrite_template_arg
+    // $ANTLR end "rewrite_template_arg"
 
     public static class id_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -8189,17 +7616,17 @@ public class ANTLRv3Parser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start id
-    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:3011:1: id returns [Node returnNode] : (TOKEN_REFGen= TOKEN_REF | RULE_REFGen= RULE_REF );
-    public final id_return id() throws RecognitionException {
-        id_return retval = new id_return();
+    // $ANTLR start "id"
+    // ANTLRv3.g:3011:1: id returns [Node returnNode] : (TOKEN_REFGen= TOKEN_REF | RULE_REFGen= RULE_REF );
+    public final ANTLRv3Parser.id_return id() throws RecognitionException {
+        ANTLRv3Parser.id_return retval = new ANTLRv3Parser.id_return();
         retval.start = input.LT(1);
 
         Token TOKEN_REFGen=null;
         Token RULE_REFGen=null;
 
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:3012:1: (TOKEN_REFGen= TOKEN_REF | RULE_REFGen= RULE_REF )
+            // ANTLRv3.g:3012:1: (TOKEN_REFGen= TOKEN_REF | RULE_REFGen= RULE_REF )
             int alt75=2;
             int LA75_0 = input.LA(1);
 
@@ -8211,17 +7638,16 @@ public class ANTLRv3Parser extends Parser {
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("3011:1: id returns [Node returnNode] : (TOKEN_REFGen= TOKEN_REF | RULE_REFGen= RULE_REF );", 75, 0, input);
+                    new NoViableAltException("", 75, 0, input);
 
                 throw nvae;
             }
             switch (alt75) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:3012:3: TOKEN_REFGen= TOKEN_REF
+                    // ANTLRv3.g:3012:3: TOKEN_REFGen= TOKEN_REF
                     {
-                    TOKEN_REFGen=(Token)input.LT(1);
-                    match(input,TOKEN_REF,FOLLOW_TOKEN_REF_in_id2889); 
-                    
+                    TOKEN_REFGen=(Token)match(input,TOKEN_REF,FOLLOW_TOKEN_REF_in_id2888); 
+
                     		// Create return CST Node
                     		Node idReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		idReturnNode.setKind("id");
@@ -8229,7 +7655,7 @@ public class ANTLRv3Parser extends Parser {
                     		if(TOKEN_REFGen != null) {
                     			Leaf TOKEN_REFGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			TOKEN_REFGenLeaf.setKind("TOKEN_REF");
-                    			TOKEN_REFGenLeaf.setValue(TOKEN_REFGen.getText());
+                    			TOKEN_REFGenLeaf.setValue((TOKEN_REFGen!=null?TOKEN_REFGen.getText():null));
                     			TOKEN_REFGenLeaf.setPos(TOKEN_REFGen.getCharPositionInLine());
                     			TOKEN_REFGenLeaf.setLine(TOKEN_REFGen.getLine());
                     			idReturnNode.getChildren().add(TOKEN_REFGenLeaf);
@@ -8241,11 +7667,10 @@ public class ANTLRv3Parser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.extractANTLRModel/files/gen/ANTLRv3.ge3:3029:4: RULE_REFGen= RULE_REF
+                    // ANTLRv3.g:3029:4: RULE_REFGen= RULE_REF
                     {
-                    RULE_REFGen=(Token)input.LT(1);
-                    match(input,RULE_REF,FOLLOW_RULE_REF_in_id2901); 
-                    
+                    RULE_REFGen=(Token)match(input,RULE_REF,FOLLOW_RULE_REF_in_id2900); 
+
                     		// Create return CST Node
                     		Node idReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		idReturnNode.setKind("id");
@@ -8253,7 +7678,7 @@ public class ANTLRv3Parser extends Parser {
                     		if(RULE_REFGen != null) {
                     			Leaf RULE_REFGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			RULE_REFGenLeaf.setKind("RULE_REF");
-                    			RULE_REFGenLeaf.setValue(RULE_REFGen.getText());
+                    			RULE_REFGenLeaf.setValue((RULE_REFGen!=null?RULE_REFGen.getText():null));
                     			RULE_REFGenLeaf.setPos(RULE_REFGen.getCharPositionInLine());
                     			RULE_REFGenLeaf.setLine(RULE_REFGen.getLine());
                     			idReturnNode.getChildren().add(RULE_REFGenLeaf);
@@ -8277,10 +7702,214 @@ public class ANTLRv3Parser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end id
+    // $ANTLR end "id"
+
+    // Delegated rules
 
 
+    protected DFA45 dfa45 = new DFA45(this);
+    protected DFA64 dfa64 = new DFA64(this);
+    protected DFA67 dfa67 = new DFA67(this);
     protected DFA72 dfa72 = new DFA72(this);
+    static final String DFA45_eotS =
+        "\14\uffff";
+    static final String DFA45_eofS =
+        "\14\uffff";
+    static final String DFA45_minS =
+        "\3\40\5\uffff\2\52\2\uffff";
+    static final String DFA45_maxS =
+        "\3\134\5\uffff\2\134\2\uffff";
+    static final String DFA45_acceptS =
+        "\3\uffff\1\3\1\4\1\5\1\6\1\7\2\uffff\1\2\1\1";
+    static final String DFA45_specialS =
+        "\14\uffff}>";
+    static final String[] DFA45_transitionS = {
+            "\1\6\4\uffff\1\7\4\uffff\1\1\2\3\1\5\3\uffff\1\2\40\uffff\1"+
+            "\4\6\uffff\1\3\2\uffff\1\3",
+            "\1\3\4\uffff\4\3\1\uffff\4\3\2\uffff\2\3\23\uffff\1\3\1\uffff"+
+            "\1\10\2\uffff\1\3\7\uffff\3\3\2\uffff\1\11\1\uffff\4\3",
+            "\1\3\4\uffff\4\3\1\uffff\4\3\2\uffff\2\3\23\uffff\1\3\1\uffff"+
+            "\1\10\2\uffff\1\3\7\uffff\3\3\2\uffff\1\11\1\uffff\4\3",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "\3\13\4\uffff\1\13\40\uffff\1\12\6\uffff\1\13\2\uffff\1\13",
+            "\3\13\4\uffff\1\13\40\uffff\1\12\6\uffff\1\13\2\uffff\1\13",
+            "",
+            ""
+    };
+
+    static final short[] DFA45_eot = DFA.unpackEncodedString(DFA45_eotS);
+    static final short[] DFA45_eof = DFA.unpackEncodedString(DFA45_eofS);
+    static final char[] DFA45_min = DFA.unpackEncodedStringToUnsignedChars(DFA45_minS);
+    static final char[] DFA45_max = DFA.unpackEncodedStringToUnsignedChars(DFA45_maxS);
+    static final short[] DFA45_accept = DFA.unpackEncodedString(DFA45_acceptS);
+    static final short[] DFA45_special = DFA.unpackEncodedString(DFA45_specialS);
+    static final short[][] DFA45_transition;
+
+    static {
+        int numStates = DFA45_transitionS.length;
+        DFA45_transition = new short[numStates][];
+        for (int i=0; i<numStates; i++) {
+            DFA45_transition[i] = DFA.unpackEncodedString(DFA45_transitionS[i]);
+        }
+    }
+
+    class DFA45 extends DFA {
+
+        public DFA45(BaseRecognizer recognizer) {
+            this.recognizer = recognizer;
+            this.decisionNumber = 45;
+            this.eot = DFA45_eot;
+            this.eof = DFA45_eof;
+            this.min = DFA45_min;
+            this.max = DFA45_max;
+            this.accept = DFA45_accept;
+            this.special = DFA45_special;
+            this.transition = DFA45_transition;
+        }
+        public String getDescription() {
+            return "1415:1: elementNoOptionSpec returns [Node returnNode] : (idGen+= id (TK_0= '=' | TK_1= '+=' ) ruleName+= atom (ebnfSuffixGen+= ebnfSuffix | ) | idGen+= id (TK_0= '=' | TK_1= '+=' ) blockGen+= block (ebnfSuffixGen+= ebnfSuffix | ) | ruleName+= atom (ebnfSuffixGen+= ebnfSuffix | ) | ebnfGen+= ebnf | ACTIONGen= ACTION | SEMPREDGen= SEMPRED (TK_0= '=>' | ) | treeSpecGen+= treeSpec );";
+        }
+    }
+    static final String DFA64_eotS =
+        "\14\uffff";
+    static final String DFA64_eofS =
+        "\14\uffff";
+    static final String DFA64_minS =
+        "\4\45\3\uffff\4\45\1\112";
+    static final String DFA64_maxS =
+        "\4\135\3\uffff\4\135\1\133";
+    static final String DFA64_acceptS =
+        "\4\uffff\1\1\1\2\1\3\5\uffff";
+    static final String DFA64_specialS =
+        "\14\uffff}>";
+    static final String[] DFA64_transitionS = {
+            "\1\5\2\uffff\1\6\1\uffff\1\1\2\5\1\4\3\uffff\1\2\23\uffff\1"+
+            "\6\14\uffff\1\3\2\6\10\uffff\1\5",
+            "\1\5\2\uffff\1\5\1\uffff\4\5\2\uffff\2\5\23\uffff\1\5\4\uffff"+
+            "\1\5\7\uffff\1\7\2\5\5\uffff\2\5\1\uffff\1\5",
+            "\1\5\2\uffff\1\5\1\uffff\4\5\3\uffff\1\5\23\uffff\1\5\4\uffff"+
+            "\1\5\7\uffff\1\7\2\5\5\uffff\2\5\1\uffff\1\5",
+            "\1\5\4\uffff\3\5\1\10\3\uffff\1\5\40\uffff\1\5\12\uffff\1"+
+            "\5",
+            "",
+            "",
+            "",
+            "\1\5\4\uffff\1\11\3\5\3\uffff\1\12\40\uffff\1\5\1\uffff\1"+
+            "\4\10\uffff\1\5",
+            "\1\5\4\uffff\4\5\3\uffff\1\5\30\uffff\1\5\7\uffff\1\5\1\uffff"+
+            "\1\13\5\uffff\2\5\1\uffff\1\5",
+            "\1\5\4\uffff\4\5\2\uffff\2\5\25\uffff\1\4\2\uffff\1\5\7\uffff"+
+            "\1\5\1\uffff\1\5\5\uffff\2\5\1\uffff\1\5",
+            "\1\5\4\uffff\4\5\3\uffff\1\5\25\uffff\1\4\2\uffff\1\5\7\uffff"+
+            "\1\5\1\uffff\1\5\5\uffff\2\5\1\uffff\1\5",
+            "\1\5\7\uffff\1\4\7\uffff\2\5"
+    };
+
+    static final short[] DFA64_eot = DFA.unpackEncodedString(DFA64_eotS);
+    static final short[] DFA64_eof = DFA.unpackEncodedString(DFA64_eofS);
+    static final char[] DFA64_min = DFA.unpackEncodedStringToUnsignedChars(DFA64_minS);
+    static final char[] DFA64_max = DFA.unpackEncodedStringToUnsignedChars(DFA64_maxS);
+    static final short[] DFA64_accept = DFA.unpackEncodedString(DFA64_acceptS);
+    static final short[] DFA64_special = DFA.unpackEncodedString(DFA64_specialS);
+    static final short[][] DFA64_transition;
+
+    static {
+        int numStates = DFA64_transitionS.length;
+        DFA64_transition = new short[numStates][];
+        for (int i=0; i<numStates; i++) {
+            DFA64_transition[i] = DFA.unpackEncodedString(DFA64_transitionS[i]);
+        }
+    }
+
+    class DFA64 extends DFA {
+
+        public DFA64(BaseRecognizer recognizer) {
+            this.recognizer = recognizer;
+            this.decisionNumber = 64;
+            this.eot = DFA64_eot;
+            this.eof = DFA64_eof;
+            this.min = DFA64_min;
+            this.max = DFA64_max;
+            this.accept = DFA64_accept;
+            this.special = DFA64_special;
+            this.transition = DFA64_transition;
+        }
+        public String getDescription() {
+            return "2259:1: rewrite_alternative returns [Node returnNode] : (rewrite_templateGen+= rewrite_template | rewrite_tree_alternativeGen+= rewrite_tree_alternative | );";
+        }
+    }
+    static final String DFA67_eotS =
+        "\14\uffff";
+    static final String DFA67_eofS =
+        "\14\uffff";
+    static final String DFA67_minS =
+        "\7\45\4\uffff\1\45";
+    static final String DFA67_maxS =
+        "\7\135\4\uffff\1\135";
+    static final String DFA67_acceptS =
+        "\7\uffff\1\3\1\4\1\2\1\1\1\uffff";
+    static final String DFA67_specialS =
+        "\14\uffff}>";
+    static final String[] DFA67_transitionS = {
+            "\1\7\4\uffff\1\2\1\4\1\1\1\6\3\uffff\1\3\40\uffff\1\10\12\uffff"+
+            "\1\5",
+            "\1\12\2\uffff\1\12\1\uffff\4\12\3\uffff\1\12\23\uffff\1\12"+
+            "\4\uffff\1\11\7\uffff\3\12\5\uffff\2\11\1\uffff\1\12",
+            "\1\12\2\uffff\1\12\1\uffff\4\12\2\uffff\1\13\1\12\23\uffff"+
+            "\1\12\4\uffff\1\11\7\uffff\3\12\5\uffff\2\11\1\uffff\1\12",
+            "\1\12\2\uffff\1\12\1\uffff\4\12\3\uffff\1\12\23\uffff\1\12"+
+            "\4\uffff\1\11\7\uffff\3\12\5\uffff\2\11\1\uffff\1\12",
+            "\1\12\2\uffff\1\12\1\uffff\4\12\3\uffff\1\12\23\uffff\1\12"+
+            "\4\uffff\1\11\7\uffff\3\12\5\uffff\2\11\1\uffff\1\12",
+            "\1\12\2\uffff\1\12\1\uffff\4\12\3\uffff\1\12\23\uffff\1\12"+
+            "\4\uffff\1\11\7\uffff\3\12\5\uffff\2\11\1\uffff\1\12",
+            "\1\12\2\uffff\1\12\1\uffff\4\12\3\uffff\1\12\23\uffff\1\12"+
+            "\4\uffff\1\11\7\uffff\3\12\5\uffff\2\11\1\uffff\1\12",
+            "",
+            "",
+            "",
+            "",
+            "\1\12\2\uffff\1\12\1\uffff\4\12\3\uffff\1\12\23\uffff\1\12"+
+            "\4\uffff\1\11\7\uffff\3\12\5\uffff\2\11\1\uffff\1\12"
+    };
+
+    static final short[] DFA67_eot = DFA.unpackEncodedString(DFA67_eotS);
+    static final short[] DFA67_eof = DFA.unpackEncodedString(DFA67_eofS);
+    static final char[] DFA67_min = DFA.unpackEncodedStringToUnsignedChars(DFA67_minS);
+    static final char[] DFA67_max = DFA.unpackEncodedStringToUnsignedChars(DFA67_maxS);
+    static final short[] DFA67_accept = DFA.unpackEncodedString(DFA67_acceptS);
+    static final short[] DFA67_special = DFA.unpackEncodedString(DFA67_specialS);
+    static final short[][] DFA67_transition;
+
+    static {
+        int numStates = DFA67_transitionS.length;
+        DFA67_transition = new short[numStates][];
+        for (int i=0; i<numStates; i++) {
+            DFA67_transition[i] = DFA.unpackEncodedString(DFA67_transitionS[i]);
+        }
+    }
+
+    class DFA67 extends DFA {
+
+        public DFA67(BaseRecognizer recognizer) {
+            this.recognizer = recognizer;
+            this.decisionNumber = 67;
+            this.eot = DFA67_eot;
+            this.eof = DFA67_eof;
+            this.min = DFA67_min;
+            this.max = DFA67_max;
+            this.accept = DFA67_accept;
+            this.special = DFA67_special;
+            this.transition = DFA67_transition;
+        }
+        public String getDescription() {
+            return "2398:1: rewrite_tree_element returns [Node returnNode] : (rewrite_tree_atomGen+= rewrite_tree_atom | rewrite_tree_atomGen+= rewrite_tree_atom ebnfSuffixGen+= ebnfSuffix | rewrite_treeGen+= rewrite_tree (ebnfSuffixGen+= ebnfSuffix | ) | rewrite_tree_ebnfGen+= rewrite_tree_ebnf );";
+        }
+    }
     static final String DFA72_eotS =
         "\22\uffff";
     static final String DFA72_eofS =
@@ -8289,10 +7918,10 @@ public class ANTLRv3Parser extends Parser {
         "\1\52\2\122\2\uffff\1\52\2\107\1\50\1\55\2\uffff\1\121\1\52\2\107"+
         "\1\55\1\121";
     static final String DFA72_maxS =
-        "\3\122\2\uffff\1\124\2\107\1\124\1\55\2\uffff\1\124\1\61\2\107\1"+
-        "\55\1\124";
+        "\3\122\2\uffff\1\124\2\107\1\124\1\55\2\uffff\1\124\1\61\2\107"+
+        "\1\55\1\124";
     static final String DFA72_acceptS =
-        "\3\uffff\1\3\1\4\5\uffff\1\2\1\1\6\uffff";
+        "\3\uffff\1\3\1\4\5\uffff\1\1\1\2\6\uffff";
     static final String DFA72_specialS =
         "\22\uffff}>";
     static final String[] DFA72_transitionS = {
@@ -8304,7 +7933,7 @@ public class ANTLRv3Parser extends Parser {
             "\1\6\6\uffff\1\7\42\uffff\1\10",
             "\1\11",
             "\1\11",
-            "\1\12\11\uffff\2\13\21\uffff\1\12\15\uffff\2\12",
+            "\1\13\11\uffff\2\12\21\uffff\1\13\15\uffff\2\13",
             "\1\14",
             "",
             "",
@@ -8358,11 +7987,11 @@ public class ANTLRv3Parser extends Parser {
     public static final BitSet FOLLOW_68_in_grammarDef410 = new BitSet(new long[]{0x0002040000000000L});
     public static final BitSet FOLLOW_id_in_grammarDef414 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000020L});
     public static final BitSet FOLLOW_69_in_grammarDef418 = new BitSet(new long[]{0x0002461080000010L,0x0000000000003900L});
-    public static final BitSet FOLLOW_optionsSpec_in_grammarDef422 = new BitSet(new long[]{0x0002061080000010L,0x0000000000003900L});
-    public static final BitSet FOLLOW_tokensSpec_in_grammarDef427 = new BitSet(new long[]{0x0002041080000010L,0x0000000000003900L});
-    public static final BitSet FOLLOW_attrScope_in_grammarDef432 = new BitSet(new long[]{0x0002041080000010L,0x0000000000003900L});
-    public static final BitSet FOLLOW_action_in_grammarDef437 = new BitSet(new long[]{0x0002041000000010L,0x0000000000003900L});
-    public static final BitSet FOLLOW_rule_in_grammarDef447 = new BitSet(new long[]{0x0002041000000010L,0x0000000000003800L});
+    public static final BitSet FOLLOW_optionsSpec_in_grammarDef422 = new BitSet(new long[]{0x0002461080000010L,0x0000000000003900L});
+    public static final BitSet FOLLOW_tokensSpec_in_grammarDef427 = new BitSet(new long[]{0x0002461080000010L,0x0000000000003900L});
+    public static final BitSet FOLLOW_attrScope_in_grammarDef432 = new BitSet(new long[]{0x0002461080000010L,0x0000000000003900L});
+    public static final BitSet FOLLOW_action_in_grammarDef437 = new BitSet(new long[]{0x0002461080000010L,0x0000000000003900L});
+    public static final BitSet FOLLOW_rule_in_grammarDef447 = new BitSet(new long[]{0x0002461080000010L,0x0000000000003900L});
     public static final BitSet FOLLOW_EOF_in_grammarDef457 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_TOKENS_in_tokensSpec481 = new BitSet(new long[]{0x0000040000000000L});
     public static final BitSet FOLLOW_tokenSpec_in_tokensSpec485 = new BitSet(new long[]{0x0000040000000000L,0x0000000000000040L});
@@ -8409,7 +8038,7 @@ public class ANTLRv3Parser extends Parser {
     public static final BitSet FOLLOW_optionsSpec_in_rule936 = new BitSet(new long[]{0x0000000080000000L,0x0000000000008100L});
     public static final BitSet FOLLOW_ruleScopeSpec_in_rule941 = new BitSet(new long[]{0x0000000000000000L,0x0000000000008100L});
     public static final BitSet FOLLOW_ruleAction_in_rule946 = new BitSet(new long[]{0x0000000000000000L,0x0000000000008100L});
-    public static final BitSet FOLLOW_79_in_rule953 = new BitSet(new long[]{0x00023D2100000000L,0x00000000120C0020L});
+    public static final BitSet FOLLOW_79_in_rule953 = new BitSet(new long[]{0x00023D2100000000L,0x00000000120C0000L});
     public static final BitSet FOLLOW_altList_in_rule957 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000020L});
     public static final BitSet FOLLOW_69_in_rule961 = new BitSet(new long[]{0x0000000000000002L,0x0000000000600000L});
     public static final BitSet FOLLOW_exceptionGroup_in_rule967 = new BitSet(new long[]{0x0000000000000002L});
@@ -8443,10 +8072,10 @@ public class ANTLRv3Parser extends Parser {
     public static final BitSet FOLLOW_alternative_in_block1194 = new BitSet(new long[]{0x0000010000000000L,0x0000000000180000L});
     public static final BitSet FOLLOW_rewrite_in_block1198 = new BitSet(new long[]{0x0000000000000000L,0x0000000000180000L});
     public static final BitSet FOLLOW_84_in_block1213 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_alternative_in_altList1239 = new BitSet(new long[]{0x0000010000000002L,0x0000000000080000L});
+    public static final BitSet FOLLOW_alternative_in_altList1239 = new BitSet(new long[]{0x0000010000000000L,0x0000000000080000L});
     public static final BitSet FOLLOW_rewrite_in_altList1243 = new BitSet(new long[]{0x0000000000000002L,0x0000000000080000L});
-    public static final BitSet FOLLOW_83_in_altList1249 = new BitSet(new long[]{0x00023D2100000002L,0x00000000120C0000L});
-    public static final BitSet FOLLOW_alternative_in_altList1253 = new BitSet(new long[]{0x0000010000000002L,0x0000000000080000L});
+    public static final BitSet FOLLOW_83_in_altList1249 = new BitSet(new long[]{0x00023D2100000000L,0x00000000120C0000L});
+    public static final BitSet FOLLOW_alternative_in_altList1253 = new BitSet(new long[]{0x0000010000000000L,0x0000000000080000L});
     public static final BitSet FOLLOW_rewrite_in_altList1257 = new BitSet(new long[]{0x0000000000000002L,0x0000000000080000L});
     public static final BitSet FOLLOW_element_in_alternative1286 = new BitSet(new long[]{0x00023C2100000002L,0x0000000012040000L});
     public static final BitSet FOLLOW_exceptionHandler_in_exceptionGroup1323 = new BitSet(new long[]{0x0000000000000002L,0x0000000000600000L});
@@ -8500,81 +8129,81 @@ public class ANTLRv3Parser extends Parser {
     public static final BitSet FOLLOW_ROOT_in_ebnf1912 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_BANG_in_ebnf1924 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_88_in_ebnf1936 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_CHAR_LITERAL_in_range1976 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_RANGE_in_range1980 = new BitSet(new long[]{0x0000100000000000L});
-    public static final BitSet FOLLOW_CHAR_LITERAL_in_range1984 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_CHAR_LITERAL_in_terminal2009 = new BitSet(new long[]{0x000000C000000002L});
-    public static final BitSet FOLLOW_TOKEN_REF_in_terminal2023 = new BitSet(new long[]{0x000100C000000002L});
-    public static final BitSet FOLLOW_ARG_ACTION_in_terminal2032 = new BitSet(new long[]{0x000000C000000002L});
-    public static final BitSet FOLLOW_STRING_LITERAL_in_terminal2062 = new BitSet(new long[]{0x000000C000000002L});
-    public static final BitSet FOLLOW_92_in_terminal2076 = new BitSet(new long[]{0x000000C000000002L});
-    public static final BitSet FOLLOW_ROOT_in_terminal2096 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_BANG_in_terminal2111 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_CHAR_LITERAL_in_notTerminal2146 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_TOKEN_REF_in_notTerminal2157 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_STRING_LITERAL_in_notTerminal2168 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_90_in_ebnfSuffix2190 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_74_in_ebnfSuffix2203 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_91_in_ebnfSuffix2217 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_REWRITE_in_rewrite2244 = new BitSet(new long[]{0x0000000100000000L});
-    public static final BitSet FOLLOW_SEMPRED_in_rewrite2248 = new BitSet(new long[]{0x00023D2000000000L,0x0000000020040000L});
-    public static final BitSet FOLLOW_rewrite_alternative_in_rewrite2252 = new BitSet(new long[]{0x0000010000000000L});
-    public static final BitSet FOLLOW_REWRITE_in_rewrite2261 = new BitSet(new long[]{0x00023C2000000002L,0x0000000020040000L});
-    public static final BitSet FOLLOW_rewrite_alternative_in_rewrite2265 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rewrite_template_in_rewrite_alternative2289 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rewrite_tree_alternative_in_rewrite_alternative2300 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_82_in_rewrite_template_block2335 = new BitSet(new long[]{0x0002240000000000L,0x0000000000040000L});
-    public static final BitSet FOLLOW_rewrite_template_in_rewrite_template_block2339 = new BitSet(new long[]{0x0000000000000000L,0x0000000000100000L});
-    public static final BitSet FOLLOW_84_in_rewrite_template_block2343 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_82_in_rewrite_tree_block2369 = new BitSet(new long[]{0x00023C2000000000L,0x0000000020040000L});
-    public static final BitSet FOLLOW_rewrite_tree_alternative_in_rewrite_tree_block2373 = new BitSet(new long[]{0x0000000000000000L,0x0000000000100000L});
-    public static final BitSet FOLLOW_84_in_rewrite_tree_block2377 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rewrite_tree_element_in_rewrite_tree_alternative2401 = new BitSet(new long[]{0x00023C2000000002L,0x0000000020040000L});
-    public static final BitSet FOLLOW_rewrite_tree_atom_in_rewrite_tree_element2427 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rewrite_tree_atom_in_rewrite_tree_element2438 = new BitSet(new long[]{0x0000000000000000L,0x000000000C000400L});
-    public static final BitSet FOLLOW_ebnfSuffix_in_rewrite_tree_element2442 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rewrite_tree_in_rewrite_tree_element2455 = new BitSet(new long[]{0x0000000000000002L,0x000000000C000400L});
-    public static final BitSet FOLLOW_ebnfSuffix_in_rewrite_tree_element2463 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rewrite_tree_ebnf_in_rewrite_tree_element2485 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_CHAR_LITERAL_in_rewrite_tree_atom2508 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_TOKEN_REF_in_rewrite_tree_atom2521 = new BitSet(new long[]{0x0001000000000002L});
-    public static final BitSet FOLLOW_ARG_ACTION_in_rewrite_tree_atom2525 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_REF_in_rewrite_tree_atom2543 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_STRING_LITERAL_in_rewrite_tree_atom2556 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_93_in_rewrite_tree_atom2569 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ACTION_in_rewrite_tree_atom2581 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rewrite_tree_block_in_rewrite_tree_ebnf2602 = new BitSet(new long[]{0x0000000000000000L,0x000000000C000400L});
-    public static final BitSet FOLLOW_ebnfSuffix_in_rewrite_tree_ebnf2606 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_TREE_BEGIN_in_rewrite_tree2629 = new BitSet(new long[]{0x00023C0000000000L,0x0000000020000000L});
-    public static final BitSet FOLLOW_rewrite_tree_atom_in_rewrite_tree2633 = new BitSet(new long[]{0x00023C2000000000L,0x0000000020140000L});
-    public static final BitSet FOLLOW_rewrite_tree_element_in_rewrite_tree2637 = new BitSet(new long[]{0x00023C2000000000L,0x0000000020140000L});
-    public static final BitSet FOLLOW_84_in_rewrite_tree2642 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_id_in_rewrite_template2665 = new BitSet(new long[]{0x0000000000000000L,0x0000000000040000L});
-    public static final BitSet FOLLOW_82_in_rewrite_template2669 = new BitSet(new long[]{0x0002040000000000L,0x0000000000100000L});
-    public static final BitSet FOLLOW_rewrite_template_args_in_rewrite_template2673 = new BitSet(new long[]{0x0000000000000000L,0x0000000000100000L});
-    public static final BitSet FOLLOW_84_in_rewrite_template2677 = new BitSet(new long[]{0x000C000000000000L});
-    public static final BitSet FOLLOW_DOUBLE_QUOTE_STRING_LITERAL_in_rewrite_template2685 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_DOUBLE_ANGLE_STRING_LITERAL_in_rewrite_template2691 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rewrite_template_ref_in_rewrite_template2704 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rewrite_indirect_template_head_in_rewrite_template2715 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ACTION_in_rewrite_template2726 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_id_in_rewrite_template_ref2747 = new BitSet(new long[]{0x0000000000000000L,0x0000000000040000L});
-    public static final BitSet FOLLOW_82_in_rewrite_template_ref2751 = new BitSet(new long[]{0x0002040000000000L,0x0000000000100000L});
-    public static final BitSet FOLLOW_rewrite_template_args_in_rewrite_template_ref2755 = new BitSet(new long[]{0x0000000000000000L,0x0000000000100000L});
-    public static final BitSet FOLLOW_84_in_rewrite_template_ref2759 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_82_in_rewrite_indirect_template_head2780 = new BitSet(new long[]{0x0000200000000000L});
-    public static final BitSet FOLLOW_ACTION_in_rewrite_indirect_template_head2784 = new BitSet(new long[]{0x0000000000000000L,0x0000000000100000L});
-    public static final BitSet FOLLOW_84_in_rewrite_indirect_template_head2788 = new BitSet(new long[]{0x0000000000000000L,0x0000000000040000L});
-    public static final BitSet FOLLOW_82_in_rewrite_indirect_template_head2792 = new BitSet(new long[]{0x0002040000000000L,0x0000000000100000L});
-    public static final BitSet FOLLOW_rewrite_template_args_in_rewrite_indirect_template_head2796 = new BitSet(new long[]{0x0000000000000000L,0x0000000000100000L});
-    public static final BitSet FOLLOW_84_in_rewrite_indirect_template_head2800 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rewrite_template_arg_in_rewrite_template_args2821 = new BitSet(new long[]{0x0000000000000002L,0x0000000000020000L});
-    public static final BitSet FOLLOW_81_in_rewrite_template_args2826 = new BitSet(new long[]{0x0002040000000000L});
-    public static final BitSet FOLLOW_rewrite_template_arg_in_rewrite_template_args2830 = new BitSet(new long[]{0x0000000000000002L,0x0000000000020000L});
-    public static final BitSet FOLLOW_id_in_rewrite_template_arg2859 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000080L});
-    public static final BitSet FOLLOW_71_in_rewrite_template_arg2863 = new BitSet(new long[]{0x0000200000000000L});
-    public static final BitSet FOLLOW_ACTION_in_rewrite_template_arg2867 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_TOKEN_REF_in_id2889 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_REF_in_id2901 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_CHAR_LITERAL_in_range1975 = new BitSet(new long[]{0x0000000000002000L});
+    public static final BitSet FOLLOW_RANGE_in_range1979 = new BitSet(new long[]{0x0000100000000000L});
+    public static final BitSet FOLLOW_CHAR_LITERAL_in_range1983 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_CHAR_LITERAL_in_terminal2008 = new BitSet(new long[]{0x000000C000000002L});
+    public static final BitSet FOLLOW_TOKEN_REF_in_terminal2022 = new BitSet(new long[]{0x000100C000000002L});
+    public static final BitSet FOLLOW_ARG_ACTION_in_terminal2031 = new BitSet(new long[]{0x000000C000000002L});
+    public static final BitSet FOLLOW_STRING_LITERAL_in_terminal2061 = new BitSet(new long[]{0x000000C000000002L});
+    public static final BitSet FOLLOW_92_in_terminal2075 = new BitSet(new long[]{0x000000C000000002L});
+    public static final BitSet FOLLOW_ROOT_in_terminal2095 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_BANG_in_terminal2110 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_CHAR_LITERAL_in_notTerminal2145 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_TOKEN_REF_in_notTerminal2156 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_STRING_LITERAL_in_notTerminal2167 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_90_in_ebnfSuffix2189 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_74_in_ebnfSuffix2202 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_91_in_ebnfSuffix2216 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_REWRITE_in_rewrite2243 = new BitSet(new long[]{0x0000000100000000L});
+    public static final BitSet FOLLOW_SEMPRED_in_rewrite2247 = new BitSet(new long[]{0x00023D2000000000L,0x0000000020040000L});
+    public static final BitSet FOLLOW_rewrite_alternative_in_rewrite2251 = new BitSet(new long[]{0x0000010000000000L});
+    public static final BitSet FOLLOW_REWRITE_in_rewrite2260 = new BitSet(new long[]{0x00023C2000000000L,0x0000000020040000L});
+    public static final BitSet FOLLOW_rewrite_alternative_in_rewrite2264 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rewrite_template_in_rewrite_alternative2288 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rewrite_tree_alternative_in_rewrite_alternative2299 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_82_in_rewrite_template_block2334 = new BitSet(new long[]{0x0002240000000000L,0x0000000000040000L});
+    public static final BitSet FOLLOW_rewrite_template_in_rewrite_template_block2338 = new BitSet(new long[]{0x0000000000000000L,0x0000000000100000L});
+    public static final BitSet FOLLOW_84_in_rewrite_template_block2342 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_82_in_rewrite_tree_block2368 = new BitSet(new long[]{0x00023C2000000000L,0x0000000020040000L});
+    public static final BitSet FOLLOW_rewrite_tree_alternative_in_rewrite_tree_block2372 = new BitSet(new long[]{0x0000000000000000L,0x0000000000100000L});
+    public static final BitSet FOLLOW_84_in_rewrite_tree_block2376 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rewrite_tree_element_in_rewrite_tree_alternative2400 = new BitSet(new long[]{0x00023C2000000002L,0x0000000020040000L});
+    public static final BitSet FOLLOW_rewrite_tree_atom_in_rewrite_tree_element2426 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rewrite_tree_atom_in_rewrite_tree_element2437 = new BitSet(new long[]{0x0000000000000000L,0x000000000C000400L});
+    public static final BitSet FOLLOW_ebnfSuffix_in_rewrite_tree_element2441 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rewrite_tree_in_rewrite_tree_element2454 = new BitSet(new long[]{0x0000000000000002L,0x000000000C000400L});
+    public static final BitSet FOLLOW_ebnfSuffix_in_rewrite_tree_element2462 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rewrite_tree_ebnf_in_rewrite_tree_element2484 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_CHAR_LITERAL_in_rewrite_tree_atom2507 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_TOKEN_REF_in_rewrite_tree_atom2520 = new BitSet(new long[]{0x0001000000000002L});
+    public static final BitSet FOLLOW_ARG_ACTION_in_rewrite_tree_atom2524 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_REF_in_rewrite_tree_atom2542 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_STRING_LITERAL_in_rewrite_tree_atom2555 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_93_in_rewrite_tree_atom2568 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ACTION_in_rewrite_tree_atom2580 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rewrite_tree_block_in_rewrite_tree_ebnf2601 = new BitSet(new long[]{0x0000000000000000L,0x000000000C000400L});
+    public static final BitSet FOLLOW_ebnfSuffix_in_rewrite_tree_ebnf2605 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_TREE_BEGIN_in_rewrite_tree2628 = new BitSet(new long[]{0x00023C0000000000L,0x0000000020000000L});
+    public static final BitSet FOLLOW_rewrite_tree_atom_in_rewrite_tree2632 = new BitSet(new long[]{0x00023C2000000000L,0x0000000020140000L});
+    public static final BitSet FOLLOW_rewrite_tree_element_in_rewrite_tree2636 = new BitSet(new long[]{0x00023C2000000000L,0x0000000020140000L});
+    public static final BitSet FOLLOW_84_in_rewrite_tree2641 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_id_in_rewrite_template2664 = new BitSet(new long[]{0x0000000000000000L,0x0000000000040000L});
+    public static final BitSet FOLLOW_82_in_rewrite_template2668 = new BitSet(new long[]{0x0002040000000000L,0x0000000000100000L});
+    public static final BitSet FOLLOW_rewrite_template_args_in_rewrite_template2672 = new BitSet(new long[]{0x0000000000000000L,0x0000000000100000L});
+    public static final BitSet FOLLOW_84_in_rewrite_template2676 = new BitSet(new long[]{0x000C000000000000L});
+    public static final BitSet FOLLOW_DOUBLE_QUOTE_STRING_LITERAL_in_rewrite_template2684 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_DOUBLE_ANGLE_STRING_LITERAL_in_rewrite_template2690 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rewrite_template_ref_in_rewrite_template2703 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rewrite_indirect_template_head_in_rewrite_template2714 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ACTION_in_rewrite_template2725 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_id_in_rewrite_template_ref2746 = new BitSet(new long[]{0x0000000000000000L,0x0000000000040000L});
+    public static final BitSet FOLLOW_82_in_rewrite_template_ref2750 = new BitSet(new long[]{0x0002040000000000L,0x0000000000100000L});
+    public static final BitSet FOLLOW_rewrite_template_args_in_rewrite_template_ref2754 = new BitSet(new long[]{0x0000000000000000L,0x0000000000100000L});
+    public static final BitSet FOLLOW_84_in_rewrite_template_ref2758 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_82_in_rewrite_indirect_template_head2779 = new BitSet(new long[]{0x0000200000000000L});
+    public static final BitSet FOLLOW_ACTION_in_rewrite_indirect_template_head2783 = new BitSet(new long[]{0x0000000000000000L,0x0000000000100000L});
+    public static final BitSet FOLLOW_84_in_rewrite_indirect_template_head2787 = new BitSet(new long[]{0x0000000000000000L,0x0000000000040000L});
+    public static final BitSet FOLLOW_82_in_rewrite_indirect_template_head2791 = new BitSet(new long[]{0x0002040000000000L,0x0000000000100000L});
+    public static final BitSet FOLLOW_rewrite_template_args_in_rewrite_indirect_template_head2795 = new BitSet(new long[]{0x0000000000000000L,0x0000000000100000L});
+    public static final BitSet FOLLOW_84_in_rewrite_indirect_template_head2799 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rewrite_template_arg_in_rewrite_template_args2820 = new BitSet(new long[]{0x0000000000000002L,0x0000000000020000L});
+    public static final BitSet FOLLOW_81_in_rewrite_template_args2825 = new BitSet(new long[]{0x0002040000000000L});
+    public static final BitSet FOLLOW_rewrite_template_arg_in_rewrite_template_args2829 = new BitSet(new long[]{0x0000000000000002L,0x0000000000020000L});
+    public static final BitSet FOLLOW_id_in_rewrite_template_arg2858 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000080L});
+    public static final BitSet FOLLOW_71_in_rewrite_template_arg2862 = new BitSet(new long[]{0x0000200000000000L});
+    public static final BitSet FOLLOW_ACTION_in_rewrite_template_arg2866 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_TOKEN_REF_in_id2888 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_REF_in_id2900 = new BitSet(new long[]{0x0000000000000002L});
 
 }

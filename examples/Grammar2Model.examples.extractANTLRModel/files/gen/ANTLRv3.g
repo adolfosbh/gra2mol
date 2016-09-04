@@ -471,7 +471,7 @@ optionsSpec returns [Node returnNode]
 			OPTIONSGenLeaf.setLine(OPTIONSGen.getLine());
 			optionsSpecReturnNode.getChildren().add(OPTIONSGenLeaf);
 		}
-	
+
 		// Create a special CST Node for terminal optionGen aggregation
 		if($optionGen != null) {
 	    for(int pos = 0; pos < $optionGen.size(); pos++ )  { 
@@ -494,7 +494,7 @@ optionsSpec returns [Node returnNode]
 	 	}
 		}
 		}
-	
+
 	    // Create a Token CST Leaf	
 	    if($TK_1 != null) {
 			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
@@ -890,7 +890,7 @@ throwsSpec returns [Node returnNode]
 	            } 
 	        }
 	    }
-	
+
 		// Create a special CST Node for terminal idGen_1 aggregation
 		if($idGen_1 != null) {
 	    for(int pos = 0; pos < $idGen_1.size(); pos++ )  { 
@@ -913,7 +913,7 @@ throwsSpec returns [Node returnNode]
 		}
 		}
 		}
-	
+
 		// Returns the Node with CST Leaves/Nodes
 		$throwsSpec.returnNode = throwsSpecReturnNode;
 	} 
@@ -970,7 +970,7 @@ ruleScopeSpec returns [Node returnNode]
 	            } 
 	        }
 	    }
-	
+
 		// Create a special CST Node for terminal idGen_1 aggregation
 		if($idGen_1 != null) {
 	    for(int pos = 0; pos < $idGen_1.size(); pos++ )  { 
@@ -993,7 +993,7 @@ ruleScopeSpec returns [Node returnNode]
 		}
 		}
 		}
-	
+
 	    // Create a Token CST Leaf	
 	    if($TK_2 != null) {
 			Leaf TK_2Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
@@ -1049,7 +1049,7 @@ ruleScopeSpec returns [Node returnNode]
 	            } 
 	        }
 	    }
-	
+
 		// Create a special CST Node for terminal idGen_1 aggregation
 		if($idGen_1 != null) {
 	    for(int pos = 0; pos < $idGen_1.size(); pos++ )  { 
@@ -1072,7 +1072,7 @@ ruleScopeSpec returns [Node returnNode]
 		}
 		}
 		}
-	
+
 	    // Create a Token CST Leaf	
 	    if($TK_3 != null) {
 			Leaf TK_3Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
@@ -1144,7 +1144,7 @@ block returns [Node returnNode]
 	            } 
 	        }
 	    }
-	
+
 		// Create a special CST Node for terminal alternativeGen_1 aggregation
 		if($alternativeGen_1 != null) {
 	    for(int pos = 0; pos < $alternativeGen_1.size(); pos++ )  { 
@@ -1175,7 +1175,7 @@ block returns [Node returnNode]
 		}
 		}
 		}
-	
+
 	    // Create a Token CST Leaf	
 	    if($TK_3 != null) {
 			Leaf TK_3Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
@@ -1216,7 +1216,7 @@ altList returns [Node returnNode]
 	            } 
 	        }
 	    }
-	
+
 		// Create a special CST Node for terminal a2 aggregation
 		if($a2 != null) {
 	    for(int pos = 0; pos < $a2.size(); pos++ )  { 
@@ -1247,7 +1247,7 @@ altList returns [Node returnNode]
 		}
 		}
 		}
-	
+
 		// Returns the Node with CST Leaves/Nodes
 		$altList.returnNode = altListReturnNode;
 	}
@@ -1956,7 +1956,7 @@ ebnf returns [Node returnNode]
 	}
 	;
 
-range! returns [Node returnNode] 
+range returns [Node returnNode] 
 :	CHAR_LITERALGen=CHAR_LITERAL RANGEGen=RANGE CHAR_LITERALGen_1=CHAR_LITERAL 
 	{
 		// Create return CST Node
@@ -2197,7 +2197,7 @@ rewrite returns [Node returnNode]
 		// Create return CST Node
 		Node rewriteReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
 		rewriteReturnNode.setKind("rewrite");
-	
+
 		// Create a special CST Node for terminal SEMPREDGen_List aggregation
 		if($SEMPREDGen_List != null) {
 	    for(int pos = 0; pos < $SEMPREDGen_List.size(); pos++ )  { 
@@ -2230,7 +2230,7 @@ rewrite returns [Node returnNode]
 		}
 		}
 		}
-	
+
 	    // Create a Token CST Leaf	
 	    if($TK_1 != null) {
 			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
@@ -2939,7 +2939,7 @@ rewrite_template_args returns [Node returnNode]
 	            } 
 	        }
 	    }
-	
+
 		// Create a special CST Node for terminal rewrite_template_argGen_1 aggregation
 		if($rewrite_template_argGen_1 != null) {
 	    for(int pos = 0; pos < $rewrite_template_argGen_1.size(); pos++ )  { 
@@ -2962,7 +2962,7 @@ rewrite_template_args returns [Node returnNode]
 		}
 		}
 		}
-	
+
 		// Returns the Node with CST Leaves/Nodes
 		$rewrite_template_args.returnNode = rewrite_template_argsReturnNode;
 	}
