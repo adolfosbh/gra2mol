@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Core:ViewDefinition xmi:version="2.0"
+<Core:Transformation xmi:version="2.0"
     xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:Core="http://gts.inf.um.es/modernization/gra2mol/core" xmlns:Query="http://gts.inf.um.es/modernization/gra2mol/query">
   <hashes name="strutsClassTypeMap">
@@ -23,9 +23,7 @@
     <content fromElement="=" toElement="ASSIGN"/>
     <content fromElement="+=" toElement="PLUS_ASSIGN"/>
   </hashes>
-  <rules name="mainRule">
-    <from name="compilationUnit"/>
-    <to name="JavaSimplified::JavaModel"/>
+  <rules xsi:type="Core:StandardRule" name="mainRule">
     <queries variable="newtypes">
       <filter type="INDIRECT">
         <element name="compilationUnit"/>
@@ -64,10 +62,16 @@
         <value type="QUERY_RESULT" value="declarations"/>
       </inits>
     </inits>
+    <from name="compilationUnit">
+      <filter>
+        <filter>
+          <element name="compilationUnit" mark="true"/>
+        </filter>
+      </filter>
+    </from>
+    <to name="JavaSimplified::JavaModel"/>
   </rules>
-  <rules name="javaClass">
-    <from name="typeDeclaration" alias="td"/>
-    <to name="JavaSimplified::JavaClass"/>
+  <rules xsi:type="Core:StandardRule" name="javaClass">
     <queries variable="mycompUnit">
       <filter type="INDIRECT">
         <element name="compilationUnit" mark="true"/>
@@ -137,17 +141,16 @@
         <value type="QUERY_RESULT" value="methDecl"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="field">
-    <from name="classBodyDeclaration" alias="cbd">
-      <filter>
-        <element name="classBodyDeclaration" mark="true"/>
-        <next type="INDIRECT">
-          <element name="fieldDeclaration"/>
-        </next>
+    <from name="typeDeclaration" alias="td">
+      <filter variable="td">
+        <filter>
+          <element name="typeDeclaration" mark="true"/>
+        </filter>
       </filter>
     </from>
-    <to name="JavaSimplified::Field"/>
+    <to name="JavaSimplified::JavaClass"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="field">
     <queries variable="varDecl">
       <filter>
         <element name="cbd"/>
@@ -200,20 +203,19 @@
         <value type="OPERATION_CODE" value="cbd"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="typedMethod">
     <from name="classBodyDeclaration" alias="cbd">
-      <filter>
-        <element name="classBodyDeclaration" mark="true"/>
-        <next>
-          <element name="memberDecl"/>
-          <next>
-            <element name="methodDeclaration"/>
+      <filter variable="cbd">
+        <filter>
+          <element name="classBodyDeclaration" mark="true"/>
+          <next type="INDIRECT">
+            <element name="fieldDeclaration"/>
           </next>
-        </next>
+        </filter>
       </filter>
     </from>
-    <to name="JavaSimplified::Method"/>
+    <to name="JavaSimplified::Field"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="typedMethod">
     <queries variable="methDecl">
       <filter>
         <element name="cbd"/>
@@ -277,20 +279,22 @@
         <value type="QUERY_RESULT" value="methStat"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="voidMethod">
     <from name="classBodyDeclaration" alias="cbd">
-      <filter>
-        <element name="classBodyDeclaration" mark="true"/>
-        <next>
-          <element name="memberDecl"/>
-          <expression xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-            <element name="Identifier"/>
-          </expression>
-        </next>
+      <filter variable="cbd">
+        <filter>
+          <element name="classBodyDeclaration" mark="true"/>
+          <next>
+            <element name="memberDecl"/>
+            <next>
+              <element name="methodDeclaration"/>
+            </next>
+          </next>
+        </filter>
       </filter>
     </from>
     <to name="JavaSimplified::Method"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="voidMethod">
     <queries variable="methDecl">
       <filter>
         <element name="cbd"/>
@@ -340,10 +344,22 @@
         <value type="QUERY_RESULT" value="methStat"/>
       </inits>
     </inits>
+    <from name="classBodyDeclaration" alias="cbd">
+      <filter variable="cbd">
+        <filter>
+          <element name="classBodyDeclaration" mark="true"/>
+          <next>
+            <element name="memberDecl"/>
+            <expression xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+              <element name="Identifier"/>
+            </expression>
+          </next>
+        </filter>
+      </filter>
+    </from>
+    <to name="JavaSimplified::Method"/>
   </rules>
-  <rules name="parameter">
-    <from name="formalParameterDecls" alias="fpd"/>
-    <to name="JavaSimplified::Parameter"/>
+  <rules xsi:type="Core:StandardRule" name="parameter">
     <queries variable="paramType">
       <filter>
         <element name="fpd"/>
@@ -379,33 +395,34 @@
         <value type="QUERY_RESULT" value="paramType"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="complexType">
-    <from name="type" alias="t">
-      <filter operation="UNIQUE">
-        <element name="type" mark="true"/>
-        <expression xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-          <element name="Identifier"/>
-        </expression>
+    <from name="formalParameterDecls" alias="fpd">
+      <filter variable="fpd">
+        <filter>
+          <element name="formalParameterDecls" mark="true"/>
+        </filter>
       </filter>
     </from>
-    <to name="JavaSimplified::Type"/>
+    <to name="JavaSimplified::Parameter"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="complexType">
     <inits>
       <inits xsi:type="Core:InitUnitElement" element="type">
         <value type="QUERY_ACCESS" value="t" extension="Identifier"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="primitiveType">
     <from name="type" alias="t">
-      <filter operation="UNIQUE">
-        <element name="type" mark="true"/>
-        <next>
-          <element name="primitiveType"/>
-        </next>
+      <filter variable="t">
+        <filter operation="UNIQUE">
+          <element name="type" mark="true"/>
+          <expression xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+            <element name="Identifier"/>
+          </expression>
+        </filter>
       </filter>
     </from>
     <to name="JavaSimplified::Type"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="primitiveType">
     <queries variable="ptype">
       <filter>
         <element name="t"/>
@@ -419,21 +436,19 @@
         <value type="QUERY_ACCESS" value="ptype" extension="TOKEN"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="returnStatement">
-    <from name="blockStatement" alias="bst">
-      <filter>
-        <element name="blockStatement" mark="true"/>
-        <next>
-          <element name="statement"/>
-          <expression xsi:type="Query:FilterExpressionUnit">
-            <element name="TOKEN"/>
-            <parameters value="return"/>
-          </expression>
-        </next>
+    <from name="type" alias="t">
+      <filter variable="t">
+        <filter operation="UNIQUE">
+          <element name="type" mark="true"/>
+          <next>
+            <element name="primitiveType"/>
+          </next>
+        </filter>
       </filter>
     </from>
-    <to name="JavaSimplified::ReturnStatement"/>
+    <to name="JavaSimplified::Type"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="returnStatement">
     <queries variable="retExp">
       <filter>
         <element name="bst"/>
@@ -450,20 +465,23 @@
         <value type="QUERY_RESULT" value="retExp"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="expressionStatement">
     <from name="blockStatement" alias="bst">
-      <filter>
-        <element name="blockStatement" mark="true"/>
-        <next>
-          <element name="statement"/>
+      <filter variable="bst">
+        <filter>
+          <element name="blockStatement" mark="true"/>
           <next>
-            <element name="statementExpression"/>
+            <element name="statement"/>
+            <expression xsi:type="Query:FilterExpressionUnit">
+              <element name="TOKEN"/>
+              <parameters value="return"/>
+            </expression>
           </next>
-        </next>
+        </filter>
       </filter>
     </from>
-    <to name="JavaSimplified::ExpressionStatement"/>
+    <to name="JavaSimplified::ReturnStatement"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="expressionStatement">
     <queries variable="e">
       <filter>
         <element name="bst"/>
@@ -486,17 +504,22 @@
         <value type="QUERY_RESULT" value="e"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="variableDeclarationStatement">
     <from name="blockStatement" alias="bst">
-      <filter>
-        <element name="blockStatement" mark="true"/>
-        <next>
-          <element name="localVariableDeclaration"/>
-        </next>
+      <filter variable="bst">
+        <filter>
+          <element name="blockStatement" mark="true"/>
+          <next>
+            <element name="statement"/>
+            <next>
+              <element name="statementExpression"/>
+            </next>
+          </next>
+        </filter>
       </filter>
     </from>
-    <to name="JavaSimplified::VariableDeclarationStatement"/>
+    <to name="JavaSimplified::ExpressionStatement"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="variableDeclarationStatement">
     <queries variable="lvd">
       <filter>
         <element name="bst"/>
@@ -560,26 +583,19 @@
         <value type="QUERY_RESULT" value="e"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="ifStatement">
     <from name="blockStatement" alias="bst">
-      <filter>
-        <element name="blockStatement" mark="true"/>
-        <next>
-          <element name="statement"/>
-          <expression xsi:type="Query:FilterExpressionComplex">
-            <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-              <element name="TOKEN"/>
-            </expressions>
-            <expressions xsi:type="Query:FilterExpressionUnit">
-              <element name="TOKEN"/>
-              <parameters value="if"/>
-            </expressions>
-          </expression>
-        </next>
+      <filter variable="bst">
+        <filter>
+          <element name="blockStatement" mark="true"/>
+          <next>
+            <element name="localVariableDeclaration"/>
+          </next>
+        </filter>
       </filter>
     </from>
-    <to name="JavaSimplified::IfStatement"/>
+    <to name="JavaSimplified::VariableDeclarationStatement"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="ifStatement">
     <queries variable="e">
       <filter>
         <element name="bst"/>
@@ -613,29 +629,28 @@
         <value type="QUERY_RESULT" value="st"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="methodCall">
-    <from name="primary" alias="pri">
-      <filter>
-        <element name="primary" mark="true"/>
-        <expression xsi:type="Query:FilterExpressionComplex">
-          <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-            <element name="Identifier"/>
-          </expressions>
-          <expressions xsi:type="Query:FilterExpressionUnit">
-            <element name="TOKEN"/>
-            <parameters value="."/>
-          </expressions>
-          <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-            <element name="Identifier" position="1"/>
-          </expressions>
-        </expression>
-        <next>
-          <element name="identifierSuffix"/>
-        </next>
+    <from name="blockStatement" alias="bst">
+      <filter variable="bst">
+        <filter>
+          <element name="blockStatement" mark="true"/>
+          <next>
+            <element name="statement"/>
+            <expression xsi:type="Query:FilterExpressionComplex">
+              <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+                <element name="TOKEN"/>
+              </expressions>
+              <expressions xsi:type="Query:FilterExpressionUnit">
+                <element name="TOKEN"/>
+                <parameters value="if"/>
+              </expressions>
+            </expression>
+          </next>
+        </filter>
       </filter>
     </from>
-    <to name="JavaSimplified::MethodCall"/>
+    <to name="JavaSimplified::IfStatement"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="methodCall">
     <queries variable="args">
       <filter>
         <element name="pri"/>
@@ -693,23 +708,31 @@
         <value type="QUERY_RESULT" value="child"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="selectorMethodCall">
-    <from name="selector" alias="sel">
-      <filter>
-        <element name="selector" mark="true"/>
-        <expression xsi:type="Query:FilterExpressionComplex">
-          <expressions xsi:type="Query:FilterExpressionUnit">
-            <element name="TOKEN"/>
-            <parameters value="."/>
-          </expressions>
-          <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-            <element name="Identifier"/>
-          </expressions>
-        </expression>
+    <from name="primary" alias="pri">
+      <filter variable="pri">
+        <filter>
+          <element name="primary" mark="true"/>
+          <expression xsi:type="Query:FilterExpressionComplex">
+            <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+              <element name="Identifier"/>
+            </expressions>
+            <expressions xsi:type="Query:FilterExpressionUnit">
+              <element name="TOKEN"/>
+              <parameters value="."/>
+            </expressions>
+            <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+              <element name="Identifier" position="1"/>
+            </expressions>
+          </expression>
+          <next>
+            <element name="identifierSuffix"/>
+          </next>
+        </filter>
       </filter>
     </from>
     <to name="JavaSimplified::MethodCall"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="selectorMethodCall">
     <queries variable="args">
       <filter>
         <element name="sel"/>
@@ -763,20 +786,25 @@
         <value type="QUERY_RESULT" value="child"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="thismethodCall">
-    <from name="primary" alias="pri">
-      <filter>
-        <element name="primary" mark="true"/>
-        <expression xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-          <element name="Identifier"/>
-        </expression>
-        <next>
-          <element name="identifierSuffix"/>
-        </next>
+    <from name="selector" alias="sel">
+      <filter variable="sel">
+        <filter>
+          <element name="selector" mark="true"/>
+          <expression xsi:type="Query:FilterExpressionComplex">
+            <expressions xsi:type="Query:FilterExpressionUnit">
+              <element name="TOKEN"/>
+              <parameters value="."/>
+            </expressions>
+            <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+              <element name="Identifier"/>
+            </expressions>
+          </expression>
+        </filter>
       </filter>
     </from>
     <to name="JavaSimplified::MethodCall"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="thismethodCall">
     <queries variable="args">
       <filter>
         <element name="pri"/>
@@ -804,17 +832,22 @@
         <value type="QUERY_ACCESS" value="pri" extension="Identifier"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="auxName">
-    <from name="primary" alias="p">
-      <filter>
-        <element name="primary" mark="true"/>
-        <expression xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-          <element name="Identifier"/>
-        </expression>
+    <from name="primary" alias="pri">
+      <filter variable="pri">
+        <filter>
+          <element name="primary" mark="true"/>
+          <expression xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+            <element name="Identifier"/>
+          </expression>
+          <next>
+            <element name="identifierSuffix"/>
+          </next>
+        </filter>
       </filter>
     </from>
-    <to name="JavaSimplified::Name"/>
+    <to name="JavaSimplified::MethodCall"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="auxName">
     <inits>
       <inits xsi:type="Core:InitUnitElement" element="identifier">
         <value type="QUERY_ACCESS" value="p" extension="Identifier"/>
@@ -823,24 +856,19 @@
         <value type="QUERY_ACCESS" value="p" extension="Identifier"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="orExpression">
-    <from name="expression" alias="ex">
-      <filter>
-        <element name="expression" mark="true"/>
-        <next>
-          <element name="conditionalExpression"/>
-          <next>
-            <element name="conditionalOrExpression"/>
-            <expression xsi:type="Query:FilterExpressionUnit">
-              <element name="TOKEN"/>
-              <parameters value="||"/>
-            </expression>
-          </next>
-        </next>
+    <from name="primary" alias="p">
+      <filter variable="p">
+        <filter>
+          <element name="primary" mark="true"/>
+          <expression xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+            <element name="Identifier"/>
+          </expression>
+        </filter>
       </filter>
     </from>
-    <to name="JavaSimplified::InfixExpression"/>
+    <to name="JavaSimplified::Name"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="orExpression">
     <queries variable="e1">
       <filter>
         <element name="ex"/>
@@ -880,31 +908,26 @@
         <value type="QUERY_RESULT" value="e2"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="parenmethodInvocationExpr">
-    <from name="expression" alias="expr">
-      <filter>
-        <element name="expression" mark="true"/>
-        <next type="INDIRECT">
-          <element name="parExpression"/>
-          <expression xsi:type="Query:FilterExpressionUnit">
-            <element name="TOKEN"/>
-            <parameters value="("/>
-          </expression>
-          <next type="INDIRECT">
-            <element name="primary"/>
-            <expression xsi:type="Query:FilterExpressionUnit">
-              <element name="TOKEN"/>
-              <parameters value="."/>
-            </expression>
+    <from name="expression" alias="ex">
+      <filter variable="ex">
+        <filter>
+          <element name="expression" mark="true"/>
+          <next>
+            <element name="conditionalExpression"/>
             <next>
-              <element name="identifierSuffix"/>
+              <element name="conditionalOrExpression"/>
+              <expression xsi:type="Query:FilterExpressionUnit">
+                <element name="TOKEN"/>
+                <parameters value="||"/>
+              </expression>
             </next>
           </next>
-        </next>
+        </filter>
       </filter>
     </from>
-    <to name="JavaSimplified::MethodInvocation"/>
+    <to name="JavaSimplified::InfixExpression"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="parenmethodInvocationExpr">
     <queries variable="pri">
       <filter>
         <element name="expr"/>
@@ -931,24 +954,33 @@
         <value type="QUERY_RESULT" value="pri"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="normalmethodInvocationExpr">
     <from name="expression" alias="expr">
-      <filter>
-        <element name="expression" mark="true"/>
-        <next type="INDIRECT">
-          <element name="primary"/>
-          <expression xsi:type="Query:FilterExpressionUnit">
-            <element name="TOKEN"/>
-            <parameters value="."/>
-          </expression>
-          <next>
-            <element name="identifierSuffix"/>
+      <filter variable="expr">
+        <filter>
+          <element name="expression" mark="true"/>
+          <next type="INDIRECT">
+            <element name="parExpression"/>
+            <expression xsi:type="Query:FilterExpressionUnit">
+              <element name="TOKEN"/>
+              <parameters value="("/>
+            </expression>
+            <next type="INDIRECT">
+              <element name="primary"/>
+              <expression xsi:type="Query:FilterExpressionUnit">
+                <element name="TOKEN"/>
+                <parameters value="."/>
+              </expression>
+              <next>
+                <element name="identifierSuffix"/>
+              </next>
+            </next>
           </next>
-        </next>
+        </filter>
       </filter>
     </from>
     <to name="JavaSimplified::MethodInvocation"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="normalmethodInvocationExpr">
     <queries variable="pri">
       <filter>
         <element name="expr"/>
@@ -968,24 +1000,26 @@
         <value type="QUERY_RESULT" value="pri"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="normalmethodInvocationExprSpecial">
-    <from name="conditionalAndExpression" alias="ce">
-      <filter>
-        <element name="conditionalAndExpression" mark="true"/>
-        <next type="INDIRECT">
-          <element name="primary"/>
-          <expression xsi:type="Query:FilterExpressionUnit">
-            <element name="TOKEN"/>
-            <parameters value="."/>
-          </expression>
-          <next>
-            <element name="identifierSuffix"/>
+    <from name="expression" alias="expr">
+      <filter variable="expr">
+        <filter>
+          <element name="expression" mark="true"/>
+          <next type="INDIRECT">
+            <element name="primary"/>
+            <expression xsi:type="Query:FilterExpressionUnit">
+              <element name="TOKEN"/>
+              <parameters value="."/>
+            </expression>
+            <next>
+              <element name="identifierSuffix"/>
+            </next>
           </next>
-        </next>
+        </filter>
       </filter>
     </from>
     <to name="JavaSimplified::MethodInvocation"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="normalmethodInvocationExprSpecial">
     <queries variable="pri">
       <filter>
         <element name="ce"/>
@@ -1005,20 +1039,26 @@
         <value type="QUERY_RESULT" value="pri"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="thismethodInvocationExpr">
-    <from name="expression" alias="expr">
-      <filter>
-        <element name="expression" mark="true"/>
-        <next type="INDIRECT">
-          <element name="primary"/>
-          <next>
-            <element name="identifierSuffix"/>
+    <from name="conditionalAndExpression" alias="ce">
+      <filter variable="ce">
+        <filter>
+          <element name="conditionalAndExpression" mark="true"/>
+          <next type="INDIRECT">
+            <element name="primary"/>
+            <expression xsi:type="Query:FilterExpressionUnit">
+              <element name="TOKEN"/>
+              <parameters value="."/>
+            </expression>
+            <next>
+              <element name="identifierSuffix"/>
+            </next>
           </next>
-        </next>
+        </filter>
       </filter>
     </from>
     <to name="JavaSimplified::MethodInvocation"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="thismethodInvocationExpr">
     <queries variable="pri">
       <filter>
         <element name="expr"/>
@@ -1035,17 +1075,22 @@
         <value type="QUERY_RESULT" value="pri"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="classInstanceCreationExpr">
     <from name="expression" alias="expr">
-      <filter>
-        <element name="expression" mark="true"/>
-        <next type="INDIRECT">
-          <element name="creator"/>
-        </next>
+      <filter variable="expr">
+        <filter>
+          <element name="expression" mark="true"/>
+          <next type="INDIRECT">
+            <element name="primary"/>
+            <next>
+              <element name="identifierSuffix"/>
+            </next>
+          </next>
+        </filter>
       </filter>
     </from>
-    <to name="JavaSimplified::ClassInstanceCreation"/>
+    <to name="JavaSimplified::MethodInvocation"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="classInstanceCreationExpr">
     <queries variable="crn" cast="type">
       <filter>
         <element name="cr"/>
@@ -1076,17 +1121,19 @@
         <value type="QUERY_RESULT" value="arg"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="assignmentExpr">
     <from name="expression" alias="expr">
-      <filter>
-        <element name="expression" mark="true"/>
-        <next>
-          <element name="assignmentOperator"/>
-        </next>
+      <filter variable="expr">
+        <filter>
+          <element name="expression" mark="true"/>
+          <next type="INDIRECT">
+            <element name="creator"/>
+          </next>
+        </filter>
       </filter>
     </from>
-    <to name="JavaSimplified::Assignment"/>
+    <to name="JavaSimplified::ClassInstanceCreation"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="assignmentExpr">
     <queries variable="e1">
       <filter>
         <element name="expr"/>
@@ -1125,17 +1172,19 @@
         <value type="QUERY_RESULT" value="e2"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="castExpression">
     <from name="expression" alias="expr">
-      <filter>
-        <element name="expression" mark="true"/>
-        <next type="INDIRECT">
-          <element name="castExpression"/>
-        </next>
+      <filter variable="expr">
+        <filter>
+          <element name="expression" mark="true"/>
+          <next>
+            <element name="assignmentOperator"/>
+          </next>
+        </filter>
       </filter>
     </from>
-    <to name="JavaSimplified::CastExpression"/>
+    <to name="JavaSimplified::Assignment"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="castExpression">
     <queries variable="cast">
       <filter>
         <element name="expr"/>
@@ -1171,29 +1220,19 @@
         <value type="QUERY_RESULT" value="t"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="leftThisExpr">
-    <from name="conditionalExpression" alias="expr">
-      <filter>
-        <element name="conditionalExpression" mark="true"/>
-        <next type="INDIRECT">
-          <element name="primary"/>
-          <expression xsi:type="Query:FilterExpressionComplex">
-            <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-              <element name="Identifier"/>
-            </expressions>
-            <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-              <element name="TOKEN"/>
-            </expressions>
-            <expressions xsi:type="Query:FilterExpressionUnit">
-              <element name="TOKEN"/>
-              <parameters value="this"/>
-            </expressions>
-          </expression>
-        </next>
+    <from name="expression" alias="expr">
+      <filter variable="expr">
+        <filter>
+          <element name="expression" mark="true"/>
+          <next type="INDIRECT">
+            <element name="castExpression"/>
+          </next>
+        </filter>
       </filter>
     </from>
-    <to name="JavaSimplified::FieldAccess"/>
+    <to name="JavaSimplified::CastExpression"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="leftThisExpr">
     <queries variable="pri">
       <filter>
         <element name="expr"/>
@@ -1230,20 +1269,31 @@
         <value type="QUERY_ACCESS" value="pri" extension="Identifier"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="nameCondExpr">
     <from name="conditionalExpression" alias="expr">
-      <filter>
-        <element name="conditionalExpression" mark="true"/>
-        <next type="INDIRECT">
-          <element name="primary"/>
-          <expression xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-            <element name="Identifier"/>
-          </expression>
-        </next>
+      <filter variable="expr">
+        <filter>
+          <element name="conditionalExpression" mark="true"/>
+          <next type="INDIRECT">
+            <element name="primary"/>
+            <expression xsi:type="Query:FilterExpressionComplex">
+              <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+                <element name="Identifier"/>
+              </expressions>
+              <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+                <element name="TOKEN"/>
+              </expressions>
+              <expressions xsi:type="Query:FilterExpressionUnit">
+                <element name="TOKEN"/>
+                <parameters value="this"/>
+              </expressions>
+            </expression>
+          </next>
+        </filter>
       </filter>
     </from>
-    <to name="JavaSimplified::Name"/>
+    <to name="JavaSimplified::FieldAccess"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="nameCondExpr">
     <queries variable="pri">
       <filter>
         <element name="expr"/>
@@ -1263,27 +1313,22 @@
         <value type="QUERY_ACCESS" value="pri" extension="Identifier"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="nameExpr">
-    <from name="expression" alias="expr">
-      <filter>
-        <element name="expression" mark="true"/>
-        <next type="INDIRECT">
-          <element name="primary"/>
-          <expression xsi:type="Query:FilterExpressionComplex">
-            <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+    <from name="conditionalExpression" alias="expr">
+      <filter variable="expr">
+        <filter>
+          <element name="conditionalExpression" mark="true"/>
+          <next type="INDIRECT">
+            <element name="primary"/>
+            <expression xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
               <element name="Identifier"/>
-            </expressions>
-            <expressions xsi:type="Query:FilterExpressionComplex" type="NOT">
-              <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-                <element name="TOKEN"/>
-              </expressions>
-            </expressions>
-          </expression>
-        </next>
+            </expression>
+          </next>
+        </filter>
       </filter>
     </from>
     <to name="JavaSimplified::Name"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="nameExpr">
     <queries variable="pri">
       <filter>
         <element name="expr"/>
@@ -1310,20 +1355,29 @@
         <value type="QUERY_ACCESS" value="pri" extension="Identifier"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="constantExpr">
     <from name="expression" alias="expr">
-      <filter>
-        <element name="expression" mark="true"/>
-        <next type="INDIRECT">
-          <element name="primary"/>
-          <expression xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-            <element name="Identifier"/>
-          </expression>
-        </next>
+      <filter variable="expr">
+        <filter>
+          <element name="expression" mark="true"/>
+          <next type="INDIRECT">
+            <element name="primary"/>
+            <expression xsi:type="Query:FilterExpressionComplex">
+              <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+                <element name="Identifier"/>
+              </expressions>
+              <expressions xsi:type="Query:FilterExpressionComplex" type="NOT">
+                <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+                  <element name="TOKEN"/>
+                </expressions>
+              </expressions>
+            </expression>
+          </next>
+        </filter>
       </filter>
     </from>
     <to name="JavaSimplified::Name"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="constantExpr">
     <inits>
       <inits xsi:type="Core:InitUnitElement" element="identifier">
         <value type="OPERATION_CODE" value="expr"/>
@@ -1332,20 +1386,22 @@
         <value type="OPERATION_CODE" value="expr"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="booleanLiteralExpr">
     <from name="expression" alias="expr">
-      <filter>
-        <element name="expression" mark="true"/>
-        <next type="INDIRECT">
-          <element name="booleanLiteral"/>
-          <expression xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-            <element name="TOKEN"/>
-          </expression>
-        </next>
+      <filter variable="expr">
+        <filter>
+          <element name="expression" mark="true"/>
+          <next type="INDIRECT">
+            <element name="primary"/>
+            <expression xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+              <element name="Identifier"/>
+            </expression>
+          </next>
+        </filter>
       </filter>
     </from>
-    <to name="JavaSimplified::Literal"/>
+    <to name="JavaSimplified::Name"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="booleanLiteralExpr">
     <queries variable="bool">
       <filter>
         <element name="expr"/>
@@ -1368,20 +1424,22 @@
         <value type="QUERY_ACCESS" value="bool" extension="TOKEN"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="stringLiteralExpr">
     <from name="expression" alias="expr">
-      <filter>
-        <element name="expression" mark="true"/>
-        <next type="INDIRECT">
-          <element name="literal"/>
-          <expression xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-            <element name="StringLiteral"/>
-          </expression>
-        </next>
+      <filter variable="expr">
+        <filter>
+          <element name="expression" mark="true"/>
+          <next type="INDIRECT">
+            <element name="booleanLiteral"/>
+            <expression xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+              <element name="TOKEN"/>
+            </expression>
+          </next>
+        </filter>
       </filter>
     </from>
     <to name="JavaSimplified::Literal"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="stringLiteralExpr">
     <queries variable="strl">
       <filter>
         <element name="expr"/>
@@ -1404,30 +1462,46 @@
         <value type="OPERATION_REMOVE_QUOTES" value="strl" extension="StringLiteral"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="nullLiteralExpr">
     <from name="expression" alias="expr">
-      <filter>
-        <element name="expression" mark="true"/>
-        <next type="INDIRECT">
-          <element name="literal"/>
-          <expression xsi:type="Query:FilterExpressionComplex">
-            <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-              <element name="TOKEN"/>
-            </expressions>
-            <expressions xsi:type="Query:FilterExpressionUnit">
-              <element name="TOKEN"/>
-              <parameters value="null"/>
-            </expressions>
-          </expression>
-        </next>
+      <filter variable="expr">
+        <filter>
+          <element name="expression" mark="true"/>
+          <next type="INDIRECT">
+            <element name="literal"/>
+            <expression xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+              <element name="StringLiteral"/>
+            </expression>
+          </next>
+        </filter>
       </filter>
     </from>
     <to name="JavaSimplified::Literal"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="nullLiteralExpr">
     <inits>
       <inits xsi:type="Core:InitUnitElement" element="type">
         <value value="NULL"/>
       </inits>
     </inits>
+    <from name="expression" alias="expr">
+      <filter variable="expr">
+        <filter>
+          <element name="expression" mark="true"/>
+          <next type="INDIRECT">
+            <element name="literal"/>
+            <expression xsi:type="Query:FilterExpressionComplex">
+              <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+                <element name="TOKEN"/>
+              </expressions>
+              <expressions xsi:type="Query:FilterExpressionUnit">
+                <element name="TOKEN"/>
+                <parameters value="null"/>
+              </expressions>
+            </expression>
+          </next>
+        </filter>
+      </filter>
+    </from>
+    <to name="JavaSimplified::Literal"/>
   </rules>
-</Core:ViewDefinition>
+</Core:Transformation>

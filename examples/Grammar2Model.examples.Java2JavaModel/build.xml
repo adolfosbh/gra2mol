@@ -61,7 +61,9 @@
     	<pathelement location="./lib/org.eclipse.net4j_2.0.0.v200906160348.jar"/>
     	<pathelement location="./lib/org.eclipse.net4j.tcp_2.0.0.v200906160348.jar"/>
     	<pathelement location="./lib/org.eclipse.net4j.util_2.0.0.v200906160348.jar"/>
-    	<pathelement location="./lib/gra2mol.jar"/>
+    	<pathelement location="./lib/org.eclipse.gmt.modisco.jar"/>
+    	<pathelement location="./lib/gts.modernization.grammar2Model.jar"/>
+    	<pathelement location="./lib/gts.modernization.grammar2Model.antTasks.jar"/>
      	<pathelement location="${binDir}/."/>
    	</path>
 	
