@@ -3,7 +3,7 @@
   <files language="Java">
     <fragments xsi:type="astm:AggregateTypeDefinition">
       <name nameString="ActionLogin"/>
-      <aggregateType xsi:type="astm:SpecificClassType" package="actionsstruts ">
+      <aggregateType xsi:type="astm:SpecificClassType" package="actionsstruts">
         <members xsi:type="astm:FunctionDefinition">
           <identifierName nameString="execute"/>
           <returnType xsi:type="astm:NamedTypeReference">
@@ -62,7 +62,7 @@
                       <name nameString="equals"/>
                     </expressionType>
                     <actualParams xsi:type="astm:ActualParameterExpression">
-                      <value xsi:type="astm:Literal" value="&quot;user&quot; "/>
+                      <value xsi:type="astm:Literal" value="&quot;user&quot;"/>
                     </actualParams>
                   </calledFunction>
                 </calledFunction>
@@ -80,7 +80,7 @@
                       <name nameString="equals"/>
                     </expressionType>
                     <actualParams xsi:type="astm:ActualParameterExpression">
-                      <value xsi:type="astm:Literal" value="&quot;user&quot; "/>
+                      <value xsi:type="astm:Literal" value="&quot;user&quot;"/>
                     </actualParams>
                   </calledFunction>
                 </calledFunction>
@@ -101,7 +101,7 @@
                         <name nameString="println"/>
                       </expressionType>
                       <actualParams xsi:type="astm:ActualParameterExpression">
-                        <value xsi:type="astm:Literal" value="&quot;Usuario logged-in&quot; "/>
+                        <value xsi:type="astm:Literal" value="&quot;Usuario logged-in&quot;"/>
                       </actualParams>
                     </calledFunction>
                   </calledFunction>
@@ -123,10 +123,10 @@
                     <name nameString="setAttribute"/>
                   </expressionType>
                   <actualParams xsi:type="astm:ActualParameterExpression">
-                    <value xsi:type="astm:Literal" value="&quot;usuario&quot; "/>
+                    <value xsi:type="astm:Literal" value="&quot;usuario&quot;"/>
                   </actualParams>
                   <actualParams xsi:type="astm:ActualParameterExpression">
-                    <value xsi:type="astm:Literal" value="&quot;invitado&quot; "/>
+                    <value xsi:type="astm:Literal" value="&quot;invitado&quot;"/>
                   </actualParams>
                 </calledFunction>
               </calledFunction>
@@ -147,12 +147,12 @@
                       <name nameString="getAttribute"/>
                     </expressionType>
                     <actualParams xsi:type="astm:ActualParameterExpression">
-                      <value xsi:type="astm:Literal" value="&quot;datosPublicacion&quot; "/>
+                      <value xsi:type="astm:Literal" value="&quot;datosPublicacion&quot;"/>
                     </actualParams>
                   </calledFunction>
                 </calledFunction>
               </leftOperand>
-              <rightOperand xsi:type="astm:Literal" value="null "/>
+              <rightOperand xsi:type="astm:Literal" value="null"/>
             </condition>
             <thenBody xsi:type="astm:ReturnStatement">
               <returnValue xsi:type="astm:FunctionCallExpression">
@@ -164,7 +164,7 @@
                     <name nameString="findForward"/>
                   </expressionType>
                   <actualParams xsi:type="astm:ActualParameterExpression">
-                    <value xsi:type="astm:Literal" value="&quot;publicar&quot; "/>
+                    <value xsi:type="astm:Literal" value="&quot;publicar&quot;"/>
                   </actualParams>
                 </calledFunction>
               </returnValue>
@@ -179,25 +179,25 @@
                     <name nameString="findForward"/>
                   </expressionType>
                   <actualParams xsi:type="astm:ActualParameterExpression">
-                    <value xsi:type="astm:Literal" value="&quot;exito&quot; "/>
+                    <value xsi:type="astm:Literal" value="&quot;exito&quot;"/>
                   </actualParams>
                 </calledFunction>
               </returnValue>
             </elseBody>
           </body>
         </members>
-        <imports>import beansstruts . BeanLogin ; </imports>
-        <imports>import javax . servlet . http . HttpServletRequest ; </imports>
-        <imports>import javax . servlet . http . HttpServletResponse ; </imports>
-        <imports>import org . apache . struts . action . Action ; </imports>
-        <imports>import org . apache . struts . action . ActionForm ; </imports>
-        <imports>import org . apache . struts . action . ActionForward ; </imports>
-        <imports>import org . apache . struts . action . ActionMapping ; </imports>
+        <imports>import beansstruts . BeanLogin ;</imports>
+        <imports>import javax . servlet . http . HttpServletRequest ;</imports>
+        <imports>import javax . servlet . http . HttpServletResponse ;</imports>
+        <imports>import org . apache . struts . action . Action ;</imports>
+        <imports>import org . apache . struts . action . ActionForm ;</imports>
+        <imports>import org . apache . struts . action . ActionForward ;</imports>
+        <imports>import org . apache . struts . action . ActionMapping ;</imports>
       </aggregateType>
     </fragments>
     <fragments xsi:type="astm:AggregateTypeDefinition">
       <name nameString="ActionPublicarNoticia"/>
-      <aggregateType xsi:type="astm:SpecificClassType" package="actionsstruts ">
+      <aggregateType xsi:type="astm:SpecificClassType" package="actionsstruts">
         <members xsi:type="astm:FunctionDefinition">
           <identifierName nameString="execute"/>
           <returnType xsi:type="astm:NamedTypeReference">
@@ -255,12 +255,12 @@
                       <name nameString="getAttribute"/>
                     </expressionType>
                     <actualParams xsi:type="astm:ActualParameterExpression">
-                      <value xsi:type="astm:Literal" value="&quot;usuario&quot; "/>
+                      <value xsi:type="astm:Literal" value="&quot;usuario&quot;"/>
                     </actualParams>
                   </calledFunction>
                 </calledFunction>
               </leftOperand>
-              <rightOperand xsi:type="astm:Literal" value="null "/>
+              <rightOperand xsi:type="astm:Literal" value="null"/>
             </condition>
             <thenBody xsi:type="astm:BlockStatement">
               <subStatements xsi:type="astm:ExpressionStatement">
@@ -277,7 +277,7 @@
                         <name nameString="setAttribute"/>
                       </expressionType>
                       <actualParams xsi:type="astm:ActualParameterExpression">
-                        <value xsi:type="astm:Literal" value="&quot;datosPublicacion&quot; "/>
+                        <value xsi:type="astm:Literal" value="&quot;datosPublicacion&quot;"/>
                       </actualParams>
                       <actualParams xsi:type="astm:ActualParameterExpression">
                         <value xsi:type="astm:IdentifierReference">
@@ -298,7 +298,7 @@
                       <name nameString="findForward"/>
                     </expressionType>
                     <actualParams xsi:type="astm:ActualParameterExpression">
-                      <value xsi:type="astm:Literal" value="&quot;login&quot; "/>
+                      <value xsi:type="astm:Literal" value="&quot;login&quot;"/>
                     </actualParams>
                   </calledFunction>
                 </returnValue>
@@ -325,7 +325,7 @@
                         <name nameString="getAttribute"/>
                       </expressionType>
                       <actualParams xsi:type="astm:ActualParameterExpression">
-                        <value xsi:type="astm:Literal" value="&quot;datosPublicacion&quot; "/>
+                        <value xsi:type="astm:Literal" value="&quot;datosPublicacion&quot;"/>
                       </actualParams>
                     </calledFunction>
                   </calledFunction>
@@ -338,7 +338,7 @@
               <leftOperand xsi:type="astm:IdentifierReference">
                 <name nameString="datos"/>
               </leftOperand>
-              <rightOperand xsi:type="astm:Literal" value="null "/>
+              <rightOperand xsi:type="astm:Literal" value="null"/>
             </condition>
             <thenBody xsi:type="astm:BlockStatement">
               <subStatements xsi:type="astm:ExpressionStatement">
@@ -366,10 +366,10 @@
                         <name nameString="setAttribute"/>
                       </expressionType>
                       <actualParams xsi:type="astm:ActualParameterExpression">
-                        <value xsi:type="astm:Literal" value="&quot;datosPublicacion&quot; "/>
+                        <value xsi:type="astm:Literal" value="&quot;datosPublicacion&quot;"/>
                       </actualParams>
                       <actualParams xsi:type="astm:ActualParameterExpression">
-                        <value xsi:type="astm:Literal" value="null "/>
+                        <value xsi:type="astm:Literal" value="null"/>
                       </actualParams>
                     </calledFunction>
                   </calledFunction>
@@ -440,22 +440,22 @@
                   <name nameString="findForward"/>
                 </expressionType>
                 <actualParams xsi:type="astm:ActualParameterExpression">
-                  <value xsi:type="astm:Literal" value="&quot;exito&quot; "/>
+                  <value xsi:type="astm:Literal" value="&quot;exito&quot;"/>
                 </actualParams>
               </calledFunction>
             </returnValue>
           </body>
         </members>
-        <imports>import beansstruts . BeanTablon ; </imports>
-        <imports>import controladores . ControladorNoticias ; </imports>
-        <imports>import javax . servlet . http . HttpServletRequest ; </imports>
-        <imports>import javax . servlet . http . HttpServletResponse ; </imports>
-        <imports>import org . apache . struts . action . * ; </imports>
+        <imports>import beansstruts . BeanTablon ;</imports>
+        <imports>import controladores . ControladorNoticias ;</imports>
+        <imports>import javax . servlet . http . HttpServletRequest ;</imports>
+        <imports>import javax . servlet . http . HttpServletResponse ;</imports>
+        <imports>import org . apache . struts . action . * ;</imports>
       </aggregateType>
     </fragments>
     <fragments xsi:type="astm:AggregateTypeDefinition">
       <name nameString="ActionVerNoticia"/>
-      <aggregateType xsi:type="astm:SpecificClassType" package="actionsstruts ">
+      <aggregateType xsi:type="astm:SpecificClassType" package="actionsstruts">
         <members xsi:type="astm:FunctionDefinition">
           <identifierName nameString="execute"/>
           <returnType xsi:type="astm:NamedTypeReference">
@@ -543,7 +543,7 @@
                   <name nameString="setTitulo"/>
                 </expressionType>
                 <actualParams xsi:type="astm:ActualParameterExpression">
-                  <value xsi:type="astm:Literal" value="&quot;&quot; "/>
+                  <value xsi:type="astm:Literal" value="&quot;&quot;"/>
                 </actualParams>
               </calledFunction>
             </expression>
@@ -558,7 +558,7 @@
                   <name nameString="setContenido"/>
                 </expressionType>
                 <actualParams xsi:type="astm:ActualParameterExpression">
-                  <value xsi:type="astm:Literal" value="&quot;&quot; "/>
+                  <value xsi:type="astm:Literal" value="&quot;&quot;"/>
                 </actualParams>
               </calledFunction>
             </expression>
@@ -573,7 +573,7 @@
                   <name nameString="setAutor"/>
                 </expressionType>
                 <actualParams xsi:type="astm:ActualParameterExpression">
-                  <value xsi:type="astm:Literal" value="&quot;&quot; "/>
+                  <value xsi:type="astm:Literal" value="&quot;&quot;"/>
                 </actualParams>
               </calledFunction>
             </expression>
@@ -588,7 +588,7 @@
                   <name nameString="setAttribute"/>
                 </expressionType>
                 <actualParams xsi:type="astm:ActualParameterExpression">
-                  <value xsi:type="astm:Literal" value="&quot;noticia&quot; "/>
+                  <value xsi:type="astm:Literal" value="&quot;noticia&quot;"/>
                 </actualParams>
                 <actualParams xsi:type="astm:ActualParameterExpression">
                   <value xsi:type="astm:IdentifierReference">
@@ -608,49 +608,49 @@
                   <name nameString="findForward"/>
                 </expressionType>
                 <actualParams xsi:type="astm:ActualParameterExpression">
-                  <value xsi:type="astm:Literal" value="&quot;verNoticia&quot; "/>
+                  <value xsi:type="astm:Literal" value="&quot;verNoticia&quot;"/>
                 </actualParams>
               </calledFunction>
             </returnValue>
           </body>
         </members>
-        <imports>import beansstruts . BeanTablon ; </imports>
-        <imports>import controladores . ControladorNoticias ; </imports>
-        <imports>import javax . servlet . http . * ; </imports>
-        <imports>import logicaNegocio . Noticia ; </imports>
-        <imports>import org . apache . struts . action . * ; </imports>
+        <imports>import beansstruts . BeanTablon ;</imports>
+        <imports>import controladores . ControladorNoticias ;</imports>
+        <imports>import javax . servlet . http . * ;</imports>
+        <imports>import logicaNegocio . Noticia ;</imports>
+        <imports>import org . apache . struts . action . * ;</imports>
       </aggregateType>
     </fragments>
     <fragments xsi:type="astm:AggregateTypeDefinition">
       <name nameString="BeanTablon"/>
-      <aggregateType xsi:type="astm:SpecificClassType" package="beansstruts ">
+      <aggregateType xsi:type="astm:SpecificClassType" package="beansstruts">
         <members xsi:type="astm:VariableDefinition">
           <identifierName nameString="tituloSeleccionado"/>
           <definitionType xsi:type="astm:UnnamedTypeReference">
             <type xsi:type="astm:String"/>
           </definitionType>
-          <initialValue xsi:type="astm:Literal" value="&quot;&quot; "/>
+          <initialValue xsi:type="astm:Literal" value="&quot;&quot;"/>
         </members>
         <members xsi:type="astm:VariableDefinition">
           <identifierName nameString="titulo"/>
           <definitionType xsi:type="astm:UnnamedTypeReference">
             <type xsi:type="astm:String"/>
           </definitionType>
-          <initialValue xsi:type="astm:Literal" value="&quot;&quot; "/>
+          <initialValue xsi:type="astm:Literal" value="&quot;&quot;"/>
         </members>
         <members xsi:type="astm:VariableDefinition">
           <identifierName nameString="contenido"/>
           <definitionType xsi:type="astm:UnnamedTypeReference">
             <type xsi:type="astm:String"/>
           </definitionType>
-          <initialValue xsi:type="astm:Literal" value="&quot;&quot; "/>
+          <initialValue xsi:type="astm:Literal" value="&quot;&quot;"/>
         </members>
         <members xsi:type="astm:VariableDefinition">
           <identifierName nameString="autor"/>
           <definitionType xsi:type="astm:UnnamedTypeReference">
             <type xsi:type="astm:String"/>
           </definitionType>
-          <initialValue xsi:type="astm:Literal" value="&quot;&quot; "/>
+          <initialValue xsi:type="astm:Literal" value="&quot;&quot;"/>
         </members>
         <members xsi:type="astm:FunctionDefinition">
           <identifierName nameString="validate"/>
@@ -725,7 +725,7 @@
                         <name nameString="ActionError"/>
                       </newType>
                       <actualParams xsi:type="astm:ActualParameterExpression">
-                        <value xsi:type="astm:Literal" value="&quot;tablon.error&quot; "/>
+                        <value xsi:type="astm:Literal" value="&quot;tablon.error&quot;"/>
                       </actualParams>
                     </value>
                   </actualParams>
@@ -759,7 +759,7 @@
                     <name nameString="contains"/>
                   </expressionType>
                   <actualParams xsi:type="astm:ActualParameterExpression">
-                    <value xsi:type="astm:Literal" value="&quot;$&quot; "/>
+                    <value xsi:type="astm:Literal" value="&quot;$&quot;"/>
                   </actualParams>
                 </calledFunction>
               </leftOperand>
@@ -772,17 +772,17 @@
                     <name nameString="contains"/>
                   </expressionType>
                   <actualParams xsi:type="astm:ActualParameterExpression">
-                    <value xsi:type="astm:Literal" value="&quot;#&quot; "/>
+                    <value xsi:type="astm:Literal" value="&quot;#&quot;"/>
                   </actualParams>
                 </calledFunction>
               </rightOperand>
             </condition>
             <thenBody xsi:type="astm:ReturnStatement">
-              <returnValue xsi:type="astm:Literal" value="true "/>
+              <returnValue xsi:type="astm:Literal" value="true"/>
             </thenBody>
           </body>
           <body xsi:type="astm:ReturnStatement">
-            <returnValue xsi:type="astm:Literal" value="false "/>
+            <returnValue xsi:type="astm:Literal" value="false"/>
           </body>
         </members>
         <members xsi:type="astm:FunctionDefinition">
@@ -852,7 +852,7 @@
             <type xsi:type="astm:String"/>
           </returnType>
           <body xsi:type="astm:ReturnStatement">
-            <returnValue xsi:type="astm:IdentifierReference" refersTo="//@files.0/@fragments.3/@aggregateType/@members.1">
+            <returnValue xsi:type="astm:IdentifierReference">
               <name nameString="titulo"/>
             </returnValue>
           </body>
@@ -888,7 +888,7 @@
             <type xsi:type="astm:String"/>
           </returnType>
           <body xsi:type="astm:ReturnStatement">
-            <returnValue xsi:type="astm:IdentifierReference" refersTo="//@files.0/@fragments.3/@aggregateType/@members.2">
+            <returnValue xsi:type="astm:IdentifierReference">
               <name nameString="contenido"/>
             </returnValue>
           </body>
@@ -924,13 +924,13 @@
             <type xsi:type="astm:String"/>
           </returnType>
           <body xsi:type="astm:ReturnStatement">
-            <returnValue xsi:type="astm:IdentifierReference" refersTo="//@files.0/@fragments.3/@aggregateType/@members.3">
+            <returnValue xsi:type="astm:IdentifierReference">
               <name nameString="autor"/>
             </returnValue>
           </body>
         </members>
-        <imports>import javax . servlet . http . HttpServletRequest ; </imports>
-        <imports>import org . apache . struts . action . * ; </imports>
+        <imports>import javax . servlet . http . HttpServletRequest ;</imports>
+        <imports>import org . apache . struts . action . * ;</imports>
       </aggregateType>
     </fragments>
   </files>

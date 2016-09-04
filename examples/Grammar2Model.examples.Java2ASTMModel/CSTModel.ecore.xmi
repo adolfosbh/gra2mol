@@ -3,8 +3,8 @@
     xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:CST="http://gts.inf.um.es/modernization/cst" kind="CST">
   <children xsi:type="CST:Node" kind="file">
-    <children xsi:type="CST:Leaf" kind="path" value="/Users/jlcanovas/Desktop/eclipse-3.5-64b/workspace/Grammar2Model.examples.Java2ASTMModel/files/src/ActionLogin.java"/>
-    <children xsi:type="CST:Leaf" kind="filename" value="ActionLogin.java"/>
+    <children xsi:type="CST:Leaf" kind="path" value="D:\git\gra2mol\examples\Grammar2Model.examples.Java2ASTMModel\files\src\ActionLogin.java"/>
+    <children xsi:type="CST:Leaf" kind="filename" value="D:\git\gra2mol\examples\Grammar2Model.examples.Java2ASTMModel\files\src\ActionLogin.java"/>
     <children xsi:type="CST:Node" kind="compilationUnit">
       <children xsi:type="CST:Node" kind="packageDeclaration">
         <children xsi:type="CST:Leaf" kind="TOKEN" value="package" line="1"/>
@@ -1610,8 +1610,8 @@
     </children>
   </children>
   <children xsi:type="CST:Node" kind="file">
-    <children xsi:type="CST:Leaf" kind="path" value="/Users/jlcanovas/Desktop/eclipse-3.5-64b/workspace/Grammar2Model.examples.Java2ASTMModel/files/src/ActionPublicarNoticia.java"/>
-    <children xsi:type="CST:Leaf" kind="filename" value="ActionPublicarNoticia.java"/>
+    <children xsi:type="CST:Leaf" kind="path" value="D:\git\gra2mol\examples\Grammar2Model.examples.Java2ASTMModel\files\src\ActionPublicarNoticia.java"/>
+    <children xsi:type="CST:Leaf" kind="filename" value="D:\git\gra2mol\examples\Grammar2Model.examples.Java2ASTMModel\files\src\ActionPublicarNoticia.java"/>
     <children xsi:type="CST:Node" kind="compilationUnit">
       <children xsi:type="CST:Node" kind="packageDeclaration">
         <children xsi:type="CST:Leaf" kind="TOKEN" value="package" line="1"/>
@@ -4015,8 +4015,8 @@
     </children>
   </children>
   <children xsi:type="CST:Node" kind="file">
-    <children xsi:type="CST:Leaf" kind="path" value="/Users/jlcanovas/Desktop/eclipse-3.5-64b/workspace/Grammar2Model.examples.Java2ASTMModel/files/src/ActionVerNoticia.java"/>
-    <children xsi:type="CST:Leaf" kind="filename" value="ActionVerNoticia.java"/>
+    <children xsi:type="CST:Leaf" kind="path" value="D:\git\gra2mol\examples\Grammar2Model.examples.Java2ASTMModel\files\src\ActionVerNoticia.java"/>
+    <children xsi:type="CST:Leaf" kind="filename" value="D:\git\gra2mol\examples\Grammar2Model.examples.Java2ASTMModel\files\src\ActionVerNoticia.java"/>
     <children xsi:type="CST:Node" kind="compilationUnit">
       <children xsi:type="CST:Node" kind="packageDeclaration">
         <children xsi:type="CST:Leaf" kind="TOKEN" value="package" line="1"/>
@@ -5455,8 +5455,8 @@
     </children>
   </children>
   <children xsi:type="CST:Node" kind="file">
-    <children xsi:type="CST:Leaf" kind="path" value="/Users/jlcanovas/Desktop/eclipse-3.5-64b/workspace/Grammar2Model.examples.Java2ASTMModel/files/src/BeanTablon.java"/>
-    <children xsi:type="CST:Leaf" kind="filename" value="BeanTablon.java"/>
+    <children xsi:type="CST:Leaf" kind="path" value="D:\git\gra2mol\examples\Grammar2Model.examples.Java2ASTMModel\files\src\BeanTablon.java"/>
+    <children xsi:type="CST:Leaf" kind="filename" value="D:\git\gra2mol\examples\Grammar2Model.examples.Java2ASTMModel\files\src\BeanTablon.java"/>
     <children xsi:type="CST:Node" kind="compilationUnit">
       <children xsi:type="CST:Node" kind="packageDeclaration">
         <children xsi:type="CST:Leaf" kind="TOKEN" value="package" line="1"/>
@@ -5898,7 +5898,7 @@
                                                                             kind="creator">
                                                                           <children
                                                                               xsi:type="CST:Node"
-                                                                              kind="createdName">
+                                                                              kind="type">
                                                                             <children
                                                                                 xsi:type="CST:Leaf"
                                                                                 kind="Identifier"
@@ -6311,7 +6311,7 @@
                                                                                                               kind="creator">
                                                                                                             <children
                                                                                                                 xsi:type="CST:Node"
-                                                                                                                kind="createdName">
+                                                                                                                kind="type">
                                                                                                               <children
                                                                                                                   xsi:type="CST:Leaf"
                                                                                                                   kind="Identifier"

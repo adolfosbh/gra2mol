@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Core:ViewDefinition xmi:version="2.0"
+<Core:Transformation xmi:version="2.0"
     xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:Core="http://gts.inf.um.es/modernization/gra2mol/core" xmlns:Query="http://gts.inf.um.es/modernization/gra2mol/query">
-  <rules name="mapProject">
-    <from name="ccompilationUnit" alias="sf"/>
-    <to name="Project"/>
+  <rules xsi:type="Core:StandardRule" name="mapProject">
     <queries variable="cu">
       <filter type="INDIRECT">
         <element name="CST" mark="true"/>
@@ -15,10 +13,16 @@
         <value type="QUERY_RESULT" value="cu"/>
       </inits>
     </inits>
+    <from name="compilationUnit" alias="sf">
+      <filter variable="sf">
+        <filter>
+          <element name="compilationUnit" mark="true"/>
+        </filter>
+      </filter>
+    </from>
+    <to name="Project"/>
   </rules>
-  <rules name="mapCompilationUnit">
-    <from name="CST" alias="cst"/>
-    <to name="CompilationUnit"/>
+  <rules xsi:type="Core:StandardRule" name="mapCompilationUnit">
     <queries variable="elements">
       <filter>
         <element name="cst"/>
@@ -35,17 +39,16 @@
         <value type="QUERY_RESULT" value="elements"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="mapClass">
-    <from name="classOrInterfaceDeclaration" alias="coid">
-      <filter>
-        <element name="classOrInterfaceDeclaration" mark="true"/>
-        <next type="INDIRECT">
-          <element name="normalClassDeclaration"/>
-        </next>
+    <from name="CST" alias="cst">
+      <filter variable="cst">
+        <filter>
+          <element name="CST" mark="true"/>
+        </filter>
       </filter>
     </from>
-    <to name="AggregateTypeDefinition"/>
+    <to name="CompilationUnit"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="mapClass">
     <queries variable="name">
       <filter>
         <element name="coid"/>
@@ -128,20 +131,19 @@
         <value type="OPERATION_CODE" value="impts"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="mapInstanceVariable">
-    <from name="classBodyDeclaration" alias="cbd">
-      <filter>
-        <element name="classBodyDeclaration" mark="true"/>
-        <next>
-          <element name="memberDecl"/>
-          <next>
-            <element name="fieldDeclaration"/>
+    <from name="classOrInterfaceDeclaration" alias="coid">
+      <filter variable="coid">
+        <filter>
+          <element name="classOrInterfaceDeclaration" mark="true"/>
+          <next type="INDIRECT">
+            <element name="normalClassDeclaration"/>
           </next>
-        </next>
+        </filter>
       </filter>
     </from>
-    <to name="VariableDefinition"/>
+    <to name="AggregateTypeDefinition"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="mapInstanceVariable">
     <queries variable="name">
       <filter>
         <element name="cbd"/>
@@ -193,20 +195,22 @@
         <value type="OPERATION_CALL" value="mapTypeReference" extension="type"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="mapTypedMethod">
     <from name="classBodyDeclaration" alias="cbd">
-      <filter>
-        <element name="classBodyDeclaration" mark="true"/>
-        <next>
-          <element name="memberDecl"/>
+      <filter variable="cbd">
+        <filter>
+          <element name="classBodyDeclaration" mark="true"/>
           <next>
-            <element name="methodDeclaration"/>
+            <element name="memberDecl"/>
+            <next>
+              <element name="fieldDeclaration"/>
+            </next>
           </next>
-        </next>
+        </filter>
       </filter>
     </from>
-    <to name="FunctionDefinition"/>
+    <to name="VariableDefinition"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="mapTypedMethod">
     <queries variable="name">
       <filter>
         <element name="cbd"/>
@@ -263,20 +267,22 @@
         <value type="OPERATION_CALL" value="mapTypeReference" extension="rtype"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="voidMethod">
     <from name="classBodyDeclaration" alias="cbd">
-      <filter>
-        <element name="classBodyDeclaration" mark="true"/>
-        <next>
-          <element name="memberDecl"/>
-          <expression xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-            <element name="Identifier"/>
-          </expression>
-        </next>
+      <filter variable="cbd">
+        <filter>
+          <element name="classBodyDeclaration" mark="true"/>
+          <next>
+            <element name="memberDecl"/>
+            <next>
+              <element name="methodDeclaration"/>
+            </next>
+          </next>
+        </filter>
       </filter>
     </from>
     <to name="FunctionDefinition"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="voidMethod">
     <queries variable="name">
       <filter>
         <element name="cbd"/>
@@ -319,10 +325,22 @@
         <value type="QUERY_RESULT" value="stats"/>
       </inits>
     </inits>
+    <from name="classBodyDeclaration" alias="cbd">
+      <filter variable="cbd">
+        <filter>
+          <element name="classBodyDeclaration" mark="true"/>
+          <next>
+            <element name="memberDecl"/>
+            <expression xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+              <element name="Identifier"/>
+            </expression>
+          </next>
+        </filter>
+      </filter>
+    </from>
+    <to name="FunctionDefinition"/>
   </rules>
-  <rules name="mapsFormalParameterDefinition">
-    <from name="formalParameterDecls" alias="fpd"/>
-    <to name="FormalParameterDefinition"/>
+  <rules xsi:type="Core:StandardRule" name="mapsFormalParameterDefinition">
     <queries variable="name">
       <filter>
         <element name="fpd"/>
@@ -354,27 +372,35 @@
         <value type="OPERATION_CALL" value="mapTypeReference" extension="type"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="mapsStringTypeReference">
-    <from name="type" alias="t">
-      <filter>
-        <element name="type" mark="true"/>
-        <expression xsi:type="Query:FilterExpressionUnit">
-          <element name="Identifier"/>
-          <parameters value="String"/>
-        </expression>
+    <from name="formalParameterDecls" alias="fpd">
+      <filter variable="fpd">
+        <filter>
+          <element name="formalParameterDecls" mark="true"/>
+        </filter>
       </filter>
     </from>
-    <to name="UnnamedTypeReference"/>
+    <to name="FormalParameterDefinition"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="mapsStringTypeReference">
     <inits>
       <inits xsi:type="Core:InitUnitElement" element="type">
         <value type="OPERATION_CREATION" value="String"/>
       </inits>
     </inits>
+    <from name="type" alias="t">
+      <filter variable="t">
+        <filter>
+          <element name="type" mark="true"/>
+          <expression xsi:type="Query:FilterExpressionUnit">
+            <element name="Identifier"/>
+            <parameters value="String"/>
+          </expression>
+        </filter>
+      </filter>
+    </from>
+    <to name="UnnamedTypeReference"/>
   </rules>
-  <rules name="mapsNamedTypeReference">
-    <from name="type" alias="t"/>
-    <to name="NamedTypeReference"/>
+  <rules xsi:type="Core:StandardRule" name="mapsNamedTypeReference">
     <queries variable="locatedType">
       <filter type="INDIRECT">
         <element name="classOrInterfaceDeclaration" mark="true"/>
@@ -402,10 +428,16 @@
         <value type="QUERY_RESULT" value="locatedType"/>
       </inits>
     </inits>
+    <from name="type" alias="t">
+      <filter variable="t">
+        <filter>
+          <element name="type" mark="true"/>
+        </filter>
+      </filter>
+    </from>
+    <to name="NamedTypeReference"/>
   </rules>
-  <rules name="mapsUnnamedTypeReference">
-    <from name="primitiveType" alias="pt"/>
-    <to name="UnnamedTypeReference"/>
+  <rules xsi:type="Core:StandardRule" name="mapsUnnamedTypeReference">
     <queries variable="isBoolean">
       <filter>
         <element name="pt" mark="true"/>
@@ -425,10 +457,16 @@
         </expression>
       </inits>
     </inits>
+    <from name="primitiveType" alias="pt">
+      <filter variable="pt">
+        <filter>
+          <element name="primitiveType" mark="true"/>
+        </filter>
+      </filter>
+    </from>
+    <to name="UnnamedTypeReference"/>
   </rules>
-  <rules type="SKIP" name="mapTypeReference">
-    <from name="type" alias="t"/>
-    <to name="TypeReference"/>
+  <rules xsi:type="Core:StandardRule" name="mapTypeReference" type="SKIP">
     <queries variable="primType">
       <filter>
         <element name="t"/>
@@ -452,10 +490,16 @@
         </expression>
       </inits>
     </inits>
-  </rules>
-  <rules type="SKIP" name="mapTypeReference4New">
-    <from name="createdName" alias="cn"/>
+    <from name="type" alias="t">
+      <filter variable="t">
+        <filter>
+          <element name="type" mark="true"/>
+        </filter>
+      </filter>
+    </from>
     <to name="TypeReference"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="mapTypeReference4New" type="SKIP">
     <queries variable="primType">
       <filter>
         <element name="cn"/>
@@ -484,17 +528,16 @@
         </expression>
       </inits>
     </inits>
-  </rules>
-  <rules name="mapDeclarationOrDefinitionStatement">
-    <from name="blockStatement" alias="bs">
-      <filter>
-        <element name="blockStatement" mark="true"/>
-        <next>
-          <element name="localVariableDeclaration"/>
-        </next>
+    <from name="createdName" alias="cn">
+      <filter variable="cn">
+        <filter>
+          <element name="createdName" mark="true"/>
+        </filter>
       </filter>
     </from>
-    <to name="DeclarationOrDefinitionStatement"/>
+    <to name="TypeReference"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="mapDeclarationOrDefinitionStatement">
     <queries variable="var">
       <filter>
         <element name="bs"/>
@@ -508,10 +551,19 @@
         <value type="QUERY_RESULT" value="var"/>
       </inits>
     </inits>
+    <from name="blockStatement" alias="bs">
+      <filter variable="bs">
+        <filter>
+          <element name="blockStatement" mark="true"/>
+          <next>
+            <element name="localVariableDeclaration"/>
+          </next>
+        </filter>
+      </filter>
+    </from>
+    <to name="DeclarationOrDefinitionStatement"/>
   </rules>
-  <rules name="mapVariableDefinition">
-    <from name="localVariableDeclaration" alias="lvd"/>
-    <to name="VariableDefinition"/>
+  <rules xsi:type="Core:StandardRule" name="mapVariableDefinition">
     <queries variable="name">
       <filter>
         <element name="lvd"/>
@@ -554,17 +606,16 @@
         <value type="OPERATION_CALL" value="mapTypeReference" extension="type"/>
       </inits>
     </inits>
-  </rules>
-  <rules type="SKIP" name="skipBlockStatement">
-    <from name="blockStatement" alias="bs">
-      <filter>
-        <element name="blockStatement" mark="true"/>
-        <next>
-          <element name="statement"/>
-        </next>
+    <from name="localVariableDeclaration" alias="lvd">
+      <filter variable="lvd">
+        <filter>
+          <element name="localVariableDeclaration" mark="true"/>
+        </filter>
       </filter>
     </from>
-    <to name="Statement"/>
+    <to name="VariableDefinition"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="skipBlockStatement" type="SKIP">
     <queries variable="next">
       <filter>
         <element name="bs"/>
@@ -578,18 +629,19 @@
         <value type="SKIP" value="next"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="mapIfStatement">
-    <from name="statement" alias="st">
-      <filter>
-        <element name="statement" mark="true"/>
-        <expression xsi:type="Query:FilterExpressionUnit">
-          <element name="TOKEN"/>
-          <parameters value="if"/>
-        </expression>
+    <from name="blockStatement" alias="bs">
+      <filter variable="bs">
+        <filter>
+          <element name="blockStatement" mark="true"/>
+          <next>
+            <element name="statement"/>
+          </next>
+        </filter>
       </filter>
     </from>
-    <to name="IfStatement"/>
+    <to name="Statement"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="mapIfStatement">
     <queries variable="exp">
       <filter>
         <element name="st"/>
@@ -628,18 +680,20 @@
         <value type="QUERY_RESULT" value="elseb"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="mapReturnStatement">
     <from name="statement" alias="st">
-      <filter>
-        <element name="statement" mark="true"/>
-        <expression xsi:type="Query:FilterExpressionUnit">
-          <element name="TOKEN"/>
-          <parameters value="return"/>
-        </expression>
+      <filter variable="st">
+        <filter>
+          <element name="statement" mark="true"/>
+          <expression xsi:type="Query:FilterExpressionUnit">
+            <element name="TOKEN"/>
+            <parameters value="if"/>
+          </expression>
+        </filter>
       </filter>
     </from>
-    <to name="ReturnStatement"/>
+    <to name="IfStatement"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="mapReturnStatement">
     <queries variable="exp">
       <filter>
         <element name="st"/>
@@ -653,17 +707,20 @@
         <value type="QUERY_RESULT" value="exp"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="mapStatementExpression">
     <from name="statement" alias="st">
-      <filter>
-        <element name="statement" mark="true"/>
-        <next>
-          <element name="statementExpression"/>
-        </next>
+      <filter variable="st">
+        <filter>
+          <element name="statement" mark="true"/>
+          <expression xsi:type="Query:FilterExpressionUnit">
+            <element name="TOKEN"/>
+            <parameters value="return"/>
+          </expression>
+        </filter>
       </filter>
     </from>
-    <to name="ExpressionStatement"/>
+    <to name="ReturnStatement"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="mapStatementExpression">
     <queries variable="exp">
       <filter>
         <element name="st"/>
@@ -677,18 +734,19 @@
         <value type="QUERY_RESULT" value="exp"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="mapForStatement">
     <from name="statement" alias="st">
-      <filter>
-        <element name="statement" mark="true"/>
-        <expression xsi:type="Query:FilterExpressionUnit">
-          <element name="TOKEN"/>
-          <parameters value="for"/>
-        </expression>
+      <filter variable="st">
+        <filter>
+          <element name="statement" mark="true"/>
+          <next>
+            <element name="statementExpression"/>
+          </next>
+        </filter>
       </filter>
     </from>
-    <to name="ForCheckAfterStatement"/>
+    <to name="ExpressionStatement"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="mapForStatement">
     <queries variable="forInitExps">
       <filter>
         <element name="st"/>
@@ -827,18 +885,58 @@
         <value type="QUERY_RESULT" value="stats"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="mapWhile">
     <from name="statement" alias="st">
+      <filter variable="st">
+        <filter>
+          <element name="statement" mark="true"/>
+          <expression xsi:type="Query:FilterExpressionUnit">
+            <element name="TOKEN"/>
+            <parameters value="for"/>
+          </expression>
+        </filter>
+      </filter>
+    </from>
+    <to name="ForCheckAfterStatement"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="mapWhile">
+    <queries variable="wcondition">
       <filter>
-        <element name="statement" mark="true"/>
-        <expression xsi:type="Query:FilterExpressionUnit">
-          <element name="TOKEN"/>
-          <parameters value="while"/>
-        </expression>
+        <element name="st"/>
+        <next>
+          <element name="parExpression" mark="true"/>
+        </next>
+      </filter>
+    </queries>
+    <queries variable="wstats">
+      <filter>
+        <element name="st"/>
+        <next>
+          <element name="statement" mark="true"/>
+        </next>
+      </filter>
+    </queries>
+    <inits>
+      <inits xsi:type="Core:InitUnitElement" element="condition">
+        <value type="QUERY_RESULT" value="wcondition"/>
+      </inits>
+      <inits xsi:type="Core:InitUnitElement" element="body">
+        <value type="QUERY_RESULT" value="wstats"/>
+      </inits>
+    </inits>
+    <from name="statement" alias="st">
+      <filter variable="st">
+        <filter>
+          <element name="statement" mark="true"/>
+          <expression xsi:type="Query:FilterExpressionUnit">
+            <element name="TOKEN"/>
+            <parameters value="while"/>
+          </expression>
+        </filter>
       </filter>
     </from>
     <to name="WhileStatement"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="mapDoWhile">
     <queries variable="wcondition">
       <filter>
         <element name="st"/>
@@ -863,59 +961,26 @@
         <value type="QUERY_RESULT" value="wstats"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="mapDoWhile">
     <from name="statement" alias="st">
-      <filter>
-        <element name="statement" mark="true"/>
-        <expression xsi:type="Query:FilterExpressionComplex">
-          <expressions xsi:type="Query:FilterExpressionUnit">
-            <element name="TOKEN"/>
-            <parameters value="do"/>
-          </expressions>
-          <expressions xsi:type="Query:FilterExpressionUnit">
-            <element name="TOKEN" position="1"/>
-            <parameters value="while"/>
-          </expressions>
-        </expression>
+      <filter variable="st">
+        <filter>
+          <element name="statement" mark="true"/>
+          <expression xsi:type="Query:FilterExpressionComplex">
+            <expressions xsi:type="Query:FilterExpressionUnit">
+              <element name="TOKEN"/>
+              <parameters value="do"/>
+            </expressions>
+            <expressions xsi:type="Query:FilterExpressionUnit">
+              <element name="TOKEN" position="1"/>
+              <parameters value="while"/>
+            </expressions>
+          </expression>
+        </filter>
       </filter>
     </from>
     <to name="DoWhileStatement"/>
-    <queries variable="wcondition">
-      <filter>
-        <element name="st"/>
-        <next>
-          <element name="parExpression" mark="true"/>
-        </next>
-      </filter>
-    </queries>
-    <queries variable="wstats">
-      <filter>
-        <element name="st"/>
-        <next>
-          <element name="statement" mark="true"/>
-        </next>
-      </filter>
-    </queries>
-    <inits>
-      <inits xsi:type="Core:InitUnitElement" element="condition">
-        <value type="QUERY_RESULT" value="wcondition"/>
-      </inits>
-      <inits xsi:type="Core:InitUnitElement" element="body">
-        <value type="QUERY_RESULT" value="wstats"/>
-      </inits>
-    </inits>
   </rules>
-  <rules name="mapBlock">
-    <from name="statement" alias="st">
-      <filter>
-        <element name="statement" mark="true"/>
-        <next>
-          <element name="block"/>
-        </next>
-      </filter>
-    </from>
-    <to name="BlockStatement"/>
+  <rules xsi:type="Core:StandardRule" name="mapBlock">
     <queries variable="substs">
       <filter>
         <element name="st"/>
@@ -932,10 +997,19 @@
         <value type="QUERY_RESULT" value="substs"/>
       </inits>
     </inits>
+    <from name="statement" alias="st">
+      <filter variable="st">
+        <filter>
+          <element name="statement" mark="true"/>
+          <next>
+            <element name="block"/>
+          </next>
+        </filter>
+      </filter>
+    </from>
+    <to name="BlockStatement"/>
   </rules>
-  <rules type="SKIP" name="skipParenthesis">
-    <from name="parExpression" alias="exp"/>
-    <to name="Expression"/>
+  <rules xsi:type="Core:StandardRule" name="skipParenthesis" type="SKIP">
     <queries variable="next">
       <filter>
         <element name="exp"/>
@@ -949,17 +1023,16 @@
         <value type="SKIP" value="next"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="mapAssignmentExpression">
-    <from name="expression" alias="exp">
-      <filter>
-        <element name="expression" mark="true"/>
-        <next>
-          <element name="assignmentOperator"/>
-        </next>
+    <from name="parExpression" alias="exp">
+      <filter variable="exp">
+        <filter>
+          <element name="parExpression" mark="true"/>
+        </filter>
       </filter>
     </from>
-    <to name="BinaryExpression"/>
+    <to name="Expression"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="mapAssignmentExpression">
     <queries variable="exp1">
       <filter>
         <element name="exp"/>
@@ -987,17 +1060,19 @@
         <value type="QUERY_RESULT" value="exp2"/>
       </inits>
     </inits>
-  </rules>
-  <rules type="SKIP" name="skipConditionalExpression">
     <from name="expression" alias="exp">
-      <filter>
-        <element name="expression" mark="true"/>
-        <next>
-          <element name="conditionalExpression"/>
-        </next>
+      <filter variable="exp">
+        <filter>
+          <element name="expression" mark="true"/>
+          <next>
+            <element name="assignmentOperator"/>
+          </next>
+        </filter>
       </filter>
     </from>
-    <to name="Expression"/>
+    <to name="BinaryExpression"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="skipConditionalExpression" type="SKIP">
     <queries variable="next">
       <filter>
         <element name="exp"/>
@@ -1011,22 +1086,19 @@
         <value type="SKIP" value="next"/>
       </inits>
     </inits>
-  </rules>
-  <rules type="SKIP" name="skipOr">
-    <from name="conditionalExpression" alias="exp">
-      <filter>
-        <element name="conditionalExpression" mark="true"/>
-        <next>
-          <element name="conditionalOrExpression"/>
-          <expression xsi:type="Query:FilterExpressionComplex" type="NOT">
-            <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-              <element name="TOKEN"/>
-            </expressions>
-          </expression>
-        </next>
+    <from name="expression" alias="exp">
+      <filter variable="exp">
+        <filter>
+          <element name="expression" mark="true"/>
+          <next>
+            <element name="conditionalExpression"/>
+          </next>
+        </filter>
       </filter>
     </from>
     <to name="Expression"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="skipOr" type="SKIP">
     <queries variable="next">
       <filter>
         <element name="exp"/>
@@ -1040,20 +1112,24 @@
         <value type="SKIP" value="next"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="mapOrExpression">
     <from name="conditionalExpression" alias="exp">
-      <filter>
-        <element name="conditionalExpression" mark="true"/>
-        <next>
-          <element name="conditionalOrExpression"/>
-          <expression xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-            <element name="TOKEN"/>
-          </expression>
-        </next>
+      <filter variable="exp">
+        <filter>
+          <element name="conditionalExpression" mark="true"/>
+          <next>
+            <element name="conditionalOrExpression"/>
+            <expression xsi:type="Query:FilterExpressionComplex" type="NOT">
+              <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+                <element name="TOKEN"/>
+              </expressions>
+            </expression>
+          </next>
+        </filter>
       </filter>
     </from>
-    <to name="BinaryExpression"/>
+    <to name="Expression"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="mapOrExpression">
     <queries variable="exp1">
       <filter>
         <element name="exp"/>
@@ -1081,19 +1157,22 @@
         <value type="QUERY_RESULT" value="exp2"/>
       </inits>
     </inits>
-  </rules>
-  <rules type="SKIP" name="skipAnd">
-    <from name="conditionalAndExpression" alias="exp">
-      <filter>
-        <element name="conditionalAndExpression" mark="true"/>
-        <expression xsi:type="Query:FilterExpressionComplex" type="NOT">
-          <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-            <element name="TOKEN"/>
-          </expressions>
-        </expression>
+    <from name="conditionalExpression" alias="exp">
+      <filter variable="exp">
+        <filter>
+          <element name="conditionalExpression" mark="true"/>
+          <next>
+            <element name="conditionalOrExpression"/>
+            <expression xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+              <element name="TOKEN"/>
+            </expression>
+          </next>
+        </filter>
       </filter>
     </from>
-    <to name="Expression"/>
+    <to name="BinaryExpression"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="skipAnd" type="SKIP">
     <queries variable="next">
       <filter>
         <element name="exp"/>
@@ -1107,17 +1186,21 @@
         <value type="SKIP" value="next"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="mapAndExpression">
     <from name="conditionalAndExpression" alias="exp">
-      <filter>
-        <element name="conditionalAndExpression" mark="true"/>
-        <expression xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-          <element name="TOKEN"/>
-        </expression>
+      <filter variable="exp">
+        <filter>
+          <element name="conditionalAndExpression" mark="true"/>
+          <expression xsi:type="Query:FilterExpressionComplex" type="NOT">
+            <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+              <element name="TOKEN"/>
+            </expressions>
+          </expression>
+        </filter>
       </filter>
     </from>
-    <to name="BinaryExpression"/>
+    <to name="Expression"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="mapAndExpression">
     <queries variable="exp1">
       <filter>
         <element name="exp"/>
@@ -1145,22 +1228,19 @@
         <value type="QUERY_RESULT" value="exp2"/>
       </inits>
     </inits>
-  </rules>
-  <rules type="SKIP" name="skipEquality">
-    <from name="inclusiveOrExpression" alias="exp">
-      <filter>
-        <element name="inclusiveOrExpression" mark="true"/>
-        <next type="INDIRECT">
-          <element name="equalityExpression"/>
-          <expression xsi:type="Query:FilterExpressionComplex" type="NOT">
-            <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-              <element name="TOKEN"/>
-            </expressions>
+    <from name="conditionalAndExpression" alias="exp">
+      <filter variable="exp">
+        <filter>
+          <element name="conditionalAndExpression" mark="true"/>
+          <expression xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+            <element name="TOKEN"/>
           </expression>
-        </next>
+        </filter>
       </filter>
     </from>
-    <to name="Expression"/>
+    <to name="BinaryExpression"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="skipEquality" type="SKIP">
     <queries variable="next">
       <filter>
         <element name="exp"/>
@@ -1174,20 +1254,24 @@
         <value type="SKIP" value="next"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="mapEquality">
     <from name="inclusiveOrExpression" alias="exp">
-      <filter>
-        <element name="inclusiveOrExpression" mark="true"/>
-        <next type="INDIRECT">
-          <element name="equalityExpression"/>
-          <expression xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-            <element name="TOKEN"/>
-          </expression>
-        </next>
+      <filter variable="exp">
+        <filter>
+          <element name="inclusiveOrExpression" mark="true"/>
+          <next type="INDIRECT">
+            <element name="equalityExpression"/>
+            <expression xsi:type="Query:FilterExpressionComplex" type="NOT">
+              <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+                <element name="TOKEN"/>
+              </expressions>
+            </expression>
+          </next>
+        </filter>
       </filter>
     </from>
-    <to name="BinaryExpression"/>
+    <to name="Expression"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="mapEquality">
     <queries variable="exp1">
       <filter>
         <element name="exp"/>
@@ -1248,20 +1332,22 @@
         </expression>
       </inits>
     </inits>
-  </rules>
-  <rules name="mapComparators">
-    <from name="instanceOfExpression" alias="exp">
-      <filter>
-        <element name="instanceOfExpression" mark="true"/>
-        <next type="INDIRECT">
-          <element name="relationalExpression"/>
-          <next>
-            <element name="relationalOp"/>
+    <from name="inclusiveOrExpression" alias="exp">
+      <filter variable="exp">
+        <filter>
+          <element name="inclusiveOrExpression" mark="true"/>
+          <next type="INDIRECT">
+            <element name="equalityExpression"/>
+            <expression xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+              <element name="TOKEN"/>
+            </expression>
           </next>
-        </next>
+        </filter>
       </filter>
     </from>
     <to name="BinaryExpression"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="mapComparators">
     <queries variable="exp1">
       <filter>
         <element name="exp"/>
@@ -1334,17 +1420,22 @@
         </expression>
       </inits>
     </inits>
-  </rules>
-  <rules type="SKIP" name="skipComparators">
     <from name="instanceOfExpression" alias="exp">
-      <filter>
-        <element name="instanceOfExpression" mark="true"/>
-        <next type="INDIRECT">
-          <element name="relationalExpression"/>
-        </next>
+      <filter variable="exp">
+        <filter>
+          <element name="instanceOfExpression" mark="true"/>
+          <next type="INDIRECT">
+            <element name="relationalExpression"/>
+            <next>
+              <element name="relationalOp"/>
+            </next>
+          </next>
+        </filter>
       </filter>
     </from>
-    <to name="Expression"/>
+    <to name="BinaryExpression"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="skipComparators" type="SKIP">
     <queries variable="next">
       <filter>
         <element name="exp"/>
@@ -1358,22 +1449,19 @@
         <value type="SKIP" value="next"/>
       </inits>
     </inits>
-  </rules>
-  <rules type="SKIP" name="skipAdditive">
-    <from name="shiftExpression" alias="exp">
-      <filter>
-        <element name="shiftExpression" mark="true"/>
-        <next type="INDIRECT">
-          <element name="additiveExpression"/>
-          <expression xsi:type="Query:FilterExpressionComplex" type="NOT">
-            <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-              <element name="TOKEN"/>
-            </expressions>
-          </expression>
-        </next>
+    <from name="instanceOfExpression" alias="exp">
+      <filter variable="exp">
+        <filter>
+          <element name="instanceOfExpression" mark="true"/>
+          <next type="INDIRECT">
+            <element name="relationalExpression"/>
+          </next>
+        </filter>
       </filter>
     </from>
     <to name="Expression"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="skipAdditive" type="SKIP">
     <queries variable="next">
       <filter>
         <element name="exp"/>
@@ -1387,20 +1475,24 @@
         <value type="SKIP" value="next"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="mapAdditive">
     <from name="shiftExpression" alias="exp">
-      <filter>
-        <element name="shiftExpression" mark="true"/>
-        <next type="INDIRECT">
-          <element name="additiveExpression"/>
-          <expression xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-            <element name="TOKEN"/>
-          </expression>
-        </next>
+      <filter variable="exp">
+        <filter>
+          <element name="shiftExpression" mark="true"/>
+          <next type="INDIRECT">
+            <element name="additiveExpression"/>
+            <expression xsi:type="Query:FilterExpressionComplex" type="NOT">
+              <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+                <element name="TOKEN"/>
+              </expressions>
+            </expression>
+          </next>
+        </filter>
       </filter>
     </from>
-    <to name="BinaryExpression"/>
+    <to name="Expression"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="mapAdditive">
     <queries variable="exp1">
       <filter>
         <element name="exp"/>
@@ -1461,22 +1553,22 @@
         </expression>
       </inits>
     </inits>
-  </rules>
-  <rules type="SKIP" name="skipMultiplicative">
-    <from name="multiplicativeExpression" alias="exp">
-      <filter>
-        <element name="multiplicativeExpression" mark="true"/>
-        <next>
-          <element name="unaryExpression"/>
-          <expression xsi:type="Query:FilterExpressionComplex" type="NOT">
-            <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+    <from name="shiftExpression" alias="exp">
+      <filter variable="exp">
+        <filter>
+          <element name="shiftExpression" mark="true"/>
+          <next type="INDIRECT">
+            <element name="additiveExpression"/>
+            <expression xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
               <element name="TOKEN"/>
-            </expressions>
-          </expression>
-        </next>
+            </expression>
+          </next>
+        </filter>
       </filter>
     </from>
-    <to name="Expression"/>
+    <to name="BinaryExpression"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="skipMultiplicative" type="SKIP">
     <queries variable="next">
       <filter>
         <element name="exp"/>
@@ -1490,20 +1582,24 @@
         <value type="SKIP" value="next"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="mapMultiplicative">
     <from name="multiplicativeExpression" alias="exp">
-      <filter>
-        <element name="multiplicativeExpression" mark="true"/>
-        <next>
-          <element name="unaryExpression"/>
-          <expression xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-            <element name="TOKEN"/>
-          </expression>
-        </next>
+      <filter variable="exp">
+        <filter>
+          <element name="multiplicativeExpression" mark="true"/>
+          <next>
+            <element name="unaryExpression"/>
+            <expression xsi:type="Query:FilterExpressionComplex" type="NOT">
+              <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+                <element name="TOKEN"/>
+              </expressions>
+            </expression>
+          </next>
+        </filter>
       </filter>
     </from>
-    <to name="BinaryExpression"/>
+    <to name="Expression"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="mapMultiplicative">
     <queries variable="exp1">
       <filter>
         <element name="exp"/>
@@ -1564,17 +1660,22 @@
         </expression>
       </inits>
     </inits>
-  </rules>
-  <rules name="mapUnary">
-    <from name="unaryExpression" alias="exp">
-      <filter>
-        <element name="unaryExpression" mark="true"/>
-        <expression xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-          <element name="TOKEN"/>
-        </expression>
+    <from name="multiplicativeExpression" alias="exp">
+      <filter variable="exp">
+        <filter>
+          <element name="multiplicativeExpression" mark="true"/>
+          <next>
+            <element name="unaryExpression"/>
+            <expression xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+              <element name="TOKEN"/>
+            </expression>
+          </next>
+        </filter>
       </filter>
     </from>
-    <to name="UnaryExpression"/>
+    <to name="BinaryExpression"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="mapUnary">
     <queries variable="expPre">
       <filter>
         <element name="exp"/>
@@ -1624,26 +1725,19 @@
         </expression>
       </inits>
     </inits>
-  </rules>
-  <rules name="mapNot">
     <from name="unaryExpression" alias="exp">
-      <filter>
-        <element name="unaryExpression" mark="true"/>
-        <next>
-          <element name="unaryExpressionNotPlusMinus"/>
-          <expression xsi:type="Query:FilterExpressionComplex">
-            <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-              <element name="TOKEN"/>
-            </expressions>
-            <expressions xsi:type="Query:FilterExpressionUnit">
-              <element name="TOKEN"/>
-              <parameters value="!"/>
-            </expressions>
+      <filter variable="exp">
+        <filter>
+          <element name="unaryExpression" mark="true"/>
+          <expression xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+            <element name="TOKEN"/>
           </expression>
-        </next>
+        </filter>
       </filter>
     </from>
     <to name="UnaryExpression"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="mapNot">
     <queries variable="exp1">
       <filter>
         <element name="exp"/>
@@ -1674,32 +1768,28 @@
         </expression>
       </inits>
     </inits>
-  </rules>
-  <rules name="mapPostIncrementDecrement">
     <from name="unaryExpression" alias="exp">
-      <filter>
-        <element name="unaryExpression" mark="true"/>
-        <next>
-          <element name="unaryExpressionNotPlusMinus"/>
-          <expression xsi:type="Query:FilterExpressionComplex">
-            <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-              <element name="TOKEN"/>
-            </expressions>
-            <expressions xsi:type="Query:FilterExpressionComplex" type="OR">
-              <expressions xsi:type="Query:FilterExpressionUnit">
+      <filter variable="exp">
+        <filter>
+          <element name="unaryExpression" mark="true"/>
+          <next>
+            <element name="unaryExpressionNotPlusMinus"/>
+            <expression xsi:type="Query:FilterExpressionComplex">
+              <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
                 <element name="TOKEN"/>
-                <parameters value="++"/>
               </expressions>
               <expressions xsi:type="Query:FilterExpressionUnit">
                 <element name="TOKEN"/>
-                <parameters value="--"/>
+                <parameters value="!"/>
               </expressions>
-            </expressions>
-          </expression>
-        </next>
+            </expression>
+          </next>
+        </filter>
       </filter>
     </from>
     <to name="UnaryExpression"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="mapPostIncrementDecrement">
     <queries variable="exp1">
       <filter>
         <element name="exp"/>
@@ -1758,20 +1848,34 @@
         </expression>
       </inits>
     </inits>
-  </rules>
-  <rules name="mapCasting">
     <from name="unaryExpression" alias="exp">
-      <filter>
-        <element name="unaryExpression" mark="true"/>
-        <next>
-          <element name="unaryExpressionNotPlusMinus"/>
+      <filter variable="exp">
+        <filter>
+          <element name="unaryExpression" mark="true"/>
           <next>
-            <element name="castExpression"/>
+            <element name="unaryExpressionNotPlusMinus"/>
+            <expression xsi:type="Query:FilterExpressionComplex">
+              <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+                <element name="TOKEN"/>
+              </expressions>
+              <expressions xsi:type="Query:FilterExpressionComplex" type="OR">
+                <expressions xsi:type="Query:FilterExpressionUnit">
+                  <element name="TOKEN"/>
+                  <parameters value="++"/>
+                </expressions>
+                <expressions xsi:type="Query:FilterExpressionUnit">
+                  <element name="TOKEN"/>
+                  <parameters value="--"/>
+                </expressions>
+              </expressions>
+            </expression>
           </next>
-        </next>
+        </filter>
       </filter>
     </from>
-    <to name="CastExpression"/>
+    <to name="UnaryExpression"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="mapCasting">
     <queries variable="isPrimitive">
       <filter>
         <element name="exp"/>
@@ -1846,17 +1950,22 @@
         </expression>
       </inits>
     </inits>
-  </rules>
-  <rules type="SKIP" name="skipPrimary">
     <from name="unaryExpression" alias="exp">
-      <filter>
-        <element name="unaryExpression" mark="true"/>
-        <next>
-          <element name="unaryExpressionNotPlusMinus"/>
-        </next>
+      <filter variable="exp">
+        <filter>
+          <element name="unaryExpression" mark="true"/>
+          <next>
+            <element name="unaryExpressionNotPlusMinus"/>
+            <next>
+              <element name="castExpression"/>
+            </next>
+          </next>
+        </filter>
       </filter>
     </from>
-    <to name="Expression"/>
+    <to name="CastExpression"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="skipPrimary" type="SKIP">
     <queries variable="next">
       <filter>
         <element name="exp"/>
@@ -1870,17 +1979,19 @@
         <value type="SKIP" value="next"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="mapMethodCallWithReceptorAndSelector">
-    <from name="unaryExpressionNotPlusMinus" alias="exp">
-      <filter>
-        <element name="unaryExpressionNotPlusMinus" mark="true"/>
-        <next>
-          <element name="selector"/>
-        </next>
+    <from name="unaryExpression" alias="exp">
+      <filter variable="exp">
+        <filter>
+          <element name="unaryExpression" mark="true"/>
+          <next>
+            <element name="unaryExpressionNotPlusMinus"/>
+          </next>
+        </filter>
       </filter>
     </from>
-    <to name="FunctionCallExpression"/>
+    <to name="Expression"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="mapMethodCallWithReceptorAndSelector">
     <queries variable="primary">
       <filter>
         <element name="exp"/>
@@ -2151,17 +2262,19 @@
         </expression>
       </inits>
     </inits>
-  </rules>
-  <rules type="SKIP" name="skipUnaryExpressionNotPlusMinus">
     <from name="unaryExpressionNotPlusMinus" alias="exp">
-      <filter>
-        <element name="unaryExpressionNotPlusMinus" mark="true"/>
-        <next>
-          <element name="primary"/>
-        </next>
+      <filter variable="exp">
+        <filter>
+          <element name="unaryExpressionNotPlusMinus" mark="true"/>
+          <next>
+            <element name="selector"/>
+          </next>
+        </filter>
       </filter>
     </from>
-    <to name="Expression"/>
+    <to name="FunctionCallExpression"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="skipUnaryExpressionNotPlusMinus" type="SKIP">
     <queries variable="next">
       <filter>
         <element name="exp"/>
@@ -2175,17 +2288,19 @@
         <value type="SKIP" value="next"/>
       </inits>
     </inits>
-  </rules>
-  <rules type="SKIP" name="skipParenthesisFromPrimary">
-    <from name="primary" alias="exp">
-      <filter>
-        <element name="primary" mark="true"/>
-        <next>
-          <element name="parExpression"/>
-        </next>
+    <from name="unaryExpressionNotPlusMinus" alias="exp">
+      <filter variable="exp">
+        <filter>
+          <element name="unaryExpressionNotPlusMinus" mark="true"/>
+          <next>
+            <element name="primary"/>
+          </next>
+        </filter>
       </filter>
     </from>
     <to name="Expression"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="skipParenthesisFromPrimary" type="SKIP">
     <queries variable="next">
       <filter>
         <element name="exp"/>
@@ -2202,33 +2317,19 @@
         <value type="SKIP" value="next"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="mapMethodCall">
     <from name="primary" alias="exp">
-      <filter>
-        <element name="primary" mark="true"/>
-        <expression xsi:type="Query:FilterExpressionComplex">
-          <expressions xsi:type="Query:FilterExpressionComplex" type="NOT">
-            <expressions xsi:type="Query:FilterExpressionUnit">
-              <element name="TOKEN"/>
-              <parameters value="this"/>
-            </expressions>
-          </expressions>
-          <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-            <element name="Identifier"/>
-          </expressions>
-          <expressions xsi:type="Query:FilterExpressionComplex" type="NOT">
-            <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-              <element name="Identifier" position="1"/>
-            </expressions>
-          </expressions>
-        </expression>
-        <next>
-          <element name="identifierSuffix"/>
-        </next>
+      <filter variable="exp">
+        <filter>
+          <element name="primary" mark="true"/>
+          <next>
+            <element name="parExpression"/>
+          </next>
+        </filter>
       </filter>
     </from>
-    <to name="FunctionCallExpression"/>
+    <to name="Expression"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="mapMethodCall">
     <queries variable="args">
       <filter>
         <element name="exp"/>
@@ -2344,34 +2445,35 @@
         </expression>
       </inits>
     </inits>
-  </rules>
-  <rules name="mapMethodCallWith2Receptors">
     <from name="primary" alias="exp">
-      <filter>
-        <element name="primary" mark="true"/>
-        <expression xsi:type="Query:FilterExpressionComplex">
-          <expressions xsi:type="Query:FilterExpressionComplex" type="NOT">
-            <expressions xsi:type="Query:FilterExpressionUnit">
-              <element name="TOKEN"/>
-              <parameters value="this"/>
+      <filter variable="exp">
+        <filter>
+          <element name="primary" mark="true"/>
+          <expression xsi:type="Query:FilterExpressionComplex">
+            <expressions xsi:type="Query:FilterExpressionComplex" type="NOT">
+              <expressions xsi:type="Query:FilterExpressionUnit">
+                <element name="TOKEN"/>
+                <parameters value="this"/>
+              </expressions>
             </expressions>
-          </expressions>
-          <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-            <element name="Identifier"/>
-          </expressions>
-          <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-            <element name="Identifier" position="1"/>
-          </expressions>
-          <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-            <element name="Identifier" position="2"/>
-          </expressions>
-        </expression>
-        <next>
-          <element name="identifierSuffix"/>
-        </next>
+            <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+              <element name="Identifier"/>
+            </expressions>
+            <expressions xsi:type="Query:FilterExpressionComplex" type="NOT">
+              <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+                <element name="Identifier" position="1"/>
+              </expressions>
+            </expressions>
+          </expression>
+          <next>
+            <element name="identifierSuffix"/>
+          </next>
+        </filter>
       </filter>
     </from>
     <to name="FunctionCallExpression"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="mapMethodCallWith2Receptors">
     <queries variable="args">
       <filter>
         <element name="exp"/>
@@ -2550,31 +2652,36 @@
         <value type="OPERATION_CALL" value="mapArgument" extension="args"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="mapMethodCallWithReceptor">
     <from name="primary" alias="exp">
-      <filter>
-        <element name="primary" mark="true"/>
-        <expression xsi:type="Query:FilterExpressionComplex">
-          <expressions xsi:type="Query:FilterExpressionComplex" type="NOT">
-            <expressions xsi:type="Query:FilterExpressionUnit">
-              <element name="TOKEN"/>
-              <parameters value="this"/>
+      <filter variable="exp">
+        <filter>
+          <element name="primary" mark="true"/>
+          <expression xsi:type="Query:FilterExpressionComplex">
+            <expressions xsi:type="Query:FilterExpressionComplex" type="NOT">
+              <expressions xsi:type="Query:FilterExpressionUnit">
+                <element name="TOKEN"/>
+                <parameters value="this"/>
+              </expressions>
             </expressions>
-          </expressions>
-          <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-            <element name="Identifier"/>
-          </expressions>
-          <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-            <element name="Identifier" position="1"/>
-          </expressions>
-        </expression>
-        <next>
-          <element name="identifierSuffix"/>
-        </next>
+            <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+              <element name="Identifier"/>
+            </expressions>
+            <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+              <element name="Identifier" position="1"/>
+            </expressions>
+            <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+              <element name="Identifier" position="2"/>
+            </expressions>
+          </expression>
+          <next>
+            <element name="identifierSuffix"/>
+          </next>
+        </filter>
       </filter>
     </from>
     <to name="FunctionCallExpression"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="mapMethodCallWithReceptor">
     <queries variable="args">
       <filter>
         <element name="exp"/>
@@ -2728,31 +2835,33 @@
         <value type="OPERATION_CALL" value="mapArgument" extension="args"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="mapThisMethodCall">
     <from name="primary" alias="exp">
-      <filter>
-        <element name="primary" mark="true"/>
-        <expression xsi:type="Query:FilterExpressionComplex">
-          <expressions xsi:type="Query:FilterExpressionUnit">
-            <element name="TOKEN"/>
-            <parameters value="this"/>
-          </expressions>
-          <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-            <element name="Identifier"/>
-          </expressions>
-          <expressions xsi:type="Query:FilterExpressionComplex" type="NOT">
+      <filter variable="exp">
+        <filter>
+          <element name="primary" mark="true"/>
+          <expression xsi:type="Query:FilterExpressionComplex">
+            <expressions xsi:type="Query:FilterExpressionComplex" type="NOT">
+              <expressions xsi:type="Query:FilterExpressionUnit">
+                <element name="TOKEN"/>
+                <parameters value="this"/>
+              </expressions>
+            </expressions>
+            <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+              <element name="Identifier"/>
+            </expressions>
             <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
               <element name="Identifier" position="1"/>
             </expressions>
-          </expressions>
-        </expression>
-        <next>
-          <element name="identifierSuffix"/>
-        </next>
+          </expression>
+          <next>
+            <element name="identifierSuffix"/>
+          </next>
+        </filter>
       </filter>
     </from>
     <to name="FunctionCallExpression"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="mapThisMethodCall">
     <queries variable="args">
       <filter>
         <element name="exp"/>
@@ -2883,29 +2992,33 @@
         <value type="OPERATION_CALL" value="mapArgument" extension="args"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="mapThisMethodCallWithReceptor">
     <from name="primary" alias="exp">
-      <filter>
-        <element name="primary" mark="true"/>
-        <expression xsi:type="Query:FilterExpressionComplex">
-          <expressions xsi:type="Query:FilterExpressionUnit">
-            <element name="TOKEN"/>
-            <parameters value="this"/>
-          </expressions>
-          <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-            <element name="Identifier"/>
-          </expressions>
-          <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-            <element name="Identifier" position="1"/>
-          </expressions>
-        </expression>
-        <next>
-          <element name="identifierSuffix"/>
-        </next>
+      <filter variable="exp">
+        <filter>
+          <element name="primary" mark="true"/>
+          <expression xsi:type="Query:FilterExpressionComplex">
+            <expressions xsi:type="Query:FilterExpressionUnit">
+              <element name="TOKEN"/>
+              <parameters value="this"/>
+            </expressions>
+            <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+              <element name="Identifier"/>
+            </expressions>
+            <expressions xsi:type="Query:FilterExpressionComplex" type="NOT">
+              <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+                <element name="Identifier" position="1"/>
+              </expressions>
+            </expressions>
+          </expression>
+          <next>
+            <element name="identifierSuffix"/>
+          </next>
+        </filter>
       </filter>
     </from>
     <to name="FunctionCallExpression"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="mapThisMethodCallWithReceptor">
     <queries variable="args">
       <filter>
         <element name="exp"/>
@@ -3002,23 +3115,31 @@
         <value type="OPERATION_CALL" value="mapArgument" extension="args"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="mapThisVariable">
     <from name="primary" alias="exp">
-      <filter>
-        <element name="primary" mark="true"/>
-        <expression xsi:type="Query:FilterExpressionComplex">
-          <expressions xsi:type="Query:FilterExpressionUnit">
-            <element name="TOKEN"/>
-            <parameters value="this"/>
-          </expressions>
-          <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-            <element name="Identifier"/>
-          </expressions>
-        </expression>
+      <filter variable="exp">
+        <filter>
+          <element name="primary" mark="true"/>
+          <expression xsi:type="Query:FilterExpressionComplex">
+            <expressions xsi:type="Query:FilterExpressionUnit">
+              <element name="TOKEN"/>
+              <parameters value="this"/>
+            </expressions>
+            <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+              <element name="Identifier"/>
+            </expressions>
+            <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+              <element name="Identifier" position="1"/>
+            </expressions>
+          </expression>
+          <next>
+            <element name="identifierSuffix"/>
+          </next>
+        </filter>
       </filter>
     </from>
-    <to name="QualifiedOverData"/>
+    <to name="FunctionCallExpression"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="mapThisVariable">
     <queries variable="thisloc">
       <filter type="INDIRECT">
         <element name="classOrInterfaceDeclaration" mark="true"/>
@@ -3153,30 +3274,25 @@
         <value type="QUERY_RESULT" value="locParam"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="mapVariableRef">
     <from name="primary" alias="exp">
-      <filter>
-        <element name="primary" mark="true"/>
-        <expression xsi:type="Query:FilterExpressionComplex">
-          <expressions xsi:type="Query:FilterExpressionComplex" type="NOT">
+      <filter variable="exp">
+        <filter>
+          <element name="primary" mark="true"/>
+          <expression xsi:type="Query:FilterExpressionComplex">
             <expressions xsi:type="Query:FilterExpressionUnit">
               <element name="TOKEN"/>
               <parameters value="this"/>
             </expressions>
-          </expressions>
-          <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-            <element name="Identifier"/>
-          </expressions>
-          <expressions xsi:type="Query:FilterExpressionComplex" type="NOT">
             <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-              <element name="Identifier" position="1"/>
+              <element name="Identifier"/>
             </expressions>
-          </expressions>
-        </expression>
+          </expression>
+        </filter>
       </filter>
     </from>
-    <to name="IdentifierReference"/>
+    <to name="QualifiedOverData"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="mapVariableRef">
     <queries variable="thisloc">
       <filter type="INDIRECT">
         <element name="classOrInterfaceDeclaration" mark="true"/>
@@ -3287,28 +3403,32 @@
         <value type="QUERY_RESULT" value="locParam"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="mapMemberAccess">
     <from name="primary" alias="exp">
-      <filter>
-        <element name="primary" mark="true"/>
-        <expression xsi:type="Query:FilterExpressionComplex">
-          <expressions xsi:type="Query:FilterExpressionComplex" type="NOT">
-            <expressions xsi:type="Query:FilterExpressionUnit">
-              <element name="TOKEN"/>
-              <parameters value="this"/>
+      <filter variable="exp">
+        <filter>
+          <element name="primary" mark="true"/>
+          <expression xsi:type="Query:FilterExpressionComplex">
+            <expressions xsi:type="Query:FilterExpressionComplex" type="NOT">
+              <expressions xsi:type="Query:FilterExpressionUnit">
+                <element name="TOKEN"/>
+                <parameters value="this"/>
+              </expressions>
             </expressions>
-          </expressions>
-          <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-            <element name="Identifier"/>
-          </expressions>
-          <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
-            <element name="Identifier" position="1"/>
-          </expressions>
-        </expression>
+            <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+              <element name="Identifier"/>
+            </expressions>
+            <expressions xsi:type="Query:FilterExpressionComplex" type="NOT">
+              <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+                <element name="Identifier" position="1"/>
+              </expressions>
+            </expressions>
+          </expression>
+        </filter>
       </filter>
     </from>
-    <to name="QualifiedOverData"/>
+    <to name="IdentifierReference"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="mapMemberAccess">
     <inits>
       <inits xsi:type="Core:InitUnitElement" element="qualifiers">
         <value type="OPERATION_CREATION" value="IdentifierReference"/>
@@ -3339,18 +3459,30 @@
         </value>
       </inits>
     </inits>
-  </rules>
-  <rules name="mapNew">
     <from name="primary" alias="exp">
-      <filter>
-        <element name="primary" mark="true"/>
-        <expression xsi:type="Query:FilterExpressionUnit">
-          <element name="TOKEN"/>
-          <parameters value="new"/>
-        </expression>
+      <filter variable="exp">
+        <filter>
+          <element name="primary" mark="true"/>
+          <expression xsi:type="Query:FilterExpressionComplex">
+            <expressions xsi:type="Query:FilterExpressionComplex" type="NOT">
+              <expressions xsi:type="Query:FilterExpressionUnit">
+                <element name="TOKEN"/>
+                <parameters value="this"/>
+              </expressions>
+            </expressions>
+            <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+              <element name="Identifier"/>
+            </expressions>
+            <expressions xsi:type="Query:FilterExpressionUnit" operation="EXISTS">
+              <element name="Identifier" position="1"/>
+            </expressions>
+          </expression>
+        </filter>
       </filter>
     </from>
-    <to name="NewExpression"/>
+    <to name="QualifiedOverData"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="mapNew">
     <queries variable="args">
       <filter>
         <element name="exp"/>
@@ -3384,32 +3516,52 @@
         <value type="OPERATION_CALL" value="mapArgument" extension="args"/>
       </inits>
     </inits>
+    <from name="primary" alias="exp">
+      <filter variable="exp">
+        <filter>
+          <element name="primary" mark="true"/>
+          <expression xsi:type="Query:FilterExpressionUnit">
+            <element name="TOKEN"/>
+            <parameters value="new"/>
+          </expression>
+        </filter>
+      </filter>
+    </from>
+    <to name="NewExpression"/>
   </rules>
-  <rules name="mapArgument">
-    <from name="expression" alias="expArg"/>
-    <to name="ActualParameterExpression"/>
-    <context>mapMethodCall</context>
-    <context>mapNew</context>
+  <rules xsi:type="Core:StandardRule" name="mapArgument">
     <inits>
       <inits xsi:type="Core:InitUnitElement" element="value">
         <value type="QUERY_RESULT" value="expArg"/>
       </inits>
     </inits>
-  </rules>
-  <rules name="mapLiteral">
-    <from name="primary" alias="exp">
-      <filter>
-        <element name="primary" mark="true"/>
-        <next>
-          <element name="literal"/>
-        </next>
+    <from name="expression" alias="expArg">
+      <filter variable="expArg">
+        <filter>
+          <element name="expression" mark="true"/>
+        </filter>
       </filter>
     </from>
-    <to name="Literal"/>
+    <context>mapMethodCall</context>
+    <context>mapNew</context>
+    <to name="ActualParameterExpression"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="mapLiteral">
     <inits>
       <inits xsi:type="Core:InitUnitElement" element="value">
         <value type="OPERATION_CODE" value="exp"/>
       </inits>
     </inits>
+    <from name="primary" alias="exp">
+      <filter variable="exp">
+        <filter>
+          <element name="primary" mark="true"/>
+          <next>
+            <element name="literal"/>
+          </next>
+        </filter>
+      </filter>
+    </from>
+    <to name="Literal"/>
   </rules>
-</Core:ViewDefinition>
+</Core:Transformation>
