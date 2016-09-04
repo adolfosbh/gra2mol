@@ -1,4 +1,4 @@
-package org.gra2mol.example.delphi;
+package org.gra2mol.example.abnf;
 
 import java.io.File;
 
@@ -12,7 +12,6 @@ public class AbnfTester {
 	static String BASE_PATH = "../Grammar2Model.examples.ABNF2MModel/";
 	static String MODELS_PATH = "./examples/";
 	static String[] MODEL_NAMES = new String[]{"sastm-RDBMS","astm"};
-	//private static int NUM_OF_MODELS = 7;
 	
 	public static void main(String[] args) throws Exception {
 	
