@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Core:Transformation xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:Core="http://gts.inf.um.es/modernization/gra2mol/core" xmlns:Query="http://gts.inf.um.es/modernization/gra2mol/query">
+  <rules xsi:type="Core:StandardRule" name="mainRule">
+    <queries variable="declarations">
+      <filter type="INDIRECT">
+        <element name="compilationUnit"/>
+        <next>
+          <element name="typeDeclaration" mark="true"/>
+        </next>
+      </filter>
+    </queries>
+    <inits>
+      <inits xsi:type="Core:InitUnitElement" element="classifiers">
+        <value type="QUERY_RESULT" value="declarations"/>
+      </inits>
+    </inits>
+    <from name="compilationUnit">
+      <filter>
+        <filter>
+          <element name="compilationUnit" mark="true"/>
+        </filter>
+      </filter>
+    </from>
+    <to name="ClassM::Model"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="class">
+    <queries variable="mycompUnit">
+      <filter type="INDIRECT">
+        <element name="compilationUnit" mark="true"/>
+        <next>
+          <element name="typeDeclaration"/>
+          <expression xsi:type="Query:FilterExpressionUnit" operation="check">
+            <element name="this"/>
+            <parameters value="td" type="VARIABLE"/>
+          </expression>
+        </next>
+      </filter>
+    </queries>
+    <queries variable="imp">
+      <filter>
+        <element name="mycompUnit"/>
+        <next type="INDIRECT">
+          <element name="importDeclaration" mark="true"/>
+        </next>
+      </filter>
+    </queries>
+    <queries variable="classDecl">
+      <filter>
+        <element name="td"/>
+        <next type="INDIRECT">
+          <element name="normalClassDeclaration" mark="true"/>
+        </next>
+      </filter>
+    </queries>
+    <queries variable="extClassRef">
+      <filter>
+        <element name="classDecl"/>
+        <next>
+          <element name="extendsClass" mark="true"/>
+        </next>
+      </filter>
+    </queries>
+    <queries variable="extClass">
+      <filter type="INDIRECT">
+        <element name="compilationUnit"/>
+        <next type="INDIRECT">
+          <element name="typeDeclaration" mark="true"/>
+          <next type="INDIRECT">
+            <element name="normalClassDeclaration"/>
+            <expression xsi:type="Query:FilterExpressionUnit" operation="eq">
+              <element name="Identifier"/>
+              <parameters value="extClassRef" valuePosition="0" extension="Identifier"
+                  extensionPosition="0" type="QUERY_ACCESS"/>
+            </expression>
+          </next>
+        </next>
+      </filter>
+    </queries>
+    <queries variable="impClassRefs">
+      <filter>
+        <element name="classDecl"/>
+        <next>
+          <element name="implementsList"/>
+          <next>
+            <element name="type" mark="true"/>
+          </next>
+        </next>
+      </filter>
+    </queries>
+    <queries variable="impClass">
+      <filter type="INDIRECT">
+        <element name="compilationUnit"/>
+        <next type="INDIRECT">
+          <element name="typeDeclaration" mark="true"/>
+          <next type="INDIRECT">
+            <element name="normalInterfaceDeclaration"/>
+            <expression xsi:type="Query:FilterExpressionUnit" operation="eq">
+              <element name="Identifier"/>
+              <parameters value="impClassRefs" valuePosition="i" extension="Identifier"
+                  extensionPosition="0" type="QUERY_ACCESS"/>
+            </expression>
+          </next>
+        </next>
+      </filter>
+      <control xsi:type="Query:QueryControlFor" variable="i" queryVariable="impClassRefs"/>
+    </queries>
+    <inits>
+      <inits xsi:type="Core:InitUnitElement" element="name">
+        <value type="QUERY_ACCESS" value="classDecl" extension="Identifier"/>
+      </inits>
+      <inits xsi:type="Core:InitUnitElement" element="parents">
+        <value type="QUERY_RESULT" value="extClass"/>
+      </inits>
+      <inits xsi:type="Core:InitUnitElement" element="parents">
+        <value type="QUERY_RESULT" value="impClass"/>
+      </inits>
+    </inits>
+    <from name="typeDeclaration" alias="td">
+      <filter variable="td">
+        <filter>
+          <element name="typeDeclaration" mark="true"/>
+          <next type="INDIRECT">
+            <element name="normalClassDeclaration"/>
+          </next>
+        </filter>
+      </filter>
+    </from>
+    <to name="ClassM::Class"/>
+  </rules>
+  <rules xsi:type="Core:StandardRule" name="interface">
+    <queries variable="mycompUnit">
+      <filter type="INDIRECT">
+        <element name="compilationUnit" mark="true"/>
+        <next>
+          <element name="typeDeclaration"/>
+          <expression xsi:type="Query:FilterExpressionUnit" operation="check">
+            <element name="this"/>
+            <parameters value="td" type="VARIABLE"/>
+          </expression>
+        </next>
+      </filter>
+    </queries>
+    <queries variable="imp">
+      <filter>
+        <element name="mycompUnit"/>
+        <next type="INDIRECT">
+          <element name="importDeclaration" mark="true"/>
+        </next>
+      </filter>
+    </queries>
+    <queries variable="intDecl">
+      <filter>
+        <element name="td"/>
+        <next type="INDIRECT">
+          <element name="normalInterfaceDeclaration" mark="true"/>
+        </next>
+      </filter>
+    </queries>
+    <queries variable="extClassRefs">
+      <filter>
+        <element name="intDecl"/>
+        <next>
+          <element name="extendsList"/>
+          <next>
+            <element name="type" mark="true"/>
+          </next>
+        </next>
+      </filter>
+    </queries>
+    <queries variable="extClass">
+      <filter type="INDIRECT">
+        <element name="compilationUnit"/>
+        <next type="INDIRECT">
+          <element name="typeDeclaration" mark="true"/>
+          <next type="INDIRECT">
+            <element name="normalInterfaceDeclaration"/>
+            <expression xsi:type="Query:FilterExpressionUnit" operation="eq">
+              <element name="Identifier"/>
+              <parameters value="extClassRefs" valuePosition="i" extension="Identifier"
+                  extensionPosition="0" type="QUERY_ACCESS"/>
+            </expression>
+          </next>
+        </next>
+      </filter>
+      <control xsi:type="Query:QueryControlFor" variable="i" queryVariable="extClassRefs"/>
+    </queries>
+    <inits>
+      <inits xsi:type="Core:InitUnitElement" element="name">
+        <value type="QUERY_ACCESS" value="intDecl" extension="Identifier"/>
+      </inits>
+      <inits xsi:type="Core:InitUnitElement" element="parents">
+        <value type="QUERY_RESULT" value="extClass"/>
+      </inits>
+    </inits>
+    <from name="typeDeclaration" alias="td">
+      <filter variable="td">
+        <filter>
+          <element name="typeDeclaration" mark="true"/>
+          <next type="INDIRECT">
+            <element name="normalInterfaceDeclaration"/>
+          </next>
+        </filter>
+      </filter>
+    </from>
+    <to name="ClassM::Class"/>
+  </rules>
+</Core:Transformation>

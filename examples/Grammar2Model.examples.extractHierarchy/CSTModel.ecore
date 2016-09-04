@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CST:Node xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:CST="http://gts.inf.um.es/modernization/cst" kind="CST">
+  <children xsi:type="CST:Node" kind="file">
+    <children xsi:type="CST:Leaf" kind="path" value="D:\git\gra2mol\examples\Grammar2Model.examples.extractHierarchy\files\src\ClassA.java"/>
+    <children xsi:type="CST:Leaf" kind="filename" value="ClassA.java"/>
+    <children xsi:type="CST:Node" kind="compilationUnit"/>
+  </children>
+  <children xsi:type="CST:Node" kind="file">
+    <children xsi:type="CST:Leaf" kind="path" value="D:\git\gra2mol\examples\Grammar2Model.examples.extractHierarchy\files\src\ClassAA.java"/>
+    <children xsi:type="CST:Leaf" kind="filename" value="ClassAA.java"/>
+    <children xsi:type="CST:Node" kind="compilationUnit"/>
+  </children>
+  <children xsi:type="CST:Node" kind="file">
+    <children xsi:type="CST:Leaf" kind="path" value="D:\git\gra2mol\examples\Grammar2Model.examples.extractHierarchy\files\src\ClassAB.java"/>
+    <children xsi:type="CST:Leaf" kind="filename" value="ClassAB.java"/>
+    <children xsi:type="CST:Node" kind="compilationUnit"/>
+  </children>
+  <children xsi:type="CST:Node" kind="file">
+    <children xsi:type="CST:Leaf" kind="path" value="D:\git\gra2mol\examples\Grammar2Model.examples.extractHierarchy\files\src\ClassB.java"/>
+    <children xsi:type="CST:Leaf" kind="filename" value="ClassB.java"/>
+    <children xsi:type="CST:Node" kind="compilationUnit"/>
+  </children>
+  <children xsi:type="CST:Node" kind="file">
+    <children xsi:type="CST:Leaf" kind="path" value="D:\git\gra2mol\examples\Grammar2Model.examples.extractHierarchy\files\src\IntB.java"/>
+    <children xsi:type="CST:Leaf" kind="filename" value="IntB.java"/>
+    <children xsi:type="CST:Node" kind="compilationUnit"/>
+  </children>
+  <children xsi:type="CST:Node" kind="file">
+    <children xsi:type="CST:Leaf" kind="path" value="D:\git\gra2mol\examples\Grammar2Model.examples.extractHierarchy\files\src\IntBB.java"/>
+    <children xsi:type="CST:Leaf" kind="filename" value="IntBB.java"/>
+    <children xsi:type="CST:Node" kind="compilationUnit"/>
+  </children>
+</CST:Node>

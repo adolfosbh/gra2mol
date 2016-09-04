@@ -1,0 +1,77 @@
+Gra2MoL version 0.6
+
+Executing interpreter...
+Reading configuration file...
+The configuration does not exist
+
+Initializing query operation
+[WARNING] No query operation were found!
+
+Initializing query control statement
+[WARNING] No query control statement were found!
+
+Initializing mapping extension
+[WARNING] No mapping extension were found!
+Models created.
+Initializing indexRules...
+Initializing mixinRules...
+Initializing packages...
+Initializing hashes...
+
+Executing rules...
+RULE: mainRule
+RULE: mainRule... executing!
+  Model Element ClassM::Model created
+  Executing queries...
+    Query null with 1 result nodes - CONTENT : []
+    Query declarations with 0 result nodes
+  Executing mappings...
+    - QUERY_RESULT: THE VARIABLE DOESNT EXIST
+
+RULE: mainRule
+RULE: mainRule... executing!
+  Model Element ClassM::Model created
+  Executing queries...
+    Query null with 1 result nodes - CONTENT : []
+    Query declarations with 0 result nodes
+  Executing mappings...
+    - QUERY_RESULT: THE VARIABLE DOESNT EXIST
+
+RULE: mainRule
+RULE: mainRule... executing!
+  Model Element ClassM::Model created
+  Executing queries...
+    Query null with 1 result nodes - CONTENT : []
+    Query declarations with 0 result nodes
+  Executing mappings...
+    - QUERY_RESULT: THE VARIABLE DOESNT EXIST
+
+RULE: mainRule
+RULE: mainRule... executing!
+  Model Element ClassM::Model created
+  Executing queries...
+    Query null with 1 result nodes - CONTENT : []
+    Query declarations with 0 result nodes
+  Executing mappings...
+    - QUERY_RESULT: THE VARIABLE DOESNT EXIST
+
+RULE: mainRule
+RULE: mainRule... executing!
+  Model Element ClassM::Model created
+  Executing queries...
+    Query null with 1 result nodes - CONTENT : []
+    Query declarations with 0 result nodes
+  Executing mappings...
+    - QUERY_RESULT: THE VARIABLE DOESNT EXIST
+
+RULE: mainRule
+RULE: mainRule... executing!
+  Model Element ClassM::Model created
+  Executing queries...
+    Query null with 1 result nodes - CONTENT : []
+    Query declarations with 0 result nodes
+  Executing mappings...
+    - QUERY_RESULT: THE VARIABLE DOESNT EXIST
+
+
+Saving...
