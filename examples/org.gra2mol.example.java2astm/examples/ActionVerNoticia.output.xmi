@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<astm:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:astm="http://modelum.es/modernization/astm">
+  <files language="Java">
+    <fragments xsi:type="astm:AggregateTypeDefinition">
+      <name nameString="ActionVerNoticia"/>
+      <aggregateType xsi:type="astm:SpecificClassType" package="actionsstruts">
+        <members xsi:type="astm:FunctionDefinition">
+          <identifierName nameString="execute"/>
+          <returnType xsi:type="astm:NamedTypeReference">
+            <name nameString="ActionForward"/>
+          </returnType>
+          <formalParameters>
+            <identifierName nameString="actionMapping"/>
+            <definitionType xsi:type="astm:NamedTypeReference">
+              <name nameString="ActionMapping"/>
+            </definitionType>
+          </formalParameters>
+          <formalParameters>
+            <identifierName nameString="actionForm"/>
+            <definitionType xsi:type="astm:NamedTypeReference">
+              <name nameString="ActionForm"/>
+            </definitionType>
+          </formalParameters>
+          <formalParameters>
+            <identifierName nameString="request"/>
+            <definitionType xsi:type="astm:NamedTypeReference">
+              <name nameString="HttpServletRequest"/>
+            </definitionType>
+          </formalParameters>
+          <formalParameters>
+            <identifierName nameString="response"/>
+            <definitionType xsi:type="astm:NamedTypeReference">
+              <name nameString="HttpServletResponse"/>
+            </definitionType>
+          </formalParameters>
+          <body xsi:type="astm:DeclarationOrDefinitionStatement">
+            <declOrDefn xsi:type="astm:VariableDefinition">
+              <identifierName nameString="bean"/>
+              <definitionType xsi:type="astm:NamedTypeReference">
+                <name nameString="BeanTablon"/>
+              </definitionType>
+              <initialValue xsi:type="astm:CastExpression">
+                <expression xsi:type="astm:IdentifierReference" refersTo="//@files.0/@fragments.0/@aggregateType/@members.0/@formalParameters.1">
+                  <name nameString="actionForm"/>
+                </expression>
+              </initialValue>
+            </declOrDefn>
+          </body>
+          <body xsi:type="astm:DeclarationOrDefinitionStatement">
+            <declOrDefn xsi:type="astm:VariableDefinition">
+              <identifierName nameString="noticia"/>
+              <definitionType xsi:type="astm:NamedTypeReference">
+                <name nameString="Noticia"/>
+              </definitionType>
+              <initialValue xsi:type="astm:FunctionCallExpression">
+                <expressionType xsi:type="astm:NamedTypeReference">
+                  <name nameString="ControladorNoticias"/>
+                </expressionType>
+                <calledFunction xsi:type="astm:FunctionCallExpression">
+                  <expressionType xsi:type="astm:NamedTypeReference">
+                    <name nameString="getInstancia"/>
+                  </expressionType>
+                  <calledFunction xsi:type="astm:FunctionCallExpression">
+                    <expressionType xsi:type="astm:NamedTypeReference">
+                      <name nameString="findNoticia"/>
+                    </expressionType>
+                    <actualParams xsi:type="astm:ActualParameterExpression">
+                      <value xsi:type="astm:FunctionCallExpression">
+                        <expressionType xsi:type="astm:NamedTypeReference">
+                          <name nameString="bean"/>
+                        </expressionType>
+                        <calledFunction xsi:type="astm:FunctionCallExpression">
+                          <expressionType xsi:type="astm:NamedTypeReference">
+                            <name nameString="getTituloSeleccionado"/>
+                          </expressionType>
+                        </calledFunction>
+                      </value>
+                    </actualParams>
+                  </calledFunction>
+                </calledFunction>
+              </initialValue>
+            </declOrDefn>
+          </body>
+          <body xsi:type="astm:ExpressionStatement">
+            <expression xsi:type="astm:FunctionCallExpression">
+              <expressionType xsi:type="astm:NamedTypeReference">
+                <name nameString="bean"/>
+              </expressionType>
+              <calledFunction xsi:type="astm:FunctionCallExpression">
+                <expressionType xsi:type="astm:NamedTypeReference">
+                  <name nameString="setTitulo"/>
+                </expressionType>
+                <actualParams xsi:type="astm:ActualParameterExpression">
+                  <value xsi:type="astm:Literal" value="&quot;&quot;"/>
+                </actualParams>
+              </calledFunction>
+            </expression>
+          </body>
+          <body xsi:type="astm:ExpressionStatement">
+            <expression xsi:type="astm:FunctionCallExpression">
+              <expressionType xsi:type="astm:NamedTypeReference">
+                <name nameString="bean"/>
+              </expressionType>
+              <calledFunction xsi:type="astm:FunctionCallExpression">
+                <expressionType xsi:type="astm:NamedTypeReference">
+                  <name nameString="setContenido"/>
+                </expressionType>
+                <actualParams xsi:type="astm:ActualParameterExpression">
+                  <value xsi:type="astm:Literal" value="&quot;&quot;"/>
+                </actualParams>
+              </calledFunction>
+            </expression>
+          </body>
+          <body xsi:type="astm:ExpressionStatement">
+            <expression xsi:type="astm:FunctionCallExpression">
+              <expressionType xsi:type="astm:NamedTypeReference">
+                <name nameString="bean"/>
+              </expressionType>
+              <calledFunction xsi:type="astm:FunctionCallExpression">
+                <expressionType xsi:type="astm:NamedTypeReference">
+                  <name nameString="setAutor"/>
+                </expressionType>
+                <actualParams xsi:type="astm:ActualParameterExpression">
+                  <value xsi:type="astm:Literal" value="&quot;&quot;"/>
+                </actualParams>
+              </calledFunction>
+            </expression>
+          </body>
+          <body xsi:type="astm:ExpressionStatement">
+            <expression xsi:type="astm:FunctionCallExpression">
+              <expressionType xsi:type="astm:NamedTypeReference">
+                <name nameString="request"/>
+              </expressionType>
+              <calledFunction xsi:type="astm:FunctionCallExpression">
+                <expressionType xsi:type="astm:NamedTypeReference">
+                  <name nameString="setAttribute"/>
+                </expressionType>
+                <actualParams xsi:type="astm:ActualParameterExpression">
+                  <value xsi:type="astm:Literal" value="&quot;noticia&quot;"/>
+                </actualParams>
+                <actualParams xsi:type="astm:ActualParameterExpression">
+                  <value xsi:type="astm:IdentifierReference">
+                    <name nameString="noticia"/>
+                  </value>
+                </actualParams>
+              </calledFunction>
+            </expression>
+          </body>
+          <body xsi:type="astm:ReturnStatement">
+            <returnValue xsi:type="astm:FunctionCallExpression">
+              <expressionType xsi:type="astm:NamedTypeReference">
+                <name nameString="actionMapping"/>
+              </expressionType>
+              <calledFunction xsi:type="astm:FunctionCallExpression">
+                <expressionType xsi:type="astm:NamedTypeReference">
+                  <name nameString="findForward"/>
+                </expressionType>
+                <actualParams xsi:type="astm:ActualParameterExpression">
+                  <value xsi:type="astm:Literal" value="&quot;verNoticia&quot;"/>
+                </actualParams>
+              </calledFunction>
+            </returnValue>
+          </body>
+        </members>
+        <imports>import beansstruts . BeanTablon ;</imports>
+        <imports>import controladores . ControladorNoticias ;</imports>
+        <imports>import javax . servlet . http . * ;</imports>
+        <imports>import logicaNegocio . Noticia ;</imports>
+        <imports>import org . apache . struts . action . * ;</imports>
+      </aggregateType>
+    </fragments>
+  </files>
+</astm:Project>

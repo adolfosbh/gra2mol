@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CST:Node xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:CST="http://gts.inf.um.es/modernization/cst" kind="CST">
+  <children xsi:type="CST:Node" kind="file">
+    <children xsi:type="CST:Leaf" kind="path" value="D:\git\gra2mol\examples\Grammar2Model.examples.IDL2Model\files\src\scripts\example1"/>
+    <children xsi:type="CST:Leaf" kind="filename" value="example1"/>
+    <children xsi:type="CST:Node" kind="specification">
+      <children xsi:type="CST:Node" kind="definition">
+        <children xsi:type="CST:Node" kind="module">
+          <children xsi:type="CST:Leaf" kind="TOKEN" value="module" line="1"/>
+          <children xsi:type="CST:Leaf" kind="ID" value="test" pos="7" line="1"/>
+          <children xsi:type="CST:Leaf" kind="TOKEN" value="{" pos="12" line="1"/>
+          <children xsi:type="CST:Node" kind="definition">
+            <children xsi:type="CST:Node" kind="type_decl">
+              <children xsi:type="CST:Leaf" kind="TOKEN" value="typedef" pos="1" line="2"/>
+              <children xsi:type="CST:Node" kind="type_declarator">
+                <children xsi:type="CST:Node" kind="type_spec">
+                  <children xsi:type="CST:Node" kind="simple_type_spec">
+                    <children xsi:type="CST:Node" kind="base_type_spec">
+                      <children xsi:type="CST:Node" kind="integer_type">
+                        <children xsi:type="CST:Node" kind="signed_int">
+                          <children xsi:type="CST:Node" kind="signed_short_int">
+                            <children xsi:type="CST:Leaf" kind="TOKEN" value="short"
+                                pos="9" line="2"/>
+                          </children>
+                        </children>
+                      </children>
+                    </children>
+                  </children>
+                </children>
+                <children xsi:type="CST:Node" kind="declarators">
+                  <children xsi:type="CST:Node" kind="declarator">
+                    <children xsi:type="CST:Node" kind="simple_declarator">
+                      <children xsi:type="CST:Leaf" kind="ID" value="a1" pos="15"
+                          line="2"/>
+                    </children>
+                  </children>
+                </children>
+              </children>
+            </children>
+            <children xsi:type="CST:Leaf" kind="TOKEN" value=";" pos="17" line="2"/>
+          </children>
+          <children xsi:type="CST:Leaf" kind="TOKEN" value="}" line="3"/>
+        </children>
+        <children xsi:type="CST:Leaf" kind="TOKEN" value=";" pos="1" line="3"/>
+      </children>
+    </children>
+  </children>
+</CST:Node>
