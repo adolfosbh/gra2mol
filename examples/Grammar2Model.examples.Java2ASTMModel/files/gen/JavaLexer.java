@@ -1,4 +1,4 @@
-// $ANTLR 3.0.1 C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3 2009-05-12 20:05:53
+// $ANTLR 3.2 Sep 23, 2009 12:02:23 Java.g 2016-09-04 15:11:34
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -6,1818 +6,2006 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class JavaLexer extends Lexer {
-    public static final int FloatTypeSuffix=15;
-    public static final int OctalLiteral=10;
-    public static final int T29=29;
-    public static final int T28=28;
-    public static final int T27=27;
-    public static final int T26=26;
-    public static final int T25=25;
-    public static final int T24=24;
-    public static final int EOF=-1;
-    public static final int Identifier=4;
-    public static final int T38=38;
-    public static final int T37=37;
-    public static final int T39=39;
-    public static final int T34=34;
-    public static final int COMMENT=22;
-    public static final int T33=33;
-    public static final int T36=36;
-    public static final int T35=35;
-    public static final int T30=30;
-    public static final int T32=32;
-    public static final int T31=31;
-    public static final int LINE_COMMENT=23;
-    public static final int IntegerTypeSuffix=13;
-    public static final int T49=49;
-    public static final int T48=48;
-    public static final int T100=100;
-    public static final int T43=43;
-    public static final int T42=42;
-    public static final int T102=102;
-    public static final int T41=41;
-    public static final int T101=101;
-    public static final int T40=40;
-    public static final int T47=47;
-    public static final int T46=46;
-    public static final int T45=45;
-    public static final int T44=44;
-    public static final int T109=109;
-    public static final int T107=107;
-    public static final int T108=108;
-    public static final int T105=105;
-    public static final int WS=21;
-    public static final int T106=106;
-    public static final int T103=103;
-    public static final int T104=104;
-    public static final int T50=50;
-    public static final int FloatingPointLiteral=6;
-    public static final int JavaIDDigit=20;
-    public static final int T59=59;
-    public static final int T113=113;
-    public static final int T52=52;
-    public static final int T112=112;
-    public static final int T51=51;
-    public static final int T111=111;
-    public static final int T54=54;
-    public static final int T110=110;
-    public static final int Letter=19;
-    public static final int EscapeSequence=16;
-    public static final int T53=53;
-    public static final int T56=56;
-    public static final int T55=55;
-    public static final int T58=58;
-    public static final int T57=57;
-    public static final int T75=75;
-    public static final int T76=76;
-    public static final int T73=73;
-    public static final int T74=74;
-    public static final int T79=79;
-    public static final int T77=77;
-    public static final int T78=78;
-    public static final int CharacterLiteral=7;
-    public static final int Exponent=14;
-    public static final int HexDigit=12;
-    public static final int T72=72;
-    public static final int T71=71;
-    public static final int T70=70;
-    public static final int T62=62;
-    public static final int T63=63;
-    public static final int T64=64;
-    public static final int T65=65;
-    public static final int T66=66;
-    public static final int T67=67;
-    public static final int T68=68;
-    public static final int T69=69;
-    public static final int T61=61;
-    public static final int T60=60;
-    public static final int HexLiteral=9;
-    public static final int T99=99;
-    public static final int T97=97;
-    public static final int T98=98;
-    public static final int T95=95;
-    public static final int T96=96;
-    public static final int T94=94;
-    public static final int Tokens=114;
-    public static final int T93=93;
-    public static final int DecimalLiteral=11;
-    public static final int T92=92;
-    public static final int T91=91;
-    public static final int T90=90;
-    public static final int StringLiteral=8;
-    public static final int T88=88;
-    public static final int T89=89;
-    public static final int T84=84;
+    public static final int T__50=50;
+    public static final int T__59=59;
+    public static final int T__55=55;
+    public static final int T__56=56;
+    public static final int T__57=57;
+    public static final int T__58=58;
+    public static final int T__51=51;
+    public static final int T__52=52;
+    public static final int T__53=53;
+    public static final int T__54=54;
     public static final int ENUM=5;
-    public static final int T85=85;
-    public static final int T86=86;
-    public static final int T87=87;
-    public static final int UnicodeEscape=17;
-    public static final int T81=81;
-    public static final int T80=80;
-    public static final int T83=83;
+    public static final int T__60=60;
+    public static final int T__61=61;
+    public static final int HexDigit=12;
+    public static final int Letter=19;
+    public static final int LINE_COMMENT=23;
+    public static final int StringLiteral=8;
+    public static final int T__66=66;
+    public static final int T__67=67;
+    public static final int T__68=68;
+    public static final int T__69=69;
+    public static final int T__62=62;
     public static final int OctalEscape=18;
-    public static final int T82=82;
+    public static final int JavaIDDigit=20;
+    public static final int T__63=63;
+    public static final int T__64=64;
+    public static final int T__65=65;
+    public static final int COMMENT=22;
+    public static final int T__37=37;
+    public static final int IntegerTypeSuffix=13;
+    public static final int T__38=38;
+    public static final int T__39=39;
+    public static final int T__33=33;
+    public static final int DecimalLiteral=11;
+    public static final int T__34=34;
+    public static final int T__35=35;
+    public static final int T__36=36;
+    public static final int UnicodeEscape=17;
+    public static final int T__30=30;
+    public static final int T__31=31;
+    public static final int T__32=32;
+    public static final int T__48=48;
+    public static final int T__49=49;
+    public static final int FloatingPointLiteral=6;
+    public static final int T__44=44;
+    public static final int T__45=45;
+    public static final int HexLiteral=9;
+    public static final int T__46=46;
+    public static final int T__47=47;
+    public static final int T__40=40;
+    public static final int T__41=41;
+    public static final int T__42=42;
+    public static final int T__43=43;
+    public static final int CharacterLiteral=7;
+    public static final int T__91=91;
+    public static final int T__100=100;
+    public static final int T__92=92;
+    public static final int T__93=93;
+    public static final int T__102=102;
+    public static final int T__94=94;
+    public static final int T__101=101;
+    public static final int T__90=90;
+    public static final int Identifier=4;
+    public static final int OctalLiteral=10;
+    public static final int T__99=99;
+    public static final int T__95=95;
+    public static final int T__96=96;
+    public static final int T__97=97;
+    public static final int T__98=98;
+    public static final int T__26=26;
+    public static final int T__27=27;
+    public static final int T__28=28;
+    public static final int T__29=29;
+    public static final int T__24=24;
+    public static final int T__25=25;
+    public static final int T__70=70;
+    public static final int T__71=71;
+    public static final int T__72=72;
+    public static final int Exponent=14;
+    public static final int T__77=77;
+    public static final int T__78=78;
+    public static final int FloatTypeSuffix=15;
+    public static final int T__79=79;
+    public static final int T__73=73;
+    public static final int WS=21;
+    public static final int EOF=-1;
+    public static final int T__74=74;
+    public static final int T__75=75;
+    public static final int T__76=76;
+    public static final int T__80=80;
+    public static final int T__111=111;
+    public static final int T__81=81;
+    public static final int T__110=110;
+    public static final int T__82=82;
+    public static final int T__113=113;
+    public static final int T__83=83;
+    public static final int T__112=112;
+    public static final int EscapeSequence=16;
+    public static final int T__88=88;
+    public static final int T__108=108;
+    public static final int T__89=89;
+    public static final int T__107=107;
+    public static final int T__109=109;
+    public static final int T__84=84;
+    public static final int T__104=104;
+    public static final int T__85=85;
+    public static final int T__103=103;
+    public static final int T__86=86;
+    public static final int T__106=106;
+    public static final int T__87=87;
+    public static final int T__105=105;
 
     protected boolean enumIsKeyword = true;
 
+
+    // delegates
+    // delegators
+
     public JavaLexer() {;} 
     public JavaLexer(CharStream input) {
-        super(input);
+        this(input, new RecognizerSharedState());
     }
-    public String getGrammarFileName() { return "C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3"; }
+    public JavaLexer(CharStream input, RecognizerSharedState state) {
+        super(input,state);
 
-    // $ANTLR start T24
-    public final void mT24() throws RecognitionException {
+    }
+    public String getGrammarFileName() { return "Java.g"; }
+
+    // $ANTLR start "T__24"
+    public final void mT__24() throws RecognitionException {
         try {
-            int _type = T24;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:6:5: ( 'package' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:6:7: 'package'
+            int _type = T__24;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:7:7: ( 'package' )
+            // Java.g:7:9: 'package'
             {
             match("package"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T24
+    // $ANTLR end "T__24"
 
-    // $ANTLR start T25
-    public final void mT25() throws RecognitionException {
+    // $ANTLR start "T__25"
+    public final void mT__25() throws RecognitionException {
         try {
-            int _type = T25;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:7:5: ( ';' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:7:7: ';'
+            int _type = T__25;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:8:7: ( ';' )
+            // Java.g:8:9: ';'
             {
             match(';'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T25
+    // $ANTLR end "T__25"
 
-    // $ANTLR start T26
-    public final void mT26() throws RecognitionException {
+    // $ANTLR start "T__26"
+    public final void mT__26() throws RecognitionException {
         try {
-            int _type = T26;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8:5: ( 'import' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8:7: 'import'
+            int _type = T__26;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:9:7: ( 'import' )
+            // Java.g:9:9: 'import'
             {
             match("import"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T26
+    // $ANTLR end "T__26"
 
-    // $ANTLR start T27
-    public final void mT27() throws RecognitionException {
+    // $ANTLR start "T__27"
+    public final void mT__27() throws RecognitionException {
         try {
-            int _type = T27;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:9:5: ( 'static' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:9:7: 'static'
+            int _type = T__27;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:10:7: ( 'static' )
+            // Java.g:10:9: 'static'
             {
             match("static"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T27
+    // $ANTLR end "T__27"
 
-    // $ANTLR start T28
-    public final void mT28() throws RecognitionException {
+    // $ANTLR start "T__28"
+    public final void mT__28() throws RecognitionException {
         try {
-            int _type = T28;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:10:5: ( '.' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:10:7: '.'
+            int _type = T__28;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:11:7: ( '.' )
+            // Java.g:11:9: '.'
             {
             match('.'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T28
+    // $ANTLR end "T__28"
 
-    // $ANTLR start T29
-    public final void mT29() throws RecognitionException {
+    // $ANTLR start "T__29"
+    public final void mT__29() throws RecognitionException {
         try {
-            int _type = T29;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:11:5: ( '*' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:11:7: '*'
+            int _type = T__29;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:12:7: ( '*' )
+            // Java.g:12:9: '*'
             {
             match('*'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T29
+    // $ANTLR end "T__29"
 
-    // $ANTLR start T30
-    public final void mT30() throws RecognitionException {
+    // $ANTLR start "T__30"
+    public final void mT__30() throws RecognitionException {
         try {
-            int _type = T30;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:12:5: ( 'class' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:12:7: 'class'
+            int _type = T__30;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:13:7: ( 'class' )
+            // Java.g:13:9: 'class'
             {
             match("class"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T30
+    // $ANTLR end "T__30"
 
-    // $ANTLR start T31
-    public final void mT31() throws RecognitionException {
+    // $ANTLR start "T__31"
+    public final void mT__31() throws RecognitionException {
         try {
-            int _type = T31;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:13:5: ( 'extends' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:13:7: 'extends'
+            int _type = T__31;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:14:7: ( 'extends' )
+            // Java.g:14:9: 'extends'
             {
             match("extends"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T31
+    // $ANTLR end "T__31"
 
-    // $ANTLR start T32
-    public final void mT32() throws RecognitionException {
+    // $ANTLR start "T__32"
+    public final void mT__32() throws RecognitionException {
         try {
-            int _type = T32;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:14:5: ( 'implements' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:14:7: 'implements'
+            int _type = T__32;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:15:7: ( 'implements' )
+            // Java.g:15:9: 'implements'
             {
             match("implements"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T32
+    // $ANTLR end "T__32"
 
-    // $ANTLR start T33
-    public final void mT33() throws RecognitionException {
+    // $ANTLR start "T__33"
+    public final void mT__33() throws RecognitionException {
         try {
-            int _type = T33;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:15:5: ( '<' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:15:7: '<'
+            int _type = T__33;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:16:7: ( '<' )
+            // Java.g:16:9: '<'
             {
             match('<'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T33
+    // $ANTLR end "T__33"
 
-    // $ANTLR start T34
-    public final void mT34() throws RecognitionException {
+    // $ANTLR start "T__34"
+    public final void mT__34() throws RecognitionException {
         try {
-            int _type = T34;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:16:5: ( ',' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:16:7: ','
+            int _type = T__34;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:17:7: ( ',' )
+            // Java.g:17:9: ','
             {
             match(','); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T34
+    // $ANTLR end "T__34"
 
-    // $ANTLR start T35
-    public final void mT35() throws RecognitionException {
+    // $ANTLR start "T__35"
+    public final void mT__35() throws RecognitionException {
         try {
-            int _type = T35;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:17:5: ( '>' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:17:7: '>'
+            int _type = T__35;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:18:7: ( '>' )
+            // Java.g:18:9: '>'
             {
             match('>'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T35
+    // $ANTLR end "T__35"
 
-    // $ANTLR start T36
-    public final void mT36() throws RecognitionException {
+    // $ANTLR start "T__36"
+    public final void mT__36() throws RecognitionException {
         try {
-            int _type = T36;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:18:5: ( '&' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:18:7: '&'
+            int _type = T__36;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:19:7: ( '&' )
+            // Java.g:19:9: '&'
             {
             match('&'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T36
+    // $ANTLR end "T__36"
 
-    // $ANTLR start T37
-    public final void mT37() throws RecognitionException {
+    // $ANTLR start "T__37"
+    public final void mT__37() throws RecognitionException {
         try {
-            int _type = T37;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:19:5: ( '{' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:19:7: '{'
+            int _type = T__37;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:20:7: ( '{' )
+            // Java.g:20:9: '{'
             {
             match('{'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T37
+    // $ANTLR end "T__37"
 
-    // $ANTLR start T38
-    public final void mT38() throws RecognitionException {
+    // $ANTLR start "T__38"
+    public final void mT__38() throws RecognitionException {
         try {
-            int _type = T38;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:20:5: ( '}' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:20:7: '}'
+            int _type = T__38;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:21:7: ( '}' )
+            // Java.g:21:9: '}'
             {
             match('}'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T38
+    // $ANTLR end "T__38"
 
-    // $ANTLR start T39
-    public final void mT39() throws RecognitionException {
+    // $ANTLR start "T__39"
+    public final void mT__39() throws RecognitionException {
         try {
-            int _type = T39;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:21:5: ( 'interface' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:21:7: 'interface'
+            int _type = T__39;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:22:7: ( 'interface' )
+            // Java.g:22:9: 'interface'
             {
             match("interface"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T39
+    // $ANTLR end "T__39"
 
-    // $ANTLR start T40
-    public final void mT40() throws RecognitionException {
+    // $ANTLR start "T__40"
+    public final void mT__40() throws RecognitionException {
         try {
-            int _type = T40;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:22:5: ( 'void' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:22:7: 'void'
+            int _type = T__40;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:23:7: ( 'void' )
+            // Java.g:23:9: 'void'
             {
             match("void"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T40
+    // $ANTLR end "T__40"
 
-    // $ANTLR start T41
-    public final void mT41() throws RecognitionException {
+    // $ANTLR start "T__41"
+    public final void mT__41() throws RecognitionException {
         try {
-            int _type = T41;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:23:5: ( '[' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:23:7: '['
+            int _type = T__41;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:24:7: ( '[' )
+            // Java.g:24:9: '['
             {
             match('['); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T41
+    // $ANTLR end "T__41"
 
-    // $ANTLR start T42
-    public final void mT42() throws RecognitionException {
+    // $ANTLR start "T__42"
+    public final void mT__42() throws RecognitionException {
         try {
-            int _type = T42;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:24:5: ( ']' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:24:7: ']'
+            int _type = T__42;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:25:7: ( ']' )
+            // Java.g:25:9: ']'
             {
             match(']'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T42
+    // $ANTLR end "T__42"
 
-    // $ANTLR start T43
-    public final void mT43() throws RecognitionException {
+    // $ANTLR start "T__43"
+    public final void mT__43() throws RecognitionException {
         try {
-            int _type = T43;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:25:5: ( 'throws' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:25:7: 'throws'
+            int _type = T__43;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:26:7: ( 'throws' )
+            // Java.g:26:9: 'throws'
             {
             match("throws"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T43
+    // $ANTLR end "T__43"
 
-    // $ANTLR start T44
-    public final void mT44() throws RecognitionException {
+    // $ANTLR start "T__44"
+    public final void mT__44() throws RecognitionException {
         try {
-            int _type = T44;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:26:5: ( '=' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:26:7: '='
+            int _type = T__44;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:27:7: ( '=' )
+            // Java.g:27:9: '='
             {
             match('='); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T44
+    // $ANTLR end "T__44"
 
-    // $ANTLR start T45
-    public final void mT45() throws RecognitionException {
+    // $ANTLR start "T__45"
+    public final void mT__45() throws RecognitionException {
         try {
-            int _type = T45;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:27:5: ( 'public' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:27:7: 'public'
+            int _type = T__45;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:28:7: ( 'public' )
+            // Java.g:28:9: 'public'
             {
             match("public"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T45
+    // $ANTLR end "T__45"
 
-    // $ANTLR start T46
-    public final void mT46() throws RecognitionException {
+    // $ANTLR start "T__46"
+    public final void mT__46() throws RecognitionException {
         try {
-            int _type = T46;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:28:5: ( 'protected' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:28:7: 'protected'
+            int _type = T__46;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:29:7: ( 'protected' )
+            // Java.g:29:9: 'protected'
             {
             match("protected"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T46
+    // $ANTLR end "T__46"
 
-    // $ANTLR start T47
-    public final void mT47() throws RecognitionException {
+    // $ANTLR start "T__47"
+    public final void mT__47() throws RecognitionException {
         try {
-            int _type = T47;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:29:5: ( 'private' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:29:7: 'private'
+            int _type = T__47;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:30:7: ( 'private' )
+            // Java.g:30:9: 'private'
             {
             match("private"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T47
+    // $ANTLR end "T__47"
 
-    // $ANTLR start T48
-    public final void mT48() throws RecognitionException {
+    // $ANTLR start "T__48"
+    public final void mT__48() throws RecognitionException {
         try {
-            int _type = T48;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:30:5: ( 'abstract' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:30:7: 'abstract'
+            int _type = T__48;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:31:7: ( 'abstract' )
+            // Java.g:31:9: 'abstract'
             {
             match("abstract"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T48
+    // $ANTLR end "T__48"
 
-    // $ANTLR start T49
-    public final void mT49() throws RecognitionException {
+    // $ANTLR start "T__49"
+    public final void mT__49() throws RecognitionException {
         try {
-            int _type = T49;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:31:5: ( 'final' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:31:7: 'final'
+            int _type = T__49;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:32:7: ( 'final' )
+            // Java.g:32:9: 'final'
             {
             match("final"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T49
+    // $ANTLR end "T__49"
 
-    // $ANTLR start T50
-    public final void mT50() throws RecognitionException {
+    // $ANTLR start "T__50"
+    public final void mT__50() throws RecognitionException {
         try {
-            int _type = T50;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:32:5: ( 'native' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:32:7: 'native'
+            int _type = T__50;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:33:7: ( 'native' )
+            // Java.g:33:9: 'native'
             {
             match("native"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T50
+    // $ANTLR end "T__50"
 
-    // $ANTLR start T51
-    public final void mT51() throws RecognitionException {
+    // $ANTLR start "T__51"
+    public final void mT__51() throws RecognitionException {
         try {
-            int _type = T51;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:33:5: ( 'synchronized' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:33:7: 'synchronized'
+            int _type = T__51;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:34:7: ( 'synchronized' )
+            // Java.g:34:9: 'synchronized'
             {
             match("synchronized"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T51
+    // $ANTLR end "T__51"
 
-    // $ANTLR start T52
-    public final void mT52() throws RecognitionException {
+    // $ANTLR start "T__52"
+    public final void mT__52() throws RecognitionException {
         try {
-            int _type = T52;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:34:5: ( 'transient' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:34:7: 'transient'
+            int _type = T__52;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:35:7: ( 'transient' )
+            // Java.g:35:9: 'transient'
             {
             match("transient"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T52
+    // $ANTLR end "T__52"
 
-    // $ANTLR start T53
-    public final void mT53() throws RecognitionException {
+    // $ANTLR start "T__53"
+    public final void mT__53() throws RecognitionException {
         try {
-            int _type = T53;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:35:5: ( 'volatile' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:35:7: 'volatile'
+            int _type = T__53;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:36:7: ( 'volatile' )
+            // Java.g:36:9: 'volatile'
             {
             match("volatile"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T53
+    // $ANTLR end "T__53"
 
-    // $ANTLR start T54
-    public final void mT54() throws RecognitionException {
+    // $ANTLR start "T__54"
+    public final void mT__54() throws RecognitionException {
         try {
-            int _type = T54;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:36:5: ( 'strictfp' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:36:7: 'strictfp'
+            int _type = T__54;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:37:7: ( 'strictfp' )
+            // Java.g:37:9: 'strictfp'
             {
             match("strictfp"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T54
+    // $ANTLR end "T__54"
 
-    // $ANTLR start T55
-    public final void mT55() throws RecognitionException {
+    // $ANTLR start "T__55"
+    public final void mT__55() throws RecognitionException {
         try {
-            int _type = T55;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:37:5: ( 'boolean' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:37:7: 'boolean'
+            int _type = T__55;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:38:7: ( 'boolean' )
+            // Java.g:38:9: 'boolean'
             {
             match("boolean"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T55
+    // $ANTLR end "T__55"
 
-    // $ANTLR start T56
-    public final void mT56() throws RecognitionException {
+    // $ANTLR start "T__56"
+    public final void mT__56() throws RecognitionException {
         try {
-            int _type = T56;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:38:5: ( 'char' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:38:7: 'char'
+            int _type = T__56;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:39:7: ( 'char' )
+            // Java.g:39:9: 'char'
             {
             match("char"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T56
+    // $ANTLR end "T__56"
 
-    // $ANTLR start T57
-    public final void mT57() throws RecognitionException {
+    // $ANTLR start "T__57"
+    public final void mT__57() throws RecognitionException {
         try {
-            int _type = T57;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:39:5: ( 'byte' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:39:7: 'byte'
+            int _type = T__57;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:40:7: ( 'byte' )
+            // Java.g:40:9: 'byte'
             {
             match("byte"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T57
+    // $ANTLR end "T__57"
 
-    // $ANTLR start T58
-    public final void mT58() throws RecognitionException {
+    // $ANTLR start "T__58"
+    public final void mT__58() throws RecognitionException {
         try {
-            int _type = T58;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:40:5: ( 'short' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:40:7: 'short'
+            int _type = T__58;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:41:7: ( 'short' )
+            // Java.g:41:9: 'short'
             {
             match("short"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T58
+    // $ANTLR end "T__58"
 
-    // $ANTLR start T59
-    public final void mT59() throws RecognitionException {
+    // $ANTLR start "T__59"
+    public final void mT__59() throws RecognitionException {
         try {
-            int _type = T59;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:41:5: ( 'int' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:41:7: 'int'
+            int _type = T__59;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:42:7: ( 'int' )
+            // Java.g:42:9: 'int'
             {
             match("int"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T59
+    // $ANTLR end "T__59"
 
-    // $ANTLR start T60
-    public final void mT60() throws RecognitionException {
+    // $ANTLR start "T__60"
+    public final void mT__60() throws RecognitionException {
         try {
-            int _type = T60;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:42:5: ( 'long' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:42:7: 'long'
+            int _type = T__60;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:43:7: ( 'long' )
+            // Java.g:43:9: 'long'
             {
             match("long"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T60
+    // $ANTLR end "T__60"
 
-    // $ANTLR start T61
-    public final void mT61() throws RecognitionException {
+    // $ANTLR start "T__61"
+    public final void mT__61() throws RecognitionException {
         try {
-            int _type = T61;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:43:5: ( 'float' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:43:7: 'float'
+            int _type = T__61;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:44:7: ( 'float' )
+            // Java.g:44:9: 'float'
             {
             match("float"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T61
+    // $ANTLR end "T__61"
 
-    // $ANTLR start T62
-    public final void mT62() throws RecognitionException {
+    // $ANTLR start "T__62"
+    public final void mT__62() throws RecognitionException {
         try {
-            int _type = T62;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:44:5: ( 'double' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:44:7: 'double'
+            int _type = T__62;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:45:7: ( 'double' )
+            // Java.g:45:9: 'double'
             {
             match("double"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T62
+    // $ANTLR end "T__62"
 
-    // $ANTLR start T63
-    public final void mT63() throws RecognitionException {
+    // $ANTLR start "T__63"
+    public final void mT__63() throws RecognitionException {
         try {
-            int _type = T63;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:45:5: ( '?' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:45:7: '?'
+            int _type = T__63;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:46:7: ( '?' )
+            // Java.g:46:9: '?'
             {
             match('?'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T63
+    // $ANTLR end "T__63"
 
-    // $ANTLR start T64
-    public final void mT64() throws RecognitionException {
+    // $ANTLR start "T__64"
+    public final void mT__64() throws RecognitionException {
         try {
-            int _type = T64;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:46:5: ( 'super' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:46:7: 'super'
+            int _type = T__64;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:47:7: ( 'super' )
+            // Java.g:47:9: 'super'
             {
             match("super"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T64
+    // $ANTLR end "T__64"
 
-    // $ANTLR start T65
-    public final void mT65() throws RecognitionException {
+    // $ANTLR start "T__65"
+    public final void mT__65() throws RecognitionException {
         try {
-            int _type = T65;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:47:5: ( '(' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:47:7: '('
+            int _type = T__65;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:48:7: ( '(' )
+            // Java.g:48:9: '('
             {
             match('('); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T65
+    // $ANTLR end "T__65"
 
-    // $ANTLR start T66
-    public final void mT66() throws RecognitionException {
+    // $ANTLR start "T__66"
+    public final void mT__66() throws RecognitionException {
         try {
-            int _type = T66;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:48:5: ( ')' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:48:7: ')'
+            int _type = T__66;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:49:7: ( ')' )
+            // Java.g:49:9: ')'
             {
             match(')'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T66
+    // $ANTLR end "T__66"
 
-    // $ANTLR start T67
-    public final void mT67() throws RecognitionException {
+    // $ANTLR start "T__67"
+    public final void mT__67() throws RecognitionException {
         try {
-            int _type = T67;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:49:5: ( '...' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:49:7: '...'
+            int _type = T__67;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:50:7: ( '...' )
+            // Java.g:50:9: '...'
             {
             match("..."); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T67
+    // $ANTLR end "T__67"
 
-    // $ANTLR start T68
-    public final void mT68() throws RecognitionException {
+    // $ANTLR start "T__68"
+    public final void mT__68() throws RecognitionException {
         try {
-            int _type = T68;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:50:5: ( 'null' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:50:7: 'null'
+            int _type = T__68;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:51:7: ( 'null' )
+            // Java.g:51:9: 'null'
             {
             match("null"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T68
+    // $ANTLR end "T__68"
 
-    // $ANTLR start T69
-    public final void mT69() throws RecognitionException {
+    // $ANTLR start "T__69"
+    public final void mT__69() throws RecognitionException {
         try {
-            int _type = T69;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:51:5: ( 'true' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:51:7: 'true'
+            int _type = T__69;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:52:7: ( 'true' )
+            // Java.g:52:9: 'true'
             {
             match("true"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T69
+    // $ANTLR end "T__69"
 
-    // $ANTLR start T70
-    public final void mT70() throws RecognitionException {
+    // $ANTLR start "T__70"
+    public final void mT__70() throws RecognitionException {
         try {
-            int _type = T70;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:52:5: ( 'false' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:52:7: 'false'
+            int _type = T__70;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:53:7: ( 'false' )
+            // Java.g:53:9: 'false'
             {
             match("false"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T70
+    // $ANTLR end "T__70"
 
-    // $ANTLR start T71
-    public final void mT71() throws RecognitionException {
+    // $ANTLR start "T__71"
+    public final void mT__71() throws RecognitionException {
         try {
-            int _type = T71;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:53:5: ( '@' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:53:7: '@'
+            int _type = T__71;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:54:7: ( '@' )
+            // Java.g:54:9: '@'
             {
             match('@'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T71
+    // $ANTLR end "T__71"
 
-    // $ANTLR start T72
-    public final void mT72() throws RecognitionException {
+    // $ANTLR start "T__72"
+    public final void mT__72() throws RecognitionException {
         try {
-            int _type = T72;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:54:5: ( 'default' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:54:7: 'default'
+            int _type = T__72;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:55:7: ( 'default' )
+            // Java.g:55:9: 'default'
             {
             match("default"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T72
+    // $ANTLR end "T__72"
 
-    // $ANTLR start T73
-    public final void mT73() throws RecognitionException {
+    // $ANTLR start "T__73"
+    public final void mT__73() throws RecognitionException {
         try {
-            int _type = T73;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:55:5: ( 'assert' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:55:7: 'assert'
+            int _type = T__73;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:56:7: ( 'assert' )
+            // Java.g:56:9: 'assert'
             {
             match("assert"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T73
+    // $ANTLR end "T__73"
 
-    // $ANTLR start T74
-    public final void mT74() throws RecognitionException {
+    // $ANTLR start "T__74"
+    public final void mT__74() throws RecognitionException {
         try {
-            int _type = T74;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:56:5: ( ':' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:56:7: ':'
+            int _type = T__74;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:57:7: ( ':' )
+            // Java.g:57:9: ':'
             {
             match(':'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T74
+    // $ANTLR end "T__74"
 
-    // $ANTLR start T75
-    public final void mT75() throws RecognitionException {
+    // $ANTLR start "T__75"
+    public final void mT__75() throws RecognitionException {
         try {
-            int _type = T75;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:57:5: ( 'if' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:57:7: 'if'
+            int _type = T__75;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:58:7: ( 'if' )
+            // Java.g:58:9: 'if'
             {
             match("if"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T75
+    // $ANTLR end "T__75"
 
-    // $ANTLR start T76
-    public final void mT76() throws RecognitionException {
+    // $ANTLR start "T__76"
+    public final void mT__76() throws RecognitionException {
         try {
-            int _type = T76;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:58:5: ( 'else' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:58:7: 'else'
+            int _type = T__76;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:59:7: ( 'else' )
+            // Java.g:59:9: 'else'
             {
             match("else"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T76
+    // $ANTLR end "T__76"
 
-    // $ANTLR start T77
-    public final void mT77() throws RecognitionException {
+    // $ANTLR start "T__77"
+    public final void mT__77() throws RecognitionException {
         try {
-            int _type = T77;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:59:5: ( 'for' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:59:7: 'for'
+            int _type = T__77;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:60:7: ( 'for' )
+            // Java.g:60:9: 'for'
             {
             match("for"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T77
+    // $ANTLR end "T__77"
 
-    // $ANTLR start T78
-    public final void mT78() throws RecognitionException {
+    // $ANTLR start "T__78"
+    public final void mT__78() throws RecognitionException {
         try {
-            int _type = T78;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:60:5: ( 'while' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:60:7: 'while'
+            int _type = T__78;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:61:7: ( 'while' )
+            // Java.g:61:9: 'while'
             {
             match("while"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T78
+    // $ANTLR end "T__78"
 
-    // $ANTLR start T79
-    public final void mT79() throws RecognitionException {
+    // $ANTLR start "T__79"
+    public final void mT__79() throws RecognitionException {
         try {
-            int _type = T79;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:61:5: ( 'do' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:61:7: 'do'
+            int _type = T__79;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:62:7: ( 'do' )
+            // Java.g:62:9: 'do'
             {
             match("do"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T79
+    // $ANTLR end "T__79"
 
-    // $ANTLR start T80
-    public final void mT80() throws RecognitionException {
+    // $ANTLR start "T__80"
+    public final void mT__80() throws RecognitionException {
         try {
-            int _type = T80;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:62:5: ( 'try' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:62:7: 'try'
+            int _type = T__80;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:63:7: ( 'try' )
+            // Java.g:63:9: 'try'
             {
             match("try"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T80
+    // $ANTLR end "T__80"
 
-    // $ANTLR start T81
-    public final void mT81() throws RecognitionException {
+    // $ANTLR start "T__81"
+    public final void mT__81() throws RecognitionException {
         try {
-            int _type = T81;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:63:5: ( 'finally' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:63:7: 'finally'
+            int _type = T__81;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:64:7: ( 'finally' )
+            // Java.g:64:9: 'finally'
             {
             match("finally"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T81
+    // $ANTLR end "T__81"
 
-    // $ANTLR start T82
-    public final void mT82() throws RecognitionException {
+    // $ANTLR start "T__82"
+    public final void mT__82() throws RecognitionException {
         try {
-            int _type = T82;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:64:5: ( 'switch' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:64:7: 'switch'
+            int _type = T__82;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:65:7: ( 'switch' )
+            // Java.g:65:9: 'switch'
             {
             match("switch"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T82
+    // $ANTLR end "T__82"
 
-    // $ANTLR start T83
-    public final void mT83() throws RecognitionException {
+    // $ANTLR start "T__83"
+    public final void mT__83() throws RecognitionException {
         try {
-            int _type = T83;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:65:5: ( 'return' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:65:7: 'return'
+            int _type = T__83;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:66:7: ( 'return' )
+            // Java.g:66:9: 'return'
             {
             match("return"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T83
+    // $ANTLR end "T__83"
 
-    // $ANTLR start T84
-    public final void mT84() throws RecognitionException {
+    // $ANTLR start "T__84"
+    public final void mT__84() throws RecognitionException {
         try {
-            int _type = T84;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:66:5: ( 'throw' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:66:7: 'throw'
+            int _type = T__84;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:67:7: ( 'throw' )
+            // Java.g:67:9: 'throw'
             {
             match("throw"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T84
+    // $ANTLR end "T__84"
 
-    // $ANTLR start T85
-    public final void mT85() throws RecognitionException {
+    // $ANTLR start "T__85"
+    public final void mT__85() throws RecognitionException {
         try {
-            int _type = T85;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:67:5: ( 'break' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:67:7: 'break'
+            int _type = T__85;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:68:7: ( 'break' )
+            // Java.g:68:9: 'break'
             {
             match("break"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T85
+    // $ANTLR end "T__85"
 
-    // $ANTLR start T86
-    public final void mT86() throws RecognitionException {
+    // $ANTLR start "T__86"
+    public final void mT__86() throws RecognitionException {
         try {
-            int _type = T86;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:68:5: ( 'continue' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:68:7: 'continue'
+            int _type = T__86;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:69:7: ( 'continue' )
+            // Java.g:69:9: 'continue'
             {
             match("continue"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T86
+    // $ANTLR end "T__86"
 
-    // $ANTLR start T87
-    public final void mT87() throws RecognitionException {
+    // $ANTLR start "T__87"
+    public final void mT__87() throws RecognitionException {
         try {
-            int _type = T87;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:69:5: ( 'catch' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:69:7: 'catch'
+            int _type = T__87;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:70:7: ( 'catch' )
+            // Java.g:70:9: 'catch'
             {
             match("catch"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T87
+    // $ANTLR end "T__87"
 
-    // $ANTLR start T88
-    public final void mT88() throws RecognitionException {
+    // $ANTLR start "T__88"
+    public final void mT__88() throws RecognitionException {
         try {
-            int _type = T88;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:70:5: ( 'case' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:70:7: 'case'
+            int _type = T__88;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:71:7: ( 'case' )
+            // Java.g:71:9: 'case'
             {
             match("case"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T88
+    // $ANTLR end "T__88"
 
-    // $ANTLR start T89
-    public final void mT89() throws RecognitionException {
+    // $ANTLR start "T__89"
+    public final void mT__89() throws RecognitionException {
         try {
-            int _type = T89;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:71:5: ( '+=' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:71:7: '+='
+            int _type = T__89;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:72:7: ( '+=' )
+            // Java.g:72:9: '+='
             {
             match("+="); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T89
+    // $ANTLR end "T__89"
 
-    // $ANTLR start T90
-    public final void mT90() throws RecognitionException {
+    // $ANTLR start "T__90"
+    public final void mT__90() throws RecognitionException {
         try {
-            int _type = T90;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:72:5: ( '-=' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:72:7: '-='
+            int _type = T__90;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:73:7: ( '-=' )
+            // Java.g:73:9: '-='
             {
             match("-="); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T90
+    // $ANTLR end "T__90"
 
-    // $ANTLR start T91
-    public final void mT91() throws RecognitionException {
+    // $ANTLR start "T__91"
+    public final void mT__91() throws RecognitionException {
         try {
-            int _type = T91;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:73:5: ( '*=' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:73:7: '*='
+            int _type = T__91;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:74:7: ( '*=' )
+            // Java.g:74:9: '*='
             {
             match("*="); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T91
+    // $ANTLR end "T__91"
 
-    // $ANTLR start T92
-    public final void mT92() throws RecognitionException {
+    // $ANTLR start "T__92"
+    public final void mT__92() throws RecognitionException {
         try {
-            int _type = T92;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:74:5: ( '/=' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:74:7: '/='
+            int _type = T__92;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:75:7: ( '/=' )
+            // Java.g:75:9: '/='
             {
             match("/="); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T92
+    // $ANTLR end "T__92"
 
-    // $ANTLR start T93
-    public final void mT93() throws RecognitionException {
+    // $ANTLR start "T__93"
+    public final void mT__93() throws RecognitionException {
         try {
-            int _type = T93;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:75:5: ( '&=' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:75:7: '&='
+            int _type = T__93;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:76:7: ( '&=' )
+            // Java.g:76:9: '&='
             {
             match("&="); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T93
+    // $ANTLR end "T__93"
 
-    // $ANTLR start T94
-    public final void mT94() throws RecognitionException {
+    // $ANTLR start "T__94"
+    public final void mT__94() throws RecognitionException {
         try {
-            int _type = T94;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:76:5: ( '|=' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:76:7: '|='
+            int _type = T__94;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:77:7: ( '|=' )
+            // Java.g:77:9: '|='
             {
             match("|="); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T94
+    // $ANTLR end "T__94"
 
-    // $ANTLR start T95
-    public final void mT95() throws RecognitionException {
+    // $ANTLR start "T__95"
+    public final void mT__95() throws RecognitionException {
         try {
-            int _type = T95;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:77:5: ( '^=' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:77:7: '^='
+            int _type = T__95;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:78:7: ( '^=' )
+            // Java.g:78:9: '^='
             {
             match("^="); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T95
+    // $ANTLR end "T__95"
 
-    // $ANTLR start T96
-    public final void mT96() throws RecognitionException {
+    // $ANTLR start "T__96"
+    public final void mT__96() throws RecognitionException {
         try {
-            int _type = T96;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:78:5: ( '%=' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:78:7: '%='
+            int _type = T__96;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:79:7: ( '%=' )
+            // Java.g:79:9: '%='
             {
             match("%="); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T96
+    // $ANTLR end "T__96"
 
-    // $ANTLR start T97
-    public final void mT97() throws RecognitionException {
+    // $ANTLR start "T__97"
+    public final void mT__97() throws RecognitionException {
         try {
-            int _type = T97;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:79:5: ( '||' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:79:7: '||'
+            int _type = T__97;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:80:7: ( '||' )
+            // Java.g:80:9: '||'
             {
             match("||"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T97
+    // $ANTLR end "T__97"
 
-    // $ANTLR start T98
-    public final void mT98() throws RecognitionException {
+    // $ANTLR start "T__98"
+    public final void mT__98() throws RecognitionException {
         try {
-            int _type = T98;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:80:5: ( '&&' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:80:7: '&&'
+            int _type = T__98;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:81:7: ( '&&' )
+            // Java.g:81:9: '&&'
             {
             match("&&"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T98
+    // $ANTLR end "T__98"
 
-    // $ANTLR start T99
-    public final void mT99() throws RecognitionException {
+    // $ANTLR start "T__99"
+    public final void mT__99() throws RecognitionException {
         try {
-            int _type = T99;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:81:5: ( '|' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:81:7: '|'
+            int _type = T__99;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:82:7: ( '|' )
+            // Java.g:82:9: '|'
             {
             match('|'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T99
+    // $ANTLR end "T__99"
 
-    // $ANTLR start T100
-    public final void mT100() throws RecognitionException {
+    // $ANTLR start "T__100"
+    public final void mT__100() throws RecognitionException {
         try {
-            int _type = T100;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:82:6: ( '^' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:82:8: '^'
+            int _type = T__100;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:83:8: ( '^' )
+            // Java.g:83:10: '^'
             {
             match('^'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T100
+    // $ANTLR end "T__100"
 
-    // $ANTLR start T101
-    public final void mT101() throws RecognitionException {
+    // $ANTLR start "T__101"
+    public final void mT__101() throws RecognitionException {
         try {
-            int _type = T101;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:83:6: ( '==' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:83:8: '=='
+            int _type = T__101;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:84:8: ( '==' )
+            // Java.g:84:10: '=='
             {
             match("=="); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T101
+    // $ANTLR end "T__101"
 
-    // $ANTLR start T102
-    public final void mT102() throws RecognitionException {
+    // $ANTLR start "T__102"
+    public final void mT__102() throws RecognitionException {
         try {
-            int _type = T102;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:84:6: ( '!=' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:84:8: '!='
+            int _type = T__102;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:85:8: ( '!=' )
+            // Java.g:85:10: '!='
             {
             match("!="); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T102
+    // $ANTLR end "T__102"
 
-    // $ANTLR start T103
-    public final void mT103() throws RecognitionException {
+    // $ANTLR start "T__103"
+    public final void mT__103() throws RecognitionException {
         try {
-            int _type = T103;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:85:6: ( 'instanceof' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:85:8: 'instanceof'
+            int _type = T__103;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:86:8: ( 'instanceof' )
+            // Java.g:86:10: 'instanceof'
             {
             match("instanceof"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T103
+    // $ANTLR end "T__103"
 
-    // $ANTLR start T104
-    public final void mT104() throws RecognitionException {
+    // $ANTLR start "T__104"
+    public final void mT__104() throws RecognitionException {
         try {
-            int _type = T104;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:86:6: ( '+' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:86:8: '+'
+            int _type = T__104;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:87:8: ( '+' )
+            // Java.g:87:10: '+'
             {
             match('+'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T104
+    // $ANTLR end "T__104"
 
-    // $ANTLR start T105
-    public final void mT105() throws RecognitionException {
+    // $ANTLR start "T__105"
+    public final void mT__105() throws RecognitionException {
         try {
-            int _type = T105;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:87:6: ( '-' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:87:8: '-'
+            int _type = T__105;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:88:8: ( '-' )
+            // Java.g:88:10: '-'
             {
             match('-'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T105
+    // $ANTLR end "T__105"
 
-    // $ANTLR start T106
-    public final void mT106() throws RecognitionException {
+    // $ANTLR start "T__106"
+    public final void mT__106() throws RecognitionException {
         try {
-            int _type = T106;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:88:6: ( '/' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:88:8: '/'
+            int _type = T__106;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:89:8: ( '/' )
+            // Java.g:89:10: '/'
             {
             match('/'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T106
+    // $ANTLR end "T__106"
 
-    // $ANTLR start T107
-    public final void mT107() throws RecognitionException {
+    // $ANTLR start "T__107"
+    public final void mT__107() throws RecognitionException {
         try {
-            int _type = T107;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:89:6: ( '%' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:89:8: '%'
+            int _type = T__107;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:90:8: ( '%' )
+            // Java.g:90:10: '%'
             {
             match('%'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T107
+    // $ANTLR end "T__107"
 
-    // $ANTLR start T108
-    public final void mT108() throws RecognitionException {
+    // $ANTLR start "T__108"
+    public final void mT__108() throws RecognitionException {
         try {
-            int _type = T108;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:90:6: ( '++' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:90:8: '++'
+            int _type = T__108;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:91:8: ( '++' )
+            // Java.g:91:10: '++'
             {
             match("++"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T108
+    // $ANTLR end "T__108"
 
-    // $ANTLR start T109
-    public final void mT109() throws RecognitionException {
+    // $ANTLR start "T__109"
+    public final void mT__109() throws RecognitionException {
         try {
-            int _type = T109;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:91:6: ( '--' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:91:8: '--'
+            int _type = T__109;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:92:8: ( '--' )
+            // Java.g:92:10: '--'
             {
             match("--"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T109
+    // $ANTLR end "T__109"
 
-    // $ANTLR start T110
-    public final void mT110() throws RecognitionException {
+    // $ANTLR start "T__110"
+    public final void mT__110() throws RecognitionException {
         try {
-            int _type = T110;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:92:6: ( '~' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:92:8: '~'
+            int _type = T__110;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:93:8: ( '~' )
+            // Java.g:93:10: '~'
             {
             match('~'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T110
+    // $ANTLR end "T__110"
 
-    // $ANTLR start T111
-    public final void mT111() throws RecognitionException {
+    // $ANTLR start "T__111"
+    public final void mT__111() throws RecognitionException {
         try {
-            int _type = T111;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:93:6: ( '!' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:93:8: '!'
+            int _type = T__111;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:94:8: ( '!' )
+            // Java.g:94:10: '!'
             {
             match('!'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T111
+    // $ANTLR end "T__111"
 
-    // $ANTLR start T112
-    public final void mT112() throws RecognitionException {
+    // $ANTLR start "T__112"
+    public final void mT__112() throws RecognitionException {
         try {
-            int _type = T112;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:94:6: ( 'this' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:94:8: 'this'
+            int _type = T__112;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:95:8: ( 'this' )
+            // Java.g:95:10: 'this'
             {
             match("this"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T112
+    // $ANTLR end "T__112"
 
-    // $ANTLR start T113
-    public final void mT113() throws RecognitionException {
+    // $ANTLR start "T__113"
+    public final void mT__113() throws RecognitionException {
         try {
-            int _type = T113;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:95:6: ( 'new' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:95:8: 'new'
+            int _type = T__113;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:96:8: ( 'new' )
+            // Java.g:96:10: 'new'
             {
             match("new"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T113
+    // $ANTLR end "T__113"
 
-    // $ANTLR start HexLiteral
+    // $ANTLR start "HexLiteral"
     public final void mHexLiteral() throws RecognitionException {
         try {
             int _type = HexLiteral;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8565:12: ( '0' ( 'x' | 'X' ) ( HexDigit )+ ( IntegerTypeSuffix )? )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8565:14: '0' ( 'x' | 'X' ) ( HexDigit )+ ( IntegerTypeSuffix )?
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:8763:12: ( '0' ( 'x' | 'X' ) ( HexDigit )+ ( IntegerTypeSuffix )? )
+            // Java.g:8763:14: '0' ( 'x' | 'X' ) ( HexDigit )+ ( IntegerTypeSuffix )?
             {
             match('0'); 
             if ( input.LA(1)=='X'||input.LA(1)=='x' ) {
@@ -1825,12 +2013,11 @@ public class JavaLexer extends Lexer {
 
             }
             else {
-                MismatchedSetException mse =
-                    new MismatchedSetException(null,input);
-                recover(mse);    throw mse;
-            }
+                MismatchedSetException mse = new MismatchedSetException(null,input);
+                recover(mse);
+                throw mse;}
 
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8565:28: ( HexDigit )+
+            // Java.g:8763:28: ( HexDigit )+
             int cnt1=0;
             loop1:
             do {
@@ -1844,7 +2031,7 @@ public class JavaLexer extends Lexer {
 
                 switch (alt1) {
             	case 1 :
-            	    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8565:28: HexDigit
+            	    // Java.g:8763:28: HexDigit
             	    {
             	    mHexDigit(); 
 
@@ -1860,7 +2047,7 @@ public class JavaLexer extends Lexer {
                 cnt1++;
             } while (true);
 
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8565:38: ( IntegerTypeSuffix )?
+            // Java.g:8763:38: ( IntegerTypeSuffix )?
             int alt2=2;
             int LA2_0 = input.LA(1);
 
@@ -1869,7 +2056,7 @@ public class JavaLexer extends Lexer {
             }
             switch (alt2) {
                 case 1 :
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8565:38: IntegerTypeSuffix
+                    // Java.g:8763:38: IntegerTypeSuffix
                     {
                     mIntegerTypeSuffix(); 
 
@@ -1881,21 +2068,23 @@ public class JavaLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end HexLiteral
+    // $ANTLR end "HexLiteral"
 
-    // $ANTLR start DecimalLiteral
+    // $ANTLR start "DecimalLiteral"
     public final void mDecimalLiteral() throws RecognitionException {
         try {
             int _type = DecimalLiteral;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8567:16: ( ( '0' | '1' .. '9' ( '0' .. '9' )* ) ( IntegerTypeSuffix )? )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8567:18: ( '0' | '1' .. '9' ( '0' .. '9' )* ) ( IntegerTypeSuffix )?
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:8765:16: ( ( '0' | '1' .. '9' ( '0' .. '9' )* ) ( IntegerTypeSuffix )? )
+            // Java.g:8765:18: ( '0' | '1' .. '9' ( '0' .. '9' )* ) ( IntegerTypeSuffix )?
             {
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8567:18: ( '0' | '1' .. '9' ( '0' .. '9' )* )
+            // Java.g:8765:18: ( '0' | '1' .. '9' ( '0' .. '9' )* )
             int alt4=2;
             int LA4_0 = input.LA(1);
 
@@ -1907,23 +2096,23 @@ public class JavaLexer extends Lexer {
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("8567:18: ( '0' | '1' .. '9' ( '0' .. '9' )* )", 4, 0, input);
+                    new NoViableAltException("", 4, 0, input);
 
                 throw nvae;
             }
             switch (alt4) {
                 case 1 :
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8567:19: '0'
+                    // Java.g:8765:19: '0'
                     {
                     match('0'); 
 
                     }
                     break;
                 case 2 :
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8567:25: '1' .. '9' ( '0' .. '9' )*
+                    // Java.g:8765:25: '1' .. '9' ( '0' .. '9' )*
                     {
                     matchRange('1','9'); 
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8567:34: ( '0' .. '9' )*
+                    // Java.g:8765:34: ( '0' .. '9' )*
                     loop3:
                     do {
                         int alt3=2;
@@ -1936,7 +2125,7 @@ public class JavaLexer extends Lexer {
 
                         switch (alt3) {
                     	case 1 :
-                    	    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8567:34: '0' .. '9'
+                    	    // Java.g:8765:34: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -1954,7 +2143,7 @@ public class JavaLexer extends Lexer {
 
             }
 
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8567:45: ( IntegerTypeSuffix )?
+            // Java.g:8765:45: ( IntegerTypeSuffix )?
             int alt5=2;
             int LA5_0 = input.LA(1);
 
@@ -1963,7 +2152,7 @@ public class JavaLexer extends Lexer {
             }
             switch (alt5) {
                 case 1 :
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8567:45: IntegerTypeSuffix
+                    // Java.g:8765:45: IntegerTypeSuffix
                     {
                     mIntegerTypeSuffix(); 
 
@@ -1975,22 +2164,24 @@ public class JavaLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end DecimalLiteral
+    // $ANTLR end "DecimalLiteral"
 
-    // $ANTLR start OctalLiteral
+    // $ANTLR start "OctalLiteral"
     public final void mOctalLiteral() throws RecognitionException {
         try {
             int _type = OctalLiteral;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8569:14: ( '0' ( '0' .. '7' )+ ( IntegerTypeSuffix )? )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8569:16: '0' ( '0' .. '7' )+ ( IntegerTypeSuffix )?
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:8767:14: ( '0' ( '0' .. '7' )+ ( IntegerTypeSuffix )? )
+            // Java.g:8767:16: '0' ( '0' .. '7' )+ ( IntegerTypeSuffix )?
             {
             match('0'); 
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8569:20: ( '0' .. '7' )+
+            // Java.g:8767:20: ( '0' .. '7' )+
             int cnt6=0;
             loop6:
             do {
@@ -2004,7 +2195,7 @@ public class JavaLexer extends Lexer {
 
                 switch (alt6) {
             	case 1 :
-            	    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8569:21: '0' .. '7'
+            	    // Java.g:8767:21: '0' .. '7'
             	    {
             	    matchRange('0','7'); 
 
@@ -2020,7 +2211,7 @@ public class JavaLexer extends Lexer {
                 cnt6++;
             } while (true);
 
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8569:32: ( IntegerTypeSuffix )?
+            // Java.g:8767:32: ( IntegerTypeSuffix )?
             int alt7=2;
             int LA7_0 = input.LA(1);
 
@@ -2029,7 +2220,7 @@ public class JavaLexer extends Lexer {
             }
             switch (alt7) {
                 case 1 :
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8569:32: IntegerTypeSuffix
+                    // Java.g:8767:32: IntegerTypeSuffix
                     {
                     mIntegerTypeSuffix(); 
 
@@ -2041,28 +2232,28 @@ public class JavaLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end OctalLiteral
+    // $ANTLR end "OctalLiteral"
 
-    // $ANTLR start HexDigit
+    // $ANTLR start "HexDigit"
     public final void mHexDigit() throws RecognitionException {
         try {
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8572:10: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8572:12: ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' )
+            // Java.g:8770:10: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
+            // Java.g:8770:12: ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' )
             {
             if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='F')||(input.LA(1)>='a' && input.LA(1)<='f') ) {
                 input.consume();
 
             }
             else {
-                MismatchedSetException mse =
-                    new MismatchedSetException(null,input);
-                recover(mse);    throw mse;
-            }
+                MismatchedSetException mse = new MismatchedSetException(null,input);
+                recover(mse);
+                throw mse;}
 
 
             }
@@ -2071,23 +2262,22 @@ public class JavaLexer extends Lexer {
         finally {
         }
     }
-    // $ANTLR end HexDigit
+    // $ANTLR end "HexDigit"
 
-    // $ANTLR start IntegerTypeSuffix
+    // $ANTLR start "IntegerTypeSuffix"
     public final void mIntegerTypeSuffix() throws RecognitionException {
         try {
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8575:19: ( ( 'l' | 'L' ) )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8575:21: ( 'l' | 'L' )
+            // Java.g:8773:19: ( ( 'l' | 'L' ) )
+            // Java.g:8773:21: ( 'l' | 'L' )
             {
             if ( input.LA(1)=='L'||input.LA(1)=='l' ) {
                 input.consume();
 
             }
             else {
-                MismatchedSetException mse =
-                    new MismatchedSetException(null,input);
-                recover(mse);    throw mse;
-            }
+                MismatchedSetException mse = new MismatchedSetException(null,input);
+                recover(mse);
+                throw mse;}
 
 
             }
@@ -2096,20 +2286,21 @@ public class JavaLexer extends Lexer {
         finally {
         }
     }
-    // $ANTLR end IntegerTypeSuffix
+    // $ANTLR end "IntegerTypeSuffix"
 
-    // $ANTLR start FloatingPointLiteral
+    // $ANTLR start "FloatingPointLiteral"
     public final void mFloatingPointLiteral() throws RecognitionException {
         try {
             int _type = FloatingPointLiteral;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8578:5: ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* ( Exponent )? ( FloatTypeSuffix )? | '.' ( '0' .. '9' )+ ( Exponent )? ( FloatTypeSuffix )? | ( '0' .. '9' )+ Exponent ( FloatTypeSuffix )? | ( '0' .. '9' )+ ( Exponent )? FloatTypeSuffix )
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:8776:5: ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* ( Exponent )? ( FloatTypeSuffix )? | '.' ( '0' .. '9' )+ ( Exponent )? ( FloatTypeSuffix )? | ( '0' .. '9' )+ Exponent ( FloatTypeSuffix )? | ( '0' .. '9' )+ ( Exponent )? FloatTypeSuffix )
             int alt19=4;
             alt19 = dfa19.predict(input);
             switch (alt19) {
                 case 1 :
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8578:9: ( '0' .. '9' )+ '.' ( '0' .. '9' )* ( Exponent )? ( FloatTypeSuffix )?
+                    // Java.g:8776:9: ( '0' .. '9' )+ '.' ( '0' .. '9' )* ( Exponent )? ( FloatTypeSuffix )?
                     {
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8578:9: ( '0' .. '9' )+
+                    // Java.g:8776:9: ( '0' .. '9' )+
                     int cnt8=0;
                     loop8:
                     do {
@@ -2123,7 +2314,7 @@ public class JavaLexer extends Lexer {
 
                         switch (alt8) {
                     	case 1 :
-                    	    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8578:10: '0' .. '9'
+                    	    // Java.g:8776:10: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -2140,7 +2331,7 @@ public class JavaLexer extends Lexer {
                     } while (true);
 
                     match('.'); 
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8578:25: ( '0' .. '9' )*
+                    // Java.g:8776:25: ( '0' .. '9' )*
                     loop9:
                     do {
                         int alt9=2;
@@ -2153,7 +2344,7 @@ public class JavaLexer extends Lexer {
 
                         switch (alt9) {
                     	case 1 :
-                    	    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8578:26: '0' .. '9'
+                    	    // Java.g:8776:26: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -2165,7 +2356,7 @@ public class JavaLexer extends Lexer {
                         }
                     } while (true);
 
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8578:37: ( Exponent )?
+                    // Java.g:8776:37: ( Exponent )?
                     int alt10=2;
                     int LA10_0 = input.LA(1);
 
@@ -2174,7 +2365,7 @@ public class JavaLexer extends Lexer {
                     }
                     switch (alt10) {
                         case 1 :
-                            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8578:37: Exponent
+                            // Java.g:8776:37: Exponent
                             {
                             mExponent(); 
 
@@ -2183,7 +2374,7 @@ public class JavaLexer extends Lexer {
 
                     }
 
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8578:47: ( FloatTypeSuffix )?
+                    // Java.g:8776:47: ( FloatTypeSuffix )?
                     int alt11=2;
                     int LA11_0 = input.LA(1);
 
@@ -2192,7 +2383,7 @@ public class JavaLexer extends Lexer {
                     }
                     switch (alt11) {
                         case 1 :
-                            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8578:47: FloatTypeSuffix
+                            // Java.g:8776:47: FloatTypeSuffix
                             {
                             mFloatTypeSuffix(); 
 
@@ -2205,10 +2396,10 @@ public class JavaLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8579:9: '.' ( '0' .. '9' )+ ( Exponent )? ( FloatTypeSuffix )?
+                    // Java.g:8777:9: '.' ( '0' .. '9' )+ ( Exponent )? ( FloatTypeSuffix )?
                     {
                     match('.'); 
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8579:13: ( '0' .. '9' )+
+                    // Java.g:8777:13: ( '0' .. '9' )+
                     int cnt12=0;
                     loop12:
                     do {
@@ -2222,7 +2413,7 @@ public class JavaLexer extends Lexer {
 
                         switch (alt12) {
                     	case 1 :
-                    	    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8579:14: '0' .. '9'
+                    	    // Java.g:8777:14: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -2238,7 +2429,7 @@ public class JavaLexer extends Lexer {
                         cnt12++;
                     } while (true);
 
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8579:25: ( Exponent )?
+                    // Java.g:8777:25: ( Exponent )?
                     int alt13=2;
                     int LA13_0 = input.LA(1);
 
@@ -2247,7 +2438,7 @@ public class JavaLexer extends Lexer {
                     }
                     switch (alt13) {
                         case 1 :
-                            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8579:25: Exponent
+                            // Java.g:8777:25: Exponent
                             {
                             mExponent(); 
 
@@ -2256,7 +2447,7 @@ public class JavaLexer extends Lexer {
 
                     }
 
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8579:35: ( FloatTypeSuffix )?
+                    // Java.g:8777:35: ( FloatTypeSuffix )?
                     int alt14=2;
                     int LA14_0 = input.LA(1);
 
@@ -2265,7 +2456,7 @@ public class JavaLexer extends Lexer {
                     }
                     switch (alt14) {
                         case 1 :
-                            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8579:35: FloatTypeSuffix
+                            // Java.g:8777:35: FloatTypeSuffix
                             {
                             mFloatTypeSuffix(); 
 
@@ -2278,9 +2469,9 @@ public class JavaLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8580:9: ( '0' .. '9' )+ Exponent ( FloatTypeSuffix )?
+                    // Java.g:8778:9: ( '0' .. '9' )+ Exponent ( FloatTypeSuffix )?
                     {
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8580:9: ( '0' .. '9' )+
+                    // Java.g:8778:9: ( '0' .. '9' )+
                     int cnt15=0;
                     loop15:
                     do {
@@ -2294,7 +2485,7 @@ public class JavaLexer extends Lexer {
 
                         switch (alt15) {
                     	case 1 :
-                    	    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8580:10: '0' .. '9'
+                    	    // Java.g:8778:10: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -2311,7 +2502,7 @@ public class JavaLexer extends Lexer {
                     } while (true);
 
                     mExponent(); 
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8580:30: ( FloatTypeSuffix )?
+                    // Java.g:8778:30: ( FloatTypeSuffix )?
                     int alt16=2;
                     int LA16_0 = input.LA(1);
 
@@ -2320,7 +2511,7 @@ public class JavaLexer extends Lexer {
                     }
                     switch (alt16) {
                         case 1 :
-                            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8580:30: FloatTypeSuffix
+                            // Java.g:8778:30: FloatTypeSuffix
                             {
                             mFloatTypeSuffix(); 
 
@@ -2333,9 +2524,9 @@ public class JavaLexer extends Lexer {
                     }
                     break;
                 case 4 :
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8581:9: ( '0' .. '9' )+ ( Exponent )? FloatTypeSuffix
+                    // Java.g:8779:9: ( '0' .. '9' )+ ( Exponent )? FloatTypeSuffix
                     {
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8581:9: ( '0' .. '9' )+
+                    // Java.g:8779:9: ( '0' .. '9' )+
                     int cnt17=0;
                     loop17:
                     do {
@@ -2349,7 +2540,7 @@ public class JavaLexer extends Lexer {
 
                         switch (alt17) {
                     	case 1 :
-                    	    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8581:10: '0' .. '9'
+                    	    // Java.g:8779:10: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -2365,7 +2556,7 @@ public class JavaLexer extends Lexer {
                         cnt17++;
                     } while (true);
 
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8581:21: ( Exponent )?
+                    // Java.g:8779:21: ( Exponent )?
                     int alt18=2;
                     int LA18_0 = input.LA(1);
 
@@ -2374,7 +2565,7 @@ public class JavaLexer extends Lexer {
                     }
                     switch (alt18) {
                         case 1 :
-                            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8581:21: Exponent
+                            // Java.g:8779:21: Exponent
                             {
                             mExponent(); 
 
@@ -2389,30 +2580,30 @@ public class JavaLexer extends Lexer {
                     break;
 
             }
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end FloatingPointLiteral
+    // $ANTLR end "FloatingPointLiteral"
 
-    // $ANTLR start Exponent
+    // $ANTLR start "Exponent"
     public final void mExponent() throws RecognitionException {
         try {
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8585:10: ( ( 'e' | 'E' ) ( '+' | '-' )? ( '0' .. '9' )+ )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8585:12: ( 'e' | 'E' ) ( '+' | '-' )? ( '0' .. '9' )+
+            // Java.g:8783:10: ( ( 'e' | 'E' ) ( '+' | '-' )? ( '0' .. '9' )+ )
+            // Java.g:8783:12: ( 'e' | 'E' ) ( '+' | '-' )? ( '0' .. '9' )+
             {
             if ( input.LA(1)=='E'||input.LA(1)=='e' ) {
                 input.consume();
 
             }
             else {
-                MismatchedSetException mse =
-                    new MismatchedSetException(null,input);
-                recover(mse);    throw mse;
-            }
+                MismatchedSetException mse = new MismatchedSetException(null,input);
+                recover(mse);
+                throw mse;}
 
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8585:22: ( '+' | '-' )?
+            // Java.g:8783:22: ( '+' | '-' )?
             int alt20=2;
             int LA20_0 = input.LA(1);
 
@@ -2421,17 +2612,16 @@ public class JavaLexer extends Lexer {
             }
             switch (alt20) {
                 case 1 :
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:
+                    // Java.g:
                     {
                     if ( input.LA(1)=='+'||input.LA(1)=='-' ) {
                         input.consume();
 
                     }
                     else {
-                        MismatchedSetException mse =
-                            new MismatchedSetException(null,input);
-                        recover(mse);    throw mse;
-                    }
+                        MismatchedSetException mse = new MismatchedSetException(null,input);
+                        recover(mse);
+                        throw mse;}
 
 
                     }
@@ -2439,7 +2629,7 @@ public class JavaLexer extends Lexer {
 
             }
 
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8585:33: ( '0' .. '9' )+
+            // Java.g:8783:33: ( '0' .. '9' )+
             int cnt21=0;
             loop21:
             do {
@@ -2453,7 +2643,7 @@ public class JavaLexer extends Lexer {
 
                 switch (alt21) {
             	case 1 :
-            	    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8585:34: '0' .. '9'
+            	    // Java.g:8783:34: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -2476,23 +2666,22 @@ public class JavaLexer extends Lexer {
         finally {
         }
     }
-    // $ANTLR end Exponent
+    // $ANTLR end "Exponent"
 
-    // $ANTLR start FloatTypeSuffix
+    // $ANTLR start "FloatTypeSuffix"
     public final void mFloatTypeSuffix() throws RecognitionException {
         try {
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8588:17: ( ( 'f' | 'F' | 'd' | 'D' ) )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8588:19: ( 'f' | 'F' | 'd' | 'D' )
+            // Java.g:8786:17: ( ( 'f' | 'F' | 'd' | 'D' ) )
+            // Java.g:8786:19: ( 'f' | 'F' | 'd' | 'D' )
             {
             if ( input.LA(1)=='D'||input.LA(1)=='F'||input.LA(1)=='d'||input.LA(1)=='f' ) {
                 input.consume();
 
             }
             else {
-                MismatchedSetException mse =
-                    new MismatchedSetException(null,input);
-                recover(mse);    throw mse;
-            }
+                MismatchedSetException mse = new MismatchedSetException(null,input);
+                recover(mse);
+                throw mse;}
 
 
             }
@@ -2501,52 +2690,52 @@ public class JavaLexer extends Lexer {
         finally {
         }
     }
-    // $ANTLR end FloatTypeSuffix
+    // $ANTLR end "FloatTypeSuffix"
 
-    // $ANTLR start CharacterLiteral
+    // $ANTLR start "CharacterLiteral"
     public final void mCharacterLiteral() throws RecognitionException {
         try {
             int _type = CharacterLiteral;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8591:5: ( '\\'' ( EscapeSequence | ~ ( '\\'' | '\\\\' ) ) '\\'' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8591:9: '\\'' ( EscapeSequence | ~ ( '\\'' | '\\\\' ) ) '\\''
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:8789:5: ( '\\'' ( EscapeSequence | ~ ( '\\'' | '\\\\' ) ) '\\'' )
+            // Java.g:8789:9: '\\'' ( EscapeSequence | ~ ( '\\'' | '\\\\' ) ) '\\''
             {
             match('\''); 
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8591:14: ( EscapeSequence | ~ ( '\\'' | '\\\\' ) )
+            // Java.g:8789:14: ( EscapeSequence | ~ ( '\\'' | '\\\\' ) )
             int alt22=2;
             int LA22_0 = input.LA(1);
 
             if ( (LA22_0=='\\') ) {
                 alt22=1;
             }
-            else if ( ((LA22_0>='\u0000' && LA22_0<='&')||(LA22_0>='(' && LA22_0<='[')||(LA22_0>=']' && LA22_0<='\uFFFE')) ) {
+            else if ( ((LA22_0>='\u0000' && LA22_0<='&')||(LA22_0>='(' && LA22_0<='[')||(LA22_0>=']' && LA22_0<='\uFFFF')) ) {
                 alt22=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("8591:14: ( EscapeSequence | ~ ( '\\'' | '\\\\' ) )", 22, 0, input);
+                    new NoViableAltException("", 22, 0, input);
 
                 throw nvae;
             }
             switch (alt22) {
                 case 1 :
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8591:16: EscapeSequence
+                    // Java.g:8789:16: EscapeSequence
                     {
                     mEscapeSequence(); 
 
                     }
                     break;
                 case 2 :
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8591:33: ~ ( '\\'' | '\\\\' )
+                    // Java.g:8789:33: ~ ( '\\'' | '\\\\' )
                     {
-                    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFE') ) {
+                    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                         input.consume();
 
                     }
                     else {
-                        MismatchedSetException mse =
-                            new MismatchedSetException(null,input);
-                        recover(mse);    throw mse;
-                    }
+                        MismatchedSetException mse = new MismatchedSetException(null,input);
+                        recover(mse);
+                        throw mse;}
 
 
                     }
@@ -2558,22 +2747,24 @@ public class JavaLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end CharacterLiteral
+    // $ANTLR end "CharacterLiteral"
 
-    // $ANTLR start StringLiteral
+    // $ANTLR start "StringLiteral"
     public final void mStringLiteral() throws RecognitionException {
         try {
             int _type = StringLiteral;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8595:5: ( '\"' ( EscapeSequence | ~ ( '\\\\' | '\"' ) )* '\"' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8595:8: '\"' ( EscapeSequence | ~ ( '\\\\' | '\"' ) )* '\"'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:8793:5: ( '\"' ( EscapeSequence | ~ ( '\\\\' | '\"' ) )* '\"' )
+            // Java.g:8793:8: '\"' ( EscapeSequence | ~ ( '\\\\' | '\"' ) )* '\"'
             {
             match('\"'); 
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8595:12: ( EscapeSequence | ~ ( '\\\\' | '\"' ) )*
+            // Java.g:8793:12: ( EscapeSequence | ~ ( '\\\\' | '\"' ) )*
             loop23:
             do {
                 int alt23=3;
@@ -2582,31 +2773,30 @@ public class JavaLexer extends Lexer {
                 if ( (LA23_0=='\\') ) {
                     alt23=1;
                 }
-                else if ( ((LA23_0>='\u0000' && LA23_0<='!')||(LA23_0>='#' && LA23_0<='[')||(LA23_0>=']' && LA23_0<='\uFFFE')) ) {
+                else if ( ((LA23_0>='\u0000' && LA23_0<='!')||(LA23_0>='#' && LA23_0<='[')||(LA23_0>=']' && LA23_0<='\uFFFF')) ) {
                     alt23=2;
                 }
 
 
                 switch (alt23) {
             	case 1 :
-            	    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8595:14: EscapeSequence
+            	    // Java.g:8793:14: EscapeSequence
             	    {
             	    mEscapeSequence(); 
 
             	    }
             	    break;
             	case 2 :
-            	    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8595:31: ~ ( '\\\\' | '\"' )
+            	    // Java.g:8793:31: ~ ( '\\\\' | '\"' )
             	    {
-            	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFE') ) {
+            	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
 
             	    }
             	    else {
-            	        MismatchedSetException mse =
-            	            new MismatchedSetException(null,input);
-            	        recover(mse);    throw mse;
-            	    }
+            	        MismatchedSetException mse = new MismatchedSetException(null,input);
+            	        recover(mse);
+            	        throw mse;}
 
 
             	    }
@@ -2621,17 +2811,18 @@ public class JavaLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end StringLiteral
+    // $ANTLR end "StringLiteral"
 
-    // $ANTLR start EscapeSequence
+    // $ANTLR start "EscapeSequence"
     public final void mEscapeSequence() throws RecognitionException {
         try {
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8600:5: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' ) | UnicodeEscape | OctalEscape )
+            // Java.g:8798:5: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' ) | UnicodeEscape | OctalEscape )
             int alt24=3;
             int LA24_0 = input.LA(1);
 
@@ -2668,7 +2859,7 @@ public class JavaLexer extends Lexer {
                     break;
                 default:
                     NoViableAltException nvae =
-                        new NoViableAltException("8598:1: fragment EscapeSequence : ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' ) | UnicodeEscape | OctalEscape );", 24, 1, input);
+                        new NoViableAltException("", 24, 1, input);
 
                     throw nvae;
                 }
@@ -2676,13 +2867,13 @@ public class JavaLexer extends Lexer {
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("8598:1: fragment EscapeSequence : ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' ) | UnicodeEscape | OctalEscape );", 24, 0, input);
+                    new NoViableAltException("", 24, 0, input);
 
                 throw nvae;
             }
             switch (alt24) {
                 case 1 :
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8600:9: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' )
+                    // Java.g:8798:9: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' )
                     {
                     match('\\'); 
                     if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||input.LA(1)=='t' ) {
@@ -2690,23 +2881,22 @@ public class JavaLexer extends Lexer {
 
                     }
                     else {
-                        MismatchedSetException mse =
-                            new MismatchedSetException(null,input);
-                        recover(mse);    throw mse;
-                    }
+                        MismatchedSetException mse = new MismatchedSetException(null,input);
+                        recover(mse);
+                        throw mse;}
 
 
                     }
                     break;
                 case 2 :
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8601:9: UnicodeEscape
+                    // Java.g:8799:9: UnicodeEscape
                     {
                     mUnicodeEscape(); 
 
                     }
                     break;
                 case 3 :
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8602:9: OctalEscape
+                    // Java.g:8800:9: OctalEscape
                     {
                     mOctalEscape(); 
 
@@ -2718,12 +2908,12 @@ public class JavaLexer extends Lexer {
         finally {
         }
     }
-    // $ANTLR end EscapeSequence
+    // $ANTLR end "EscapeSequence"
 
-    // $ANTLR start OctalEscape
+    // $ANTLR start "OctalEscape"
     public final void mOctalEscape() throws RecognitionException {
         try {
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8607:5: ( '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) )
+            // Java.g:8805:5: ( '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) )
             int alt25=3;
             int LA25_0 = input.LA(1);
 
@@ -2734,9 +2924,9 @@ public class JavaLexer extends Lexer {
                     int LA25_2 = input.LA(3);
 
                     if ( ((LA25_2>='0' && LA25_2<='7')) ) {
-                        int LA25_5 = input.LA(4);
+                        int LA25_4 = input.LA(4);
 
-                        if ( ((LA25_5>='0' && LA25_5<='7')) ) {
+                        if ( ((LA25_4>='0' && LA25_4<='7')) ) {
                             alt25=1;
                         }
                         else {
@@ -2756,38 +2946,38 @@ public class JavaLexer extends Lexer {
                 }
                 else {
                     NoViableAltException nvae =
-                        new NoViableAltException("8605:1: fragment OctalEscape : ( '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) );", 25, 1, input);
+                        new NoViableAltException("", 25, 1, input);
 
                     throw nvae;
                 }
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("8605:1: fragment OctalEscape : ( '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) );", 25, 0, input);
+                    new NoViableAltException("", 25, 0, input);
 
                 throw nvae;
             }
             switch (alt25) {
                 case 1 :
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8607:9: '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' )
+                    // Java.g:8805:9: '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' )
                     {
                     match('\\'); 
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8607:14: ( '0' .. '3' )
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8607:15: '0' .. '3'
+                    // Java.g:8805:14: ( '0' .. '3' )
+                    // Java.g:8805:15: '0' .. '3'
                     {
                     matchRange('0','3'); 
 
                     }
 
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8607:25: ( '0' .. '7' )
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8607:26: '0' .. '7'
+                    // Java.g:8805:25: ( '0' .. '7' )
+                    // Java.g:8805:26: '0' .. '7'
                     {
                     matchRange('0','7'); 
 
                     }
 
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8607:36: ( '0' .. '7' )
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8607:37: '0' .. '7'
+                    // Java.g:8805:36: ( '0' .. '7' )
+                    // Java.g:8805:37: '0' .. '7'
                     {
                     matchRange('0','7'); 
 
@@ -2797,18 +2987,18 @@ public class JavaLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8608:9: '\\\\' ( '0' .. '7' ) ( '0' .. '7' )
+                    // Java.g:8806:9: '\\\\' ( '0' .. '7' ) ( '0' .. '7' )
                     {
                     match('\\'); 
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8608:14: ( '0' .. '7' )
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8608:15: '0' .. '7'
+                    // Java.g:8806:14: ( '0' .. '7' )
+                    // Java.g:8806:15: '0' .. '7'
                     {
                     matchRange('0','7'); 
 
                     }
 
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8608:25: ( '0' .. '7' )
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8608:26: '0' .. '7'
+                    // Java.g:8806:25: ( '0' .. '7' )
+                    // Java.g:8806:26: '0' .. '7'
                     {
                     matchRange('0','7'); 
 
@@ -2818,11 +3008,11 @@ public class JavaLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8609:9: '\\\\' ( '0' .. '7' )
+                    // Java.g:8807:9: '\\\\' ( '0' .. '7' )
                     {
                     match('\\'); 
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8609:14: ( '0' .. '7' )
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8609:15: '0' .. '7'
+                    // Java.g:8807:14: ( '0' .. '7' )
+                    // Java.g:8807:15: '0' .. '7'
                     {
                     matchRange('0','7'); 
 
@@ -2837,13 +3027,13 @@ public class JavaLexer extends Lexer {
         finally {
         }
     }
-    // $ANTLR end OctalEscape
+    // $ANTLR end "OctalEscape"
 
-    // $ANTLR start UnicodeEscape
+    // $ANTLR start "UnicodeEscape"
     public final void mUnicodeEscape() throws RecognitionException {
         try {
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8614:5: ( '\\\\' 'u' HexDigit HexDigit HexDigit HexDigit )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8614:9: '\\\\' 'u' HexDigit HexDigit HexDigit HexDigit
+            // Java.g:8812:5: ( '\\\\' 'u' HexDigit HexDigit HexDigit HexDigit )
+            // Java.g:8812:9: '\\\\' 'u' HexDigit HexDigit HexDigit HexDigit
             {
             match('\\'); 
             match('u'); 
@@ -2858,14 +3048,15 @@ public class JavaLexer extends Lexer {
         finally {
         }
     }
-    // $ANTLR end UnicodeEscape
+    // $ANTLR end "UnicodeEscape"
 
-    // $ANTLR start ENUM
+    // $ANTLR start "ENUM"
     public final void mENUM() throws RecognitionException {
         try {
             int _type = ENUM;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8617:5: ( 'enum' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8617:7: 'enum'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:8815:5: ( 'enum' )
+            // Java.g:8815:7: 'enum'
             {
             match("enum"); 
 
@@ -2873,22 +3064,24 @@ public class JavaLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end ENUM
+    // $ANTLR end "ENUM"
 
-    // $ANTLR start Identifier
+    // $ANTLR start "Identifier"
     public final void mIdentifier() throws RecognitionException {
         try {
             int _type = Identifier;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8621:5: ( Letter ( Letter | JavaIDDigit )* )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8621:9: Letter ( Letter | JavaIDDigit )*
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:8819:5: ( Letter ( Letter | JavaIDDigit )* )
+            // Java.g:8819:9: Letter ( Letter | JavaIDDigit )*
             {
             mLetter(); 
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8621:16: ( Letter | JavaIDDigit )*
+            // Java.g:8819:16: ( Letter | JavaIDDigit )*
             loop26:
             do {
                 int alt26=2;
@@ -2901,17 +3094,16 @@ public class JavaLexer extends Lexer {
 
                 switch (alt26) {
             	case 1 :
-            	    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:
+            	    // Java.g:
             	    {
             	    if ( input.LA(1)=='$'||(input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z')||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u3040' && input.LA(1)<='\u318F')||(input.LA(1)>='\u3300' && input.LA(1)<='\u337F')||(input.LA(1)>='\u3400' && input.LA(1)<='\u3D2D')||(input.LA(1)>='\u4E00' && input.LA(1)<='\u9FFF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFAFF') ) {
             	        input.consume();
 
             	    }
             	    else {
-            	        MismatchedSetException mse =
-            	            new MismatchedSetException(null,input);
-            	        recover(mse);    throw mse;
-            	    }
+            	        MismatchedSetException mse = new MismatchedSetException(null,input);
+            	        recover(mse);
+            	        throw mse;}
 
 
             	    }
@@ -2925,28 +3117,28 @@ public class JavaLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end Identifier
+    // $ANTLR end "Identifier"
 
-    // $ANTLR start Letter
+    // $ANTLR start "Letter"
     public final void mLetter() throws RecognitionException {
         try {
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8629:5: ( '\\u0024' | '\\u0041' .. '\\u005a' | '\\u005f' | '\\u0061' .. '\\u007a' | '\\u00c0' .. '\\u00d6' | '\\u00d8' .. '\\u00f6' | '\\u00f8' .. '\\u00ff' | '\\u0100' .. '\\u1fff' | '\\u3040' .. '\\u318f' | '\\u3300' .. '\\u337f' | '\\u3400' .. '\\u3d2d' | '\\u4e00' .. '\\u9fff' | '\\uf900' .. '\\ufaff' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:
+            // Java.g:8827:5: ( '\\u0024' | '\\u0041' .. '\\u005a' | '\\u005f' | '\\u0061' .. '\\u007a' | '\\u00c0' .. '\\u00d6' | '\\u00d8' .. '\\u00f6' | '\\u00f8' .. '\\u00ff' | '\\u0100' .. '\\u1fff' | '\\u3040' .. '\\u318f' | '\\u3300' .. '\\u337f' | '\\u3400' .. '\\u3d2d' | '\\u4e00' .. '\\u9fff' | '\\uf900' .. '\\ufaff' )
+            // Java.g:
             {
             if ( input.LA(1)=='$'||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z')||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u3040' && input.LA(1)<='\u318F')||(input.LA(1)>='\u3300' && input.LA(1)<='\u337F')||(input.LA(1)>='\u3400' && input.LA(1)<='\u3D2D')||(input.LA(1)>='\u4E00' && input.LA(1)<='\u9FFF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFAFF') ) {
                 input.consume();
 
             }
             else {
-                MismatchedSetException mse =
-                    new MismatchedSetException(null,input);
-                recover(mse);    throw mse;
-            }
+                MismatchedSetException mse = new MismatchedSetException(null,input);
+                recover(mse);
+                throw mse;}
 
 
             }
@@ -2955,23 +3147,22 @@ public class JavaLexer extends Lexer {
         finally {
         }
     }
-    // $ANTLR end Letter
+    // $ANTLR end "Letter"
 
-    // $ANTLR start JavaIDDigit
+    // $ANTLR start "JavaIDDigit"
     public final void mJavaIDDigit() throws RecognitionException {
         try {
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8646:5: ( '\\u0030' .. '\\u0039' | '\\u0660' .. '\\u0669' | '\\u06f0' .. '\\u06f9' | '\\u0966' .. '\\u096f' | '\\u09e6' .. '\\u09ef' | '\\u0a66' .. '\\u0a6f' | '\\u0ae6' .. '\\u0aef' | '\\u0b66' .. '\\u0b6f' | '\\u0be7' .. '\\u0bef' | '\\u0c66' .. '\\u0c6f' | '\\u0ce6' .. '\\u0cef' | '\\u0d66' .. '\\u0d6f' | '\\u0e50' .. '\\u0e59' | '\\u0ed0' .. '\\u0ed9' | '\\u1040' .. '\\u1049' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:
+            // Java.g:8844:5: ( '\\u0030' .. '\\u0039' | '\\u0660' .. '\\u0669' | '\\u06f0' .. '\\u06f9' | '\\u0966' .. '\\u096f' | '\\u09e6' .. '\\u09ef' | '\\u0a66' .. '\\u0a6f' | '\\u0ae6' .. '\\u0aef' | '\\u0b66' .. '\\u0b6f' | '\\u0be7' .. '\\u0bef' | '\\u0c66' .. '\\u0c6f' | '\\u0ce6' .. '\\u0cef' | '\\u0d66' .. '\\u0d6f' | '\\u0e50' .. '\\u0e59' | '\\u0ed0' .. '\\u0ed9' | '\\u1040' .. '\\u1049' )
+            // Java.g:
             {
             if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='\u0660' && input.LA(1)<='\u0669')||(input.LA(1)>='\u06F0' && input.LA(1)<='\u06F9')||(input.LA(1)>='\u0966' && input.LA(1)<='\u096F')||(input.LA(1)>='\u09E6' && input.LA(1)<='\u09EF')||(input.LA(1)>='\u0A66' && input.LA(1)<='\u0A6F')||(input.LA(1)>='\u0AE6' && input.LA(1)<='\u0AEF')||(input.LA(1)>='\u0B66' && input.LA(1)<='\u0B6F')||(input.LA(1)>='\u0BE7' && input.LA(1)<='\u0BEF')||(input.LA(1)>='\u0C66' && input.LA(1)<='\u0C6F')||(input.LA(1)>='\u0CE6' && input.LA(1)<='\u0CEF')||(input.LA(1)>='\u0D66' && input.LA(1)<='\u0D6F')||(input.LA(1)>='\u0E50' && input.LA(1)<='\u0E59')||(input.LA(1)>='\u0ED0' && input.LA(1)<='\u0ED9')||(input.LA(1)>='\u1040' && input.LA(1)<='\u1049') ) {
                 input.consume();
 
             }
             else {
-                MismatchedSetException mse =
-                    new MismatchedSetException(null,input);
-                recover(mse);    throw mse;
-            }
+                MismatchedSetException mse = new MismatchedSetException(null,input);
+                recover(mse);
+                throw mse;}
 
 
             }
@@ -2980,46 +3171,48 @@ public class JavaLexer extends Lexer {
         finally {
         }
     }
-    // $ANTLR end JavaIDDigit
+    // $ANTLR end "JavaIDDigit"
 
-    // $ANTLR start WS
+    // $ANTLR start "WS"
     public final void mWS() throws RecognitionException {
         try {
             int _type = WS;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8663:5: ( ( ' ' | '\\r' | '\\t' | '\\u000C' | '\\n' ) )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8663:8: ( ' ' | '\\r' | '\\t' | '\\u000C' | '\\n' )
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:8861:5: ( ( ' ' | '\\r' | '\\t' | '\\u000C' | '\\n' ) )
+            // Java.g:8861:8: ( ' ' | '\\r' | '\\t' | '\\u000C' | '\\n' )
             {
             if ( (input.LA(1)>='\t' && input.LA(1)<='\n')||(input.LA(1)>='\f' && input.LA(1)<='\r')||input.LA(1)==' ' ) {
                 input.consume();
 
             }
             else {
-                MismatchedSetException mse =
-                    new MismatchedSetException(null,input);
-                recover(mse);    throw mse;
+                MismatchedSetException mse = new MismatchedSetException(null,input);
+                recover(mse);
+                throw mse;}
+
+            _channel=HIDDEN;
+
             }
 
-            channel=HIDDEN;
-
-            }
-
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end WS
+    // $ANTLR end "WS"
 
-    // $ANTLR start COMMENT
+    // $ANTLR start "COMMENT"
     public final void mCOMMENT() throws RecognitionException {
         try {
             int _type = COMMENT;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8667:5: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8667:9: '/*' ( options {greedy=false; } : . )* '*/'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:8865:5: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // Java.g:8865:9: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8667:14: ( options {greedy=false; } : . )*
+            // Java.g:8865:14: ( options {greedy=false; } : . )*
             loop27:
             do {
                 int alt27=2;
@@ -3031,20 +3224,20 @@ public class JavaLexer extends Lexer {
                     if ( (LA27_1=='/') ) {
                         alt27=2;
                     }
-                    else if ( ((LA27_1>='\u0000' && LA27_1<='.')||(LA27_1>='0' && LA27_1<='\uFFFE')) ) {
+                    else if ( ((LA27_1>='\u0000' && LA27_1<='.')||(LA27_1>='0' && LA27_1<='\uFFFF')) ) {
                         alt27=1;
                     }
 
 
                 }
-                else if ( ((LA27_0>='\u0000' && LA27_0<=')')||(LA27_0>='+' && LA27_0<='\uFFFE')) ) {
+                else if ( ((LA27_0>='\u0000' && LA27_0<=')')||(LA27_0>='+' && LA27_0<='\uFFFF')) ) {
                     alt27=1;
                 }
 
 
                 switch (alt27) {
             	case 1 :
-            	    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8667:42: .
+            	    // Java.g:8865:42: .
             	    {
             	    matchAny(); 
 
@@ -3058,50 +3251,51 @@ public class JavaLexer extends Lexer {
 
             match("*/"); 
 
-            channel=HIDDEN;
+            _channel=HIDDEN;
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end COMMENT
+    // $ANTLR end "COMMENT"
 
-    // $ANTLR start LINE_COMMENT
+    // $ANTLR start "LINE_COMMENT"
     public final void mLINE_COMMENT() throws RecognitionException {
         try {
             int _type = LINE_COMMENT;
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8671:5: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' )
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8671:7: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:8869:5: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' )
+            // Java.g:8869:7: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
             {
             match("//"); 
 
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8671:12: (~ ( '\\n' | '\\r' ) )*
+            // Java.g:8869:12: (~ ( '\\n' | '\\r' ) )*
             loop28:
             do {
                 int alt28=2;
                 int LA28_0 = input.LA(1);
 
-                if ( ((LA28_0>='\u0000' && LA28_0<='\t')||(LA28_0>='\u000B' && LA28_0<='\f')||(LA28_0>='\u000E' && LA28_0<='\uFFFE')) ) {
+                if ( ((LA28_0>='\u0000' && LA28_0<='\t')||(LA28_0>='\u000B' && LA28_0<='\f')||(LA28_0>='\u000E' && LA28_0<='\uFFFF')) ) {
                     alt28=1;
                 }
 
 
                 switch (alt28) {
             	case 1 :
-            	    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8671:12: ~ ( '\\n' | '\\r' )
+            	    // Java.g:8869:12: ~ ( '\\n' | '\\r' )
             	    {
-            	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFE') ) {
+            	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
 
             	    }
             	    else {
-            	        MismatchedSetException mse =
-            	            new MismatchedSetException(null,input);
-            	        recover(mse);    throw mse;
-            	    }
+            	        MismatchedSetException mse = new MismatchedSetException(null,input);
+            	        recover(mse);
+            	        throw mse;}
 
 
             	    }
@@ -3112,7 +3306,7 @@ public class JavaLexer extends Lexer {
                 }
             } while (true);
 
-            // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8671:26: ( '\\r' )?
+            // Java.g:8869:26: ( '\\r' )?
             int alt29=2;
             int LA29_0 = input.LA(1);
 
@@ -3121,7 +3315,7 @@ public class JavaLexer extends Lexer {
             }
             switch (alt29) {
                 case 1 :
-                    // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:8671:26: '\\r'
+                    // Java.g:8869:26: '\\r'
                     {
                     match('\r'); 
 
@@ -3131,724 +3325,725 @@ public class JavaLexer extends Lexer {
             }
 
             match('\n'); 
-            channel=HIDDEN;
+            _channel=HIDDEN;
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end LINE_COMMENT
+    // $ANTLR end "LINE_COMMENT"
 
     public void mTokens() throws RecognitionException {
-        // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:8: ( T24 | T25 | T26 | T27 | T28 | T29 | T30 | T31 | T32 | T33 | T34 | T35 | T36 | T37 | T38 | T39 | T40 | T41 | T42 | T43 | T44 | T45 | T46 | T47 | T48 | T49 | T50 | T51 | T52 | T53 | T54 | T55 | T56 | T57 | T58 | T59 | T60 | T61 | T62 | T63 | T64 | T65 | T66 | T67 | T68 | T69 | T70 | T71 | T72 | T73 | T74 | T75 | T76 | T77 | T78 | T79 | T80 | T81 | T82 | T83 | T84 | T85 | T86 | T87 | T88 | T89 | T90 | T91 | T92 | T93 | T94 | T95 | T96 | T97 | T98 | T99 | T100 | T101 | T102 | T103 | T104 | T105 | T106 | T107 | T108 | T109 | T110 | T111 | T112 | T113 | HexLiteral | DecimalLiteral | OctalLiteral | FloatingPointLiteral | CharacterLiteral | StringLiteral | ENUM | Identifier | WS | COMMENT | LINE_COMMENT )
+        // Java.g:1:8: ( T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | T__52 | T__53 | T__54 | T__55 | T__56 | T__57 | T__58 | T__59 | T__60 | T__61 | T__62 | T__63 | T__64 | T__65 | T__66 | T__67 | T__68 | T__69 | T__70 | T__71 | T__72 | T__73 | T__74 | T__75 | T__76 | T__77 | T__78 | T__79 | T__80 | T__81 | T__82 | T__83 | T__84 | T__85 | T__86 | T__87 | T__88 | T__89 | T__90 | T__91 | T__92 | T__93 | T__94 | T__95 | T__96 | T__97 | T__98 | T__99 | T__100 | T__101 | T__102 | T__103 | T__104 | T__105 | T__106 | T__107 | T__108 | T__109 | T__110 | T__111 | T__112 | T__113 | HexLiteral | DecimalLiteral | OctalLiteral | FloatingPointLiteral | CharacterLiteral | StringLiteral | ENUM | Identifier | WS | COMMENT | LINE_COMMENT )
         int alt30=101;
         alt30 = dfa30.predict(input);
         switch (alt30) {
             case 1 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:10: T24
+                // Java.g:1:10: T__24
                 {
-                mT24(); 
+                mT__24(); 
 
                 }
                 break;
             case 2 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:14: T25
+                // Java.g:1:16: T__25
                 {
-                mT25(); 
+                mT__25(); 
 
                 }
                 break;
             case 3 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:18: T26
+                // Java.g:1:22: T__26
                 {
-                mT26(); 
+                mT__26(); 
 
                 }
                 break;
             case 4 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:22: T27
+                // Java.g:1:28: T__27
                 {
-                mT27(); 
+                mT__27(); 
 
                 }
                 break;
             case 5 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:26: T28
+                // Java.g:1:34: T__28
                 {
-                mT28(); 
+                mT__28(); 
 
                 }
                 break;
             case 6 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:30: T29
+                // Java.g:1:40: T__29
                 {
-                mT29(); 
+                mT__29(); 
 
                 }
                 break;
             case 7 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:34: T30
+                // Java.g:1:46: T__30
                 {
-                mT30(); 
+                mT__30(); 
 
                 }
                 break;
             case 8 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:38: T31
+                // Java.g:1:52: T__31
                 {
-                mT31(); 
+                mT__31(); 
 
                 }
                 break;
             case 9 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:42: T32
+                // Java.g:1:58: T__32
                 {
-                mT32(); 
+                mT__32(); 
 
                 }
                 break;
             case 10 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:46: T33
+                // Java.g:1:64: T__33
                 {
-                mT33(); 
+                mT__33(); 
 
                 }
                 break;
             case 11 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:50: T34
+                // Java.g:1:70: T__34
                 {
-                mT34(); 
+                mT__34(); 
 
                 }
                 break;
             case 12 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:54: T35
+                // Java.g:1:76: T__35
                 {
-                mT35(); 
+                mT__35(); 
 
                 }
                 break;
             case 13 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:58: T36
+                // Java.g:1:82: T__36
                 {
-                mT36(); 
+                mT__36(); 
 
                 }
                 break;
             case 14 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:62: T37
+                // Java.g:1:88: T__37
                 {
-                mT37(); 
+                mT__37(); 
 
                 }
                 break;
             case 15 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:66: T38
+                // Java.g:1:94: T__38
                 {
-                mT38(); 
+                mT__38(); 
 
                 }
                 break;
             case 16 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:70: T39
+                // Java.g:1:100: T__39
                 {
-                mT39(); 
+                mT__39(); 
 
                 }
                 break;
             case 17 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:74: T40
+                // Java.g:1:106: T__40
                 {
-                mT40(); 
+                mT__40(); 
 
                 }
                 break;
             case 18 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:78: T41
+                // Java.g:1:112: T__41
                 {
-                mT41(); 
+                mT__41(); 
 
                 }
                 break;
             case 19 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:82: T42
+                // Java.g:1:118: T__42
                 {
-                mT42(); 
+                mT__42(); 
 
                 }
                 break;
             case 20 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:86: T43
+                // Java.g:1:124: T__43
                 {
-                mT43(); 
+                mT__43(); 
 
                 }
                 break;
             case 21 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:90: T44
+                // Java.g:1:130: T__44
                 {
-                mT44(); 
+                mT__44(); 
 
                 }
                 break;
             case 22 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:94: T45
+                // Java.g:1:136: T__45
                 {
-                mT45(); 
+                mT__45(); 
 
                 }
                 break;
             case 23 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:98: T46
+                // Java.g:1:142: T__46
                 {
-                mT46(); 
+                mT__46(); 
 
                 }
                 break;
             case 24 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:102: T47
+                // Java.g:1:148: T__47
                 {
-                mT47(); 
+                mT__47(); 
 
                 }
                 break;
             case 25 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:106: T48
+                // Java.g:1:154: T__48
                 {
-                mT48(); 
+                mT__48(); 
 
                 }
                 break;
             case 26 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:110: T49
+                // Java.g:1:160: T__49
                 {
-                mT49(); 
+                mT__49(); 
 
                 }
                 break;
             case 27 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:114: T50
+                // Java.g:1:166: T__50
                 {
-                mT50(); 
+                mT__50(); 
 
                 }
                 break;
             case 28 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:118: T51
+                // Java.g:1:172: T__51
                 {
-                mT51(); 
+                mT__51(); 
 
                 }
                 break;
             case 29 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:122: T52
+                // Java.g:1:178: T__52
                 {
-                mT52(); 
+                mT__52(); 
 
                 }
                 break;
             case 30 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:126: T53
+                // Java.g:1:184: T__53
                 {
-                mT53(); 
+                mT__53(); 
 
                 }
                 break;
             case 31 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:130: T54
+                // Java.g:1:190: T__54
                 {
-                mT54(); 
+                mT__54(); 
 
                 }
                 break;
             case 32 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:134: T55
+                // Java.g:1:196: T__55
                 {
-                mT55(); 
+                mT__55(); 
 
                 }
                 break;
             case 33 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:138: T56
+                // Java.g:1:202: T__56
                 {
-                mT56(); 
+                mT__56(); 
 
                 }
                 break;
             case 34 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:142: T57
+                // Java.g:1:208: T__57
                 {
-                mT57(); 
+                mT__57(); 
 
                 }
                 break;
             case 35 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:146: T58
+                // Java.g:1:214: T__58
                 {
-                mT58(); 
+                mT__58(); 
 
                 }
                 break;
             case 36 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:150: T59
+                // Java.g:1:220: T__59
                 {
-                mT59(); 
+                mT__59(); 
 
                 }
                 break;
             case 37 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:154: T60
+                // Java.g:1:226: T__60
                 {
-                mT60(); 
+                mT__60(); 
 
                 }
                 break;
             case 38 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:158: T61
+                // Java.g:1:232: T__61
                 {
-                mT61(); 
+                mT__61(); 
 
                 }
                 break;
             case 39 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:162: T62
+                // Java.g:1:238: T__62
                 {
-                mT62(); 
+                mT__62(); 
 
                 }
                 break;
             case 40 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:166: T63
+                // Java.g:1:244: T__63
                 {
-                mT63(); 
+                mT__63(); 
 
                 }
                 break;
             case 41 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:170: T64
+                // Java.g:1:250: T__64
                 {
-                mT64(); 
+                mT__64(); 
 
                 }
                 break;
             case 42 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:174: T65
+                // Java.g:1:256: T__65
                 {
-                mT65(); 
+                mT__65(); 
 
                 }
                 break;
             case 43 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:178: T66
+                // Java.g:1:262: T__66
                 {
-                mT66(); 
+                mT__66(); 
 
                 }
                 break;
             case 44 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:182: T67
+                // Java.g:1:268: T__67
                 {
-                mT67(); 
+                mT__67(); 
 
                 }
                 break;
             case 45 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:186: T68
+                // Java.g:1:274: T__68
                 {
-                mT68(); 
+                mT__68(); 
 
                 }
                 break;
             case 46 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:190: T69
+                // Java.g:1:280: T__69
                 {
-                mT69(); 
+                mT__69(); 
 
                 }
                 break;
             case 47 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:194: T70
+                // Java.g:1:286: T__70
                 {
-                mT70(); 
+                mT__70(); 
 
                 }
                 break;
             case 48 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:198: T71
+                // Java.g:1:292: T__71
                 {
-                mT71(); 
+                mT__71(); 
 
                 }
                 break;
             case 49 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:202: T72
+                // Java.g:1:298: T__72
                 {
-                mT72(); 
+                mT__72(); 
 
                 }
                 break;
             case 50 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:206: T73
+                // Java.g:1:304: T__73
                 {
-                mT73(); 
+                mT__73(); 
 
                 }
                 break;
             case 51 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:210: T74
+                // Java.g:1:310: T__74
                 {
-                mT74(); 
+                mT__74(); 
 
                 }
                 break;
             case 52 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:214: T75
+                // Java.g:1:316: T__75
                 {
-                mT75(); 
+                mT__75(); 
 
                 }
                 break;
             case 53 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:218: T76
+                // Java.g:1:322: T__76
                 {
-                mT76(); 
+                mT__76(); 
 
                 }
                 break;
             case 54 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:222: T77
+                // Java.g:1:328: T__77
                 {
-                mT77(); 
+                mT__77(); 
 
                 }
                 break;
             case 55 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:226: T78
+                // Java.g:1:334: T__78
                 {
-                mT78(); 
+                mT__78(); 
 
                 }
                 break;
             case 56 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:230: T79
+                // Java.g:1:340: T__79
                 {
-                mT79(); 
+                mT__79(); 
 
                 }
                 break;
             case 57 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:234: T80
+                // Java.g:1:346: T__80
                 {
-                mT80(); 
+                mT__80(); 
 
                 }
                 break;
             case 58 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:238: T81
+                // Java.g:1:352: T__81
                 {
-                mT81(); 
+                mT__81(); 
 
                 }
                 break;
             case 59 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:242: T82
+                // Java.g:1:358: T__82
                 {
-                mT82(); 
+                mT__82(); 
 
                 }
                 break;
             case 60 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:246: T83
+                // Java.g:1:364: T__83
                 {
-                mT83(); 
+                mT__83(); 
 
                 }
                 break;
             case 61 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:250: T84
+                // Java.g:1:370: T__84
                 {
-                mT84(); 
+                mT__84(); 
 
                 }
                 break;
             case 62 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:254: T85
+                // Java.g:1:376: T__85
                 {
-                mT85(); 
+                mT__85(); 
 
                 }
                 break;
             case 63 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:258: T86
+                // Java.g:1:382: T__86
                 {
-                mT86(); 
+                mT__86(); 
 
                 }
                 break;
             case 64 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:262: T87
+                // Java.g:1:388: T__87
                 {
-                mT87(); 
+                mT__87(); 
 
                 }
                 break;
             case 65 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:266: T88
+                // Java.g:1:394: T__88
                 {
-                mT88(); 
+                mT__88(); 
 
                 }
                 break;
             case 66 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:270: T89
+                // Java.g:1:400: T__89
                 {
-                mT89(); 
+                mT__89(); 
 
                 }
                 break;
             case 67 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:274: T90
+                // Java.g:1:406: T__90
                 {
-                mT90(); 
+                mT__90(); 
 
                 }
                 break;
             case 68 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:278: T91
+                // Java.g:1:412: T__91
                 {
-                mT91(); 
+                mT__91(); 
 
                 }
                 break;
             case 69 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:282: T92
+                // Java.g:1:418: T__92
                 {
-                mT92(); 
+                mT__92(); 
 
                 }
                 break;
             case 70 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:286: T93
+                // Java.g:1:424: T__93
                 {
-                mT93(); 
+                mT__93(); 
 
                 }
                 break;
             case 71 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:290: T94
+                // Java.g:1:430: T__94
                 {
-                mT94(); 
+                mT__94(); 
 
                 }
                 break;
             case 72 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:294: T95
+                // Java.g:1:436: T__95
                 {
-                mT95(); 
+                mT__95(); 
 
                 }
                 break;
             case 73 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:298: T96
+                // Java.g:1:442: T__96
                 {
-                mT96(); 
+                mT__96(); 
 
                 }
                 break;
             case 74 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:302: T97
+                // Java.g:1:448: T__97
                 {
-                mT97(); 
+                mT__97(); 
 
                 }
                 break;
             case 75 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:306: T98
+                // Java.g:1:454: T__98
                 {
-                mT98(); 
+                mT__98(); 
 
                 }
                 break;
             case 76 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:310: T99
+                // Java.g:1:460: T__99
                 {
-                mT99(); 
+                mT__99(); 
 
                 }
                 break;
             case 77 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:314: T100
+                // Java.g:1:466: T__100
                 {
-                mT100(); 
+                mT__100(); 
 
                 }
                 break;
             case 78 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:319: T101
+                // Java.g:1:473: T__101
                 {
-                mT101(); 
+                mT__101(); 
 
                 }
                 break;
             case 79 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:324: T102
+                // Java.g:1:480: T__102
                 {
-                mT102(); 
+                mT__102(); 
 
                 }
                 break;
             case 80 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:329: T103
+                // Java.g:1:487: T__103
                 {
-                mT103(); 
+                mT__103(); 
 
                 }
                 break;
             case 81 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:334: T104
+                // Java.g:1:494: T__104
                 {
-                mT104(); 
+                mT__104(); 
 
                 }
                 break;
             case 82 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:339: T105
+                // Java.g:1:501: T__105
                 {
-                mT105(); 
+                mT__105(); 
 
                 }
                 break;
             case 83 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:344: T106
+                // Java.g:1:508: T__106
                 {
-                mT106(); 
+                mT__106(); 
 
                 }
                 break;
             case 84 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:349: T107
+                // Java.g:1:515: T__107
                 {
-                mT107(); 
+                mT__107(); 
 
                 }
                 break;
             case 85 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:354: T108
+                // Java.g:1:522: T__108
                 {
-                mT108(); 
+                mT__108(); 
 
                 }
                 break;
             case 86 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:359: T109
+                // Java.g:1:529: T__109
                 {
-                mT109(); 
+                mT__109(); 
 
                 }
                 break;
             case 87 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:364: T110
+                // Java.g:1:536: T__110
                 {
-                mT110(); 
+                mT__110(); 
 
                 }
                 break;
             case 88 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:369: T111
+                // Java.g:1:543: T__111
                 {
-                mT111(); 
+                mT__111(); 
 
                 }
                 break;
             case 89 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:374: T112
+                // Java.g:1:550: T__112
                 {
-                mT112(); 
+                mT__112(); 
 
                 }
                 break;
             case 90 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:379: T113
+                // Java.g:1:557: T__113
                 {
-                mT113(); 
+                mT__113(); 
 
                 }
                 break;
             case 91 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:384: HexLiteral
+                // Java.g:1:564: HexLiteral
                 {
                 mHexLiteral(); 
 
                 }
                 break;
             case 92 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:395: DecimalLiteral
+                // Java.g:1:575: DecimalLiteral
                 {
                 mDecimalLiteral(); 
 
                 }
                 break;
             case 93 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:410: OctalLiteral
+                // Java.g:1:590: OctalLiteral
                 {
                 mOctalLiteral(); 
 
                 }
                 break;
             case 94 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:423: FloatingPointLiteral
+                // Java.g:1:603: FloatingPointLiteral
                 {
                 mFloatingPointLiteral(); 
 
                 }
                 break;
             case 95 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:444: CharacterLiteral
+                // Java.g:1:624: CharacterLiteral
                 {
                 mCharacterLiteral(); 
 
                 }
                 break;
             case 96 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:461: StringLiteral
+                // Java.g:1:641: StringLiteral
                 {
                 mStringLiteral(); 
 
                 }
                 break;
             case 97 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:475: ENUM
+                // Java.g:1:655: ENUM
                 {
                 mENUM(); 
 
                 }
                 break;
             case 98 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:480: Identifier
+                // Java.g:1:660: Identifier
                 {
                 mIdentifier(); 
 
                 }
                 break;
             case 99 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:491: WS
+                // Java.g:1:671: WS
                 {
                 mWS(); 
 
                 }
                 break;
             case 100 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:494: COMMENT
+                // Java.g:1:674: COMMENT
                 {
                 mCOMMENT(); 
 
                 }
                 break;
             case 101 :
-                // C:\\eclipses\\eclipse-3.4\\workspace\\Grammar2Model.examples.Java2ASTMModel\\files\\gen\\Java.ge3:1:502: LINE_COMMENT
+                // Java.g:1:682: LINE_COMMENT
                 {
                 mLINE_COMMENT(); 
 
@@ -3876,7 +4071,8 @@ public class JavaLexer extends Lexer {
         "\12\uffff}>";
     static final String[] DFA19_transitionS = {
             "\1\2\1\uffff\12\1",
-            "\1\3\1\uffff\12\1\12\uffff\1\5\1\4\1\5\35\uffff\1\5\1\4\1\5",
+            "\1\3\1\uffff\12\1\12\uffff\1\5\1\4\1\5\35\uffff\1\5\1\4\1"+
+            "\5",
             "",
             "",
             "\1\6\1\uffff\1\6\2\uffff\12\7",
@@ -3917,7 +4113,7 @@ public class JavaLexer extends Lexer {
             this.transition = DFA19_transition;
         }
         public String getDescription() {
-            return "8577:1: FloatingPointLiteral : ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* ( Exponent )? ( FloatTypeSuffix )? | '.' ( '0' .. '9' )+ ( Exponent )? ( FloatTypeSuffix )? | ( '0' .. '9' )+ Exponent ( FloatTypeSuffix )? | ( '0' .. '9' )+ ( Exponent )? FloatTypeSuffix );";
+            return "8775:1: FloatingPointLiteral : ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* ( Exponent )? ( FloatTypeSuffix )? | '.' ( '0' .. '9' )+ ( Exponent )? ( FloatTypeSuffix )? | ( '0' .. '9' )+ Exponent ( FloatTypeSuffix )? | ( '0' .. '9' )+ ( Exponent )? FloatTypeSuffix );";
         }
     }
     static final String DFA30_eotS =
@@ -3925,48 +4121,48 @@ public class JavaLexer extends Lexer {
         "\1\55\2\uffff\1\55\1\115\6\55\5\uffff\2\55\1\141\1\144\1\150\1\153"+
         "\1\155\1\157\1\161\1\uffff\2\164\4\uffff\5\55\1\175\5\55\5\uffff"+
         "\7\55\3\uffff\3\55\2\uffff\15\55\1\u00a1\3\55\24\uffff\1\u00a5\1"+
-        "\uffff\1\164\5\55\1\u00ad\1\55\1\uffff\21\55\1\u00c0\7\55\1\u00c8"+
-        "\3\55\1\u00cc\5\55\1\uffff\3\55\1\uffff\7\55\1\uffff\10\55\1\u00e4"+
-        "\1\55\1\u00e6\1\55\1\u00e8\1\55\1\u00ea\1\55\1\u00ec\1\u00ed\1\uffff"+
-        "\2\55\1\u00f0\4\55\1\uffff\2\55\1\u00f7\1\uffff\1\u00f8\2\55\1\u00fb"+
-        "\17\55\1\u010b\1\u010c\1\55\1\u010e\1\uffff\1\u010f\1\uffff\1\55"+
-        "\1\uffff\1\55\1\uffff\1\55\2\uffff\1\55\1\u0115\1\uffff\2\55\1\u0119"+
-        "\1\u011a\1\u011b\1\55\2\uffff\1\55\1\u011e\1\uffff\2\55\1\u0121"+
-        "\2\55\1\u0124\2\55\1\u0127\4\55\1\u012c\1\55\2\uffff\1\u012e\2\uffff"+
-        "\4\55\1\u0133\1\uffff\1\55\1\u0135\1\55\3\uffff\1\u0137\1\55\1\uffff"+
-        "\1\u0139\1\55\1\uffff\1\u013b\1\u013c\1\uffff\1\55\1\u013e\1\uffff"+
-        "\4\55\1\uffff\1\55\1\uffff\1\55\1\u0145\2\55\1\uffff\1\55\1\uffff"+
-        "\1\u0149\1\uffff\1\u014a\1\uffff\1\u014b\2\uffff\1\55\1\uffff\3"+
-        "\55\1\u0150\1\55\1\u0152\1\uffff\1\u0153\1\55\1\u0155\3\uffff\1"+
-        "\u0156\1\55\1\u0158\1\55\1\uffff\1\55\2\uffff\1\u015b\2\uffff\1"+
-        "\u015c\1\uffff\1\u015d\1\55\3\uffff\1\55\1\u0160\1\uffff";
+        "\uffff\1\164\5\55\1\u00ad\1\55\1\uffff\24\55\1\u00c3\5\55\1\u00c9"+
+        "\2\55\1\u00cc\5\55\1\uffff\3\55\1\uffff\7\55\1\uffff\10\55\1\u00e4"+
+        "\2\55\1\u00e7\1\55\1\u00e9\1\u00ea\1\u00eb\2\55\1\u00ee\1\55\1\u00f0"+
+        "\1\uffff\5\55\1\uffff\1\55\1\u00f7\1\uffff\1\55\1\u00f9\1\55\1\u00fb"+
+        "\17\55\1\u010b\1\u010c\1\55\1\u010e\1\uffff\1\55\1\u0110\1\uffff"+
+        "\1\55\3\uffff\1\55\1\u0114\1\uffff\1\55\1\uffff\2\55\1\u0119\1\u011a"+
+        "\1\u011b\1\55\1\uffff\1\55\1\uffff\1\u011e\1\uffff\2\55\1\u0121"+
+        "\2\55\1\u0124\2\55\1\u0127\3\55\1\u012b\2\55\2\uffff\1\u012e\1\uffff"+
+        "\1\55\1\uffff\2\55\1\u0132\1\uffff\2\55\1\u0135\1\55\3\uffff\1\u0137"+
+        "\1\55\1\uffff\1\u0139\1\55\1\uffff\1\u013b\1\u013c\1\uffff\1\55"+
+        "\1\u013e\1\uffff\3\55\1\uffff\2\55\1\uffff\1\55\1\u0145\1\55\1\uffff"+
+        "\2\55\1\uffff\1\u0149\1\uffff\1\u014a\1\uffff\1\u014b\2\uffff\1"+
+        "\55\1\uffff\3\55\1\u0150\1\55\1\u0152\1\uffff\1\u0153\1\55\1\u0155"+
+        "\3\uffff\1\u0156\1\55\1\u0158\1\55\1\uffff\1\55\2\uffff\1\u015b"+
+        "\2\uffff\1\u015c\1\uffff\1\u015d\1\55\3\uffff\1\55\1\u0160\1\uffff";
     static final String DFA30_eofS =
         "\u0161\uffff";
     static final String DFA30_minS =
         "\1\11\1\141\1\uffff\1\146\1\150\1\56\1\75\1\141\1\154\3\uffff\1"+
         "\46\2\uffff\1\157\2\uffff\1\150\1\75\1\142\2\141\2\157\1\145\5\uffff"+
         "\1\150\1\145\1\53\1\55\1\52\4\75\1\uffff\2\56\4\uffff\1\143\1\142"+
-        "\1\151\1\160\1\163\1\44\1\141\1\156\1\160\1\157\1\151\5\uffff\2"+
-        "\141\1\163\1\156\1\165\1\164\1\163\3\uffff\1\151\1\141\1\151\2\uffff"+
-        "\2\163\1\156\1\157\1\162\1\154\1\164\1\154\1\167\1\164\1\157\1\145"+
+        "\1\151\1\160\1\163\1\44\1\141\1\156\1\157\1\160\1\151\5\uffff\2"+
+        "\141\1\156\1\163\1\164\1\163\1\165\3\uffff\2\151\1\141\2\uffff\2"+
+        "\163\1\156\1\157\1\154\1\162\1\164\1\154\1\167\1\157\1\164\1\145"+
         "\1\156\1\44\1\146\1\151\1\164\24\uffff\1\56\1\uffff\1\56\1\153\1"+
-        "\154\1\164\1\166\1\154\1\44\1\164\1\uffff\1\151\1\164\1\143\1\145"+
-        "\1\162\1\164\1\163\1\162\1\143\1\145\1\164\1\155\2\145\1\141\1\144"+
-        "\1\145\1\44\1\156\1\157\1\163\1\164\1\145\2\141\1\44\1\163\1\151"+
-        "\1\154\1\44\1\145\1\154\1\141\1\147\1\142\1\uffff\1\141\1\154\1"+
-        "\165\1\uffff\1\141\1\151\1\145\1\141\1\162\1\145\1\162\1\uffff\1"+
-        "\141\1\143\1\151\1\150\1\162\1\164\1\143\1\163\1\44\1\150\1\44\1"+
-        "\151\1\44\1\156\1\44\1\164\2\44\1\uffff\1\163\1\167\1\44\2\162\1"+
-        "\154\1\164\1\uffff\1\145\1\166\1\44\1\uffff\1\44\1\145\1\153\1\44"+
-        "\1\154\1\165\1\145\1\162\1\147\2\143\2\164\1\155\1\146\1\156\1\164"+
-        "\1\143\1\162\2\44\1\150\1\44\1\uffff\1\44\1\uffff\1\156\1\uffff"+
-        "\1\144\1\uffff\1\151\2\uffff\1\151\1\44\1\uffff\1\141\1\164\3\44"+
-        "\1\145\2\uffff\1\141\1\44\1\uffff\1\145\1\154\1\44\1\156\1\145\1"+
-        "\44\1\164\1\145\1\44\1\145\1\141\1\143\1\146\1\44\1\157\2\uffff"+
-        "\1\44\2\uffff\1\165\1\163\1\154\1\145\1\44\1\uffff\1\143\1\44\1"+
-        "\171\3\uffff\1\44\1\156\1\uffff\1\44\1\164\1\uffff\2\44\1\uffff"+
-        "\1\145\1\44\1\uffff\1\156\1\143\1\145\1\160\1\uffff\1\156\1\uffff"+
-        "\1\145\1\44\1\145\1\156\1\uffff\1\164\1\uffff\1\44\1\uffff\1\44"+
+        "\154\1\164\1\166\1\154\1\44\1\164\1\uffff\1\164\1\151\1\143\1\162"+
+        "\1\145\1\164\1\163\1\162\1\164\1\143\3\145\1\155\1\144\1\141\1\157"+
+        "\1\163\1\156\1\145\1\44\1\164\1\145\2\141\1\163\1\44\1\151\1\154"+
+        "\1\44\1\154\1\145\1\141\1\147\1\142\1\uffff\1\141\1\154\1\165\1"+
+        "\uffff\1\141\1\151\1\145\1\141\1\162\1\145\1\162\1\uffff\1\141\1"+
+        "\151\1\143\1\150\1\164\1\162\1\143\1\163\1\44\1\151\1\150\1\44\1"+
+        "\156\3\44\1\164\1\167\1\44\1\163\1\44\1\uffff\2\162\1\154\1\164"+
+        "\1\145\1\uffff\1\166\1\44\1\uffff\1\145\1\44\1\153\1\44\1\154\1"+
+        "\165\1\145\1\162\1\147\2\143\2\164\1\155\1\146\1\156\1\143\1\164"+
+        "\1\162\2\44\1\150\1\44\1\uffff\1\156\1\44\1\uffff\1\144\3\uffff"+
+        "\1\151\1\44\1\uffff\1\151\1\uffff\1\141\1\164\3\44\1\145\1\uffff"+
+        "\1\141\1\uffff\1\44\1\uffff\1\145\1\154\1\44\1\156\1\145\1\44\1"+
+        "\164\1\145\1\44\1\145\1\141\1\143\1\44\1\146\1\157\2\uffff\1\44"+
+        "\1\uffff\1\165\1\uffff\1\163\1\154\1\44\1\uffff\1\145\1\143\1\44"+
+        "\1\171\3\uffff\1\44\1\156\1\uffff\1\44\1\164\1\uffff\2\44\1\uffff"+
+        "\1\145\1\44\1\uffff\1\156\1\143\1\145\1\uffff\1\160\1\156\1\uffff"+
+        "\1\145\1\44\1\145\1\uffff\1\156\1\164\1\uffff\1\44\1\uffff\1\44"+
         "\1\uffff\1\44\2\uffff\1\144\1\uffff\1\164\1\145\1\157\1\44\1\151"+
         "\1\44\1\uffff\1\44\1\164\1\44\3\uffff\1\44\1\163\1\44\1\146\1\uffff"+
         "\1\172\2\uffff\1\44\2\uffff\1\44\1\uffff\1\44\1\145\3\uffff\1\144"+
@@ -3975,30 +4171,30 @@ public class JavaLexer extends Lexer {
         "\1\ufaff\1\165\1\uffff\1\156\1\171\1\71\1\75\1\157\1\170\3\uffff"+
         "\1\75\2\uffff\1\157\2\uffff\1\162\1\75\1\163\1\157\1\165\1\171\2"+
         "\157\5\uffff\1\150\1\145\3\75\1\174\3\75\1\uffff\1\170\1\146\4\uffff"+
-        "\1\143\1\142\1\157\1\160\1\164\1\ufaff\1\162\1\156\1\160\1\157\1"+
-        "\151\5\uffff\2\141\1\164\1\156\1\165\1\164\1\163\3\uffff\1\154\1"+
-        "\171\1\162\2\uffff\2\163\1\156\1\157\1\162\1\154\1\164\1\154\1\167"+
-        "\1\164\1\157\1\145\1\156\1\ufaff\1\146\1\151\1\164\24\uffff\1\146"+
-        "\1\uffff\1\146\1\153\1\154\1\164\1\166\1\157\1\ufaff\1\164\1\uffff"+
-        "\1\151\1\164\1\143\1\145\1\162\1\164\1\163\1\162\1\143\1\145\1\164"+
-        "\1\155\2\145\1\141\1\144\1\145\1\ufaff\1\156\1\157\1\163\1\164\1"+
-        "\145\2\141\1\ufaff\1\163\1\151\1\154\1\ufaff\1\145\1\154\1\141\1"+
-        "\147\1\142\1\uffff\1\141\1\154\1\165\1\uffff\1\141\1\151\1\145\1"+
-        "\141\1\162\1\145\1\162\1\uffff\1\141\1\143\1\151\1\150\1\162\1\164"+
-        "\1\143\1\163\1\ufaff\1\150\1\ufaff\1\151\1\ufaff\1\156\1\ufaff\1"+
-        "\164\2\ufaff\1\uffff\1\163\1\167\1\ufaff\2\162\1\154\1\164\1\uffff"+
-        "\1\145\1\166\1\ufaff\1\uffff\1\ufaff\1\145\1\153\1\ufaff\1\154\1"+
-        "\165\1\145\1\162\1\147\2\143\2\164\1\155\1\146\1\156\1\164\1\143"+
-        "\1\162\2\ufaff\1\150\1\ufaff\1\uffff\1\ufaff\1\uffff\1\156\1\uffff"+
-        "\1\144\1\uffff\1\151\2\uffff\1\151\1\ufaff\1\uffff\1\141\1\164\3"+
-        "\ufaff\1\145\2\uffff\1\141\1\ufaff\1\uffff\1\145\1\154\1\ufaff\1"+
-        "\156\1\145\1\ufaff\1\164\1\145\1\ufaff\1\145\1\141\1\143\1\146\1"+
-        "\ufaff\1\157\2\uffff\1\ufaff\2\uffff\1\165\1\163\1\154\1\145\1\ufaff"+
-        "\1\uffff\1\143\1\ufaff\1\171\3\uffff\1\ufaff\1\156\1\uffff\1\ufaff"+
-        "\1\164\1\uffff\2\ufaff\1\uffff\1\145\1\ufaff\1\uffff\1\156\1\143"+
-        "\1\145\1\160\1\uffff\1\156\1\uffff\1\145\1\ufaff\1\145\1\156\1\uffff"+
-        "\1\164\1\uffff\1\ufaff\1\uffff\1\ufaff\1\uffff\1\ufaff\2\uffff\1"+
-        "\144\1\uffff\1\164\1\145\1\157\1\ufaff\1\151\1\ufaff\1\uffff\1\ufaff"+
+        "\1\143\1\142\1\157\1\160\1\164\1\ufaff\1\162\1\156\1\157\1\160\1"+
+        "\151\5\uffff\2\141\1\156\2\164\1\163\1\165\3\uffff\1\154\1\162\1"+
+        "\171\2\uffff\2\163\1\156\1\157\1\154\1\162\1\164\1\154\1\167\1\157"+
+        "\1\164\1\145\1\156\1\ufaff\1\146\1\151\1\164\24\uffff\1\146\1\uffff"+
+        "\1\146\1\153\1\154\1\164\1\166\1\157\1\ufaff\1\164\1\uffff\1\164"+
+        "\1\151\1\143\1\162\1\145\1\164\1\163\1\162\1\164\1\143\3\145\1\155"+
+        "\1\144\1\141\1\157\1\163\1\156\1\145\1\ufaff\1\164\1\145\2\141\1"+
+        "\163\1\ufaff\1\151\1\154\1\ufaff\1\154\1\145\1\141\1\147\1\142\1"+
+        "\uffff\1\141\1\154\1\165\1\uffff\1\141\1\151\1\145\1\141\1\162\1"+
+        "\145\1\162\1\uffff\1\141\1\151\1\143\1\150\1\164\1\162\1\143\1\163"+
+        "\1\ufaff\1\151\1\150\1\ufaff\1\156\3\ufaff\1\164\1\167\1\ufaff\1"+
+        "\163\1\ufaff\1\uffff\2\162\1\154\1\164\1\145\1\uffff\1\166\1\ufaff"+
+        "\1\uffff\1\145\1\ufaff\1\153\1\ufaff\1\154\1\165\1\145\1\162\1\147"+
+        "\2\143\2\164\1\155\1\146\1\156\1\143\1\164\1\162\2\ufaff\1\150\1"+
+        "\ufaff\1\uffff\1\156\1\ufaff\1\uffff\1\144\3\uffff\1\151\1\ufaff"+
+        "\1\uffff\1\151\1\uffff\1\141\1\164\3\ufaff\1\145\1\uffff\1\141\1"+
+        "\uffff\1\ufaff\1\uffff\1\145\1\154\1\ufaff\1\156\1\145\1\ufaff\1"+
+        "\164\1\145\1\ufaff\1\145\1\141\1\143\1\ufaff\1\146\1\157\2\uffff"+
+        "\1\ufaff\1\uffff\1\165\1\uffff\1\163\1\154\1\ufaff\1\uffff\1\145"+
+        "\1\143\1\ufaff\1\171\3\uffff\1\ufaff\1\156\1\uffff\1\ufaff\1\164"+
+        "\1\uffff\2\ufaff\1\uffff\1\145\1\ufaff\1\uffff\1\156\1\143\1\145"+
+        "\1\uffff\1\160\1\156\1\uffff\1\145\1\ufaff\1\145\1\uffff\1\156\1"+
+        "\164\1\uffff\1\ufaff\1\uffff\1\ufaff\1\uffff\1\ufaff\2\uffff\1\144"+
+        "\1\uffff\1\164\1\145\1\157\1\ufaff\1\151\1\ufaff\1\uffff\1\ufaff"+
         "\1\164\1\ufaff\3\uffff\1\ufaff\1\163\1\ufaff\1\146\1\uffff\1\172"+
         "\2\uffff\1\ufaff\2\uffff\1\ufaff\1\uffff\1\ufaff\1\145\3\uffff\1"+
         "\144\1\ufaff\1\uffff";
@@ -4007,17 +4203,17 @@ public class JavaLexer extends Lexer {
         "\22\1\23\10\uffff\1\50\1\52\1\53\1\60\1\63\11\uffff\1\127\2\uffff"+
         "\1\137\1\140\1\142\1\143\13\uffff\1\54\1\5\1\136\1\104\1\6\7\uffff"+
         "\1\106\1\113\1\15\3\uffff\1\116\1\25\21\uffff\1\102\1\125\1\121"+
-        "\1\103\1\126\1\122\1\144\1\145\1\105\1\123\1\107\1\112\1\114\1\110"+
+        "\1\103\1\126\1\122\1\105\1\144\1\145\1\123\1\107\1\112\1\114\1\110"+
         "\1\115\1\111\1\124\1\117\1\130\1\133\1\uffff\1\134\10\uffff\1\64"+
-        "\43\uffff\1\70\3\uffff\1\135\7\uffff\1\44\22\uffff\1\71\7\uffff"+
-        "\1\66\3\uffff\1\132\27\uffff\1\41\1\uffff\1\101\1\uffff\1\141\1"+
-        "\uffff\1\65\1\uffff\1\21\1\56\2\uffff\1\131\6\uffff\1\55\1\42\2"+
-        "\uffff\1\45\17\uffff\1\51\1\43\1\uffff\1\7\1\100\5\uffff\1\75\3"+
-        "\uffff\1\32\1\46\1\57\2\uffff\1\76\2\uffff\1\67\2\uffff\1\26\2\uffff"+
-        "\1\3\4\uffff\1\4\1\uffff\1\73\4\uffff\1\24\1\uffff\1\62\1\uffff"+
-        "\1\33\1\uffff\1\47\1\uffff\1\74\1\1\1\uffff\1\30\6\uffff\1\10\3"+
-        "\uffff\1\72\1\40\1\61\4\uffff\1\37\1\uffff\1\77\1\36\1\uffff\1\31"+
-        "\1\27\1\uffff\1\20\2\uffff\1\35\1\11\1\120\2\uffff\1\34";
+        "\43\uffff\1\70\3\uffff\1\135\7\uffff\1\44\25\uffff\1\71\5\uffff"+
+        "\1\66\2\uffff\1\132\27\uffff\1\41\2\uffff\1\101\1\uffff\1\65\1\141"+
+        "\1\21\2\uffff\1\131\1\uffff\1\56\6\uffff\1\55\1\uffff\1\42\1\uffff"+
+        "\1\45\17\uffff\1\43\1\51\1\uffff\1\7\1\uffff\1\100\3\uffff\1\75"+
+        "\4\uffff\1\32\1\46\1\57\2\uffff\1\76\2\uffff\1\67\2\uffff\1\26\2"+
+        "\uffff\1\3\3\uffff\1\4\2\uffff\1\73\3\uffff\1\24\2\uffff\1\62\1"+
+        "\uffff\1\33\1\uffff\1\47\1\uffff\1\74\1\1\1\uffff\1\30\6\uffff\1"+
+        "\10\3\uffff\1\72\1\40\1\61\4\uffff\1\37\1\uffff\1\77\1\36\1\uffff"+
+        "\1\31\1\27\1\uffff\1\20\2\uffff\1\35\1\11\1\120\2\uffff\1\34";
     static final String DFA30_specialS =
         "\u0161\uffff}>";
     static final String[] DFA30_transitionS = {
@@ -4032,11 +4228,11 @@ public class JavaLexer extends Lexer {
             "\1\57\20\uffff\1\61\2\uffff\1\60",
             "",
             "\1\64\6\uffff\1\62\1\63",
-            "\1\70\13\uffff\1\65\1\67\1\uffff\1\71\1\uffff\1\66",
+            "\1\67\13\uffff\1\65\1\70\1\uffff\1\71\1\uffff\1\66",
             "\1\72\1\uffff\12\74",
             "\1\75",
-            "\1\101\6\uffff\1\100\3\uffff\1\77\2\uffff\1\102",
-            "\1\105\1\uffff\1\103\11\uffff\1\104",
+            "\1\102\6\uffff\1\100\3\uffff\1\77\2\uffff\1\101",
+            "\1\104\1\uffff\1\105\11\uffff\1\103",
             "",
             "",
             "",
@@ -4046,12 +4242,12 @@ public class JavaLexer extends Lexer {
             "\1\111",
             "",
             "",
-            "\1\113\11\uffff\1\112",
+            "\1\112\11\uffff\1\113",
             "\1\114",
             "\1\116\20\uffff\1\117",
-            "\1\123\7\uffff\1\120\2\uffff\1\121\2\uffff\1\122",
+            "\1\122\7\uffff\1\120\2\uffff\1\121\2\uffff\1\123",
             "\1\124\3\uffff\1\126\17\uffff\1\125",
-            "\1\130\2\uffff\1\131\6\uffff\1\127",
+            "\1\127\2\uffff\1\131\6\uffff\1\130",
             "\1\132",
             "\1\134\11\uffff\1\133",
             "",
@@ -4063,14 +4259,14 @@ public class JavaLexer extends Lexer {
             "\1\136",
             "\1\140\21\uffff\1\137",
             "\1\143\17\uffff\1\142",
-            "\1\145\4\uffff\1\146\15\uffff\1\147",
+            "\1\146\4\uffff\1\147\15\uffff\1\145",
             "\1\151\76\uffff\1\152",
             "\1\154",
             "\1\156",
             "\1\160",
             "",
-            "\1\74\1\uffff\10\163\2\74\12\uffff\3\74\21\uffff\1\162\13\uffff"+
-            "\3\74\21\uffff\1\162",
+            "\1\74\1\uffff\10\163\2\74\12\uffff\3\74\21\uffff\1\162\13"+
+            "\uffff\3\74\21\uffff\1\162",
             "\1\74\1\uffff\12\165\12\uffff\3\74\35\uffff\3\74",
             "",
             "",
@@ -4081,11 +4277,11 @@ public class JavaLexer extends Lexer {
             "\1\171\5\uffff\1\170",
             "\1\172",
             "\1\174\1\173",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
-            "\1\177\20\uffff\1\176",
+            "\1\176\20\uffff\1\177",
             "\1\u0080",
             "\1\u0081",
             "\1\u0082",
@@ -4097,17 +4293,17 @@ public class JavaLexer extends Lexer {
             "",
             "\1\u0084",
             "\1\u0085",
-            "\1\u0087\1\u0086",
-            "\1\u0088",
+            "\1\u0086",
+            "\1\u0088\1\u0087",
             "\1\u0089",
             "\1\u008a",
             "\1\u008b",
             "",
             "",
             "",
-            "\1\u008d\2\uffff\1\u008c",
-            "\1\u0090\23\uffff\1\u008e\3\uffff\1\u008f",
-            "\1\u0092\10\uffff\1\u0091",
+            "\1\u008c\2\uffff\1\u008d",
+            "\1\u008f\10\uffff\1\u008e",
+            "\1\u0090\23\uffff\1\u0091\3\uffff\1\u0092",
             "",
             "",
             "\1\u0093",
@@ -4123,9 +4319,9 @@ public class JavaLexer extends Lexer {
             "\1\u009d",
             "\1\u009e",
             "\1\u009f",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\24\55"+
-            "\1\u00a0\5\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55"+
-            "\u1040\uffff\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\24"+
+            "\55\1\u00a0\5\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08"+
+            "\55\u1040\uffff\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e"+
             "\55\u10d2\uffff\u5200\55\u5900\uffff\u0200\55",
             "\1\u00a2",
             "\1\u00a3",
@@ -4158,9 +4354,9 @@ public class JavaLexer extends Lexer {
             "\1\u00a8",
             "\1\u00a9",
             "\1\u00ab\2\uffff\1\u00aa",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\4\55"+
-            "\1\u00ac\25\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55"+
-            "\u1040\uffff\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\4"+
+            "\55\1\u00ac\25\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08"+
+            "\55\u1040\uffff\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e"+
             "\55\u10d2\uffff\u5200\55\u5900\uffff\u0200\55",
             "\1\u00ae",
             "",
@@ -4181,26 +4377,26 @@ public class JavaLexer extends Lexer {
             "\1\u00bd",
             "\1\u00be",
             "\1\u00bf",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
-            "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
-            "\u5200\55\u5900\uffff\u0200\55",
+            "\1\u00c0",
             "\1\u00c1",
             "\1\u00c2",
-            "\1\u00c3",
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
+            "\u5200\55\u5900\uffff\u0200\55",
             "\1\u00c4",
             "\1\u00c5",
             "\1\u00c6",
             "\1\u00c7",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\u00c8",
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
-            "\1\u00c9",
             "\1\u00ca",
             "\1\u00cb",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "\1\u00cd",
@@ -4229,61 +4425,61 @@ public class JavaLexer extends Lexer {
             "\1\u00e1",
             "\1\u00e2",
             "\1\u00e3",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "\1\u00e5",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\u00e6",
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
-            "\1\u00e7",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\u00e8",
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
-            "\1\u00e9",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
-            "\1\u00eb",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\u00ec",
+            "\1\u00ed",
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
+            "\u5200\55\u5900\uffff\u0200\55",
+            "\1\u00ef",
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "",
-            "\1\u00ee",
-            "\1\u00ef",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
-            "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
-            "\u5200\55\u5900\uffff\u0200\55",
             "\1\u00f1",
             "\1\u00f2",
             "\1\u00f3",
             "\1\u00f4",
-            "",
             "\1\u00f5",
+            "",
             "\1\u00f6",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\u00f8",
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
-            "\1\u00f9",
             "\1\u00fa",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "\1\u00fc",
@@ -4301,170 +4497,170 @@ public class JavaLexer extends Lexer {
             "\1\u0108",
             "\1\u0109",
             "\1\u010a",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "\1\u010d",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\u010f",
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
-            "",
-            "\1\u0110",
             "",
             "\1\u0111",
             "",
+            "",
+            "",
             "\1\u0112",
-            "",
-            "",
-            "\1\u0113",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\22\55"+
-            "\1\u0114\7\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55"+
-            "\u1040\uffff\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\22"+
+            "\55\1\u0113\7\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08"+
+            "\55\u1040\uffff\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e"+
             "\55\u10d2\uffff\u5200\55\u5900\uffff\u0200\55",
+            "",
+            "\1\u0115",
             "",
             "\1\u0116",
             "\1\u0117",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\13\55"+
-            "\1\u0118\16\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55"+
-            "\u1040\uffff\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\13"+
+            "\55\1\u0118\16\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08"+
+            "\55\u1040\uffff\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e"+
             "\55\u10d2\uffff\u5200\55\u5900\uffff\u0200\55",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "\1\u011c",
             "",
-            "",
             "\1\u011d",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "",
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "",
             "\1\u011f",
             "\1\u0120",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "\1\u0122",
             "\1\u0123",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "\1\u0125",
             "\1\u0126",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "\1\u0128",
             "\1\u0129",
             "\1\u012a",
-            "\1\u012b",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
+            "\1\u012c",
             "\1\u012d",
             "",
             "",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
-            "",
             "",
             "\1\u012f",
+            "",
             "\1\u0130",
             "\1\u0131",
-            "\1\u0132",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "",
+            "\1\u0133",
             "\1\u0134",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "\1\u0136",
             "",
             "",
             "",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "\1\u0138",
             "",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "\1\u013a",
             "",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "",
             "\1\u013d",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "",
             "\1\u013f",
             "\1\u0140",
             "\1\u0141",
-            "\1\u0142",
             "",
+            "\1\u0142",
             "\1\u0143",
             "",
             "\1\u0144",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "\1\u0146",
-            "\1\u0147",
             "",
+            "\1\u0147",
             "\1\u0148",
             "",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "",
@@ -4474,35 +4670,35 @@ public class JavaLexer extends Lexer {
             "\1\u014d",
             "\1\u014e",
             "\1\u014f",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "\1\u0151",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "\1\u0154",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "",
             "",
             "",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "\1\u0157",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "\1\u0159",
@@ -4510,19 +4706,19 @@ public class JavaLexer extends Lexer {
             "\1\u015a",
             "",
             "",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "",
             "",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "\1\u015e",
@@ -4530,8 +4726,8 @@ public class JavaLexer extends Lexer {
             "",
             "",
             "\1\u015f",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55"+
-            "\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             ""
@@ -4567,7 +4763,7 @@ public class JavaLexer extends Lexer {
             this.transition = DFA30_transition;
         }
         public String getDescription() {
-            return "1:1: Tokens : ( T24 | T25 | T26 | T27 | T28 | T29 | T30 | T31 | T32 | T33 | T34 | T35 | T36 | T37 | T38 | T39 | T40 | T41 | T42 | T43 | T44 | T45 | T46 | T47 | T48 | T49 | T50 | T51 | T52 | T53 | T54 | T55 | T56 | T57 | T58 | T59 | T60 | T61 | T62 | T63 | T64 | T65 | T66 | T67 | T68 | T69 | T70 | T71 | T72 | T73 | T74 | T75 | T76 | T77 | T78 | T79 | T80 | T81 | T82 | T83 | T84 | T85 | T86 | T87 | T88 | T89 | T90 | T91 | T92 | T93 | T94 | T95 | T96 | T97 | T98 | T99 | T100 | T101 | T102 | T103 | T104 | T105 | T106 | T107 | T108 | T109 | T110 | T111 | T112 | T113 | HexLiteral | DecimalLiteral | OctalLiteral | FloatingPointLiteral | CharacterLiteral | StringLiteral | ENUM | Identifier | WS | COMMENT | LINE_COMMENT );";
+            return "1:1: Tokens : ( T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | T__52 | T__53 | T__54 | T__55 | T__56 | T__57 | T__58 | T__59 | T__60 | T__61 | T__62 | T__63 | T__64 | T__65 | T__66 | T__67 | T__68 | T__69 | T__70 | T__71 | T__72 | T__73 | T__74 | T__75 | T__76 | T__77 | T__78 | T__79 | T__80 | T__81 | T__82 | T__83 | T__84 | T__85 | T__86 | T__87 | T__88 | T__89 | T__90 | T__91 | T__92 | T__93 | T__94 | T__95 | T__96 | T__97 | T__98 | T__99 | T__100 | T__101 | T__102 | T__103 | T__104 | T__105 | T__106 | T__107 | T__108 | T__109 | T__110 | T__111 | T__112 | T__113 | HexLiteral | DecimalLiteral | OctalLiteral | FloatingPointLiteral | CharacterLiteral | StringLiteral | ENUM | Identifier | WS | COMMENT | LINE_COMMENT );";
         }
     }
  

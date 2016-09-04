@@ -12,7 +12,7 @@
 --------------------------------------------------------------------------------------
 
 rule 'mapProject'
-	from ccompilationUnit sf
+	from compilationUnit sf
 	to Project
 	queries
 		cu : //#CST;
