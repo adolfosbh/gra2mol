@@ -1,4 +1,4 @@
-// $ANTLR 3.2 Sep 23, 2009 12:02:23 Java.g 2016-09-04 12:48:52
+// $ANTLR 3.2 Sep 23, 2009 12:02:23 Java.g 2016-09-04 16:34:16
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -2004,8 +2004,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = HexLiteral;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // Java.g:8763:12: ( '0' ( 'x' | 'X' ) ( HexDigit )+ ( IntegerTypeSuffix )? )
-            // Java.g:8763:14: '0' ( 'x' | 'X' ) ( HexDigit )+ ( IntegerTypeSuffix )?
+            // Java.g:8565:12: ( '0' ( 'x' | 'X' ) ( HexDigit )+ ( IntegerTypeSuffix )? )
+            // Java.g:8565:14: '0' ( 'x' | 'X' ) ( HexDigit )+ ( IntegerTypeSuffix )?
             {
             match('0'); 
             if ( input.LA(1)=='X'||input.LA(1)=='x' ) {
@@ -2017,7 +2017,7 @@ public class JavaLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // Java.g:8763:28: ( HexDigit )+
+            // Java.g:8565:28: ( HexDigit )+
             int cnt1=0;
             loop1:
             do {
@@ -2031,7 +2031,7 @@ public class JavaLexer extends Lexer {
 
                 switch (alt1) {
             	case 1 :
-            	    // Java.g:8763:28: HexDigit
+            	    // Java.g:8565:28: HexDigit
             	    {
             	    mHexDigit(); 
 
@@ -2047,7 +2047,7 @@ public class JavaLexer extends Lexer {
                 cnt1++;
             } while (true);
 
-            // Java.g:8763:38: ( IntegerTypeSuffix )?
+            // Java.g:8565:38: ( IntegerTypeSuffix )?
             int alt2=2;
             int LA2_0 = input.LA(1);
 
@@ -2056,7 +2056,7 @@ public class JavaLexer extends Lexer {
             }
             switch (alt2) {
                 case 1 :
-                    // Java.g:8763:38: IntegerTypeSuffix
+                    // Java.g:8565:38: IntegerTypeSuffix
                     {
                     mIntegerTypeSuffix(); 
 
@@ -2081,10 +2081,10 @@ public class JavaLexer extends Lexer {
         try {
             int _type = DecimalLiteral;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // Java.g:8765:16: ( ( '0' | '1' .. '9' ( '0' .. '9' )* ) ( IntegerTypeSuffix )? )
-            // Java.g:8765:18: ( '0' | '1' .. '9' ( '0' .. '9' )* ) ( IntegerTypeSuffix )?
+            // Java.g:8567:16: ( ( '0' | '1' .. '9' ( '0' .. '9' )* ) ( IntegerTypeSuffix )? )
+            // Java.g:8567:18: ( '0' | '1' .. '9' ( '0' .. '9' )* ) ( IntegerTypeSuffix )?
             {
-            // Java.g:8765:18: ( '0' | '1' .. '9' ( '0' .. '9' )* )
+            // Java.g:8567:18: ( '0' | '1' .. '9' ( '0' .. '9' )* )
             int alt4=2;
             int LA4_0 = input.LA(1);
 
@@ -2102,17 +2102,17 @@ public class JavaLexer extends Lexer {
             }
             switch (alt4) {
                 case 1 :
-                    // Java.g:8765:19: '0'
+                    // Java.g:8567:19: '0'
                     {
                     match('0'); 
 
                     }
                     break;
                 case 2 :
-                    // Java.g:8765:25: '1' .. '9' ( '0' .. '9' )*
+                    // Java.g:8567:25: '1' .. '9' ( '0' .. '9' )*
                     {
                     matchRange('1','9'); 
-                    // Java.g:8765:34: ( '0' .. '9' )*
+                    // Java.g:8567:34: ( '0' .. '9' )*
                     loop3:
                     do {
                         int alt3=2;
@@ -2125,7 +2125,7 @@ public class JavaLexer extends Lexer {
 
                         switch (alt3) {
                     	case 1 :
-                    	    // Java.g:8765:34: '0' .. '9'
+                    	    // Java.g:8567:34: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -2143,7 +2143,7 @@ public class JavaLexer extends Lexer {
 
             }
 
-            // Java.g:8765:45: ( IntegerTypeSuffix )?
+            // Java.g:8567:45: ( IntegerTypeSuffix )?
             int alt5=2;
             int LA5_0 = input.LA(1);
 
@@ -2152,7 +2152,7 @@ public class JavaLexer extends Lexer {
             }
             switch (alt5) {
                 case 1 :
-                    // Java.g:8765:45: IntegerTypeSuffix
+                    // Java.g:8567:45: IntegerTypeSuffix
                     {
                     mIntegerTypeSuffix(); 
 
@@ -2177,11 +2177,11 @@ public class JavaLexer extends Lexer {
         try {
             int _type = OctalLiteral;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // Java.g:8767:14: ( '0' ( '0' .. '7' )+ ( IntegerTypeSuffix )? )
-            // Java.g:8767:16: '0' ( '0' .. '7' )+ ( IntegerTypeSuffix )?
+            // Java.g:8569:14: ( '0' ( '0' .. '7' )+ ( IntegerTypeSuffix )? )
+            // Java.g:8569:16: '0' ( '0' .. '7' )+ ( IntegerTypeSuffix )?
             {
             match('0'); 
-            // Java.g:8767:20: ( '0' .. '7' )+
+            // Java.g:8569:20: ( '0' .. '7' )+
             int cnt6=0;
             loop6:
             do {
@@ -2195,7 +2195,7 @@ public class JavaLexer extends Lexer {
 
                 switch (alt6) {
             	case 1 :
-            	    // Java.g:8767:21: '0' .. '7'
+            	    // Java.g:8569:21: '0' .. '7'
             	    {
             	    matchRange('0','7'); 
 
@@ -2211,7 +2211,7 @@ public class JavaLexer extends Lexer {
                 cnt6++;
             } while (true);
 
-            // Java.g:8767:32: ( IntegerTypeSuffix )?
+            // Java.g:8569:32: ( IntegerTypeSuffix )?
             int alt7=2;
             int LA7_0 = input.LA(1);
 
@@ -2220,7 +2220,7 @@ public class JavaLexer extends Lexer {
             }
             switch (alt7) {
                 case 1 :
-                    // Java.g:8767:32: IntegerTypeSuffix
+                    // Java.g:8569:32: IntegerTypeSuffix
                     {
                     mIntegerTypeSuffix(); 
 
@@ -2243,8 +2243,8 @@ public class JavaLexer extends Lexer {
     // $ANTLR start "HexDigit"
     public final void mHexDigit() throws RecognitionException {
         try {
-            // Java.g:8770:10: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
-            // Java.g:8770:12: ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' )
+            // Java.g:8572:10: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
+            // Java.g:8572:12: ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' )
             {
             if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='F')||(input.LA(1)>='a' && input.LA(1)<='f') ) {
                 input.consume();
@@ -2267,8 +2267,8 @@ public class JavaLexer extends Lexer {
     // $ANTLR start "IntegerTypeSuffix"
     public final void mIntegerTypeSuffix() throws RecognitionException {
         try {
-            // Java.g:8773:19: ( ( 'l' | 'L' ) )
-            // Java.g:8773:21: ( 'l' | 'L' )
+            // Java.g:8575:19: ( ( 'l' | 'L' ) )
+            // Java.g:8575:21: ( 'l' | 'L' )
             {
             if ( input.LA(1)=='L'||input.LA(1)=='l' ) {
                 input.consume();
@@ -2293,14 +2293,14 @@ public class JavaLexer extends Lexer {
         try {
             int _type = FloatingPointLiteral;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // Java.g:8776:5: ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* ( Exponent )? ( FloatTypeSuffix )? | '.' ( '0' .. '9' )+ ( Exponent )? ( FloatTypeSuffix )? | ( '0' .. '9' )+ Exponent ( FloatTypeSuffix )? | ( '0' .. '9' )+ ( Exponent )? FloatTypeSuffix )
+            // Java.g:8578:5: ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* ( Exponent )? ( FloatTypeSuffix )? | '.' ( '0' .. '9' )+ ( Exponent )? ( FloatTypeSuffix )? | ( '0' .. '9' )+ Exponent ( FloatTypeSuffix )? | ( '0' .. '9' )+ ( Exponent )? FloatTypeSuffix )
             int alt19=4;
             alt19 = dfa19.predict(input);
             switch (alt19) {
                 case 1 :
-                    // Java.g:8776:9: ( '0' .. '9' )+ '.' ( '0' .. '9' )* ( Exponent )? ( FloatTypeSuffix )?
+                    // Java.g:8578:9: ( '0' .. '9' )+ '.' ( '0' .. '9' )* ( Exponent )? ( FloatTypeSuffix )?
                     {
-                    // Java.g:8776:9: ( '0' .. '9' )+
+                    // Java.g:8578:9: ( '0' .. '9' )+
                     int cnt8=0;
                     loop8:
                     do {
@@ -2314,7 +2314,7 @@ public class JavaLexer extends Lexer {
 
                         switch (alt8) {
                     	case 1 :
-                    	    // Java.g:8776:10: '0' .. '9'
+                    	    // Java.g:8578:10: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -2331,7 +2331,7 @@ public class JavaLexer extends Lexer {
                     } while (true);
 
                     match('.'); 
-                    // Java.g:8776:25: ( '0' .. '9' )*
+                    // Java.g:8578:25: ( '0' .. '9' )*
                     loop9:
                     do {
                         int alt9=2;
@@ -2344,7 +2344,7 @@ public class JavaLexer extends Lexer {
 
                         switch (alt9) {
                     	case 1 :
-                    	    // Java.g:8776:26: '0' .. '9'
+                    	    // Java.g:8578:26: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -2356,7 +2356,7 @@ public class JavaLexer extends Lexer {
                         }
                     } while (true);
 
-                    // Java.g:8776:37: ( Exponent )?
+                    // Java.g:8578:37: ( Exponent )?
                     int alt10=2;
                     int LA10_0 = input.LA(1);
 
@@ -2365,7 +2365,7 @@ public class JavaLexer extends Lexer {
                     }
                     switch (alt10) {
                         case 1 :
-                            // Java.g:8776:37: Exponent
+                            // Java.g:8578:37: Exponent
                             {
                             mExponent(); 
 
@@ -2374,7 +2374,7 @@ public class JavaLexer extends Lexer {
 
                     }
 
-                    // Java.g:8776:47: ( FloatTypeSuffix )?
+                    // Java.g:8578:47: ( FloatTypeSuffix )?
                     int alt11=2;
                     int LA11_0 = input.LA(1);
 
@@ -2383,7 +2383,7 @@ public class JavaLexer extends Lexer {
                     }
                     switch (alt11) {
                         case 1 :
-                            // Java.g:8776:47: FloatTypeSuffix
+                            // Java.g:8578:47: FloatTypeSuffix
                             {
                             mFloatTypeSuffix(); 
 
@@ -2396,10 +2396,10 @@ public class JavaLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // Java.g:8777:9: '.' ( '0' .. '9' )+ ( Exponent )? ( FloatTypeSuffix )?
+                    // Java.g:8579:9: '.' ( '0' .. '9' )+ ( Exponent )? ( FloatTypeSuffix )?
                     {
                     match('.'); 
-                    // Java.g:8777:13: ( '0' .. '9' )+
+                    // Java.g:8579:13: ( '0' .. '9' )+
                     int cnt12=0;
                     loop12:
                     do {
@@ -2413,7 +2413,7 @@ public class JavaLexer extends Lexer {
 
                         switch (alt12) {
                     	case 1 :
-                    	    // Java.g:8777:14: '0' .. '9'
+                    	    // Java.g:8579:14: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -2429,7 +2429,7 @@ public class JavaLexer extends Lexer {
                         cnt12++;
                     } while (true);
 
-                    // Java.g:8777:25: ( Exponent )?
+                    // Java.g:8579:25: ( Exponent )?
                     int alt13=2;
                     int LA13_0 = input.LA(1);
 
@@ -2438,7 +2438,7 @@ public class JavaLexer extends Lexer {
                     }
                     switch (alt13) {
                         case 1 :
-                            // Java.g:8777:25: Exponent
+                            // Java.g:8579:25: Exponent
                             {
                             mExponent(); 
 
@@ -2447,7 +2447,7 @@ public class JavaLexer extends Lexer {
 
                     }
 
-                    // Java.g:8777:35: ( FloatTypeSuffix )?
+                    // Java.g:8579:35: ( FloatTypeSuffix )?
                     int alt14=2;
                     int LA14_0 = input.LA(1);
 
@@ -2456,7 +2456,7 @@ public class JavaLexer extends Lexer {
                     }
                     switch (alt14) {
                         case 1 :
-                            // Java.g:8777:35: FloatTypeSuffix
+                            // Java.g:8579:35: FloatTypeSuffix
                             {
                             mFloatTypeSuffix(); 
 
@@ -2469,9 +2469,9 @@ public class JavaLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // Java.g:8778:9: ( '0' .. '9' )+ Exponent ( FloatTypeSuffix )?
+                    // Java.g:8580:9: ( '0' .. '9' )+ Exponent ( FloatTypeSuffix )?
                     {
-                    // Java.g:8778:9: ( '0' .. '9' )+
+                    // Java.g:8580:9: ( '0' .. '9' )+
                     int cnt15=0;
                     loop15:
                     do {
@@ -2485,7 +2485,7 @@ public class JavaLexer extends Lexer {
 
                         switch (alt15) {
                     	case 1 :
-                    	    // Java.g:8778:10: '0' .. '9'
+                    	    // Java.g:8580:10: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -2502,7 +2502,7 @@ public class JavaLexer extends Lexer {
                     } while (true);
 
                     mExponent(); 
-                    // Java.g:8778:30: ( FloatTypeSuffix )?
+                    // Java.g:8580:30: ( FloatTypeSuffix )?
                     int alt16=2;
                     int LA16_0 = input.LA(1);
 
@@ -2511,7 +2511,7 @@ public class JavaLexer extends Lexer {
                     }
                     switch (alt16) {
                         case 1 :
-                            // Java.g:8778:30: FloatTypeSuffix
+                            // Java.g:8580:30: FloatTypeSuffix
                             {
                             mFloatTypeSuffix(); 
 
@@ -2524,9 +2524,9 @@ public class JavaLexer extends Lexer {
                     }
                     break;
                 case 4 :
-                    // Java.g:8779:9: ( '0' .. '9' )+ ( Exponent )? FloatTypeSuffix
+                    // Java.g:8581:9: ( '0' .. '9' )+ ( Exponent )? FloatTypeSuffix
                     {
-                    // Java.g:8779:9: ( '0' .. '9' )+
+                    // Java.g:8581:9: ( '0' .. '9' )+
                     int cnt17=0;
                     loop17:
                     do {
@@ -2540,7 +2540,7 @@ public class JavaLexer extends Lexer {
 
                         switch (alt17) {
                     	case 1 :
-                    	    // Java.g:8779:10: '0' .. '9'
+                    	    // Java.g:8581:10: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -2556,7 +2556,7 @@ public class JavaLexer extends Lexer {
                         cnt17++;
                     } while (true);
 
-                    // Java.g:8779:21: ( Exponent )?
+                    // Java.g:8581:21: ( Exponent )?
                     int alt18=2;
                     int LA18_0 = input.LA(1);
 
@@ -2565,7 +2565,7 @@ public class JavaLexer extends Lexer {
                     }
                     switch (alt18) {
                         case 1 :
-                            // Java.g:8779:21: Exponent
+                            // Java.g:8581:21: Exponent
                             {
                             mExponent(); 
 
@@ -2591,8 +2591,8 @@ public class JavaLexer extends Lexer {
     // $ANTLR start "Exponent"
     public final void mExponent() throws RecognitionException {
         try {
-            // Java.g:8783:10: ( ( 'e' | 'E' ) ( '+' | '-' )? ( '0' .. '9' )+ )
-            // Java.g:8783:12: ( 'e' | 'E' ) ( '+' | '-' )? ( '0' .. '9' )+
+            // Java.g:8585:10: ( ( 'e' | 'E' ) ( '+' | '-' )? ( '0' .. '9' )+ )
+            // Java.g:8585:12: ( 'e' | 'E' ) ( '+' | '-' )? ( '0' .. '9' )+
             {
             if ( input.LA(1)=='E'||input.LA(1)=='e' ) {
                 input.consume();
@@ -2603,7 +2603,7 @@ public class JavaLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // Java.g:8783:22: ( '+' | '-' )?
+            // Java.g:8585:22: ( '+' | '-' )?
             int alt20=2;
             int LA20_0 = input.LA(1);
 
@@ -2629,7 +2629,7 @@ public class JavaLexer extends Lexer {
 
             }
 
-            // Java.g:8783:33: ( '0' .. '9' )+
+            // Java.g:8585:33: ( '0' .. '9' )+
             int cnt21=0;
             loop21:
             do {
@@ -2643,7 +2643,7 @@ public class JavaLexer extends Lexer {
 
                 switch (alt21) {
             	case 1 :
-            	    // Java.g:8783:34: '0' .. '9'
+            	    // Java.g:8585:34: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -2671,8 +2671,8 @@ public class JavaLexer extends Lexer {
     // $ANTLR start "FloatTypeSuffix"
     public final void mFloatTypeSuffix() throws RecognitionException {
         try {
-            // Java.g:8786:17: ( ( 'f' | 'F' | 'd' | 'D' ) )
-            // Java.g:8786:19: ( 'f' | 'F' | 'd' | 'D' )
+            // Java.g:8588:17: ( ( 'f' | 'F' | 'd' | 'D' ) )
+            // Java.g:8588:19: ( 'f' | 'F' | 'd' | 'D' )
             {
             if ( input.LA(1)=='D'||input.LA(1)=='F'||input.LA(1)=='d'||input.LA(1)=='f' ) {
                 input.consume();
@@ -2697,11 +2697,11 @@ public class JavaLexer extends Lexer {
         try {
             int _type = CharacterLiteral;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // Java.g:8789:5: ( '\\'' ( EscapeSequence | ~ ( '\\'' | '\\\\' ) ) '\\'' )
-            // Java.g:8789:9: '\\'' ( EscapeSequence | ~ ( '\\'' | '\\\\' ) ) '\\''
+            // Java.g:8591:5: ( '\\'' ( EscapeSequence | ~ ( '\\'' | '\\\\' ) ) '\\'' )
+            // Java.g:8591:9: '\\'' ( EscapeSequence | ~ ( '\\'' | '\\\\' ) ) '\\''
             {
             match('\''); 
-            // Java.g:8789:14: ( EscapeSequence | ~ ( '\\'' | '\\\\' ) )
+            // Java.g:8591:14: ( EscapeSequence | ~ ( '\\'' | '\\\\' ) )
             int alt22=2;
             int LA22_0 = input.LA(1);
 
@@ -2719,14 +2719,14 @@ public class JavaLexer extends Lexer {
             }
             switch (alt22) {
                 case 1 :
-                    // Java.g:8789:16: EscapeSequence
+                    // Java.g:8591:16: EscapeSequence
                     {
                     mEscapeSequence(); 
 
                     }
                     break;
                 case 2 :
-                    // Java.g:8789:33: ~ ( '\\'' | '\\\\' )
+                    // Java.g:8591:33: ~ ( '\\'' | '\\\\' )
                     {
                     if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                         input.consume();
@@ -2760,11 +2760,11 @@ public class JavaLexer extends Lexer {
         try {
             int _type = StringLiteral;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // Java.g:8793:5: ( '\"' ( EscapeSequence | ~ ( '\\\\' | '\"' ) )* '\"' )
-            // Java.g:8793:8: '\"' ( EscapeSequence | ~ ( '\\\\' | '\"' ) )* '\"'
+            // Java.g:8595:5: ( '\"' ( EscapeSequence | ~ ( '\\\\' | '\"' ) )* '\"' )
+            // Java.g:8595:8: '\"' ( EscapeSequence | ~ ( '\\\\' | '\"' ) )* '\"'
             {
             match('\"'); 
-            // Java.g:8793:12: ( EscapeSequence | ~ ( '\\\\' | '\"' ) )*
+            // Java.g:8595:12: ( EscapeSequence | ~ ( '\\\\' | '\"' ) )*
             loop23:
             do {
                 int alt23=3;
@@ -2780,14 +2780,14 @@ public class JavaLexer extends Lexer {
 
                 switch (alt23) {
             	case 1 :
-            	    // Java.g:8793:14: EscapeSequence
+            	    // Java.g:8595:14: EscapeSequence
             	    {
             	    mEscapeSequence(); 
 
             	    }
             	    break;
             	case 2 :
-            	    // Java.g:8793:31: ~ ( '\\\\' | '\"' )
+            	    // Java.g:8595:31: ~ ( '\\\\' | '\"' )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -2822,7 +2822,7 @@ public class JavaLexer extends Lexer {
     // $ANTLR start "EscapeSequence"
     public final void mEscapeSequence() throws RecognitionException {
         try {
-            // Java.g:8798:5: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' ) | UnicodeEscape | OctalEscape )
+            // Java.g:8600:5: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' ) | UnicodeEscape | OctalEscape )
             int alt24=3;
             int LA24_0 = input.LA(1);
 
@@ -2873,7 +2873,7 @@ public class JavaLexer extends Lexer {
             }
             switch (alt24) {
                 case 1 :
-                    // Java.g:8798:9: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' )
+                    // Java.g:8600:9: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' )
                     {
                     match('\\'); 
                     if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||input.LA(1)=='t' ) {
@@ -2889,14 +2889,14 @@ public class JavaLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // Java.g:8799:9: UnicodeEscape
+                    // Java.g:8601:9: UnicodeEscape
                     {
                     mUnicodeEscape(); 
 
                     }
                     break;
                 case 3 :
-                    // Java.g:8800:9: OctalEscape
+                    // Java.g:8602:9: OctalEscape
                     {
                     mOctalEscape(); 
 
@@ -2913,7 +2913,7 @@ public class JavaLexer extends Lexer {
     // $ANTLR start "OctalEscape"
     public final void mOctalEscape() throws RecognitionException {
         try {
-            // Java.g:8805:5: ( '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) )
+            // Java.g:8607:5: ( '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) )
             int alt25=3;
             int LA25_0 = input.LA(1);
 
@@ -2959,25 +2959,25 @@ public class JavaLexer extends Lexer {
             }
             switch (alt25) {
                 case 1 :
-                    // Java.g:8805:9: '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' )
+                    // Java.g:8607:9: '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' )
                     {
                     match('\\'); 
-                    // Java.g:8805:14: ( '0' .. '3' )
-                    // Java.g:8805:15: '0' .. '3'
+                    // Java.g:8607:14: ( '0' .. '3' )
+                    // Java.g:8607:15: '0' .. '3'
                     {
                     matchRange('0','3'); 
 
                     }
 
-                    // Java.g:8805:25: ( '0' .. '7' )
-                    // Java.g:8805:26: '0' .. '7'
+                    // Java.g:8607:25: ( '0' .. '7' )
+                    // Java.g:8607:26: '0' .. '7'
                     {
                     matchRange('0','7'); 
 
                     }
 
-                    // Java.g:8805:36: ( '0' .. '7' )
-                    // Java.g:8805:37: '0' .. '7'
+                    // Java.g:8607:36: ( '0' .. '7' )
+                    // Java.g:8607:37: '0' .. '7'
                     {
                     matchRange('0','7'); 
 
@@ -2987,18 +2987,18 @@ public class JavaLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // Java.g:8806:9: '\\\\' ( '0' .. '7' ) ( '0' .. '7' )
+                    // Java.g:8608:9: '\\\\' ( '0' .. '7' ) ( '0' .. '7' )
                     {
                     match('\\'); 
-                    // Java.g:8806:14: ( '0' .. '7' )
-                    // Java.g:8806:15: '0' .. '7'
+                    // Java.g:8608:14: ( '0' .. '7' )
+                    // Java.g:8608:15: '0' .. '7'
                     {
                     matchRange('0','7'); 
 
                     }
 
-                    // Java.g:8806:25: ( '0' .. '7' )
-                    // Java.g:8806:26: '0' .. '7'
+                    // Java.g:8608:25: ( '0' .. '7' )
+                    // Java.g:8608:26: '0' .. '7'
                     {
                     matchRange('0','7'); 
 
@@ -3008,11 +3008,11 @@ public class JavaLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // Java.g:8807:9: '\\\\' ( '0' .. '7' )
+                    // Java.g:8609:9: '\\\\' ( '0' .. '7' )
                     {
                     match('\\'); 
-                    // Java.g:8807:14: ( '0' .. '7' )
-                    // Java.g:8807:15: '0' .. '7'
+                    // Java.g:8609:14: ( '0' .. '7' )
+                    // Java.g:8609:15: '0' .. '7'
                     {
                     matchRange('0','7'); 
 
@@ -3032,8 +3032,8 @@ public class JavaLexer extends Lexer {
     // $ANTLR start "UnicodeEscape"
     public final void mUnicodeEscape() throws RecognitionException {
         try {
-            // Java.g:8812:5: ( '\\\\' 'u' HexDigit HexDigit HexDigit HexDigit )
-            // Java.g:8812:9: '\\\\' 'u' HexDigit HexDigit HexDigit HexDigit
+            // Java.g:8614:5: ( '\\\\' 'u' HexDigit HexDigit HexDigit HexDigit )
+            // Java.g:8614:9: '\\\\' 'u' HexDigit HexDigit HexDigit HexDigit
             {
             match('\\'); 
             match('u'); 
@@ -3055,8 +3055,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = ENUM;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // Java.g:8815:5: ( 'enum' )
-            // Java.g:8815:7: 'enum'
+            // Java.g:8617:5: ( 'enum' )
+            // Java.g:8617:7: 'enum'
             {
             match("enum"); 
 
@@ -3077,11 +3077,11 @@ public class JavaLexer extends Lexer {
         try {
             int _type = Identifier;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // Java.g:8819:5: ( Letter ( Letter | JavaIDDigit )* )
-            // Java.g:8819:9: Letter ( Letter | JavaIDDigit )*
+            // Java.g:8621:5: ( Letter ( Letter | JavaIDDigit )* )
+            // Java.g:8621:9: Letter ( Letter | JavaIDDigit )*
             {
             mLetter(); 
-            // Java.g:8819:16: ( Letter | JavaIDDigit )*
+            // Java.g:8621:16: ( Letter | JavaIDDigit )*
             loop26:
             do {
                 int alt26=2;
@@ -3128,7 +3128,7 @@ public class JavaLexer extends Lexer {
     // $ANTLR start "Letter"
     public final void mLetter() throws RecognitionException {
         try {
-            // Java.g:8827:5: ( '\\u0024' | '\\u0041' .. '\\u005a' | '\\u005f' | '\\u0061' .. '\\u007a' | '\\u00c0' .. '\\u00d6' | '\\u00d8' .. '\\u00f6' | '\\u00f8' .. '\\u00ff' | '\\u0100' .. '\\u1fff' | '\\u3040' .. '\\u318f' | '\\u3300' .. '\\u337f' | '\\u3400' .. '\\u3d2d' | '\\u4e00' .. '\\u9fff' | '\\uf900' .. '\\ufaff' )
+            // Java.g:8629:5: ( '\\u0024' | '\\u0041' .. '\\u005a' | '\\u005f' | '\\u0061' .. '\\u007a' | '\\u00c0' .. '\\u00d6' | '\\u00d8' .. '\\u00f6' | '\\u00f8' .. '\\u00ff' | '\\u0100' .. '\\u1fff' | '\\u3040' .. '\\u318f' | '\\u3300' .. '\\u337f' | '\\u3400' .. '\\u3d2d' | '\\u4e00' .. '\\u9fff' | '\\uf900' .. '\\ufaff' )
             // Java.g:
             {
             if ( input.LA(1)=='$'||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z')||(input.LA(1)>='\u00C0' && input.LA(1)<='\u00D6')||(input.LA(1)>='\u00D8' && input.LA(1)<='\u00F6')||(input.LA(1)>='\u00F8' && input.LA(1)<='\u1FFF')||(input.LA(1)>='\u3040' && input.LA(1)<='\u318F')||(input.LA(1)>='\u3300' && input.LA(1)<='\u337F')||(input.LA(1)>='\u3400' && input.LA(1)<='\u3D2D')||(input.LA(1)>='\u4E00' && input.LA(1)<='\u9FFF')||(input.LA(1)>='\uF900' && input.LA(1)<='\uFAFF') ) {
@@ -3152,7 +3152,7 @@ public class JavaLexer extends Lexer {
     // $ANTLR start "JavaIDDigit"
     public final void mJavaIDDigit() throws RecognitionException {
         try {
-            // Java.g:8844:5: ( '\\u0030' .. '\\u0039' | '\\u0660' .. '\\u0669' | '\\u06f0' .. '\\u06f9' | '\\u0966' .. '\\u096f' | '\\u09e6' .. '\\u09ef' | '\\u0a66' .. '\\u0a6f' | '\\u0ae6' .. '\\u0aef' | '\\u0b66' .. '\\u0b6f' | '\\u0be7' .. '\\u0bef' | '\\u0c66' .. '\\u0c6f' | '\\u0ce6' .. '\\u0cef' | '\\u0d66' .. '\\u0d6f' | '\\u0e50' .. '\\u0e59' | '\\u0ed0' .. '\\u0ed9' | '\\u1040' .. '\\u1049' )
+            // Java.g:8646:5: ( '\\u0030' .. '\\u0039' | '\\u0660' .. '\\u0669' | '\\u06f0' .. '\\u06f9' | '\\u0966' .. '\\u096f' | '\\u09e6' .. '\\u09ef' | '\\u0a66' .. '\\u0a6f' | '\\u0ae6' .. '\\u0aef' | '\\u0b66' .. '\\u0b6f' | '\\u0be7' .. '\\u0bef' | '\\u0c66' .. '\\u0c6f' | '\\u0ce6' .. '\\u0cef' | '\\u0d66' .. '\\u0d6f' | '\\u0e50' .. '\\u0e59' | '\\u0ed0' .. '\\u0ed9' | '\\u1040' .. '\\u1049' )
             // Java.g:
             {
             if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='\u0660' && input.LA(1)<='\u0669')||(input.LA(1)>='\u06F0' && input.LA(1)<='\u06F9')||(input.LA(1)>='\u0966' && input.LA(1)<='\u096F')||(input.LA(1)>='\u09E6' && input.LA(1)<='\u09EF')||(input.LA(1)>='\u0A66' && input.LA(1)<='\u0A6F')||(input.LA(1)>='\u0AE6' && input.LA(1)<='\u0AEF')||(input.LA(1)>='\u0B66' && input.LA(1)<='\u0B6F')||(input.LA(1)>='\u0BE7' && input.LA(1)<='\u0BEF')||(input.LA(1)>='\u0C66' && input.LA(1)<='\u0C6F')||(input.LA(1)>='\u0CE6' && input.LA(1)<='\u0CEF')||(input.LA(1)>='\u0D66' && input.LA(1)<='\u0D6F')||(input.LA(1)>='\u0E50' && input.LA(1)<='\u0E59')||(input.LA(1)>='\u0ED0' && input.LA(1)<='\u0ED9')||(input.LA(1)>='\u1040' && input.LA(1)<='\u1049') ) {
@@ -3178,8 +3178,8 @@ public class JavaLexer extends Lexer {
         try {
             int _type = WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // Java.g:8861:5: ( ( ' ' | '\\r' | '\\t' | '\\u000C' | '\\n' ) )
-            // Java.g:8861:8: ( ' ' | '\\r' | '\\t' | '\\u000C' | '\\n' )
+            // Java.g:8663:5: ( ( ' ' | '\\r' | '\\t' | '\\u000C' | '\\n' ) )
+            // Java.g:8663:8: ( ' ' | '\\r' | '\\t' | '\\u000C' | '\\n' )
             {
             if ( (input.LA(1)>='\t' && input.LA(1)<='\n')||(input.LA(1)>='\f' && input.LA(1)<='\r')||input.LA(1)==' ' ) {
                 input.consume();
@@ -3207,12 +3207,12 @@ public class JavaLexer extends Lexer {
         try {
             int _type = COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // Java.g:8865:5: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // Java.g:8865:9: '/*' ( options {greedy=false; } : . )* '*/'
+            // Java.g:8667:5: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // Java.g:8667:9: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // Java.g:8865:14: ( options {greedy=false; } : . )*
+            // Java.g:8667:14: ( options {greedy=false; } : . )*
             loop27:
             do {
                 int alt27=2;
@@ -3237,7 +3237,7 @@ public class JavaLexer extends Lexer {
 
                 switch (alt27) {
             	case 1 :
-            	    // Java.g:8865:42: .
+            	    // Java.g:8667:42: .
             	    {
             	    matchAny(); 
 
@@ -3268,12 +3268,12 @@ public class JavaLexer extends Lexer {
         try {
             int _type = LINE_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // Java.g:8869:5: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' )
-            // Java.g:8869:7: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
+            // Java.g:8671:5: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' )
+            // Java.g:8671:7: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
             {
             match("//"); 
 
-            // Java.g:8869:12: (~ ( '\\n' | '\\r' ) )*
+            // Java.g:8671:12: (~ ( '\\n' | '\\r' ) )*
             loop28:
             do {
                 int alt28=2;
@@ -3286,7 +3286,7 @@ public class JavaLexer extends Lexer {
 
                 switch (alt28) {
             	case 1 :
-            	    // Java.g:8869:12: ~ ( '\\n' | '\\r' )
+            	    // Java.g:8671:12: ~ ( '\\n' | '\\r' )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -3306,7 +3306,7 @@ public class JavaLexer extends Lexer {
                 }
             } while (true);
 
-            // Java.g:8869:26: ( '\\r' )?
+            // Java.g:8671:26: ( '\\r' )?
             int alt29=2;
             int LA29_0 = input.LA(1);
 
@@ -3315,7 +3315,7 @@ public class JavaLexer extends Lexer {
             }
             switch (alt29) {
                 case 1 :
-                    // Java.g:8869:26: '\\r'
+                    // Java.g:8671:26: '\\r'
                     {
                     match('\r'); 
 
@@ -4113,7 +4113,7 @@ public class JavaLexer extends Lexer {
             this.transition = DFA19_transition;
         }
         public String getDescription() {
-            return "8775:1: FloatingPointLiteral : ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* ( Exponent )? ( FloatTypeSuffix )? | '.' ( '0' .. '9' )+ ( Exponent )? ( FloatTypeSuffix )? | ( '0' .. '9' )+ Exponent ( FloatTypeSuffix )? | ( '0' .. '9' )+ ( Exponent )? FloatTypeSuffix );";
+            return "8577:1: FloatingPointLiteral : ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* ( Exponent )? ( FloatTypeSuffix )? | '.' ( '0' .. '9' )+ ( Exponent )? ( FloatTypeSuffix )? | ( '0' .. '9' )+ Exponent ( FloatTypeSuffix )? | ( '0' .. '9' )+ ( Exponent )? FloatTypeSuffix );";
         }
     }
     static final String DFA30_eotS =

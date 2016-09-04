@@ -1792,24 +1792,6 @@ methodDeclaratorRest returns [Node returnNode]
 	        }
 	    }
 	    // Create a Token CST Leaf	
-	    if($TK_0 != null) {
-			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
-	 		TK_0Leaf.setKind("TOKEN");
-	 		TK_0Leaf.setValue($TK_0.text);
-			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
-			TK_0Leaf.setLine(TK_0.getLine());
-	 		methodDeclaratorRestReturnNode.getChildren().add(TK_0Leaf);
-	 	}
-	    // Create a Token CST Leaf	
-	    if($TK_1 != null) {
-			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
-	 		TK_1Leaf.setKind("TOKEN");
-	 		TK_1Leaf.setValue($TK_1.text);
-			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
-			TK_1Leaf.setLine(TK_1.getLine());
-	 		methodDeclaratorRestReturnNode.getChildren().add(TK_1Leaf);
-	 	}
-	    // Create a Token CST Leaf	
 	    if($TK_2 != null) {
 			Leaf TK_2Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
 	 		TK_2Leaf.setKind("TOKEN");
@@ -1930,24 +1912,6 @@ interfaceMethodDeclaratorRest returns [Node returnNode]
 	            } 
 	        }
 	    }
-	    // Create a Token CST Leaf	
-	    if($TK_0 != null) {
-			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
-	 		TK_0Leaf.setKind("TOKEN");
-	 		TK_0Leaf.setValue($TK_0.text);
-			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
-			TK_0Leaf.setLine(TK_0.getLine());
-	 		interfaceMethodDeclaratorRestReturnNode.getChildren().add(TK_0Leaf);
-	 	}
-	    // Create a Token CST Leaf	
-	    if($TK_1 != null) {
-			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
-	 		TK_1Leaf.setKind("TOKEN");
-	 		TK_1Leaf.setValue($TK_1.text);
-			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
-			TK_1Leaf.setLine(TK_1.getLine());
-	 		interfaceMethodDeclaratorRestReturnNode.getChildren().add(TK_1Leaf);
-	 	}
 	    // Create a Token CST Leaf	
 	    if($TK_2 != null) {
 			Leaf TK_2Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
@@ -2252,24 +2216,6 @@ variableDeclaratorRest returns [Node returnNode]
 		Node variableDeclaratorRestReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
 		variableDeclaratorRestReturnNode.setKind("variableDeclaratorRest");
 	    // Create a Token CST Leaf	
-	    if($TK_0 != null) {
-			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
-	 		TK_0Leaf.setKind("TOKEN");
-	 		TK_0Leaf.setValue($TK_0.text);
-			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
-			TK_0Leaf.setLine(TK_0.getLine());
-	 		variableDeclaratorRestReturnNode.getChildren().add(TK_0Leaf);
-	 	}
-	    // Create a Token CST Leaf	
-	    if($TK_1 != null) {
-			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
-	 		TK_1Leaf.setKind("TOKEN");
-	 		TK_1Leaf.setValue($TK_1.text);
-			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
-			TK_1Leaf.setLine(TK_1.getLine());
-	 		variableDeclaratorRestReturnNode.getChildren().add(TK_1Leaf);
-	 	}
-	    // Create a Token CST Leaf	
 	    if($TK_2 != null) {
 			Leaf TK_2Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
 	 		TK_2Leaf.setKind("TOKEN");
@@ -2373,24 +2319,6 @@ constantDeclaratorRest returns [Node returnNode]
 		Node constantDeclaratorRestReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
 		constantDeclaratorRestReturnNode.setKind("constantDeclaratorRest");
 	    // Create a Token CST Leaf	
-	    if($TK_0 != null) {
-			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
-	 		TK_0Leaf.setKind("TOKEN");
-	 		TK_0Leaf.setValue($TK_0.text);
-			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
-			TK_0Leaf.setLine(TK_0.getLine());
-	 		constantDeclaratorRestReturnNode.getChildren().add(TK_0Leaf);
-	 	}
-	    // Create a Token CST Leaf	
-	    if($TK_1 != null) {
-			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
-	 		TK_1Leaf.setKind("TOKEN");
-	 		TK_1Leaf.setValue($TK_1.text);
-			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
-			TK_1Leaf.setLine(TK_1.getLine());
-	 		constantDeclaratorRestReturnNode.getChildren().add(TK_1Leaf);
-	 	}
-	    // Create a Token CST Leaf	
 	    if($TK_2 != null) {
 			Leaf TK_2Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
 	 		TK_2Leaf.setKind("TOKEN");
@@ -2429,24 +2357,6 @@ variableDeclaratorId returns [Node returnNode]
 			IdentifierGenLeaf.setLine(IdentifierGen.getLine());
 			variableDeclaratorIdReturnNode.getChildren().add(IdentifierGenLeaf);
 		}
-	    // Create a Token CST Leaf	
-	    if($TK_0 != null) {
-			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
-	 		TK_0Leaf.setKind("TOKEN");
-	 		TK_0Leaf.setValue($TK_0.text);
-			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
-			TK_0Leaf.setLine(TK_0.getLine());
-	 		variableDeclaratorIdReturnNode.getChildren().add(TK_0Leaf);
-	 	}
-	    // Create a Token CST Leaf	
-	    if($TK_1 != null) {
-			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
-	 		TK_1Leaf.setKind("TOKEN");
-	 		TK_1Leaf.setValue($TK_1.text);
-			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
-			TK_1Leaf.setLine(TK_1.getLine());
-	 		variableDeclaratorIdReturnNode.getChildren().add(TK_1Leaf);
-	 	}
 		// Returns the Node with CST Leaves/Nodes
 		$variableDeclaratorId.returnNode = variableDeclaratorIdReturnNode;
 	}
@@ -2952,24 +2862,6 @@ type returns [Node returnNode]
 		}
 		}
 
-	    // Create a Token CST Leaf	
-	    if($TK_1 != null) {
-			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
-	 		TK_1Leaf.setKind("TOKEN");
-	 		TK_1Leaf.setValue($TK_1.text);
-			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
-			TK_1Leaf.setLine(TK_1.getLine());
-	 		typeReturnNode.getChildren().add(TK_1Leaf);
-	 	}
-	    // Create a Token CST Leaf	
-	    if($TK_2 != null) {
-			Leaf TK_2Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
-	 		TK_2Leaf.setKind("TOKEN");
-	 		TK_2Leaf.setValue($TK_2.text);
-			TK_2Leaf.setPos(TK_2.getCharPositionInLine());
-			TK_2Leaf.setLine(TK_2.getLine());
-	 		typeReturnNode.getChildren().add(TK_2Leaf);
-	 	}
 		// Returns the Node with CST Leaves/Nodes
 		$type.returnNode = typeReturnNode;
 	}
@@ -2988,24 +2880,6 @@ type returns [Node returnNode]
 	            } 
 	        }
 	    }
-	    // Create a Token CST Leaf	
-	    if($TK_0 != null) {
-			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
-	 		TK_0Leaf.setKind("TOKEN");
-	 		TK_0Leaf.setValue($TK_0.text);
-			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
-			TK_0Leaf.setLine(TK_0.getLine());
-	 		typeReturnNode.getChildren().add(TK_0Leaf);
-	 	}
-	    // Create a Token CST Leaf	
-	    if($TK_1 != null) {
-			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
-	 		TK_1Leaf.setKind("TOKEN");
-	 		TK_1Leaf.setValue($TK_1.text);
-			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
-			TK_1Leaf.setLine(TK_1.getLine());
-	 		typeReturnNode.getChildren().add(TK_1Leaf);
-	 	}
 		// Returns the Node with CST Leaves/Nodes
 		$type.returnNode = typeReturnNode;
 	}
@@ -7684,24 +7558,6 @@ primary returns [Node returnNode]
 	        }
 	    }
 	    // Create a Token CST Leaf	
-	    if($TK_0 != null) {
-			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
-	 		TK_0Leaf.setKind("TOKEN");
-	 		TK_0Leaf.setValue($TK_0.text);
-			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
-			TK_0Leaf.setLine(TK_0.getLine());
-	 		primaryReturnNode.getChildren().add(TK_0Leaf);
-	 	}
-	    // Create a Token CST Leaf	
-	    if($TK_1 != null) {
-			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
-	 		TK_1Leaf.setKind("TOKEN");
-	 		TK_1Leaf.setValue($TK_1.text);
-			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
-			TK_1Leaf.setLine(TK_1.getLine());
-	 		primaryReturnNode.getChildren().add(TK_1Leaf);
-	 	}
-	    // Create a Token CST Leaf	
 	    if($TK_2 != null) {
 			Leaf TK_2Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
 	 		TK_2Leaf.setKind("TOKEN");
@@ -7765,24 +7621,6 @@ identifierSuffix returns [Node returnNode]
 		// Create return CST Node
 		Node identifierSuffixReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
 		identifierSuffixReturnNode.setKind("identifierSuffix");
-	    // Create a Token CST Leaf	
-	    if($TK_0 != null) {
-			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
-	 		TK_0Leaf.setKind("TOKEN");
-	 		TK_0Leaf.setValue($TK_0.text);
-			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
-			TK_0Leaf.setLine(TK_0.getLine());
-	 		identifierSuffixReturnNode.getChildren().add(TK_0Leaf);
-	 	}
-	    // Create a Token CST Leaf	
-	    if($TK_1 != null) {
-			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
-	 		TK_1Leaf.setKind("TOKEN");
-	 		TK_1Leaf.setValue($TK_1.text);
-			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
-			TK_1Leaf.setLine(TK_1.getLine());
-	 		identifierSuffixReturnNode.getChildren().add(TK_1Leaf);
-	 	}
 	    // Create a Token CST Leaf	
 	    if($TK_2 != null) {
 			Leaf TK_2Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
@@ -8218,24 +8056,6 @@ arrayCreatorRest returns [Node returnNode]
 			TK_1Leaf.setLine(TK_1.getLine());
 	 		arrayCreatorRestReturnNode.getChildren().add(TK_1Leaf);
 	 	}
-	    // Create a Token CST Leaf	
-	    if($TK_2 != null) {
-			Leaf TK_2Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
-	 		TK_2Leaf.setKind("TOKEN");
-	 		TK_2Leaf.setValue($TK_2.text);
-			TK_2Leaf.setPos(TK_2.getCharPositionInLine());
-			TK_2Leaf.setLine(TK_2.getLine());
-	 		arrayCreatorRestReturnNode.getChildren().add(TK_2Leaf);
-	 	}
-	    // Create a Token CST Leaf	
-	    if($TK_3 != null) {
-			Leaf TK_3Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
-	 		TK_3Leaf.setKind("TOKEN");
-	 		TK_3Leaf.setValue($TK_3.text);
-			TK_3Leaf.setPos(TK_3.getCharPositionInLine());
-			TK_3Leaf.setLine(TK_3.getLine());
-	 		arrayCreatorRestReturnNode.getChildren().add(TK_3Leaf);
-	 	}
 	    // Create a CST Node
 		if($arrayInitializerGen != null) {
 	        for(Iterator it = $arrayInitializerGen.iterator(); it.hasNext(); )  { 
@@ -8298,24 +8118,6 @@ arrayCreatorRest returns [Node returnNode]
 		}
 		}
 
-	    // Create a Token CST Leaf	
-	    if($TK_7 != null) {
-			Leaf TK_7Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
-	 		TK_7Leaf.setKind("TOKEN");
-	 		TK_7Leaf.setValue($TK_7.text);
-			TK_7Leaf.setPos(TK_7.getCharPositionInLine());
-			TK_7Leaf.setLine(TK_7.getLine());
-	 		arrayCreatorRestReturnNode.getChildren().add(TK_7Leaf);
-	 	}
-	    // Create a Token CST Leaf	
-	    if($TK_8 != null) {
-			Leaf TK_8Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
-	 		TK_8Leaf.setKind("TOKEN");
-	 		TK_8Leaf.setValue($TK_8.text);
-			TK_8Leaf.setPos(TK_8.getCharPositionInLine());
-			TK_8Leaf.setLine(TK_8.getLine());
-	 		arrayCreatorRestReturnNode.getChildren().add(TK_8Leaf);
-	 	}
 		// Returns the Node with CST Leaves/Nodes
 		$arrayCreatorRest.returnNode = arrayCreatorRestReturnNode;
 	}

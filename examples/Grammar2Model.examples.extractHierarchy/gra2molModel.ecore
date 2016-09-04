@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Core:Transformation xmi:version="2.0"
+<Core:ViewDefinition xmi:version="2.0"
     xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:Core="http://gts.inf.um.es/modernization/gra2mol/core" xmlns:Query="http://gts.inf.um.es/modernization/gra2mol/query">
-  <rules xsi:type="Core:StandardRule" name="mainRule">
+  <rules name="mainRule">
+    <from name="compilationUnit"/>
+    <to name="ClassM::Model"/>
     <queries variable="declarations">
       <filter type="INDIRECT">
         <element name="compilationUnit"/>
@@ -16,22 +18,23 @@
         <value type="QUERY_RESULT" value="declarations"/>
       </inits>
     </inits>
-    <from name="compilationUnit">
+  </rules>
+  <rules name="class">
+    <from name="typeDeclaration" alias="td">
       <filter>
-        <filter>
-          <element name="compilationUnit" mark="true"/>
-        </filter>
+        <element name="typeDeclaration" mark="true"/>
+        <next type="INDIRECT">
+          <element name="normalClassDeclaration"/>
+        </next>
       </filter>
     </from>
-    <to name="ClassM::Model"/>
-  </rules>
-  <rules xsi:type="Core:StandardRule" name="class">
+    <to name="ClassM::Class"/>
     <queries variable="mycompUnit">
       <filter type="INDIRECT">
         <element name="compilationUnit" mark="true"/>
         <next>
           <element name="typeDeclaration"/>
-          <expression xsi:type="Query:FilterExpressionUnit" operation="check">
+          <expression xsi:type="Query:FilterExpressionUnit" operation="CHECK">
             <element name="this"/>
             <parameters value="td" type="VARIABLE"/>
           </expression>
@@ -69,7 +72,7 @@
           <element name="typeDeclaration" mark="true"/>
           <next type="INDIRECT">
             <element name="normalClassDeclaration"/>
-            <expression xsi:type="Query:FilterExpressionUnit" operation="eq">
+            <expression xsi:type="Query:FilterExpressionUnit">
               <element name="Identifier"/>
               <parameters value="extClassRef" valuePosition="0" extension="Identifier"
                   extensionPosition="0" type="QUERY_ACCESS"/>
@@ -96,7 +99,7 @@
           <element name="typeDeclaration" mark="true"/>
           <next type="INDIRECT">
             <element name="normalInterfaceDeclaration"/>
-            <expression xsi:type="Query:FilterExpressionUnit" operation="eq">
+            <expression xsi:type="Query:FilterExpressionUnit">
               <element name="Identifier"/>
               <parameters value="impClassRefs" valuePosition="i" extension="Identifier"
                   extensionPosition="0" type="QUERY_ACCESS"/>
@@ -117,25 +120,23 @@
         <value type="QUERY_RESULT" value="impClass"/>
       </inits>
     </inits>
+  </rules>
+  <rules name="interface">
     <from name="typeDeclaration" alias="td">
-      <filter variable="td">
-        <filter>
-          <element name="typeDeclaration" mark="true"/>
-          <next type="INDIRECT">
-            <element name="normalClassDeclaration"/>
-          </next>
-        </filter>
+      <filter>
+        <element name="typeDeclaration" mark="true"/>
+        <next type="INDIRECT">
+          <element name="normalInterfaceDeclaration"/>
+        </next>
       </filter>
     </from>
     <to name="ClassM::Class"/>
-  </rules>
-  <rules xsi:type="Core:StandardRule" name="interface">
     <queries variable="mycompUnit">
       <filter type="INDIRECT">
         <element name="compilationUnit" mark="true"/>
         <next>
           <element name="typeDeclaration"/>
-          <expression xsi:type="Query:FilterExpressionUnit" operation="check">
+          <expression xsi:type="Query:FilterExpressionUnit" operation="CHECK">
             <element name="this"/>
             <parameters value="td" type="VARIABLE"/>
           </expression>
@@ -176,7 +177,7 @@
           <element name="typeDeclaration" mark="true"/>
           <next type="INDIRECT">
             <element name="normalInterfaceDeclaration"/>
-            <expression xsi:type="Query:FilterExpressionUnit" operation="eq">
+            <expression xsi:type="Query:FilterExpressionUnit">
               <element name="Identifier"/>
               <parameters value="extClassRefs" valuePosition="i" extension="Identifier"
                   extensionPosition="0" type="QUERY_ACCESS"/>
@@ -194,16 +195,5 @@
         <value type="QUERY_RESULT" value="extClass"/>
       </inits>
     </inits>
-    <from name="typeDeclaration" alias="td">
-      <filter variable="td">
-        <filter>
-          <element name="typeDeclaration" mark="true"/>
-          <next type="INDIRECT">
-            <element name="normalInterfaceDeclaration"/>
-          </next>
-        </filter>
-      </filter>
-    </from>
-    <to name="ClassM::Class"/>
   </rules>
-</Core:Transformation>
+</Core:ViewDefinition>
