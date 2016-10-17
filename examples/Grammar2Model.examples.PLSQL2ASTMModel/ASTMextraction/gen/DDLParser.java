@@ -1,4 +1,4 @@
-// $ANTLR 3.0.1 /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3 2009-09-29 10:50:24
+// $ANTLR 3.2 Sep 23, 2009 12:02:23 DDL.g 2016-10-17 13:33:13
 
 	import gts.modernization.model.CST.impl.*;
 	import gts.modernization.model.CST.*;
@@ -17,16 +17,57 @@ public class DDLParser extends Parser {
     public static final String[] tokenNames = new String[] {
         "<invalid>", "<EOR>", "<DOWN>", "<UP>", "ID", "TYPE", "NUMBER", "ISNULL", "STRING", "WS", "'CREATE TABLE'", "'('", "','", "')'", "';'", "'ALTER TABLE'", "'ADD'", "'ENABLE'", "'CONSTRAINT'", "'COMMENT ON'", "'TABLE'", "'COLUMN'", "'.'", "'IS'", "'CREATE SEQUENCE'", "'INCREMENT'", "'BY'", "'START'", "'WITH'", "'MAXVALUE'", "'NOMAXVALUE'", "'MINVALUE'", "'NOMINVALUE'", "'CYCLE'", "'NOCYCLE'", "'CACHE'", "'NOCACHE'", "'ORDER'", "'NOORDER'", "'PRIMARY KEY'", "'UNIQUE'", "'FOREIGN KEY'", "'REFERENCES'"
     };
-    public static final int WS=9;
-    public static final int NUMBER=6;
-    public static final int ISNULL=7;
+    public static final int T__19=19;
+    public static final int T__15=15;
+    public static final int T__37=37;
+    public static final int T__16=16;
+    public static final int T__38=38;
+    public static final int T__17=17;
+    public static final int T__39=39;
+    public static final int T__18=18;
+    public static final int T__11=11;
+    public static final int T__33=33;
+    public static final int T__12=12;
+    public static final int T__34=34;
+    public static final int T__13=13;
+    public static final int T__35=35;
+    public static final int T__14=14;
+    public static final int T__36=36;
     public static final int ID=4;
+    public static final int WS=9;
     public static final int EOF=-1;
-    public static final int STRING=8;
+    public static final int T__30=30;
     public static final int TYPE=5;
+    public static final int T__31=31;
+    public static final int T__10=10;
+    public static final int T__32=32;
+    public static final int NUMBER=6;
+    public static final int T__26=26;
+    public static final int T__27=27;
+    public static final int T__28=28;
+    public static final int T__29=29;
+    public static final int T__22=22;
+    public static final int T__23=23;
+    public static final int ISNULL=7;
+    public static final int STRING=8;
+    public static final int T__24=24;
+    public static final int T__25=25;
+    public static final int T__40=40;
+    public static final int T__41=41;
+    public static final int T__20=20;
+    public static final int T__42=42;
+    public static final int T__21=21;
+
+    // delegates
+    // delegators
+
 
         public DDLParser(TokenStream input) {
-            super(input);
+            this(input, new RecognizerSharedState());
+        }
+        public DDLParser(TokenStream input, RecognizerSharedState state) {
+            super(input, state);
+             
         }
         
     protected StringTemplateGroup templateLib =
@@ -52,8 +93,8 @@ public class DDLParser extends Parser {
       }
     }
 
-    public String[] getTokenNames() { return tokenNames; }
-    public String getGrammarFileName() { return "/home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3"; }
+    public String[] getTokenNames() { return DDLParser.tokenNames; }
+    public String getGrammarFileName() { return "DDL.g"; }
 
 
     public static class data_definition_return extends ParserRuleReturnScope {
@@ -63,10 +104,10 @@ public class DDLParser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start data_definition
-    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:19:1: data_definition returns [Node returnNode] : (create_tableGen+= create_table | alter_tableGen+= alter_table | create_sequenceGen+= create_sequence | commentGen+= comment )+ ;
-    public final data_definition_return data_definition() throws RecognitionException {
-        data_definition_return retval = new data_definition_return();
+    // $ANTLR start "data_definition"
+    // DDL.g:19:1: data_definition returns [Node returnNode] : (create_tableGen+= create_table | alter_tableGen+= alter_table | create_sequenceGen+= create_sequence | commentGen+= comment )+ ;
+    public final DDLParser.data_definition_return data_definition() throws RecognitionException {
+        DDLParser.data_definition_return retval = new DDLParser.data_definition_return();
         retval.start = input.LT(1);
 
         List list_create_tableGen=null;
@@ -78,10 +119,10 @@ public class DDLParser extends Parser {
         RuleReturnScope create_sequenceGen = null;
         RuleReturnScope commentGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:20:1: ( (create_tableGen+= create_table | alter_tableGen+= alter_table | create_sequenceGen+= create_sequence | commentGen+= comment )+ )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:21:2: (create_tableGen+= create_table | alter_tableGen+= alter_table | create_sequenceGen+= create_sequence | commentGen+= comment )+
+            // DDL.g:20:1: ( (create_tableGen+= create_table | alter_tableGen+= alter_table | create_sequenceGen+= create_sequence | commentGen+= comment )+ )
+            // DDL.g:21:2: (create_tableGen+= create_table | alter_tableGen+= alter_table | create_sequenceGen+= create_sequence | commentGen+= comment )+
             {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:21:2: (create_tableGen+= create_table | alter_tableGen+= alter_table | create_sequenceGen+= create_sequence | commentGen+= comment )+
+            // DDL.g:21:2: (create_tableGen+= create_table | alter_tableGen+= alter_table | create_sequenceGen+= create_sequence | commentGen+= comment )+
             int cnt1=0;
             loop1:
             do {
@@ -112,11 +153,12 @@ public class DDLParser extends Parser {
 
                 switch (alt1) {
             	case 1 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:21:3: create_tableGen+= create_table
+            	    // DDL.g:21:3: create_tableGen+= create_table
             	    {
             	    pushFollow(FOLLOW_create_table_in_data_definition43);
             	    create_tableGen=create_table();
-            	    _fsp--;
+
+            	    state._fsp--;
 
             	    if (list_create_tableGen==null) list_create_tableGen=new ArrayList();
             	    list_create_tableGen.add(create_tableGen);
@@ -125,11 +167,12 @@ public class DDLParser extends Parser {
             	    }
             	    break;
             	case 2 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:21:35: alter_tableGen+= alter_table
+            	    // DDL.g:21:35: alter_tableGen+= alter_table
             	    {
             	    pushFollow(FOLLOW_alter_table_in_data_definition49);
             	    alter_tableGen=alter_table();
-            	    _fsp--;
+
+            	    state._fsp--;
 
             	    if (list_alter_tableGen==null) list_alter_tableGen=new ArrayList();
             	    list_alter_tableGen.add(alter_tableGen);
@@ -138,11 +181,12 @@ public class DDLParser extends Parser {
             	    }
             	    break;
             	case 3 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:21:65: create_sequenceGen+= create_sequence
+            	    // DDL.g:21:65: create_sequenceGen+= create_sequence
             	    {
             	    pushFollow(FOLLOW_create_sequence_in_data_definition55);
             	    create_sequenceGen=create_sequence();
-            	    _fsp--;
+
+            	    state._fsp--;
 
             	    if (list_create_sequenceGen==null) list_create_sequenceGen=new ArrayList();
             	    list_create_sequenceGen.add(create_sequenceGen);
@@ -151,11 +195,12 @@ public class DDLParser extends Parser {
             	    }
             	    break;
             	case 4 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:21:103: commentGen+= comment
+            	    // DDL.g:21:103: commentGen+= comment
             	    {
             	    pushFollow(FOLLOW_comment_in_data_definition61);
             	    commentGen=comment();
-            	    _fsp--;
+
+            	    state._fsp--;
 
             	    if (list_commentGen==null) list_commentGen=new ArrayList();
             	    list_commentGen.add(commentGen);
@@ -173,11 +218,11 @@ public class DDLParser extends Parser {
                 cnt1++;
             } while (true);
 
-            
+
             		// Create return CST Node
             		Node data_definitionReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		data_definitionReturnNode.setKind("data_definition");
-            	
+
             		// Create a special CST Node for terminal create_tableGen aggregation
             		if(list_create_tableGen != null) {
             	    for(int pos = 0; pos < list_create_tableGen.size(); pos++ )  { 
@@ -191,8 +236,8 @@ public class DDLParser extends Parser {
             		}
             		}
             		}
-            	
-            	
+
+
             		// Create a special CST Node for terminal alter_tableGen aggregation
             		if(list_alter_tableGen != null) {
             	    for(int pos = 0; pos < list_alter_tableGen.size(); pos++ )  { 
@@ -206,8 +251,8 @@ public class DDLParser extends Parser {
             		}
             		}
             		}
-            	
-            	
+
+
             		// Create a special CST Node for terminal create_sequenceGen aggregation
             		if(list_create_sequenceGen != null) {
             	    for(int pos = 0; pos < list_create_sequenceGen.size(); pos++ )  { 
@@ -221,8 +266,8 @@ public class DDLParser extends Parser {
             		}
             		}
             		}
-            	
-            	
+
+
             		// Create a special CST Node for terminal commentGen aggregation
             		if(list_commentGen != null) {
             	    for(int pos = 0; pos < list_commentGen.size(); pos++ )  { 
@@ -236,7 +281,7 @@ public class DDLParser extends Parser {
             		}
             		}
             		}
-            	
+
             		// Returns the Node with CST Leaves/Nodes
             		retval.returnNode = data_definitionReturnNode;
             	
@@ -254,7 +299,7 @@ public class DDLParser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end data_definition
+    // $ANTLR end "data_definition"
 
     public static class create_table_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -263,10 +308,10 @@ public class DDLParser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start create_table
-    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:91:1: create_table returns [Node returnNode] : TK_0= 'CREATE TABLE' IDGen= ID TK_1= '(' columnGen+= column (TK_2= ',' columnGen_1+= column )* (TK_3= ',' constraintGen+= constraint )* TK_4= ')' TK_5= ';' ;
-    public final create_table_return create_table() throws RecognitionException {
-        create_table_return retval = new create_table_return();
+    // $ANTLR start "create_table"
+    // DDL.g:91:1: create_table returns [Node returnNode] : TK_0= 'CREATE TABLE' IDGen= ID TK_1= '(' columnGen+= column (TK_2= ',' columnGen_1+= column )* (TK_3= ',' constraintGen+= constraint )* TK_4= ')' TK_5= ';' ;
+    public final DDLParser.create_table_return create_table() throws RecognitionException {
+        DDLParser.create_table_return retval = new DDLParser.create_table_return();
         retval.start = input.LT(1);
 
         Token TK_0=null;
@@ -283,23 +328,21 @@ public class DDLParser extends Parser {
         RuleReturnScope columnGen_1 = null;
         RuleReturnScope constraintGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:92:1: (TK_0= 'CREATE TABLE' IDGen= ID TK_1= '(' columnGen+= column (TK_2= ',' columnGen_1+= column )* (TK_3= ',' constraintGen+= constraint )* TK_4= ')' TK_5= ';' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:93:2: TK_0= 'CREATE TABLE' IDGen= ID TK_1= '(' columnGen+= column (TK_2= ',' columnGen_1+= column )* (TK_3= ',' constraintGen+= constraint )* TK_4= ')' TK_5= ';'
+            // DDL.g:92:1: (TK_0= 'CREATE TABLE' IDGen= ID TK_1= '(' columnGen+= column (TK_2= ',' columnGen_1+= column )* (TK_3= ',' constraintGen+= constraint )* TK_4= ')' TK_5= ';' )
+            // DDL.g:93:2: TK_0= 'CREATE TABLE' IDGen= ID TK_1= '(' columnGen+= column (TK_2= ',' columnGen_1+= column )* (TK_3= ',' constraintGen+= constraint )* TK_4= ')' TK_5= ';'
             {
-            TK_0=(Token)input.LT(1);
-            match(input,10,FOLLOW_10_in_create_table84); 
-            IDGen=(Token)input.LT(1);
-            match(input,ID,FOLLOW_ID_in_create_table88); 
-            TK_1=(Token)input.LT(1);
-            match(input,11,FOLLOW_11_in_create_table93); 
+            TK_0=(Token)match(input,10,FOLLOW_10_in_create_table84); 
+            IDGen=(Token)match(input,ID,FOLLOW_ID_in_create_table88); 
+            TK_1=(Token)match(input,11,FOLLOW_11_in_create_table93); 
             pushFollow(FOLLOW_column_in_create_table99);
             columnGen=column();
-            _fsp--;
+
+            state._fsp--;
 
             if (list_columnGen==null) list_columnGen=new ArrayList();
             list_columnGen.add(columnGen);
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:95:21: (TK_2= ',' columnGen_1+= column )*
+            // DDL.g:95:21: (TK_2= ',' columnGen_1+= column )*
             loop2:
             do {
                 int alt2=2;
@@ -318,13 +361,13 @@ public class DDLParser extends Parser {
 
                 switch (alt2) {
             	case 1 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:95:22: TK_2= ',' columnGen_1+= column
+            	    // DDL.g:95:22: TK_2= ',' columnGen_1+= column
             	    {
-            	    TK_2=(Token)input.LT(1);
-            	    match(input,12,FOLLOW_12_in_create_table104); 
+            	    TK_2=(Token)match(input,12,FOLLOW_12_in_create_table104); 
             	    pushFollow(FOLLOW_column_in_create_table108);
             	    columnGen_1=column();
-            	    _fsp--;
+
+            	    state._fsp--;
 
             	    if (list_columnGen_1==null) list_columnGen_1=new ArrayList();
             	    list_columnGen_1.add(columnGen_1);
@@ -338,7 +381,7 @@ public class DDLParser extends Parser {
                 }
             } while (true);
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:96:3: (TK_3= ',' constraintGen+= constraint )*
+            // DDL.g:96:3: (TK_3= ',' constraintGen+= constraint )*
             loop3:
             do {
                 int alt3=2;
@@ -351,13 +394,13 @@ public class DDLParser extends Parser {
 
                 switch (alt3) {
             	case 1 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:96:4: TK_3= ',' constraintGen+= constraint
+            	    // DDL.g:96:4: TK_3= ',' constraintGen+= constraint
             	    {
-            	    TK_3=(Token)input.LT(1);
-            	    match(input,12,FOLLOW_12_in_create_table117); 
+            	    TK_3=(Token)match(input,12,FOLLOW_12_in_create_table117); 
             	    pushFollow(FOLLOW_constraint_in_create_table121);
             	    constraintGen=constraint();
-            	    _fsp--;
+
+            	    state._fsp--;
 
             	    if (list_constraintGen==null) list_constraintGen=new ArrayList();
             	    list_constraintGen.add(constraintGen);
@@ -371,11 +414,9 @@ public class DDLParser extends Parser {
                 }
             } while (true);
 
-            TK_4=(Token)input.LT(1);
-            match(input,13,FOLLOW_13_in_create_table128); 
-            TK_5=(Token)input.LT(1);
-            match(input,14,FOLLOW_14_in_create_table132); 
-            
+            TK_4=(Token)match(input,13,FOLLOW_13_in_create_table128); 
+            TK_5=(Token)match(input,14,FOLLOW_14_in_create_table132); 
+
             		// Create return CST Node
             		Node create_tableReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		create_tableReturnNode.setKind("create_table");
@@ -383,7 +424,7 @@ public class DDLParser extends Parser {
             	    if(TK_0 != null) {
             			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_0Leaf.setKind("TOKEN");
-            	 		TK_0Leaf.setValue(TK_0.getText());
+            	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
             			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
             			TK_0Leaf.setLine(TK_0.getLine());
             	 		create_tableReturnNode.getChildren().add(TK_0Leaf);
@@ -392,7 +433,7 @@ public class DDLParser extends Parser {
             		if(IDGen != null) {
             			Leaf IDGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			IDGenLeaf.setKind("ID");
-            			IDGenLeaf.setValue(IDGen.getText());
+            			IDGenLeaf.setValue((IDGen!=null?IDGen.getText():null));
             			IDGenLeaf.setPos(IDGen.getCharPositionInLine());
             			IDGenLeaf.setLine(IDGen.getLine());
             			create_tableReturnNode.getChildren().add(IDGenLeaf);
@@ -401,7 +442,7 @@ public class DDLParser extends Parser {
             	    if(TK_1 != null) {
             			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_1Leaf.setKind("TOKEN");
-            	 		TK_1Leaf.setValue(TK_1.getText());
+            	 		TK_1Leaf.setValue((TK_1!=null?TK_1.getText():null));
             			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
             			TK_1Leaf.setLine(TK_1.getLine());
             	 		create_tableReturnNode.getChildren().add(TK_1Leaf);
@@ -416,7 +457,7 @@ public class DDLParser extends Parser {
             	            } 
             	        }
             	    }
-            	
+
             		// Create a special CST Node for terminal columnGen_1 aggregation
             		if(list_columnGen_1 != null) {
             	    for(int pos = 0; pos < list_columnGen_1.size(); pos++ )  { 
@@ -424,7 +465,7 @@ public class DDLParser extends Parser {
             	    if(TK_2 != null) {
             			Leaf TK_2Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_2Leaf.setKind("TOKEN");
-            	 		TK_2Leaf.setValue(TK_2.getText());
+            	 		TK_2Leaf.setValue((TK_2!=null?TK_2.getText():null));
             			TK_2Leaf.setPos(TK_2.getCharPositionInLine());
             			TK_2Leaf.setLine(TK_2.getLine());
             	 		create_tableReturnNode.getChildren().add(TK_2Leaf);
@@ -439,8 +480,8 @@ public class DDLParser extends Parser {
             		}
             		}
             		}
-            	
-            	
+
+
             		// Create a special CST Node for terminal constraintGen aggregation
             		if(list_constraintGen != null) {
             	    for(int pos = 0; pos < list_constraintGen.size(); pos++ )  { 
@@ -448,7 +489,7 @@ public class DDLParser extends Parser {
             	    if(TK_3 != null) {
             			Leaf TK_3Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_3Leaf.setKind("TOKEN");
-            	 		TK_3Leaf.setValue(TK_3.getText());
+            	 		TK_3Leaf.setValue((TK_3!=null?TK_3.getText():null));
             			TK_3Leaf.setPos(TK_3.getCharPositionInLine());
             			TK_3Leaf.setLine(TK_3.getLine());
             	 		create_tableReturnNode.getChildren().add(TK_3Leaf);
@@ -463,12 +504,12 @@ public class DDLParser extends Parser {
             		}
             		}
             		}
-            	
+
             	    // Create a Token CST Leaf	
             	    if(TK_4 != null) {
             			Leaf TK_4Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_4Leaf.setKind("TOKEN");
-            	 		TK_4Leaf.setValue(TK_4.getText());
+            	 		TK_4Leaf.setValue((TK_4!=null?TK_4.getText():null));
             			TK_4Leaf.setPos(TK_4.getCharPositionInLine());
             			TK_4Leaf.setLine(TK_4.getLine());
             	 		create_tableReturnNode.getChildren().add(TK_4Leaf);
@@ -477,7 +518,7 @@ public class DDLParser extends Parser {
             	    if(TK_5 != null) {
             			Leaf TK_5Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_5Leaf.setKind("TOKEN");
-            	 		TK_5Leaf.setValue(TK_5.getText());
+            	 		TK_5Leaf.setValue((TK_5!=null?TK_5.getText():null));
             			TK_5Leaf.setPos(TK_5.getCharPositionInLine());
             			TK_5Leaf.setLine(TK_5.getLine());
             	 		create_tableReturnNode.getChildren().add(TK_5Leaf);
@@ -499,7 +540,7 @@ public class DDLParser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end create_table
+    // $ANTLR end "create_table"
 
     public static class column_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -508,10 +549,10 @@ public class DDLParser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start column
-    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:210:1: column returns [Node returnNode] : IDGen= ID TYPEGen= TYPE (TK_0= '(' NUMBERGen= NUMBER TK_1= ')' )? (ISNULLGen= ISNULL )? ;
-    public final column_return column() throws RecognitionException {
-        column_return retval = new column_return();
+    // $ANTLR start "column"
+    // DDL.g:210:1: column returns [Node returnNode] : IDGen= ID TYPEGen= TYPE (TK_0= '(' NUMBERGen= NUMBER TK_1= ')' )? (ISNULLGen= ISNULL )? ;
+    public final DDLParser.column_return column() throws RecognitionException {
+        DDLParser.column_return retval = new DDLParser.column_return();
         retval.start = input.LT(1);
 
         Token IDGen=null;
@@ -522,14 +563,12 @@ public class DDLParser extends Parser {
         Token ISNULLGen=null;
 
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:211:1: (IDGen= ID TYPEGen= TYPE (TK_0= '(' NUMBERGen= NUMBER TK_1= ')' )? (ISNULLGen= ISNULL )? )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:212:2: IDGen= ID TYPEGen= TYPE (TK_0= '(' NUMBERGen= NUMBER TK_1= ')' )? (ISNULLGen= ISNULL )?
+            // DDL.g:211:1: (IDGen= ID TYPEGen= TYPE (TK_0= '(' NUMBERGen= NUMBER TK_1= ')' )? (ISNULLGen= ISNULL )? )
+            // DDL.g:212:2: IDGen= ID TYPEGen= TYPE (TK_0= '(' NUMBERGen= NUMBER TK_1= ')' )? (ISNULLGen= ISNULL )?
             {
-            IDGen=(Token)input.LT(1);
-            match(input,ID,FOLLOW_ID_in_column153); 
-            TYPEGen=(Token)input.LT(1);
-            match(input,TYPE,FOLLOW_TYPE_in_column157); 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:212:24: (TK_0= '(' NUMBERGen= NUMBER TK_1= ')' )?
+            IDGen=(Token)match(input,ID,FOLLOW_ID_in_column153); 
+            TYPEGen=(Token)match(input,TYPE,FOLLOW_TYPE_in_column157); 
+            // DDL.g:212:24: (TK_0= '(' NUMBERGen= NUMBER TK_1= ')' )?
             int alt4=2;
             int LA4_0 = input.LA(1);
 
@@ -538,21 +577,18 @@ public class DDLParser extends Parser {
             }
             switch (alt4) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:212:25: TK_0= '(' NUMBERGen= NUMBER TK_1= ')'
+                    // DDL.g:212:25: TK_0= '(' NUMBERGen= NUMBER TK_1= ')'
                     {
-                    TK_0=(Token)input.LT(1);
-                    match(input,11,FOLLOW_11_in_column162); 
-                    NUMBERGen=(Token)input.LT(1);
-                    match(input,NUMBER,FOLLOW_NUMBER_in_column166); 
-                    TK_1=(Token)input.LT(1);
-                    match(input,13,FOLLOW_13_in_column170); 
+                    TK_0=(Token)match(input,11,FOLLOW_11_in_column162); 
+                    NUMBERGen=(Token)match(input,NUMBER,FOLLOW_NUMBER_in_column166); 
+                    TK_1=(Token)match(input,13,FOLLOW_13_in_column170); 
 
                     }
                     break;
 
             }
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:212:71: (ISNULLGen= ISNULL )?
+            // DDL.g:212:71: (ISNULLGen= ISNULL )?
             int alt5=2;
             int LA5_0 = input.LA(1);
 
@@ -561,17 +597,16 @@ public class DDLParser extends Parser {
             }
             switch (alt5) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:212:71: ISNULLGen= ISNULL
+                    // DDL.g:212:71: ISNULLGen= ISNULL
                     {
-                    ISNULLGen=(Token)input.LT(1);
-                    match(input,ISNULL,FOLLOW_ISNULL_in_column176); 
+                    ISNULLGen=(Token)match(input,ISNULL,FOLLOW_ISNULL_in_column176); 
 
                     }
                     break;
 
             }
 
-            
+
             		// Create return CST Node
             		Node columnReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		columnReturnNode.setKind("column");
@@ -579,7 +614,7 @@ public class DDLParser extends Parser {
             		if(IDGen != null) {
             			Leaf IDGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			IDGenLeaf.setKind("ID");
-            			IDGenLeaf.setValue(IDGen.getText());
+            			IDGenLeaf.setValue((IDGen!=null?IDGen.getText():null));
             			IDGenLeaf.setPos(IDGen.getCharPositionInLine());
             			IDGenLeaf.setLine(IDGen.getLine());
             			columnReturnNode.getChildren().add(IDGenLeaf);
@@ -588,7 +623,7 @@ public class DDLParser extends Parser {
             		if(TYPEGen != null) {
             			Leaf TYPEGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			TYPEGenLeaf.setKind("TYPE");
-            			TYPEGenLeaf.setValue(TYPEGen.getText());
+            			TYPEGenLeaf.setValue((TYPEGen!=null?TYPEGen.getText():null));
             			TYPEGenLeaf.setPos(TYPEGen.getCharPositionInLine());
             			TYPEGenLeaf.setLine(TYPEGen.getLine());
             			columnReturnNode.getChildren().add(TYPEGenLeaf);
@@ -597,7 +632,7 @@ public class DDLParser extends Parser {
             	    if(TK_0 != null) {
             			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_0Leaf.setKind("TOKEN");
-            	 		TK_0Leaf.setValue(TK_0.getText());
+            	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
             			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
             			TK_0Leaf.setLine(TK_0.getLine());
             	 		columnReturnNode.getChildren().add(TK_0Leaf);
@@ -606,7 +641,7 @@ public class DDLParser extends Parser {
             		if(NUMBERGen != null) {
             			Leaf NUMBERGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			NUMBERGenLeaf.setKind("NUMBER");
-            			NUMBERGenLeaf.setValue(NUMBERGen.getText());
+            			NUMBERGenLeaf.setValue((NUMBERGen!=null?NUMBERGen.getText():null));
             			NUMBERGenLeaf.setPos(NUMBERGen.getCharPositionInLine());
             			NUMBERGenLeaf.setLine(NUMBERGen.getLine());
             			columnReturnNode.getChildren().add(NUMBERGenLeaf);
@@ -615,7 +650,7 @@ public class DDLParser extends Parser {
             	    if(TK_1 != null) {
             			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_1Leaf.setKind("TOKEN");
-            	 		TK_1Leaf.setValue(TK_1.getText());
+            	 		TK_1Leaf.setValue((TK_1!=null?TK_1.getText():null));
             			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
             			TK_1Leaf.setLine(TK_1.getLine());
             	 		columnReturnNode.getChildren().add(TK_1Leaf);
@@ -624,7 +659,7 @@ public class DDLParser extends Parser {
             		if(ISNULLGen != null) {
             			Leaf ISNULLGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			ISNULLGenLeaf.setKind("ISNULL");
-            			ISNULLGenLeaf.setValue(ISNULLGen.getText());
+            			ISNULLGenLeaf.setValue((ISNULLGen!=null?ISNULLGen.getText():null));
             			ISNULLGenLeaf.setPos(ISNULLGen.getCharPositionInLine());
             			ISNULLGenLeaf.setLine(ISNULLGen.getLine());
             			columnReturnNode.getChildren().add(ISNULLGenLeaf);
@@ -646,7 +681,7 @@ public class DDLParser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end column
+    // $ANTLR end "column"
 
     public static class alter_table_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -655,10 +690,10 @@ public class DDLParser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start alter_table
-    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:276:1: alter_table returns [Node returnNode] : TK_0= 'ALTER TABLE' tabnameGen+= tabname ( (add= 'ADD' constraintGen+= constraint ) | (enable= 'ENABLE' TK_1= 'CONSTRAINT' ) IDGen= ID ) TK_2= ';' ;
-    public final alter_table_return alter_table() throws RecognitionException {
-        alter_table_return retval = new alter_table_return();
+    // $ANTLR start "alter_table"
+    // DDL.g:276:1: alter_table returns [Node returnNode] : TK_0= 'ALTER TABLE' tabnameGen+= tabname ( (add= 'ADD' constraintGen+= constraint ) | (enable= 'ENABLE' TK_1= 'CONSTRAINT' ) IDGen= ID ) TK_2= ';' ;
+    public final DDLParser.alter_table_return alter_table() throws RecognitionException {
+        DDLParser.alter_table_return retval = new DDLParser.alter_table_return();
         retval.start = input.LT(1);
 
         Token TK_0=null;
@@ -672,19 +707,19 @@ public class DDLParser extends Parser {
         RuleReturnScope tabnameGen = null;
         RuleReturnScope constraintGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:277:1: (TK_0= 'ALTER TABLE' tabnameGen+= tabname ( (add= 'ADD' constraintGen+= constraint ) | (enable= 'ENABLE' TK_1= 'CONSTRAINT' ) IDGen= ID ) TK_2= ';' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:278:2: TK_0= 'ALTER TABLE' tabnameGen+= tabname ( (add= 'ADD' constraintGen+= constraint ) | (enable= 'ENABLE' TK_1= 'CONSTRAINT' ) IDGen= ID ) TK_2= ';'
+            // DDL.g:277:1: (TK_0= 'ALTER TABLE' tabnameGen+= tabname ( (add= 'ADD' constraintGen+= constraint ) | (enable= 'ENABLE' TK_1= 'CONSTRAINT' ) IDGen= ID ) TK_2= ';' )
+            // DDL.g:278:2: TK_0= 'ALTER TABLE' tabnameGen+= tabname ( (add= 'ADD' constraintGen+= constraint ) | (enable= 'ENABLE' TK_1= 'CONSTRAINT' ) IDGen= ID ) TK_2= ';'
             {
-            TK_0=(Token)input.LT(1);
-            match(input,15,FOLLOW_15_in_alter_table198); 
+            TK_0=(Token)match(input,15,FOLLOW_15_in_alter_table198); 
             pushFollow(FOLLOW_tabname_in_alter_table202);
             tabnameGen=tabname();
-            _fsp--;
+
+            state._fsp--;
 
             if (list_tabnameGen==null) list_tabnameGen=new ArrayList();
             list_tabnameGen.add(tabnameGen);
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:279:3: ( (add= 'ADD' constraintGen+= constraint ) | (enable= 'ENABLE' TK_1= 'CONSTRAINT' ) IDGen= ID )
+            // DDL.g:279:3: ( (add= 'ADD' constraintGen+= constraint ) | (enable= 'ENABLE' TK_1= 'CONSTRAINT' ) IDGen= ID )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -696,22 +731,22 @@ public class DDLParser extends Parser {
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("279:3: ( (add= 'ADD' constraintGen+= constraint ) | (enable= 'ENABLE' TK_1= 'CONSTRAINT' ) IDGen= ID )", 6, 0, input);
+                    new NoViableAltException("", 6, 0, input);
 
                 throw nvae;
             }
             switch (alt6) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:279:4: (add= 'ADD' constraintGen+= constraint )
+                    // DDL.g:279:4: (add= 'ADD' constraintGen+= constraint )
                     {
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:279:4: (add= 'ADD' constraintGen+= constraint )
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:279:5: add= 'ADD' constraintGen+= constraint
+                    // DDL.g:279:4: (add= 'ADD' constraintGen+= constraint )
+                    // DDL.g:279:5: add= 'ADD' constraintGen+= constraint
                     {
-                    add=(Token)input.LT(1);
-                    match(input,16,FOLLOW_16_in_alter_table210); 
+                    add=(Token)match(input,16,FOLLOW_16_in_alter_table210); 
                     pushFollow(FOLLOW_constraint_in_alter_table214);
                     constraintGen=constraint();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_constraintGen==null) list_constraintGen=new ArrayList();
                     list_constraintGen.add(constraintGen);
@@ -723,29 +758,25 @@ public class DDLParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:279:44: (enable= 'ENABLE' TK_1= 'CONSTRAINT' ) IDGen= ID
+                    // DDL.g:279:44: (enable= 'ENABLE' TK_1= 'CONSTRAINT' ) IDGen= ID
                     {
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:279:44: (enable= 'ENABLE' TK_1= 'CONSTRAINT' )
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:279:45: enable= 'ENABLE' TK_1= 'CONSTRAINT'
+                    // DDL.g:279:44: (enable= 'ENABLE' TK_1= 'CONSTRAINT' )
+                    // DDL.g:279:45: enable= 'ENABLE' TK_1= 'CONSTRAINT'
                     {
-                    enable=(Token)input.LT(1);
-                    match(input,17,FOLLOW_17_in_alter_table222); 
-                    TK_1=(Token)input.LT(1);
-                    match(input,18,FOLLOW_18_in_alter_table226); 
+                    enable=(Token)match(input,17,FOLLOW_17_in_alter_table222); 
+                    TK_1=(Token)match(input,18,FOLLOW_18_in_alter_table226); 
 
                     }
 
-                    IDGen=(Token)input.LT(1);
-                    match(input,ID,FOLLOW_ID_in_alter_table231); 
+                    IDGen=(Token)match(input,ID,FOLLOW_ID_in_alter_table231); 
 
                     }
                     break;
 
             }
 
-            TK_2=(Token)input.LT(1);
-            match(input,14,FOLLOW_14_in_alter_table237); 
-            
+            TK_2=(Token)match(input,14,FOLLOW_14_in_alter_table237); 
+
             		// Create return CST Node
             		Node alter_tableReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		alter_tableReturnNode.setKind("alter_table");
@@ -753,7 +784,7 @@ public class DDLParser extends Parser {
             	    if(TK_0 != null) {
             			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_0Leaf.setKind("TOKEN");
-            	 		TK_0Leaf.setValue(TK_0.getText());
+            	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
             			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
             			TK_0Leaf.setLine(TK_0.getLine());
             	 		alter_tableReturnNode.getChildren().add(TK_0Leaf);
@@ -772,7 +803,7 @@ public class DDLParser extends Parser {
             		if(add != null) {
             			Leaf addLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			addLeaf.setKind("add");
-            			addLeaf.setValue(add.getText());
+            			addLeaf.setValue((add!=null?add.getText():null));
             			addLeaf.setPos(add.getCharPositionInLine());
             			addLeaf.setLine(add.getLine());
             			alter_tableReturnNode.getChildren().add(addLeaf);
@@ -791,7 +822,7 @@ public class DDLParser extends Parser {
             		if(enable != null) {
             			Leaf enableLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			enableLeaf.setKind("enable");
-            			enableLeaf.setValue(enable.getText());
+            			enableLeaf.setValue((enable!=null?enable.getText():null));
             			enableLeaf.setPos(enable.getCharPositionInLine());
             			enableLeaf.setLine(enable.getLine());
             			alter_tableReturnNode.getChildren().add(enableLeaf);
@@ -800,7 +831,7 @@ public class DDLParser extends Parser {
             	    if(TK_1 != null) {
             			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_1Leaf.setKind("TOKEN");
-            	 		TK_1Leaf.setValue(TK_1.getText());
+            	 		TK_1Leaf.setValue((TK_1!=null?TK_1.getText():null));
             			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
             			TK_1Leaf.setLine(TK_1.getLine());
             	 		alter_tableReturnNode.getChildren().add(TK_1Leaf);
@@ -809,7 +840,7 @@ public class DDLParser extends Parser {
             		if(IDGen != null) {
             			Leaf IDGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			IDGenLeaf.setKind("ID");
-            			IDGenLeaf.setValue(IDGen.getText());
+            			IDGenLeaf.setValue((IDGen!=null?IDGen.getText():null));
             			IDGenLeaf.setPos(IDGen.getCharPositionInLine());
             			IDGenLeaf.setLine(IDGen.getLine());
             			alter_tableReturnNode.getChildren().add(IDGenLeaf);
@@ -818,7 +849,7 @@ public class DDLParser extends Parser {
             	    if(TK_2 != null) {
             			Leaf TK_2Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_2Leaf.setKind("TOKEN");
-            	 		TK_2Leaf.setValue(TK_2.getText());
+            	 		TK_2Leaf.setValue((TK_2!=null?TK_2.getText():null));
             			TK_2Leaf.setPos(TK_2.getCharPositionInLine());
             			TK_2Leaf.setLine(TK_2.getLine());
             	 		alter_tableReturnNode.getChildren().add(TK_2Leaf);
@@ -840,7 +871,7 @@ public class DDLParser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end alter_table
+    // $ANTLR end "alter_table"
 
     public static class comment_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -849,10 +880,10 @@ public class DDLParser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start comment
-    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:364:1: comment returns [Node returnNode] : TK_0= 'COMMENT ON' ( (TK_1= 'TABLE' tabnameGen+= tabname ) | (TK_2= 'COLUMN' IDGen= ID TK_3= '.' colnameGen+= colname ) ) TK_4= 'IS' STRINGGen= STRING TK_5= ';' ;
-    public final comment_return comment() throws RecognitionException {
-        comment_return retval = new comment_return();
+    // $ANTLR start "comment"
+    // DDL.g:364:1: comment returns [Node returnNode] : TK_0= 'COMMENT ON' ( (TK_1= 'TABLE' tabnameGen+= tabname ) | (TK_2= 'COLUMN' IDGen= ID TK_3= '.' colnameGen+= colname ) ) TK_4= 'IS' STRINGGen= STRING TK_5= ';' ;
+    public final DDLParser.comment_return comment() throws RecognitionException {
+        DDLParser.comment_return retval = new DDLParser.comment_return();
         retval.start = input.LT(1);
 
         Token TK_0=null;
@@ -868,12 +899,11 @@ public class DDLParser extends Parser {
         RuleReturnScope tabnameGen = null;
         RuleReturnScope colnameGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:365:1: (TK_0= 'COMMENT ON' ( (TK_1= 'TABLE' tabnameGen+= tabname ) | (TK_2= 'COLUMN' IDGen= ID TK_3= '.' colnameGen+= colname ) ) TK_4= 'IS' STRINGGen= STRING TK_5= ';' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:366:2: TK_0= 'COMMENT ON' ( (TK_1= 'TABLE' tabnameGen+= tabname ) | (TK_2= 'COLUMN' IDGen= ID TK_3= '.' colnameGen+= colname ) ) TK_4= 'IS' STRINGGen= STRING TK_5= ';'
+            // DDL.g:365:1: (TK_0= 'COMMENT ON' ( (TK_1= 'TABLE' tabnameGen+= tabname ) | (TK_2= 'COLUMN' IDGen= ID TK_3= '.' colnameGen+= colname ) ) TK_4= 'IS' STRINGGen= STRING TK_5= ';' )
+            // DDL.g:366:2: TK_0= 'COMMENT ON' ( (TK_1= 'TABLE' tabnameGen+= tabname ) | (TK_2= 'COLUMN' IDGen= ID TK_3= '.' colnameGen+= colname ) ) TK_4= 'IS' STRINGGen= STRING TK_5= ';'
             {
-            TK_0=(Token)input.LT(1);
-            match(input,19,FOLLOW_19_in_comment258); 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:366:20: ( (TK_1= 'TABLE' tabnameGen+= tabname ) | (TK_2= 'COLUMN' IDGen= ID TK_3= '.' colnameGen+= colname ) )
+            TK_0=(Token)match(input,19,FOLLOW_19_in_comment258); 
+            // DDL.g:366:20: ( (TK_1= 'TABLE' tabnameGen+= tabname ) | (TK_2= 'COLUMN' IDGen= ID TK_3= '.' colnameGen+= colname ) )
             int alt7=2;
             int LA7_0 = input.LA(1);
 
@@ -885,22 +915,22 @@ public class DDLParser extends Parser {
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("366:20: ( (TK_1= 'TABLE' tabnameGen+= tabname ) | (TK_2= 'COLUMN' IDGen= ID TK_3= '.' colnameGen+= colname ) )", 7, 0, input);
+                    new NoViableAltException("", 7, 0, input);
 
                 throw nvae;
             }
             switch (alt7) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:366:21: (TK_1= 'TABLE' tabnameGen+= tabname )
+                    // DDL.g:366:21: (TK_1= 'TABLE' tabnameGen+= tabname )
                     {
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:366:21: (TK_1= 'TABLE' tabnameGen+= tabname )
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:366:22: TK_1= 'TABLE' tabnameGen+= tabname
+                    // DDL.g:366:21: (TK_1= 'TABLE' tabnameGen+= tabname )
+                    // DDL.g:366:22: TK_1= 'TABLE' tabnameGen+= tabname
                     {
-                    TK_1=(Token)input.LT(1);
-                    match(input,20,FOLLOW_20_in_comment264); 
+                    TK_1=(Token)match(input,20,FOLLOW_20_in_comment264); 
                     pushFollow(FOLLOW_tabname_in_comment268);
                     tabnameGen=tabname();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_tabnameGen==null) list_tabnameGen=new ArrayList();
                     list_tabnameGen.add(tabnameGen);
@@ -912,20 +942,18 @@ public class DDLParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:366:58: (TK_2= 'COLUMN' IDGen= ID TK_3= '.' colnameGen+= colname )
+                    // DDL.g:366:58: (TK_2= 'COLUMN' IDGen= ID TK_3= '.' colnameGen+= colname )
                     {
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:366:58: (TK_2= 'COLUMN' IDGen= ID TK_3= '.' colnameGen+= colname )
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:366:59: TK_2= 'COLUMN' IDGen= ID TK_3= '.' colnameGen+= colname
+                    // DDL.g:366:58: (TK_2= 'COLUMN' IDGen= ID TK_3= '.' colnameGen+= colname )
+                    // DDL.g:366:59: TK_2= 'COLUMN' IDGen= ID TK_3= '.' colnameGen+= colname
                     {
-                    TK_2=(Token)input.LT(1);
-                    match(input,21,FOLLOW_21_in_comment276); 
-                    IDGen=(Token)input.LT(1);
-                    match(input,ID,FOLLOW_ID_in_comment280); 
-                    TK_3=(Token)input.LT(1);
-                    match(input,22,FOLLOW_22_in_comment284); 
+                    TK_2=(Token)match(input,21,FOLLOW_21_in_comment276); 
+                    IDGen=(Token)match(input,ID,FOLLOW_ID_in_comment280); 
+                    TK_3=(Token)match(input,22,FOLLOW_22_in_comment284); 
                     pushFollow(FOLLOW_colname_in_comment288);
                     colnameGen=colname();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_colnameGen==null) list_colnameGen=new ArrayList();
                     list_colnameGen.add(colnameGen);
@@ -939,13 +967,10 @@ public class DDLParser extends Parser {
 
             }
 
-            TK_4=(Token)input.LT(1);
-            match(input,23,FOLLOW_23_in_comment294); 
-            STRINGGen=(Token)input.LT(1);
-            match(input,STRING,FOLLOW_STRING_in_comment298); 
-            TK_5=(Token)input.LT(1);
-            match(input,14,FOLLOW_14_in_comment302); 
-            
+            TK_4=(Token)match(input,23,FOLLOW_23_in_comment294); 
+            STRINGGen=(Token)match(input,STRING,FOLLOW_STRING_in_comment298); 
+            TK_5=(Token)match(input,14,FOLLOW_14_in_comment302); 
+
             		// Create return CST Node
             		Node commentReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		commentReturnNode.setKind("comment");
@@ -953,7 +978,7 @@ public class DDLParser extends Parser {
             	    if(TK_0 != null) {
             			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_0Leaf.setKind("TOKEN");
-            	 		TK_0Leaf.setValue(TK_0.getText());
+            	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
             			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
             			TK_0Leaf.setLine(TK_0.getLine());
             	 		commentReturnNode.getChildren().add(TK_0Leaf);
@@ -962,7 +987,7 @@ public class DDLParser extends Parser {
             	    if(TK_1 != null) {
             			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_1Leaf.setKind("TOKEN");
-            	 		TK_1Leaf.setValue(TK_1.getText());
+            	 		TK_1Leaf.setValue((TK_1!=null?TK_1.getText():null));
             			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
             			TK_1Leaf.setLine(TK_1.getLine());
             	 		commentReturnNode.getChildren().add(TK_1Leaf);
@@ -981,7 +1006,7 @@ public class DDLParser extends Parser {
             	    if(TK_2 != null) {
             			Leaf TK_2Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_2Leaf.setKind("TOKEN");
-            	 		TK_2Leaf.setValue(TK_2.getText());
+            	 		TK_2Leaf.setValue((TK_2!=null?TK_2.getText():null));
             			TK_2Leaf.setPos(TK_2.getCharPositionInLine());
             			TK_2Leaf.setLine(TK_2.getLine());
             	 		commentReturnNode.getChildren().add(TK_2Leaf);
@@ -990,7 +1015,7 @@ public class DDLParser extends Parser {
             		if(IDGen != null) {
             			Leaf IDGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			IDGenLeaf.setKind("ID");
-            			IDGenLeaf.setValue(IDGen.getText());
+            			IDGenLeaf.setValue((IDGen!=null?IDGen.getText():null));
             			IDGenLeaf.setPos(IDGen.getCharPositionInLine());
             			IDGenLeaf.setLine(IDGen.getLine());
             			commentReturnNode.getChildren().add(IDGenLeaf);
@@ -999,7 +1024,7 @@ public class DDLParser extends Parser {
             	    if(TK_3 != null) {
             			Leaf TK_3Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_3Leaf.setKind("TOKEN");
-            	 		TK_3Leaf.setValue(TK_3.getText());
+            	 		TK_3Leaf.setValue((TK_3!=null?TK_3.getText():null));
             			TK_3Leaf.setPos(TK_3.getCharPositionInLine());
             			TK_3Leaf.setLine(TK_3.getLine());
             	 		commentReturnNode.getChildren().add(TK_3Leaf);
@@ -1018,7 +1043,7 @@ public class DDLParser extends Parser {
             	    if(TK_4 != null) {
             			Leaf TK_4Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_4Leaf.setKind("TOKEN");
-            	 		TK_4Leaf.setValue(TK_4.getText());
+            	 		TK_4Leaf.setValue((TK_4!=null?TK_4.getText():null));
             			TK_4Leaf.setPos(TK_4.getCharPositionInLine());
             			TK_4Leaf.setLine(TK_4.getLine());
             	 		commentReturnNode.getChildren().add(TK_4Leaf);
@@ -1027,7 +1052,7 @@ public class DDLParser extends Parser {
             		if(STRINGGen != null) {
             			Leaf STRINGGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			STRINGGenLeaf.setKind("STRING");
-            			STRINGGenLeaf.setValue(STRINGGen.getText());
+            			STRINGGenLeaf.setValue((STRINGGen!=null?STRINGGen.getText():null));
             			STRINGGenLeaf.setPos(STRINGGen.getCharPositionInLine());
             			STRINGGenLeaf.setLine(STRINGGen.getLine());
             			commentReturnNode.getChildren().add(STRINGGenLeaf);
@@ -1036,7 +1061,7 @@ public class DDLParser extends Parser {
             	    if(TK_5 != null) {
             			Leaf TK_5Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_5Leaf.setKind("TOKEN");
-            	 		TK_5Leaf.setValue(TK_5.getText());
+            	 		TK_5Leaf.setValue((TK_5!=null?TK_5.getText():null));
             			TK_5Leaf.setPos(TK_5.getCharPositionInLine());
             			TK_5Leaf.setLine(TK_5.getLine());
             	 		commentReturnNode.getChildren().add(TK_5Leaf);
@@ -1058,7 +1083,7 @@ public class DDLParser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end comment
+    // $ANTLR end "comment"
 
     public static class create_sequence_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -1067,10 +1092,10 @@ public class DDLParser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start create_sequence
-    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:468:1: create_sequence returns [Node returnNode] : TK_0= 'CREATE SEQUENCE' IDGen= ID (sequence_optionsGen+= sequence_options )* TK_1= ';' ;
-    public final create_sequence_return create_sequence() throws RecognitionException {
-        create_sequence_return retval = new create_sequence_return();
+    // $ANTLR start "create_sequence"
+    // DDL.g:468:1: create_sequence returns [Node returnNode] : TK_0= 'CREATE SEQUENCE' IDGen= ID (sequence_optionsGen+= sequence_options )* TK_1= ';' ;
+    public final DDLParser.create_sequence_return create_sequence() throws RecognitionException {
+        DDLParser.create_sequence_return retval = new DDLParser.create_sequence_return();
         retval.start = input.LT(1);
 
         Token TK_0=null;
@@ -1079,14 +1104,12 @@ public class DDLParser extends Parser {
         List list_sequence_optionsGen=null;
         RuleReturnScope sequence_optionsGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:469:1: (TK_0= 'CREATE SEQUENCE' IDGen= ID (sequence_optionsGen+= sequence_options )* TK_1= ';' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:470:2: TK_0= 'CREATE SEQUENCE' IDGen= ID (sequence_optionsGen+= sequence_options )* TK_1= ';'
+            // DDL.g:469:1: (TK_0= 'CREATE SEQUENCE' IDGen= ID (sequence_optionsGen+= sequence_options )* TK_1= ';' )
+            // DDL.g:470:2: TK_0= 'CREATE SEQUENCE' IDGen= ID (sequence_optionsGen+= sequence_options )* TK_1= ';'
             {
-            TK_0=(Token)input.LT(1);
-            match(input,24,FOLLOW_24_in_create_sequence323); 
-            IDGen=(Token)input.LT(1);
-            match(input,ID,FOLLOW_ID_in_create_sequence327); 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:470:53: (sequence_optionsGen+= sequence_options )*
+            TK_0=(Token)match(input,24,FOLLOW_24_in_create_sequence323); 
+            IDGen=(Token)match(input,ID,FOLLOW_ID_in_create_sequence327); 
+            // DDL.g:470:53: (sequence_optionsGen+= sequence_options )*
             loop8:
             do {
                 int alt8=2;
@@ -1099,11 +1122,12 @@ public class DDLParser extends Parser {
 
                 switch (alt8) {
             	case 1 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:470:53: sequence_optionsGen+= sequence_options
+            	    // DDL.g:470:53: sequence_optionsGen+= sequence_options
             	    {
             	    pushFollow(FOLLOW_sequence_options_in_create_sequence331);
             	    sequence_optionsGen=sequence_options();
-            	    _fsp--;
+
+            	    state._fsp--;
 
             	    if (list_sequence_optionsGen==null) list_sequence_optionsGen=new ArrayList();
             	    list_sequence_optionsGen.add(sequence_optionsGen);
@@ -1117,9 +1141,8 @@ public class DDLParser extends Parser {
                 }
             } while (true);
 
-            TK_1=(Token)input.LT(1);
-            match(input,14,FOLLOW_14_in_create_sequence336); 
-            
+            TK_1=(Token)match(input,14,FOLLOW_14_in_create_sequence336); 
+
             		// Create return CST Node
             		Node create_sequenceReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		create_sequenceReturnNode.setKind("create_sequence");
@@ -1127,7 +1150,7 @@ public class DDLParser extends Parser {
             	    if(TK_0 != null) {
             			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_0Leaf.setKind("TOKEN");
-            	 		TK_0Leaf.setValue(TK_0.getText());
+            	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
             			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
             			TK_0Leaf.setLine(TK_0.getLine());
             	 		create_sequenceReturnNode.getChildren().add(TK_0Leaf);
@@ -1136,7 +1159,7 @@ public class DDLParser extends Parser {
             		if(IDGen != null) {
             			Leaf IDGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			IDGenLeaf.setKind("ID");
-            			IDGenLeaf.setValue(IDGen.getText());
+            			IDGenLeaf.setValue((IDGen!=null?IDGen.getText():null));
             			IDGenLeaf.setPos(IDGen.getCharPositionInLine());
             			IDGenLeaf.setLine(IDGen.getLine());
             			create_sequenceReturnNode.getChildren().add(IDGenLeaf);
@@ -1155,7 +1178,7 @@ public class DDLParser extends Parser {
             	    if(TK_1 != null) {
             			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_1Leaf.setKind("TOKEN");
-            	 		TK_1Leaf.setValue(TK_1.getText());
+            	 		TK_1Leaf.setValue((TK_1!=null?TK_1.getText():null));
             			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
             			TK_1Leaf.setLine(TK_1.getLine());
             	 		create_sequenceReturnNode.getChildren().add(TK_1Leaf);
@@ -1177,7 +1200,7 @@ public class DDLParser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end create_sequence
+    // $ANTLR end "create_sequence"
 
     public static class sequence_options_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -1186,10 +1209,10 @@ public class DDLParser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start sequence_options
-    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:517:1: sequence_options returns [Node returnNode] : (increment= 'INCREMENT' TK_0= 'BY' NUMBERGen= NUMBER | start= 'START' TK_0= 'WITH' NUMBERGen= NUMBER | maxvalue= 'MAXVALUE' NUMBERGen= NUMBER | nomaxvalue= 'NOMAXVALUE' | minvalue= 'MINVALUE' NUMBERGen= NUMBER | nominvalue= 'NOMINVALUE' | cycle= 'CYCLE' | nocycle= 'NOCYCLE' | cache= 'CACHE' NUMBERGen= NUMBER | nocache= 'NOCACHE' | order= 'ORDER' | noorder= 'NOORDER' );
-    public final sequence_options_return sequence_options() throws RecognitionException {
-        sequence_options_return retval = new sequence_options_return();
+    // $ANTLR start "sequence_options"
+    // DDL.g:517:1: sequence_options returns [Node returnNode] : (increment= 'INCREMENT' TK_0= 'BY' NUMBERGen= NUMBER | start= 'START' TK_0= 'WITH' NUMBERGen= NUMBER | maxvalue= 'MAXVALUE' NUMBERGen= NUMBER | nomaxvalue= 'NOMAXVALUE' | minvalue= 'MINVALUE' NUMBERGen= NUMBER | nominvalue= 'NOMINVALUE' | cycle= 'CYCLE' | nocycle= 'NOCYCLE' | cache= 'CACHE' NUMBERGen= NUMBER | nocache= 'NOCACHE' | order= 'ORDER' | noorder= 'NOORDER' );
+    public final DDLParser.sequence_options_return sequence_options() throws RecognitionException {
+        DDLParser.sequence_options_return retval = new DDLParser.sequence_options_return();
         retval.start = input.LT(1);
 
         Token increment=null;
@@ -1208,7 +1231,7 @@ public class DDLParser extends Parser {
         Token noorder=null;
 
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:518:1: (increment= 'INCREMENT' TK_0= 'BY' NUMBERGen= NUMBER | start= 'START' TK_0= 'WITH' NUMBERGen= NUMBER | maxvalue= 'MAXVALUE' NUMBERGen= NUMBER | nomaxvalue= 'NOMAXVALUE' | minvalue= 'MINVALUE' NUMBERGen= NUMBER | nominvalue= 'NOMINVALUE' | cycle= 'CYCLE' | nocycle= 'NOCYCLE' | cache= 'CACHE' NUMBERGen= NUMBER | nocache= 'NOCACHE' | order= 'ORDER' | noorder= 'NOORDER' )
+            // DDL.g:518:1: (increment= 'INCREMENT' TK_0= 'BY' NUMBERGen= NUMBER | start= 'START' TK_0= 'WITH' NUMBERGen= NUMBER | maxvalue= 'MAXVALUE' NUMBERGen= NUMBER | nomaxvalue= 'NOMAXVALUE' | minvalue= 'MINVALUE' NUMBERGen= NUMBER | nominvalue= 'NOMINVALUE' | cycle= 'CYCLE' | nocycle= 'NOCYCLE' | cache= 'CACHE' NUMBERGen= NUMBER | nocache= 'NOCACHE' | order= 'ORDER' | noorder= 'NOORDER' )
             int alt9=12;
             switch ( input.LA(1) ) {
             case 25:
@@ -1273,22 +1296,19 @@ public class DDLParser extends Parser {
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("517:1: sequence_options returns [Node returnNode] : (increment= 'INCREMENT' TK_0= 'BY' NUMBERGen= NUMBER | start= 'START' TK_0= 'WITH' NUMBERGen= NUMBER | maxvalue= 'MAXVALUE' NUMBERGen= NUMBER | nomaxvalue= 'NOMAXVALUE' | minvalue= 'MINVALUE' NUMBERGen= NUMBER | nominvalue= 'NOMINVALUE' | cycle= 'CYCLE' | nocycle= 'NOCYCLE' | cache= 'CACHE' NUMBERGen= NUMBER | nocache= 'NOCACHE' | order= 'ORDER' | noorder= 'NOORDER' );", 9, 0, input);
+                    new NoViableAltException("", 9, 0, input);
 
                 throw nvae;
             }
 
             switch (alt9) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:519:2: increment= 'INCREMENT' TK_0= 'BY' NUMBERGen= NUMBER
+                    // DDL.g:519:2: increment= 'INCREMENT' TK_0= 'BY' NUMBERGen= NUMBER
                     {
-                    increment=(Token)input.LT(1);
-                    match(input,25,FOLLOW_25_in_sequence_options357); 
-                    TK_0=(Token)input.LT(1);
-                    match(input,26,FOLLOW_26_in_sequence_options361); 
-                    NUMBERGen=(Token)input.LT(1);
-                    match(input,NUMBER,FOLLOW_NUMBER_in_sequence_options365); 
-                    
+                    increment=(Token)match(input,25,FOLLOW_25_in_sequence_options357); 
+                    TK_0=(Token)match(input,26,FOLLOW_26_in_sequence_options361); 
+                    NUMBERGen=(Token)match(input,NUMBER,FOLLOW_NUMBER_in_sequence_options365); 
+
                     		// Create return CST Node
                     		Node sequence_optionsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		sequence_optionsReturnNode.setKind("sequence_options");
@@ -1296,7 +1316,7 @@ public class DDLParser extends Parser {
                     		if(increment != null) {
                     			Leaf incrementLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			incrementLeaf.setKind("increment");
-                    			incrementLeaf.setValue(increment.getText());
+                    			incrementLeaf.setValue((increment!=null?increment.getText():null));
                     			incrementLeaf.setPos(increment.getCharPositionInLine());
                     			incrementLeaf.setLine(increment.getLine());
                     			sequence_optionsReturnNode.getChildren().add(incrementLeaf);
@@ -1305,7 +1325,7 @@ public class DDLParser extends Parser {
                     	    if(TK_0 != null) {
                     			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     	 		TK_0Leaf.setKind("TOKEN");
-                    	 		TK_0Leaf.setValue(TK_0.getText());
+                    	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
                     			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
                     			TK_0Leaf.setLine(TK_0.getLine());
                     	 		sequence_optionsReturnNode.getChildren().add(TK_0Leaf);
@@ -1314,7 +1334,7 @@ public class DDLParser extends Parser {
                     		if(NUMBERGen != null) {
                     			Leaf NUMBERGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			NUMBERGenLeaf.setKind("NUMBER");
-                    			NUMBERGenLeaf.setValue(NUMBERGen.getText());
+                    			NUMBERGenLeaf.setValue((NUMBERGen!=null?NUMBERGen.getText():null));
                     			NUMBERGenLeaf.setPos(NUMBERGen.getCharPositionInLine());
                     			NUMBERGenLeaf.setLine(NUMBERGen.getLine());
                     			sequence_optionsReturnNode.getChildren().add(NUMBERGenLeaf);
@@ -1326,15 +1346,12 @@ public class DDLParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:553:6: start= 'START' TK_0= 'WITH' NUMBERGen= NUMBER
+                    // DDL.g:553:6: start= 'START' TK_0= 'WITH' NUMBERGen= NUMBER
                     {
-                    start=(Token)input.LT(1);
-                    match(input,27,FOLLOW_27_in_sequence_options375); 
-                    TK_0=(Token)input.LT(1);
-                    match(input,28,FOLLOW_28_in_sequence_options379); 
-                    NUMBERGen=(Token)input.LT(1);
-                    match(input,NUMBER,FOLLOW_NUMBER_in_sequence_options383); 
-                    
+                    start=(Token)match(input,27,FOLLOW_27_in_sequence_options375); 
+                    TK_0=(Token)match(input,28,FOLLOW_28_in_sequence_options379); 
+                    NUMBERGen=(Token)match(input,NUMBER,FOLLOW_NUMBER_in_sequence_options383); 
+
                     		// Create return CST Node
                     		Node sequence_optionsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		sequence_optionsReturnNode.setKind("sequence_options");
@@ -1342,7 +1359,7 @@ public class DDLParser extends Parser {
                     		if(start != null) {
                     			Leaf startLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			startLeaf.setKind("start");
-                    			startLeaf.setValue(start.getText());
+                    			startLeaf.setValue((start!=null?start.getText():null));
                     			startLeaf.setPos(start.getCharPositionInLine());
                     			startLeaf.setLine(start.getLine());
                     			sequence_optionsReturnNode.getChildren().add(startLeaf);
@@ -1351,7 +1368,7 @@ public class DDLParser extends Parser {
                     	    if(TK_0 != null) {
                     			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     	 		TK_0Leaf.setKind("TOKEN");
-                    	 		TK_0Leaf.setValue(TK_0.getText());
+                    	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
                     			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
                     			TK_0Leaf.setLine(TK_0.getLine());
                     	 		sequence_optionsReturnNode.getChildren().add(TK_0Leaf);
@@ -1360,7 +1377,7 @@ public class DDLParser extends Parser {
                     		if(NUMBERGen != null) {
                     			Leaf NUMBERGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			NUMBERGenLeaf.setKind("NUMBER");
-                    			NUMBERGenLeaf.setValue(NUMBERGen.getText());
+                    			NUMBERGenLeaf.setValue((NUMBERGen!=null?NUMBERGen.getText():null));
                     			NUMBERGenLeaf.setPos(NUMBERGen.getCharPositionInLine());
                     			NUMBERGenLeaf.setLine(NUMBERGen.getLine());
                     			sequence_optionsReturnNode.getChildren().add(NUMBERGenLeaf);
@@ -1372,13 +1389,11 @@ public class DDLParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:588:2: maxvalue= 'MAXVALUE' NUMBERGen= NUMBER
+                    // DDL.g:588:2: maxvalue= 'MAXVALUE' NUMBERGen= NUMBER
                     {
-                    maxvalue=(Token)input.LT(1);
-                    match(input,29,FOLLOW_29_in_sequence_options394); 
-                    NUMBERGen=(Token)input.LT(1);
-                    match(input,NUMBER,FOLLOW_NUMBER_in_sequence_options398); 
-                    
+                    maxvalue=(Token)match(input,29,FOLLOW_29_in_sequence_options394); 
+                    NUMBERGen=(Token)match(input,NUMBER,FOLLOW_NUMBER_in_sequence_options398); 
+
                     		// Create return CST Node
                     		Node sequence_optionsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		sequence_optionsReturnNode.setKind("sequence_options");
@@ -1386,7 +1401,7 @@ public class DDLParser extends Parser {
                     		if(maxvalue != null) {
                     			Leaf maxvalueLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			maxvalueLeaf.setKind("maxvalue");
-                    			maxvalueLeaf.setValue(maxvalue.getText());
+                    			maxvalueLeaf.setValue((maxvalue!=null?maxvalue.getText():null));
                     			maxvalueLeaf.setPos(maxvalue.getCharPositionInLine());
                     			maxvalueLeaf.setLine(maxvalue.getLine());
                     			sequence_optionsReturnNode.getChildren().add(maxvalueLeaf);
@@ -1395,7 +1410,7 @@ public class DDLParser extends Parser {
                     		if(NUMBERGen != null) {
                     			Leaf NUMBERGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			NUMBERGenLeaf.setKind("NUMBER");
-                    			NUMBERGenLeaf.setValue(NUMBERGen.getText());
+                    			NUMBERGenLeaf.setValue((NUMBERGen!=null?NUMBERGen.getText():null));
                     			NUMBERGenLeaf.setPos(NUMBERGen.getCharPositionInLine());
                     			NUMBERGenLeaf.setLine(NUMBERGen.getLine());
                     			sequence_optionsReturnNode.getChildren().add(NUMBERGenLeaf);
@@ -1407,11 +1422,10 @@ public class DDLParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:613:6: nomaxvalue= 'NOMAXVALUE'
+                    // DDL.g:613:6: nomaxvalue= 'NOMAXVALUE'
                     {
-                    nomaxvalue=(Token)input.LT(1);
-                    match(input,30,FOLLOW_30_in_sequence_options408); 
-                    
+                    nomaxvalue=(Token)match(input,30,FOLLOW_30_in_sequence_options408); 
+
                     		// Create return CST Node
                     		Node sequence_optionsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		sequence_optionsReturnNode.setKind("sequence_options");
@@ -1419,7 +1433,7 @@ public class DDLParser extends Parser {
                     		if(nomaxvalue != null) {
                     			Leaf nomaxvalueLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			nomaxvalueLeaf.setKind("nomaxvalue");
-                    			nomaxvalueLeaf.setValue(nomaxvalue.getText());
+                    			nomaxvalueLeaf.setValue((nomaxvalue!=null?nomaxvalue.getText():null));
                     			nomaxvalueLeaf.setPos(nomaxvalue.getCharPositionInLine());
                     			nomaxvalueLeaf.setLine(nomaxvalue.getLine());
                     			sequence_optionsReturnNode.getChildren().add(nomaxvalueLeaf);
@@ -1431,13 +1445,11 @@ public class DDLParser extends Parser {
                     }
                     break;
                 case 5 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:630:2: minvalue= 'MINVALUE' NUMBERGen= NUMBER
+                    // DDL.g:630:2: minvalue= 'MINVALUE' NUMBERGen= NUMBER
                     {
-                    minvalue=(Token)input.LT(1);
-                    match(input,31,FOLLOW_31_in_sequence_options419); 
-                    NUMBERGen=(Token)input.LT(1);
-                    match(input,NUMBER,FOLLOW_NUMBER_in_sequence_options423); 
-                    
+                    minvalue=(Token)match(input,31,FOLLOW_31_in_sequence_options419); 
+                    NUMBERGen=(Token)match(input,NUMBER,FOLLOW_NUMBER_in_sequence_options423); 
+
                     		// Create return CST Node
                     		Node sequence_optionsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		sequence_optionsReturnNode.setKind("sequence_options");
@@ -1445,7 +1457,7 @@ public class DDLParser extends Parser {
                     		if(minvalue != null) {
                     			Leaf minvalueLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			minvalueLeaf.setKind("minvalue");
-                    			minvalueLeaf.setValue(minvalue.getText());
+                    			minvalueLeaf.setValue((minvalue!=null?minvalue.getText():null));
                     			minvalueLeaf.setPos(minvalue.getCharPositionInLine());
                     			minvalueLeaf.setLine(minvalue.getLine());
                     			sequence_optionsReturnNode.getChildren().add(minvalueLeaf);
@@ -1454,7 +1466,7 @@ public class DDLParser extends Parser {
                     		if(NUMBERGen != null) {
                     			Leaf NUMBERGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			NUMBERGenLeaf.setKind("NUMBER");
-                    			NUMBERGenLeaf.setValue(NUMBERGen.getText());
+                    			NUMBERGenLeaf.setValue((NUMBERGen!=null?NUMBERGen.getText():null));
                     			NUMBERGenLeaf.setPos(NUMBERGen.getCharPositionInLine());
                     			NUMBERGenLeaf.setLine(NUMBERGen.getLine());
                     			sequence_optionsReturnNode.getChildren().add(NUMBERGenLeaf);
@@ -1466,11 +1478,10 @@ public class DDLParser extends Parser {
                     }
                     break;
                 case 6 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:655:6: nominvalue= 'NOMINVALUE'
+                    // DDL.g:655:6: nominvalue= 'NOMINVALUE'
                     {
-                    nominvalue=(Token)input.LT(1);
-                    match(input,32,FOLLOW_32_in_sequence_options433); 
-                    
+                    nominvalue=(Token)match(input,32,FOLLOW_32_in_sequence_options433); 
+
                     		// Create return CST Node
                     		Node sequence_optionsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		sequence_optionsReturnNode.setKind("sequence_options");
@@ -1478,7 +1489,7 @@ public class DDLParser extends Parser {
                     		if(nominvalue != null) {
                     			Leaf nominvalueLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			nominvalueLeaf.setKind("nominvalue");
-                    			nominvalueLeaf.setValue(nominvalue.getText());
+                    			nominvalueLeaf.setValue((nominvalue!=null?nominvalue.getText():null));
                     			nominvalueLeaf.setPos(nominvalue.getCharPositionInLine());
                     			nominvalueLeaf.setLine(nominvalue.getLine());
                     			sequence_optionsReturnNode.getChildren().add(nominvalueLeaf);
@@ -1490,11 +1501,10 @@ public class DDLParser extends Parser {
                     }
                     break;
                 case 7 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:672:2: cycle= 'CYCLE'
+                    // DDL.g:672:2: cycle= 'CYCLE'
                     {
-                    cycle=(Token)input.LT(1);
-                    match(input,33,FOLLOW_33_in_sequence_options444); 
-                    
+                    cycle=(Token)match(input,33,FOLLOW_33_in_sequence_options444); 
+
                     		// Create return CST Node
                     		Node sequence_optionsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		sequence_optionsReturnNode.setKind("sequence_options");
@@ -1502,7 +1512,7 @@ public class DDLParser extends Parser {
                     		if(cycle != null) {
                     			Leaf cycleLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			cycleLeaf.setKind("cycle");
-                    			cycleLeaf.setValue(cycle.getText());
+                    			cycleLeaf.setValue((cycle!=null?cycle.getText():null));
                     			cycleLeaf.setPos(cycle.getCharPositionInLine());
                     			cycleLeaf.setLine(cycle.getLine());
                     			sequence_optionsReturnNode.getChildren().add(cycleLeaf);
@@ -1514,11 +1524,10 @@ public class DDLParser extends Parser {
                     }
                     break;
                 case 8 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:688:6: nocycle= 'NOCYCLE'
+                    // DDL.g:688:6: nocycle= 'NOCYCLE'
                     {
-                    nocycle=(Token)input.LT(1);
-                    match(input,34,FOLLOW_34_in_sequence_options454); 
-                    
+                    nocycle=(Token)match(input,34,FOLLOW_34_in_sequence_options454); 
+
                     		// Create return CST Node
                     		Node sequence_optionsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		sequence_optionsReturnNode.setKind("sequence_options");
@@ -1526,7 +1535,7 @@ public class DDLParser extends Parser {
                     		if(nocycle != null) {
                     			Leaf nocycleLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			nocycleLeaf.setKind("nocycle");
-                    			nocycleLeaf.setValue(nocycle.getText());
+                    			nocycleLeaf.setValue((nocycle!=null?nocycle.getText():null));
                     			nocycleLeaf.setPos(nocycle.getCharPositionInLine());
                     			nocycleLeaf.setLine(nocycle.getLine());
                     			sequence_optionsReturnNode.getChildren().add(nocycleLeaf);
@@ -1538,13 +1547,11 @@ public class DDLParser extends Parser {
                     }
                     break;
                 case 9 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:705:2: cache= 'CACHE' NUMBERGen= NUMBER
+                    // DDL.g:705:2: cache= 'CACHE' NUMBERGen= NUMBER
                     {
-                    cache=(Token)input.LT(1);
-                    match(input,35,FOLLOW_35_in_sequence_options465); 
-                    NUMBERGen=(Token)input.LT(1);
-                    match(input,NUMBER,FOLLOW_NUMBER_in_sequence_options469); 
-                    
+                    cache=(Token)match(input,35,FOLLOW_35_in_sequence_options465); 
+                    NUMBERGen=(Token)match(input,NUMBER,FOLLOW_NUMBER_in_sequence_options469); 
+
                     		// Create return CST Node
                     		Node sequence_optionsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		sequence_optionsReturnNode.setKind("sequence_options");
@@ -1552,7 +1559,7 @@ public class DDLParser extends Parser {
                     		if(cache != null) {
                     			Leaf cacheLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			cacheLeaf.setKind("cache");
-                    			cacheLeaf.setValue(cache.getText());
+                    			cacheLeaf.setValue((cache!=null?cache.getText():null));
                     			cacheLeaf.setPos(cache.getCharPositionInLine());
                     			cacheLeaf.setLine(cache.getLine());
                     			sequence_optionsReturnNode.getChildren().add(cacheLeaf);
@@ -1561,7 +1568,7 @@ public class DDLParser extends Parser {
                     		if(NUMBERGen != null) {
                     			Leaf NUMBERGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			NUMBERGenLeaf.setKind("NUMBER");
-                    			NUMBERGenLeaf.setValue(NUMBERGen.getText());
+                    			NUMBERGenLeaf.setValue((NUMBERGen!=null?NUMBERGen.getText():null));
                     			NUMBERGenLeaf.setPos(NUMBERGen.getCharPositionInLine());
                     			NUMBERGenLeaf.setLine(NUMBERGen.getLine());
                     			sequence_optionsReturnNode.getChildren().add(NUMBERGenLeaf);
@@ -1573,11 +1580,10 @@ public class DDLParser extends Parser {
                     }
                     break;
                 case 10 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:730:6: nocache= 'NOCACHE'
+                    // DDL.g:730:6: nocache= 'NOCACHE'
                     {
-                    nocache=(Token)input.LT(1);
-                    match(input,36,FOLLOW_36_in_sequence_options479); 
-                    
+                    nocache=(Token)match(input,36,FOLLOW_36_in_sequence_options479); 
+
                     		// Create return CST Node
                     		Node sequence_optionsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		sequence_optionsReturnNode.setKind("sequence_options");
@@ -1585,7 +1591,7 @@ public class DDLParser extends Parser {
                     		if(nocache != null) {
                     			Leaf nocacheLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			nocacheLeaf.setKind("nocache");
-                    			nocacheLeaf.setValue(nocache.getText());
+                    			nocacheLeaf.setValue((nocache!=null?nocache.getText():null));
                     			nocacheLeaf.setPos(nocache.getCharPositionInLine());
                     			nocacheLeaf.setLine(nocache.getLine());
                     			sequence_optionsReturnNode.getChildren().add(nocacheLeaf);
@@ -1597,11 +1603,10 @@ public class DDLParser extends Parser {
                     }
                     break;
                 case 11 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:747:2: order= 'ORDER'
+                    // DDL.g:747:2: order= 'ORDER'
                     {
-                    order=(Token)input.LT(1);
-                    match(input,37,FOLLOW_37_in_sequence_options490); 
-                    
+                    order=(Token)match(input,37,FOLLOW_37_in_sequence_options490); 
+
                     		// Create return CST Node
                     		Node sequence_optionsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		sequence_optionsReturnNode.setKind("sequence_options");
@@ -1609,7 +1614,7 @@ public class DDLParser extends Parser {
                     		if(order != null) {
                     			Leaf orderLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			orderLeaf.setKind("order");
-                    			orderLeaf.setValue(order.getText());
+                    			orderLeaf.setValue((order!=null?order.getText():null));
                     			orderLeaf.setPos(order.getCharPositionInLine());
                     			orderLeaf.setLine(order.getLine());
                     			sequence_optionsReturnNode.getChildren().add(orderLeaf);
@@ -1621,11 +1626,10 @@ public class DDLParser extends Parser {
                     }
                     break;
                 case 12 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:763:6: noorder= 'NOORDER'
+                    // DDL.g:763:6: noorder= 'NOORDER'
                     {
-                    noorder=(Token)input.LT(1);
-                    match(input,38,FOLLOW_38_in_sequence_options500); 
-                    
+                    noorder=(Token)match(input,38,FOLLOW_38_in_sequence_options500); 
+
                     		// Create return CST Node
                     		Node sequence_optionsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                     		sequence_optionsReturnNode.setKind("sequence_options");
@@ -1633,7 +1637,7 @@ public class DDLParser extends Parser {
                     		if(noorder != null) {
                     			Leaf noorderLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
                     			noorderLeaf.setKind("noorder");
-                    			noorderLeaf.setValue(noorder.getText());
+                    			noorderLeaf.setValue((noorder!=null?noorder.getText():null));
                     			noorderLeaf.setPos(noorder.getCharPositionInLine());
                     			noorderLeaf.setLine(noorder.getLine());
                     			sequence_optionsReturnNode.getChildren().add(noorderLeaf);
@@ -1657,7 +1661,7 @@ public class DDLParser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end sequence_options
+    // $ANTLR end "sequence_options"
 
     public static class constraint_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -1666,10 +1670,10 @@ public class DDLParser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start constraint
-    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:782:1: constraint returns [Node returnNode] : TK_0= 'CONSTRAINT' IDGen= ID (primary_keyGen+= primary_key | unique_keyGen+= unique_key | foreign_keyGen+= foreign_key ) ;
-    public final constraint_return constraint() throws RecognitionException {
-        constraint_return retval = new constraint_return();
+    // $ANTLR start "constraint"
+    // DDL.g:782:1: constraint returns [Node returnNode] : TK_0= 'CONSTRAINT' IDGen= ID (primary_keyGen+= primary_key | unique_keyGen+= unique_key | foreign_keyGen+= foreign_key ) ;
+    public final DDLParser.constraint_return constraint() throws RecognitionException {
+        DDLParser.constraint_return retval = new DDLParser.constraint_return();
         retval.start = input.LT(1);
 
         Token TK_0=null;
@@ -1681,14 +1685,12 @@ public class DDLParser extends Parser {
         RuleReturnScope unique_keyGen = null;
         RuleReturnScope foreign_keyGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:783:1: (TK_0= 'CONSTRAINT' IDGen= ID (primary_keyGen+= primary_key | unique_keyGen+= unique_key | foreign_keyGen+= foreign_key ) )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:784:2: TK_0= 'CONSTRAINT' IDGen= ID (primary_keyGen+= primary_key | unique_keyGen+= unique_key | foreign_keyGen+= foreign_key )
+            // DDL.g:783:1: (TK_0= 'CONSTRAINT' IDGen= ID (primary_keyGen+= primary_key | unique_keyGen+= unique_key | foreign_keyGen+= foreign_key ) )
+            // DDL.g:784:2: TK_0= 'CONSTRAINT' IDGen= ID (primary_keyGen+= primary_key | unique_keyGen+= unique_key | foreign_keyGen+= foreign_key )
             {
-            TK_0=(Token)input.LT(1);
-            match(input,18,FOLLOW_18_in_constraint521); 
-            IDGen=(Token)input.LT(1);
-            match(input,ID,FOLLOW_ID_in_constraint525); 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:784:29: (primary_keyGen+= primary_key | unique_keyGen+= unique_key | foreign_keyGen+= foreign_key )
+            TK_0=(Token)match(input,18,FOLLOW_18_in_constraint521); 
+            IDGen=(Token)match(input,ID,FOLLOW_ID_in_constraint525); 
+            // DDL.g:784:29: (primary_keyGen+= primary_key | unique_keyGen+= unique_key | foreign_keyGen+= foreign_key )
             int alt10=3;
             switch ( input.LA(1) ) {
             case 39:
@@ -1708,18 +1710,19 @@ public class DDLParser extends Parser {
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("784:29: (primary_keyGen+= primary_key | unique_keyGen+= unique_key | foreign_keyGen+= foreign_key )", 10, 0, input);
+                    new NoViableAltException("", 10, 0, input);
 
                 throw nvae;
             }
 
             switch (alt10) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:784:30: primary_keyGen+= primary_key
+                    // DDL.g:784:30: primary_keyGen+= primary_key
                     {
                     pushFollow(FOLLOW_primary_key_in_constraint530);
                     primary_keyGen=primary_key();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_primary_keyGen==null) list_primary_keyGen=new ArrayList();
                     list_primary_keyGen.add(primary_keyGen);
@@ -1728,11 +1731,12 @@ public class DDLParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:784:60: unique_keyGen+= unique_key
+                    // DDL.g:784:60: unique_keyGen+= unique_key
                     {
                     pushFollow(FOLLOW_unique_key_in_constraint536);
                     unique_keyGen=unique_key();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_unique_keyGen==null) list_unique_keyGen=new ArrayList();
                     list_unique_keyGen.add(unique_keyGen);
@@ -1741,11 +1745,12 @@ public class DDLParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:784:88: foreign_keyGen+= foreign_key
+                    // DDL.g:784:88: foreign_keyGen+= foreign_key
                     {
                     pushFollow(FOLLOW_foreign_key_in_constraint542);
                     foreign_keyGen=foreign_key();
-                    _fsp--;
+
+                    state._fsp--;
 
                     if (list_foreign_keyGen==null) list_foreign_keyGen=new ArrayList();
                     list_foreign_keyGen.add(foreign_keyGen);
@@ -1756,7 +1761,7 @@ public class DDLParser extends Parser {
 
             }
 
-            
+
             		// Create return CST Node
             		Node constraintReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		constraintReturnNode.setKind("constraint");
@@ -1764,7 +1769,7 @@ public class DDLParser extends Parser {
             	    if(TK_0 != null) {
             			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_0Leaf.setKind("TOKEN");
-            	 		TK_0Leaf.setValue(TK_0.getText());
+            	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
             			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
             			TK_0Leaf.setLine(TK_0.getLine());
             	 		constraintReturnNode.getChildren().add(TK_0Leaf);
@@ -1773,7 +1778,7 @@ public class DDLParser extends Parser {
             		if(IDGen != null) {
             			Leaf IDGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			IDGenLeaf.setKind("ID");
-            			IDGenLeaf.setValue(IDGen.getText());
+            			IDGenLeaf.setValue((IDGen!=null?IDGen.getText():null));
             			IDGenLeaf.setPos(IDGen.getCharPositionInLine());
             			IDGenLeaf.setLine(IDGen.getLine());
             			constraintReturnNode.getChildren().add(IDGenLeaf);
@@ -1825,7 +1830,7 @@ public class DDLParser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end constraint
+    // $ANTLR end "constraint"
 
     public static class primary_key_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -1834,10 +1839,10 @@ public class DDLParser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start primary_key
-    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:842:1: primary_key returns [Node returnNode] : TK_0= 'PRIMARY KEY' TK_1= '(' colnameGen+= colname (TK_2= ',' colnameGen_1+= colname )* TK_3= ')' ;
-    public final primary_key_return primary_key() throws RecognitionException {
-        primary_key_return retval = new primary_key_return();
+    // $ANTLR start "primary_key"
+    // DDL.g:842:1: primary_key returns [Node returnNode] : TK_0= 'PRIMARY KEY' TK_1= '(' colnameGen+= colname (TK_2= ',' colnameGen_1+= colname )* TK_3= ')' ;
+    public final DDLParser.primary_key_return primary_key() throws RecognitionException {
+        DDLParser.primary_key_return retval = new DDLParser.primary_key_return();
         retval.start = input.LT(1);
 
         Token TK_0=null;
@@ -1849,21 +1854,20 @@ public class DDLParser extends Parser {
         RuleReturnScope colnameGen = null;
         RuleReturnScope colnameGen_1 = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:843:1: (TK_0= 'PRIMARY KEY' TK_1= '(' colnameGen+= colname (TK_2= ',' colnameGen_1+= colname )* TK_3= ')' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:844:2: TK_0= 'PRIMARY KEY' TK_1= '(' colnameGen+= colname (TK_2= ',' colnameGen_1+= colname )* TK_3= ')'
+            // DDL.g:843:1: (TK_0= 'PRIMARY KEY' TK_1= '(' colnameGen+= colname (TK_2= ',' colnameGen_1+= colname )* TK_3= ')' )
+            // DDL.g:844:2: TK_0= 'PRIMARY KEY' TK_1= '(' colnameGen+= colname (TK_2= ',' colnameGen_1+= colname )* TK_3= ')'
             {
-            TK_0=(Token)input.LT(1);
-            match(input,39,FOLLOW_39_in_primary_key564); 
-            TK_1=(Token)input.LT(1);
-            match(input,11,FOLLOW_11_in_primary_key568); 
+            TK_0=(Token)match(input,39,FOLLOW_39_in_primary_key564); 
+            TK_1=(Token)match(input,11,FOLLOW_11_in_primary_key568); 
             pushFollow(FOLLOW_colname_in_primary_key572);
             colnameGen=colname();
-            _fsp--;
+
+            state._fsp--;
 
             if (list_colnameGen==null) list_colnameGen=new ArrayList();
             list_colnameGen.add(colnameGen);
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:844:50: (TK_2= ',' colnameGen_1+= colname )*
+            // DDL.g:844:50: (TK_2= ',' colnameGen_1+= colname )*
             loop11:
             do {
                 int alt11=2;
@@ -1876,13 +1880,13 @@ public class DDLParser extends Parser {
 
                 switch (alt11) {
             	case 1 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:844:51: TK_2= ',' colnameGen_1+= colname
+            	    // DDL.g:844:51: TK_2= ',' colnameGen_1+= colname
             	    {
-            	    TK_2=(Token)input.LT(1);
-            	    match(input,12,FOLLOW_12_in_primary_key577); 
+            	    TK_2=(Token)match(input,12,FOLLOW_12_in_primary_key577); 
             	    pushFollow(FOLLOW_colname_in_primary_key581);
             	    colnameGen_1=colname();
-            	    _fsp--;
+
+            	    state._fsp--;
 
             	    if (list_colnameGen_1==null) list_colnameGen_1=new ArrayList();
             	    list_colnameGen_1.add(colnameGen_1);
@@ -1896,9 +1900,8 @@ public class DDLParser extends Parser {
                 }
             } while (true);
 
-            TK_3=(Token)input.LT(1);
-            match(input,13,FOLLOW_13_in_primary_key587); 
-            
+            TK_3=(Token)match(input,13,FOLLOW_13_in_primary_key587); 
+
             		// Create return CST Node
             		Node primary_keyReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		primary_keyReturnNode.setKind("primary_key");
@@ -1906,7 +1909,7 @@ public class DDLParser extends Parser {
             	    if(TK_0 != null) {
             			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_0Leaf.setKind("TOKEN");
-            	 		TK_0Leaf.setValue(TK_0.getText());
+            	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
             			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
             			TK_0Leaf.setLine(TK_0.getLine());
             	 		primary_keyReturnNode.getChildren().add(TK_0Leaf);
@@ -1915,7 +1918,7 @@ public class DDLParser extends Parser {
             	    if(TK_1 != null) {
             			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_1Leaf.setKind("TOKEN");
-            	 		TK_1Leaf.setValue(TK_1.getText());
+            	 		TK_1Leaf.setValue((TK_1!=null?TK_1.getText():null));
             			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
             			TK_1Leaf.setLine(TK_1.getLine());
             	 		primary_keyReturnNode.getChildren().add(TK_1Leaf);
@@ -1930,7 +1933,7 @@ public class DDLParser extends Parser {
             	            } 
             	        }
             	    }
-            	
+
             		// Create a special CST Node for terminal colnameGen_1 aggregation
             		if(list_colnameGen_1 != null) {
             	    for(int pos = 0; pos < list_colnameGen_1.size(); pos++ )  { 
@@ -1938,7 +1941,7 @@ public class DDLParser extends Parser {
             	    if(TK_2 != null) {
             			Leaf TK_2Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_2Leaf.setKind("TOKEN");
-            	 		TK_2Leaf.setValue(TK_2.getText());
+            	 		TK_2Leaf.setValue((TK_2!=null?TK_2.getText():null));
             			TK_2Leaf.setPos(TK_2.getCharPositionInLine());
             			TK_2Leaf.setLine(TK_2.getLine());
             	 		primary_keyReturnNode.getChildren().add(TK_2Leaf);
@@ -1953,12 +1956,12 @@ public class DDLParser extends Parser {
             		}
             		}
             		}
-            	
+
             	    // Create a Token CST Leaf	
             	    if(TK_3 != null) {
             			Leaf TK_3Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_3Leaf.setKind("TOKEN");
-            	 		TK_3Leaf.setValue(TK_3.getText());
+            	 		TK_3Leaf.setValue((TK_3!=null?TK_3.getText():null));
             			TK_3Leaf.setPos(TK_3.getCharPositionInLine());
             			TK_3Leaf.setLine(TK_3.getLine());
             	 		primary_keyReturnNode.getChildren().add(TK_3Leaf);
@@ -1980,7 +1983,7 @@ public class DDLParser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end primary_key
+    // $ANTLR end "primary_key"
 
     public static class unique_key_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -1989,10 +1992,10 @@ public class DDLParser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start unique_key
-    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:915:1: unique_key returns [Node returnNode] : TK_0= 'UNIQUE' TK_1= '(' colnameGen+= colname (TK_2= ',' colnameGen_1+= colname )* TK_3= ')' ;
-    public final unique_key_return unique_key() throws RecognitionException {
-        unique_key_return retval = new unique_key_return();
+    // $ANTLR start "unique_key"
+    // DDL.g:915:1: unique_key returns [Node returnNode] : TK_0= 'UNIQUE' TK_1= '(' colnameGen+= colname (TK_2= ',' colnameGen_1+= colname )* TK_3= ')' ;
+    public final DDLParser.unique_key_return unique_key() throws RecognitionException {
+        DDLParser.unique_key_return retval = new DDLParser.unique_key_return();
         retval.start = input.LT(1);
 
         Token TK_0=null;
@@ -2004,21 +2007,20 @@ public class DDLParser extends Parser {
         RuleReturnScope colnameGen = null;
         RuleReturnScope colnameGen_1 = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:916:1: (TK_0= 'UNIQUE' TK_1= '(' colnameGen+= colname (TK_2= ',' colnameGen_1+= colname )* TK_3= ')' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:917:2: TK_0= 'UNIQUE' TK_1= '(' colnameGen+= colname (TK_2= ',' colnameGen_1+= colname )* TK_3= ')'
+            // DDL.g:916:1: (TK_0= 'UNIQUE' TK_1= '(' colnameGen+= colname (TK_2= ',' colnameGen_1+= colname )* TK_3= ')' )
+            // DDL.g:917:2: TK_0= 'UNIQUE' TK_1= '(' colnameGen+= colname (TK_2= ',' colnameGen_1+= colname )* TK_3= ')'
             {
-            TK_0=(Token)input.LT(1);
-            match(input,40,FOLLOW_40_in_unique_key608); 
-            TK_1=(Token)input.LT(1);
-            match(input,11,FOLLOW_11_in_unique_key612); 
+            TK_0=(Token)match(input,40,FOLLOW_40_in_unique_key608); 
+            TK_1=(Token)match(input,11,FOLLOW_11_in_unique_key612); 
             pushFollow(FOLLOW_colname_in_unique_key616);
             colnameGen=colname();
-            _fsp--;
+
+            state._fsp--;
 
             if (list_colnameGen==null) list_colnameGen=new ArrayList();
             list_colnameGen.add(colnameGen);
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:917:45: (TK_2= ',' colnameGen_1+= colname )*
+            // DDL.g:917:45: (TK_2= ',' colnameGen_1+= colname )*
             loop12:
             do {
                 int alt12=2;
@@ -2031,13 +2033,13 @@ public class DDLParser extends Parser {
 
                 switch (alt12) {
             	case 1 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:917:46: TK_2= ',' colnameGen_1+= colname
+            	    // DDL.g:917:46: TK_2= ',' colnameGen_1+= colname
             	    {
-            	    TK_2=(Token)input.LT(1);
-            	    match(input,12,FOLLOW_12_in_unique_key621); 
+            	    TK_2=(Token)match(input,12,FOLLOW_12_in_unique_key621); 
             	    pushFollow(FOLLOW_colname_in_unique_key625);
             	    colnameGen_1=colname();
-            	    _fsp--;
+
+            	    state._fsp--;
 
             	    if (list_colnameGen_1==null) list_colnameGen_1=new ArrayList();
             	    list_colnameGen_1.add(colnameGen_1);
@@ -2051,9 +2053,8 @@ public class DDLParser extends Parser {
                 }
             } while (true);
 
-            TK_3=(Token)input.LT(1);
-            match(input,13,FOLLOW_13_in_unique_key631); 
-            
+            TK_3=(Token)match(input,13,FOLLOW_13_in_unique_key631); 
+
             		// Create return CST Node
             		Node unique_keyReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		unique_keyReturnNode.setKind("unique_key");
@@ -2061,7 +2062,7 @@ public class DDLParser extends Parser {
             	    if(TK_0 != null) {
             			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_0Leaf.setKind("TOKEN");
-            	 		TK_0Leaf.setValue(TK_0.getText());
+            	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
             			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
             			TK_0Leaf.setLine(TK_0.getLine());
             	 		unique_keyReturnNode.getChildren().add(TK_0Leaf);
@@ -2070,7 +2071,7 @@ public class DDLParser extends Parser {
             	    if(TK_1 != null) {
             			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_1Leaf.setKind("TOKEN");
-            	 		TK_1Leaf.setValue(TK_1.getText());
+            	 		TK_1Leaf.setValue((TK_1!=null?TK_1.getText():null));
             			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
             			TK_1Leaf.setLine(TK_1.getLine());
             	 		unique_keyReturnNode.getChildren().add(TK_1Leaf);
@@ -2085,7 +2086,7 @@ public class DDLParser extends Parser {
             	            } 
             	        }
             	    }
-            	
+
             		// Create a special CST Node for terminal colnameGen_1 aggregation
             		if(list_colnameGen_1 != null) {
             	    for(int pos = 0; pos < list_colnameGen_1.size(); pos++ )  { 
@@ -2093,7 +2094,7 @@ public class DDLParser extends Parser {
             	    if(TK_2 != null) {
             			Leaf TK_2Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_2Leaf.setKind("TOKEN");
-            	 		TK_2Leaf.setValue(TK_2.getText());
+            	 		TK_2Leaf.setValue((TK_2!=null?TK_2.getText():null));
             			TK_2Leaf.setPos(TK_2.getCharPositionInLine());
             			TK_2Leaf.setLine(TK_2.getLine());
             	 		unique_keyReturnNode.getChildren().add(TK_2Leaf);
@@ -2108,12 +2109,12 @@ public class DDLParser extends Parser {
             		}
             		}
             		}
-            	
+
             	    // Create a Token CST Leaf	
             	    if(TK_3 != null) {
             			Leaf TK_3Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_3Leaf.setKind("TOKEN");
-            	 		TK_3Leaf.setValue(TK_3.getText());
+            	 		TK_3Leaf.setValue((TK_3!=null?TK_3.getText():null));
             			TK_3Leaf.setPos(TK_3.getCharPositionInLine());
             			TK_3Leaf.setLine(TK_3.getLine());
             	 		unique_keyReturnNode.getChildren().add(TK_3Leaf);
@@ -2135,7 +2136,7 @@ public class DDLParser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end unique_key
+    // $ANTLR end "unique_key"
 
     public static class foreign_key_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -2144,10 +2145,10 @@ public class DDLParser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start foreign_key
-    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:988:1: foreign_key returns [Node returnNode] : TK_0= 'FOREIGN KEY' TK_1= '(' colnameGen+= colname TK_2= ')' TK_3= 'REFERENCES' tabnameGen+= tabname TK_4= '(' colnameGen_1+= colname TK_5= ')' ;
-    public final foreign_key_return foreign_key() throws RecognitionException {
-        foreign_key_return retval = new foreign_key_return();
+    // $ANTLR start "foreign_key"
+    // DDL.g:988:1: foreign_key returns [Node returnNode] : TK_0= 'FOREIGN KEY' TK_1= '(' colnameGen+= colname TK_2= ')' TK_3= 'REFERENCES' tabnameGen+= tabname TK_4= '(' colnameGen_1+= colname TK_5= ')' ;
+    public final DDLParser.foreign_key_return foreign_key() throws RecognitionException {
+        DDLParser.foreign_key_return retval = new DDLParser.foreign_key_return();
         retval.start = input.LT(1);
 
         Token TK_0=null;
@@ -2163,43 +2164,40 @@ public class DDLParser extends Parser {
         RuleReturnScope tabnameGen = null;
         RuleReturnScope colnameGen_1 = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:989:1: (TK_0= 'FOREIGN KEY' TK_1= '(' colnameGen+= colname TK_2= ')' TK_3= 'REFERENCES' tabnameGen+= tabname TK_4= '(' colnameGen_1+= colname TK_5= ')' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:990:2: TK_0= 'FOREIGN KEY' TK_1= '(' colnameGen+= colname TK_2= ')' TK_3= 'REFERENCES' tabnameGen+= tabname TK_4= '(' colnameGen_1+= colname TK_5= ')'
+            // DDL.g:989:1: (TK_0= 'FOREIGN KEY' TK_1= '(' colnameGen+= colname TK_2= ')' TK_3= 'REFERENCES' tabnameGen+= tabname TK_4= '(' colnameGen_1+= colname TK_5= ')' )
+            // DDL.g:990:2: TK_0= 'FOREIGN KEY' TK_1= '(' colnameGen+= colname TK_2= ')' TK_3= 'REFERENCES' tabnameGen+= tabname TK_4= '(' colnameGen_1+= colname TK_5= ')'
             {
-            TK_0=(Token)input.LT(1);
-            match(input,41,FOLLOW_41_in_foreign_key652); 
-            TK_1=(Token)input.LT(1);
-            match(input,11,FOLLOW_11_in_foreign_key656); 
+            TK_0=(Token)match(input,41,FOLLOW_41_in_foreign_key652); 
+            TK_1=(Token)match(input,11,FOLLOW_11_in_foreign_key656); 
             pushFollow(FOLLOW_colname_in_foreign_key660);
             colnameGen=colname();
-            _fsp--;
+
+            state._fsp--;
 
             if (list_colnameGen==null) list_colnameGen=new ArrayList();
             list_colnameGen.add(colnameGen);
 
-            TK_2=(Token)input.LT(1);
-            match(input,13,FOLLOW_13_in_foreign_key664); 
-            TK_3=(Token)input.LT(1);
-            match(input,42,FOLLOW_42_in_foreign_key669); 
+            TK_2=(Token)match(input,13,FOLLOW_13_in_foreign_key664); 
+            TK_3=(Token)match(input,42,FOLLOW_42_in_foreign_key669); 
             pushFollow(FOLLOW_tabname_in_foreign_key673);
             tabnameGen=tabname();
-            _fsp--;
+
+            state._fsp--;
 
             if (list_tabnameGen==null) list_tabnameGen=new ArrayList();
             list_tabnameGen.add(tabnameGen);
 
-            TK_4=(Token)input.LT(1);
-            match(input,11,FOLLOW_11_in_foreign_key677); 
+            TK_4=(Token)match(input,11,FOLLOW_11_in_foreign_key677); 
             pushFollow(FOLLOW_colname_in_foreign_key681);
             colnameGen_1=colname();
-            _fsp--;
+
+            state._fsp--;
 
             if (list_colnameGen_1==null) list_colnameGen_1=new ArrayList();
             list_colnameGen_1.add(colnameGen_1);
 
-            TK_5=(Token)input.LT(1);
-            match(input,13,FOLLOW_13_in_foreign_key685); 
-            
+            TK_5=(Token)match(input,13,FOLLOW_13_in_foreign_key685); 
+
             		// Create return CST Node
             		Node foreign_keyReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		foreign_keyReturnNode.setKind("foreign_key");
@@ -2207,7 +2205,7 @@ public class DDLParser extends Parser {
             	    if(TK_0 != null) {
             			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_0Leaf.setKind("TOKEN");
-            	 		TK_0Leaf.setValue(TK_0.getText());
+            	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
             			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
             			TK_0Leaf.setLine(TK_0.getLine());
             	 		foreign_keyReturnNode.getChildren().add(TK_0Leaf);
@@ -2216,7 +2214,7 @@ public class DDLParser extends Parser {
             	    if(TK_1 != null) {
             			Leaf TK_1Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_1Leaf.setKind("TOKEN");
-            	 		TK_1Leaf.setValue(TK_1.getText());
+            	 		TK_1Leaf.setValue((TK_1!=null?TK_1.getText():null));
             			TK_1Leaf.setPos(TK_1.getCharPositionInLine());
             			TK_1Leaf.setLine(TK_1.getLine());
             	 		foreign_keyReturnNode.getChildren().add(TK_1Leaf);
@@ -2235,7 +2233,7 @@ public class DDLParser extends Parser {
             	    if(TK_2 != null) {
             			Leaf TK_2Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_2Leaf.setKind("TOKEN");
-            	 		TK_2Leaf.setValue(TK_2.getText());
+            	 		TK_2Leaf.setValue((TK_2!=null?TK_2.getText():null));
             			TK_2Leaf.setPos(TK_2.getCharPositionInLine());
             			TK_2Leaf.setLine(TK_2.getLine());
             	 		foreign_keyReturnNode.getChildren().add(TK_2Leaf);
@@ -2244,7 +2242,7 @@ public class DDLParser extends Parser {
             	    if(TK_3 != null) {
             			Leaf TK_3Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_3Leaf.setKind("TOKEN");
-            	 		TK_3Leaf.setValue(TK_3.getText());
+            	 		TK_3Leaf.setValue((TK_3!=null?TK_3.getText():null));
             			TK_3Leaf.setPos(TK_3.getCharPositionInLine());
             			TK_3Leaf.setLine(TK_3.getLine());
             	 		foreign_keyReturnNode.getChildren().add(TK_3Leaf);
@@ -2263,7 +2261,7 @@ public class DDLParser extends Parser {
             	    if(TK_4 != null) {
             			Leaf TK_4Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_4Leaf.setKind("TOKEN");
-            	 		TK_4Leaf.setValue(TK_4.getText());
+            	 		TK_4Leaf.setValue((TK_4!=null?TK_4.getText():null));
             			TK_4Leaf.setPos(TK_4.getCharPositionInLine());
             			TK_4Leaf.setLine(TK_4.getLine());
             	 		foreign_keyReturnNode.getChildren().add(TK_4Leaf);
@@ -2282,7 +2280,7 @@ public class DDLParser extends Parser {
             	    if(TK_5 != null) {
             			Leaf TK_5Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_5Leaf.setKind("TOKEN");
-            	 		TK_5Leaf.setValue(TK_5.getText());
+            	 		TK_5Leaf.setValue((TK_5!=null?TK_5.getText():null));
             			TK_5Leaf.setPos(TK_5.getCharPositionInLine());
             			TK_5Leaf.setLine(TK_5.getLine());
             	 		foreign_keyReturnNode.getChildren().add(TK_5Leaf);
@@ -2304,7 +2302,7 @@ public class DDLParser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end foreign_key
+    // $ANTLR end "foreign_key"
 
     public static class colname_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -2313,21 +2311,20 @@ public class DDLParser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start colname
-    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1085:1: colname returns [Node returnNode] : IDGen= ID ;
-    public final colname_return colname() throws RecognitionException {
-        colname_return retval = new colname_return();
+    // $ANTLR start "colname"
+    // DDL.g:1085:1: colname returns [Node returnNode] : IDGen= ID ;
+    public final DDLParser.colname_return colname() throws RecognitionException {
+        DDLParser.colname_return retval = new DDLParser.colname_return();
         retval.start = input.LT(1);
 
         Token IDGen=null;
 
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1086:1: (IDGen= ID )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1087:2: IDGen= ID
+            // DDL.g:1086:1: (IDGen= ID )
+            // DDL.g:1087:2: IDGen= ID
             {
-            IDGen=(Token)input.LT(1);
-            match(input,ID,FOLLOW_ID_in_colname706); 
-            
+            IDGen=(Token)match(input,ID,FOLLOW_ID_in_colname706); 
+
             		// Create return CST Node
             		Node colnameReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		colnameReturnNode.setKind("colname");
@@ -2335,7 +2332,7 @@ public class DDLParser extends Parser {
             		if(IDGen != null) {
             			Leaf IDGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			IDGenLeaf.setKind("ID");
-            			IDGenLeaf.setValue(IDGen.getText());
+            			IDGenLeaf.setValue((IDGen!=null?IDGen.getText():null));
             			IDGenLeaf.setPos(IDGen.getCharPositionInLine());
             			IDGenLeaf.setLine(IDGen.getLine());
             			colnameReturnNode.getChildren().add(IDGenLeaf);
@@ -2357,7 +2354,7 @@ public class DDLParser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end colname
+    // $ANTLR end "colname"
 
     public static class tabname_return extends ParserRuleReturnScope {
         public Node returnNode;
@@ -2366,10 +2363,10 @@ public class DDLParser extends Parser {
         public String toString() { return st==null?null:st.toString(); }
     };
 
-    // $ANTLR start tabname
-    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1106:1: tabname returns [Node returnNode] : (IDGen= ID TK_0= '.' )? basename= ID ;
-    public final tabname_return tabname() throws RecognitionException {
-        tabname_return retval = new tabname_return();
+    // $ANTLR start "tabname"
+    // DDL.g:1106:1: tabname returns [Node returnNode] : (IDGen= ID TK_0= '.' )? basename= ID ;
+    public final DDLParser.tabname_return tabname() throws RecognitionException {
+        DDLParser.tabname_return retval = new DDLParser.tabname_return();
         retval.start = input.LT(1);
 
         Token IDGen=null;
@@ -2377,10 +2374,10 @@ public class DDLParser extends Parser {
         Token basename=null;
 
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1107:1: ( (IDGen= ID TK_0= '.' )? basename= ID )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1108:2: (IDGen= ID TK_0= '.' )? basename= ID
+            // DDL.g:1107:1: ( (IDGen= ID TK_0= '.' )? basename= ID )
+            // DDL.g:1108:2: (IDGen= ID TK_0= '.' )? basename= ID
             {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1108:2: (IDGen= ID TK_0= '.' )?
+            // DDL.g:1108:2: (IDGen= ID TK_0= '.' )?
             int alt13=2;
             int LA13_0 = input.LA(1);
 
@@ -2393,21 +2390,18 @@ public class DDLParser extends Parser {
             }
             switch (alt13) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1108:3: IDGen= ID TK_0= '.'
+                    // DDL.g:1108:3: IDGen= ID TK_0= '.'
                     {
-                    IDGen=(Token)input.LT(1);
-                    match(input,ID,FOLLOW_ID_in_tabname728); 
-                    TK_0=(Token)input.LT(1);
-                    match(input,22,FOLLOW_22_in_tabname732); 
+                    IDGen=(Token)match(input,ID,FOLLOW_ID_in_tabname728); 
+                    TK_0=(Token)match(input,22,FOLLOW_22_in_tabname732); 
 
                     }
                     break;
 
             }
 
-            basename=(Token)input.LT(1);
-            match(input,ID,FOLLOW_ID_in_tabname738); 
-            
+            basename=(Token)match(input,ID,FOLLOW_ID_in_tabname738); 
+
             		// Create return CST Node
             		Node tabnameReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
             		tabnameReturnNode.setKind("tabname");
@@ -2415,7 +2409,7 @@ public class DDLParser extends Parser {
             		if(IDGen != null) {
             			Leaf IDGenLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			IDGenLeaf.setKind("ID");
-            			IDGenLeaf.setValue(IDGen.getText());
+            			IDGenLeaf.setValue((IDGen!=null?IDGen.getText():null));
             			IDGenLeaf.setPos(IDGen.getCharPositionInLine());
             			IDGenLeaf.setLine(IDGen.getLine());
             			tabnameReturnNode.getChildren().add(IDGenLeaf);
@@ -2424,7 +2418,7 @@ public class DDLParser extends Parser {
             	    if(TK_0 != null) {
             			Leaf TK_0Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             	 		TK_0Leaf.setKind("TOKEN");
-            	 		TK_0Leaf.setValue(TK_0.getText());
+            	 		TK_0Leaf.setValue((TK_0!=null?TK_0.getText():null));
             			TK_0Leaf.setPos(TK_0.getCharPositionInLine());
             			TK_0Leaf.setLine(TK_0.getLine());
             	 		tabnameReturnNode.getChildren().add(TK_0Leaf);
@@ -2433,7 +2427,7 @@ public class DDLParser extends Parser {
             		if(basename != null) {
             			Leaf basenameLeaf = CSTFactoryImpl.eINSTANCE.createLeaf();
             			basenameLeaf.setKind("basename");
-            			basenameLeaf.setValue(basename.getText());
+            			basenameLeaf.setValue((basename!=null?basename.getText():null));
             			basenameLeaf.setPos(basename.getCharPositionInLine());
             			basenameLeaf.setLine(basename.getLine());
             			tabnameReturnNode.getChildren().add(basenameLeaf);
@@ -2455,7 +2449,9 @@ public class DDLParser extends Parser {
         }
         return retval;
     }
-    // $ANTLR end tabname
+    // $ANTLR end "tabname"
+
+    // Delegated rules
 
 
  

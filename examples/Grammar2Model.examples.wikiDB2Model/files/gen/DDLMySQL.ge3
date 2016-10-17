@@ -21,7 +21,7 @@ data_definition returns [Node returnNode]
 		// Create return CST Node
 		Node data_definitionReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
 		data_definitionReturnNode.setKind("data_definition");
-	
+
 		// Create a special CST Node for terminal data_definition_statementsGen aggregation
 		if($data_definition_statementsGen != null) {
 	    for(int pos = 0; pos < $data_definition_statementsGen.size(); pos++ )  { 
@@ -35,8 +35,8 @@ data_definition returns [Node returnNode]
 		}
 		}
 		}
-	
-	
+
+
 		// Create a special CST Node for terminal data_manipulation_statementsGen aggregation
 		if($data_manipulation_statementsGen != null) {
 	    for(int pos = 0; pos < $data_manipulation_statementsGen.size(); pos++ )  { 
@@ -50,8 +50,8 @@ data_definition returns [Node returnNode]
 		}
 		}
 		}
-	
-	
+
+
 		// Create a special CST Node for terminal administration_statementsGen aggregation
 		if($administration_statementsGen != null) {
 	    for(int pos = 0; pos < $administration_statementsGen.size(); pos++ )  { 
@@ -65,8 +65,8 @@ data_definition returns [Node returnNode]
 		}
 		}
 		}
-	
-	
+
+
 		// Create a special CST Node for terminal utility_statementsGen aggregation
 		if($utility_statementsGen != null) {
 	    for(int pos = 0; pos < $utility_statementsGen.size(); pos++ )  { 
@@ -80,7 +80,7 @@ data_definition returns [Node returnNode]
 		}
 		}
 		}
-	
+
 		// Returns the Node with CST Leaves/Nodes
 		$data_definition.returnNode = data_definitionReturnNode;
 	}
@@ -132,7 +132,7 @@ set_definition returns [Node returnNode]
 	            } 
 	        }
 	    }
-	
+
 		// Create a special CST Node for terminal variable_assignmentGen_1 aggregation
 		if($variable_assignmentGen_1 != null) {
 	    for(int pos = 0; pos < $variable_assignmentGen_1.size(); pos++ )  { 
@@ -155,7 +155,7 @@ set_definition returns [Node returnNode]
 		}
 		}
 		}
-	
+
 	    // Create a Token CST Leaf	
 	    if($TK_2 != null) {
 			Leaf TK_2Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
@@ -759,7 +759,7 @@ create_table returns [Node returnNode]
 	            } 
 	        }
 	    }
-	
+
 		// Create a special CST Node for terminal create_definitionGen_1 aggregation
 		if($create_definitionGen_1 != null) {
 	    for(int pos = 0; pos < $create_definitionGen_1.size(); pos++ )  { 
@@ -782,7 +782,7 @@ create_table returns [Node returnNode]
 		}
 		}
 		}
-	
+
 	    // Create a Token CST Leaf	
 	    if($TK_8 != null) {
 			Leaf TK_8Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
@@ -952,7 +952,7 @@ create_definition returns [Node returnNode]
 	            } 
 	        }
 	    }
-	
+
 		// Create a special CST Node for terminal index_col_nameGen_1 aggregation
 		if($index_col_nameGen_1 != null) {
 	    for(int pos = 0; pos < $index_col_nameGen_1.size(); pos++ )  { 
@@ -975,7 +975,7 @@ create_definition returns [Node returnNode]
 		}
 		}
 		}
-	
+
 	    // Create a Token CST Leaf	
 	    if($TK_7 != null) {
 			Leaf TK_7Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
@@ -2963,7 +2963,7 @@ data_type returns [Node returnNode]
 			QVALUEGenLeaf.setLine(QVALUEGen.getLine());
 			data_typeReturnNode.getChildren().add(QVALUEGenLeaf);
 		}
-	
+
 		// Create a special CST Node for terminal QVALUEGen_1_List aggregation
 		if($QVALUEGen_1_List != null) {
 	    for(int pos = 0; pos < $QVALUEGen_1_List.size(); pos++ )  { 
@@ -2988,7 +2988,7 @@ data_type returns [Node returnNode]
 		}
 		}
 		}
-	
+
 	    // Create a Token CST Leaf	
 	    if($TK_3 != null) {
 			Leaf TK_3Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
@@ -3078,7 +3078,7 @@ data_type returns [Node returnNode]
 			QVALUEGenLeaf.setLine(QVALUEGen.getLine());
 			data_typeReturnNode.getChildren().add(QVALUEGenLeaf);
 		}
-	
+
 		// Create a special CST Node for terminal QVALUEGen_1_List aggregation
 		if($QVALUEGen_1_List != null) {
 	    for(int pos = 0; pos < $QVALUEGen_1_List.size(); pos++ )  { 
@@ -3103,7 +3103,7 @@ data_type returns [Node returnNode]
 		}
 		}
 		}
-	
+
 	    // Create a Token CST Leaf	
 	    if($TK_3 != null) {
 			Leaf TK_3Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
@@ -4008,7 +4008,7 @@ table_options returns [Node returnNode]
 			IDGenLeaf.setLine(IDGen.getLine());
 			table_optionsReturnNode.getChildren().add(IDGenLeaf);
 		}
-	
+
 		// Create a special CST Node for terminal IDGen_1_List aggregation
 		if($IDGen_1_List != null) {
 	    for(int pos = 0; pos < $IDGen_1_List.size(); pos++ )  { 
@@ -4033,7 +4033,7 @@ table_options returns [Node returnNode]
 		}
 		}
 		}
-	
+
 		// Returns the Node with CST Leaves/Nodes
 		$table_options.returnNode = table_optionsReturnNode;
 	}
@@ -4104,7 +4104,7 @@ reference_definition returns [Node returnNode]
 	            } 
 	        }
 	    }
-	
+
 		// Create a special CST Node for terminal index_col_nameGen_1 aggregation
 		if($index_col_nameGen_1 != null) {
 	    for(int pos = 0; pos < $index_col_nameGen_1.size(); pos++ )  { 
@@ -4127,7 +4127,7 @@ reference_definition returns [Node returnNode]
 		}
 		}
 		}
-	
+
 	    // Create a Token CST Leaf	
 	    if($TK_3 != null) {
 			Leaf TK_3Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
@@ -4419,7 +4419,7 @@ drop_table returns [Node returnNode]
 			OQUOTEGen_1Leaf.setLine(OQUOTEGen_1.getLine());
 			drop_tableReturnNode.getChildren().add(OQUOTEGen_1Leaf);
 		}
-	
+
 		// Create a special CST Node for terminal OQUOTEGen_2_List aggregation
 		if($OQUOTEGen_2_List != null) {
 	    for(int pos = 0; pos < $OQUOTEGen_2_List.size(); pos++ )  { 
@@ -4464,7 +4464,7 @@ drop_table returns [Node returnNode]
 		}
 		}
 		}
-	
+
 	    // Create a Token CST Leaf	
 	    if($TK_6 != null) {
 			Leaf TK_6Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
@@ -4626,7 +4626,7 @@ insert_statement returns [Node returnNode]
 	            } 
 	        }
 	    }
-	
+
 		// Create a special CST Node for terminal col_nameGen_1 aggregation
 		if($col_nameGen_1 != null) {
 	    for(int pos = 0; pos < $col_nameGen_1.size(); pos++ )  { 
@@ -4649,7 +4649,7 @@ insert_statement returns [Node returnNode]
 		}
 		}
 		}
-	
+
 	    // Create a Token CST Leaf	
 	    if($TK_8 != null) {
 			Leaf TK_8Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
@@ -4678,7 +4678,7 @@ insert_statement returns [Node returnNode]
 	            } 
 	        }
 	    }
-	
+
 		// Create a special CST Node for terminal insert_valueGen_1 aggregation
 		if($insert_valueGen_1 != null) {
 	    for(int pos = 0; pos < $insert_valueGen_1.size(); pos++ )  { 
@@ -4701,7 +4701,7 @@ insert_statement returns [Node returnNode]
 		}
 		}
 		}
-	
+
 	    // Create a Token CST Leaf	
 	    if($TK_11 != null) {
 			Leaf TK_11Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
@@ -4779,7 +4779,7 @@ insert_value returns [Node returnNode]
 	            } 
 	        }
 	    }
-	
+
 		// Create a special CST Node for terminal insert_dataGen_1 aggregation
 		if($insert_dataGen_1 != null) {
 	    for(int pos = 0; pos < $insert_dataGen_1.size(); pos++ )  { 
@@ -4802,7 +4802,7 @@ insert_value returns [Node returnNode]
 		}
 		}
 		}
-	
+
 	    // Create a Token CST Leaf	
 	    if($TK_2 != null) {
 			Leaf TK_2Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();

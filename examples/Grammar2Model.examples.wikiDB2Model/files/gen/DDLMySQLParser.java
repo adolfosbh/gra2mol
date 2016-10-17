@@ -1,4 +1,4 @@
-// $ANTLR 3.0.1 /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3 2009-04-27 10:39:00
+// $ANTLR 3.0.1 D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3 2016-09-04 17:30:57
 
 	import gts.modernization.model.CST.impl.*;
 	import gts.modernization.model.CST.*;
@@ -18,22 +18,22 @@ public class DDLMySQLParser extends Parser {
     public static final String[] tokenNames = new String[] {
         "<invalid>", "<EOR>", "<DOWN>", "<UP>", "ID", "DQVALUE", "OQUOTE", "QVALUE", "NUMBER", "DOUBLEQUOTE", "DECNUMBER", "HEXNUMBER", "DOT", "SLASH", "QUOTE", "IDNUMBER", "WS", "ML_COMMENT", "OL_COMMENT", "'SET'", "','", "';'", "'='", "'GLOBAL'", "'SESSION'", "'@'", "'USE'", "'CREATE'", "'DATABASE'", "'SCHEMA'", "'IF'", "'NOT'", "'EXISTS'", "'DEFAULT'", "'CHARACTER'", "'COLLATE'", "'TEMPORARY'", "'TABLE'", "'('", "')'", "'UNIQUE'", "'PRIMARY'", "'FULLTEXT'", "'INDEX'", "'KEY'", "'NULL'", "'ON'", "'UPDATE'", "'DELETE'", "'AUTO_INCREMENT'", "'COMMENT'", "'COLUMN_FORMAT'", "'FIXED'", "'DYNAMIC'", "'STORAGE'", "'DISK'", "'ASC'", "'DESC'", "'USING'", "'BTREE'", "'HASH'", "'RTREE'", "'KEY_BLOCK_SIZE'", "'WITH'", "'PARSER'", "'BIT'", "'TINYINT'", "'UNSIGNED'", "'ZEROFILL'", "'SMALLINT'", "'MEDIUMINT'", "'INT'", "'INTEGER'", "'BIGINT'", "'REAL'", "'DOUBLE'", "'FLOAT'", "'DECIMAL'", "'NUMERIC'", "'DATE'", "'TIME'", "'TIMESTAMP'", "'DATETIME'", "'YEAR'", "'CHAR'", "'VARCHAR'", "'BINARYTYPE'", "'VARBINARY'", "'TINYBLOB'", "'BLOB'", "'MEDIUMBLOB'", "'LONGBLOB'", "'TINYTEXT'", "'BYNARY'", "'TEXTVAR'", "'MEDIUMTEXT'", "'LONGTEXT'", "'ENUM'", "'ENGINE'", "'AVG_ROW_LENGTH'", "'CHARSET'", "'CHECKSUM'", "'CONNECTION'", "'DELAY_KEY_WRITE'", "'INDEX DIRECTORY'", "'INSERT_METHOD'", "'NO'", "'FIRST'", "'LAST'", "'MAX_ROWS'", "'MIN_ROWS'", "'PACK_KEYS'", "'ROW_FORMAT'", "'COMPRESSED'", "'REDUNDANT'", "'COMPACT'", "'TABLESPACE'", "'UNION'", "'REFERENCES'", "'MATCH'", "'FULL'", "'PARTIAL'", "'SIMPLE'", "'RESTRICT'", "'CASCADE'", "'ACTION'", "'DROP'", "'INSERT'", "'LOW_PRIORITY'", "'DELAYED'", "'HIGH_PRIORITY'", "'IGNORE'", "'INTO'", "'VALUES'"
     };
-    public static final int ML_COMMENT=17;
-    public static final int QUOTE=14;
-    public static final int WS=16;
-    public static final int SLASH=13;
-    public static final int OQUOTE=6;
-    public static final int NUMBER=8;
-    public static final int QVALUE=7;
     public static final int DECNUMBER=10;
-    public static final int OL_COMMENT=18;
-    public static final int DQVALUE=5;
-    public static final int IDNUMBER=15;
-    public static final int DOT=12;
-    public static final int ID=4;
-    public static final int DOUBLEQUOTE=9;
-    public static final int EOF=-1;
+    public static final int OQUOTE=6;
+    public static final int QUOTE=14;
+    public static final int NUMBER=8;
     public static final int HEXNUMBER=11;
+    public static final int OL_COMMENT=18;
+    public static final int DOT=12;
+    public static final int SLASH=13;
+    public static final int IDNUMBER=15;
+    public static final int DOUBLEQUOTE=9;
+    public static final int QVALUE=7;
+    public static final int ML_COMMENT=17;
+    public static final int ID=4;
+    public static final int WS=16;
+    public static final int EOF=-1;
+    public static final int DQVALUE=5;
 
         public DDLMySQLParser(TokenStream input) {
             super(input);
@@ -64,7 +64,7 @@ public class DDLMySQLParser extends Parser {
     }
 
     public String[] getTokenNames() { return tokenNames; }
-    public String getGrammarFileName() { return "/home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3"; }
+    public String getGrammarFileName() { return "D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3"; }
 
 
     public static class data_definition_return extends ParserRuleReturnScope {
@@ -75,7 +75,7 @@ public class DDLMySQLParser extends Parser {
     };
 
     // $ANTLR start data_definition
-    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:18:1: data_definition returns [Node returnNode] : (data_definition_statementsGen+= data_definition_statements | data_manipulation_statementsGen+= data_manipulation_statements | administration_statementsGen+= administration_statements | utility_statementsGen+= utility_statements )* ;
+    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:18:1: data_definition returns [Node returnNode] : (data_definition_statementsGen+= data_definition_statements | data_manipulation_statementsGen+= data_manipulation_statements | administration_statementsGen+= administration_statements | utility_statementsGen+= utility_statements )* ;
     public final data_definition_return data_definition() throws RecognitionException {
         data_definition_return retval = new data_definition_return();
         retval.start = input.LT(1);
@@ -89,10 +89,10 @@ public class DDLMySQLParser extends Parser {
         RuleReturnScope administration_statementsGen = null;
         RuleReturnScope utility_statementsGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:19:1: ( (data_definition_statementsGen+= data_definition_statements | data_manipulation_statementsGen+= data_manipulation_statements | administration_statementsGen+= administration_statements | utility_statementsGen+= utility_statements )* )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:19:4: (data_definition_statementsGen+= data_definition_statements | data_manipulation_statementsGen+= data_manipulation_statements | administration_statementsGen+= administration_statements | utility_statementsGen+= utility_statements )*
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:19:1: ( (data_definition_statementsGen+= data_definition_statements | data_manipulation_statementsGen+= data_manipulation_statements | administration_statementsGen+= administration_statements | utility_statementsGen+= utility_statements )* )
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:19:4: (data_definition_statementsGen+= data_definition_statements | data_manipulation_statementsGen+= data_manipulation_statements | administration_statementsGen+= administration_statements | utility_statementsGen+= utility_statements )*
             {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:19:4: (data_definition_statementsGen+= data_definition_statements | data_manipulation_statementsGen+= data_manipulation_statements | administration_statementsGen+= administration_statements | utility_statementsGen+= utility_statements )*
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:19:4: (data_definition_statementsGen+= data_definition_statements | data_manipulation_statementsGen+= data_manipulation_statements | administration_statementsGen+= administration_statements | utility_statementsGen+= utility_statements )*
             loop1:
             do {
                 int alt1=5;
@@ -123,7 +123,7 @@ public class DDLMySQLParser extends Parser {
 
                 switch (alt1) {
             	case 1 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:19:5: data_definition_statementsGen+= data_definition_statements
+            	    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:19:5: data_definition_statementsGen+= data_definition_statements
             	    {
             	    pushFollow(FOLLOW_data_definition_statements_in_data_definition48);
             	    data_definition_statementsGen=data_definition_statements();
@@ -136,7 +136,7 @@ public class DDLMySQLParser extends Parser {
             	    }
             	    break;
             	case 2 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:19:65: data_manipulation_statementsGen+= data_manipulation_statements
+            	    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:19:65: data_manipulation_statementsGen+= data_manipulation_statements
             	    {
             	    pushFollow(FOLLOW_data_manipulation_statements_in_data_definition54);
             	    data_manipulation_statementsGen=data_manipulation_statements();
@@ -149,7 +149,7 @@ public class DDLMySQLParser extends Parser {
             	    }
             	    break;
             	case 3 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:19:129: administration_statementsGen+= administration_statements
+            	    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:19:129: administration_statementsGen+= administration_statements
             	    {
             	    pushFollow(FOLLOW_administration_statements_in_data_definition60);
             	    administration_statementsGen=administration_statements();
@@ -162,7 +162,7 @@ public class DDLMySQLParser extends Parser {
             	    }
             	    break;
             	case 4 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:19:187: utility_statementsGen+= utility_statements
+            	    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:19:187: utility_statementsGen+= utility_statements
             	    {
             	    pushFollow(FOLLOW_utility_statements_in_data_definition66);
             	    utility_statementsGen=utility_statements();
@@ -181,11 +181,11 @@ public class DDLMySQLParser extends Parser {
             } while (true);
 
             if ( backtracking==0 ) {
-              
+
               		// Create return CST Node
               		Node data_definitionReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
               		data_definitionReturnNode.setKind("data_definition");
-              	
+
               		// Create a special CST Node for terminal data_definition_statementsGen aggregation
               		if(list_data_definition_statementsGen != null) {
               	    for(int pos = 0; pos < list_data_definition_statementsGen.size(); pos++ )  { 
@@ -199,8 +199,8 @@ public class DDLMySQLParser extends Parser {
               		}
               		}
               		}
-              	
-              	
+
+
               		// Create a special CST Node for terminal data_manipulation_statementsGen aggregation
               		if(list_data_manipulation_statementsGen != null) {
               	    for(int pos = 0; pos < list_data_manipulation_statementsGen.size(); pos++ )  { 
@@ -214,8 +214,8 @@ public class DDLMySQLParser extends Parser {
               		}
               		}
               		}
-              	
-              	
+
+
               		// Create a special CST Node for terminal administration_statementsGen aggregation
               		if(list_administration_statementsGen != null) {
               	    for(int pos = 0; pos < list_administration_statementsGen.size(); pos++ )  { 
@@ -229,8 +229,8 @@ public class DDLMySQLParser extends Parser {
               		}
               		}
               		}
-              	
-              	
+
+
               		// Create a special CST Node for terminal utility_statementsGen aggregation
               		if(list_utility_statementsGen != null) {
               	    for(int pos = 0; pos < list_utility_statementsGen.size(); pos++ )  { 
@@ -244,7 +244,7 @@ public class DDLMySQLParser extends Parser {
               		}
               		}
               		}
-              	
+
               		// Returns the Node with CST Leaves/Nodes
               		retval.returnNode = data_definitionReturnNode;
               	
@@ -273,7 +273,7 @@ public class DDLMySQLParser extends Parser {
     };
 
     // $ANTLR start administration_statements
-    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:89:1: administration_statements returns [Node returnNode] : set_definitionGen+= set_definition ;
+    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:89:1: administration_statements returns [Node returnNode] : set_definitionGen+= set_definition ;
     public final administration_statements_return administration_statements() throws RecognitionException {
         administration_statements_return retval = new administration_statements_return();
         retval.start = input.LT(1);
@@ -281,8 +281,8 @@ public class DDLMySQLParser extends Parser {
         List list_set_definitionGen=null;
         RuleReturnScope set_definitionGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:90:1: (set_definitionGen+= set_definition )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:90:3: set_definitionGen+= set_definition
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:90:1: (set_definitionGen+= set_definition )
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:90:3: set_definitionGen+= set_definition
             {
             pushFollow(FOLLOW_set_definition_in_administration_statements89);
             set_definitionGen=set_definition();
@@ -292,7 +292,7 @@ public class DDLMySQLParser extends Parser {
             list_set_definitionGen.add(set_definitionGen);
 
             if ( backtracking==0 ) {
-              
+
               		// Create return CST Node
               		Node administration_statementsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
               		administration_statementsReturnNode.setKind("administration_statements");
@@ -334,7 +334,7 @@ public class DDLMySQLParser extends Parser {
     };
 
     // $ANTLR start set_definition
-    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:110:1: set_definition returns [Node returnNode] : TK_0= 'SET' variable_assignmentGen+= variable_assignment (TK_1= ',' variable_assignmentGen_1+= variable_assignment )* TK_2= ';' ;
+    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:110:1: set_definition returns [Node returnNode] : TK_0= 'SET' variable_assignmentGen+= variable_assignment (TK_1= ',' variable_assignmentGen_1+= variable_assignment )* TK_2= ';' ;
     public final set_definition_return set_definition() throws RecognitionException {
         set_definition_return retval = new set_definition_return();
         retval.start = input.LT(1);
@@ -347,8 +347,8 @@ public class DDLMySQLParser extends Parser {
         RuleReturnScope variable_assignmentGen = null;
         RuleReturnScope variable_assignmentGen_1 = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:111:1: (TK_0= 'SET' variable_assignmentGen+= variable_assignment (TK_1= ',' variable_assignmentGen_1+= variable_assignment )* TK_2= ';' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:111:3: TK_0= 'SET' variable_assignmentGen+= variable_assignment (TK_1= ',' variable_assignmentGen_1+= variable_assignment )* TK_2= ';'
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:111:1: (TK_0= 'SET' variable_assignmentGen+= variable_assignment (TK_1= ',' variable_assignmentGen_1+= variable_assignment )* TK_2= ';' )
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:111:3: TK_0= 'SET' variable_assignmentGen+= variable_assignment (TK_1= ',' variable_assignmentGen_1+= variable_assignment )* TK_2= ';'
             {
             TK_0=(Token)input.LT(1);
             match(input,19,FOLLOW_19_in_set_definition110); if (failed) return retval;
@@ -359,7 +359,7 @@ public class DDLMySQLParser extends Parser {
             if (list_variable_assignmentGen==null) list_variable_assignmentGen=new ArrayList();
             list_variable_assignmentGen.add(variable_assignmentGen);
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:111:58: (TK_1= ',' variable_assignmentGen_1+= variable_assignment )*
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:111:58: (TK_1= ',' variable_assignmentGen_1+= variable_assignment )*
             loop2:
             do {
                 int alt2=2;
@@ -372,7 +372,7 @@ public class DDLMySQLParser extends Parser {
 
                 switch (alt2) {
             	case 1 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:111:59: TK_1= ',' variable_assignmentGen_1+= variable_assignment
+            	    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:111:59: TK_1= ',' variable_assignmentGen_1+= variable_assignment
             	    {
             	    TK_1=(Token)input.LT(1);
             	    match(input,20,FOLLOW_20_in_set_definition119); if (failed) return retval;
@@ -395,7 +395,7 @@ public class DDLMySQLParser extends Parser {
             TK_2=(Token)input.LT(1);
             match(input,21,FOLLOW_21_in_set_definition129); if (failed) return retval;
             if ( backtracking==0 ) {
-              
+
               		// Create return CST Node
               		Node set_definitionReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
               		set_definitionReturnNode.setKind("set_definition");
@@ -418,7 +418,7 @@ public class DDLMySQLParser extends Parser {
               	            } 
               	        }
               	    }
-              	
+
               		// Create a special CST Node for terminal variable_assignmentGen_1 aggregation
               		if(list_variable_assignmentGen_1 != null) {
               	    for(int pos = 0; pos < list_variable_assignmentGen_1.size(); pos++ )  { 
@@ -441,7 +441,7 @@ public class DDLMySQLParser extends Parser {
               		}
               		}
               		}
-              	
+
               	    // Create a Token CST Leaf	
               	    if(TK_2 != null) {
               			Leaf TK_2Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
@@ -479,7 +479,7 @@ public class DDLMySQLParser extends Parser {
     };
 
     // $ANTLR start variable_assignment
-    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:173:1: variable_assignment returns [Node returnNode] : (IDGen= ID TK_0= '=' DQVALUEGen= DQVALUE | (TK_0= 'GLOBAL' | TK_1= 'SESSION' ) IDGen= ID TK_2= '=' DQVALUEGen= DQVALUE | TK_0= '@' TK_1= '@' IDGen= ID TK_2= '=' (DQVALUEGen= DQVALUE | TK_3= '@' TK_4= '@' IDGen_1= ID ) );
+    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:173:1: variable_assignment returns [Node returnNode] : (IDGen= ID TK_0= '=' DQVALUEGen= DQVALUE | (TK_0= 'GLOBAL' | TK_1= 'SESSION' ) IDGen= ID TK_2= '=' DQVALUEGen= DQVALUE | TK_0= '@' TK_1= '@' IDGen= ID TK_2= '=' (DQVALUEGen= DQVALUE | TK_3= '@' TK_4= '@' IDGen_1= ID ) );
     public final variable_assignment_return variable_assignment() throws RecognitionException {
         variable_assignment_return retval = new variable_assignment_return();
         retval.start = input.LT(1);
@@ -494,7 +494,7 @@ public class DDLMySQLParser extends Parser {
         Token IDGen_1=null;
 
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:174:1: (IDGen= ID TK_0= '=' DQVALUEGen= DQVALUE | (TK_0= 'GLOBAL' | TK_1= 'SESSION' ) IDGen= ID TK_2= '=' DQVALUEGen= DQVALUE | TK_0= '@' TK_1= '@' IDGen= ID TK_2= '=' (DQVALUEGen= DQVALUE | TK_3= '@' TK_4= '@' IDGen_1= ID ) )
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:174:1: (IDGen= ID TK_0= '=' DQVALUEGen= DQVALUE | (TK_0= 'GLOBAL' | TK_1= 'SESSION' ) IDGen= ID TK_2= '=' DQVALUEGen= DQVALUE | TK_0= '@' TK_1= '@' IDGen= ID TK_2= '=' (DQVALUEGen= DQVALUE | TK_3= '@' TK_4= '@' IDGen_1= ID ) )
             int alt5=3;
             switch ( input.LA(1) ) {
             case ID:
@@ -523,7 +523,7 @@ public class DDLMySQLParser extends Parser {
 
             switch (alt5) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:174:3: IDGen= ID TK_0= '=' DQVALUEGen= DQVALUE
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:174:3: IDGen= ID TK_0= '=' DQVALUEGen= DQVALUE
                     {
                     IDGen=(Token)input.LT(1);
                     match(input,ID,FOLLOW_ID_in_variable_assignment151); if (failed) return retval;
@@ -532,7 +532,7 @@ public class DDLMySQLParser extends Parser {
                     DQVALUEGen=(Token)input.LT(1);
                     match(input,DQVALUE,FOLLOW_DQVALUE_in_variable_assignment159); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node variable_assignmentReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		variable_assignmentReturnNode.setKind("variable_assignment");
@@ -571,9 +571,9 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:209:8: (TK_0= 'GLOBAL' | TK_1= 'SESSION' ) IDGen= ID TK_2= '=' DQVALUEGen= DQVALUE
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:209:8: (TK_0= 'GLOBAL' | TK_1= 'SESSION' ) IDGen= ID TK_2= '=' DQVALUEGen= DQVALUE
                     {
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:209:8: (TK_0= 'GLOBAL' | TK_1= 'SESSION' )
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:209:8: (TK_0= 'GLOBAL' | TK_1= 'SESSION' )
                     int alt3=2;
                     int LA3_0 = input.LA(1);
 
@@ -592,7 +592,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt3) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:209:9: TK_0= 'GLOBAL'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:209:9: TK_0= 'GLOBAL'
                             {
                             TK_0=(Token)input.LT(1);
                             match(input,23,FOLLOW_23_in_variable_assignment175); if (failed) return retval;
@@ -600,7 +600,7 @@ public class DDLMySQLParser extends Parser {
                             }
                             break;
                         case 2 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:209:25: TK_1= 'SESSION'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:209:25: TK_1= 'SESSION'
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,24,FOLLOW_24_in_variable_assignment181); if (failed) return retval;
@@ -617,7 +617,7 @@ public class DDLMySQLParser extends Parser {
                     DQVALUEGen=(Token)input.LT(1);
                     match(input,DQVALUE,FOLLOW_DQVALUE_in_variable_assignment194); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node variable_assignmentReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		variable_assignmentReturnNode.setKind("variable_assignment");
@@ -674,7 +674,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:262:8: TK_0= '@' TK_1= '@' IDGen= ID TK_2= '=' (DQVALUEGen= DQVALUE | TK_3= '@' TK_4= '@' IDGen_1= ID )
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:262:8: TK_0= '@' TK_1= '@' IDGen= ID TK_2= '=' (DQVALUEGen= DQVALUE | TK_3= '@' TK_4= '@' IDGen_1= ID )
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,25,FOLLOW_25_in_variable_assignment209); if (failed) return retval;
@@ -684,7 +684,7 @@ public class DDLMySQLParser extends Parser {
                     match(input,ID,FOLLOW_ID_in_variable_assignment217); if (failed) return retval;
                     TK_2=(Token)input.LT(1);
                     match(input,22,FOLLOW_22_in_variable_assignment221); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:262:44: (DQVALUEGen= DQVALUE | TK_3= '@' TK_4= '@' IDGen_1= ID )
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:262:44: (DQVALUEGen= DQVALUE | TK_3= '@' TK_4= '@' IDGen_1= ID )
                     int alt4=2;
                     int LA4_0 = input.LA(1);
 
@@ -703,7 +703,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt4) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:262:45: DQVALUEGen= DQVALUE
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:262:45: DQVALUEGen= DQVALUE
                             {
                             DQVALUEGen=(Token)input.LT(1);
                             match(input,DQVALUE,FOLLOW_DQVALUE_in_variable_assignment226); if (failed) return retval;
@@ -711,7 +711,7 @@ public class DDLMySQLParser extends Parser {
                             }
                             break;
                         case 2 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:262:66: TK_3= '@' TK_4= '@' IDGen_1= ID
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:262:66: TK_3= '@' TK_4= '@' IDGen_1= ID
                             {
                             TK_3=(Token)input.LT(1);
                             match(input,25,FOLLOW_25_in_variable_assignment232); if (failed) return retval;
@@ -726,7 +726,7 @@ public class DDLMySQLParser extends Parser {
                     }
 
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node variable_assignmentReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		variable_assignmentReturnNode.setKind("variable_assignment");
@@ -832,7 +832,7 @@ public class DDLMySQLParser extends Parser {
     };
 
     // $ANTLR start utility_statements
-    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:344:1: utility_statements returns [Node returnNode] : use_statementGen+= use_statement ;
+    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:344:1: utility_statements returns [Node returnNode] : use_statementGen+= use_statement ;
     public final utility_statements_return utility_statements() throws RecognitionException {
         utility_statements_return retval = new utility_statements_return();
         retval.start = input.LT(1);
@@ -840,8 +840,8 @@ public class DDLMySQLParser extends Parser {
         List list_use_statementGen=null;
         RuleReturnScope use_statementGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:345:1: (use_statementGen+= use_statement )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:345:4: use_statementGen+= use_statement
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:345:1: (use_statementGen+= use_statement )
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:345:4: use_statementGen+= use_statement
             {
             pushFollow(FOLLOW_use_statement_in_utility_statements270);
             use_statementGen=use_statement();
@@ -851,7 +851,7 @@ public class DDLMySQLParser extends Parser {
             list_use_statementGen.add(use_statementGen);
 
             if ( backtracking==0 ) {
-              
+
               		// Create return CST Node
               		Node utility_statementsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
               		utility_statementsReturnNode.setKind("utility_statements");
@@ -893,7 +893,7 @@ public class DDLMySQLParser extends Parser {
     };
 
     // $ANTLR start use_statement
-    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:365:1: use_statement returns [Node returnNode] : TK_0= 'USE' IDGen= ID TK_1= ';' ;
+    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:365:1: use_statement returns [Node returnNode] : TK_0= 'USE' IDGen= ID TK_1= ';' ;
     public final use_statement_return use_statement() throws RecognitionException {
         use_statement_return retval = new use_statement_return();
         retval.start = input.LT(1);
@@ -903,8 +903,8 @@ public class DDLMySQLParser extends Parser {
         Token TK_1=null;
 
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:366:1: (TK_0= 'USE' IDGen= ID TK_1= ';' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:366:4: TK_0= 'USE' IDGen= ID TK_1= ';'
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:366:1: (TK_0= 'USE' IDGen= ID TK_1= ';' )
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:366:4: TK_0= 'USE' IDGen= ID TK_1= ';'
             {
             TK_0=(Token)input.LT(1);
             match(input,26,FOLLOW_26_in_use_statement292); if (failed) return retval;
@@ -913,7 +913,7 @@ public class DDLMySQLParser extends Parser {
             TK_1=(Token)input.LT(1);
             match(input,21,FOLLOW_21_in_use_statement300); if (failed) return retval;
             if ( backtracking==0 ) {
-              
+
               		// Create return CST Node
               		Node use_statementReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
               		use_statementReturnNode.setKind("use_statement");
@@ -972,7 +972,7 @@ public class DDLMySQLParser extends Parser {
     };
 
     // $ANTLR start data_definition_statements
-    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:403:1: data_definition_statements returns [Node returnNode] : (create_databaseGen+= create_database | create_tableGen+= create_table | drop_tableGen+= drop_table );
+    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:403:1: data_definition_statements returns [Node returnNode] : (create_databaseGen+= create_database | create_tableGen+= create_table | drop_tableGen+= drop_table );
     public final data_definition_statements_return data_definition_statements() throws RecognitionException {
         data_definition_statements_return retval = new data_definition_statements_return();
         retval.start = input.LT(1);
@@ -984,7 +984,7 @@ public class DDLMySQLParser extends Parser {
         RuleReturnScope create_tableGen = null;
         RuleReturnScope drop_tableGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:404:1: (create_databaseGen+= create_database | create_tableGen+= create_table | drop_tableGen+= drop_table )
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:404:1: (create_databaseGen+= create_database | create_tableGen+= create_table | drop_tableGen+= drop_table )
             int alt6=3;
             int LA6_0 = input.LA(1);
 
@@ -1017,7 +1017,7 @@ public class DDLMySQLParser extends Parser {
             }
             switch (alt6) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:404:4: create_databaseGen+= create_database
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:404:4: create_databaseGen+= create_database
                     {
                     pushFollow(FOLLOW_create_database_in_data_definition_statements323);
                     create_databaseGen=create_database();
@@ -1027,7 +1027,7 @@ public class DDLMySQLParser extends Parser {
                     list_create_databaseGen.add(create_databaseGen);
 
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node data_definition_statementsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		data_definition_statementsReturnNode.setKind("data_definition_statements");
@@ -1049,7 +1049,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:422:5: create_tableGen+= create_table
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:422:5: create_tableGen+= create_table
                     {
                     pushFollow(FOLLOW_create_table_in_data_definition_statements335);
                     create_tableGen=create_table();
@@ -1059,7 +1059,7 @@ public class DDLMySQLParser extends Parser {
                     list_create_tableGen.add(create_tableGen);
 
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node data_definition_statementsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		data_definition_statementsReturnNode.setKind("data_definition_statements");
@@ -1081,7 +1081,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:440:4: drop_tableGen+= drop_table
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:440:4: drop_tableGen+= drop_table
                     {
                     pushFollow(FOLLOW_drop_table_in_data_definition_statements346);
                     drop_tableGen=drop_table();
@@ -1091,7 +1091,7 @@ public class DDLMySQLParser extends Parser {
                     list_drop_tableGen.add(drop_tableGen);
 
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node data_definition_statementsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		data_definition_statementsReturnNode.setKind("data_definition_statements");
@@ -1135,7 +1135,7 @@ public class DDLMySQLParser extends Parser {
     };
 
     // $ANTLR start create_database
-    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:460:1: create_database returns [Node returnNode] : TK_0= 'CREATE' (TK_1= 'DATABASE' | TK_2= 'SCHEMA' ) (TK_3= 'IF' TK_4= 'NOT' TK_5= 'EXISTS' )? IDGen= ID (create_specificationGen+= create_specification )? TK_6= ';' ;
+    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:460:1: create_database returns [Node returnNode] : TK_0= 'CREATE' (TK_1= 'DATABASE' | TK_2= 'SCHEMA' ) (TK_3= 'IF' TK_4= 'NOT' TK_5= 'EXISTS' )? IDGen= ID (create_specificationGen+= create_specification )? TK_6= ';' ;
     public final create_database_return create_database() throws RecognitionException {
         create_database_return retval = new create_database_return();
         retval.start = input.LT(1);
@@ -1151,12 +1151,12 @@ public class DDLMySQLParser extends Parser {
         List list_create_specificationGen=null;
         RuleReturnScope create_specificationGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:461:1: (TK_0= 'CREATE' (TK_1= 'DATABASE' | TK_2= 'SCHEMA' ) (TK_3= 'IF' TK_4= 'NOT' TK_5= 'EXISTS' )? IDGen= ID (create_specificationGen+= create_specification )? TK_6= ';' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:461:3: TK_0= 'CREATE' (TK_1= 'DATABASE' | TK_2= 'SCHEMA' ) (TK_3= 'IF' TK_4= 'NOT' TK_5= 'EXISTS' )? IDGen= ID (create_specificationGen+= create_specification )? TK_6= ';'
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:461:1: (TK_0= 'CREATE' (TK_1= 'DATABASE' | TK_2= 'SCHEMA' ) (TK_3= 'IF' TK_4= 'NOT' TK_5= 'EXISTS' )? IDGen= ID (create_specificationGen+= create_specification )? TK_6= ';' )
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:461:3: TK_0= 'CREATE' (TK_1= 'DATABASE' | TK_2= 'SCHEMA' ) (TK_3= 'IF' TK_4= 'NOT' TK_5= 'EXISTS' )? IDGen= ID (create_specificationGen+= create_specification )? TK_6= ';'
             {
             TK_0=(Token)input.LT(1);
             match(input,27,FOLLOW_27_in_create_database368); if (failed) return retval;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:461:17: (TK_1= 'DATABASE' | TK_2= 'SCHEMA' )
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:461:17: (TK_1= 'DATABASE' | TK_2= 'SCHEMA' )
             int alt7=2;
             int LA7_0 = input.LA(1);
 
@@ -1175,7 +1175,7 @@ public class DDLMySQLParser extends Parser {
             }
             switch (alt7) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:461:18: TK_1= 'DATABASE'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:461:18: TK_1= 'DATABASE'
                     {
                     TK_1=(Token)input.LT(1);
                     match(input,28,FOLLOW_28_in_create_database373); if (failed) return retval;
@@ -1183,7 +1183,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:461:36: TK_2= 'SCHEMA'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:461:36: TK_2= 'SCHEMA'
                     {
                     TK_2=(Token)input.LT(1);
                     match(input,29,FOLLOW_29_in_create_database379); if (failed) return retval;
@@ -1193,7 +1193,7 @@ public class DDLMySQLParser extends Parser {
 
             }
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:461:51: (TK_3= 'IF' TK_4= 'NOT' TK_5= 'EXISTS' )?
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:461:51: (TK_3= 'IF' TK_4= 'NOT' TK_5= 'EXISTS' )?
             int alt8=2;
             int LA8_0 = input.LA(1);
 
@@ -1202,7 +1202,7 @@ public class DDLMySQLParser extends Parser {
             }
             switch (alt8) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:461:52: TK_3= 'IF' TK_4= 'NOT' TK_5= 'EXISTS'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:461:52: TK_3= 'IF' TK_4= 'NOT' TK_5= 'EXISTS'
                     {
                     TK_3=(Token)input.LT(1);
                     match(input,30,FOLLOW_30_in_create_database385); if (failed) return retval;
@@ -1218,7 +1218,7 @@ public class DDLMySQLParser extends Parser {
 
             IDGen=(Token)input.LT(1);
             match(input,ID,FOLLOW_ID_in_create_database399); if (failed) return retval;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:461:98: (create_specificationGen+= create_specification )?
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:461:98: (create_specificationGen+= create_specification )?
             int alt9=2;
             int LA9_0 = input.LA(1);
 
@@ -1227,7 +1227,7 @@ public class DDLMySQLParser extends Parser {
             }
             switch (alt9) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:461:99: create_specificationGen+= create_specification
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:461:99: create_specificationGen+= create_specification
                     {
                     pushFollow(FOLLOW_create_specification_in_create_database404);
                     create_specificationGen=create_specification();
@@ -1245,7 +1245,7 @@ public class DDLMySQLParser extends Parser {
             TK_6=(Token)input.LT(1);
             match(input,21,FOLLOW_21_in_create_database410); if (failed) return retval;
             if ( backtracking==0 ) {
-              
+
               		// Create return CST Node
               		Node create_databaseReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
               		create_databaseReturnNode.setKind("create_database");
@@ -1359,7 +1359,7 @@ public class DDLMySQLParser extends Parser {
     };
 
     // $ANTLR start create_specification
-    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:553:1: create_specification returns [Node returnNode] : ( (TK_0= 'DEFAULT' )? TK_1= 'CHARACTER' TK_2= 'SET' (TK_3= '=' )? IDGen= ID | (TK_0= 'DEFAULT' )? TK_1= 'COLLATE' (TK_2= '=' )? IDGen= ID );
+    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:553:1: create_specification returns [Node returnNode] : ( (TK_0= 'DEFAULT' )? TK_1= 'CHARACTER' TK_2= 'SET' (TK_3= '=' )? IDGen= ID | (TK_0= 'DEFAULT' )? TK_1= 'COLLATE' (TK_2= '=' )? IDGen= ID );
     public final create_specification_return create_specification() throws RecognitionException {
         create_specification_return retval = new create_specification_return();
         retval.start = input.LT(1);
@@ -1371,18 +1371,18 @@ public class DDLMySQLParser extends Parser {
         Token IDGen=null;
 
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:554:1: ( (TK_0= 'DEFAULT' )? TK_1= 'CHARACTER' TK_2= 'SET' (TK_3= '=' )? IDGen= ID | (TK_0= 'DEFAULT' )? TK_1= 'COLLATE' (TK_2= '=' )? IDGen= ID )
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:554:1: ( (TK_0= 'DEFAULT' )? TK_1= 'CHARACTER' TK_2= 'SET' (TK_3= '=' )? IDGen= ID | (TK_0= 'DEFAULT' )? TK_1= 'COLLATE' (TK_2= '=' )? IDGen= ID )
             int alt14=2;
             switch ( input.LA(1) ) {
             case 33:
                 {
                 int LA14_1 = input.LA(2);
 
-                if ( (LA14_1==35) ) {
-                    alt14=2;
-                }
-                else if ( (LA14_1==34) ) {
+                if ( (LA14_1==34) ) {
                     alt14=1;
+                }
+                else if ( (LA14_1==35) ) {
+                    alt14=2;
                 }
                 else {
                     if (backtracking>0) {failed=true; return retval;}
@@ -1413,9 +1413,9 @@ public class DDLMySQLParser extends Parser {
 
             switch (alt14) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:554:3: (TK_0= 'DEFAULT' )? TK_1= 'CHARACTER' TK_2= 'SET' (TK_3= '=' )? IDGen= ID
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:554:3: (TK_0= 'DEFAULT' )? TK_1= 'CHARACTER' TK_2= 'SET' (TK_3= '=' )? IDGen= ID
                     {
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:554:3: (TK_0= 'DEFAULT' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:554:3: (TK_0= 'DEFAULT' )?
                     int alt10=2;
                     int LA10_0 = input.LA(1);
 
@@ -1424,7 +1424,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt10) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:554:4: TK_0= 'DEFAULT'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:554:4: TK_0= 'DEFAULT'
                             {
                             TK_0=(Token)input.LT(1);
                             match(input,33,FOLLOW_33_in_create_specification432); if (failed) return retval;
@@ -1438,7 +1438,7 @@ public class DDLMySQLParser extends Parser {
                     match(input,34,FOLLOW_34_in_create_specification438); if (failed) return retval;
                     TK_2=(Token)input.LT(1);
                     match(input,19,FOLLOW_19_in_create_specification442); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:554:49: (TK_3= '=' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:554:49: (TK_3= '=' )?
                     int alt11=2;
                     int LA11_0 = input.LA(1);
 
@@ -1447,7 +1447,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt11) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:554:50: TK_3= '='
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:554:50: TK_3= '='
                             {
                             TK_3=(Token)input.LT(1);
                             match(input,22,FOLLOW_22_in_create_specification447); if (failed) return retval;
@@ -1460,7 +1460,7 @@ public class DDLMySQLParser extends Parser {
                     IDGen=(Token)input.LT(1);
                     match(input,ID,FOLLOW_ID_in_create_specification453); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node create_specificationReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		create_specificationReturnNode.setKind("create_specification");
@@ -1517,9 +1517,9 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:607:6: (TK_0= 'DEFAULT' )? TK_1= 'COLLATE' (TK_2= '=' )? IDGen= ID
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:607:6: (TK_0= 'DEFAULT' )? TK_1= 'COLLATE' (TK_2= '=' )? IDGen= ID
                     {
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:607:6: (TK_0= 'DEFAULT' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:607:6: (TK_0= 'DEFAULT' )?
                     int alt12=2;
                     int LA12_0 = input.LA(1);
 
@@ -1528,7 +1528,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt12) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:607:7: TK_0= 'DEFAULT'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:607:7: TK_0= 'DEFAULT'
                             {
                             TK_0=(Token)input.LT(1);
                             match(input,33,FOLLOW_33_in_create_specification467); if (failed) return retval;
@@ -1540,7 +1540,7 @@ public class DDLMySQLParser extends Parser {
 
                     TK_1=(Token)input.LT(1);
                     match(input,35,FOLLOW_35_in_create_specification473); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:607:39: (TK_2= '=' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:607:39: (TK_2= '=' )?
                     int alt13=2;
                     int LA13_0 = input.LA(1);
 
@@ -1549,7 +1549,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt13) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:607:40: TK_2= '='
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:607:40: TK_2= '='
                             {
                             TK_2=(Token)input.LT(1);
                             match(input,22,FOLLOW_22_in_create_specification478); if (failed) return retval;
@@ -1562,7 +1562,7 @@ public class DDLMySQLParser extends Parser {
                     IDGen=(Token)input.LT(1);
                     match(input,ID,FOLLOW_ID_in_create_specification484); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node create_specificationReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		create_specificationReturnNode.setKind("create_specification");
@@ -1632,7 +1632,7 @@ public class DDLMySQLParser extends Parser {
     };
 
     // $ANTLR start create_table
-    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:653:1: create_table returns [Node returnNode] : TK_0= 'CREATE' (TK_1= 'TEMPORARY' )? TK_2= 'TABLE' (TK_3= 'IF' TK_4= 'NOT' TK_5= 'EXISTS' )? OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE TK_6= '(' create_definitionGen+= create_definition (TK_7= ',' create_definitionGen_1+= create_definition )* TK_8= ')' (table_optionsGen+= table_options )* TK_9= ';' ;
+    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:653:1: create_table returns [Node returnNode] : TK_0= 'CREATE' (TK_1= 'TEMPORARY' )? TK_2= 'TABLE' (TK_3= 'IF' TK_4= 'NOT' TK_5= 'EXISTS' )? OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE TK_6= '(' create_definitionGen+= create_definition (TK_7= ',' create_definitionGen_1+= create_definition )* TK_8= ')' (table_optionsGen+= table_options )* TK_9= ';' ;
     public final create_table_return create_table() throws RecognitionException {
         create_table_return retval = new create_table_return();
         retval.start = input.LT(1);
@@ -1657,12 +1657,12 @@ public class DDLMySQLParser extends Parser {
         RuleReturnScope create_definitionGen_1 = null;
         RuleReturnScope table_optionsGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:654:1: (TK_0= 'CREATE' (TK_1= 'TEMPORARY' )? TK_2= 'TABLE' (TK_3= 'IF' TK_4= 'NOT' TK_5= 'EXISTS' )? OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE TK_6= '(' create_definitionGen+= create_definition (TK_7= ',' create_definitionGen_1+= create_definition )* TK_8= ')' (table_optionsGen+= table_options )* TK_9= ';' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:654:3: TK_0= 'CREATE' (TK_1= 'TEMPORARY' )? TK_2= 'TABLE' (TK_3= 'IF' TK_4= 'NOT' TK_5= 'EXISTS' )? OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE TK_6= '(' create_definitionGen+= create_definition (TK_7= ',' create_definitionGen_1+= create_definition )* TK_8= ')' (table_optionsGen+= table_options )* TK_9= ';'
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:654:1: (TK_0= 'CREATE' (TK_1= 'TEMPORARY' )? TK_2= 'TABLE' (TK_3= 'IF' TK_4= 'NOT' TK_5= 'EXISTS' )? OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE TK_6= '(' create_definitionGen+= create_definition (TK_7= ',' create_definitionGen_1+= create_definition )* TK_8= ')' (table_optionsGen+= table_options )* TK_9= ';' )
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:654:3: TK_0= 'CREATE' (TK_1= 'TEMPORARY' )? TK_2= 'TABLE' (TK_3= 'IF' TK_4= 'NOT' TK_5= 'EXISTS' )? OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE TK_6= '(' create_definitionGen+= create_definition (TK_7= ',' create_definitionGen_1+= create_definition )* TK_8= ')' (table_optionsGen+= table_options )* TK_9= ';'
             {
             TK_0=(Token)input.LT(1);
             match(input,27,FOLLOW_27_in_create_table507); if (failed) return retval;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:654:17: (TK_1= 'TEMPORARY' )?
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:654:17: (TK_1= 'TEMPORARY' )?
             int alt15=2;
             int LA15_0 = input.LA(1);
 
@@ -1671,7 +1671,7 @@ public class DDLMySQLParser extends Parser {
             }
             switch (alt15) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:654:18: TK_1= 'TEMPORARY'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:654:18: TK_1= 'TEMPORARY'
                     {
                     TK_1=(Token)input.LT(1);
                     match(input,36,FOLLOW_36_in_create_table512); if (failed) return retval;
@@ -1683,7 +1683,7 @@ public class DDLMySQLParser extends Parser {
 
             TK_2=(Token)input.LT(1);
             match(input,37,FOLLOW_37_in_create_table518); if (failed) return retval;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:654:50: (TK_3= 'IF' TK_4= 'NOT' TK_5= 'EXISTS' )?
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:654:50: (TK_3= 'IF' TK_4= 'NOT' TK_5= 'EXISTS' )?
             int alt16=2;
             int LA16_0 = input.LA(1);
 
@@ -1692,7 +1692,7 @@ public class DDLMySQLParser extends Parser {
             }
             switch (alt16) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:654:51: TK_3= 'IF' TK_4= 'NOT' TK_5= 'EXISTS'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:654:51: TK_3= 'IF' TK_4= 'NOT' TK_5= 'EXISTS'
                     {
                     TK_3=(Token)input.LT(1);
                     match(input,30,FOLLOW_30_in_create_table523); if (failed) return retval;
@@ -1721,7 +1721,7 @@ public class DDLMySQLParser extends Parser {
             if (list_create_definitionGen==null) list_create_definitionGen=new ArrayList();
             list_create_definitionGen.add(create_definitionGen);
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:656:44: (TK_7= ',' create_definitionGen_1+= create_definition )*
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:656:44: (TK_7= ',' create_definitionGen_1+= create_definition )*
             loop17:
             do {
                 int alt17=2;
@@ -1734,7 +1734,7 @@ public class DDLMySQLParser extends Parser {
 
                 switch (alt17) {
             	case 1 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:656:45: TK_7= ',' create_definitionGen_1+= create_definition
+            	    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:656:45: TK_7= ',' create_definitionGen_1+= create_definition
             	    {
             	    TK_7=(Token)input.LT(1);
             	    match(input,20,FOLLOW_20_in_create_table564); if (failed) return retval;
@@ -1756,7 +1756,7 @@ public class DDLMySQLParser extends Parser {
 
             TK_8=(Token)input.LT(1);
             match(input,39,FOLLOW_39_in_create_table577); if (failed) return retval;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:657:12: (table_optionsGen+= table_options )*
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:657:12: (table_optionsGen+= table_options )*
             loop18:
             do {
                 int alt18=2;
@@ -1769,7 +1769,7 @@ public class DDLMySQLParser extends Parser {
 
                 switch (alt18) {
             	case 1 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:657:13: table_optionsGen+= table_options
+            	    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:657:13: table_optionsGen+= table_options
             	    {
             	    pushFollow(FOLLOW_table_options_in_create_table582);
             	    table_optionsGen=table_options();
@@ -1790,7 +1790,7 @@ public class DDLMySQLParser extends Parser {
             TK_9=(Token)input.LT(1);
             match(input,21,FOLLOW_21_in_create_table588); if (failed) return retval;
             if ( backtracking==0 ) {
-              
+
               		// Create return CST Node
               		Node create_tableReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
               		create_tableReturnNode.setKind("create_table");
@@ -1894,7 +1894,7 @@ public class DDLMySQLParser extends Parser {
               	            } 
               	        }
               	    }
-              	
+
               		// Create a special CST Node for terminal create_definitionGen_1 aggregation
               		if(list_create_definitionGen_1 != null) {
               	    for(int pos = 0; pos < list_create_definitionGen_1.size(); pos++ )  { 
@@ -1917,7 +1917,7 @@ public class DDLMySQLParser extends Parser {
               		}
               		}
               		}
-              	
+
               	    // Create a Token CST Leaf	
               	    if(TK_8 != null) {
               			Leaf TK_8Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
@@ -1974,7 +1974,7 @@ public class DDLMySQLParser extends Parser {
     };
 
     // $ANTLR start create_definition
-    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:819:1: create_definition returns [Node returnNode] : (col_nameGen+= col_name column_definitionGen+= column_definition | (TK_0= 'UNIQUE' | TK_1= 'PRIMARY' | TK_2= 'FULLTEXT' )? (TK_3= 'INDEX' | TK_4= 'KEY' ) (OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE )? (index_typeGen+= index_type )? (TK_5= '(' index_col_nameGen+= index_col_name (TK_6= ',' index_col_nameGen_1+= index_col_name )* TK_7= ')' )? (index_optionGen+= index_option )? );
+    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:819:1: create_definition returns [Node returnNode] : (col_nameGen+= col_name column_definitionGen+= column_definition | (TK_0= 'UNIQUE' | TK_1= 'PRIMARY' | TK_2= 'FULLTEXT' )? (TK_3= 'INDEX' | TK_4= 'KEY' ) (OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE )? (index_typeGen+= index_type )? (TK_5= '(' index_col_nameGen+= index_col_name (TK_6= ',' index_col_nameGen_1+= index_col_name )* TK_7= ')' )? (index_optionGen+= index_option )? );
     public final create_definition_return create_definition() throws RecognitionException {
         create_definition_return retval = new create_definition_return();
         retval.start = input.LT(1);
@@ -2003,7 +2003,7 @@ public class DDLMySQLParser extends Parser {
         RuleReturnScope index_col_nameGen_1 = null;
         RuleReturnScope index_optionGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:820:1: (col_nameGen+= col_name column_definitionGen+= column_definition | (TK_0= 'UNIQUE' | TK_1= 'PRIMARY' | TK_2= 'FULLTEXT' )? (TK_3= 'INDEX' | TK_4= 'KEY' ) (OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE )? (index_typeGen+= index_type )? (TK_5= '(' index_col_nameGen+= index_col_name (TK_6= ',' index_col_nameGen_1+= index_col_name )* TK_7= ')' )? (index_optionGen+= index_option )? )
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:820:1: (col_nameGen+= col_name column_definitionGen+= column_definition | (TK_0= 'UNIQUE' | TK_1= 'PRIMARY' | TK_2= 'FULLTEXT' )? (TK_3= 'INDEX' | TK_4= 'KEY' ) (OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE )? (index_typeGen+= index_type )? (TK_5= '(' index_col_nameGen+= index_col_name (TK_6= ',' index_col_nameGen_1+= index_col_name )* TK_7= ')' )? (index_optionGen+= index_option )? )
             int alt26=2;
             int LA26_0 = input.LA(1);
 
@@ -2022,7 +2022,7 @@ public class DDLMySQLParser extends Parser {
             }
             switch (alt26) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:820:4: col_nameGen+= col_name column_definitionGen+= column_definition
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:820:4: col_nameGen+= col_name column_definitionGen+= column_definition
                     {
                     pushFollow(FOLLOW_col_name_in_create_definition610);
                     col_nameGen=col_name();
@@ -2039,7 +2039,7 @@ public class DDLMySQLParser extends Parser {
                     list_column_definitionGen.add(column_definitionGen);
 
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node create_definitionReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		create_definitionReturnNode.setKind("create_definition");
@@ -2071,9 +2071,9 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:848:5: (TK_0= 'UNIQUE' | TK_1= 'PRIMARY' | TK_2= 'FULLTEXT' )? (TK_3= 'INDEX' | TK_4= 'KEY' ) (OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE )? (index_typeGen+= index_type )? (TK_5= '(' index_col_nameGen+= index_col_name (TK_6= ',' index_col_nameGen_1+= index_col_name )* TK_7= ')' )? (index_optionGen+= index_option )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:848:5: (TK_0= 'UNIQUE' | TK_1= 'PRIMARY' | TK_2= 'FULLTEXT' )? (TK_3= 'INDEX' | TK_4= 'KEY' ) (OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE )? (index_typeGen+= index_type )? (TK_5= '(' index_col_nameGen+= index_col_name (TK_6= ',' index_col_nameGen_1+= index_col_name )* TK_7= ')' )? (index_optionGen+= index_option )?
                     {
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:848:5: (TK_0= 'UNIQUE' | TK_1= 'PRIMARY' | TK_2= 'FULLTEXT' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:848:5: (TK_0= 'UNIQUE' | TK_1= 'PRIMARY' | TK_2= 'FULLTEXT' )?
                     int alt19=4;
                     switch ( input.LA(1) ) {
                         case 40:
@@ -2095,7 +2095,7 @@ public class DDLMySQLParser extends Parser {
 
                     switch (alt19) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:848:6: TK_0= 'UNIQUE'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:848:6: TK_0= 'UNIQUE'
                             {
                             TK_0=(Token)input.LT(1);
                             match(input,40,FOLLOW_40_in_create_definition627); if (failed) return retval;
@@ -2103,7 +2103,7 @@ public class DDLMySQLParser extends Parser {
                             }
                             break;
                         case 2 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:848:22: TK_1= 'PRIMARY'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:848:22: TK_1= 'PRIMARY'
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,41,FOLLOW_41_in_create_definition633); if (failed) return retval;
@@ -2111,7 +2111,7 @@ public class DDLMySQLParser extends Parser {
                             }
                             break;
                         case 3 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:848:39: TK_2= 'FULLTEXT'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:848:39: TK_2= 'FULLTEXT'
                             {
                             TK_2=(Token)input.LT(1);
                             match(input,42,FOLLOW_42_in_create_definition639); if (failed) return retval;
@@ -2121,7 +2121,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:848:57: (TK_3= 'INDEX' | TK_4= 'KEY' )
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:848:57: (TK_3= 'INDEX' | TK_4= 'KEY' )
                     int alt20=2;
                     int LA20_0 = input.LA(1);
 
@@ -2140,7 +2140,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt20) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:848:58: TK_3= 'INDEX'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:848:58: TK_3= 'INDEX'
                             {
                             TK_3=(Token)input.LT(1);
                             match(input,43,FOLLOW_43_in_create_definition646); if (failed) return retval;
@@ -2148,7 +2148,7 @@ public class DDLMySQLParser extends Parser {
                             }
                             break;
                         case 2 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:848:73: TK_4= 'KEY'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:848:73: TK_4= 'KEY'
                             {
                             TK_4=(Token)input.LT(1);
                             match(input,44,FOLLOW_44_in_create_definition652); if (failed) return retval;
@@ -2158,7 +2158,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:848:85: (OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:848:85: (OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE )?
                     int alt21=2;
                     int LA21_0 = input.LA(1);
 
@@ -2167,7 +2167,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt21) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:848:86: OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:848:86: OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE
                             {
                             OQUOTEGen=(Token)input.LT(1);
                             match(input,OQUOTE,FOLLOW_OQUOTE_in_create_definition658); if (failed) return retval;
@@ -2181,7 +2181,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:848:133: (index_typeGen+= index_type )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:848:133: (index_typeGen+= index_type )?
                     int alt22=2;
                     int LA22_0 = input.LA(1);
 
@@ -2219,7 +2219,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt22) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:848:134: index_typeGen+= index_type
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:848:134: index_typeGen+= index_type
                             {
                             pushFollow(FOLLOW_index_type_in_create_definition673);
                             index_typeGen=index_type();
@@ -2234,7 +2234,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:849:3: (TK_5= '(' index_col_nameGen+= index_col_name (TK_6= ',' index_col_nameGen_1+= index_col_name )* TK_7= ')' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:849:3: (TK_5= '(' index_col_nameGen+= index_col_name (TK_6= ',' index_col_nameGen_1+= index_col_name )* TK_7= ')' )?
                     int alt24=2;
                     int LA24_0 = input.LA(1);
 
@@ -2243,7 +2243,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt24) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:849:4: TK_5= '(' index_col_nameGen+= index_col_name (TK_6= ',' index_col_nameGen_1+= index_col_name )* TK_7= ')'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:849:4: TK_5= '(' index_col_nameGen+= index_col_name (TK_6= ',' index_col_nameGen_1+= index_col_name )* TK_7= ')'
                             {
                             TK_5=(Token)input.LT(1);
                             match(input,38,FOLLOW_38_in_create_definition683); if (failed) return retval;
@@ -2254,7 +2254,7 @@ public class DDLMySQLParser extends Parser {
                             if (list_index_col_nameGen==null) list_index_col_nameGen=new ArrayList();
                             list_index_col_nameGen.add(index_col_nameGen);
 
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:849:47: (TK_6= ',' index_col_nameGen_1+= index_col_name )*
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:849:47: (TK_6= ',' index_col_nameGen_1+= index_col_name )*
                             loop23:
                             do {
                                 int alt23=2;
@@ -2267,7 +2267,7 @@ public class DDLMySQLParser extends Parser {
 
                                 switch (alt23) {
                             	case 1 :
-                            	    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:849:48: TK_6= ',' index_col_nameGen_1+= index_col_name
+                            	    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:849:48: TK_6= ',' index_col_nameGen_1+= index_col_name
                             	    {
                             	    TK_6=(Token)input.LT(1);
                             	    match(input,20,FOLLOW_20_in_create_definition692); if (failed) return retval;
@@ -2295,7 +2295,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:849:106: (index_optionGen+= index_option )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:849:106: (index_optionGen+= index_option )?
                     int alt25=2;
                     int LA25_0 = input.LA(1);
 
@@ -2304,7 +2304,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt25) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:849:107: index_optionGen+= index_option
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:849:107: index_optionGen+= index_option
                             {
                             pushFollow(FOLLOW_index_option_in_create_definition709);
                             index_optionGen=index_option();
@@ -2320,7 +2320,7 @@ public class DDLMySQLParser extends Parser {
                     }
 
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node create_definitionReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		create_definitionReturnNode.setKind("create_definition");
@@ -2425,7 +2425,7 @@ public class DDLMySQLParser extends Parser {
                       	            } 
                       	        }
                       	    }
-                      	
+
                       		// Create a special CST Node for terminal index_col_nameGen_1 aggregation
                       		if(list_index_col_nameGen_1 != null) {
                       	    for(int pos = 0; pos < list_index_col_nameGen_1.size(); pos++ )  { 
@@ -2448,7 +2448,7 @@ public class DDLMySQLParser extends Parser {
                       		}
                       		}
                       		}
-                      	
+
                       	    // Create a Token CST Leaf	
                       	    if(TK_7 != null) {
                       			Leaf TK_7Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
@@ -2498,7 +2498,7 @@ public class DDLMySQLParser extends Parser {
     };
 
     // $ANTLR start column_definition
-    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1003:1: column_definition returns [Node returnNode] : data_typeGen+= data_type (TK_0= 'NOT' )? (TK_1= 'NULL' )? (TK_2= 'DEFAULT' (IDGen= ID | QVALUEGen= QVALUE | TK_3= 'NULL' ) )? (TK_4= 'ON' (TK_5= 'UPDATE' | TK_6= 'DELETE' ) IDGen_1= ID )? (TK_7= 'AUTO_INCREMENT' )? ( (TK_8= 'UNIQUE' | TK_9= 'PRIMARY' ) TK_10= 'KEY' )? (TK_11= 'COMMENT' IDGen_2= ID )? (TK_12= 'COLUMN_FORMAT' (TK_13= 'FIXED' | TK_14= 'DYNAMIC' | TK_15= 'DEFAULT' ) )? (TK_16= 'STORAGE' (TK_17= 'DISK' | TK_18= 'DEFAULT' ) )? (reference_definitionGen+= reference_definition )? ;
+    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1003:1: column_definition returns [Node returnNode] : data_typeGen+= data_type (TK_0= 'NOT' )? (TK_1= 'NULL' )? (TK_2= 'DEFAULT' (IDGen= ID | QVALUEGen= QVALUE | TK_3= 'NULL' ) )? (TK_4= 'ON' (TK_5= 'UPDATE' | TK_6= 'DELETE' ) IDGen_1= ID )? (TK_7= 'AUTO_INCREMENT' )? ( (TK_8= 'UNIQUE' | TK_9= 'PRIMARY' ) TK_10= 'KEY' )? (TK_11= 'COMMENT' IDGen_2= ID )? (TK_12= 'COLUMN_FORMAT' (TK_13= 'FIXED' | TK_14= 'DYNAMIC' | TK_15= 'DEFAULT' ) )? (TK_16= 'STORAGE' (TK_17= 'DISK' | TK_18= 'DEFAULT' ) )? (reference_definitionGen+= reference_definition )? ;
     public final column_definition_return column_definition() throws RecognitionException {
         column_definition_return retval = new column_definition_return();
         retval.start = input.LT(1);
@@ -2531,8 +2531,8 @@ public class DDLMySQLParser extends Parser {
         RuleReturnScope data_typeGen = null;
         RuleReturnScope reference_definitionGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1004:1: (data_typeGen+= data_type (TK_0= 'NOT' )? (TK_1= 'NULL' )? (TK_2= 'DEFAULT' (IDGen= ID | QVALUEGen= QVALUE | TK_3= 'NULL' ) )? (TK_4= 'ON' (TK_5= 'UPDATE' | TK_6= 'DELETE' ) IDGen_1= ID )? (TK_7= 'AUTO_INCREMENT' )? ( (TK_8= 'UNIQUE' | TK_9= 'PRIMARY' ) TK_10= 'KEY' )? (TK_11= 'COMMENT' IDGen_2= ID )? (TK_12= 'COLUMN_FORMAT' (TK_13= 'FIXED' | TK_14= 'DYNAMIC' | TK_15= 'DEFAULT' ) )? (TK_16= 'STORAGE' (TK_17= 'DISK' | TK_18= 'DEFAULT' ) )? (reference_definitionGen+= reference_definition )? )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1004:4: data_typeGen+= data_type (TK_0= 'NOT' )? (TK_1= 'NULL' )? (TK_2= 'DEFAULT' (IDGen= ID | QVALUEGen= QVALUE | TK_3= 'NULL' ) )? (TK_4= 'ON' (TK_5= 'UPDATE' | TK_6= 'DELETE' ) IDGen_1= ID )? (TK_7= 'AUTO_INCREMENT' )? ( (TK_8= 'UNIQUE' | TK_9= 'PRIMARY' ) TK_10= 'KEY' )? (TK_11= 'COMMENT' IDGen_2= ID )? (TK_12= 'COLUMN_FORMAT' (TK_13= 'FIXED' | TK_14= 'DYNAMIC' | TK_15= 'DEFAULT' ) )? (TK_16= 'STORAGE' (TK_17= 'DISK' | TK_18= 'DEFAULT' ) )? (reference_definitionGen+= reference_definition )?
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1004:1: (data_typeGen+= data_type (TK_0= 'NOT' )? (TK_1= 'NULL' )? (TK_2= 'DEFAULT' (IDGen= ID | QVALUEGen= QVALUE | TK_3= 'NULL' ) )? (TK_4= 'ON' (TK_5= 'UPDATE' | TK_6= 'DELETE' ) IDGen_1= ID )? (TK_7= 'AUTO_INCREMENT' )? ( (TK_8= 'UNIQUE' | TK_9= 'PRIMARY' ) TK_10= 'KEY' )? (TK_11= 'COMMENT' IDGen_2= ID )? (TK_12= 'COLUMN_FORMAT' (TK_13= 'FIXED' | TK_14= 'DYNAMIC' | TK_15= 'DEFAULT' ) )? (TK_16= 'STORAGE' (TK_17= 'DISK' | TK_18= 'DEFAULT' ) )? (reference_definitionGen+= reference_definition )? )
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1004:4: data_typeGen+= data_type (TK_0= 'NOT' )? (TK_1= 'NULL' )? (TK_2= 'DEFAULT' (IDGen= ID | QVALUEGen= QVALUE | TK_3= 'NULL' ) )? (TK_4= 'ON' (TK_5= 'UPDATE' | TK_6= 'DELETE' ) IDGen_1= ID )? (TK_7= 'AUTO_INCREMENT' )? ( (TK_8= 'UNIQUE' | TK_9= 'PRIMARY' ) TK_10= 'KEY' )? (TK_11= 'COMMENT' IDGen_2= ID )? (TK_12= 'COLUMN_FORMAT' (TK_13= 'FIXED' | TK_14= 'DYNAMIC' | TK_15= 'DEFAULT' ) )? (TK_16= 'STORAGE' (TK_17= 'DISK' | TK_18= 'DEFAULT' ) )? (reference_definitionGen+= reference_definition )?
             {
             pushFollow(FOLLOW_data_type_in_column_definition735);
             data_typeGen=data_type();
@@ -2541,7 +2541,7 @@ public class DDLMySQLParser extends Parser {
             if (list_data_typeGen==null) list_data_typeGen=new ArrayList();
             list_data_typeGen.add(data_typeGen);
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1004:28: (TK_0= 'NOT' )?
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1004:28: (TK_0= 'NOT' )?
             int alt27=2;
             int LA27_0 = input.LA(1);
 
@@ -2550,7 +2550,7 @@ public class DDLMySQLParser extends Parser {
             }
             switch (alt27) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1004:29: TK_0= 'NOT'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1004:29: TK_0= 'NOT'
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,31,FOLLOW_31_in_column_definition740); if (failed) return retval;
@@ -2560,7 +2560,7 @@ public class DDLMySQLParser extends Parser {
 
             }
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1004:42: (TK_1= 'NULL' )?
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1004:42: (TK_1= 'NULL' )?
             int alt28=2;
             int LA28_0 = input.LA(1);
 
@@ -2569,7 +2569,7 @@ public class DDLMySQLParser extends Parser {
             }
             switch (alt28) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1004:43: TK_1= 'NULL'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1004:43: TK_1= 'NULL'
                     {
                     TK_1=(Token)input.LT(1);
                     match(input,45,FOLLOW_45_in_column_definition747); if (failed) return retval;
@@ -2579,7 +2579,7 @@ public class DDLMySQLParser extends Parser {
 
             }
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1004:57: (TK_2= 'DEFAULT' (IDGen= ID | QVALUEGen= QVALUE | TK_3= 'NULL' ) )?
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1004:57: (TK_2= 'DEFAULT' (IDGen= ID | QVALUEGen= QVALUE | TK_3= 'NULL' ) )?
             int alt30=2;
             int LA30_0 = input.LA(1);
 
@@ -2588,11 +2588,11 @@ public class DDLMySQLParser extends Parser {
             }
             switch (alt30) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1004:58: TK_2= 'DEFAULT' (IDGen= ID | QVALUEGen= QVALUE | TK_3= 'NULL' )
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1004:58: TK_2= 'DEFAULT' (IDGen= ID | QVALUEGen= QVALUE | TK_3= 'NULL' )
                     {
                     TK_2=(Token)input.LT(1);
                     match(input,33,FOLLOW_33_in_column_definition754); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1004:73: (IDGen= ID | QVALUEGen= QVALUE | TK_3= 'NULL' )
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1004:73: (IDGen= ID | QVALUEGen= QVALUE | TK_3= 'NULL' )
                     int alt29=3;
                     switch ( input.LA(1) ) {
                     case ID:
@@ -2620,7 +2620,7 @@ public class DDLMySQLParser extends Parser {
 
                     switch (alt29) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1004:74: IDGen= ID
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1004:74: IDGen= ID
                             {
                             IDGen=(Token)input.LT(1);
                             match(input,ID,FOLLOW_ID_in_column_definition759); if (failed) return retval;
@@ -2628,7 +2628,7 @@ public class DDLMySQLParser extends Parser {
                             }
                             break;
                         case 2 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1004:85: QVALUEGen= QVALUE
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1004:85: QVALUEGen= QVALUE
                             {
                             QVALUEGen=(Token)input.LT(1);
                             match(input,QVALUE,FOLLOW_QVALUE_in_column_definition765); if (failed) return retval;
@@ -2636,7 +2636,7 @@ public class DDLMySQLParser extends Parser {
                             }
                             break;
                         case 3 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1004:104: TK_3= 'NULL'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1004:104: TK_3= 'NULL'
                             {
                             TK_3=(Token)input.LT(1);
                             match(input,45,FOLLOW_45_in_column_definition771); if (failed) return retval;
@@ -2652,7 +2652,7 @@ public class DDLMySQLParser extends Parser {
 
             }
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1004:119: (TK_4= 'ON' (TK_5= 'UPDATE' | TK_6= 'DELETE' ) IDGen_1= ID )?
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1004:119: (TK_4= 'ON' (TK_5= 'UPDATE' | TK_6= 'DELETE' ) IDGen_1= ID )?
             int alt32=2;
             int LA32_0 = input.LA(1);
 
@@ -2661,11 +2661,11 @@ public class DDLMySQLParser extends Parser {
             }
             switch (alt32) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1004:120: TK_4= 'ON' (TK_5= 'UPDATE' | TK_6= 'DELETE' ) IDGen_1= ID
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1004:120: TK_4= 'ON' (TK_5= 'UPDATE' | TK_6= 'DELETE' ) IDGen_1= ID
                     {
                     TK_4=(Token)input.LT(1);
                     match(input,46,FOLLOW_46_in_column_definition779); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1004:130: (TK_5= 'UPDATE' | TK_6= 'DELETE' )
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1004:130: (TK_5= 'UPDATE' | TK_6= 'DELETE' )
                     int alt31=2;
                     int LA31_0 = input.LA(1);
 
@@ -2684,7 +2684,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt31) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1004:131: TK_5= 'UPDATE'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1004:131: TK_5= 'UPDATE'
                             {
                             TK_5=(Token)input.LT(1);
                             match(input,47,FOLLOW_47_in_column_definition784); if (failed) return retval;
@@ -2692,7 +2692,7 @@ public class DDLMySQLParser extends Parser {
                             }
                             break;
                         case 2 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1004:147: TK_6= 'DELETE'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1004:147: TK_6= 'DELETE'
                             {
                             TK_6=(Token)input.LT(1);
                             match(input,48,FOLLOW_48_in_column_definition790); if (failed) return retval;
@@ -2710,7 +2710,7 @@ public class DDLMySQLParser extends Parser {
 
             }
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1005:8: (TK_7= 'AUTO_INCREMENT' )?
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1005:8: (TK_7= 'AUTO_INCREMENT' )?
             int alt33=2;
             int LA33_0 = input.LA(1);
 
@@ -2719,7 +2719,7 @@ public class DDLMySQLParser extends Parser {
             }
             switch (alt33) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1005:9: TK_7= 'AUTO_INCREMENT'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1005:9: TK_7= 'AUTO_INCREMENT'
                     {
                     TK_7=(Token)input.LT(1);
                     match(input,49,FOLLOW_49_in_column_definition809); if (failed) return retval;
@@ -2729,7 +2729,7 @@ public class DDLMySQLParser extends Parser {
 
             }
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1005:33: ( (TK_8= 'UNIQUE' | TK_9= 'PRIMARY' ) TK_10= 'KEY' )?
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1005:33: ( (TK_8= 'UNIQUE' | TK_9= 'PRIMARY' ) TK_10= 'KEY' )?
             int alt35=2;
             int LA35_0 = input.LA(1);
 
@@ -2738,9 +2738,9 @@ public class DDLMySQLParser extends Parser {
             }
             switch (alt35) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1005:34: (TK_8= 'UNIQUE' | TK_9= 'PRIMARY' ) TK_10= 'KEY'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1005:34: (TK_8= 'UNIQUE' | TK_9= 'PRIMARY' ) TK_10= 'KEY'
                     {
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1005:34: (TK_8= 'UNIQUE' | TK_9= 'PRIMARY' )
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1005:34: (TK_8= 'UNIQUE' | TK_9= 'PRIMARY' )
                     int alt34=2;
                     int LA34_0 = input.LA(1);
 
@@ -2759,7 +2759,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt34) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1005:35: TK_8= 'UNIQUE'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1005:35: TK_8= 'UNIQUE'
                             {
                             TK_8=(Token)input.LT(1);
                             match(input,40,FOLLOW_40_in_column_definition817); if (failed) return retval;
@@ -2767,7 +2767,7 @@ public class DDLMySQLParser extends Parser {
                             }
                             break;
                         case 2 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1005:51: TK_9= 'PRIMARY'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1005:51: TK_9= 'PRIMARY'
                             {
                             TK_9=(Token)input.LT(1);
                             match(input,41,FOLLOW_41_in_column_definition823); if (failed) return retval;
@@ -2785,7 +2785,7 @@ public class DDLMySQLParser extends Parser {
 
             }
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1006:8: (TK_11= 'COMMENT' IDGen_2= ID )?
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1006:8: (TK_11= 'COMMENT' IDGen_2= ID )?
             int alt36=2;
             int LA36_0 = input.LA(1);
 
@@ -2794,7 +2794,7 @@ public class DDLMySQLParser extends Parser {
             }
             switch (alt36) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1006:9: TK_11= 'COMMENT' IDGen_2= ID
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1006:9: TK_11= 'COMMENT' IDGen_2= ID
                     {
                     TK_11=(Token)input.LT(1);
                     match(input,50,FOLLOW_50_in_column_definition842); if (failed) return retval;
@@ -2806,7 +2806,7 @@ public class DDLMySQLParser extends Parser {
 
             }
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1007:8: (TK_12= 'COLUMN_FORMAT' (TK_13= 'FIXED' | TK_14= 'DYNAMIC' | TK_15= 'DEFAULT' ) )?
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1007:8: (TK_12= 'COLUMN_FORMAT' (TK_13= 'FIXED' | TK_14= 'DYNAMIC' | TK_15= 'DEFAULT' ) )?
             int alt38=2;
             int LA38_0 = input.LA(1);
 
@@ -2815,11 +2815,11 @@ public class DDLMySQLParser extends Parser {
             }
             switch (alt38) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1007:9: TK_12= 'COLUMN_FORMAT' (TK_13= 'FIXED' | TK_14= 'DYNAMIC' | TK_15= 'DEFAULT' )
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1007:9: TK_12= 'COLUMN_FORMAT' (TK_13= 'FIXED' | TK_14= 'DYNAMIC' | TK_15= 'DEFAULT' )
                     {
                     TK_12=(Token)input.LT(1);
                     match(input,51,FOLLOW_51_in_column_definition860); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1007:31: (TK_13= 'FIXED' | TK_14= 'DYNAMIC' | TK_15= 'DEFAULT' )
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1007:31: (TK_13= 'FIXED' | TK_14= 'DYNAMIC' | TK_15= 'DEFAULT' )
                     int alt37=3;
                     switch ( input.LA(1) ) {
                     case 52:
@@ -2847,7 +2847,7 @@ public class DDLMySQLParser extends Parser {
 
                     switch (alt37) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1007:32: TK_13= 'FIXED'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1007:32: TK_13= 'FIXED'
                             {
                             TK_13=(Token)input.LT(1);
                             match(input,52,FOLLOW_52_in_column_definition865); if (failed) return retval;
@@ -2855,7 +2855,7 @@ public class DDLMySQLParser extends Parser {
                             }
                             break;
                         case 2 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1007:48: TK_14= 'DYNAMIC'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1007:48: TK_14= 'DYNAMIC'
                             {
                             TK_14=(Token)input.LT(1);
                             match(input,53,FOLLOW_53_in_column_definition871); if (failed) return retval;
@@ -2863,7 +2863,7 @@ public class DDLMySQLParser extends Parser {
                             }
                             break;
                         case 3 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1007:66: TK_15= 'DEFAULT'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1007:66: TK_15= 'DEFAULT'
                             {
                             TK_15=(Token)input.LT(1);
                             match(input,33,FOLLOW_33_in_column_definition877); if (failed) return retval;
@@ -2879,7 +2879,7 @@ public class DDLMySQLParser extends Parser {
 
             }
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1008:8: (TK_16= 'STORAGE' (TK_17= 'DISK' | TK_18= 'DEFAULT' ) )?
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1008:8: (TK_16= 'STORAGE' (TK_17= 'DISK' | TK_18= 'DEFAULT' ) )?
             int alt40=2;
             int LA40_0 = input.LA(1);
 
@@ -2888,11 +2888,11 @@ public class DDLMySQLParser extends Parser {
             }
             switch (alt40) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1008:9: TK_16= 'STORAGE' (TK_17= 'DISK' | TK_18= 'DEFAULT' )
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1008:9: TK_16= 'STORAGE' (TK_17= 'DISK' | TK_18= 'DEFAULT' )
                     {
                     TK_16=(Token)input.LT(1);
                     match(input,54,FOLLOW_54_in_column_definition892); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1008:25: (TK_17= 'DISK' | TK_18= 'DEFAULT' )
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1008:25: (TK_17= 'DISK' | TK_18= 'DEFAULT' )
                     int alt39=2;
                     int LA39_0 = input.LA(1);
 
@@ -2911,7 +2911,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt39) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1008:26: TK_17= 'DISK'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1008:26: TK_17= 'DISK'
                             {
                             TK_17=(Token)input.LT(1);
                             match(input,55,FOLLOW_55_in_column_definition897); if (failed) return retval;
@@ -2919,7 +2919,7 @@ public class DDLMySQLParser extends Parser {
                             }
                             break;
                         case 2 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1008:39: TK_18= 'DEFAULT'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1008:39: TK_18= 'DEFAULT'
                             {
                             TK_18=(Token)input.LT(1);
                             match(input,33,FOLLOW_33_in_column_definition901); if (failed) return retval;
@@ -2935,7 +2935,7 @@ public class DDLMySQLParser extends Parser {
 
             }
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1009:8: (reference_definitionGen+= reference_definition )?
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1009:8: (reference_definitionGen+= reference_definition )?
             int alt41=2;
             int LA41_0 = input.LA(1);
 
@@ -2944,7 +2944,7 @@ public class DDLMySQLParser extends Parser {
             }
             switch (alt41) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1009:9: reference_definitionGen+= reference_definition
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1009:9: reference_definitionGen+= reference_definition
                     {
                     pushFollow(FOLLOW_reference_definition_in_column_definition917);
                     reference_definitionGen=reference_definition();
@@ -2960,7 +2960,7 @@ public class DDLMySQLParser extends Parser {
             }
 
             if ( backtracking==0 ) {
-              
+
               		// Create return CST Node
               		Node column_definitionReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
               		column_definitionReturnNode.setKind("column_definition");
@@ -3219,7 +3219,7 @@ public class DDLMySQLParser extends Parser {
     };
 
     // $ANTLR start index_col_name
-    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1246:1: index_col_name returns [Node returnNode] : col_nameGen+= col_name (TK_0= '(' NUMBERGen= NUMBER TK_1= ')' )? (TK_2= 'ASC' | TK_3= 'DESC' )? ;
+    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1246:1: index_col_name returns [Node returnNode] : col_nameGen+= col_name (TK_0= '(' NUMBERGen= NUMBER TK_1= ')' )? (TK_2= 'ASC' | TK_3= 'DESC' )? ;
     public final index_col_name_return index_col_name() throws RecognitionException {
         index_col_name_return retval = new index_col_name_return();
         retval.start = input.LT(1);
@@ -3232,8 +3232,8 @@ public class DDLMySQLParser extends Parser {
         List list_col_nameGen=null;
         RuleReturnScope col_nameGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1247:1: (col_nameGen+= col_name (TK_0= '(' NUMBERGen= NUMBER TK_1= ')' )? (TK_2= 'ASC' | TK_3= 'DESC' )? )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1247:3: col_nameGen+= col_name (TK_0= '(' NUMBERGen= NUMBER TK_1= ')' )? (TK_2= 'ASC' | TK_3= 'DESC' )?
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1247:1: (col_nameGen+= col_name (TK_0= '(' NUMBERGen= NUMBER TK_1= ')' )? (TK_2= 'ASC' | TK_3= 'DESC' )? )
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1247:3: col_nameGen+= col_name (TK_0= '(' NUMBERGen= NUMBER TK_1= ')' )? (TK_2= 'ASC' | TK_3= 'DESC' )?
             {
             pushFollow(FOLLOW_col_name_in_index_col_name941);
             col_nameGen=col_name();
@@ -3242,7 +3242,7 @@ public class DDLMySQLParser extends Parser {
             if (list_col_nameGen==null) list_col_nameGen=new ArrayList();
             list_col_nameGen.add(col_nameGen);
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1247:25: (TK_0= '(' NUMBERGen= NUMBER TK_1= ')' )?
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1247:25: (TK_0= '(' NUMBERGen= NUMBER TK_1= ')' )?
             int alt42=2;
             int LA42_0 = input.LA(1);
 
@@ -3251,7 +3251,7 @@ public class DDLMySQLParser extends Parser {
             }
             switch (alt42) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1247:26: TK_0= '(' NUMBERGen= NUMBER TK_1= ')'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1247:26: TK_0= '(' NUMBERGen= NUMBER TK_1= ')'
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,38,FOLLOW_38_in_index_col_name946); if (failed) return retval;
@@ -3265,7 +3265,7 @@ public class DDLMySQLParser extends Parser {
 
             }
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1247:63: (TK_2= 'ASC' | TK_3= 'DESC' )?
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1247:63: (TK_2= 'ASC' | TK_3= 'DESC' )?
             int alt43=3;
             int LA43_0 = input.LA(1);
 
@@ -3277,7 +3277,7 @@ public class DDLMySQLParser extends Parser {
             }
             switch (alt43) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1247:64: TK_2= 'ASC'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1247:64: TK_2= 'ASC'
                     {
                     TK_2=(Token)input.LT(1);
                     match(input,56,FOLLOW_56_in_index_col_name961); if (failed) return retval;
@@ -3285,7 +3285,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1247:77: TK_3= 'DESC'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1247:77: TK_3= 'DESC'
                     {
                     TK_3=(Token)input.LT(1);
                     match(input,57,FOLLOW_57_in_index_col_name967); if (failed) return retval;
@@ -3296,7 +3296,7 @@ public class DDLMySQLParser extends Parser {
             }
 
             if ( backtracking==0 ) {
-              
+
               		// Create return CST Node
               		Node index_col_nameReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
               		index_col_nameReturnNode.setKind("index_col_name");
@@ -3383,7 +3383,7 @@ public class DDLMySQLParser extends Parser {
     };
 
     // $ANTLR start index_type
-    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1312:1: index_type returns [Node returnNode] : TK_0= 'USING' (TK_1= 'BTREE' | TK_2= 'HASH' | TK_3= 'RTREE' ) ;
+    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1312:1: index_type returns [Node returnNode] : TK_0= 'USING' (TK_1= 'BTREE' | TK_2= 'HASH' | TK_3= 'RTREE' ) ;
     public final index_type_return index_type() throws RecognitionException {
         index_type_return retval = new index_type_return();
         retval.start = input.LT(1);
@@ -3394,12 +3394,12 @@ public class DDLMySQLParser extends Parser {
         Token TK_3=null;
 
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1313:1: (TK_0= 'USING' (TK_1= 'BTREE' | TK_2= 'HASH' | TK_3= 'RTREE' ) )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1313:3: TK_0= 'USING' (TK_1= 'BTREE' | TK_2= 'HASH' | TK_3= 'RTREE' )
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1313:1: (TK_0= 'USING' (TK_1= 'BTREE' | TK_2= 'HASH' | TK_3= 'RTREE' ) )
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1313:3: TK_0= 'USING' (TK_1= 'BTREE' | TK_2= 'HASH' | TK_3= 'RTREE' )
             {
             TK_0=(Token)input.LT(1);
             match(input,58,FOLLOW_58_in_index_type990); if (failed) return retval;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1313:16: (TK_1= 'BTREE' | TK_2= 'HASH' | TK_3= 'RTREE' )
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1313:16: (TK_1= 'BTREE' | TK_2= 'HASH' | TK_3= 'RTREE' )
             int alt44=3;
             switch ( input.LA(1) ) {
             case 59:
@@ -3427,7 +3427,7 @@ public class DDLMySQLParser extends Parser {
 
             switch (alt44) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1313:17: TK_1= 'BTREE'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1313:17: TK_1= 'BTREE'
                     {
                     TK_1=(Token)input.LT(1);
                     match(input,59,FOLLOW_59_in_index_type995); if (failed) return retval;
@@ -3435,7 +3435,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1313:32: TK_2= 'HASH'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1313:32: TK_2= 'HASH'
                     {
                     TK_2=(Token)input.LT(1);
                     match(input,60,FOLLOW_60_in_index_type1001); if (failed) return retval;
@@ -3443,7 +3443,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1313:46: TK_3= 'RTREE'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1313:46: TK_3= 'RTREE'
                     {
                     TK_3=(Token)input.LT(1);
                     match(input,61,FOLLOW_61_in_index_type1007); if (failed) return retval;
@@ -3454,7 +3454,7 @@ public class DDLMySQLParser extends Parser {
             }
 
             if ( backtracking==0 ) {
-              
+
               		// Create return CST Node
               		Node index_typeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
               		index_typeReturnNode.setKind("index_type");
@@ -3522,7 +3522,7 @@ public class DDLMySQLParser extends Parser {
     };
 
     // $ANTLR start index_option
-    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1359:1: index_option returns [Node returnNode] : (TK_0= 'KEY_BLOCK_SIZE' (TK_1= '=' )? NUMBERGen= NUMBER | index_typeGen+= index_type | TK_0= 'WITH' TK_1= 'PARSER' OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE );
+    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1359:1: index_option returns [Node returnNode] : (TK_0= 'KEY_BLOCK_SIZE' (TK_1= '=' )? NUMBERGen= NUMBER | index_typeGen+= index_type | TK_0= 'WITH' TK_1= 'PARSER' OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE );
     public final index_option_return index_option() throws RecognitionException {
         index_option_return retval = new index_option_return();
         retval.start = input.LT(1);
@@ -3536,7 +3536,7 @@ public class DDLMySQLParser extends Parser {
         List list_index_typeGen=null;
         RuleReturnScope index_typeGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1360:1: (TK_0= 'KEY_BLOCK_SIZE' (TK_1= '=' )? NUMBERGen= NUMBER | index_typeGen+= index_type | TK_0= 'WITH' TK_1= 'PARSER' OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE )
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1360:1: (TK_0= 'KEY_BLOCK_SIZE' (TK_1= '=' )? NUMBERGen= NUMBER | index_typeGen+= index_type | TK_0= 'WITH' TK_1= 'PARSER' OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE )
             int alt46=3;
             switch ( input.LA(1) ) {
             case 62:
@@ -3564,11 +3564,11 @@ public class DDLMySQLParser extends Parser {
 
             switch (alt46) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1360:3: TK_0= 'KEY_BLOCK_SIZE' (TK_1= '=' )? NUMBERGen= NUMBER
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1360:3: TK_0= 'KEY_BLOCK_SIZE' (TK_1= '=' )? NUMBERGen= NUMBER
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,62,FOLLOW_62_in_index_option1030); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1360:25: (TK_1= '=' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1360:25: (TK_1= '=' )?
                     int alt45=2;
                     int LA45_0 = input.LA(1);
 
@@ -3577,7 +3577,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt45) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1360:26: TK_1= '='
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1360:26: TK_1= '='
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,22,FOLLOW_22_in_index_option1035); if (failed) return retval;
@@ -3590,7 +3590,7 @@ public class DDLMySQLParser extends Parser {
                     NUMBERGen=(Token)input.LT(1);
                     match(input,NUMBER,FOLLOW_NUMBER_in_index_option1041); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node index_optionReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		index_optionReturnNode.setKind("index_option");
@@ -3629,7 +3629,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1395:7: index_typeGen+= index_type
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1395:7: index_typeGen+= index_type
                     {
                     pushFollow(FOLLOW_index_type_in_index_option1055);
                     index_typeGen=index_type();
@@ -3639,7 +3639,7 @@ public class DDLMySQLParser extends Parser {
                     list_index_typeGen.add(index_typeGen);
 
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node index_optionReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		index_optionReturnNode.setKind("index_option");
@@ -3661,7 +3661,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1413:7: TK_0= 'WITH' TK_1= 'PARSER' OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1413:7: TK_0= 'WITH' TK_1= 'PARSER' OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,63,FOLLOW_63_in_index_option1069); if (failed) return retval;
@@ -3674,7 +3674,7 @@ public class DDLMySQLParser extends Parser {
                     OQUOTEGen_1=(Token)input.LT(1);
                     match(input,OQUOTE,FOLLOW_OQUOTE_in_index_option1085); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node index_optionReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		index_optionReturnNode.setKind("index_option");
@@ -3753,7 +3753,7 @@ public class DDLMySQLParser extends Parser {
     };
 
     // $ANTLR start data_type
-    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1468:1: data_type returns [Node returnNode] : (TK_0= 'BIT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? | TK_0= 'TINYINT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'SMALLINT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'MEDIUMINT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'INT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'INTEGER' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'BIGINT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'REAL' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'DOUBLE' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'FLOAT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'DECIMAL' (TK_1= '(' NUMBERGen= NUMBER (TK_2= ',' NUMBERGen_1= NUMBER )? TK_3= ')' )? (TK_4= 'UNSIGNED' )? (TK_5= 'ZEROFILL' )? | TK_0= 'NUMERIC' (TK_1= '(' NUMBERGen= NUMBER (TK_2= ',' NUMBERGen_1= NUMBER )? TK_3= ')' )? (TK_4= 'UNSIGNED' )? (TK_5= 'ZEROFILL' )? | TK_0= 'DATE' | TK_0= 'TIME' | TK_0= 'TIMESTAMP' | TK_0= 'DATETIME' | TK_0= 'YEAR' | TK_0= 'CHAR' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'CHARACTER' TK_4= 'SET' IDGen= ID )? (TK_5= 'COLLATE' IDGen_1= ID )? | TK_0= 'VARCHAR' TK_1= '(' NUMBERGen= NUMBER TK_2= ')' (TK_3= 'CHARACTER' TK_4= 'SET' IDGen= ID )? (TK_5= 'COLLATE' IDGen_1= ID )? | TK_0= 'BINARYTYPE' TK_1= '(' NUMBERGen= NUMBER TK_2= ')' | TK_0= 'VARBINARY' TK_1= '(' NUMBERGen= NUMBER TK_2= ')' | TK_0= 'TINYBLOB' | TK_0= 'BLOB' | TK_0= 'MEDIUMBLOB' | TK_0= 'LONGBLOB' | TK_0= 'TINYTEXT' (TK_1= 'BYNARY' )? (TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID )? (TK_4= 'COLLATE' IDGen_1= ID )? | TK_0= 'TEXTVAR' (TK_1= 'BYNARY' )? (TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID )? (TK_4= 'COLLATE' IDGen_1= ID )? | TK_0= 'MEDIUMTEXT' (TK_1= 'BYNARY' )? (TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID )? (TK_4= 'COLLATE' IDGen_1= ID )? | TK_0= 'LONGTEXT' (TK_1= 'BYNARY' )? (TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID )? (TK_4= 'COLLATE' IDGen_1= ID )? | TK_0= 'ENUM' TK_1= '(' QVALUEGen= QVALUE (TK_2= ',' QVALUEGen_1_List+= QVALUE )* TK_3= ')' (TK_4= 'CHARACTER' TK_5= 'SET' IDGen= ID )? (TK_6= 'COLLATE' IDGen_1= ID )? | TK_0= 'SET' TK_1= '(' QVALUEGen= QVALUE (TK_2= ',' QVALUEGen_1_List+= QVALUE )* TK_3= ')' (TK_4= 'CHARACTER' TK_5= 'SET' IDGen= ID )? (TK_6= 'COLLATE' IDGen_1= ID )? );
+    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1468:1: data_type returns [Node returnNode] : (TK_0= 'BIT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? | TK_0= 'TINYINT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'SMALLINT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'MEDIUMINT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'INT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'INTEGER' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'BIGINT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'REAL' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'DOUBLE' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'FLOAT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'DECIMAL' (TK_1= '(' NUMBERGen= NUMBER (TK_2= ',' NUMBERGen_1= NUMBER )? TK_3= ')' )? (TK_4= 'UNSIGNED' )? (TK_5= 'ZEROFILL' )? | TK_0= 'NUMERIC' (TK_1= '(' NUMBERGen= NUMBER (TK_2= ',' NUMBERGen_1= NUMBER )? TK_3= ')' )? (TK_4= 'UNSIGNED' )? (TK_5= 'ZEROFILL' )? | TK_0= 'DATE' | TK_0= 'TIME' | TK_0= 'TIMESTAMP' | TK_0= 'DATETIME' | TK_0= 'YEAR' | TK_0= 'CHAR' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'CHARACTER' TK_4= 'SET' IDGen= ID )? (TK_5= 'COLLATE' IDGen_1= ID )? | TK_0= 'VARCHAR' TK_1= '(' NUMBERGen= NUMBER TK_2= ')' (TK_3= 'CHARACTER' TK_4= 'SET' IDGen= ID )? (TK_5= 'COLLATE' IDGen_1= ID )? | TK_0= 'BINARYTYPE' TK_1= '(' NUMBERGen= NUMBER TK_2= ')' | TK_0= 'VARBINARY' TK_1= '(' NUMBERGen= NUMBER TK_2= ')' | TK_0= 'TINYBLOB' | TK_0= 'BLOB' | TK_0= 'MEDIUMBLOB' | TK_0= 'LONGBLOB' | TK_0= 'TINYTEXT' (TK_1= 'BYNARY' )? (TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID )? (TK_4= 'COLLATE' IDGen_1= ID )? | TK_0= 'TEXTVAR' (TK_1= 'BYNARY' )? (TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID )? (TK_4= 'COLLATE' IDGen_1= ID )? | TK_0= 'MEDIUMTEXT' (TK_1= 'BYNARY' )? (TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID )? (TK_4= 'COLLATE' IDGen_1= ID )? | TK_0= 'LONGTEXT' (TK_1= 'BYNARY' )? (TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID )? (TK_4= 'COLLATE' IDGen_1= ID )? | TK_0= 'ENUM' TK_1= '(' QVALUEGen= QVALUE (TK_2= ',' QVALUEGen_1_List+= QVALUE )* TK_3= ')' (TK_4= 'CHARACTER' TK_5= 'SET' IDGen= ID )? (TK_6= 'COLLATE' IDGen_1= ID )? | TK_0= 'SET' TK_1= '(' QVALUEGen= QVALUE (TK_2= ',' QVALUEGen_1_List+= QVALUE )* TK_3= ')' (TK_4= 'CHARACTER' TK_5= 'SET' IDGen= ID )? (TK_6= 'COLLATE' IDGen_1= ID )? );
     public final data_type_return data_type() throws RecognitionException {
         data_type_return retval = new data_type_return();
         retval.start = input.LT(1);
@@ -3774,7 +3774,7 @@ public class DDLMySQLParser extends Parser {
         List list_QVALUEGen_1_List=null;
 
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1469:1: (TK_0= 'BIT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? | TK_0= 'TINYINT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'SMALLINT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'MEDIUMINT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'INT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'INTEGER' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'BIGINT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'REAL' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'DOUBLE' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'FLOAT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'DECIMAL' (TK_1= '(' NUMBERGen= NUMBER (TK_2= ',' NUMBERGen_1= NUMBER )? TK_3= ')' )? (TK_4= 'UNSIGNED' )? (TK_5= 'ZEROFILL' )? | TK_0= 'NUMERIC' (TK_1= '(' NUMBERGen= NUMBER (TK_2= ',' NUMBERGen_1= NUMBER )? TK_3= ')' )? (TK_4= 'UNSIGNED' )? (TK_5= 'ZEROFILL' )? | TK_0= 'DATE' | TK_0= 'TIME' | TK_0= 'TIMESTAMP' | TK_0= 'DATETIME' | TK_0= 'YEAR' | TK_0= 'CHAR' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'CHARACTER' TK_4= 'SET' IDGen= ID )? (TK_5= 'COLLATE' IDGen_1= ID )? | TK_0= 'VARCHAR' TK_1= '(' NUMBERGen= NUMBER TK_2= ')' (TK_3= 'CHARACTER' TK_4= 'SET' IDGen= ID )? (TK_5= 'COLLATE' IDGen_1= ID )? | TK_0= 'BINARYTYPE' TK_1= '(' NUMBERGen= NUMBER TK_2= ')' | TK_0= 'VARBINARY' TK_1= '(' NUMBERGen= NUMBER TK_2= ')' | TK_0= 'TINYBLOB' | TK_0= 'BLOB' | TK_0= 'MEDIUMBLOB' | TK_0= 'LONGBLOB' | TK_0= 'TINYTEXT' (TK_1= 'BYNARY' )? (TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID )? (TK_4= 'COLLATE' IDGen_1= ID )? | TK_0= 'TEXTVAR' (TK_1= 'BYNARY' )? (TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID )? (TK_4= 'COLLATE' IDGen_1= ID )? | TK_0= 'MEDIUMTEXT' (TK_1= 'BYNARY' )? (TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID )? (TK_4= 'COLLATE' IDGen_1= ID )? | TK_0= 'LONGTEXT' (TK_1= 'BYNARY' )? (TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID )? (TK_4= 'COLLATE' IDGen_1= ID )? | TK_0= 'ENUM' TK_1= '(' QVALUEGen= QVALUE (TK_2= ',' QVALUEGen_1_List+= QVALUE )* TK_3= ')' (TK_4= 'CHARACTER' TK_5= 'SET' IDGen= ID )? (TK_6= 'COLLATE' IDGen_1= ID )? | TK_0= 'SET' TK_1= '(' QVALUEGen= QVALUE (TK_2= ',' QVALUEGen_1_List+= QVALUE )* TK_3= ')' (TK_4= 'CHARACTER' TK_5= 'SET' IDGen= ID )? (TK_6= 'COLLATE' IDGen_1= ID )? )
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1469:1: (TK_0= 'BIT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? | TK_0= 'TINYINT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'SMALLINT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'MEDIUMINT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'INT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'INTEGER' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'BIGINT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'REAL' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'DOUBLE' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'FLOAT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )? | TK_0= 'DECIMAL' (TK_1= '(' NUMBERGen= NUMBER (TK_2= ',' NUMBERGen_1= NUMBER )? TK_3= ')' )? (TK_4= 'UNSIGNED' )? (TK_5= 'ZEROFILL' )? | TK_0= 'NUMERIC' (TK_1= '(' NUMBERGen= NUMBER (TK_2= ',' NUMBERGen_1= NUMBER )? TK_3= ')' )? (TK_4= 'UNSIGNED' )? (TK_5= 'ZEROFILL' )? | TK_0= 'DATE' | TK_0= 'TIME' | TK_0= 'TIMESTAMP' | TK_0= 'DATETIME' | TK_0= 'YEAR' | TK_0= 'CHAR' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'CHARACTER' TK_4= 'SET' IDGen= ID )? (TK_5= 'COLLATE' IDGen_1= ID )? | TK_0= 'VARCHAR' TK_1= '(' NUMBERGen= NUMBER TK_2= ')' (TK_3= 'CHARACTER' TK_4= 'SET' IDGen= ID )? (TK_5= 'COLLATE' IDGen_1= ID )? | TK_0= 'BINARYTYPE' TK_1= '(' NUMBERGen= NUMBER TK_2= ')' | TK_0= 'VARBINARY' TK_1= '(' NUMBERGen= NUMBER TK_2= ')' | TK_0= 'TINYBLOB' | TK_0= 'BLOB' | TK_0= 'MEDIUMBLOB' | TK_0= 'LONGBLOB' | TK_0= 'TINYTEXT' (TK_1= 'BYNARY' )? (TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID )? (TK_4= 'COLLATE' IDGen_1= ID )? | TK_0= 'TEXTVAR' (TK_1= 'BYNARY' )? (TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID )? (TK_4= 'COLLATE' IDGen_1= ID )? | TK_0= 'MEDIUMTEXT' (TK_1= 'BYNARY' )? (TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID )? (TK_4= 'COLLATE' IDGen_1= ID )? | TK_0= 'LONGTEXT' (TK_1= 'BYNARY' )? (TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID )? (TK_4= 'COLLATE' IDGen_1= ID )? | TK_0= 'ENUM' TK_1= '(' QVALUEGen= QVALUE (TK_2= ',' QVALUEGen_1_List+= QVALUE )* TK_3= ')' (TK_4= 'CHARACTER' TK_5= 'SET' IDGen= ID )? (TK_6= 'COLLATE' IDGen_1= ID )? | TK_0= 'SET' TK_1= '(' QVALUEGen= QVALUE (TK_2= ',' QVALUEGen_1_List+= QVALUE )* TK_3= ')' (TK_4= 'CHARACTER' TK_5= 'SET' IDGen= ID )? (TK_6= 'COLLATE' IDGen_1= ID )? )
             int alt106=31;
             switch ( input.LA(1) ) {
             case 65:
@@ -3942,11 +3942,11 @@ public class DDLMySQLParser extends Parser {
 
             switch (alt106) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1469:3: TK_0= 'BIT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1469:3: TK_0= 'BIT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )?
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,65,FOLLOW_65_in_data_type1106); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1469:14: (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1469:14: (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )?
                     int alt47=2;
                     int LA47_0 = input.LA(1);
 
@@ -3955,7 +3955,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt47) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1469:15: TK_1= '(' NUMBERGen= NUMBER TK_2= ')'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1469:15: TK_1= '(' NUMBERGen= NUMBER TK_2= ')'
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,38,FOLLOW_38_in_data_type1111); if (failed) return retval;
@@ -3970,7 +3970,7 @@ public class DDLMySQLParser extends Parser {
                     }
 
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node data_typeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		data_typeReturnNode.setKind("data_type");
@@ -4018,11 +4018,11 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1513:7: TK_0= 'TINYINT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1513:7: TK_0= 'TINYINT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )?
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,66,FOLLOW_66_in_data_type1135); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1513:22: (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1513:22: (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )?
                     int alt48=2;
                     int LA48_0 = input.LA(1);
 
@@ -4031,7 +4031,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt48) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1513:23: TK_1= '(' NUMBERGen= NUMBER TK_2= ')'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1513:23: TK_1= '(' NUMBERGen= NUMBER TK_2= ')'
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,38,FOLLOW_38_in_data_type1140); if (failed) return retval;
@@ -4045,7 +4045,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1513:60: (TK_3= 'UNSIGNED' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1513:60: (TK_3= 'UNSIGNED' )?
                     int alt49=2;
                     int LA49_0 = input.LA(1);
 
@@ -4054,7 +4054,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt49) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1513:61: TK_3= 'UNSIGNED'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1513:61: TK_3= 'UNSIGNED'
                             {
                             TK_3=(Token)input.LT(1);
                             match(input,67,FOLLOW_67_in_data_type1155); if (failed) return retval;
@@ -4064,7 +4064,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1513:79: (TK_4= 'ZEROFILL' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1513:79: (TK_4= 'ZEROFILL' )?
                     int alt50=2;
                     int LA50_0 = input.LA(1);
 
@@ -4073,7 +4073,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt50) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1513:80: TK_4= 'ZEROFILL'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1513:80: TK_4= 'ZEROFILL'
                             {
                             TK_4=(Token)input.LT(1);
                             match(input,68,FOLLOW_68_in_data_type1162); if (failed) return retval;
@@ -4084,7 +4084,7 @@ public class DDLMySQLParser extends Parser {
                     }
 
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node data_typeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		data_typeReturnNode.setKind("data_type");
@@ -4150,11 +4150,11 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1575:7: TK_0= 'SMALLINT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1575:7: TK_0= 'SMALLINT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )?
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,69,FOLLOW_69_in_data_type1178); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1575:23: (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1575:23: (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )?
                     int alt51=2;
                     int LA51_0 = input.LA(1);
 
@@ -4163,7 +4163,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt51) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1575:24: TK_1= '(' NUMBERGen= NUMBER TK_2= ')'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1575:24: TK_1= '(' NUMBERGen= NUMBER TK_2= ')'
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,38,FOLLOW_38_in_data_type1183); if (failed) return retval;
@@ -4177,7 +4177,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1575:61: (TK_3= 'UNSIGNED' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1575:61: (TK_3= 'UNSIGNED' )?
                     int alt52=2;
                     int LA52_0 = input.LA(1);
 
@@ -4186,7 +4186,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt52) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1575:62: TK_3= 'UNSIGNED'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1575:62: TK_3= 'UNSIGNED'
                             {
                             TK_3=(Token)input.LT(1);
                             match(input,67,FOLLOW_67_in_data_type1198); if (failed) return retval;
@@ -4196,7 +4196,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1575:80: (TK_4= 'ZEROFILL' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1575:80: (TK_4= 'ZEROFILL' )?
                     int alt53=2;
                     int LA53_0 = input.LA(1);
 
@@ -4205,7 +4205,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt53) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1575:81: TK_4= 'ZEROFILL'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1575:81: TK_4= 'ZEROFILL'
                             {
                             TK_4=(Token)input.LT(1);
                             match(input,68,FOLLOW_68_in_data_type1205); if (failed) return retval;
@@ -4216,7 +4216,7 @@ public class DDLMySQLParser extends Parser {
                     }
 
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node data_typeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		data_typeReturnNode.setKind("data_type");
@@ -4282,11 +4282,11 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1637:7: TK_0= 'MEDIUMINT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1637:7: TK_0= 'MEDIUMINT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )?
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,70,FOLLOW_70_in_data_type1221); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1637:24: (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1637:24: (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )?
                     int alt54=2;
                     int LA54_0 = input.LA(1);
 
@@ -4295,7 +4295,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt54) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1637:25: TK_1= '(' NUMBERGen= NUMBER TK_2= ')'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1637:25: TK_1= '(' NUMBERGen= NUMBER TK_2= ')'
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,38,FOLLOW_38_in_data_type1226); if (failed) return retval;
@@ -4309,7 +4309,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1637:62: (TK_3= 'UNSIGNED' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1637:62: (TK_3= 'UNSIGNED' )?
                     int alt55=2;
                     int LA55_0 = input.LA(1);
 
@@ -4318,7 +4318,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt55) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1637:63: TK_3= 'UNSIGNED'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1637:63: TK_3= 'UNSIGNED'
                             {
                             TK_3=(Token)input.LT(1);
                             match(input,67,FOLLOW_67_in_data_type1241); if (failed) return retval;
@@ -4328,7 +4328,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1637:81: (TK_4= 'ZEROFILL' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1637:81: (TK_4= 'ZEROFILL' )?
                     int alt56=2;
                     int LA56_0 = input.LA(1);
 
@@ -4337,7 +4337,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt56) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1637:82: TK_4= 'ZEROFILL'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1637:82: TK_4= 'ZEROFILL'
                             {
                             TK_4=(Token)input.LT(1);
                             match(input,68,FOLLOW_68_in_data_type1248); if (failed) return retval;
@@ -4348,7 +4348,7 @@ public class DDLMySQLParser extends Parser {
                     }
 
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node data_typeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		data_typeReturnNode.setKind("data_type");
@@ -4414,11 +4414,11 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 5 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1699:7: TK_0= 'INT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1699:7: TK_0= 'INT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )?
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,71,FOLLOW_71_in_data_type1264); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1699:18: (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1699:18: (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )?
                     int alt57=2;
                     int LA57_0 = input.LA(1);
 
@@ -4427,7 +4427,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt57) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1699:19: TK_1= '(' NUMBERGen= NUMBER TK_2= ')'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1699:19: TK_1= '(' NUMBERGen= NUMBER TK_2= ')'
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,38,FOLLOW_38_in_data_type1269); if (failed) return retval;
@@ -4441,7 +4441,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1699:56: (TK_3= 'UNSIGNED' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1699:56: (TK_3= 'UNSIGNED' )?
                     int alt58=2;
                     int LA58_0 = input.LA(1);
 
@@ -4450,7 +4450,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt58) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1699:57: TK_3= 'UNSIGNED'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1699:57: TK_3= 'UNSIGNED'
                             {
                             TK_3=(Token)input.LT(1);
                             match(input,67,FOLLOW_67_in_data_type1284); if (failed) return retval;
@@ -4460,7 +4460,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1699:75: (TK_4= 'ZEROFILL' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1699:75: (TK_4= 'ZEROFILL' )?
                     int alt59=2;
                     int LA59_0 = input.LA(1);
 
@@ -4469,7 +4469,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt59) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1699:76: TK_4= 'ZEROFILL'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1699:76: TK_4= 'ZEROFILL'
                             {
                             TK_4=(Token)input.LT(1);
                             match(input,68,FOLLOW_68_in_data_type1291); if (failed) return retval;
@@ -4480,7 +4480,7 @@ public class DDLMySQLParser extends Parser {
                     }
 
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node data_typeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		data_typeReturnNode.setKind("data_type");
@@ -4546,11 +4546,11 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 6 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1761:7: TK_0= 'INTEGER' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1761:7: TK_0= 'INTEGER' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )?
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,72,FOLLOW_72_in_data_type1307); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1761:22: (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1761:22: (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )?
                     int alt60=2;
                     int LA60_0 = input.LA(1);
 
@@ -4559,7 +4559,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt60) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1761:23: TK_1= '(' NUMBERGen= NUMBER TK_2= ')'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1761:23: TK_1= '(' NUMBERGen= NUMBER TK_2= ')'
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,38,FOLLOW_38_in_data_type1312); if (failed) return retval;
@@ -4573,7 +4573,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1761:60: (TK_3= 'UNSIGNED' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1761:60: (TK_3= 'UNSIGNED' )?
                     int alt61=2;
                     int LA61_0 = input.LA(1);
 
@@ -4582,7 +4582,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt61) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1761:61: TK_3= 'UNSIGNED'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1761:61: TK_3= 'UNSIGNED'
                             {
                             TK_3=(Token)input.LT(1);
                             match(input,67,FOLLOW_67_in_data_type1327); if (failed) return retval;
@@ -4592,7 +4592,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1761:79: (TK_4= 'ZEROFILL' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1761:79: (TK_4= 'ZEROFILL' )?
                     int alt62=2;
                     int LA62_0 = input.LA(1);
 
@@ -4601,7 +4601,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt62) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1761:80: TK_4= 'ZEROFILL'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1761:80: TK_4= 'ZEROFILL'
                             {
                             TK_4=(Token)input.LT(1);
                             match(input,68,FOLLOW_68_in_data_type1334); if (failed) return retval;
@@ -4612,7 +4612,7 @@ public class DDLMySQLParser extends Parser {
                     }
 
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node data_typeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		data_typeReturnNode.setKind("data_type");
@@ -4678,11 +4678,11 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 7 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1823:7: TK_0= 'BIGINT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1823:7: TK_0= 'BIGINT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )?
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,73,FOLLOW_73_in_data_type1350); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1823:21: (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1823:21: (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )?
                     int alt63=2;
                     int LA63_0 = input.LA(1);
 
@@ -4691,7 +4691,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt63) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1823:22: TK_1= '(' NUMBERGen= NUMBER TK_2= ')'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1823:22: TK_1= '(' NUMBERGen= NUMBER TK_2= ')'
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,38,FOLLOW_38_in_data_type1355); if (failed) return retval;
@@ -4705,7 +4705,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1823:59: (TK_3= 'UNSIGNED' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1823:59: (TK_3= 'UNSIGNED' )?
                     int alt64=2;
                     int LA64_0 = input.LA(1);
 
@@ -4714,7 +4714,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt64) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1823:60: TK_3= 'UNSIGNED'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1823:60: TK_3= 'UNSIGNED'
                             {
                             TK_3=(Token)input.LT(1);
                             match(input,67,FOLLOW_67_in_data_type1370); if (failed) return retval;
@@ -4724,7 +4724,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1823:78: (TK_4= 'ZEROFILL' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1823:78: (TK_4= 'ZEROFILL' )?
                     int alt65=2;
                     int LA65_0 = input.LA(1);
 
@@ -4733,7 +4733,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt65) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1823:79: TK_4= 'ZEROFILL'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1823:79: TK_4= 'ZEROFILL'
                             {
                             TK_4=(Token)input.LT(1);
                             match(input,68,FOLLOW_68_in_data_type1377); if (failed) return retval;
@@ -4744,7 +4744,7 @@ public class DDLMySQLParser extends Parser {
                     }
 
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node data_typeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		data_typeReturnNode.setKind("data_type");
@@ -4810,11 +4810,11 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 8 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1885:7: TK_0= 'REAL' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1885:7: TK_0= 'REAL' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )?
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,74,FOLLOW_74_in_data_type1393); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1885:19: (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1885:19: (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )?
                     int alt66=2;
                     int LA66_0 = input.LA(1);
 
@@ -4823,7 +4823,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt66) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1885:20: TK_1= '(' NUMBERGen= NUMBER TK_2= ')'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1885:20: TK_1= '(' NUMBERGen= NUMBER TK_2= ')'
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,38,FOLLOW_38_in_data_type1398); if (failed) return retval;
@@ -4837,7 +4837,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1885:57: (TK_3= 'UNSIGNED' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1885:57: (TK_3= 'UNSIGNED' )?
                     int alt67=2;
                     int LA67_0 = input.LA(1);
 
@@ -4846,7 +4846,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt67) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1885:58: TK_3= 'UNSIGNED'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1885:58: TK_3= 'UNSIGNED'
                             {
                             TK_3=(Token)input.LT(1);
                             match(input,67,FOLLOW_67_in_data_type1413); if (failed) return retval;
@@ -4856,7 +4856,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1885:76: (TK_4= 'ZEROFILL' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1885:76: (TK_4= 'ZEROFILL' )?
                     int alt68=2;
                     int LA68_0 = input.LA(1);
 
@@ -4865,7 +4865,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt68) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1885:77: TK_4= 'ZEROFILL'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1885:77: TK_4= 'ZEROFILL'
                             {
                             TK_4=(Token)input.LT(1);
                             match(input,68,FOLLOW_68_in_data_type1420); if (failed) return retval;
@@ -4876,7 +4876,7 @@ public class DDLMySQLParser extends Parser {
                     }
 
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node data_typeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		data_typeReturnNode.setKind("data_type");
@@ -4942,11 +4942,11 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 9 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1947:6: TK_0= 'DOUBLE' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1947:6: TK_0= 'DOUBLE' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )?
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,75,FOLLOW_75_in_data_type1435); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1947:20: (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1947:20: (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )?
                     int alt69=2;
                     int LA69_0 = input.LA(1);
 
@@ -4955,7 +4955,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt69) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1947:21: TK_1= '(' NUMBERGen= NUMBER TK_2= ')'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1947:21: TK_1= '(' NUMBERGen= NUMBER TK_2= ')'
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,38,FOLLOW_38_in_data_type1440); if (failed) return retval;
@@ -4969,7 +4969,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1947:58: (TK_3= 'UNSIGNED' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1947:58: (TK_3= 'UNSIGNED' )?
                     int alt70=2;
                     int LA70_0 = input.LA(1);
 
@@ -4978,7 +4978,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt70) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1947:59: TK_3= 'UNSIGNED'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1947:59: TK_3= 'UNSIGNED'
                             {
                             TK_3=(Token)input.LT(1);
                             match(input,67,FOLLOW_67_in_data_type1455); if (failed) return retval;
@@ -4988,7 +4988,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1947:77: (TK_4= 'ZEROFILL' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1947:77: (TK_4= 'ZEROFILL' )?
                     int alt71=2;
                     int LA71_0 = input.LA(1);
 
@@ -4997,7 +4997,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt71) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:1947:78: TK_4= 'ZEROFILL'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:1947:78: TK_4= 'ZEROFILL'
                             {
                             TK_4=(Token)input.LT(1);
                             match(input,68,FOLLOW_68_in_data_type1462); if (failed) return retval;
@@ -5008,7 +5008,7 @@ public class DDLMySQLParser extends Parser {
                     }
 
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node data_typeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		data_typeReturnNode.setKind("data_type");
@@ -5074,11 +5074,11 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 10 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2009:6: TK_0= 'FLOAT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2009:6: TK_0= 'FLOAT' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'UNSIGNED' )? (TK_4= 'ZEROFILL' )?
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,76,FOLLOW_76_in_data_type1477); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2009:19: (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2009:19: (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )?
                     int alt72=2;
                     int LA72_0 = input.LA(1);
 
@@ -5087,7 +5087,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt72) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2009:20: TK_1= '(' NUMBERGen= NUMBER TK_2= ')'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2009:20: TK_1= '(' NUMBERGen= NUMBER TK_2= ')'
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,38,FOLLOW_38_in_data_type1482); if (failed) return retval;
@@ -5101,7 +5101,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2009:57: (TK_3= 'UNSIGNED' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2009:57: (TK_3= 'UNSIGNED' )?
                     int alt73=2;
                     int LA73_0 = input.LA(1);
 
@@ -5110,7 +5110,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt73) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2009:58: TK_3= 'UNSIGNED'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2009:58: TK_3= 'UNSIGNED'
                             {
                             TK_3=(Token)input.LT(1);
                             match(input,67,FOLLOW_67_in_data_type1497); if (failed) return retval;
@@ -5120,7 +5120,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2009:76: (TK_4= 'ZEROFILL' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2009:76: (TK_4= 'ZEROFILL' )?
                     int alt74=2;
                     int LA74_0 = input.LA(1);
 
@@ -5129,7 +5129,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt74) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2009:77: TK_4= 'ZEROFILL'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2009:77: TK_4= 'ZEROFILL'
                             {
                             TK_4=(Token)input.LT(1);
                             match(input,68,FOLLOW_68_in_data_type1504); if (failed) return retval;
@@ -5140,7 +5140,7 @@ public class DDLMySQLParser extends Parser {
                     }
 
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node data_typeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		data_typeReturnNode.setKind("data_type");
@@ -5206,11 +5206,11 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 11 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2071:7: TK_0= 'DECIMAL' (TK_1= '(' NUMBERGen= NUMBER (TK_2= ',' NUMBERGen_1= NUMBER )? TK_3= ')' )? (TK_4= 'UNSIGNED' )? (TK_5= 'ZEROFILL' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2071:7: TK_0= 'DECIMAL' (TK_1= '(' NUMBERGen= NUMBER (TK_2= ',' NUMBERGen_1= NUMBER )? TK_3= ')' )? (TK_4= 'UNSIGNED' )? (TK_5= 'ZEROFILL' )?
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,77,FOLLOW_77_in_data_type1520); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2071:22: (TK_1= '(' NUMBERGen= NUMBER (TK_2= ',' NUMBERGen_1= NUMBER )? TK_3= ')' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2071:22: (TK_1= '(' NUMBERGen= NUMBER (TK_2= ',' NUMBERGen_1= NUMBER )? TK_3= ')' )?
                     int alt76=2;
                     int LA76_0 = input.LA(1);
 
@@ -5219,13 +5219,13 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt76) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2071:23: TK_1= '(' NUMBERGen= NUMBER (TK_2= ',' NUMBERGen_1= NUMBER )? TK_3= ')'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2071:23: TK_1= '(' NUMBERGen= NUMBER (TK_2= ',' NUMBERGen_1= NUMBER )? TK_3= ')'
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,38,FOLLOW_38_in_data_type1525); if (failed) return retval;
                             NUMBERGen=(Token)input.LT(1);
                             match(input,NUMBER,FOLLOW_NUMBER_in_data_type1529); if (failed) return retval;
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2071:49: (TK_2= ',' NUMBERGen_1= NUMBER )?
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2071:49: (TK_2= ',' NUMBERGen_1= NUMBER )?
                             int alt75=2;
                             int LA75_0 = input.LA(1);
 
@@ -5234,7 +5234,7 @@ public class DDLMySQLParser extends Parser {
                             }
                             switch (alt75) {
                                 case 1 :
-                                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2071:50: TK_2= ',' NUMBERGen_1= NUMBER
+                                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2071:50: TK_2= ',' NUMBERGen_1= NUMBER
                                     {
                                     TK_2=(Token)input.LT(1);
                                     match(input,20,FOLLOW_20_in_data_type1534); if (failed) return retval;
@@ -5254,7 +5254,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2071:91: (TK_4= 'UNSIGNED' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2071:91: (TK_4= 'UNSIGNED' )?
                     int alt77=2;
                     int LA77_0 = input.LA(1);
 
@@ -5263,7 +5263,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt77) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2071:92: TK_4= 'UNSIGNED'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2071:92: TK_4= 'UNSIGNED'
                             {
                             TK_4=(Token)input.LT(1);
                             match(input,67,FOLLOW_67_in_data_type1551); if (failed) return retval;
@@ -5273,7 +5273,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2071:110: (TK_5= 'ZEROFILL' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2071:110: (TK_5= 'ZEROFILL' )?
                     int alt78=2;
                     int LA78_0 = input.LA(1);
 
@@ -5282,7 +5282,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt78) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2071:111: TK_5= 'ZEROFILL'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2071:111: TK_5= 'ZEROFILL'
                             {
                             TK_5=(Token)input.LT(1);
                             match(input,68,FOLLOW_68_in_data_type1558); if (failed) return retval;
@@ -5293,7 +5293,7 @@ public class DDLMySQLParser extends Parser {
                     }
 
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node data_typeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		data_typeReturnNode.setKind("data_type");
@@ -5377,11 +5377,11 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 12 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2151:7: TK_0= 'NUMERIC' (TK_1= '(' NUMBERGen= NUMBER (TK_2= ',' NUMBERGen_1= NUMBER )? TK_3= ')' )? (TK_4= 'UNSIGNED' )? (TK_5= 'ZEROFILL' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2151:7: TK_0= 'NUMERIC' (TK_1= '(' NUMBERGen= NUMBER (TK_2= ',' NUMBERGen_1= NUMBER )? TK_3= ')' )? (TK_4= 'UNSIGNED' )? (TK_5= 'ZEROFILL' )?
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,78,FOLLOW_78_in_data_type1574); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2151:22: (TK_1= '(' NUMBERGen= NUMBER (TK_2= ',' NUMBERGen_1= NUMBER )? TK_3= ')' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2151:22: (TK_1= '(' NUMBERGen= NUMBER (TK_2= ',' NUMBERGen_1= NUMBER )? TK_3= ')' )?
                     int alt80=2;
                     int LA80_0 = input.LA(1);
 
@@ -5390,13 +5390,13 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt80) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2151:23: TK_1= '(' NUMBERGen= NUMBER (TK_2= ',' NUMBERGen_1= NUMBER )? TK_3= ')'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2151:23: TK_1= '(' NUMBERGen= NUMBER (TK_2= ',' NUMBERGen_1= NUMBER )? TK_3= ')'
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,38,FOLLOW_38_in_data_type1579); if (failed) return retval;
                             NUMBERGen=(Token)input.LT(1);
                             match(input,NUMBER,FOLLOW_NUMBER_in_data_type1583); if (failed) return retval;
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2151:49: (TK_2= ',' NUMBERGen_1= NUMBER )?
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2151:49: (TK_2= ',' NUMBERGen_1= NUMBER )?
                             int alt79=2;
                             int LA79_0 = input.LA(1);
 
@@ -5405,7 +5405,7 @@ public class DDLMySQLParser extends Parser {
                             }
                             switch (alt79) {
                                 case 1 :
-                                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2151:50: TK_2= ',' NUMBERGen_1= NUMBER
+                                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2151:50: TK_2= ',' NUMBERGen_1= NUMBER
                                     {
                                     TK_2=(Token)input.LT(1);
                                     match(input,20,FOLLOW_20_in_data_type1588); if (failed) return retval;
@@ -5425,7 +5425,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2151:90: (TK_4= 'UNSIGNED' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2151:90: (TK_4= 'UNSIGNED' )?
                     int alt81=2;
                     int LA81_0 = input.LA(1);
 
@@ -5434,7 +5434,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt81) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2151:91: TK_4= 'UNSIGNED'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2151:91: TK_4= 'UNSIGNED'
                             {
                             TK_4=(Token)input.LT(1);
                             match(input,67,FOLLOW_67_in_data_type1604); if (failed) return retval;
@@ -5444,7 +5444,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2151:109: (TK_5= 'ZEROFILL' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2151:109: (TK_5= 'ZEROFILL' )?
                     int alt82=2;
                     int LA82_0 = input.LA(1);
 
@@ -5453,7 +5453,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt82) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2151:110: TK_5= 'ZEROFILL'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2151:110: TK_5= 'ZEROFILL'
                             {
                             TK_5=(Token)input.LT(1);
                             match(input,68,FOLLOW_68_in_data_type1611); if (failed) return retval;
@@ -5464,7 +5464,7 @@ public class DDLMySQLParser extends Parser {
                     }
 
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node data_typeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		data_typeReturnNode.setKind("data_type");
@@ -5548,12 +5548,12 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 13 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2231:7: TK_0= 'DATE'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2231:7: TK_0= 'DATE'
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,79,FOLLOW_79_in_data_type1627); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node data_typeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		data_typeReturnNode.setKind("data_type");
@@ -5574,12 +5574,12 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 14 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2248:7: TK_0= 'TIME'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2248:7: TK_0= 'TIME'
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,80,FOLLOW_80_in_data_type1641); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node data_typeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		data_typeReturnNode.setKind("data_type");
@@ -5600,12 +5600,12 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 15 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2265:7: TK_0= 'TIMESTAMP'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2265:7: TK_0= 'TIMESTAMP'
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,81,FOLLOW_81_in_data_type1655); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node data_typeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		data_typeReturnNode.setKind("data_type");
@@ -5626,12 +5626,12 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 16 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2282:6: TK_0= 'DATETIME'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2282:6: TK_0= 'DATETIME'
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,82,FOLLOW_82_in_data_type1668); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node data_typeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		data_typeReturnNode.setKind("data_type");
@@ -5652,12 +5652,12 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 17 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2299:7: TK_0= 'YEAR'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2299:7: TK_0= 'YEAR'
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,83,FOLLOW_83_in_data_type1682); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node data_typeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		data_typeReturnNode.setKind("data_type");
@@ -5678,11 +5678,11 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 18 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2316:7: TK_0= 'CHAR' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'CHARACTER' TK_4= 'SET' IDGen= ID )? (TK_5= 'COLLATE' IDGen_1= ID )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2316:7: TK_0= 'CHAR' (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )? (TK_3= 'CHARACTER' TK_4= 'SET' IDGen= ID )? (TK_5= 'COLLATE' IDGen_1= ID )?
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,84,FOLLOW_84_in_data_type1696); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2316:19: (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2316:19: (TK_1= '(' NUMBERGen= NUMBER TK_2= ')' )?
                     int alt83=2;
                     int LA83_0 = input.LA(1);
 
@@ -5691,7 +5691,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt83) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2316:20: TK_1= '(' NUMBERGen= NUMBER TK_2= ')'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2316:20: TK_1= '(' NUMBERGen= NUMBER TK_2= ')'
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,38,FOLLOW_38_in_data_type1701); if (failed) return retval;
@@ -5705,7 +5705,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2316:57: (TK_3= 'CHARACTER' TK_4= 'SET' IDGen= ID )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2316:57: (TK_3= 'CHARACTER' TK_4= 'SET' IDGen= ID )?
                     int alt84=2;
                     int LA84_0 = input.LA(1);
 
@@ -5714,7 +5714,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt84) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2316:58: TK_3= 'CHARACTER' TK_4= 'SET' IDGen= ID
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2316:58: TK_3= 'CHARACTER' TK_4= 'SET' IDGen= ID
                             {
                             TK_3=(Token)input.LT(1);
                             match(input,34,FOLLOW_34_in_data_type1716); if (failed) return retval;
@@ -5728,7 +5728,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2316:97: (TK_5= 'COLLATE' IDGen_1= ID )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2316:97: (TK_5= 'COLLATE' IDGen_1= ID )?
                     int alt85=2;
                     int LA85_0 = input.LA(1);
 
@@ -5737,7 +5737,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt85) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2316:98: TK_5= 'COLLATE' IDGen_1= ID
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2316:98: TK_5= 'COLLATE' IDGen_1= ID
                             {
                             TK_5=(Token)input.LT(1);
                             match(input,35,FOLLOW_35_in_data_type1731); if (failed) return retval;
@@ -5750,7 +5750,7 @@ public class DDLMySQLParser extends Parser {
                     }
 
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node data_typeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		data_typeReturnNode.setKind("data_type");
@@ -5843,7 +5843,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 19 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2405:7: TK_0= 'VARCHAR' TK_1= '(' NUMBERGen= NUMBER TK_2= ')' (TK_3= 'CHARACTER' TK_4= 'SET' IDGen= ID )? (TK_5= 'COLLATE' IDGen_1= ID )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2405:7: TK_0= 'VARCHAR' TK_1= '(' NUMBERGen= NUMBER TK_2= ')' (TK_3= 'CHARACTER' TK_4= 'SET' IDGen= ID )? (TK_5= 'COLLATE' IDGen_1= ID )?
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,85,FOLLOW_85_in_data_type1751); if (failed) return retval;
@@ -5853,7 +5853,7 @@ public class DDLMySQLParser extends Parser {
                     match(input,NUMBER,FOLLOW_NUMBER_in_data_type1759); if (failed) return retval;
                     TK_2=(Token)input.LT(1);
                     match(input,39,FOLLOW_39_in_data_type1763); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2405:57: (TK_3= 'CHARACTER' TK_4= 'SET' IDGen= ID )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2405:57: (TK_3= 'CHARACTER' TK_4= 'SET' IDGen= ID )?
                     int alt86=2;
                     int LA86_0 = input.LA(1);
 
@@ -5862,7 +5862,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt86) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2405:58: TK_3= 'CHARACTER' TK_4= 'SET' IDGen= ID
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2405:58: TK_3= 'CHARACTER' TK_4= 'SET' IDGen= ID
                             {
                             TK_3=(Token)input.LT(1);
                             match(input,34,FOLLOW_34_in_data_type1768); if (failed) return retval;
@@ -5876,7 +5876,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2405:97: (TK_5= 'COLLATE' IDGen_1= ID )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2405:97: (TK_5= 'COLLATE' IDGen_1= ID )?
                     int alt87=2;
                     int LA87_0 = input.LA(1);
 
@@ -5885,7 +5885,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt87) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2405:98: TK_5= 'COLLATE' IDGen_1= ID
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2405:98: TK_5= 'COLLATE' IDGen_1= ID
                             {
                             TK_5=(Token)input.LT(1);
                             match(input,35,FOLLOW_35_in_data_type1783); if (failed) return retval;
@@ -5898,7 +5898,7 @@ public class DDLMySQLParser extends Parser {
                     }
 
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node data_typeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		data_typeReturnNode.setKind("data_type");
@@ -5991,7 +5991,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 20 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2494:7: TK_0= 'BINARYTYPE' TK_1= '(' NUMBERGen= NUMBER TK_2= ')'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2494:7: TK_0= 'BINARYTYPE' TK_1= '(' NUMBERGen= NUMBER TK_2= ')'
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,86,FOLLOW_86_in_data_type1803); if (failed) return retval;
@@ -6002,7 +6002,7 @@ public class DDLMySQLParser extends Parser {
                     TK_2=(Token)input.LT(1);
                     match(input,39,FOLLOW_39_in_data_type1815); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node data_typeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		data_typeReturnNode.setKind("data_type");
@@ -6050,7 +6050,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 21 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2538:7: TK_0= 'VARBINARY' TK_1= '(' NUMBERGen= NUMBER TK_2= ')'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2538:7: TK_0= 'VARBINARY' TK_1= '(' NUMBERGen= NUMBER TK_2= ')'
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,87,FOLLOW_87_in_data_type1829); if (failed) return retval;
@@ -6061,7 +6061,7 @@ public class DDLMySQLParser extends Parser {
                     TK_2=(Token)input.LT(1);
                     match(input,39,FOLLOW_39_in_data_type1841); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node data_typeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		data_typeReturnNode.setKind("data_type");
@@ -6109,12 +6109,12 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 22 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2582:7: TK_0= 'TINYBLOB'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2582:7: TK_0= 'TINYBLOB'
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,88,FOLLOW_88_in_data_type1855); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node data_typeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		data_typeReturnNode.setKind("data_type");
@@ -6135,12 +6135,12 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 23 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2599:7: TK_0= 'BLOB'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2599:7: TK_0= 'BLOB'
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,89,FOLLOW_89_in_data_type1869); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node data_typeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		data_typeReturnNode.setKind("data_type");
@@ -6161,12 +6161,12 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 24 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2616:7: TK_0= 'MEDIUMBLOB'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2616:7: TK_0= 'MEDIUMBLOB'
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,90,FOLLOW_90_in_data_type1883); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node data_typeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		data_typeReturnNode.setKind("data_type");
@@ -6187,12 +6187,12 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 25 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2633:7: TK_0= 'LONGBLOB'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2633:7: TK_0= 'LONGBLOB'
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,91,FOLLOW_91_in_data_type1897); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node data_typeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		data_typeReturnNode.setKind("data_type");
@@ -6213,11 +6213,11 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 26 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2650:7: TK_0= 'TINYTEXT' (TK_1= 'BYNARY' )? (TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID )? (TK_4= 'COLLATE' IDGen_1= ID )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2650:7: TK_0= 'TINYTEXT' (TK_1= 'BYNARY' )? (TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID )? (TK_4= 'COLLATE' IDGen_1= ID )?
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,92,FOLLOW_92_in_data_type1911); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2650:23: (TK_1= 'BYNARY' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2650:23: (TK_1= 'BYNARY' )?
                     int alt88=2;
                     int LA88_0 = input.LA(1);
 
@@ -6226,7 +6226,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt88) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2650:24: TK_1= 'BYNARY'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2650:24: TK_1= 'BYNARY'
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,93,FOLLOW_93_in_data_type1916); if (failed) return retval;
@@ -6236,7 +6236,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2650:40: (TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2650:40: (TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID )?
                     int alt89=2;
                     int LA89_0 = input.LA(1);
 
@@ -6245,7 +6245,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt89) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2650:41: TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2650:41: TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID
                             {
                             TK_2=(Token)input.LT(1);
                             match(input,34,FOLLOW_34_in_data_type1923); if (failed) return retval;
@@ -6259,7 +6259,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2650:80: (TK_4= 'COLLATE' IDGen_1= ID )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2650:80: (TK_4= 'COLLATE' IDGen_1= ID )?
                     int alt90=2;
                     int LA90_0 = input.LA(1);
 
@@ -6268,7 +6268,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt90) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2650:81: TK_4= 'COLLATE' IDGen_1= ID
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2650:81: TK_4= 'COLLATE' IDGen_1= ID
                             {
                             TK_4=(Token)input.LT(1);
                             match(input,35,FOLLOW_35_in_data_type1938); if (failed) return retval;
@@ -6281,7 +6281,7 @@ public class DDLMySQLParser extends Parser {
                     }
 
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node data_typeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		data_typeReturnNode.setKind("data_type");
@@ -6356,11 +6356,11 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 27 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2721:8: TK_0= 'TEXTVAR' (TK_1= 'BYNARY' )? (TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID )? (TK_4= 'COLLATE' IDGen_1= ID )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2721:8: TK_0= 'TEXTVAR' (TK_1= 'BYNARY' )? (TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID )? (TK_4= 'COLLATE' IDGen_1= ID )?
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,94,FOLLOW_94_in_data_type1959); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2721:23: (TK_1= 'BYNARY' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2721:23: (TK_1= 'BYNARY' )?
                     int alt91=2;
                     int LA91_0 = input.LA(1);
 
@@ -6369,7 +6369,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt91) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2721:24: TK_1= 'BYNARY'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2721:24: TK_1= 'BYNARY'
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,93,FOLLOW_93_in_data_type1964); if (failed) return retval;
@@ -6379,7 +6379,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2721:40: (TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2721:40: (TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID )?
                     int alt92=2;
                     int LA92_0 = input.LA(1);
 
@@ -6388,7 +6388,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt92) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2721:41: TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2721:41: TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID
                             {
                             TK_2=(Token)input.LT(1);
                             match(input,34,FOLLOW_34_in_data_type1971); if (failed) return retval;
@@ -6402,7 +6402,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2721:80: (TK_4= 'COLLATE' IDGen_1= ID )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2721:80: (TK_4= 'COLLATE' IDGen_1= ID )?
                     int alt93=2;
                     int LA93_0 = input.LA(1);
 
@@ -6411,7 +6411,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt93) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2721:81: TK_4= 'COLLATE' IDGen_1= ID
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2721:81: TK_4= 'COLLATE' IDGen_1= ID
                             {
                             TK_4=(Token)input.LT(1);
                             match(input,35,FOLLOW_35_in_data_type1986); if (failed) return retval;
@@ -6424,7 +6424,7 @@ public class DDLMySQLParser extends Parser {
                     }
 
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node data_typeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		data_typeReturnNode.setKind("data_type");
@@ -6499,11 +6499,11 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 28 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2792:7: TK_0= 'MEDIUMTEXT' (TK_1= 'BYNARY' )? (TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID )? (TK_4= 'COLLATE' IDGen_1= ID )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2792:7: TK_0= 'MEDIUMTEXT' (TK_1= 'BYNARY' )? (TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID )? (TK_4= 'COLLATE' IDGen_1= ID )?
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,95,FOLLOW_95_in_data_type2006); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2792:25: (TK_1= 'BYNARY' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2792:25: (TK_1= 'BYNARY' )?
                     int alt94=2;
                     int LA94_0 = input.LA(1);
 
@@ -6512,7 +6512,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt94) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2792:26: TK_1= 'BYNARY'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2792:26: TK_1= 'BYNARY'
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,93,FOLLOW_93_in_data_type2011); if (failed) return retval;
@@ -6522,7 +6522,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2792:42: (TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2792:42: (TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID )?
                     int alt95=2;
                     int LA95_0 = input.LA(1);
 
@@ -6531,7 +6531,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt95) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2792:43: TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2792:43: TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID
                             {
                             TK_2=(Token)input.LT(1);
                             match(input,34,FOLLOW_34_in_data_type2018); if (failed) return retval;
@@ -6545,7 +6545,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2792:82: (TK_4= 'COLLATE' IDGen_1= ID )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2792:82: (TK_4= 'COLLATE' IDGen_1= ID )?
                     int alt96=2;
                     int LA96_0 = input.LA(1);
 
@@ -6554,7 +6554,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt96) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2792:83: TK_4= 'COLLATE' IDGen_1= ID
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2792:83: TK_4= 'COLLATE' IDGen_1= ID
                             {
                             TK_4=(Token)input.LT(1);
                             match(input,35,FOLLOW_35_in_data_type2033); if (failed) return retval;
@@ -6567,7 +6567,7 @@ public class DDLMySQLParser extends Parser {
                     }
 
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node data_typeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		data_typeReturnNode.setKind("data_type");
@@ -6642,11 +6642,11 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 29 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2863:7: TK_0= 'LONGTEXT' (TK_1= 'BYNARY' )? (TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID )? (TK_4= 'COLLATE' IDGen_1= ID )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2863:7: TK_0= 'LONGTEXT' (TK_1= 'BYNARY' )? (TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID )? (TK_4= 'COLLATE' IDGen_1= ID )?
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,96,FOLLOW_96_in_data_type2053); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2863:23: (TK_1= 'BYNARY' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2863:23: (TK_1= 'BYNARY' )?
                     int alt97=2;
                     int LA97_0 = input.LA(1);
 
@@ -6655,7 +6655,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt97) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2863:24: TK_1= 'BYNARY'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2863:24: TK_1= 'BYNARY'
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,93,FOLLOW_93_in_data_type2058); if (failed) return retval;
@@ -6665,7 +6665,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2863:40: (TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2863:40: (TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID )?
                     int alt98=2;
                     int LA98_0 = input.LA(1);
 
@@ -6674,7 +6674,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt98) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2863:41: TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2863:41: TK_2= 'CHARACTER' TK_3= 'SET' IDGen= ID
                             {
                             TK_2=(Token)input.LT(1);
                             match(input,34,FOLLOW_34_in_data_type2065); if (failed) return retval;
@@ -6688,7 +6688,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2863:80: (TK_4= 'COLLATE' IDGen_1= ID )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2863:80: (TK_4= 'COLLATE' IDGen_1= ID )?
                     int alt99=2;
                     int LA99_0 = input.LA(1);
 
@@ -6697,7 +6697,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt99) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2863:81: TK_4= 'COLLATE' IDGen_1= ID
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2863:81: TK_4= 'COLLATE' IDGen_1= ID
                             {
                             TK_4=(Token)input.LT(1);
                             match(input,35,FOLLOW_35_in_data_type2080); if (failed) return retval;
@@ -6710,7 +6710,7 @@ public class DDLMySQLParser extends Parser {
                     }
 
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node data_typeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		data_typeReturnNode.setKind("data_type");
@@ -6785,7 +6785,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 30 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2934:7: TK_0= 'ENUM' TK_1= '(' QVALUEGen= QVALUE (TK_2= ',' QVALUEGen_1_List+= QVALUE )* TK_3= ')' (TK_4= 'CHARACTER' TK_5= 'SET' IDGen= ID )? (TK_6= 'COLLATE' IDGen_1= ID )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2934:7: TK_0= 'ENUM' TK_1= '(' QVALUEGen= QVALUE (TK_2= ',' QVALUEGen_1_List+= QVALUE )* TK_3= ')' (TK_4= 'CHARACTER' TK_5= 'SET' IDGen= ID )? (TK_6= 'COLLATE' IDGen_1= ID )?
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,97,FOLLOW_97_in_data_type2100); if (failed) return retval;
@@ -6793,7 +6793,7 @@ public class DDLMySQLParser extends Parser {
                     match(input,38,FOLLOW_38_in_data_type2104); if (failed) return retval;
                     QVALUEGen=(Token)input.LT(1);
                     match(input,QVALUE,FOLLOW_QVALUE_in_data_type2108); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2934:45: (TK_2= ',' QVALUEGen_1_List+= QVALUE )*
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2934:45: (TK_2= ',' QVALUEGen_1_List+= QVALUE )*
                     loop100:
                     do {
                         int alt100=2;
@@ -6806,7 +6806,7 @@ public class DDLMySQLParser extends Parser {
 
                         switch (alt100) {
                     	case 1 :
-                    	    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2934:46: TK_2= ',' QVALUEGen_1_List+= QVALUE
+                    	    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2934:46: TK_2= ',' QVALUEGen_1_List+= QVALUE
                     	    {
                     	    TK_2=(Token)input.LT(1);
                     	    match(input,20,FOLLOW_20_in_data_type2113); if (failed) return retval;
@@ -6826,7 +6826,7 @@ public class DDLMySQLParser extends Parser {
 
                     TK_3=(Token)input.LT(1);
                     match(input,39,FOLLOW_39_in_data_type2123); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2934:91: (TK_4= 'CHARACTER' TK_5= 'SET' IDGen= ID )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2934:91: (TK_4= 'CHARACTER' TK_5= 'SET' IDGen= ID )?
                     int alt101=2;
                     int LA101_0 = input.LA(1);
 
@@ -6835,7 +6835,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt101) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2934:92: TK_4= 'CHARACTER' TK_5= 'SET' IDGen= ID
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2934:92: TK_4= 'CHARACTER' TK_5= 'SET' IDGen= ID
                             {
                             TK_4=(Token)input.LT(1);
                             match(input,34,FOLLOW_34_in_data_type2128); if (failed) return retval;
@@ -6849,7 +6849,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2934:131: (TK_6= 'COLLATE' IDGen_1= ID )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2934:131: (TK_6= 'COLLATE' IDGen_1= ID )?
                     int alt102=2;
                     int LA102_0 = input.LA(1);
 
@@ -6858,7 +6858,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt102) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:2934:132: TK_6= 'COLLATE' IDGen_1= ID
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:2934:132: TK_6= 'COLLATE' IDGen_1= ID
                             {
                             TK_6=(Token)input.LT(1);
                             match(input,35,FOLLOW_35_in_data_type2143); if (failed) return retval;
@@ -6871,7 +6871,7 @@ public class DDLMySQLParser extends Parser {
                     }
 
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node data_typeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		data_typeReturnNode.setKind("data_type");
@@ -6902,7 +6902,7 @@ public class DDLMySQLParser extends Parser {
                       			QVALUEGenLeaf.setLine(QVALUEGen.getLine());
                       			data_typeReturnNode.getChildren().add(QVALUEGenLeaf);
                       		}
-                      	
+
                       		// Create a special CST Node for terminal QVALUEGen_1_List aggregation
                       		if(list_QVALUEGen_1_List != null) {
                       	    for(int pos = 0; pos < list_QVALUEGen_1_List.size(); pos++ )  { 
@@ -6927,7 +6927,7 @@ public class DDLMySQLParser extends Parser {
                       		}
                       		}
                       		}
-                      	
+
                       	    // Create a Token CST Leaf	
                       	    if(TK_3 != null) {
                       			Leaf TK_3Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
@@ -6990,7 +6990,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 31 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3049:7: TK_0= 'SET' TK_1= '(' QVALUEGen= QVALUE (TK_2= ',' QVALUEGen_1_List+= QVALUE )* TK_3= ')' (TK_4= 'CHARACTER' TK_5= 'SET' IDGen= ID )? (TK_6= 'COLLATE' IDGen_1= ID )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3049:7: TK_0= 'SET' TK_1= '(' QVALUEGen= QVALUE (TK_2= ',' QVALUEGen_1_List+= QVALUE )* TK_3= ')' (TK_4= 'CHARACTER' TK_5= 'SET' IDGen= ID )? (TK_6= 'COLLATE' IDGen_1= ID )?
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,19,FOLLOW_19_in_data_type2163); if (failed) return retval;
@@ -6998,7 +6998,7 @@ public class DDLMySQLParser extends Parser {
                     match(input,38,FOLLOW_38_in_data_type2167); if (failed) return retval;
                     QVALUEGen=(Token)input.LT(1);
                     match(input,QVALUE,FOLLOW_QVALUE_in_data_type2171); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3049:44: (TK_2= ',' QVALUEGen_1_List+= QVALUE )*
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3049:44: (TK_2= ',' QVALUEGen_1_List+= QVALUE )*
                     loop103:
                     do {
                         int alt103=2;
@@ -7011,7 +7011,7 @@ public class DDLMySQLParser extends Parser {
 
                         switch (alt103) {
                     	case 1 :
-                    	    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3049:45: TK_2= ',' QVALUEGen_1_List+= QVALUE
+                    	    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3049:45: TK_2= ',' QVALUEGen_1_List+= QVALUE
                     	    {
                     	    TK_2=(Token)input.LT(1);
                     	    match(input,20,FOLLOW_20_in_data_type2176); if (failed) return retval;
@@ -7031,7 +7031,7 @@ public class DDLMySQLParser extends Parser {
 
                     TK_3=(Token)input.LT(1);
                     match(input,39,FOLLOW_39_in_data_type2186); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3049:91: (TK_4= 'CHARACTER' TK_5= 'SET' IDGen= ID )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3049:91: (TK_4= 'CHARACTER' TK_5= 'SET' IDGen= ID )?
                     int alt104=2;
                     int LA104_0 = input.LA(1);
 
@@ -7040,7 +7040,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt104) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3049:92: TK_4= 'CHARACTER' TK_5= 'SET' IDGen= ID
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3049:92: TK_4= 'CHARACTER' TK_5= 'SET' IDGen= ID
                             {
                             TK_4=(Token)input.LT(1);
                             match(input,34,FOLLOW_34_in_data_type2192); if (failed) return retval;
@@ -7054,7 +7054,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3049:131: (TK_6= 'COLLATE' IDGen_1= ID )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3049:131: (TK_6= 'COLLATE' IDGen_1= ID )?
                     int alt105=2;
                     int LA105_0 = input.LA(1);
 
@@ -7063,7 +7063,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt105) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3049:132: TK_6= 'COLLATE' IDGen_1= ID
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3049:132: TK_6= 'COLLATE' IDGen_1= ID
                             {
                             TK_6=(Token)input.LT(1);
                             match(input,35,FOLLOW_35_in_data_type2207); if (failed) return retval;
@@ -7076,7 +7076,7 @@ public class DDLMySQLParser extends Parser {
                     }
 
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node data_typeReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		data_typeReturnNode.setKind("data_type");
@@ -7107,7 +7107,7 @@ public class DDLMySQLParser extends Parser {
                       			QVALUEGenLeaf.setLine(QVALUEGen.getLine());
                       			data_typeReturnNode.getChildren().add(QVALUEGenLeaf);
                       		}
-                      	
+
                       		// Create a special CST Node for terminal QVALUEGen_1_List aggregation
                       		if(list_QVALUEGen_1_List != null) {
                       	    for(int pos = 0; pos < list_QVALUEGen_1_List.size(); pos++ )  { 
@@ -7132,7 +7132,7 @@ public class DDLMySQLParser extends Parser {
                       		}
                       		}
                       		}
-                      	
+
                       	    // Create a Token CST Leaf	
                       	    if(TK_3 != null) {
                       			Leaf TK_3Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
@@ -7217,7 +7217,7 @@ public class DDLMySQLParser extends Parser {
     };
 
     // $ANTLR start table_options
-    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3166:1: table_options returns [Node returnNode] : (TK_0= 'ENGINE' (TK_1= '=' )? IDGen= ID | TK_0= 'AUTO_INCREMENT' (TK_1= '=' )? NUMBERGen= NUMBER | TK_0= 'AVG_ROW_LENGTH' (TK_1= '=' )? NUMBERGen= NUMBER | (TK_0= 'DEFAULT' )? TK_1= 'CHARACTER' TK_2= 'SET' (TK_3= '=' )? IDGen= ID | (TK_0= 'DEFAULT' )? TK_1= 'CHARSET' (TK_2= '=' )? IDGen= ID | TK_0= 'CHECKSUM' (TK_1= '=' )? NUMBERGen= NUMBER | (TK_0= 'DEFAULT' )? TK_1= 'COLLATE' (TK_2= '=' )? IDGen= ID | TK_0= 'COMMENT' (TK_1= '=' )? DOUBLEQUOTEGen= DOUBLEQUOTE DQVALUEGen= DQVALUE DOUBLEQUOTEGen_1= DOUBLEQUOTE | TK_0= 'CONNECTION' (TK_1= '=' )? DOUBLEQUOTEGen= DOUBLEQUOTE DQVALUEGen= DQVALUE DOUBLEQUOTEGen_1= DOUBLEQUOTE | TK_0= 'DELAY_KEY_WRITE' (TK_1= '=' )? NUMBERGen= NUMBER | TK_0= 'INDEX DIRECTORY' (TK_1= '=' )? DOUBLEQUOTEGen= DOUBLEQUOTE DQVALUEGen= DQVALUE DOUBLEQUOTEGen_1= DOUBLEQUOTE | TK_0= 'INSERT_METHOD' (TK_1= '=' )? (TK_2= 'NO' | TK_3= 'FIRST' | TK_4= 'LAST' ) | TK_0= 'KEY_BLOCK_SIZE' (TK_1= '=' )? NUMBERGen= NUMBER | TK_0= 'MAX_ROWS' (TK_1= '=' )? NUMBERGen= NUMBER | TK_0= 'MIN_ROWS' (TK_1= '=' )? NUMBERGen= NUMBER | TK_0= 'PACK_KEYS' (TK_1= '=' )? (NUMBERGen= NUMBER | TK_2= 'DEFAULT' ) | TK_0= 'ROW_FORMAT' (TK_1= '=' )? (TK_2= 'DEFAULT' | TK_3= 'DYNAMIC' | TK_4= 'FIXED' | TK_5= 'COMPRESSED' | TK_6= 'REDUNDANT' | TK_7= 'COMPACT' ) | TK_0= 'TABLESPACE' IDGen= ID (TK_1= 'STORAGE' (TK_2= 'DISK' | TK_3= 'DEFAULT' ) )? | TK_0= 'UNION' (TK_1= '=' )? IDGen= ID (TK_2= ',' IDGen_1_List+= ID )* );
+    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3166:1: table_options returns [Node returnNode] : (TK_0= 'ENGINE' (TK_1= '=' )? IDGen= ID | TK_0= 'AUTO_INCREMENT' (TK_1= '=' )? NUMBERGen= NUMBER | TK_0= 'AVG_ROW_LENGTH' (TK_1= '=' )? NUMBERGen= NUMBER | (TK_0= 'DEFAULT' )? TK_1= 'CHARACTER' TK_2= 'SET' (TK_3= '=' )? IDGen= ID | (TK_0= 'DEFAULT' )? TK_1= 'CHARSET' (TK_2= '=' )? IDGen= ID | TK_0= 'CHECKSUM' (TK_1= '=' )? NUMBERGen= NUMBER | (TK_0= 'DEFAULT' )? TK_1= 'COLLATE' (TK_2= '=' )? IDGen= ID | TK_0= 'COMMENT' (TK_1= '=' )? DOUBLEQUOTEGen= DOUBLEQUOTE DQVALUEGen= DQVALUE DOUBLEQUOTEGen_1= DOUBLEQUOTE | TK_0= 'CONNECTION' (TK_1= '=' )? DOUBLEQUOTEGen= DOUBLEQUOTE DQVALUEGen= DQVALUE DOUBLEQUOTEGen_1= DOUBLEQUOTE | TK_0= 'DELAY_KEY_WRITE' (TK_1= '=' )? NUMBERGen= NUMBER | TK_0= 'INDEX DIRECTORY' (TK_1= '=' )? DOUBLEQUOTEGen= DOUBLEQUOTE DQVALUEGen= DQVALUE DOUBLEQUOTEGen_1= DOUBLEQUOTE | TK_0= 'INSERT_METHOD' (TK_1= '=' )? (TK_2= 'NO' | TK_3= 'FIRST' | TK_4= 'LAST' ) | TK_0= 'KEY_BLOCK_SIZE' (TK_1= '=' )? NUMBERGen= NUMBER | TK_0= 'MAX_ROWS' (TK_1= '=' )? NUMBERGen= NUMBER | TK_0= 'MIN_ROWS' (TK_1= '=' )? NUMBERGen= NUMBER | TK_0= 'PACK_KEYS' (TK_1= '=' )? (NUMBERGen= NUMBER | TK_2= 'DEFAULT' ) | TK_0= 'ROW_FORMAT' (TK_1= '=' )? (TK_2= 'DEFAULT' | TK_3= 'DYNAMIC' | TK_4= 'FIXED' | TK_5= 'COMPRESSED' | TK_6= 'REDUNDANT' | TK_7= 'COMPACT' ) | TK_0= 'TABLESPACE' IDGen= ID (TK_1= 'STORAGE' (TK_2= 'DISK' | TK_3= 'DEFAULT' ) )? | TK_0= 'UNION' (TK_1= '=' )? IDGen= ID (TK_2= ',' IDGen_1_List+= ID )* );
     public final table_options_return table_options() throws RecognitionException {
         table_options_return retval = new table_options_return();
         retval.start = input.LT(1);
@@ -7239,7 +7239,7 @@ public class DDLMySQLParser extends Parser {
         List list_IDGen_1_List=null;
 
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3167:1: (TK_0= 'ENGINE' (TK_1= '=' )? IDGen= ID | TK_0= 'AUTO_INCREMENT' (TK_1= '=' )? NUMBERGen= NUMBER | TK_0= 'AVG_ROW_LENGTH' (TK_1= '=' )? NUMBERGen= NUMBER | (TK_0= 'DEFAULT' )? TK_1= 'CHARACTER' TK_2= 'SET' (TK_3= '=' )? IDGen= ID | (TK_0= 'DEFAULT' )? TK_1= 'CHARSET' (TK_2= '=' )? IDGen= ID | TK_0= 'CHECKSUM' (TK_1= '=' )? NUMBERGen= NUMBER | (TK_0= 'DEFAULT' )? TK_1= 'COLLATE' (TK_2= '=' )? IDGen= ID | TK_0= 'COMMENT' (TK_1= '=' )? DOUBLEQUOTEGen= DOUBLEQUOTE DQVALUEGen= DQVALUE DOUBLEQUOTEGen_1= DOUBLEQUOTE | TK_0= 'CONNECTION' (TK_1= '=' )? DOUBLEQUOTEGen= DOUBLEQUOTE DQVALUEGen= DQVALUE DOUBLEQUOTEGen_1= DOUBLEQUOTE | TK_0= 'DELAY_KEY_WRITE' (TK_1= '=' )? NUMBERGen= NUMBER | TK_0= 'INDEX DIRECTORY' (TK_1= '=' )? DOUBLEQUOTEGen= DOUBLEQUOTE DQVALUEGen= DQVALUE DOUBLEQUOTEGen_1= DOUBLEQUOTE | TK_0= 'INSERT_METHOD' (TK_1= '=' )? (TK_2= 'NO' | TK_3= 'FIRST' | TK_4= 'LAST' ) | TK_0= 'KEY_BLOCK_SIZE' (TK_1= '=' )? NUMBERGen= NUMBER | TK_0= 'MAX_ROWS' (TK_1= '=' )? NUMBERGen= NUMBER | TK_0= 'MIN_ROWS' (TK_1= '=' )? NUMBERGen= NUMBER | TK_0= 'PACK_KEYS' (TK_1= '=' )? (NUMBERGen= NUMBER | TK_2= 'DEFAULT' ) | TK_0= 'ROW_FORMAT' (TK_1= '=' )? (TK_2= 'DEFAULT' | TK_3= 'DYNAMIC' | TK_4= 'FIXED' | TK_5= 'COMPRESSED' | TK_6= 'REDUNDANT' | TK_7= 'COMPACT' ) | TK_0= 'TABLESPACE' IDGen= ID (TK_1= 'STORAGE' (TK_2= 'DISK' | TK_3= 'DEFAULT' ) )? | TK_0= 'UNION' (TK_1= '=' )? IDGen= ID (TK_2= ',' IDGen_1_List+= ID )* )
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3167:1: (TK_0= 'ENGINE' (TK_1= '=' )? IDGen= ID | TK_0= 'AUTO_INCREMENT' (TK_1= '=' )? NUMBERGen= NUMBER | TK_0= 'AVG_ROW_LENGTH' (TK_1= '=' )? NUMBERGen= NUMBER | (TK_0= 'DEFAULT' )? TK_1= 'CHARACTER' TK_2= 'SET' (TK_3= '=' )? IDGen= ID | (TK_0= 'DEFAULT' )? TK_1= 'CHARSET' (TK_2= '=' )? IDGen= ID | TK_0= 'CHECKSUM' (TK_1= '=' )? NUMBERGen= NUMBER | (TK_0= 'DEFAULT' )? TK_1= 'COLLATE' (TK_2= '=' )? IDGen= ID | TK_0= 'COMMENT' (TK_1= '=' )? DOUBLEQUOTEGen= DOUBLEQUOTE DQVALUEGen= DQVALUE DOUBLEQUOTEGen_1= DOUBLEQUOTE | TK_0= 'CONNECTION' (TK_1= '=' )? DOUBLEQUOTEGen= DOUBLEQUOTE DQVALUEGen= DQVALUE DOUBLEQUOTEGen_1= DOUBLEQUOTE | TK_0= 'DELAY_KEY_WRITE' (TK_1= '=' )? NUMBERGen= NUMBER | TK_0= 'INDEX DIRECTORY' (TK_1= '=' )? DOUBLEQUOTEGen= DOUBLEQUOTE DQVALUEGen= DQVALUE DOUBLEQUOTEGen_1= DOUBLEQUOTE | TK_0= 'INSERT_METHOD' (TK_1= '=' )? (TK_2= 'NO' | TK_3= 'FIRST' | TK_4= 'LAST' ) | TK_0= 'KEY_BLOCK_SIZE' (TK_1= '=' )? NUMBERGen= NUMBER | TK_0= 'MAX_ROWS' (TK_1= '=' )? NUMBERGen= NUMBER | TK_0= 'MIN_ROWS' (TK_1= '=' )? NUMBERGen= NUMBER | TK_0= 'PACK_KEYS' (TK_1= '=' )? (NUMBERGen= NUMBER | TK_2= 'DEFAULT' ) | TK_0= 'ROW_FORMAT' (TK_1= '=' )? (TK_2= 'DEFAULT' | TK_3= 'DYNAMIC' | TK_4= 'FIXED' | TK_5= 'COMPRESSED' | TK_6= 'REDUNDANT' | TK_7= 'COMPACT' ) | TK_0= 'TABLESPACE' IDGen= ID (TK_1= 'STORAGE' (TK_2= 'DISK' | TK_3= 'DEFAULT' ) )? | TK_0= 'UNION' (TK_1= '=' )? IDGen= ID (TK_2= ',' IDGen_1_List+= ID )* )
             int alt134=19;
             switch ( input.LA(1) ) {
             case 98:
@@ -7260,9 +7260,9 @@ public class DDLMySQLParser extends Parser {
             case 33:
                 {
                 switch ( input.LA(2) ) {
-                case 100:
+                case 35:
                     {
-                    alt134=5;
+                    alt134=7;
                     }
                     break;
                 case 34:
@@ -7270,9 +7270,9 @@ public class DDLMySQLParser extends Parser {
                     alt134=4;
                     }
                     break;
-                case 35:
+                case 100:
                     {
-                    alt134=7;
+                    alt134=5;
                     }
                     break;
                 default:
@@ -7375,11 +7375,11 @@ public class DDLMySQLParser extends Parser {
 
             switch (alt134) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3167:3: TK_0= 'ENGINE' (TK_1= '=' )? IDGen= ID
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3167:3: TK_0= 'ENGINE' (TK_1= '=' )? IDGen= ID
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,98,FOLLOW_98_in_table_options2233); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3167:17: (TK_1= '=' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3167:17: (TK_1= '=' )?
                     int alt107=2;
                     int LA107_0 = input.LA(1);
 
@@ -7388,7 +7388,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt107) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3167:18: TK_1= '='
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3167:18: TK_1= '='
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,22,FOLLOW_22_in_table_options2238); if (failed) return retval;
@@ -7401,7 +7401,7 @@ public class DDLMySQLParser extends Parser {
                     IDGen=(Token)input.LT(1);
                     match(input,ID,FOLLOW_ID_in_table_options2244); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node table_optionsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		table_optionsReturnNode.setKind("table_options");
@@ -7440,11 +7440,11 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3202:7: TK_0= 'AUTO_INCREMENT' (TK_1= '=' )? NUMBERGen= NUMBER
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3202:7: TK_0= 'AUTO_INCREMENT' (TK_1= '=' )? NUMBERGen= NUMBER
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,49,FOLLOW_49_in_table_options2258); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3202:29: (TK_1= '=' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3202:29: (TK_1= '=' )?
                     int alt108=2;
                     int LA108_0 = input.LA(1);
 
@@ -7453,7 +7453,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt108) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3202:30: TK_1= '='
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3202:30: TK_1= '='
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,22,FOLLOW_22_in_table_options2263); if (failed) return retval;
@@ -7466,7 +7466,7 @@ public class DDLMySQLParser extends Parser {
                     NUMBERGen=(Token)input.LT(1);
                     match(input,NUMBER,FOLLOW_NUMBER_in_table_options2269); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node table_optionsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		table_optionsReturnNode.setKind("table_options");
@@ -7505,11 +7505,11 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3237:7: TK_0= 'AVG_ROW_LENGTH' (TK_1= '=' )? NUMBERGen= NUMBER
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3237:7: TK_0= 'AVG_ROW_LENGTH' (TK_1= '=' )? NUMBERGen= NUMBER
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,99,FOLLOW_99_in_table_options2283); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3237:29: (TK_1= '=' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3237:29: (TK_1= '=' )?
                     int alt109=2;
                     int LA109_0 = input.LA(1);
 
@@ -7518,7 +7518,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt109) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3237:30: TK_1= '='
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3237:30: TK_1= '='
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,22,FOLLOW_22_in_table_options2288); if (failed) return retval;
@@ -7531,7 +7531,7 @@ public class DDLMySQLParser extends Parser {
                     NUMBERGen=(Token)input.LT(1);
                     match(input,NUMBER,FOLLOW_NUMBER_in_table_options2294); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node table_optionsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		table_optionsReturnNode.setKind("table_options");
@@ -7570,9 +7570,9 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3272:7: (TK_0= 'DEFAULT' )? TK_1= 'CHARACTER' TK_2= 'SET' (TK_3= '=' )? IDGen= ID
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3272:7: (TK_0= 'DEFAULT' )? TK_1= 'CHARACTER' TK_2= 'SET' (TK_3= '=' )? IDGen= ID
                     {
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3272:7: (TK_0= 'DEFAULT' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3272:7: (TK_0= 'DEFAULT' )?
                     int alt110=2;
                     int LA110_0 = input.LA(1);
 
@@ -7581,7 +7581,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt110) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3272:8: TK_0= 'DEFAULT'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3272:8: TK_0= 'DEFAULT'
                             {
                             TK_0=(Token)input.LT(1);
                             match(input,33,FOLLOW_33_in_table_options2309); if (failed) return retval;
@@ -7595,7 +7595,7 @@ public class DDLMySQLParser extends Parser {
                     match(input,34,FOLLOW_34_in_table_options2315); if (failed) return retval;
                     TK_2=(Token)input.LT(1);
                     match(input,19,FOLLOW_19_in_table_options2319); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3272:53: (TK_3= '=' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3272:53: (TK_3= '=' )?
                     int alt111=2;
                     int LA111_0 = input.LA(1);
 
@@ -7604,7 +7604,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt111) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3272:54: TK_3= '='
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3272:54: TK_3= '='
                             {
                             TK_3=(Token)input.LT(1);
                             match(input,22,FOLLOW_22_in_table_options2324); if (failed) return retval;
@@ -7617,7 +7617,7 @@ public class DDLMySQLParser extends Parser {
                     IDGen=(Token)input.LT(1);
                     match(input,ID,FOLLOW_ID_in_table_options2330); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node table_optionsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		table_optionsReturnNode.setKind("table_options");
@@ -7674,9 +7674,9 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 5 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3325:7: (TK_0= 'DEFAULT' )? TK_1= 'CHARSET' (TK_2= '=' )? IDGen= ID
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3325:7: (TK_0= 'DEFAULT' )? TK_1= 'CHARSET' (TK_2= '=' )? IDGen= ID
                     {
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3325:7: (TK_0= 'DEFAULT' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3325:7: (TK_0= 'DEFAULT' )?
                     int alt112=2;
                     int LA112_0 = input.LA(1);
 
@@ -7685,7 +7685,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt112) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3325:8: TK_0= 'DEFAULT'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3325:8: TK_0= 'DEFAULT'
                             {
                             TK_0=(Token)input.LT(1);
                             match(input,33,FOLLOW_33_in_table_options2345); if (failed) return retval;
@@ -7697,7 +7697,7 @@ public class DDLMySQLParser extends Parser {
 
                     TK_1=(Token)input.LT(1);
                     match(input,100,FOLLOW_100_in_table_options2351); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3325:40: (TK_2= '=' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3325:40: (TK_2= '=' )?
                     int alt113=2;
                     int LA113_0 = input.LA(1);
 
@@ -7706,7 +7706,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt113) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3325:41: TK_2= '='
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3325:41: TK_2= '='
                             {
                             TK_2=(Token)input.LT(1);
                             match(input,22,FOLLOW_22_in_table_options2356); if (failed) return retval;
@@ -7719,7 +7719,7 @@ public class DDLMySQLParser extends Parser {
                     IDGen=(Token)input.LT(1);
                     match(input,ID,FOLLOW_ID_in_table_options2362); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node table_optionsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		table_optionsReturnNode.setKind("table_options");
@@ -7767,11 +7767,11 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 6 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3369:7: TK_0= 'CHECKSUM' (TK_1= '=' )? NUMBERGen= NUMBER
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3369:7: TK_0= 'CHECKSUM' (TK_1= '=' )? NUMBERGen= NUMBER
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,101,FOLLOW_101_in_table_options2376); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3369:23: (TK_1= '=' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3369:23: (TK_1= '=' )?
                     int alt114=2;
                     int LA114_0 = input.LA(1);
 
@@ -7780,7 +7780,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt114) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3369:24: TK_1= '='
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3369:24: TK_1= '='
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,22,FOLLOW_22_in_table_options2381); if (failed) return retval;
@@ -7793,7 +7793,7 @@ public class DDLMySQLParser extends Parser {
                     NUMBERGen=(Token)input.LT(1);
                     match(input,NUMBER,FOLLOW_NUMBER_in_table_options2387); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node table_optionsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		table_optionsReturnNode.setKind("table_options");
@@ -7832,9 +7832,9 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 7 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3404:7: (TK_0= 'DEFAULT' )? TK_1= 'COLLATE' (TK_2= '=' )? IDGen= ID
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3404:7: (TK_0= 'DEFAULT' )? TK_1= 'COLLATE' (TK_2= '=' )? IDGen= ID
                     {
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3404:7: (TK_0= 'DEFAULT' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3404:7: (TK_0= 'DEFAULT' )?
                     int alt115=2;
                     int LA115_0 = input.LA(1);
 
@@ -7843,7 +7843,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt115) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3404:8: TK_0= 'DEFAULT'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3404:8: TK_0= 'DEFAULT'
                             {
                             TK_0=(Token)input.LT(1);
                             match(input,33,FOLLOW_33_in_table_options2402); if (failed) return retval;
@@ -7855,7 +7855,7 @@ public class DDLMySQLParser extends Parser {
 
                     TK_1=(Token)input.LT(1);
                     match(input,35,FOLLOW_35_in_table_options2408); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3404:40: (TK_2= '=' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3404:40: (TK_2= '=' )?
                     int alt116=2;
                     int LA116_0 = input.LA(1);
 
@@ -7864,7 +7864,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt116) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3404:41: TK_2= '='
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3404:41: TK_2= '='
                             {
                             TK_2=(Token)input.LT(1);
                             match(input,22,FOLLOW_22_in_table_options2413); if (failed) return retval;
@@ -7877,7 +7877,7 @@ public class DDLMySQLParser extends Parser {
                     IDGen=(Token)input.LT(1);
                     match(input,ID,FOLLOW_ID_in_table_options2419); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node table_optionsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		table_optionsReturnNode.setKind("table_options");
@@ -7925,11 +7925,11 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 8 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3448:6: TK_0= 'COMMENT' (TK_1= '=' )? DOUBLEQUOTEGen= DOUBLEQUOTE DQVALUEGen= DQVALUE DOUBLEQUOTEGen_1= DOUBLEQUOTE
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3448:6: TK_0= 'COMMENT' (TK_1= '=' )? DOUBLEQUOTEGen= DOUBLEQUOTE DQVALUEGen= DQVALUE DOUBLEQUOTEGen_1= DOUBLEQUOTE
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,50,FOLLOW_50_in_table_options2432); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3448:21: (TK_1= '=' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3448:21: (TK_1= '=' )?
                     int alt117=2;
                     int LA117_0 = input.LA(1);
 
@@ -7938,7 +7938,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt117) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3448:22: TK_1= '='
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3448:22: TK_1= '='
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,22,FOLLOW_22_in_table_options2437); if (failed) return retval;
@@ -7955,7 +7955,7 @@ public class DDLMySQLParser extends Parser {
                     DOUBLEQUOTEGen_1=(Token)input.LT(1);
                     match(input,DOUBLEQUOTE,FOLLOW_DOUBLEQUOTE_in_table_options2451); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node table_optionsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		table_optionsReturnNode.setKind("table_options");
@@ -8012,11 +8012,11 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 9 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3501:7: TK_0= 'CONNECTION' (TK_1= '=' )? DOUBLEQUOTEGen= DOUBLEQUOTE DQVALUEGen= DQVALUE DOUBLEQUOTEGen_1= DOUBLEQUOTE
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3501:7: TK_0= 'CONNECTION' (TK_1= '=' )? DOUBLEQUOTEGen= DOUBLEQUOTE DQVALUEGen= DQVALUE DOUBLEQUOTEGen_1= DOUBLEQUOTE
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,102,FOLLOW_102_in_table_options2465); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3501:25: (TK_1= '=' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3501:25: (TK_1= '=' )?
                     int alt118=2;
                     int LA118_0 = input.LA(1);
 
@@ -8025,7 +8025,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt118) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3501:26: TK_1= '='
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3501:26: TK_1= '='
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,22,FOLLOW_22_in_table_options2470); if (failed) return retval;
@@ -8042,7 +8042,7 @@ public class DDLMySQLParser extends Parser {
                     DOUBLEQUOTEGen_1=(Token)input.LT(1);
                     match(input,DOUBLEQUOTE,FOLLOW_DOUBLEQUOTE_in_table_options2484); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node table_optionsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		table_optionsReturnNode.setKind("table_options");
@@ -8099,11 +8099,11 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 10 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3555:7: TK_0= 'DELAY_KEY_WRITE' (TK_1= '=' )? NUMBERGen= NUMBER
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3555:7: TK_0= 'DELAY_KEY_WRITE' (TK_1= '=' )? NUMBERGen= NUMBER
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,103,FOLLOW_103_in_table_options2502); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3555:30: (TK_1= '=' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3555:30: (TK_1= '=' )?
                     int alt119=2;
                     int LA119_0 = input.LA(1);
 
@@ -8112,7 +8112,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt119) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3555:31: TK_1= '='
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3555:31: TK_1= '='
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,22,FOLLOW_22_in_table_options2507); if (failed) return retval;
@@ -8125,7 +8125,7 @@ public class DDLMySQLParser extends Parser {
                     NUMBERGen=(Token)input.LT(1);
                     match(input,NUMBER,FOLLOW_NUMBER_in_table_options2514); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node table_optionsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		table_optionsReturnNode.setKind("table_options");
@@ -8164,11 +8164,11 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 11 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3590:6: TK_0= 'INDEX DIRECTORY' (TK_1= '=' )? DOUBLEQUOTEGen= DOUBLEQUOTE DQVALUEGen= DQVALUE DOUBLEQUOTEGen_1= DOUBLEQUOTE
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3590:6: TK_0= 'INDEX DIRECTORY' (TK_1= '=' )? DOUBLEQUOTEGen= DOUBLEQUOTE DQVALUEGen= DQVALUE DOUBLEQUOTEGen_1= DOUBLEQUOTE
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,104,FOLLOW_104_in_table_options2527); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3590:29: (TK_1= '=' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3590:29: (TK_1= '=' )?
                     int alt120=2;
                     int LA120_0 = input.LA(1);
 
@@ -8177,7 +8177,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt120) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3590:30: TK_1= '='
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3590:30: TK_1= '='
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,22,FOLLOW_22_in_table_options2532); if (failed) return retval;
@@ -8194,7 +8194,7 @@ public class DDLMySQLParser extends Parser {
                     DOUBLEQUOTEGen_1=(Token)input.LT(1);
                     match(input,DOUBLEQUOTE,FOLLOW_DOUBLEQUOTE_in_table_options2546); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node table_optionsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		table_optionsReturnNode.setKind("table_options");
@@ -8251,11 +8251,11 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 12 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3643:7: TK_0= 'INSERT_METHOD' (TK_1= '=' )? (TK_2= 'NO' | TK_3= 'FIRST' | TK_4= 'LAST' )
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3643:7: TK_0= 'INSERT_METHOD' (TK_1= '=' )? (TK_2= 'NO' | TK_3= 'FIRST' | TK_4= 'LAST' )
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,105,FOLLOW_105_in_table_options2560); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3643:28: (TK_1= '=' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3643:28: (TK_1= '=' )?
                     int alt121=2;
                     int LA121_0 = input.LA(1);
 
@@ -8264,7 +8264,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt121) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3643:29: TK_1= '='
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3643:29: TK_1= '='
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,22,FOLLOW_22_in_table_options2565); if (failed) return retval;
@@ -8274,7 +8274,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3643:40: (TK_2= 'NO' | TK_3= 'FIRST' | TK_4= 'LAST' )
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3643:40: (TK_2= 'NO' | TK_3= 'FIRST' | TK_4= 'LAST' )
                     int alt122=3;
                     switch ( input.LA(1) ) {
                     case 106:
@@ -8302,7 +8302,7 @@ public class DDLMySQLParser extends Parser {
 
                     switch (alt122) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3643:41: TK_2= 'NO'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3643:41: TK_2= 'NO'
                             {
                             TK_2=(Token)input.LT(1);
                             match(input,106,FOLLOW_106_in_table_options2572); if (failed) return retval;
@@ -8310,7 +8310,7 @@ public class DDLMySQLParser extends Parser {
                             }
                             break;
                         case 2 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3643:53: TK_3= 'FIRST'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3643:53: TK_3= 'FIRST'
                             {
                             TK_3=(Token)input.LT(1);
                             match(input,107,FOLLOW_107_in_table_options2578); if (failed) return retval;
@@ -8318,7 +8318,7 @@ public class DDLMySQLParser extends Parser {
                             }
                             break;
                         case 3 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3643:68: TK_4= 'LAST'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3643:68: TK_4= 'LAST'
                             {
                             TK_4=(Token)input.LT(1);
                             match(input,108,FOLLOW_108_in_table_options2584); if (failed) return retval;
@@ -8329,7 +8329,7 @@ public class DDLMySQLParser extends Parser {
                     }
 
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node table_optionsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		table_optionsReturnNode.setKind("table_options");
@@ -8386,11 +8386,11 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 13 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3696:7: TK_0= 'KEY_BLOCK_SIZE' (TK_1= '=' )? NUMBERGen= NUMBER
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3696:7: TK_0= 'KEY_BLOCK_SIZE' (TK_1= '=' )? NUMBERGen= NUMBER
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,62,FOLLOW_62_in_table_options2599); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3696:29: (TK_1= '=' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3696:29: (TK_1= '=' )?
                     int alt123=2;
                     int LA123_0 = input.LA(1);
 
@@ -8399,7 +8399,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt123) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3696:30: TK_1= '='
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3696:30: TK_1= '='
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,22,FOLLOW_22_in_table_options2604); if (failed) return retval;
@@ -8412,7 +8412,7 @@ public class DDLMySQLParser extends Parser {
                     NUMBERGen=(Token)input.LT(1);
                     match(input,NUMBER,FOLLOW_NUMBER_in_table_options2610); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node table_optionsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		table_optionsReturnNode.setKind("table_options");
@@ -8451,11 +8451,11 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 14 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3731:7: TK_0= 'MAX_ROWS' (TK_1= '=' )? NUMBERGen= NUMBER
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3731:7: TK_0= 'MAX_ROWS' (TK_1= '=' )? NUMBERGen= NUMBER
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,109,FOLLOW_109_in_table_options2624); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3731:23: (TK_1= '=' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3731:23: (TK_1= '=' )?
                     int alt124=2;
                     int LA124_0 = input.LA(1);
 
@@ -8464,7 +8464,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt124) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3731:24: TK_1= '='
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3731:24: TK_1= '='
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,22,FOLLOW_22_in_table_options2629); if (failed) return retval;
@@ -8477,7 +8477,7 @@ public class DDLMySQLParser extends Parser {
                     NUMBERGen=(Token)input.LT(1);
                     match(input,NUMBER,FOLLOW_NUMBER_in_table_options2635); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node table_optionsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		table_optionsReturnNode.setKind("table_options");
@@ -8516,11 +8516,11 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 15 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3766:7: TK_0= 'MIN_ROWS' (TK_1= '=' )? NUMBERGen= NUMBER
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3766:7: TK_0= 'MIN_ROWS' (TK_1= '=' )? NUMBERGen= NUMBER
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,110,FOLLOW_110_in_table_options2649); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3766:23: (TK_1= '=' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3766:23: (TK_1= '=' )?
                     int alt125=2;
                     int LA125_0 = input.LA(1);
 
@@ -8529,7 +8529,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt125) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3766:24: TK_1= '='
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3766:24: TK_1= '='
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,22,FOLLOW_22_in_table_options2654); if (failed) return retval;
@@ -8542,7 +8542,7 @@ public class DDLMySQLParser extends Parser {
                     NUMBERGen=(Token)input.LT(1);
                     match(input,NUMBER,FOLLOW_NUMBER_in_table_options2660); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node table_optionsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		table_optionsReturnNode.setKind("table_options");
@@ -8581,11 +8581,11 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 16 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3801:7: TK_0= 'PACK_KEYS' (TK_1= '=' )? (NUMBERGen= NUMBER | TK_2= 'DEFAULT' )
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3801:7: TK_0= 'PACK_KEYS' (TK_1= '=' )? (NUMBERGen= NUMBER | TK_2= 'DEFAULT' )
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,111,FOLLOW_111_in_table_options2674); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3801:24: (TK_1= '=' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3801:24: (TK_1= '=' )?
                     int alt126=2;
                     int LA126_0 = input.LA(1);
 
@@ -8594,7 +8594,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt126) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3801:25: TK_1= '='
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3801:25: TK_1= '='
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,22,FOLLOW_22_in_table_options2679); if (failed) return retval;
@@ -8604,7 +8604,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3801:36: (NUMBERGen= NUMBER | TK_2= 'DEFAULT' )
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3801:36: (NUMBERGen= NUMBER | TK_2= 'DEFAULT' )
                     int alt127=2;
                     int LA127_0 = input.LA(1);
 
@@ -8623,7 +8623,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt127) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3801:37: NUMBERGen= NUMBER
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3801:37: NUMBERGen= NUMBER
                             {
                             NUMBERGen=(Token)input.LT(1);
                             match(input,NUMBER,FOLLOW_NUMBER_in_table_options2686); if (failed) return retval;
@@ -8631,7 +8631,7 @@ public class DDLMySQLParser extends Parser {
                             }
                             break;
                         case 2 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3801:56: TK_2= 'DEFAULT'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3801:56: TK_2= 'DEFAULT'
                             {
                             TK_2=(Token)input.LT(1);
                             match(input,33,FOLLOW_33_in_table_options2692); if (failed) return retval;
@@ -8642,7 +8642,7 @@ public class DDLMySQLParser extends Parser {
                     }
 
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node table_optionsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		table_optionsReturnNode.setKind("table_options");
@@ -8690,11 +8690,11 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 17 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3846:7: TK_0= 'ROW_FORMAT' (TK_1= '=' )? (TK_2= 'DEFAULT' | TK_3= 'DYNAMIC' | TK_4= 'FIXED' | TK_5= 'COMPRESSED' | TK_6= 'REDUNDANT' | TK_7= 'COMPACT' )
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3846:7: TK_0= 'ROW_FORMAT' (TK_1= '=' )? (TK_2= 'DEFAULT' | TK_3= 'DYNAMIC' | TK_4= 'FIXED' | TK_5= 'COMPRESSED' | TK_6= 'REDUNDANT' | TK_7= 'COMPACT' )
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,112,FOLLOW_112_in_table_options2711); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3846:25: (TK_1= '=' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3846:25: (TK_1= '=' )?
                     int alt128=2;
                     int LA128_0 = input.LA(1);
 
@@ -8703,7 +8703,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt128) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3846:26: TK_1= '='
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3846:26: TK_1= '='
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,22,FOLLOW_22_in_table_options2716); if (failed) return retval;
@@ -8713,7 +8713,7 @@ public class DDLMySQLParser extends Parser {
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3846:37: (TK_2= 'DEFAULT' | TK_3= 'DYNAMIC' | TK_4= 'FIXED' | TK_5= 'COMPRESSED' | TK_6= 'REDUNDANT' | TK_7= 'COMPACT' )
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3846:37: (TK_2= 'DEFAULT' | TK_3= 'DYNAMIC' | TK_4= 'FIXED' | TK_5= 'COMPRESSED' | TK_6= 'REDUNDANT' | TK_7= 'COMPACT' )
                     int alt129=6;
                     switch ( input.LA(1) ) {
                     case 33:
@@ -8756,7 +8756,7 @@ public class DDLMySQLParser extends Parser {
 
                     switch (alt129) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3846:38: TK_2= 'DEFAULT'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3846:38: TK_2= 'DEFAULT'
                             {
                             TK_2=(Token)input.LT(1);
                             match(input,33,FOLLOW_33_in_table_options2723); if (failed) return retval;
@@ -8764,7 +8764,7 @@ public class DDLMySQLParser extends Parser {
                             }
                             break;
                         case 2 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3846:53: TK_3= 'DYNAMIC'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3846:53: TK_3= 'DYNAMIC'
                             {
                             TK_3=(Token)input.LT(1);
                             match(input,53,FOLLOW_53_in_table_options2727); if (failed) return retval;
@@ -8772,7 +8772,7 @@ public class DDLMySQLParser extends Parser {
                             }
                             break;
                         case 3 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3846:68: TK_4= 'FIXED'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3846:68: TK_4= 'FIXED'
                             {
                             TK_4=(Token)input.LT(1);
                             match(input,52,FOLLOW_52_in_table_options2731); if (failed) return retval;
@@ -8780,7 +8780,7 @@ public class DDLMySQLParser extends Parser {
                             }
                             break;
                         case 4 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3846:81: TK_5= 'COMPRESSED'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3846:81: TK_5= 'COMPRESSED'
                             {
                             TK_5=(Token)input.LT(1);
                             match(input,113,FOLLOW_113_in_table_options2735); if (failed) return retval;
@@ -8788,7 +8788,7 @@ public class DDLMySQLParser extends Parser {
                             }
                             break;
                         case 5 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3846:99: TK_6= 'REDUNDANT'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3846:99: TK_6= 'REDUNDANT'
                             {
                             TK_6=(Token)input.LT(1);
                             match(input,114,FOLLOW_114_in_table_options2739); if (failed) return retval;
@@ -8796,7 +8796,7 @@ public class DDLMySQLParser extends Parser {
                             }
                             break;
                         case 6 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3846:116: TK_7= 'COMPACT'
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3846:116: TK_7= 'COMPACT'
                             {
                             TK_7=(Token)input.LT(1);
                             match(input,115,FOLLOW_115_in_table_options2743); if (failed) return retval;
@@ -8807,7 +8807,7 @@ public class DDLMySQLParser extends Parser {
                     }
 
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node table_optionsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		table_optionsReturnNode.setKind("table_options");
@@ -8891,13 +8891,13 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 18 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3926:7: TK_0= 'TABLESPACE' IDGen= ID (TK_1= 'STORAGE' (TK_2= 'DISK' | TK_3= 'DEFAULT' ) )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3926:7: TK_0= 'TABLESPACE' IDGen= ID (TK_1= 'STORAGE' (TK_2= 'DISK' | TK_3= 'DEFAULT' ) )?
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,116,FOLLOW_116_in_table_options2758); if (failed) return retval;
                     IDGen=(Token)input.LT(1);
                     match(input,ID,FOLLOW_ID_in_table_options2762); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3926:34: (TK_1= 'STORAGE' (TK_2= 'DISK' | TK_3= 'DEFAULT' ) )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3926:34: (TK_1= 'STORAGE' (TK_2= 'DISK' | TK_3= 'DEFAULT' ) )?
                     int alt131=2;
                     int LA131_0 = input.LA(1);
 
@@ -8906,11 +8906,11 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt131) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3926:35: TK_1= 'STORAGE' (TK_2= 'DISK' | TK_3= 'DEFAULT' )
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3926:35: TK_1= 'STORAGE' (TK_2= 'DISK' | TK_3= 'DEFAULT' )
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,54,FOLLOW_54_in_table_options2767); if (failed) return retval;
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3926:50: (TK_2= 'DISK' | TK_3= 'DEFAULT' )
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3926:50: (TK_2= 'DISK' | TK_3= 'DEFAULT' )
                             int alt130=2;
                             int LA130_0 = input.LA(1);
 
@@ -8929,7 +8929,7 @@ public class DDLMySQLParser extends Parser {
                             }
                             switch (alt130) {
                                 case 1 :
-                                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3926:51: TK_2= 'DISK'
+                                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3926:51: TK_2= 'DISK'
                                     {
                                     TK_2=(Token)input.LT(1);
                                     match(input,55,FOLLOW_55_in_table_options2772); if (failed) return retval;
@@ -8937,7 +8937,7 @@ public class DDLMySQLParser extends Parser {
                                     }
                                     break;
                                 case 2 :
-                                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3926:63: TK_3= 'DEFAULT'
+                                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3926:63: TK_3= 'DEFAULT'
                                     {
                                     TK_3=(Token)input.LT(1);
                                     match(input,33,FOLLOW_33_in_table_options2776); if (failed) return retval;
@@ -8954,7 +8954,7 @@ public class DDLMySQLParser extends Parser {
                     }
 
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node table_optionsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		table_optionsReturnNode.setKind("table_options");
@@ -9011,11 +9011,11 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 19 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3979:7: TK_0= 'UNION' (TK_1= '=' )? IDGen= ID (TK_2= ',' IDGen_1_List+= ID )*
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3979:7: TK_0= 'UNION' (TK_1= '=' )? IDGen= ID (TK_2= ',' IDGen_1_List+= ID )*
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,117,FOLLOW_117_in_table_options2794); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3979:20: (TK_1= '=' )?
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3979:20: (TK_1= '=' )?
                     int alt132=2;
                     int LA132_0 = input.LA(1);
 
@@ -9024,7 +9024,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     switch (alt132) {
                         case 1 :
-                            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3979:21: TK_1= '='
+                            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3979:21: TK_1= '='
                             {
                             TK_1=(Token)input.LT(1);
                             match(input,22,FOLLOW_22_in_table_options2799); if (failed) return retval;
@@ -9036,7 +9036,7 @@ public class DDLMySQLParser extends Parser {
 
                     IDGen=(Token)input.LT(1);
                     match(input,ID,FOLLOW_ID_in_table_options2805); if (failed) return retval;
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3979:41: (TK_2= ',' IDGen_1_List+= ID )*
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3979:41: (TK_2= ',' IDGen_1_List+= ID )*
                     loop133:
                     do {
                         int alt133=2;
@@ -9049,7 +9049,7 @@ public class DDLMySQLParser extends Parser {
 
                         switch (alt133) {
                     	case 1 :
-                    	    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:3979:42: TK_2= ',' IDGen_1_List+= ID
+                    	    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:3979:42: TK_2= ',' IDGen_1_List+= ID
                     	    {
                     	    TK_2=(Token)input.LT(1);
                     	    match(input,20,FOLLOW_20_in_table_options2810); if (failed) return retval;
@@ -9068,7 +9068,7 @@ public class DDLMySQLParser extends Parser {
                     } while (true);
 
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node table_optionsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		table_optionsReturnNode.setKind("table_options");
@@ -9099,7 +9099,7 @@ public class DDLMySQLParser extends Parser {
                       			IDGenLeaf.setLine(IDGen.getLine());
                       			table_optionsReturnNode.getChildren().add(IDGenLeaf);
                       		}
-                      	
+
                       		// Create a special CST Node for terminal IDGen_1_List aggregation
                       		if(list_IDGen_1_List != null) {
                       	    for(int pos = 0; pos < list_IDGen_1_List.size(); pos++ )  { 
@@ -9124,7 +9124,7 @@ public class DDLMySQLParser extends Parser {
                       		}
                       		}
                       		}
-                      	
+
                       		// Returns the Node with CST Leaves/Nodes
                       		retval.returnNode = table_optionsReturnNode;
                       	
@@ -9155,7 +9155,7 @@ public class DDLMySQLParser extends Parser {
     };
 
     // $ANTLR start reference_definition
-    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4043:1: reference_definition returns [Node returnNode] : TK_0= 'REFERENCES' OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE TK_1= '(' index_col_nameGen+= index_col_name (TK_2= ',' index_col_nameGen_1+= index_col_name )* TK_3= ')' (TK_4= 'MATCH' TK_5= 'FULL' | TK_6= 'MATCH' TK_7= 'PARTIAL' | TK_8= 'MATCH' TK_9= 'SIMPLE' )? (TK_10= 'ON' TK_11= 'DELETE' reference_optionGen+= reference_option )? (TK_12= 'ON' TK_13= 'UPDATE' reference_optionGen_1+= reference_option )? ;
+    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4043:1: reference_definition returns [Node returnNode] : TK_0= 'REFERENCES' OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE TK_1= '(' index_col_nameGen+= index_col_name (TK_2= ',' index_col_nameGen_1+= index_col_name )* TK_3= ')' (TK_4= 'MATCH' TK_5= 'FULL' | TK_6= 'MATCH' TK_7= 'PARTIAL' | TK_8= 'MATCH' TK_9= 'SIMPLE' )? (TK_10= 'ON' TK_11= 'DELETE' reference_optionGen+= reference_option )? (TK_12= 'ON' TK_13= 'UPDATE' reference_optionGen_1+= reference_option )? ;
     public final reference_definition_return reference_definition() throws RecognitionException {
         reference_definition_return retval = new reference_definition_return();
         retval.start = input.LT(1);
@@ -9186,8 +9186,8 @@ public class DDLMySQLParser extends Parser {
         RuleReturnScope reference_optionGen = null;
         RuleReturnScope reference_optionGen_1 = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4044:1: (TK_0= 'REFERENCES' OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE TK_1= '(' index_col_nameGen+= index_col_name (TK_2= ',' index_col_nameGen_1+= index_col_name )* TK_3= ')' (TK_4= 'MATCH' TK_5= 'FULL' | TK_6= 'MATCH' TK_7= 'PARTIAL' | TK_8= 'MATCH' TK_9= 'SIMPLE' )? (TK_10= 'ON' TK_11= 'DELETE' reference_optionGen+= reference_option )? (TK_12= 'ON' TK_13= 'UPDATE' reference_optionGen_1+= reference_option )? )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4044:3: TK_0= 'REFERENCES' OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE TK_1= '(' index_col_nameGen+= index_col_name (TK_2= ',' index_col_nameGen_1+= index_col_name )* TK_3= ')' (TK_4= 'MATCH' TK_5= 'FULL' | TK_6= 'MATCH' TK_7= 'PARTIAL' | TK_8= 'MATCH' TK_9= 'SIMPLE' )? (TK_10= 'ON' TK_11= 'DELETE' reference_optionGen+= reference_option )? (TK_12= 'ON' TK_13= 'UPDATE' reference_optionGen_1+= reference_option )?
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4044:1: (TK_0= 'REFERENCES' OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE TK_1= '(' index_col_nameGen+= index_col_name (TK_2= ',' index_col_nameGen_1+= index_col_name )* TK_3= ')' (TK_4= 'MATCH' TK_5= 'FULL' | TK_6= 'MATCH' TK_7= 'PARTIAL' | TK_8= 'MATCH' TK_9= 'SIMPLE' )? (TK_10= 'ON' TK_11= 'DELETE' reference_optionGen+= reference_option )? (TK_12= 'ON' TK_13= 'UPDATE' reference_optionGen_1+= reference_option )? )
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4044:3: TK_0= 'REFERENCES' OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE TK_1= '(' index_col_nameGen+= index_col_name (TK_2= ',' index_col_nameGen_1+= index_col_name )* TK_3= ')' (TK_4= 'MATCH' TK_5= 'FULL' | TK_6= 'MATCH' TK_7= 'PARTIAL' | TK_8= 'MATCH' TK_9= 'SIMPLE' )? (TK_10= 'ON' TK_11= 'DELETE' reference_optionGen+= reference_option )? (TK_12= 'ON' TK_13= 'UPDATE' reference_optionGen_1+= reference_option )?
             {
             TK_0=(Token)input.LT(1);
             match(input,118,FOLLOW_118_in_reference_definition2838); if (failed) return retval;
@@ -9206,7 +9206,7 @@ public class DDLMySQLParser extends Parser {
             if (list_index_col_nameGen==null) list_index_col_nameGen=new ArrayList();
             list_index_col_nameGen.add(index_col_nameGen);
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4044:109: (TK_2= ',' index_col_nameGen_1+= index_col_name )*
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4044:109: (TK_2= ',' index_col_nameGen_1+= index_col_name )*
             loop135:
             do {
                 int alt135=2;
@@ -9219,7 +9219,7 @@ public class DDLMySQLParser extends Parser {
 
                 switch (alt135) {
             	case 1 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4044:110: TK_2= ',' index_col_nameGen_1+= index_col_name
+            	    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4044:110: TK_2= ',' index_col_nameGen_1+= index_col_name
             	    {
             	    TK_2=(Token)input.LT(1);
             	    match(input,20,FOLLOW_20_in_reference_definition2863); if (failed) return retval;
@@ -9241,7 +9241,7 @@ public class DDLMySQLParser extends Parser {
 
             TK_3=(Token)input.LT(1);
             match(input,39,FOLLOW_39_in_reference_definition2873); if (failed) return retval;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4045:8: (TK_4= 'MATCH' TK_5= 'FULL' | TK_6= 'MATCH' TK_7= 'PARTIAL' | TK_8= 'MATCH' TK_9= 'SIMPLE' )?
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4045:8: (TK_4= 'MATCH' TK_5= 'FULL' | TK_6= 'MATCH' TK_7= 'PARTIAL' | TK_8= 'MATCH' TK_9= 'SIMPLE' )?
             int alt136=4;
             int LA136_0 = input.LA(1);
 
@@ -9252,14 +9252,14 @@ public class DDLMySQLParser extends Parser {
                         alt136=1;
                         }
                         break;
-                    case 122:
-                        {
-                        alt136=3;
-                        }
-                        break;
                     case 121:
                         {
                         alt136=2;
+                        }
+                        break;
+                    case 122:
+                        {
+                        alt136=3;
                         }
                         break;
                 }
@@ -9267,7 +9267,7 @@ public class DDLMySQLParser extends Parser {
             }
             switch (alt136) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4045:9: TK_4= 'MATCH' TK_5= 'FULL'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4045:9: TK_4= 'MATCH' TK_5= 'FULL'
                     {
                     TK_4=(Token)input.LT(1);
                     match(input,119,FOLLOW_119_in_reference_definition2885); if (failed) return retval;
@@ -9277,7 +9277,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4045:36: TK_6= 'MATCH' TK_7= 'PARTIAL'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4045:36: TK_6= 'MATCH' TK_7= 'PARTIAL'
                     {
                     TK_6=(Token)input.LT(1);
                     match(input,119,FOLLOW_119_in_reference_definition2895); if (failed) return retval;
@@ -9287,7 +9287,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4045:66: TK_8= 'MATCH' TK_9= 'SIMPLE'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4045:66: TK_8= 'MATCH' TK_9= 'SIMPLE'
                     {
                     TK_8=(Token)input.LT(1);
                     match(input,119,FOLLOW_119_in_reference_definition2905); if (failed) return retval;
@@ -9299,7 +9299,7 @@ public class DDLMySQLParser extends Parser {
 
             }
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4046:8: (TK_10= 'ON' TK_11= 'DELETE' reference_optionGen+= reference_option )?
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4046:8: (TK_10= 'ON' TK_11= 'DELETE' reference_optionGen+= reference_option )?
             int alt137=2;
             int LA137_0 = input.LA(1);
 
@@ -9312,7 +9312,7 @@ public class DDLMySQLParser extends Parser {
             }
             switch (alt137) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4046:9: TK_10= 'ON' TK_11= 'DELETE' reference_optionGen+= reference_option
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4046:9: TK_10= 'ON' TK_11= 'DELETE' reference_optionGen+= reference_option
                     {
                     TK_10=(Token)input.LT(1);
                     match(input,46,FOLLOW_46_in_reference_definition2923); if (failed) return retval;
@@ -9331,7 +9331,7 @@ public class DDLMySQLParser extends Parser {
 
             }
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4047:8: (TK_12= 'ON' TK_13= 'UPDATE' reference_optionGen_1+= reference_option )?
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4047:8: (TK_12= 'ON' TK_13= 'UPDATE' reference_optionGen_1+= reference_option )?
             int alt138=2;
             int LA138_0 = input.LA(1);
 
@@ -9340,7 +9340,7 @@ public class DDLMySQLParser extends Parser {
             }
             switch (alt138) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4047:9: TK_12= 'ON' TK_13= 'UPDATE' reference_optionGen_1+= reference_option
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4047:9: TK_12= 'ON' TK_13= 'UPDATE' reference_optionGen_1+= reference_option
                     {
                     TK_12=(Token)input.LT(1);
                     match(input,46,FOLLOW_46_in_reference_definition2945); if (failed) return retval;
@@ -9360,7 +9360,7 @@ public class DDLMySQLParser extends Parser {
             }
 
             if ( backtracking==0 ) {
-              
+
               		// Create return CST Node
               		Node reference_definitionReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
               		reference_definitionReturnNode.setKind("reference_definition");
@@ -9419,7 +9419,7 @@ public class DDLMySQLParser extends Parser {
               	            } 
               	        }
               	    }
-              	
+
               		// Create a special CST Node for terminal index_col_nameGen_1 aggregation
               		if(list_index_col_nameGen_1 != null) {
               	    for(int pos = 0; pos < list_index_col_nameGen_1.size(); pos++ )  { 
@@ -9442,7 +9442,7 @@ public class DDLMySQLParser extends Parser {
               		}
               		}
               		}
-              	
+
               	    // Create a Token CST Leaf	
               	    if(TK_3 != null) {
               			Leaf TK_3Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
@@ -9590,7 +9590,7 @@ public class DDLMySQLParser extends Parser {
     };
 
     // $ANTLR start reference_option
-    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4254:1: reference_option returns [Node returnNode] : (TK_0= 'RESTRICT' | TK_0= 'CASCADE' | TK_0= 'SET' TK_1= 'NULL' | TK_0= 'NO' TK_1= 'ACTION' );
+    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4254:1: reference_option returns [Node returnNode] : (TK_0= 'RESTRICT' | TK_0= 'CASCADE' | TK_0= 'SET' TK_1= 'NULL' | TK_0= 'NO' TK_1= 'ACTION' );
     public final reference_option_return reference_option() throws RecognitionException {
         reference_option_return retval = new reference_option_return();
         retval.start = input.LT(1);
@@ -9599,7 +9599,7 @@ public class DDLMySQLParser extends Parser {
         Token TK_1=null;
 
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4255:1: (TK_0= 'RESTRICT' | TK_0= 'CASCADE' | TK_0= 'SET' TK_1= 'NULL' | TK_0= 'NO' TK_1= 'ACTION' )
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4255:1: (TK_0= 'RESTRICT' | TK_0= 'CASCADE' | TK_0= 'SET' TK_1= 'NULL' | TK_0= 'NO' TK_1= 'ACTION' )
             int alt139=4;
             switch ( input.LA(1) ) {
             case 123:
@@ -9632,12 +9632,12 @@ public class DDLMySQLParser extends Parser {
 
             switch (alt139) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4255:3: TK_0= 'RESTRICT'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4255:3: TK_0= 'RESTRICT'
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,123,FOLLOW_123_in_reference_option2978); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node reference_optionReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		reference_optionReturnNode.setKind("reference_option");
@@ -9658,12 +9658,12 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4272:5: TK_0= 'CASCADE'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4272:5: TK_0= 'CASCADE'
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,124,FOLLOW_124_in_reference_option2991); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node reference_optionReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		reference_optionReturnNode.setKind("reference_option");
@@ -9684,14 +9684,14 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4289:5: TK_0= 'SET' TK_1= 'NULL'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4289:5: TK_0= 'SET' TK_1= 'NULL'
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,19,FOLLOW_19_in_reference_option3004); if (failed) return retval;
                     TK_1=(Token)input.LT(1);
                     match(input,45,FOLLOW_45_in_reference_option3008); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node reference_optionReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		reference_optionReturnNode.setKind("reference_option");
@@ -9721,14 +9721,14 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4315:5: TK_0= 'NO' TK_1= 'ACTION'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4315:5: TK_0= 'NO' TK_1= 'ACTION'
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,106,FOLLOW_106_in_reference_option3020); if (failed) return retval;
                     TK_1=(Token)input.LT(1);
                     match(input,125,FOLLOW_125_in_reference_option3024); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node reference_optionReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		reference_optionReturnNode.setKind("reference_option");
@@ -9780,7 +9780,7 @@ public class DDLMySQLParser extends Parser {
     };
 
     // $ANTLR start drop_table
-    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4343:1: drop_table returns [Node returnNode] : TK_0= 'DROP' (TK_1= 'TEMPORARY' )? TK_2= 'TABLE' (TK_3= 'IF' TK_4= 'EXISTS' )? OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE (TK_5= ',' OQUOTEGen_2_List+= OQUOTE IDGen_1_List+= ID OQUOTEGen_3_List+= OQUOTE )* (TK_6= 'RESTRICT' | TK_7= 'CASCADE' )? TK_8= ';' ;
+    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4343:1: drop_table returns [Node returnNode] : TK_0= 'DROP' (TK_1= 'TEMPORARY' )? TK_2= 'TABLE' (TK_3= 'IF' TK_4= 'EXISTS' )? OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE (TK_5= ',' OQUOTEGen_2_List+= OQUOTE IDGen_1_List+= ID OQUOTEGen_3_List+= OQUOTE )* (TK_6= 'RESTRICT' | TK_7= 'CASCADE' )? TK_8= ';' ;
     public final drop_table_return drop_table() throws RecognitionException {
         drop_table_return retval = new drop_table_return();
         retval.start = input.LT(1);
@@ -9805,12 +9805,12 @@ public class DDLMySQLParser extends Parser {
         List list_OQUOTEGen_3_List=null;
 
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4344:1: (TK_0= 'DROP' (TK_1= 'TEMPORARY' )? TK_2= 'TABLE' (TK_3= 'IF' TK_4= 'EXISTS' )? OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE (TK_5= ',' OQUOTEGen_2_List+= OQUOTE IDGen_1_List+= ID OQUOTEGen_3_List+= OQUOTE )* (TK_6= 'RESTRICT' | TK_7= 'CASCADE' )? TK_8= ';' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4344:4: TK_0= 'DROP' (TK_1= 'TEMPORARY' )? TK_2= 'TABLE' (TK_3= 'IF' TK_4= 'EXISTS' )? OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE (TK_5= ',' OQUOTEGen_2_List+= OQUOTE IDGen_1_List+= ID OQUOTEGen_3_List+= OQUOTE )* (TK_6= 'RESTRICT' | TK_7= 'CASCADE' )? TK_8= ';'
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4344:1: (TK_0= 'DROP' (TK_1= 'TEMPORARY' )? TK_2= 'TABLE' (TK_3= 'IF' TK_4= 'EXISTS' )? OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE (TK_5= ',' OQUOTEGen_2_List+= OQUOTE IDGen_1_List+= ID OQUOTEGen_3_List+= OQUOTE )* (TK_6= 'RESTRICT' | TK_7= 'CASCADE' )? TK_8= ';' )
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4344:4: TK_0= 'DROP' (TK_1= 'TEMPORARY' )? TK_2= 'TABLE' (TK_3= 'IF' TK_4= 'EXISTS' )? OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE (TK_5= ',' OQUOTEGen_2_List+= OQUOTE IDGen_1_List+= ID OQUOTEGen_3_List+= OQUOTE )* (TK_6= 'RESTRICT' | TK_7= 'CASCADE' )? TK_8= ';'
             {
             TK_0=(Token)input.LT(1);
             match(input,126,FOLLOW_126_in_drop_table3046); if (failed) return retval;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4344:16: (TK_1= 'TEMPORARY' )?
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4344:16: (TK_1= 'TEMPORARY' )?
             int alt140=2;
             int LA140_0 = input.LA(1);
 
@@ -9819,7 +9819,7 @@ public class DDLMySQLParser extends Parser {
             }
             switch (alt140) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4344:17: TK_1= 'TEMPORARY'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4344:17: TK_1= 'TEMPORARY'
                     {
                     TK_1=(Token)input.LT(1);
                     match(input,36,FOLLOW_36_in_drop_table3051); if (failed) return retval;
@@ -9831,7 +9831,7 @@ public class DDLMySQLParser extends Parser {
 
             TK_2=(Token)input.LT(1);
             match(input,37,FOLLOW_37_in_drop_table3057); if (failed) return retval;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4344:49: (TK_3= 'IF' TK_4= 'EXISTS' )?
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4344:49: (TK_3= 'IF' TK_4= 'EXISTS' )?
             int alt141=2;
             int LA141_0 = input.LA(1);
 
@@ -9840,7 +9840,7 @@ public class DDLMySQLParser extends Parser {
             }
             switch (alt141) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4344:50: TK_3= 'IF' TK_4= 'EXISTS'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4344:50: TK_3= 'IF' TK_4= 'EXISTS'
                     {
                     TK_3=(Token)input.LT(1);
                     match(input,30,FOLLOW_30_in_drop_table3062); if (failed) return retval;
@@ -9858,7 +9858,7 @@ public class DDLMySQLParser extends Parser {
             match(input,ID,FOLLOW_ID_in_drop_table3076); if (failed) return retval;
             OQUOTEGen_1=(Token)input.LT(1);
             match(input,OQUOTE,FOLLOW_OQUOTE_in_drop_table3080); if (failed) return retval;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4344:121: (TK_5= ',' OQUOTEGen_2_List+= OQUOTE IDGen_1_List+= ID OQUOTEGen_3_List+= OQUOTE )*
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4344:121: (TK_5= ',' OQUOTEGen_2_List+= OQUOTE IDGen_1_List+= ID OQUOTEGen_3_List+= OQUOTE )*
             loop142:
             do {
                 int alt142=2;
@@ -9871,7 +9871,7 @@ public class DDLMySQLParser extends Parser {
 
                 switch (alt142) {
             	case 1 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4344:122: TK_5= ',' OQUOTEGen_2_List+= OQUOTE IDGen_1_List+= ID OQUOTEGen_3_List+= OQUOTE
+            	    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4344:122: TK_5= ',' OQUOTEGen_2_List+= OQUOTE IDGen_1_List+= ID OQUOTEGen_3_List+= OQUOTE
             	    {
             	    TK_5=(Token)input.LT(1);
             	    match(input,20,FOLLOW_20_in_drop_table3085); if (failed) return retval;
@@ -9899,7 +9899,7 @@ public class DDLMySQLParser extends Parser {
                 }
             } while (true);
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4345:6: (TK_6= 'RESTRICT' | TK_7= 'CASCADE' )?
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4345:6: (TK_6= 'RESTRICT' | TK_7= 'CASCADE' )?
             int alt143=3;
             int LA143_0 = input.LA(1);
 
@@ -9911,7 +9911,7 @@ public class DDLMySQLParser extends Parser {
             }
             switch (alt143) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4345:7: TK_6= 'RESTRICT'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4345:7: TK_6= 'RESTRICT'
                     {
                     TK_6=(Token)input.LT(1);
                     match(input,123,FOLLOW_123_in_drop_table3109); if (failed) return retval;
@@ -9919,7 +9919,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4345:25: TK_7= 'CASCADE'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4345:25: TK_7= 'CASCADE'
                     {
                     TK_7=(Token)input.LT(1);
                     match(input,124,FOLLOW_124_in_drop_table3115); if (failed) return retval;
@@ -9932,7 +9932,7 @@ public class DDLMySQLParser extends Parser {
             TK_8=(Token)input.LT(1);
             match(input,21,FOLLOW_21_in_drop_table3121); if (failed) return retval;
             if ( backtracking==0 ) {
-              
+
               		// Create return CST Node
               		Node drop_tableReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
               		drop_tableReturnNode.setKind("drop_table");
@@ -10008,7 +10008,7 @@ public class DDLMySQLParser extends Parser {
               			OQUOTEGen_1Leaf.setLine(OQUOTEGen_1.getLine());
               			drop_tableReturnNode.getChildren().add(OQUOTEGen_1Leaf);
               		}
-              	
+
               		// Create a special CST Node for terminal OQUOTEGen_2_List aggregation
               		if(list_OQUOTEGen_2_List != null) {
               	    for(int pos = 0; pos < list_OQUOTEGen_2_List.size(); pos++ )  { 
@@ -10053,7 +10053,7 @@ public class DDLMySQLParser extends Parser {
               		}
               		}
               		}
-              	
+
               	    // Create a Token CST Leaf	
               	    if(TK_6 != null) {
               			Leaf TK_6Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
@@ -10109,7 +10109,7 @@ public class DDLMySQLParser extends Parser {
     };
 
     // $ANTLR start data_manipulation_statements
-    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4500:1: data_manipulation_statements returns [Node returnNode] : insert_statementGen+= insert_statement ;
+    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4500:1: data_manipulation_statements returns [Node returnNode] : insert_statementGen+= insert_statement ;
     public final data_manipulation_statements_return data_manipulation_statements() throws RecognitionException {
         data_manipulation_statements_return retval = new data_manipulation_statements_return();
         retval.start = input.LT(1);
@@ -10117,8 +10117,8 @@ public class DDLMySQLParser extends Parser {
         List list_insert_statementGen=null;
         RuleReturnScope insert_statementGen = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4501:1: (insert_statementGen+= insert_statement )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4501:3: insert_statementGen+= insert_statement
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4501:1: (insert_statementGen+= insert_statement )
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4501:3: insert_statementGen+= insert_statement
             {
             pushFollow(FOLLOW_insert_statement_in_data_manipulation_statements3143);
             insert_statementGen=insert_statement();
@@ -10128,7 +10128,7 @@ public class DDLMySQLParser extends Parser {
             list_insert_statementGen.add(insert_statementGen);
 
             if ( backtracking==0 ) {
-              
+
               		// Create return CST Node
               		Node data_manipulation_statementsReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
               		data_manipulation_statementsReturnNode.setKind("data_manipulation_statements");
@@ -10170,7 +10170,7 @@ public class DDLMySQLParser extends Parser {
     };
 
     // $ANTLR start insert_statement
-    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4521:1: insert_statement returns [Node returnNode] : TK_0= 'INSERT' (TK_1= 'LOW_PRIORITY' | TK_2= 'DELAYED' | TK_3= 'HIGH_PRIORITY' )? (TK_4= 'IGNORE' )? (TK_5= 'INTO' )? OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE (TK_6= '(' col_nameGen+= col_name (TK_7= ',' col_nameGen_1+= col_name )* TK_8= ')' )? (TK_9= 'VALUES' ) insert_valueGen+= insert_value (TK_10= ',' insert_valueGen_1+= insert_value )* TK_11= ';' ;
+    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4521:1: insert_statement returns [Node returnNode] : TK_0= 'INSERT' (TK_1= 'LOW_PRIORITY' | TK_2= 'DELAYED' | TK_3= 'HIGH_PRIORITY' )? (TK_4= 'IGNORE' )? (TK_5= 'INTO' )? OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE (TK_6= '(' col_nameGen+= col_name (TK_7= ',' col_nameGen_1+= col_name )* TK_8= ')' )? (TK_9= 'VALUES' ) insert_valueGen+= insert_value (TK_10= ',' insert_valueGen_1+= insert_value )* TK_11= ';' ;
     public final insert_statement_return insert_statement() throws RecognitionException {
         insert_statement_return retval = new insert_statement_return();
         retval.start = input.LT(1);
@@ -10199,12 +10199,12 @@ public class DDLMySQLParser extends Parser {
         RuleReturnScope insert_valueGen = null;
         RuleReturnScope insert_valueGen_1 = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4522:1: (TK_0= 'INSERT' (TK_1= 'LOW_PRIORITY' | TK_2= 'DELAYED' | TK_3= 'HIGH_PRIORITY' )? (TK_4= 'IGNORE' )? (TK_5= 'INTO' )? OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE (TK_6= '(' col_nameGen+= col_name (TK_7= ',' col_nameGen_1+= col_name )* TK_8= ')' )? (TK_9= 'VALUES' ) insert_valueGen+= insert_value (TK_10= ',' insert_valueGen_1+= insert_value )* TK_11= ';' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4522:4: TK_0= 'INSERT' (TK_1= 'LOW_PRIORITY' | TK_2= 'DELAYED' | TK_3= 'HIGH_PRIORITY' )? (TK_4= 'IGNORE' )? (TK_5= 'INTO' )? OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE (TK_6= '(' col_nameGen+= col_name (TK_7= ',' col_nameGen_1+= col_name )* TK_8= ')' )? (TK_9= 'VALUES' ) insert_valueGen+= insert_value (TK_10= ',' insert_valueGen_1+= insert_value )* TK_11= ';'
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4522:1: (TK_0= 'INSERT' (TK_1= 'LOW_PRIORITY' | TK_2= 'DELAYED' | TK_3= 'HIGH_PRIORITY' )? (TK_4= 'IGNORE' )? (TK_5= 'INTO' )? OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE (TK_6= '(' col_nameGen+= col_name (TK_7= ',' col_nameGen_1+= col_name )* TK_8= ')' )? (TK_9= 'VALUES' ) insert_valueGen+= insert_value (TK_10= ',' insert_valueGen_1+= insert_value )* TK_11= ';' )
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4522:4: TK_0= 'INSERT' (TK_1= 'LOW_PRIORITY' | TK_2= 'DELAYED' | TK_3= 'HIGH_PRIORITY' )? (TK_4= 'IGNORE' )? (TK_5= 'INTO' )? OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE (TK_6= '(' col_nameGen+= col_name (TK_7= ',' col_nameGen_1+= col_name )* TK_8= ')' )? (TK_9= 'VALUES' ) insert_valueGen+= insert_value (TK_10= ',' insert_valueGen_1+= insert_value )* TK_11= ';'
             {
             TK_0=(Token)input.LT(1);
             match(input,127,FOLLOW_127_in_insert_statement3165); if (failed) return retval;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4522:18: (TK_1= 'LOW_PRIORITY' | TK_2= 'DELAYED' | TK_3= 'HIGH_PRIORITY' )?
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4522:18: (TK_1= 'LOW_PRIORITY' | TK_2= 'DELAYED' | TK_3= 'HIGH_PRIORITY' )?
             int alt144=4;
             switch ( input.LA(1) ) {
                 case 128:
@@ -10226,7 +10226,7 @@ public class DDLMySQLParser extends Parser {
 
             switch (alt144) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4522:19: TK_1= 'LOW_PRIORITY'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4522:19: TK_1= 'LOW_PRIORITY'
                     {
                     TK_1=(Token)input.LT(1);
                     match(input,128,FOLLOW_128_in_insert_statement3170); if (failed) return retval;
@@ -10234,7 +10234,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4522:41: TK_2= 'DELAYED'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4522:41: TK_2= 'DELAYED'
                     {
                     TK_2=(Token)input.LT(1);
                     match(input,129,FOLLOW_129_in_insert_statement3176); if (failed) return retval;
@@ -10242,7 +10242,7 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4522:58: TK_3= 'HIGH_PRIORITY'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4522:58: TK_3= 'HIGH_PRIORITY'
                     {
                     TK_3=(Token)input.LT(1);
                     match(input,130,FOLLOW_130_in_insert_statement3182); if (failed) return retval;
@@ -10252,7 +10252,7 @@ public class DDLMySQLParser extends Parser {
 
             }
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4522:81: (TK_4= 'IGNORE' )?
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4522:81: (TK_4= 'IGNORE' )?
             int alt145=2;
             int LA145_0 = input.LA(1);
 
@@ -10261,7 +10261,7 @@ public class DDLMySQLParser extends Parser {
             }
             switch (alt145) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4522:82: TK_4= 'IGNORE'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4522:82: TK_4= 'IGNORE'
                     {
                     TK_4=(Token)input.LT(1);
                     match(input,131,FOLLOW_131_in_insert_statement3189); if (failed) return retval;
@@ -10271,7 +10271,7 @@ public class DDLMySQLParser extends Parser {
 
             }
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4523:6: (TK_5= 'INTO' )?
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4523:6: (TK_5= 'INTO' )?
             int alt146=2;
             int LA146_0 = input.LA(1);
 
@@ -10280,7 +10280,7 @@ public class DDLMySQLParser extends Parser {
             }
             switch (alt146) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4523:7: TK_5= 'INTO'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4523:7: TK_5= 'INTO'
                     {
                     TK_5=(Token)input.LT(1);
                     match(input,132,FOLLOW_132_in_insert_statement3201); if (failed) return retval;
@@ -10296,7 +10296,7 @@ public class DDLMySQLParser extends Parser {
             match(input,ID,FOLLOW_ID_in_insert_statement3211); if (failed) return retval;
             OQUOTEGen_1=(Token)input.LT(1);
             match(input,OQUOTE,FOLLOW_OQUOTE_in_insert_statement3215); if (failed) return retval;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4523:66: (TK_6= '(' col_nameGen+= col_name (TK_7= ',' col_nameGen_1+= col_name )* TK_8= ')' )?
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4523:66: (TK_6= '(' col_nameGen+= col_name (TK_7= ',' col_nameGen_1+= col_name )* TK_8= ')' )?
             int alt148=2;
             int LA148_0 = input.LA(1);
 
@@ -10305,7 +10305,7 @@ public class DDLMySQLParser extends Parser {
             }
             switch (alt148) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4523:67: TK_6= '(' col_nameGen+= col_name (TK_7= ',' col_nameGen_1+= col_name )* TK_8= ')'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4523:67: TK_6= '(' col_nameGen+= col_name (TK_7= ',' col_nameGen_1+= col_name )* TK_8= ')'
                     {
                     TK_6=(Token)input.LT(1);
                     match(input,38,FOLLOW_38_in_insert_statement3220); if (failed) return retval;
@@ -10316,7 +10316,7 @@ public class DDLMySQLParser extends Parser {
                     if (list_col_nameGen==null) list_col_nameGen=new ArrayList();
                     list_col_nameGen.add(col_nameGen);
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4523:98: (TK_7= ',' col_nameGen_1+= col_name )*
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4523:98: (TK_7= ',' col_nameGen_1+= col_name )*
                     loop147:
                     do {
                         int alt147=2;
@@ -10329,7 +10329,7 @@ public class DDLMySQLParser extends Parser {
 
                         switch (alt147) {
                     	case 1 :
-                    	    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4523:99: TK_7= ',' col_nameGen_1+= col_name
+                    	    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4523:99: TK_7= ',' col_nameGen_1+= col_name
                     	    {
                     	    TK_7=(Token)input.LT(1);
                     	    match(input,20,FOLLOW_20_in_insert_statement3229); if (failed) return retval;
@@ -10357,8 +10357,8 @@ public class DDLMySQLParser extends Parser {
 
             }
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4524:6: (TK_9= 'VALUES' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4524:7: TK_9= 'VALUES'
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4524:6: (TK_9= 'VALUES' )
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4524:7: TK_9= 'VALUES'
             {
             TK_9=(Token)input.LT(1);
             match(input,133,FOLLOW_133_in_insert_statement3251); if (failed) return retval;
@@ -10372,7 +10372,7 @@ public class DDLMySQLParser extends Parser {
             if (list_insert_valueGen==null) list_insert_valueGen=new ArrayList();
             list_insert_valueGen.add(insert_valueGen);
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4524:52: (TK_10= ',' insert_valueGen_1+= insert_value )*
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4524:52: (TK_10= ',' insert_valueGen_1+= insert_value )*
             loop149:
             do {
                 int alt149=2;
@@ -10385,7 +10385,7 @@ public class DDLMySQLParser extends Parser {
 
                 switch (alt149) {
             	case 1 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4524:53: TK_10= ',' insert_valueGen_1+= insert_value
+            	    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4524:53: TK_10= ',' insert_valueGen_1+= insert_value
             	    {
             	    TK_10=(Token)input.LT(1);
             	    match(input,20,FOLLOW_20_in_insert_statement3261); if (failed) return retval;
@@ -10408,7 +10408,7 @@ public class DDLMySQLParser extends Parser {
             TK_11=(Token)input.LT(1);
             match(input,21,FOLLOW_21_in_insert_statement3271); if (failed) return retval;
             if ( backtracking==0 ) {
-              
+
               		// Create return CST Node
               		Node insert_statementReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
               		insert_statementReturnNode.setKind("insert_statement");
@@ -10512,7 +10512,7 @@ public class DDLMySQLParser extends Parser {
               	            } 
               	        }
               	    }
-              	
+
               		// Create a special CST Node for terminal col_nameGen_1 aggregation
               		if(list_col_nameGen_1 != null) {
               	    for(int pos = 0; pos < list_col_nameGen_1.size(); pos++ )  { 
@@ -10535,7 +10535,7 @@ public class DDLMySQLParser extends Parser {
               		}
               		}
               		}
-              	
+
               	    // Create a Token CST Leaf	
               	    if(TK_8 != null) {
               			Leaf TK_8Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
@@ -10564,7 +10564,7 @@ public class DDLMySQLParser extends Parser {
               	            } 
               	        }
               	    }
-              	
+
               		// Create a special CST Node for terminal insert_valueGen_1 aggregation
               		if(list_insert_valueGen_1 != null) {
               	    for(int pos = 0; pos < list_insert_valueGen_1.size(); pos++ )  { 
@@ -10587,7 +10587,7 @@ public class DDLMySQLParser extends Parser {
               		}
               		}
               		}
-              	
+
               	    // Create a Token CST Leaf	
               	    if(TK_11 != null) {
               			Leaf TK_11Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
@@ -10625,7 +10625,7 @@ public class DDLMySQLParser extends Parser {
     };
 
     // $ANTLR start col_name
-    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4719:1: col_name returns [Node returnNode] : OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE ;
+    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4719:1: col_name returns [Node returnNode] : OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE ;
     public final col_name_return col_name() throws RecognitionException {
         col_name_return retval = new col_name_return();
         retval.start = input.LT(1);
@@ -10635,8 +10635,8 @@ public class DDLMySQLParser extends Parser {
         Token OQUOTEGen_1=null;
 
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4720:1: (OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4720:5: OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4720:1: (OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE )
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4720:5: OQUOTEGen= OQUOTE IDGen= ID OQUOTEGen_1= OQUOTE
             {
             OQUOTEGen=(Token)input.LT(1);
             match(input,OQUOTE,FOLLOW_OQUOTE_in_col_name3298); if (failed) return retval;
@@ -10645,7 +10645,7 @@ public class DDLMySQLParser extends Parser {
             OQUOTEGen_1=(Token)input.LT(1);
             match(input,OQUOTE,FOLLOW_OQUOTE_in_col_name3306); if (failed) return retval;
             if ( backtracking==0 ) {
-              
+
               		// Create return CST Node
               		Node col_nameReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
               		col_nameReturnNode.setKind("col_name");
@@ -10704,7 +10704,7 @@ public class DDLMySQLParser extends Parser {
     };
 
     // $ANTLR start insert_value
-    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4757:1: insert_value returns [Node returnNode] : TK_0= '(' insert_dataGen+= insert_data (TK_1= ',' insert_dataGen_1+= insert_data )* TK_2= ')' ;
+    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4757:1: insert_value returns [Node returnNode] : TK_0= '(' insert_dataGen+= insert_data (TK_1= ',' insert_dataGen_1+= insert_data )* TK_2= ')' ;
     public final insert_value_return insert_value() throws RecognitionException {
         insert_value_return retval = new insert_value_return();
         retval.start = input.LT(1);
@@ -10717,8 +10717,8 @@ public class DDLMySQLParser extends Parser {
         RuleReturnScope insert_dataGen = null;
         RuleReturnScope insert_dataGen_1 = null;
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4758:1: (TK_0= '(' insert_dataGen+= insert_data (TK_1= ',' insert_dataGen_1+= insert_data )* TK_2= ')' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4758:3: TK_0= '(' insert_dataGen+= insert_data (TK_1= ',' insert_dataGen_1+= insert_data )* TK_2= ')'
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4758:1: (TK_0= '(' insert_dataGen+= insert_data (TK_1= ',' insert_dataGen_1+= insert_data )* TK_2= ')' )
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4758:3: TK_0= '(' insert_dataGen+= insert_data (TK_1= ',' insert_dataGen_1+= insert_data )* TK_2= ')'
             {
             TK_0=(Token)input.LT(1);
             match(input,38,FOLLOW_38_in_insert_value3327); if (failed) return retval;
@@ -10729,7 +10729,7 @@ public class DDLMySQLParser extends Parser {
             if (list_insert_dataGen==null) list_insert_dataGen=new ArrayList();
             list_insert_dataGen.add(insert_dataGen);
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4758:40: (TK_1= ',' insert_dataGen_1+= insert_data )*
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4758:40: (TK_1= ',' insert_dataGen_1+= insert_data )*
             loop150:
             do {
                 int alt150=2;
@@ -10742,7 +10742,7 @@ public class DDLMySQLParser extends Parser {
 
                 switch (alt150) {
             	case 1 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4758:41: TK_1= ',' insert_dataGen_1+= insert_data
+            	    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4758:41: TK_1= ',' insert_dataGen_1+= insert_data
             	    {
             	    TK_1=(Token)input.LT(1);
             	    match(input,20,FOLLOW_20_in_insert_value3336); if (failed) return retval;
@@ -10765,7 +10765,7 @@ public class DDLMySQLParser extends Parser {
             TK_2=(Token)input.LT(1);
             match(input,39,FOLLOW_39_in_insert_value3346); if (failed) return retval;
             if ( backtracking==0 ) {
-              
+
               		// Create return CST Node
               		Node insert_valueReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
               		insert_valueReturnNode.setKind("insert_value");
@@ -10788,7 +10788,7 @@ public class DDLMySQLParser extends Parser {
               	            } 
               	        }
               	    }
-              	
+
               		// Create a special CST Node for terminal insert_dataGen_1 aggregation
               		if(list_insert_dataGen_1 != null) {
               	    for(int pos = 0; pos < list_insert_dataGen_1.size(); pos++ )  { 
@@ -10811,7 +10811,7 @@ public class DDLMySQLParser extends Parser {
               		}
               		}
               		}
-              	
+
               	    // Create a Token CST Leaf	
               	    if(TK_2 != null) {
               			Leaf TK_2Leaf = CSTFactoryImpl.eINSTANCE.createLeaf();
@@ -10849,7 +10849,7 @@ public class DDLMySQLParser extends Parser {
     };
 
     // $ANTLR start insert_data
-    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4820:1: insert_data returns [Node returnNode] : ( (QVALUEGen= QVALUE )* | NUMBERGen= NUMBER | DECNUMBERGen= DECNUMBER | HEXNUMBERGen= HEXNUMBER | TK_0= 'DEFAULT' | TK_0= 'NULL' );
+    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4820:1: insert_data returns [Node returnNode] : ( (QVALUEGen= QVALUE )* | NUMBERGen= NUMBER | DECNUMBERGen= DECNUMBER | HEXNUMBERGen= HEXNUMBER | TK_0= 'DEFAULT' | TK_0= 'NULL' );
     public final insert_data_return insert_data() throws RecognitionException {
         insert_data_return retval = new insert_data_return();
         retval.start = input.LT(1);
@@ -10861,7 +10861,7 @@ public class DDLMySQLParser extends Parser {
         Token TK_0=null;
 
         try {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4821:1: ( (QVALUEGen= QVALUE )* | NUMBERGen= NUMBER | DECNUMBERGen= DECNUMBER | HEXNUMBERGen= HEXNUMBER | TK_0= 'DEFAULT' | TK_0= 'NULL' )
+            // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4821:1: ( (QVALUEGen= QVALUE )* | NUMBERGen= NUMBER | DECNUMBERGen= DECNUMBER | HEXNUMBERGen= HEXNUMBER | TK_0= 'DEFAULT' | TK_0= 'NULL' )
             int alt152=6;
             switch ( input.LA(1) ) {
             case EOF:
@@ -10907,9 +10907,9 @@ public class DDLMySQLParser extends Parser {
 
             switch (alt152) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4821:3: (QVALUEGen= QVALUE )*
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4821:3: (QVALUEGen= QVALUE )*
                     {
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4821:12: (QVALUEGen= QVALUE )*
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4821:12: (QVALUEGen= QVALUE )*
                     loop151:
                     do {
                         int alt151=2;
@@ -10922,7 +10922,7 @@ public class DDLMySQLParser extends Parser {
 
                         switch (alt151) {
                     	case 1 :
-                    	    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:0:0: QVALUEGen= QVALUE
+                    	    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:0:0: QVALUEGen= QVALUE
                     	    {
                     	    QVALUEGen=(Token)input.LT(1);
                     	    match(input,QVALUE,FOLLOW_QVALUE_in_insert_data3367); if (failed) return retval;
@@ -10936,7 +10936,7 @@ public class DDLMySQLParser extends Parser {
                     } while (true);
 
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node insert_dataReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		insert_dataReturnNode.setKind("insert_data");
@@ -10957,12 +10957,12 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4838:5: NUMBERGen= NUMBER
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4838:5: NUMBERGen= NUMBER
                     {
                     NUMBERGen=(Token)input.LT(1);
                     match(input,NUMBER,FOLLOW_NUMBER_in_insert_data3380); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node insert_dataReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		insert_dataReturnNode.setKind("insert_data");
@@ -10983,12 +10983,12 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4855:4: DECNUMBERGen= DECNUMBER
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4855:4: DECNUMBERGen= DECNUMBER
                     {
                     DECNUMBERGen=(Token)input.LT(1);
                     match(input,DECNUMBER,FOLLOW_DECNUMBER_in_insert_data3391); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node insert_dataReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		insert_dataReturnNode.setKind("insert_data");
@@ -11009,12 +11009,12 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4872:5: HEXNUMBERGen= HEXNUMBER
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4872:5: HEXNUMBERGen= HEXNUMBER
                     {
                     HEXNUMBERGen=(Token)input.LT(1);
                     match(input,HEXNUMBER,FOLLOW_HEXNUMBER_in_insert_data3403); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node insert_dataReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		insert_dataReturnNode.setKind("insert_data");
@@ -11035,12 +11035,12 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 5 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4889:5: TK_0= 'DEFAULT'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4889:5: TK_0= 'DEFAULT'
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,33,FOLLOW_33_in_insert_data3415); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node insert_dataReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		insert_dataReturnNode.setKind("insert_data");
@@ -11061,12 +11061,12 @@ public class DDLMySQLParser extends Parser {
                     }
                     break;
                 case 6 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:4906:5: TK_0= 'NULL'
+                    // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:4906:5: TK_0= 'NULL'
                     {
                     TK_0=(Token)input.LT(1);
                     match(input,45,FOLLOW_45_in_insert_data3427); if (failed) return retval;
                     if ( backtracking==0 ) {
-                      
+
                       		// Create return CST Node
                       		Node insert_dataReturnNode = CSTFactoryImpl.eINSTANCE.createNode();
                       		insert_dataReturnNode.setKind("insert_data");
@@ -11103,8 +11103,8 @@ public class DDLMySQLParser extends Parser {
 
     // $ANTLR start synpred30
     public final void synpred30_fragment() throws RecognitionException {   
-        // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:848:134: ( index_type )
-        // /home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3:848:134: index_type
+        // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:848:134: ( index_type )
+        // D:\\git\\gra2mol\\examples\\Grammar2Model.examples.wikiDB2Model\\files\\gen\\DDLMySQL.ge3:848:134: index_type
         {
         pushFollow(FOLLOW_index_type_in_synpred30673);
         index_type();

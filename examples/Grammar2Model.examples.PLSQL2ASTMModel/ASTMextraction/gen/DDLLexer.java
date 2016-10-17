@@ -1,4 +1,4 @@
-// $ANTLR 3.0.1 /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3 2009-09-29 10:50:25
+// $ANTLR 3.2 Sep 23, 2009 12:02:23 DDL.g 2016-10-17 13:33:13
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -6,708 +6,782 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class DDLLexer extends Lexer {
-    public static final int ISNULL=7;
-    public static final int T29=29;
-    public static final int T28=28;
-    public static final int T27=27;
-    public static final int T26=26;
+    public static final int T__19=19;
+    public static final int T__15=15;
+    public static final int T__37=37;
+    public static final int T__16=16;
+    public static final int T__38=38;
+    public static final int T__17=17;
+    public static final int T__39=39;
+    public static final int T__18=18;
+    public static final int T__11=11;
+    public static final int T__33=33;
+    public static final int T__12=12;
+    public static final int T__34=34;
+    public static final int T__13=13;
+    public static final int T__35=35;
+    public static final int T__14=14;
+    public static final int T__36=36;
     public static final int ID=4;
-    public static final int T25=25;
-    public static final int EOF=-1;
-    public static final int T24=24;
-    public static final int T23=23;
-    public static final int T22=22;
-    public static final int T21=21;
-    public static final int T20=20;
-    public static final int TYPE=5;
-    public static final int T38=38;
-    public static final int T37=37;
-    public static final int T39=39;
-    public static final int T34=34;
-    public static final int T33=33;
-    public static final int T36=36;
-    public static final int T35=35;
-    public static final int T30=30;
-    public static final int T32=32;
-    public static final int T31=31;
-    public static final int NUMBER=6;
-    public static final int T42=42;
-    public static final int Tokens=43;
-    public static final int T41=41;
-    public static final int T40=40;
     public static final int WS=9;
-    public static final int T10=10;
-    public static final int T11=11;
-    public static final int T12=12;
-    public static final int T13=13;
-    public static final int T14=14;
-    public static final int T15=15;
-    public static final int T16=16;
-    public static final int T17=17;
-    public static final int T18=18;
-    public static final int T19=19;
+    public static final int EOF=-1;
+    public static final int T__30=30;
+    public static final int TYPE=5;
+    public static final int T__31=31;
+    public static final int T__10=10;
+    public static final int T__32=32;
+    public static final int NUMBER=6;
+    public static final int T__26=26;
+    public static final int T__27=27;
+    public static final int T__28=28;
+    public static final int T__29=29;
+    public static final int T__22=22;
+    public static final int T__23=23;
+    public static final int ISNULL=7;
     public static final int STRING=8;
+    public static final int T__24=24;
+    public static final int T__25=25;
+    public static final int T__40=40;
+    public static final int T__41=41;
+    public static final int T__20=20;
+    public static final int T__42=42;
+    public static final int T__21=21;
+
+    // delegates
+    // delegators
+
     public DDLLexer() {;} 
     public DDLLexer(CharStream input) {
-        super(input);
+        this(input, new RecognizerSharedState());
     }
-    public String getGrammarFileName() { return "/home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3"; }
+    public DDLLexer(CharStream input, RecognizerSharedState state) {
+        super(input,state);
 
-    // $ANTLR start T10
-    public final void mT10() throws RecognitionException {
+    }
+    public String getGrammarFileName() { return "DDL.g"; }
+
+    // $ANTLR start "T__10"
+    public final void mT__10() throws RecognitionException {
         try {
-            int _type = T10;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:3:5: ( 'CREATE TABLE' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:3:7: 'CREATE TABLE'
+            int _type = T__10;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:3:7: ( 'CREATE TABLE' )
+            // DDL.g:3:9: 'CREATE TABLE'
             {
             match("CREATE TABLE"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T10
+    // $ANTLR end "T__10"
 
-    // $ANTLR start T11
-    public final void mT11() throws RecognitionException {
+    // $ANTLR start "T__11"
+    public final void mT__11() throws RecognitionException {
         try {
-            int _type = T11;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:4:5: ( '(' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:4:7: '('
+            int _type = T__11;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:4:7: ( '(' )
+            // DDL.g:4:9: '('
             {
             match('('); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T11
+    // $ANTLR end "T__11"
 
-    // $ANTLR start T12
-    public final void mT12() throws RecognitionException {
+    // $ANTLR start "T__12"
+    public final void mT__12() throws RecognitionException {
         try {
-            int _type = T12;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:5:5: ( ',' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:5:7: ','
+            int _type = T__12;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:5:7: ( ',' )
+            // DDL.g:5:9: ','
             {
             match(','); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T12
+    // $ANTLR end "T__12"
 
-    // $ANTLR start T13
-    public final void mT13() throws RecognitionException {
+    // $ANTLR start "T__13"
+    public final void mT__13() throws RecognitionException {
         try {
-            int _type = T13;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:6:5: ( ')' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:6:7: ')'
+            int _type = T__13;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:6:7: ( ')' )
+            // DDL.g:6:9: ')'
             {
             match(')'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T13
+    // $ANTLR end "T__13"
 
-    // $ANTLR start T14
-    public final void mT14() throws RecognitionException {
+    // $ANTLR start "T__14"
+    public final void mT__14() throws RecognitionException {
         try {
-            int _type = T14;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:7:5: ( ';' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:7:7: ';'
+            int _type = T__14;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:7:7: ( ';' )
+            // DDL.g:7:9: ';'
             {
             match(';'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T14
+    // $ANTLR end "T__14"
 
-    // $ANTLR start T15
-    public final void mT15() throws RecognitionException {
+    // $ANTLR start "T__15"
+    public final void mT__15() throws RecognitionException {
         try {
-            int _type = T15;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:8:5: ( 'ALTER TABLE' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:8:7: 'ALTER TABLE'
+            int _type = T__15;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:8:7: ( 'ALTER TABLE' )
+            // DDL.g:8:9: 'ALTER TABLE'
             {
             match("ALTER TABLE"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T15
+    // $ANTLR end "T__15"
 
-    // $ANTLR start T16
-    public final void mT16() throws RecognitionException {
+    // $ANTLR start "T__16"
+    public final void mT__16() throws RecognitionException {
         try {
-            int _type = T16;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:9:5: ( 'ADD' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:9:7: 'ADD'
+            int _type = T__16;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:9:7: ( 'ADD' )
+            // DDL.g:9:9: 'ADD'
             {
             match("ADD"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T16
+    // $ANTLR end "T__16"
 
-    // $ANTLR start T17
-    public final void mT17() throws RecognitionException {
+    // $ANTLR start "T__17"
+    public final void mT__17() throws RecognitionException {
         try {
-            int _type = T17;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:10:5: ( 'ENABLE' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:10:7: 'ENABLE'
+            int _type = T__17;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:10:7: ( 'ENABLE' )
+            // DDL.g:10:9: 'ENABLE'
             {
             match("ENABLE"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T17
+    // $ANTLR end "T__17"
 
-    // $ANTLR start T18
-    public final void mT18() throws RecognitionException {
+    // $ANTLR start "T__18"
+    public final void mT__18() throws RecognitionException {
         try {
-            int _type = T18;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:11:5: ( 'CONSTRAINT' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:11:7: 'CONSTRAINT'
+            int _type = T__18;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:11:7: ( 'CONSTRAINT' )
+            // DDL.g:11:9: 'CONSTRAINT'
             {
             match("CONSTRAINT"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T18
+    // $ANTLR end "T__18"
 
-    // $ANTLR start T19
-    public final void mT19() throws RecognitionException {
+    // $ANTLR start "T__19"
+    public final void mT__19() throws RecognitionException {
         try {
-            int _type = T19;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:12:5: ( 'COMMENT ON' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:12:7: 'COMMENT ON'
+            int _type = T__19;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:12:7: ( 'COMMENT ON' )
+            // DDL.g:12:9: 'COMMENT ON'
             {
             match("COMMENT ON"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T19
+    // $ANTLR end "T__19"
 
-    // $ANTLR start T20
-    public final void mT20() throws RecognitionException {
+    // $ANTLR start "T__20"
+    public final void mT__20() throws RecognitionException {
         try {
-            int _type = T20;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:13:5: ( 'TABLE' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:13:7: 'TABLE'
+            int _type = T__20;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:13:7: ( 'TABLE' )
+            // DDL.g:13:9: 'TABLE'
             {
             match("TABLE"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T20
+    // $ANTLR end "T__20"
 
-    // $ANTLR start T21
-    public final void mT21() throws RecognitionException {
+    // $ANTLR start "T__21"
+    public final void mT__21() throws RecognitionException {
         try {
-            int _type = T21;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:14:5: ( 'COLUMN' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:14:7: 'COLUMN'
+            int _type = T__21;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:14:7: ( 'COLUMN' )
+            // DDL.g:14:9: 'COLUMN'
             {
             match("COLUMN"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T21
+    // $ANTLR end "T__21"
 
-    // $ANTLR start T22
-    public final void mT22() throws RecognitionException {
+    // $ANTLR start "T__22"
+    public final void mT__22() throws RecognitionException {
         try {
-            int _type = T22;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:15:5: ( '.' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:15:7: '.'
+            int _type = T__22;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:15:7: ( '.' )
+            // DDL.g:15:9: '.'
             {
             match('.'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T22
+    // $ANTLR end "T__22"
 
-    // $ANTLR start T23
-    public final void mT23() throws RecognitionException {
+    // $ANTLR start "T__23"
+    public final void mT__23() throws RecognitionException {
         try {
-            int _type = T23;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:16:5: ( 'IS' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:16:7: 'IS'
+            int _type = T__23;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:16:7: ( 'IS' )
+            // DDL.g:16:9: 'IS'
             {
             match("IS"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T23
+    // $ANTLR end "T__23"
 
-    // $ANTLR start T24
-    public final void mT24() throws RecognitionException {
+    // $ANTLR start "T__24"
+    public final void mT__24() throws RecognitionException {
         try {
-            int _type = T24;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:17:5: ( 'CREATE SEQUENCE' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:17:7: 'CREATE SEQUENCE'
+            int _type = T__24;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:17:7: ( 'CREATE SEQUENCE' )
+            // DDL.g:17:9: 'CREATE SEQUENCE'
             {
             match("CREATE SEQUENCE"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T24
+    // $ANTLR end "T__24"
 
-    // $ANTLR start T25
-    public final void mT25() throws RecognitionException {
+    // $ANTLR start "T__25"
+    public final void mT__25() throws RecognitionException {
         try {
-            int _type = T25;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:18:5: ( 'INCREMENT' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:18:7: 'INCREMENT'
+            int _type = T__25;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:18:7: ( 'INCREMENT' )
+            // DDL.g:18:9: 'INCREMENT'
             {
             match("INCREMENT"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T25
+    // $ANTLR end "T__25"
 
-    // $ANTLR start T26
-    public final void mT26() throws RecognitionException {
+    // $ANTLR start "T__26"
+    public final void mT__26() throws RecognitionException {
         try {
-            int _type = T26;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:19:5: ( 'BY' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:19:7: 'BY'
+            int _type = T__26;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:19:7: ( 'BY' )
+            // DDL.g:19:9: 'BY'
             {
             match("BY"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T26
+    // $ANTLR end "T__26"
 
-    // $ANTLR start T27
-    public final void mT27() throws RecognitionException {
+    // $ANTLR start "T__27"
+    public final void mT__27() throws RecognitionException {
         try {
-            int _type = T27;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:20:5: ( 'START' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:20:7: 'START'
+            int _type = T__27;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:20:7: ( 'START' )
+            // DDL.g:20:9: 'START'
             {
             match("START"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T27
+    // $ANTLR end "T__27"
 
-    // $ANTLR start T28
-    public final void mT28() throws RecognitionException {
+    // $ANTLR start "T__28"
+    public final void mT__28() throws RecognitionException {
         try {
-            int _type = T28;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:21:5: ( 'WITH' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:21:7: 'WITH'
+            int _type = T__28;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:21:7: ( 'WITH' )
+            // DDL.g:21:9: 'WITH'
             {
             match("WITH"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T28
+    // $ANTLR end "T__28"
 
-    // $ANTLR start T29
-    public final void mT29() throws RecognitionException {
+    // $ANTLR start "T__29"
+    public final void mT__29() throws RecognitionException {
         try {
-            int _type = T29;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:22:5: ( 'MAXVALUE' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:22:7: 'MAXVALUE'
+            int _type = T__29;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:22:7: ( 'MAXVALUE' )
+            // DDL.g:22:9: 'MAXVALUE'
             {
             match("MAXVALUE"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T29
+    // $ANTLR end "T__29"
 
-    // $ANTLR start T30
-    public final void mT30() throws RecognitionException {
+    // $ANTLR start "T__30"
+    public final void mT__30() throws RecognitionException {
         try {
-            int _type = T30;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:23:5: ( 'NOMAXVALUE' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:23:7: 'NOMAXVALUE'
+            int _type = T__30;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:23:7: ( 'NOMAXVALUE' )
+            // DDL.g:23:9: 'NOMAXVALUE'
             {
             match("NOMAXVALUE"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T30
+    // $ANTLR end "T__30"
 
-    // $ANTLR start T31
-    public final void mT31() throws RecognitionException {
+    // $ANTLR start "T__31"
+    public final void mT__31() throws RecognitionException {
         try {
-            int _type = T31;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:24:5: ( 'MINVALUE' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:24:7: 'MINVALUE'
+            int _type = T__31;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:24:7: ( 'MINVALUE' )
+            // DDL.g:24:9: 'MINVALUE'
             {
             match("MINVALUE"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T31
+    // $ANTLR end "T__31"
 
-    // $ANTLR start T32
-    public final void mT32() throws RecognitionException {
+    // $ANTLR start "T__32"
+    public final void mT__32() throws RecognitionException {
         try {
-            int _type = T32;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:25:5: ( 'NOMINVALUE' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:25:7: 'NOMINVALUE'
+            int _type = T__32;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:25:7: ( 'NOMINVALUE' )
+            // DDL.g:25:9: 'NOMINVALUE'
             {
             match("NOMINVALUE"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T32
+    // $ANTLR end "T__32"
 
-    // $ANTLR start T33
-    public final void mT33() throws RecognitionException {
+    // $ANTLR start "T__33"
+    public final void mT__33() throws RecognitionException {
         try {
-            int _type = T33;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:26:5: ( 'CYCLE' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:26:7: 'CYCLE'
+            int _type = T__33;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:26:7: ( 'CYCLE' )
+            // DDL.g:26:9: 'CYCLE'
             {
             match("CYCLE"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T33
+    // $ANTLR end "T__33"
 
-    // $ANTLR start T34
-    public final void mT34() throws RecognitionException {
+    // $ANTLR start "T__34"
+    public final void mT__34() throws RecognitionException {
         try {
-            int _type = T34;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:27:5: ( 'NOCYCLE' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:27:7: 'NOCYCLE'
+            int _type = T__34;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:27:7: ( 'NOCYCLE' )
+            // DDL.g:27:9: 'NOCYCLE'
             {
             match("NOCYCLE"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T34
+    // $ANTLR end "T__34"
 
-    // $ANTLR start T35
-    public final void mT35() throws RecognitionException {
+    // $ANTLR start "T__35"
+    public final void mT__35() throws RecognitionException {
         try {
-            int _type = T35;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:28:5: ( 'CACHE' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:28:7: 'CACHE'
+            int _type = T__35;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:28:7: ( 'CACHE' )
+            // DDL.g:28:9: 'CACHE'
             {
             match("CACHE"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T35
+    // $ANTLR end "T__35"
 
-    // $ANTLR start T36
-    public final void mT36() throws RecognitionException {
+    // $ANTLR start "T__36"
+    public final void mT__36() throws RecognitionException {
         try {
-            int _type = T36;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:29:5: ( 'NOCACHE' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:29:7: 'NOCACHE'
+            int _type = T__36;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:29:7: ( 'NOCACHE' )
+            // DDL.g:29:9: 'NOCACHE'
             {
             match("NOCACHE"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T36
+    // $ANTLR end "T__36"
 
-    // $ANTLR start T37
-    public final void mT37() throws RecognitionException {
+    // $ANTLR start "T__37"
+    public final void mT__37() throws RecognitionException {
         try {
-            int _type = T37;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:30:5: ( 'ORDER' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:30:7: 'ORDER'
+            int _type = T__37;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:30:7: ( 'ORDER' )
+            // DDL.g:30:9: 'ORDER'
             {
             match("ORDER"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T37
+    // $ANTLR end "T__37"
 
-    // $ANTLR start T38
-    public final void mT38() throws RecognitionException {
+    // $ANTLR start "T__38"
+    public final void mT__38() throws RecognitionException {
         try {
-            int _type = T38;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:31:5: ( 'NOORDER' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:31:7: 'NOORDER'
+            int _type = T__38;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:31:7: ( 'NOORDER' )
+            // DDL.g:31:9: 'NOORDER'
             {
             match("NOORDER"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T38
+    // $ANTLR end "T__38"
 
-    // $ANTLR start T39
-    public final void mT39() throws RecognitionException {
+    // $ANTLR start "T__39"
+    public final void mT__39() throws RecognitionException {
         try {
-            int _type = T39;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:32:5: ( 'PRIMARY KEY' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:32:7: 'PRIMARY KEY'
+            int _type = T__39;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:32:7: ( 'PRIMARY KEY' )
+            // DDL.g:32:9: 'PRIMARY KEY'
             {
             match("PRIMARY KEY"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T39
+    // $ANTLR end "T__39"
 
-    // $ANTLR start T40
-    public final void mT40() throws RecognitionException {
+    // $ANTLR start "T__40"
+    public final void mT__40() throws RecognitionException {
         try {
-            int _type = T40;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:33:5: ( 'UNIQUE' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:33:7: 'UNIQUE'
+            int _type = T__40;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:33:7: ( 'UNIQUE' )
+            // DDL.g:33:9: 'UNIQUE'
             {
             match("UNIQUE"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T40
+    // $ANTLR end "T__40"
 
-    // $ANTLR start T41
-    public final void mT41() throws RecognitionException {
+    // $ANTLR start "T__41"
+    public final void mT__41() throws RecognitionException {
         try {
-            int _type = T41;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:34:5: ( 'FOREIGN KEY' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:34:7: 'FOREIGN KEY'
+            int _type = T__41;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:34:7: ( 'FOREIGN KEY' )
+            // DDL.g:34:9: 'FOREIGN KEY'
             {
             match("FOREIGN KEY"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T41
+    // $ANTLR end "T__41"
 
-    // $ANTLR start T42
-    public final void mT42() throws RecognitionException {
+    // $ANTLR start "T__42"
+    public final void mT__42() throws RecognitionException {
         try {
-            int _type = T42;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:35:5: ( 'REFERENCES' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:35:7: 'REFERENCES'
+            int _type = T__42;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:35:7: ( 'REFERENCES' )
+            // DDL.g:35:9: 'REFERENCES'
             {
             match("REFERENCES"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T42
+    // $ANTLR end "T__42"
 
-    // $ANTLR start ISNULL
+    // $ANTLR start "ISNULL"
     public final void mISNULL() throws RecognitionException {
         try {
             int _type = ISNULL;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1145:8: ( 'NULL' | 'NOT NULL' )
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:1145:8: ( 'NULL' | 'NOT NULL' )
             int alt1=2;
             int LA1_0 = input.LA(1);
 
             if ( (LA1_0=='N') ) {
                 int LA1_1 = input.LA(2);
 
-                if ( (LA1_1=='O') ) {
-                    alt1=2;
-                }
-                else if ( (LA1_1=='U') ) {
+                if ( (LA1_1=='U') ) {
                     alt1=1;
+                }
+                else if ( (LA1_1=='O') ) {
+                    alt1=2;
                 }
                 else {
                     NoViableAltException nvae =
-                        new NoViableAltException("1145:1: ISNULL : ( 'NULL' | 'NOT NULL' );", 1, 1, input);
+                        new NoViableAltException("", 1, 1, input);
 
                     throw nvae;
                 }
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("1145:1: ISNULL : ( 'NULL' | 'NOT NULL' );", 1, 0, input);
+                    new NoViableAltException("", 1, 0, input);
 
                 throw nvae;
             }
             switch (alt1) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1145:10: 'NULL'
+                    // DDL.g:1145:10: 'NULL'
                     {
                     match("NULL"); 
 
@@ -715,7 +789,7 @@ public class DDLLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1145:19: 'NOT NULL'
+                    // DDL.g:1145:19: 'NOT NULL'
                     {
                     match("NOT NULL"); 
 
@@ -724,18 +798,20 @@ public class DDLLexer extends Lexer {
                     break;
 
             }
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end ISNULL
+    // $ANTLR end "ISNULL"
 
-    // $ANTLR start NUMBER
+    // $ANTLR start "NUMBER"
     public final void mNUMBER() throws RecognitionException {
         try {
             int _type = NUMBER;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1148:8: ( ( ( '1' .. '9' ) ( '0' .. '9' )* ) | ( '0' ) )
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:1148:8: ( ( ( '1' .. '9' ) ( '0' .. '9' )* ) | ( '0' ) )
             int alt3=2;
             int LA3_0 = input.LA(1);
 
@@ -747,25 +823,25 @@ public class DDLLexer extends Lexer {
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("1148:1: NUMBER : ( ( ( '1' .. '9' ) ( '0' .. '9' )* ) | ( '0' ) );", 3, 0, input);
+                    new NoViableAltException("", 3, 0, input);
 
                 throw nvae;
             }
             switch (alt3) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1148:10: ( ( '1' .. '9' ) ( '0' .. '9' )* )
+                    // DDL.g:1148:10: ( ( '1' .. '9' ) ( '0' .. '9' )* )
                     {
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1148:10: ( ( '1' .. '9' ) ( '0' .. '9' )* )
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1148:11: ( '1' .. '9' ) ( '0' .. '9' )*
+                    // DDL.g:1148:10: ( ( '1' .. '9' ) ( '0' .. '9' )* )
+                    // DDL.g:1148:11: ( '1' .. '9' ) ( '0' .. '9' )*
                     {
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1148:11: ( '1' .. '9' )
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1148:12: '1' .. '9'
+                    // DDL.g:1148:11: ( '1' .. '9' )
+                    // DDL.g:1148:12: '1' .. '9'
                     {
                     matchRange('1','9'); 
 
                     }
 
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1148:21: ( '0' .. '9' )*
+                    // DDL.g:1148:21: ( '0' .. '9' )*
                     loop2:
                     do {
                         int alt2=2;
@@ -778,7 +854,7 @@ public class DDLLexer extends Lexer {
 
                         switch (alt2) {
                     	case 1 :
-                    	    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1148:22: '0' .. '9'
+                    	    // DDL.g:1148:22: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -797,10 +873,10 @@ public class DDLLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1148:36: ( '0' )
+                    // DDL.g:1148:36: ( '0' )
                     {
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1148:36: ( '0' )
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1148:37: '0'
+                    // DDL.g:1148:36: ( '0' )
+                    // DDL.g:1148:37: '0'
                     {
                     match('0'); 
 
@@ -811,18 +887,20 @@ public class DDLLexer extends Lexer {
                     break;
 
             }
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end NUMBER
+    // $ANTLR end "NUMBER"
 
-    // $ANTLR start TYPE
+    // $ANTLR start "TYPE"
     public final void mTYPE() throws RecognitionException {
         try {
             int _type = TYPE;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1151:6: ( 'NUMBER' | 'VARCHAR2' | 'DATE' )
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:1151:6: ( 'NUMBER' | 'VARCHAR2' | 'DATE' )
             int alt4=3;
             switch ( input.LA(1) ) {
             case 'N':
@@ -842,14 +920,14 @@ public class DDLLexer extends Lexer {
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("1151:1: TYPE : ( 'NUMBER' | 'VARCHAR2' | 'DATE' );", 4, 0, input);
+                    new NoViableAltException("", 4, 0, input);
 
                 throw nvae;
             }
 
             switch (alt4) {
                 case 1 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1151:8: 'NUMBER'
+                    // DDL.g:1151:8: 'NUMBER'
                     {
                     match("NUMBER"); 
 
@@ -857,7 +935,7 @@ public class DDLLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1151:19: 'VARCHAR2'
+                    // DDL.g:1151:19: 'VARCHAR2'
                     {
                     match("VARCHAR2"); 
 
@@ -865,7 +943,7 @@ public class DDLLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1151:32: 'DATE'
+                    // DDL.g:1151:32: 'DATE'
                     {
                     match("DATE"); 
 
@@ -874,31 +952,32 @@ public class DDLLexer extends Lexer {
                     break;
 
             }
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end TYPE
+    // $ANTLR end "TYPE"
 
-    // $ANTLR start ID
+    // $ANTLR start "ID"
     public final void mID() throws RecognitionException {
         try {
             int _type = ID;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1154:4: ( ( 'a' .. 'z' | 'A' .. 'Z' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' | '$' | '#' )* )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1154:6: ( 'a' .. 'z' | 'A' .. 'Z' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' | '$' | '#' )*
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:1154:4: ( ( 'a' .. 'z' | 'A' .. 'Z' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' | '$' | '#' )* )
+            // DDL.g:1154:6: ( 'a' .. 'z' | 'A' .. 'Z' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' | '$' | '#' )*
             {
             if ( (input.LA(1)>='A' && input.LA(1)<='Z')||(input.LA(1)>='a' && input.LA(1)<='z') ) {
                 input.consume();
 
             }
             else {
-                MismatchedSetException mse =
-                    new MismatchedSetException(null,input);
-                recover(mse);    throw mse;
-            }
+                MismatchedSetException mse = new MismatchedSetException(null,input);
+                recover(mse);
+                throw mse;}
 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1154:28: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' | '$' | '#' )*
+            // DDL.g:1154:28: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' | '$' | '#' )*
             loop5:
             do {
                 int alt5=2;
@@ -911,17 +990,16 @@ public class DDLLexer extends Lexer {
 
                 switch (alt5) {
             	case 1 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:
+            	    // DDL.g:
             	    {
             	    if ( (input.LA(1)>='#' && input.LA(1)<='$')||(input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z') ) {
             	        input.consume();
 
             	    }
             	    else {
-            	        MismatchedSetException mse =
-            	            new MismatchedSetException(null,input);
-            	        recover(mse);    throw mse;
-            	    }
+            	        MismatchedSetException mse = new MismatchedSetException(null,input);
+            	        recover(mse);
+            	        throw mse;}
 
 
             	    }
@@ -935,45 +1013,46 @@ public class DDLLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end ID
+    // $ANTLR end "ID"
 
-    // $ANTLR start STRING
+    // $ANTLR start "STRING"
     public final void mSTRING() throws RecognitionException {
         try {
             int _type = STRING;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1158:8: ( '\\'' (~ ( '\\'' ) )* '\\'' )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1158:10: '\\'' (~ ( '\\'' ) )* '\\''
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:1158:8: ( '\\'' (~ ( '\\'' ) )* '\\'' )
+            // DDL.g:1158:10: '\\'' (~ ( '\\'' ) )* '\\''
             {
             match('\''); 
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1158:15: (~ ( '\\'' ) )*
+            // DDL.g:1158:15: (~ ( '\\'' ) )*
             loop6:
             do {
                 int alt6=2;
                 int LA6_0 = input.LA(1);
 
-                if ( ((LA6_0>='\u0000' && LA6_0<='&')||(LA6_0>='(' && LA6_0<='\uFFFE')) ) {
+                if ( ((LA6_0>='\u0000' && LA6_0<='&')||(LA6_0>='(' && LA6_0<='\uFFFF')) ) {
                     alt6=1;
                 }
 
 
                 switch (alt6) {
             	case 1 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1158:15: ~ ( '\\'' )
+            	    // DDL.g:1158:15: ~ ( '\\'' )
             	    {
-            	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='\uFFFE') ) {
+            	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
 
             	    }
             	    else {
-            	        MismatchedSetException mse =
-            	            new MismatchedSetException(null,input);
-            	        recover(mse);    throw mse;
-            	    }
+            	        MismatchedSetException mse = new MismatchedSetException(null,input);
+            	        recover(mse);
+            	        throw mse;}
 
 
             	    }
@@ -988,21 +1067,23 @@ public class DDLLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end STRING
+    // $ANTLR end "STRING"
 
-    // $ANTLR start WS
+    // $ANTLR start "WS"
     public final void mWS() throws RecognitionException {
         try {
             int _type = WS;
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1161:4: ( ( ' ' | '\\t' | '\\n' | '\\r' )+ )
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1161:6: ( ' ' | '\\t' | '\\n' | '\\r' )+
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // DDL.g:1161:4: ( ( ' ' | '\\t' | '\\n' | '\\r' )+ )
+            // DDL.g:1161:6: ( ' ' | '\\t' | '\\n' | '\\r' )+
             {
-            // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1161:6: ( ' ' | '\\t' | '\\n' | '\\r' )+
+            // DDL.g:1161:6: ( ' ' | '\\t' | '\\n' | '\\r' )+
             int cnt7=0;
             loop7:
             do {
@@ -1016,17 +1097,16 @@ public class DDLLexer extends Lexer {
 
                 switch (alt7) {
             	case 1 :
-            	    // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:
+            	    // DDL.g:
             	    {
             	    if ( (input.LA(1)>='\t' && input.LA(1)<='\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
             	        input.consume();
 
             	    }
             	    else {
-            	        MismatchedSetException mse =
-            	            new MismatchedSetException(null,input);
-            	        recover(mse);    throw mse;
-            	    }
+            	        MismatchedSetException mse = new MismatchedSetException(null,input);
+            	        recover(mse);
+            	        throw mse;}
 
 
             	    }
@@ -1041,1613 +1121,291 @@ public class DDLLexer extends Lexer {
                 cnt7++;
             } while (true);
 
-            channel=HIDDEN;
+            _channel=HIDDEN;
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end WS
+    // $ANTLR end "WS"
 
     public void mTokens() throws RecognitionException {
-        // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:8: ( T10 | T11 | T12 | T13 | T14 | T15 | T16 | T17 | T18 | T19 | T20 | T21 | T22 | T23 | T24 | T25 | T26 | T27 | T28 | T29 | T30 | T31 | T32 | T33 | T34 | T35 | T36 | T37 | T38 | T39 | T40 | T41 | T42 | ISNULL | NUMBER | TYPE | ID | STRING | WS )
+        // DDL.g:1:8: ( T__10 | T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | ISNULL | NUMBER | TYPE | ID | STRING | WS )
         int alt8=39;
-        switch ( input.LA(1) ) {
-        case 'C':
-            {
-            switch ( input.LA(2) ) {
-            case 'A':
-                {
-                int LA8_27 = input.LA(3);
-
-                if ( (LA8_27=='C') ) {
-                    int LA8_51 = input.LA(4);
-
-                    if ( (LA8_51=='H') ) {
-                        int LA8_81 = input.LA(5);
-
-                        if ( (LA8_81=='E') ) {
-                            int LA8_111 = input.LA(6);
-
-                            if ( ((LA8_111>='#' && LA8_111<='$')||(LA8_111>='0' && LA8_111<='9')||(LA8_111>='A' && LA8_111<='Z')||LA8_111=='_'||(LA8_111>='a' && LA8_111<='z')) ) {
-                                alt8=37;
-                            }
-                            else {
-                                alt8=26;}
-                        }
-                        else {
-                            alt8=37;}
-                    }
-                    else {
-                        alt8=37;}
-                }
-                else {
-                    alt8=37;}
-                }
-                break;
-            case 'Y':
-                {
-                int LA8_28 = input.LA(3);
-
-                if ( (LA8_28=='C') ) {
-                    int LA8_52 = input.LA(4);
-
-                    if ( (LA8_52=='L') ) {
-                        int LA8_82 = input.LA(5);
-
-                        if ( (LA8_82=='E') ) {
-                            int LA8_112 = input.LA(6);
-
-                            if ( ((LA8_112>='#' && LA8_112<='$')||(LA8_112>='0' && LA8_112<='9')||(LA8_112>='A' && LA8_112<='Z')||LA8_112=='_'||(LA8_112>='a' && LA8_112<='z')) ) {
-                                alt8=37;
-                            }
-                            else {
-                                alt8=24;}
-                        }
-                        else {
-                            alt8=37;}
-                    }
-                    else {
-                        alt8=37;}
-                }
-                else {
-                    alt8=37;}
-                }
-                break;
-            case 'R':
-                {
-                int LA8_29 = input.LA(3);
-
-                if ( (LA8_29=='E') ) {
-                    int LA8_53 = input.LA(4);
-
-                    if ( (LA8_53=='A') ) {
-                        int LA8_83 = input.LA(5);
-
-                        if ( (LA8_83=='T') ) {
-                            int LA8_113 = input.LA(6);
-
-                            if ( (LA8_113=='E') ) {
-                                int LA8_140 = input.LA(7);
-
-                                if ( (LA8_140==' ') ) {
-                                    int LA8_163 = input.LA(8);
-
-                                    if ( (LA8_163=='T') ) {
-                                        alt8=1;
-                                    }
-                                    else if ( (LA8_163=='S') ) {
-                                        alt8=15;
-                                    }
-                                    else {
-                                        NoViableAltException nvae =
-                                            new NoViableAltException("1:1: Tokens : ( T10 | T11 | T12 | T13 | T14 | T15 | T16 | T17 | T18 | T19 | T20 | T21 | T22 | T23 | T24 | T25 | T26 | T27 | T28 | T29 | T30 | T31 | T32 | T33 | T34 | T35 | T36 | T37 | T38 | T39 | T40 | T41 | T42 | ISNULL | NUMBER | TYPE | ID | STRING | WS );", 8, 163, input);
-
-                                        throw nvae;
-                                    }
-                                }
-                                else {
-                                    alt8=37;}
-                            }
-                            else {
-                                alt8=37;}
-                        }
-                        else {
-                            alt8=37;}
-                    }
-                    else {
-                        alt8=37;}
-                }
-                else {
-                    alt8=37;}
-                }
-                break;
-            case 'O':
-                {
-                switch ( input.LA(3) ) {
-                case 'L':
-                    {
-                    int LA8_54 = input.LA(4);
-
-                    if ( (LA8_54=='U') ) {
-                        int LA8_84 = input.LA(5);
-
-                        if ( (LA8_84=='M') ) {
-                            int LA8_114 = input.LA(6);
-
-                            if ( (LA8_114=='N') ) {
-                                int LA8_141 = input.LA(7);
-
-                                if ( ((LA8_141>='#' && LA8_141<='$')||(LA8_141>='0' && LA8_141<='9')||(LA8_141>='A' && LA8_141<='Z')||LA8_141=='_'||(LA8_141>='a' && LA8_141<='z')) ) {
-                                    alt8=37;
-                                }
-                                else {
-                                    alt8=12;}
-                            }
-                            else {
-                                alt8=37;}
-                        }
-                        else {
-                            alt8=37;}
-                    }
-                    else {
-                        alt8=37;}
-                    }
-                    break;
-                case 'M':
-                    {
-                    int LA8_55 = input.LA(4);
-
-                    if ( (LA8_55=='M') ) {
-                        int LA8_85 = input.LA(5);
-
-                        if ( (LA8_85=='E') ) {
-                            int LA8_115 = input.LA(6);
-
-                            if ( (LA8_115=='N') ) {
-                                int LA8_142 = input.LA(7);
-
-                                if ( (LA8_142=='T') ) {
-                                    int LA8_165 = input.LA(8);
-
-                                    if ( (LA8_165==' ') ) {
-                                        alt8=10;
-                                    }
-                                    else {
-                                        alt8=37;}
-                                }
-                                else {
-                                    alt8=37;}
-                            }
-                            else {
-                                alt8=37;}
-                        }
-                        else {
-                            alt8=37;}
-                    }
-                    else {
-                        alt8=37;}
-                    }
-                    break;
-                case 'N':
-                    {
-                    int LA8_56 = input.LA(4);
-
-                    if ( (LA8_56=='S') ) {
-                        int LA8_86 = input.LA(5);
-
-                        if ( (LA8_86=='T') ) {
-                            int LA8_116 = input.LA(6);
-
-                            if ( (LA8_116=='R') ) {
-                                int LA8_143 = input.LA(7);
-
-                                if ( (LA8_143=='A') ) {
-                                    int LA8_166 = input.LA(8);
-
-                                    if ( (LA8_166=='I') ) {
-                                        int LA8_184 = input.LA(9);
-
-                                        if ( (LA8_184=='N') ) {
-                                            int LA8_197 = input.LA(10);
-
-                                            if ( (LA8_197=='T') ) {
-                                                int LA8_204 = input.LA(11);
-
-                                                if ( ((LA8_204>='#' && LA8_204<='$')||(LA8_204>='0' && LA8_204<='9')||(LA8_204>='A' && LA8_204<='Z')||LA8_204=='_'||(LA8_204>='a' && LA8_204<='z')) ) {
-                                                    alt8=37;
-                                                }
-                                                else {
-                                                    alt8=9;}
-                                            }
-                                            else {
-                                                alt8=37;}
-                                        }
-                                        else {
-                                            alt8=37;}
-                                    }
-                                    else {
-                                        alt8=37;}
-                                }
-                                else {
-                                    alt8=37;}
-                            }
-                            else {
-                                alt8=37;}
-                        }
-                        else {
-                            alt8=37;}
-                    }
-                    else {
-                        alt8=37;}
-                    }
-                    break;
-                default:
-                    alt8=37;}
-
-                }
-                break;
-            default:
-                alt8=37;}
-
-            }
-            break;
-        case '(':
-            {
-            alt8=2;
-            }
-            break;
-        case ',':
-            {
-            alt8=3;
-            }
-            break;
-        case ')':
-            {
-            alt8=4;
-            }
-            break;
-        case ';':
-            {
-            alt8=5;
-            }
-            break;
-        case 'A':
-            {
-            switch ( input.LA(2) ) {
-            case 'L':
-                {
-                int LA8_31 = input.LA(3);
-
-                if ( (LA8_31=='T') ) {
-                    int LA8_57 = input.LA(4);
-
-                    if ( (LA8_57=='E') ) {
-                        int LA8_87 = input.LA(5);
-
-                        if ( (LA8_87=='R') ) {
-                            int LA8_117 = input.LA(6);
-
-                            if ( (LA8_117==' ') ) {
-                                alt8=6;
-                            }
-                            else {
-                                alt8=37;}
-                        }
-                        else {
-                            alt8=37;}
-                    }
-                    else {
-                        alt8=37;}
-                }
-                else {
-                    alt8=37;}
-                }
-                break;
-            case 'D':
-                {
-                int LA8_32 = input.LA(3);
-
-                if ( (LA8_32=='D') ) {
-                    int LA8_58 = input.LA(4);
-
-                    if ( ((LA8_58>='#' && LA8_58<='$')||(LA8_58>='0' && LA8_58<='9')||(LA8_58>='A' && LA8_58<='Z')||LA8_58=='_'||(LA8_58>='a' && LA8_58<='z')) ) {
-                        alt8=37;
-                    }
-                    else {
-                        alt8=7;}
-                }
-                else {
-                    alt8=37;}
-                }
-                break;
-            default:
-                alt8=37;}
-
-            }
-            break;
-        case 'E':
-            {
-            int LA8_7 = input.LA(2);
-
-            if ( (LA8_7=='N') ) {
-                int LA8_33 = input.LA(3);
-
-                if ( (LA8_33=='A') ) {
-                    int LA8_59 = input.LA(4);
-
-                    if ( (LA8_59=='B') ) {
-                        int LA8_89 = input.LA(5);
-
-                        if ( (LA8_89=='L') ) {
-                            int LA8_118 = input.LA(6);
-
-                            if ( (LA8_118=='E') ) {
-                                int LA8_145 = input.LA(7);
-
-                                if ( ((LA8_145>='#' && LA8_145<='$')||(LA8_145>='0' && LA8_145<='9')||(LA8_145>='A' && LA8_145<='Z')||LA8_145=='_'||(LA8_145>='a' && LA8_145<='z')) ) {
-                                    alt8=37;
-                                }
-                                else {
-                                    alt8=8;}
-                            }
-                            else {
-                                alt8=37;}
-                        }
-                        else {
-                            alt8=37;}
-                    }
-                    else {
-                        alt8=37;}
-                }
-                else {
-                    alt8=37;}
-            }
-            else {
-                alt8=37;}
-            }
-            break;
-        case 'T':
-            {
-            int LA8_8 = input.LA(2);
-
-            if ( (LA8_8=='A') ) {
-                int LA8_34 = input.LA(3);
-
-                if ( (LA8_34=='B') ) {
-                    int LA8_60 = input.LA(4);
-
-                    if ( (LA8_60=='L') ) {
-                        int LA8_90 = input.LA(5);
-
-                        if ( (LA8_90=='E') ) {
-                            int LA8_119 = input.LA(6);
-
-                            if ( ((LA8_119>='#' && LA8_119<='$')||(LA8_119>='0' && LA8_119<='9')||(LA8_119>='A' && LA8_119<='Z')||LA8_119=='_'||(LA8_119>='a' && LA8_119<='z')) ) {
-                                alt8=37;
-                            }
-                            else {
-                                alt8=11;}
-                        }
-                        else {
-                            alt8=37;}
-                    }
-                    else {
-                        alt8=37;}
-                }
-                else {
-                    alt8=37;}
-            }
-            else {
-                alt8=37;}
-            }
-            break;
-        case '.':
-            {
-            alt8=13;
-            }
-            break;
-        case 'I':
-            {
-            switch ( input.LA(2) ) {
-            case 'N':
-                {
-                int LA8_35 = input.LA(3);
-
-                if ( (LA8_35=='C') ) {
-                    int LA8_61 = input.LA(4);
-
-                    if ( (LA8_61=='R') ) {
-                        int LA8_91 = input.LA(5);
-
-                        if ( (LA8_91=='E') ) {
-                            int LA8_120 = input.LA(6);
-
-                            if ( (LA8_120=='M') ) {
-                                int LA8_147 = input.LA(7);
-
-                                if ( (LA8_147=='E') ) {
-                                    int LA8_168 = input.LA(8);
-
-                                    if ( (LA8_168=='N') ) {
-                                        int LA8_185 = input.LA(9);
-
-                                        if ( (LA8_185=='T') ) {
-                                            int LA8_198 = input.LA(10);
-
-                                            if ( ((LA8_198>='#' && LA8_198<='$')||(LA8_198>='0' && LA8_198<='9')||(LA8_198>='A' && LA8_198<='Z')||LA8_198=='_'||(LA8_198>='a' && LA8_198<='z')) ) {
-                                                alt8=37;
-                                            }
-                                            else {
-                                                alt8=16;}
-                                        }
-                                        else {
-                                            alt8=37;}
-                                    }
-                                    else {
-                                        alt8=37;}
-                                }
-                                else {
-                                    alt8=37;}
-                            }
-                            else {
-                                alt8=37;}
-                        }
-                        else {
-                            alt8=37;}
-                    }
-                    else {
-                        alt8=37;}
-                }
-                else {
-                    alt8=37;}
-                }
-                break;
-            case 'S':
-                {
-                int LA8_36 = input.LA(3);
-
-                if ( ((LA8_36>='#' && LA8_36<='$')||(LA8_36>='0' && LA8_36<='9')||(LA8_36>='A' && LA8_36<='Z')||LA8_36=='_'||(LA8_36>='a' && LA8_36<='z')) ) {
-                    alt8=37;
-                }
-                else {
-                    alt8=14;}
-                }
-                break;
-            default:
-                alt8=37;}
-
-            }
-            break;
-        case 'B':
-            {
-            int LA8_11 = input.LA(2);
-
-            if ( (LA8_11=='Y') ) {
-                int LA8_37 = input.LA(3);
-
-                if ( ((LA8_37>='#' && LA8_37<='$')||(LA8_37>='0' && LA8_37<='9')||(LA8_37>='A' && LA8_37<='Z')||LA8_37=='_'||(LA8_37>='a' && LA8_37<='z')) ) {
-                    alt8=37;
-                }
-                else {
-                    alt8=17;}
-            }
-            else {
-                alt8=37;}
-            }
-            break;
-        case 'S':
-            {
-            int LA8_12 = input.LA(2);
-
-            if ( (LA8_12=='T') ) {
-                int LA8_38 = input.LA(3);
-
-                if ( (LA8_38=='A') ) {
-                    int LA8_64 = input.LA(4);
-
-                    if ( (LA8_64=='R') ) {
-                        int LA8_92 = input.LA(5);
-
-                        if ( (LA8_92=='T') ) {
-                            int LA8_121 = input.LA(6);
-
-                            if ( ((LA8_121>='#' && LA8_121<='$')||(LA8_121>='0' && LA8_121<='9')||(LA8_121>='A' && LA8_121<='Z')||LA8_121=='_'||(LA8_121>='a' && LA8_121<='z')) ) {
-                                alt8=37;
-                            }
-                            else {
-                                alt8=18;}
-                        }
-                        else {
-                            alt8=37;}
-                    }
-                    else {
-                        alt8=37;}
-                }
-                else {
-                    alt8=37;}
-            }
-            else {
-                alt8=37;}
-            }
-            break;
-        case 'W':
-            {
-            int LA8_13 = input.LA(2);
-
-            if ( (LA8_13=='I') ) {
-                int LA8_39 = input.LA(3);
-
-                if ( (LA8_39=='T') ) {
-                    int LA8_65 = input.LA(4);
-
-                    if ( (LA8_65=='H') ) {
-                        int LA8_93 = input.LA(5);
-
-                        if ( ((LA8_93>='#' && LA8_93<='$')||(LA8_93>='0' && LA8_93<='9')||(LA8_93>='A' && LA8_93<='Z')||LA8_93=='_'||(LA8_93>='a' && LA8_93<='z')) ) {
-                            alt8=37;
-                        }
-                        else {
-                            alt8=19;}
-                    }
-                    else {
-                        alt8=37;}
-                }
-                else {
-                    alt8=37;}
-            }
-            else {
-                alt8=37;}
-            }
-            break;
-        case 'M':
-            {
-            switch ( input.LA(2) ) {
-            case 'I':
-                {
-                int LA8_40 = input.LA(3);
-
-                if ( (LA8_40=='N') ) {
-                    int LA8_66 = input.LA(4);
-
-                    if ( (LA8_66=='V') ) {
-                        int LA8_94 = input.LA(5);
-
-                        if ( (LA8_94=='A') ) {
-                            int LA8_123 = input.LA(6);
-
-                            if ( (LA8_123=='L') ) {
-                                int LA8_149 = input.LA(7);
-
-                                if ( (LA8_149=='U') ) {
-                                    int LA8_169 = input.LA(8);
-
-                                    if ( (LA8_169=='E') ) {
-                                        int LA8_186 = input.LA(9);
-
-                                        if ( ((LA8_186>='#' && LA8_186<='$')||(LA8_186>='0' && LA8_186<='9')||(LA8_186>='A' && LA8_186<='Z')||LA8_186=='_'||(LA8_186>='a' && LA8_186<='z')) ) {
-                                            alt8=37;
-                                        }
-                                        else {
-                                            alt8=22;}
-                                    }
-                                    else {
-                                        alt8=37;}
-                                }
-                                else {
-                                    alt8=37;}
-                            }
-                            else {
-                                alt8=37;}
-                        }
-                        else {
-                            alt8=37;}
-                    }
-                    else {
-                        alt8=37;}
-                }
-                else {
-                    alt8=37;}
-                }
-                break;
-            case 'A':
-                {
-                int LA8_41 = input.LA(3);
-
-                if ( (LA8_41=='X') ) {
-                    int LA8_67 = input.LA(4);
-
-                    if ( (LA8_67=='V') ) {
-                        int LA8_95 = input.LA(5);
-
-                        if ( (LA8_95=='A') ) {
-                            int LA8_124 = input.LA(6);
-
-                            if ( (LA8_124=='L') ) {
-                                int LA8_150 = input.LA(7);
-
-                                if ( (LA8_150=='U') ) {
-                                    int LA8_170 = input.LA(8);
-
-                                    if ( (LA8_170=='E') ) {
-                                        int LA8_187 = input.LA(9);
-
-                                        if ( ((LA8_187>='#' && LA8_187<='$')||(LA8_187>='0' && LA8_187<='9')||(LA8_187>='A' && LA8_187<='Z')||LA8_187=='_'||(LA8_187>='a' && LA8_187<='z')) ) {
-                                            alt8=37;
-                                        }
-                                        else {
-                                            alt8=20;}
-                                    }
-                                    else {
-                                        alt8=37;}
-                                }
-                                else {
-                                    alt8=37;}
-                            }
-                            else {
-                                alt8=37;}
-                        }
-                        else {
-                            alt8=37;}
-                    }
-                    else {
-                        alt8=37;}
-                }
-                else {
-                    alt8=37;}
-                }
-                break;
-            default:
-                alt8=37;}
-
-            }
-            break;
-        case 'N':
-            {
-            switch ( input.LA(2) ) {
-            case 'O':
-                {
-                switch ( input.LA(3) ) {
-                case 'C':
-                    {
-                    switch ( input.LA(4) ) {
-                    case 'A':
-                        {
-                        int LA8_96 = input.LA(5);
-
-                        if ( (LA8_96=='C') ) {
-                            int LA8_125 = input.LA(6);
-
-                            if ( (LA8_125=='H') ) {
-                                int LA8_151 = input.LA(7);
-
-                                if ( (LA8_151=='E') ) {
-                                    int LA8_171 = input.LA(8);
-
-                                    if ( ((LA8_171>='#' && LA8_171<='$')||(LA8_171>='0' && LA8_171<='9')||(LA8_171>='A' && LA8_171<='Z')||LA8_171=='_'||(LA8_171>='a' && LA8_171<='z')) ) {
-                                        alt8=37;
-                                    }
-                                    else {
-                                        alt8=27;}
-                                }
-                                else {
-                                    alt8=37;}
-                            }
-                            else {
-                                alt8=37;}
-                        }
-                        else {
-                            alt8=37;}
-                        }
-                        break;
-                    case 'Y':
-                        {
-                        int LA8_97 = input.LA(5);
-
-                        if ( (LA8_97=='C') ) {
-                            int LA8_126 = input.LA(6);
-
-                            if ( (LA8_126=='L') ) {
-                                int LA8_152 = input.LA(7);
-
-                                if ( (LA8_152=='E') ) {
-                                    int LA8_172 = input.LA(8);
-
-                                    if ( ((LA8_172>='#' && LA8_172<='$')||(LA8_172>='0' && LA8_172<='9')||(LA8_172>='A' && LA8_172<='Z')||LA8_172=='_'||(LA8_172>='a' && LA8_172<='z')) ) {
-                                        alt8=37;
-                                    }
-                                    else {
-                                        alt8=25;}
-                                }
-                                else {
-                                    alt8=37;}
-                            }
-                            else {
-                                alt8=37;}
-                        }
-                        else {
-                            alt8=37;}
-                        }
-                        break;
-                    default:
-                        alt8=37;}
-
-                    }
-                    break;
-                case 'T':
-                    {
-                    int LA8_69 = input.LA(4);
-
-                    if ( (LA8_69==' ') ) {
-                        alt8=34;
-                    }
-                    else {
-                        alt8=37;}
-                    }
-                    break;
-                case 'M':
-                    {
-                    switch ( input.LA(4) ) {
-                    case 'A':
-                        {
-                        int LA8_99 = input.LA(5);
-
-                        if ( (LA8_99=='X') ) {
-                            int LA8_127 = input.LA(6);
-
-                            if ( (LA8_127=='V') ) {
-                                int LA8_153 = input.LA(7);
-
-                                if ( (LA8_153=='A') ) {
-                                    int LA8_173 = input.LA(8);
-
-                                    if ( (LA8_173=='L') ) {
-                                        int LA8_190 = input.LA(9);
-
-                                        if ( (LA8_190=='U') ) {
-                                            int LA8_201 = input.LA(10);
-
-                                            if ( (LA8_201=='E') ) {
-                                                int LA8_206 = input.LA(11);
-
-                                                if ( ((LA8_206>='#' && LA8_206<='$')||(LA8_206>='0' && LA8_206<='9')||(LA8_206>='A' && LA8_206<='Z')||LA8_206=='_'||(LA8_206>='a' && LA8_206<='z')) ) {
-                                                    alt8=37;
-                                                }
-                                                else {
-                                                    alt8=21;}
-                                            }
-                                            else {
-                                                alt8=37;}
-                                        }
-                                        else {
-                                            alt8=37;}
-                                    }
-                                    else {
-                                        alt8=37;}
-                                }
-                                else {
-                                    alt8=37;}
-                            }
-                            else {
-                                alt8=37;}
-                        }
-                        else {
-                            alt8=37;}
-                        }
-                        break;
-                    case 'I':
-                        {
-                        int LA8_100 = input.LA(5);
-
-                        if ( (LA8_100=='N') ) {
-                            int LA8_128 = input.LA(6);
-
-                            if ( (LA8_128=='V') ) {
-                                int LA8_154 = input.LA(7);
-
-                                if ( (LA8_154=='A') ) {
-                                    int LA8_174 = input.LA(8);
-
-                                    if ( (LA8_174=='L') ) {
-                                        int LA8_191 = input.LA(9);
-
-                                        if ( (LA8_191=='U') ) {
-                                            int LA8_202 = input.LA(10);
-
-                                            if ( (LA8_202=='E') ) {
-                                                int LA8_207 = input.LA(11);
-
-                                                if ( ((LA8_207>='#' && LA8_207<='$')||(LA8_207>='0' && LA8_207<='9')||(LA8_207>='A' && LA8_207<='Z')||LA8_207=='_'||(LA8_207>='a' && LA8_207<='z')) ) {
-                                                    alt8=37;
-                                                }
-                                                else {
-                                                    alt8=23;}
-                                            }
-                                            else {
-                                                alt8=37;}
-                                        }
-                                        else {
-                                            alt8=37;}
-                                    }
-                                    else {
-                                        alt8=37;}
-                                }
-                                else {
-                                    alt8=37;}
-                            }
-                            else {
-                                alt8=37;}
-                        }
-                        else {
-                            alt8=37;}
-                        }
-                        break;
-                    default:
-                        alt8=37;}
-
-                    }
-                    break;
-                case 'O':
-                    {
-                    int LA8_71 = input.LA(4);
-
-                    if ( (LA8_71=='R') ) {
-                        int LA8_101 = input.LA(5);
-
-                        if ( (LA8_101=='D') ) {
-                            int LA8_129 = input.LA(6);
-
-                            if ( (LA8_129=='E') ) {
-                                int LA8_155 = input.LA(7);
-
-                                if ( (LA8_155=='R') ) {
-                                    int LA8_175 = input.LA(8);
-
-                                    if ( ((LA8_175>='#' && LA8_175<='$')||(LA8_175>='0' && LA8_175<='9')||(LA8_175>='A' && LA8_175<='Z')||LA8_175=='_'||(LA8_175>='a' && LA8_175<='z')) ) {
-                                        alt8=37;
-                                    }
-                                    else {
-                                        alt8=29;}
-                                }
-                                else {
-                                    alt8=37;}
-                            }
-                            else {
-                                alt8=37;}
-                        }
-                        else {
-                            alt8=37;}
-                    }
-                    else {
-                        alt8=37;}
-                    }
-                    break;
-                default:
-                    alt8=37;}
-
-                }
-                break;
-            case 'U':
-                {
-                switch ( input.LA(3) ) {
-                case 'M':
-                    {
-                    int LA8_72 = input.LA(4);
-
-                    if ( (LA8_72=='B') ) {
-                        int LA8_102 = input.LA(5);
-
-                        if ( (LA8_102=='E') ) {
-                            int LA8_130 = input.LA(6);
-
-                            if ( (LA8_130=='R') ) {
-                                int LA8_156 = input.LA(7);
-
-                                if ( ((LA8_156>='#' && LA8_156<='$')||(LA8_156>='0' && LA8_156<='9')||(LA8_156>='A' && LA8_156<='Z')||LA8_156=='_'||(LA8_156>='a' && LA8_156<='z')) ) {
-                                    alt8=37;
-                                }
-                                else {
-                                    alt8=36;}
-                            }
-                            else {
-                                alt8=37;}
-                        }
-                        else {
-                            alt8=37;}
-                    }
-                    else {
-                        alt8=37;}
-                    }
-                    break;
-                case 'L':
-                    {
-                    int LA8_73 = input.LA(4);
-
-                    if ( (LA8_73=='L') ) {
-                        int LA8_103 = input.LA(5);
-
-                        if ( ((LA8_103>='#' && LA8_103<='$')||(LA8_103>='0' && LA8_103<='9')||(LA8_103>='A' && LA8_103<='Z')||LA8_103=='_'||(LA8_103>='a' && LA8_103<='z')) ) {
-                            alt8=37;
-                        }
-                        else {
-                            alt8=34;}
-                    }
-                    else {
-                        alt8=37;}
-                    }
-                    break;
-                default:
-                    alt8=37;}
-
-                }
-                break;
-            default:
-                alt8=37;}
-
-            }
-            break;
-        case 'O':
-            {
-            int LA8_16 = input.LA(2);
-
-            if ( (LA8_16=='R') ) {
-                int LA8_44 = input.LA(3);
-
-                if ( (LA8_44=='D') ) {
-                    int LA8_74 = input.LA(4);
-
-                    if ( (LA8_74=='E') ) {
-                        int LA8_104 = input.LA(5);
-
-                        if ( (LA8_104=='R') ) {
-                            int LA8_131 = input.LA(6);
-
-                            if ( ((LA8_131>='#' && LA8_131<='$')||(LA8_131>='0' && LA8_131<='9')||(LA8_131>='A' && LA8_131<='Z')||LA8_131=='_'||(LA8_131>='a' && LA8_131<='z')) ) {
-                                alt8=37;
-                            }
-                            else {
-                                alt8=28;}
-                        }
-                        else {
-                            alt8=37;}
-                    }
-                    else {
-                        alt8=37;}
-                }
-                else {
-                    alt8=37;}
-            }
-            else {
-                alt8=37;}
-            }
-            break;
-        case 'P':
-            {
-            int LA8_17 = input.LA(2);
-
-            if ( (LA8_17=='R') ) {
-                int LA8_45 = input.LA(3);
-
-                if ( (LA8_45=='I') ) {
-                    int LA8_75 = input.LA(4);
-
-                    if ( (LA8_75=='M') ) {
-                        int LA8_105 = input.LA(5);
-
-                        if ( (LA8_105=='A') ) {
-                            int LA8_132 = input.LA(6);
-
-                            if ( (LA8_132=='R') ) {
-                                int LA8_158 = input.LA(7);
-
-                                if ( (LA8_158=='Y') ) {
-                                    int LA8_176 = input.LA(8);
-
-                                    if ( (LA8_176==' ') ) {
-                                        alt8=30;
-                                    }
-                                    else {
-                                        alt8=37;}
-                                }
-                                else {
-                                    alt8=37;}
-                            }
-                            else {
-                                alt8=37;}
-                        }
-                        else {
-                            alt8=37;}
-                    }
-                    else {
-                        alt8=37;}
-                }
-                else {
-                    alt8=37;}
-            }
-            else {
-                alt8=37;}
-            }
-            break;
-        case 'U':
-            {
-            int LA8_18 = input.LA(2);
-
-            if ( (LA8_18=='N') ) {
-                int LA8_46 = input.LA(3);
-
-                if ( (LA8_46=='I') ) {
-                    int LA8_76 = input.LA(4);
-
-                    if ( (LA8_76=='Q') ) {
-                        int LA8_106 = input.LA(5);
-
-                        if ( (LA8_106=='U') ) {
-                            int LA8_133 = input.LA(6);
-
-                            if ( (LA8_133=='E') ) {
-                                int LA8_159 = input.LA(7);
-
-                                if ( ((LA8_159>='#' && LA8_159<='$')||(LA8_159>='0' && LA8_159<='9')||(LA8_159>='A' && LA8_159<='Z')||LA8_159=='_'||(LA8_159>='a' && LA8_159<='z')) ) {
-                                    alt8=37;
-                                }
-                                else {
-                                    alt8=31;}
-                            }
-                            else {
-                                alt8=37;}
-                        }
-                        else {
-                            alt8=37;}
-                    }
-                    else {
-                        alt8=37;}
-                }
-                else {
-                    alt8=37;}
-            }
-            else {
-                alt8=37;}
-            }
-            break;
-        case 'F':
-            {
-            int LA8_19 = input.LA(2);
-
-            if ( (LA8_19=='O') ) {
-                int LA8_47 = input.LA(3);
-
-                if ( (LA8_47=='R') ) {
-                    int LA8_77 = input.LA(4);
-
-                    if ( (LA8_77=='E') ) {
-                        int LA8_107 = input.LA(5);
-
-                        if ( (LA8_107=='I') ) {
-                            int LA8_134 = input.LA(6);
-
-                            if ( (LA8_134=='G') ) {
-                                int LA8_160 = input.LA(7);
-
-                                if ( (LA8_160=='N') ) {
-                                    int LA8_178 = input.LA(8);
-
-                                    if ( (LA8_178==' ') ) {
-                                        alt8=32;
-                                    }
-                                    else {
-                                        alt8=37;}
-                                }
-                                else {
-                                    alt8=37;}
-                            }
-                            else {
-                                alt8=37;}
-                        }
-                        else {
-                            alt8=37;}
-                    }
-                    else {
-                        alt8=37;}
-                }
-                else {
-                    alt8=37;}
-            }
-            else {
-                alt8=37;}
-            }
-            break;
-        case 'R':
-            {
-            int LA8_20 = input.LA(2);
-
-            if ( (LA8_20=='E') ) {
-                int LA8_48 = input.LA(3);
-
-                if ( (LA8_48=='F') ) {
-                    int LA8_78 = input.LA(4);
-
-                    if ( (LA8_78=='E') ) {
-                        int LA8_108 = input.LA(5);
-
-                        if ( (LA8_108=='R') ) {
-                            int LA8_135 = input.LA(6);
-
-                            if ( (LA8_135=='E') ) {
-                                int LA8_161 = input.LA(7);
-
-                                if ( (LA8_161=='N') ) {
-                                    int LA8_179 = input.LA(8);
-
-                                    if ( (LA8_179=='C') ) {
-                                        int LA8_195 = input.LA(9);
-
-                                        if ( (LA8_195=='E') ) {
-                                            int LA8_203 = input.LA(10);
-
-                                            if ( (LA8_203=='S') ) {
-                                                int LA8_208 = input.LA(11);
-
-                                                if ( ((LA8_208>='#' && LA8_208<='$')||(LA8_208>='0' && LA8_208<='9')||(LA8_208>='A' && LA8_208<='Z')||LA8_208=='_'||(LA8_208>='a' && LA8_208<='z')) ) {
-                                                    alt8=37;
-                                                }
-                                                else {
-                                                    alt8=33;}
-                                            }
-                                            else {
-                                                alt8=37;}
-                                        }
-                                        else {
-                                            alt8=37;}
-                                    }
-                                    else {
-                                        alt8=37;}
-                                }
-                                else {
-                                    alt8=37;}
-                            }
-                            else {
-                                alt8=37;}
-                        }
-                        else {
-                            alt8=37;}
-                    }
-                    else {
-                        alt8=37;}
-                }
-                else {
-                    alt8=37;}
-            }
-            else {
-                alt8=37;}
-            }
-            break;
-        case '0':
-        case '1':
-        case '2':
-        case '3':
-        case '4':
-        case '5':
-        case '6':
-        case '7':
-        case '8':
-        case '9':
-            {
-            alt8=35;
-            }
-            break;
-        case 'V':
-            {
-            int LA8_22 = input.LA(2);
-
-            if ( (LA8_22=='A') ) {
-                int LA8_49 = input.LA(3);
-
-                if ( (LA8_49=='R') ) {
-                    int LA8_79 = input.LA(4);
-
-                    if ( (LA8_79=='C') ) {
-                        int LA8_109 = input.LA(5);
-
-                        if ( (LA8_109=='H') ) {
-                            int LA8_136 = input.LA(6);
-
-                            if ( (LA8_136=='A') ) {
-                                int LA8_162 = input.LA(7);
-
-                                if ( (LA8_162=='R') ) {
-                                    int LA8_180 = input.LA(8);
-
-                                    if ( (LA8_180=='2') ) {
-                                        int LA8_196 = input.LA(9);
-
-                                        if ( ((LA8_196>='#' && LA8_196<='$')||(LA8_196>='0' && LA8_196<='9')||(LA8_196>='A' && LA8_196<='Z')||LA8_196=='_'||(LA8_196>='a' && LA8_196<='z')) ) {
-                                            alt8=37;
-                                        }
-                                        else {
-                                            alt8=36;}
-                                    }
-                                    else {
-                                        alt8=37;}
-                                }
-                                else {
-                                    alt8=37;}
-                            }
-                            else {
-                                alt8=37;}
-                        }
-                        else {
-                            alt8=37;}
-                    }
-                    else {
-                        alt8=37;}
-                }
-                else {
-                    alt8=37;}
-            }
-            else {
-                alt8=37;}
-            }
-            break;
-        case 'D':
-            {
-            int LA8_23 = input.LA(2);
-
-            if ( (LA8_23=='A') ) {
-                int LA8_50 = input.LA(3);
-
-                if ( (LA8_50=='T') ) {
-                    int LA8_80 = input.LA(4);
-
-                    if ( (LA8_80=='E') ) {
-                        int LA8_110 = input.LA(5);
-
-                        if ( ((LA8_110>='#' && LA8_110<='$')||(LA8_110>='0' && LA8_110<='9')||(LA8_110>='A' && LA8_110<='Z')||LA8_110=='_'||(LA8_110>='a' && LA8_110<='z')) ) {
-                            alt8=37;
-                        }
-                        else {
-                            alt8=36;}
-                    }
-                    else {
-                        alt8=37;}
-                }
-                else {
-                    alt8=37;}
-            }
-            else {
-                alt8=37;}
-            }
-            break;
-        case 'G':
-        case 'H':
-        case 'J':
-        case 'K':
-        case 'L':
-        case 'Q':
-        case 'X':
-        case 'Y':
-        case 'Z':
-        case 'a':
-        case 'b':
-        case 'c':
-        case 'd':
-        case 'e':
-        case 'f':
-        case 'g':
-        case 'h':
-        case 'i':
-        case 'j':
-        case 'k':
-        case 'l':
-        case 'm':
-        case 'n':
-        case 'o':
-        case 'p':
-        case 'q':
-        case 'r':
-        case 's':
-        case 't':
-        case 'u':
-        case 'v':
-        case 'w':
-        case 'x':
-        case 'y':
-        case 'z':
-            {
-            alt8=37;
-            }
-            break;
-        case '\'':
-            {
-            alt8=38;
-            }
-            break;
-        case '\t':
-        case '\n':
-        case '\r':
-        case ' ':
-            {
-            alt8=39;
-            }
-            break;
-        default:
-            NoViableAltException nvae =
-                new NoViableAltException("1:1: Tokens : ( T10 | T11 | T12 | T13 | T14 | T15 | T16 | T17 | T18 | T19 | T20 | T21 | T22 | T23 | T24 | T25 | T26 | T27 | T28 | T29 | T30 | T31 | T32 | T33 | T34 | T35 | T36 | T37 | T38 | T39 | T40 | T41 | T42 | ISNULL | NUMBER | TYPE | ID | STRING | WS );", 8, 0, input);
-
-            throw nvae;
-        }
-
+        alt8 = dfa8.predict(input);
         switch (alt8) {
             case 1 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:10: T10
+                // DDL.g:1:10: T__10
                 {
-                mT10(); 
+                mT__10(); 
 
                 }
                 break;
             case 2 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:14: T11
+                // DDL.g:1:16: T__11
                 {
-                mT11(); 
+                mT__11(); 
 
                 }
                 break;
             case 3 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:18: T12
+                // DDL.g:1:22: T__12
                 {
-                mT12(); 
+                mT__12(); 
 
                 }
                 break;
             case 4 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:22: T13
+                // DDL.g:1:28: T__13
                 {
-                mT13(); 
+                mT__13(); 
 
                 }
                 break;
             case 5 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:26: T14
+                // DDL.g:1:34: T__14
                 {
-                mT14(); 
+                mT__14(); 
 
                 }
                 break;
             case 6 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:30: T15
+                // DDL.g:1:40: T__15
                 {
-                mT15(); 
+                mT__15(); 
 
                 }
                 break;
             case 7 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:34: T16
+                // DDL.g:1:46: T__16
                 {
-                mT16(); 
+                mT__16(); 
 
                 }
                 break;
             case 8 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:38: T17
+                // DDL.g:1:52: T__17
                 {
-                mT17(); 
+                mT__17(); 
 
                 }
                 break;
             case 9 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:42: T18
+                // DDL.g:1:58: T__18
                 {
-                mT18(); 
+                mT__18(); 
 
                 }
                 break;
             case 10 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:46: T19
+                // DDL.g:1:64: T__19
                 {
-                mT19(); 
+                mT__19(); 
 
                 }
                 break;
             case 11 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:50: T20
+                // DDL.g:1:70: T__20
                 {
-                mT20(); 
+                mT__20(); 
 
                 }
                 break;
             case 12 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:54: T21
+                // DDL.g:1:76: T__21
                 {
-                mT21(); 
+                mT__21(); 
 
                 }
                 break;
             case 13 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:58: T22
+                // DDL.g:1:82: T__22
                 {
-                mT22(); 
+                mT__22(); 
 
                 }
                 break;
             case 14 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:62: T23
+                // DDL.g:1:88: T__23
                 {
-                mT23(); 
+                mT__23(); 
 
                 }
                 break;
             case 15 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:66: T24
+                // DDL.g:1:94: T__24
                 {
-                mT24(); 
+                mT__24(); 
 
                 }
                 break;
             case 16 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:70: T25
+                // DDL.g:1:100: T__25
                 {
-                mT25(); 
+                mT__25(); 
 
                 }
                 break;
             case 17 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:74: T26
+                // DDL.g:1:106: T__26
                 {
-                mT26(); 
+                mT__26(); 
 
                 }
                 break;
             case 18 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:78: T27
+                // DDL.g:1:112: T__27
                 {
-                mT27(); 
+                mT__27(); 
 
                 }
                 break;
             case 19 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:82: T28
+                // DDL.g:1:118: T__28
                 {
-                mT28(); 
+                mT__28(); 
 
                 }
                 break;
             case 20 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:86: T29
+                // DDL.g:1:124: T__29
                 {
-                mT29(); 
+                mT__29(); 
 
                 }
                 break;
             case 21 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:90: T30
+                // DDL.g:1:130: T__30
                 {
-                mT30(); 
+                mT__30(); 
 
                 }
                 break;
             case 22 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:94: T31
+                // DDL.g:1:136: T__31
                 {
-                mT31(); 
+                mT__31(); 
 
                 }
                 break;
             case 23 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:98: T32
+                // DDL.g:1:142: T__32
                 {
-                mT32(); 
+                mT__32(); 
 
                 }
                 break;
             case 24 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:102: T33
+                // DDL.g:1:148: T__33
                 {
-                mT33(); 
+                mT__33(); 
 
                 }
                 break;
             case 25 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:106: T34
+                // DDL.g:1:154: T__34
                 {
-                mT34(); 
+                mT__34(); 
 
                 }
                 break;
             case 26 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:110: T35
+                // DDL.g:1:160: T__35
                 {
-                mT35(); 
+                mT__35(); 
 
                 }
                 break;
             case 27 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:114: T36
+                // DDL.g:1:166: T__36
                 {
-                mT36(); 
+                mT__36(); 
 
                 }
                 break;
             case 28 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:118: T37
+                // DDL.g:1:172: T__37
                 {
-                mT37(); 
+                mT__37(); 
 
                 }
                 break;
             case 29 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:122: T38
+                // DDL.g:1:178: T__38
                 {
-                mT38(); 
+                mT__38(); 
 
                 }
                 break;
             case 30 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:126: T39
+                // DDL.g:1:184: T__39
                 {
-                mT39(); 
+                mT__39(); 
 
                 }
                 break;
             case 31 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:130: T40
+                // DDL.g:1:190: T__40
                 {
-                mT40(); 
+                mT__40(); 
 
                 }
                 break;
             case 32 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:134: T41
+                // DDL.g:1:196: T__41
                 {
-                mT41(); 
+                mT__41(); 
 
                 }
                 break;
             case 33 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:138: T42
+                // DDL.g:1:202: T__42
                 {
-                mT42(); 
+                mT__42(); 
 
                 }
                 break;
             case 34 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:142: ISNULL
+                // DDL.g:1:208: ISNULL
                 {
                 mISNULL(); 
 
                 }
                 break;
             case 35 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:149: NUMBER
+                // DDL.g:1:215: NUMBER
                 {
                 mNUMBER(); 
 
                 }
                 break;
             case 36 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:156: TYPE
+                // DDL.g:1:222: TYPE
                 {
                 mTYPE(); 
 
                 }
                 break;
             case 37 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:161: ID
+                // DDL.g:1:227: ID
                 {
                 mID(); 
 
                 }
                 break;
             case 38 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:164: STRING
+                // DDL.g:1:230: STRING
                 {
                 mSTRING(); 
 
                 }
                 break;
             case 39 :
-                // /home/jlcanovas/workspace/Grammar2Model.examples.PLSQL2ASTMModel/ASTMextraction/gen/DDL.ge3:1:171: WS
+                // DDL.g:1:237: WS
                 {
                 mWS(); 
 
@@ -2659,6 +1417,340 @@ public class DDLLexer extends Lexer {
     }
 
 
+    protected DFA8 dfa8 = new DFA8(this);
+    static final String DFA8_eotS =
+        "\1\uffff\1\30\4\uffff\3\30\1\uffff\13\30\1\uffff\2\30\3\uffff\10"+
+        "\30\1\75\1\30\1\77\24\30\1\130\2\30\1\uffff\1\30\1\uffff\30\30\1"+
+        "\uffff\4\30\1\172\7\30\1\uffff\1\145\7\30\1\u0089\4\30\1\u008e\1"+
+        "\u008f\2\30\1\u0092\1\30\1\u0094\1\uffff\10\30\1\u009d\5\30\1\uffff"+
+        "\3\30\1\u00a6\3\uffff\1\u00a7\1\uffff\1\30\1\uffff\7\30\1\u0089"+
+        "\1\uffff\1\30\1\u00b1\3\30\1\uffff\2\30\2\uffff\5\30\1\u00be\1\u00bf"+
+        "\1\u00c0\1\30\1\uffff\3\30\2\uffff\1\30\1\uffff\1\30\1\u00c7\1\u00c8"+
+        "\2\30\5\uffff\1\30\1\u0089\1\30\1\u00cd\2\uffff\3\30\1\u00d1\1\uffff"+
+        "\1\u00d2\1\u00d3\1\u00d4\4\uffff";
+    static final String DFA8_eofS =
+        "\u00d5\uffff";
+    static final String DFA8_minS =
+        "\1\11\1\101\4\uffff\1\104\1\116\1\101\1\uffff\1\116\1\131\1\124"+
+        "\1\111\1\101\1\117\2\122\1\116\1\117\1\105\1\uffff\2\101\3\uffff"+
+        "\1\105\1\114\2\103\1\124\1\104\1\101\1\102\1\43\1\103\1\43\1\101"+
+        "\1\124\1\130\1\116\1\103\1\114\1\104\2\111\1\122\1\106\1\122\1\124"+
+        "\1\101\1\123\1\115\1\125\1\114\1\110\1\105\1\43\1\102\1\114\1\uffff"+
+        "\1\122\1\uffff\1\122\1\110\2\126\2\101\1\122\1\40\1\114\1\102\1"+
+        "\105\1\115\1\121\2\105\1\103\1\105\2\124\1\105\1\115\2\105\1\122"+
+        "\1\uffff\1\114\2\105\1\124\1\43\2\101\1\130\1\116\2\103\1\104\1"+
+        "\uffff\1\43\1\105\1\122\1\101\1\125\1\111\1\122\1\110\1\43\1\105"+
+        "\1\122\2\116\2\43\1\40\1\105\1\43\1\115\1\43\1\uffff\2\114\2\126"+
+        "\1\114\1\110\1\105\1\122\1\43\1\122\1\105\1\107\1\105\1\101\1\uffff"+
+        "\1\40\1\101\1\124\1\43\3\uffff\1\43\1\uffff\1\105\1\uffff\2\125"+
+        "\2\101\2\105\1\122\1\43\1\uffff\1\131\1\43\2\116\1\122\1\123\1\111"+
+        "\1\40\2\uffff\1\116\2\105\2\114\3\43\1\40\1\uffff\1\40\1\103\1\62"+
+        "\2\uffff\1\116\1\uffff\1\124\2\43\2\125\5\uffff\1\105\1\43\1\124"+
+        "\1\43\2\uffff\2\105\1\123\1\43\1\uffff\3\43\4\uffff";
+    static final String DFA8_maxS =
+        "\1\172\1\131\4\uffff\1\114\1\116\1\101\1\uffff\1\123\1\131\1\124"+
+        "\2\111\1\125\2\122\1\116\1\117\1\105\1\uffff\2\101\3\uffff\1\105"+
+        "\1\116\2\103\1\124\1\104\1\101\1\102\1\172\1\103\1\172\1\101\1\124"+
+        "\1\130\1\116\1\124\1\115\1\104\2\111\1\122\1\106\1\122\1\124\1\101"+
+        "\1\123\1\115\1\125\1\114\1\110\1\105\1\172\1\102\1\114\1\uffff\1"+
+        "\122\1\uffff\1\122\1\110\2\126\1\111\1\131\1\122\1\40\1\114\1\102"+
+        "\1\105\1\115\1\121\2\105\1\103\1\105\2\124\1\105\1\115\2\105\1\122"+
+        "\1\uffff\1\114\2\105\1\124\1\172\2\101\1\130\1\116\2\103\1\104\1"+
+        "\uffff\1\172\1\105\1\122\1\101\1\125\1\111\1\122\1\110\1\172\1\105"+
+        "\1\122\2\116\2\172\1\40\1\105\1\172\1\115\1\172\1\uffff\2\114\2"+
+        "\126\1\114\1\110\1\105\1\122\1\172\1\122\1\105\1\107\1\105\1\101"+
+        "\1\uffff\1\40\1\101\1\124\1\172\3\uffff\1\172\1\uffff\1\105\1\uffff"+
+        "\2\125\2\101\2\105\1\122\1\172\1\uffff\1\131\1\172\2\116\1\122\1"+
+        "\124\1\111\1\40\2\uffff\1\116\2\105\2\114\3\172\1\40\1\uffff\1\40"+
+        "\1\103\1\62\2\uffff\1\116\1\uffff\1\124\2\172\2\125\5\uffff\1\105"+
+        "\1\172\1\124\1\172\2\uffff\2\105\1\123\1\172\1\uffff\3\172\4\uffff";
+    static final String DFA8_acceptS =
+        "\2\uffff\1\2\1\3\1\4\1\5\3\uffff\1\15\13\uffff\1\43\2\uffff\1\45"+
+        "\1\46\1\47\42\uffff\1\16\1\uffff\1\21\30\uffff\1\7\14\uffff\1\42"+
+        "\24\uffff\1\23\16\uffff\1\44\4\uffff\1\30\1\32\1\6\1\uffff\1\13"+
+        "\1\uffff\1\22\10\uffff\1\34\10\uffff\1\14\1\10\11\uffff\1\37\3\uffff"+
+        "\1\1\1\17\1\uffff\1\12\5\uffff\1\31\1\33\1\35\1\36\1\40\4\uffff"+
+        "\1\24\1\26\4\uffff\1\20\3\uffff\1\11\1\25\1\27\1\41";
+    static final String DFA8_specialS =
+        "\u00d5\uffff}>";
+    static final String[] DFA8_transitionS = {
+            "\2\32\2\uffff\1\32\22\uffff\1\32\6\uffff\1\31\1\2\1\4\2\uffff"+
+            "\1\3\1\uffff\1\11\1\uffff\12\25\1\uffff\1\5\5\uffff\1\6\1\13"+
+            "\1\1\1\27\1\7\1\23\2\30\1\12\3\30\1\16\1\17\1\20\1\21\1\30\1"+
+            "\24\1\14\1\10\1\22\1\26\1\15\3\30\6\uffff\32\30",
+            "\1\36\15\uffff\1\34\2\uffff\1\33\6\uffff\1\35",
+            "",
+            "",
+            "",
+            "",
+            "\1\40\7\uffff\1\37",
+            "\1\41",
+            "\1\42",
+            "",
+            "\1\44\4\uffff\1\43",
+            "\1\45",
+            "\1\46",
+            "\1\47",
+            "\1\50\7\uffff\1\51",
+            "\1\52\5\uffff\1\53",
+            "\1\54",
+            "\1\55",
+            "\1\56",
+            "\1\57",
+            "\1\60",
+            "",
+            "\1\61",
+            "\1\62",
+            "",
+            "",
+            "",
+            "\1\63",
+            "\1\66\1\65\1\64",
+            "\1\67",
+            "\1\70",
+            "\1\71",
+            "\1\72",
+            "\1\73",
+            "\1\74",
+            "\2\30\13\uffff\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32"+
+            "\30",
+            "\1\76",
+            "\2\30\13\uffff\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32"+
+            "\30",
+            "\1\100",
+            "\1\101",
+            "\1\102",
+            "\1\103",
+            "\1\105\11\uffff\1\104\1\uffff\1\106\4\uffff\1\107",
+            "\1\110\1\111",
+            "\1\112",
+            "\1\113",
+            "\1\114",
+            "\1\115",
+            "\1\116",
+            "\1\117",
+            "\1\120",
+            "\1\121",
+            "\1\122",
+            "\1\123",
+            "\1\124",
+            "\1\125",
+            "\1\126",
+            "\1\127",
+            "\2\30\13\uffff\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32"+
+            "\30",
+            "\1\131",
+            "\1\132",
+            "",
+            "\1\133",
+            "",
+            "\1\134",
+            "\1\135",
+            "\1\136",
+            "\1\137",
+            "\1\140\7\uffff\1\141",
+            "\1\143\27\uffff\1\142",
+            "\1\144",
+            "\1\145",
+            "\1\146",
+            "\1\147",
+            "\1\150",
+            "\1\151",
+            "\1\152",
+            "\1\153",
+            "\1\154",
+            "\1\155",
+            "\1\156",
+            "\1\157",
+            "\1\160",
+            "\1\161",
+            "\1\162",
+            "\1\163",
+            "\1\164",
+            "\1\165",
+            "",
+            "\1\166",
+            "\1\167",
+            "\1\170",
+            "\1\171",
+            "\2\30\13\uffff\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32"+
+            "\30",
+            "\1\173",
+            "\1\174",
+            "\1\175",
+            "\1\176",
+            "\1\177",
+            "\1\u0080",
+            "\1\u0081",
+            "",
+            "\2\30\13\uffff\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32"+
+            "\30",
+            "\1\u0082",
+            "\1\u0083",
+            "\1\u0084",
+            "\1\u0085",
+            "\1\u0086",
+            "\1\u0087",
+            "\1\u0088",
+            "\2\30\13\uffff\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32"+
+            "\30",
+            "\1\u008a",
+            "\1\u008b",
+            "\1\u008c",
+            "\1\u008d",
+            "\2\30\13\uffff\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32"+
+            "\30",
+            "\2\30\13\uffff\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32"+
+            "\30",
+            "\1\u0090",
+            "\1\u0091",
+            "\2\30\13\uffff\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32"+
+            "\30",
+            "\1\u0093",
+            "\2\30\13\uffff\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32"+
+            "\30",
+            "",
+            "\1\u0095",
+            "\1\u0096",
+            "\1\u0097",
+            "\1\u0098",
+            "\1\u0099",
+            "\1\u009a",
+            "\1\u009b",
+            "\1\u009c",
+            "\2\30\13\uffff\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32"+
+            "\30",
+            "\1\u009e",
+            "\1\u009f",
+            "\1\u00a0",
+            "\1\u00a1",
+            "\1\u00a2",
+            "",
+            "\1\u00a3",
+            "\1\u00a4",
+            "\1\u00a5",
+            "\2\30\13\uffff\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32"+
+            "\30",
+            "",
+            "",
+            "",
+            "\2\30\13\uffff\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32"+
+            "\30",
+            "",
+            "\1\u00a8",
+            "",
+            "\1\u00a9",
+            "\1\u00aa",
+            "\1\u00ab",
+            "\1\u00ac",
+            "\1\u00ad",
+            "\1\u00ae",
+            "\1\u00af",
+            "\2\30\13\uffff\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32"+
+            "\30",
+            "",
+            "\1\u00b0",
+            "\2\30\13\uffff\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32"+
+            "\30",
+            "\1\u00b2",
+            "\1\u00b3",
+            "\1\u00b4",
+            "\1\u00b6\1\u00b5",
+            "\1\u00b7",
+            "\1\u00b8",
+            "",
+            "",
+            "\1\u00b9",
+            "\1\u00ba",
+            "\1\u00bb",
+            "\1\u00bc",
+            "\1\u00bd",
+            "\2\30\13\uffff\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32"+
+            "\30",
+            "\2\30\13\uffff\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32"+
+            "\30",
+            "\2\30\13\uffff\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32"+
+            "\30",
+            "\1\u00c1",
+            "",
+            "\1\u00c2",
+            "\1\u00c3",
+            "\1\u00c4",
+            "",
+            "",
+            "\1\u00c5",
+            "",
+            "\1\u00c6",
+            "\2\30\13\uffff\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32"+
+            "\30",
+            "\2\30\13\uffff\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32"+
+            "\30",
+            "\1\u00c9",
+            "\1\u00ca",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "\1\u00cb",
+            "\2\30\13\uffff\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32"+
+            "\30",
+            "\1\u00cc",
+            "\2\30\13\uffff\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32"+
+            "\30",
+            "",
+            "",
+            "\1\u00ce",
+            "\1\u00cf",
+            "\1\u00d0",
+            "\2\30\13\uffff\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32"+
+            "\30",
+            "",
+            "\2\30\13\uffff\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32"+
+            "\30",
+            "\2\30\13\uffff\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32"+
+            "\30",
+            "\2\30\13\uffff\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32"+
+            "\30",
+            "",
+            "",
+            "",
+            ""
+    };
+
+    static final short[] DFA8_eot = DFA.unpackEncodedString(DFA8_eotS);
+    static final short[] DFA8_eof = DFA.unpackEncodedString(DFA8_eofS);
+    static final char[] DFA8_min = DFA.unpackEncodedStringToUnsignedChars(DFA8_minS);
+    static final char[] DFA8_max = DFA.unpackEncodedStringToUnsignedChars(DFA8_maxS);
+    static final short[] DFA8_accept = DFA.unpackEncodedString(DFA8_acceptS);
+    static final short[] DFA8_special = DFA.unpackEncodedString(DFA8_specialS);
+    static final short[][] DFA8_transition;
+
+    static {
+        int numStates = DFA8_transitionS.length;
+        DFA8_transition = new short[numStates][];
+        for (int i=0; i<numStates; i++) {
+            DFA8_transition[i] = DFA.unpackEncodedString(DFA8_transitionS[i]);
+        }
+    }
+
+    class DFA8 extends DFA {
+
+        public DFA8(BaseRecognizer recognizer) {
+            this.recognizer = recognizer;
+            this.decisionNumber = 8;
+            this.eot = DFA8_eot;
+            this.eof = DFA8_eof;
+            this.min = DFA8_min;
+            this.max = DFA8_max;
+            this.accept = DFA8_accept;
+            this.special = DFA8_special;
+            this.transition = DFA8_transition;
+        }
+        public String getDescription() {
+            return "1:1: Tokens : ( T__10 | T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | ISNULL | NUMBER | TYPE | ID | STRING | WS );";
+        }
+    }
  
 
 }

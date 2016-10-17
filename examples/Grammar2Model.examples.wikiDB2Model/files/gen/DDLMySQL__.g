@@ -116,38 +116,38 @@ T131 : 'IGNORE' ;
 T132 : 'INTO' ;
 T133 : 'VALUES' ;
 
-// $ANTLR src "/home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3" 4925
+// $ANTLR src "D:\git\gra2mol\examples\Grammar2Model.examples.wikiDB2Model\files\gen\DDLMySQL.ge3" 4925
 DOT			: '\u002E';
-// $ANTLR src "/home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3" 4926
+// $ANTLR src "D:\git\gra2mol\examples\Grammar2Model.examples.wikiDB2Model\files\gen\DDLMySQL.ge3" 4926
 SLASH		: '\u005C';
-// $ANTLR src "/home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3" 4927
+// $ANTLR src "D:\git\gra2mol\examples\Grammar2Model.examples.wikiDB2Model\files\gen\DDLMySQL.ge3" 4927
 OQUOTE		: '\u0060';
-// $ANTLR src "/home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3" 4928
+// $ANTLR src "D:\git\gra2mol\examples\Grammar2Model.examples.wikiDB2Model\files\gen\DDLMySQL.ge3" 4928
 QUOTE		: '\u0027';
-// $ANTLR src "/home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3" 4929
+// $ANTLR src "D:\git\gra2mol\examples\Grammar2Model.examples.wikiDB2Model\files\gen\DDLMySQL.ge3" 4929
 QVALUE 		: QUOTE (options {greedy=false;} : .)* QUOTE;
-// $ANTLR src "/home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3" 4930
+// $ANTLR src "D:\git\gra2mol\examples\Grammar2Model.examples.wikiDB2Model\files\gen\DDLMySQL.ge3" 4930
 DOUBLEQUOTE	: '\u0022';
-// $ANTLR src "/home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3" 4931
+// $ANTLR src "D:\git\gra2mol\examples\Grammar2Model.examples.wikiDB2Model\files\gen\DDLMySQL.ge3" 4931
 DQVALUE		: DOUBLEQUOTE (options {greedy=false;} : .)* DOUBLEQUOTE;
-// $ANTLR src "/home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3" 4932
+// $ANTLR src "D:\git\gra2mol\examples\Grammar2Model.examples.wikiDB2Model\files\gen\DDLMySQL.ge3" 4932
 NUMBER 		: ('+' | '-')? ('0'..'9')+;
-// $ANTLR src "/home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3" 4933
+// $ANTLR src "D:\git\gra2mol\examples\Grammar2Model.examples.wikiDB2Model\files\gen\DDLMySQL.ge3" 4933
 DECNUMBER	: ('+' | '-')?  NUMBER DOT NUMBER+;
-// $ANTLR src "/home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3" 4934
+// $ANTLR src "D:\git\gra2mol\examples\Grammar2Model.examples.wikiDB2Model\files\gen\DDLMySQL.ge3" 4934
 HEXNUMBER	: ('+' | '-')?  '0' ('x' | 'X') ('0'..'9' | 'a'..'f' | 'A'..'F')+;
-// $ANTLR src "/home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3" 4935
+// $ANTLR src "D:\git\gra2mol\examples\Grammar2Model.examples.wikiDB2Model\files\gen\DDLMySQL.ge3" 4935
 ID 			: ('a'..'z' | 'A'..'Z') ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' | '$' | '#' | SLASH | '-')*;
-// $ANTLR src "/home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3" 4936
+// $ANTLR src "D:\git\gra2mol\examples\Grammar2Model.examples.wikiDB2Model\files\gen\DDLMySQL.ge3" 4936
 IDNUMBER 	: ('a'..'z' | 'A'..'Z' | '0'..'9') ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' | '$' | '#' )*;
 
-// $ANTLR src "/home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3" 4938
+// $ANTLR src "D:\git\gra2mol\examples\Grammar2Model.examples.wikiDB2Model\files\gen\DDLMySQL.ge3" 4938
 WS 			: (' ' | '\t' | '\n' | '\r')+ {$channel=HIDDEN;};
-// $ANTLR src "/home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3" 4939
+// $ANTLR src "D:\git\gra2mol\examples\Grammar2Model.examples.wikiDB2Model\files\gen\DDLMySQL.ge3" 4939
 ML_COMMENT:
 	'/*' (options {greedy=false;} : .)* '*/' (';')? { $channel=HIDDEN;}
 	;
 	
-// $ANTLR src "/home/jlcanovas/workspace/Grammar2Model.examples.wikiDB2Model/files/gen/DDLMySQL.ge3" 4943
+// $ANTLR src "D:\git\gra2mol\examples\Grammar2Model.examples.wikiDB2Model\files\gen\DDLMySQL.ge3" 4943
 OL_COMMENT: '--' ( options {greedy=false;} : . )* '\n'+ { $channel=HIDDEN;}
 	;
