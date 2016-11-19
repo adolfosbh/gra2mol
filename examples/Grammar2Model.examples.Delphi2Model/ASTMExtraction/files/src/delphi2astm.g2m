@@ -40,20 +40,20 @@ rule 'mapFileFromUnit'
 		-- Attributes inherited from GASTMSyntaxObject
 		locationInfo 						= new astm::gastm::SourceLocation;
 		locationInfo.inSourceFile 			= new astm::gastm::SourceFile;
-		locationInfo.inSourceFile.pathName 	= f.path;
+		-- ISSUE locationInfo.inSourceFile.pathName 	= f.path;
 end_rule
 
 rule 'mapInterfaceSection'
 	from 	interfaceSection is
 	to		astm::sastm::DelphiInterfaceSection
 	queries
-		uElem : /is/#usesClause;
+		-- ISSUE uElem : /is/#usesClause;
 		cElem : /is/interfaceDecl/#constSection;
 		tElem : /is/interfaceDecl/#typeSection;
 		vElem : /is/interfaceDecl/#varSection;
 		eElem : /is/interfaceDecl/#exportedHeading;
 	mappings
-		uses 		= uElem;
+		-- ISSUE uses 		= uElem;
 		fragments 	= cElem;
 		fragments 	= tElem;
 		fragments 	= vElem;
@@ -64,16 +64,16 @@ rule 'mapImplementationSection'
 	from 	implementationSection is
 	to		astm::sastm::DelphiImplementationSection
 	queries
-		uElem : /is/#usesClause;
-		eElem : /is/#exportsStmt;
+		-- ISSUE uElem : /is/#usesClause;
+		-- ISSUE eElem : /is/#exportsStmt;
 		lElem : /is/declSection/#labelDeclSection;
 		cElem : /is/declSection/#constSection;
 		tElem : /is/declSection/#typeSection;
 		vElem : /is/declSection/#varSection;
 		pElem : /is/declSection/#procedureDeclSection;
 	mappings
-		uses 		= uElem;
-		exports 	= eElem;
+		-- ISSUE uses 		= uElem;
+		-- ISSUE exports 	= eElem;
 		fragments 	= lElem;
 		fragments 	= cElem;
 		fragments 	= tElem;
@@ -176,7 +176,7 @@ rule 'mapProcedureOrFunction'
 	to 		astm::gastm::FunctionDefinition
 	queries
 		nElem  : /pd//#ident[0];
-		pElems : /pd//formalParameters/#formalParm;
+		-- ISSUE pElems : /pd//formalParameters/#formalParm;
 		tElem  : /pd//#type[0];
 		bElem  : /pd//#block[0];
 	mappings
@@ -186,7 +186,7 @@ rule 'mapProcedureOrFunction'
 		--definitionType
 		
 		-- Own attributes
-		formalParameters 	= pElems;
+		-- ISSUE formalParameters 	= pElems;
 		body 				= bElem;
 		returnType 			= tElem;
 end_rule
@@ -204,7 +204,7 @@ rule 'mapBlock'
 		tElem : /b/declSection/#typeSection;
 		vElem : /b/declSection/#varSection;
 		pElem : /b/declSection/#procedureDeclSection;
-		stats : /b/compoundStmt//#statement;
+		stats : /b/#compoundStmt;
 	mappings
 		declarations  = lElem;
 		declarations  = cElem;
@@ -212,6 +212,15 @@ rule 'mapBlock'
 		declarations  = vElem;
 		declarations  = pElem;
 		subStatements = stats;
+end_rule
+
+rule 'CompoundStatement'
+	from compoundStmt cs
+	to   astm::gastm::BlockStatement
+	queries
+		statements : /cs//#statement;
+	mappings
+		subStatements = statements;
 end_rule
 
 skip_rule 'skipStatementList'
@@ -276,13 +285,13 @@ rule 'mapFunctionCall'
 		actualParams   = eElem;
 end_rule
 
-skip_rule 'skipCompoundStmt'
+rule 'structCompoundStmt'
 	from structStmt/compoundStmt st
-	to	 astm::gastm::Statement
+	to   astm::gastm::BlockStatement
 	queries
-		next : /st//#statement;
+		statements : /st//#statement;
 	mappings
-		skip next;
+		subStatements = statements;
 end_rule
 
 rule 'mapWithStatement'
@@ -315,11 +324,11 @@ rule 'mapCaseStatement'
 	queries
 		exp       : /st//caseStmt/#expression;
 		caseSels  : /st//caseStmt/#caseSelector;
-		elseElems : /st//caseStmt/#stmtList;
+		-- ISSUE elseElems : /st//caseStmt/#stmtList;
 	mappings
 		switchExpression = exp;
 		cases            = caseSels;
-		cases            = elseElems;
+		-- ISSUE cases            = elseElems;
 end_rule
 
 rule 'mapCaseBlock'
@@ -333,25 +342,26 @@ rule 'mapCaseBlock'
 		body            = statement;
 end_rule
 
-rule 'mapDefaultCaseBlock'
-	from stmtList st
-	to   astm::gastm::DefaultBlock
-	queries
-		stats : /st/#statement;
-	mappings
-		body = stats;
-end_rule
+-- ISSUE
+--rule 'mapDefaultCaseBlock'
+--	from stmtList st
+--	to   astm::gastm::DefaultBlock
+--	queries
+--		stats : /st/#statement;
+--	mappings
+--		body = stats;
+--end_rule
 
 rule 'mapTryStatement'
 	from structStmt/tryStmt st
 	to   astm::gastm::TryStatement
 	queries
 		stats  : /st//tryStmt/#stmtList[0];
-		exceps : /st//tryStmt/#exceptionBlock; -- TODO: Deal with exception blocks
+		-- ISSUE exceps : /st//tryStmt/#exceptionBlock; -- TODO: Deal with exception blocks
 		alts   : /st//tryStmt/#stmtList[1];
 	mappings
 		guardedStatement = stats;
-		catchBlocks      = exceps;
+		-- ISSUE catchBlocks      = exceps;
 		finalStatement   = alts;
 end_rule
 
@@ -440,8 +450,20 @@ skip_rule 'skipToSimpleExpression'
 		skip nextNode;
 end_rule
 
+--rule 'AddOp'
+--	from 	simpleExpression{addOp[0].exists}  se
+--	to		astm::gastm::BinaryExpression
+--	queries
+--		lTerm    : /se/#term[0];
+--		rTerm    : /se/#term[1];
+--	mappings
+--		leftOperand	= lTerm;
+--		operator 	= new astm::gastm::Add;
+--		rightOperand = rTerm;
+--end_rule
+
 skip_rule 'skipAddOp'
-	from 	simpleExpression se
+	from 	simpleExpression{!addOp[0].exists} se
 	to		astm::gastm::Expression
 	queries
 		existsAddOp : /se/#addOp[0];
@@ -453,6 +475,8 @@ skip_rule 'skipAddOp'
 			skip nextNode;
 		end_if
 end_rule
+
+
 
 skip_rule 'skipMulOp'
 	from 	term t
@@ -508,6 +532,13 @@ rule 'mapFunctionCall'
 		--expressionType =
 		calledFunction = dElem;
 		actualParams   = eElem;
+end_rule
+
+rule 'mapFactorNil'
+	from 	factor{TOKEN[0].eq("nil")} f
+	to 		astm::gastm::NewExpression
+	queries
+	mappings
 end_rule
 
 rule 'mapParameter'
