@@ -38,7 +38,7 @@ begin
       try
          GetFileVersionInfo (PChar (Rut), 0, Size, Pt);
          VerQueryValue (Pt, '\', Pt2, Size2);         
-         with TVSFixedFileInfo (Pt2^)  do
+         with TVSFixedFileInfo do
          begin
            vers[0] := HiWord (dwFileVersionMS);
            vers[1] := LoWord (dwFileVersionMS);

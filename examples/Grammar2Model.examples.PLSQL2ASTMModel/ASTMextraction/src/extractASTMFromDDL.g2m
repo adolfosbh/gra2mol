@@ -1,22 +1,3 @@
--- *******************************************************************************
--- * Copyright (c) 2010
--- * All rights reserved. This program and the accompanying materials
--- * are made available under the terms of the Eclipse Public License v1.0
--- * which accompanies this distribution, and is available at
--- * http://www.eclipse.org/legal/epl-v10.html
--- *
--- * Contributors:
--- *    Javier Canovas (jlcanovas@um.es) 
--- *******************************************************************************
-
-
---------------------------------------------------------------------------------------
--- Gra2MoL transformation definition for extracting ASTM models from PL/SQL DDL
--- Author: Javier Luis Canovas Izquierdo (jlcanovas@um.es)
---
--- TODO: 
---------------------------------------------------------------------------------------
-
 hash columnTypeType
 	"VARCHAR2" -> "VARCHAR",
 	"NUMBER" -> "NUMBER",
@@ -58,7 +39,7 @@ rule 'mapRDBTableDefinition'
 		-- Locate alter tables
 		alter : //#alter_table{add.exists}/tabname{basename.eq(ct.ID)}; 
 		conss : /alter/#constraint;
-		comms : //#comment{ID.eq(ct.ID)};
+		-- NOT USED comms : //#comment{ID.eq(ct.ID)};
 	mappings
 		identifierName = new astm::gastm::Name;
 		identifierName.nameString  = ct.ID;
@@ -67,10 +48,6 @@ rule 'mapRDBTableDefinition'
 		Constraint = cons;
 		Constraint = conss;
 end_rule
-
------------------------------------------------------
--- PRIMARY KEY
------------------------------------------------------
 
 rule 'mapRDBColumnReference'
 	from primary_key pk
@@ -113,20 +90,16 @@ rule 'mapRDBColumnDefinition'
 		end_if
 end_rule
 
------------------------------------------------------
--- UNIQUE KEY
------------------------------------------------------
-
 rule 'mapRDBUniqueKey'
 	from constraint/unique_key cons
 	to astm::sastm::RDBUniqueKey
 	queries
 		colnames : /cons/unique_key/#colname;
 		
-		alter_table : //#alter_table/constraint{this.check(cons)};
-		tabname : /alter_table/#tabname;
-		table : //#create_table{ID.eq(tabname.basename)};
-		columns : {for each i in colnames} /table/#column{ID.eq(colnames[i].ID)};
+		-- NOT USED alter_table : //#alter_table/constraint{this.check(cons)};
+		-- NOT USED tabname : /alter_table/#tabname;
+		-- NOT USED table : //#create_table{ID.eq(tabname.basename)};
+		-- NOT USED columns : {for each i in colnames} /table/#column{ID.eq(colnames[i].ID)};
 	mappings
 		Column = colnames;
 end_rule
@@ -156,10 +129,6 @@ rule 'mapUniqueColumn'
 			end_if
 		end_if
 end_rule
-
------------------------------------------------------
--- FOREIGN KEY
------------------------------------------------------
 
 rule 'mapForeignKey'
 	from constraint/foreign_key cons

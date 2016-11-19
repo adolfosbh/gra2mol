@@ -11,7 +11,7 @@ public class DelphiTester {
 	
 	static String BASE_PATH = "../Grammar2Model.examples.Delphi2Model/";
 	static String MODELS_PATH = "./examples/";
-	static String[] MODEL_NAMES = new String[]{"untClArchivo","untClAux","untClFormatos"};
+	static String[] MODEL_NAMES = new String[]{"untClFormatos", "untClAux", "untClArchivo", "untClArchivoMod", "untClArchivoMod2", "untClArchivoMod3"};
 	//private static int NUM_OF_MODELS = 7;
 	
 	public static void main(String[] args) throws Exception {
@@ -23,12 +23,12 @@ public class DelphiTester {
 //		}
 				
 		// warmup
-//		System.out.println("* Running Warmup *");
-//		for (int i = 0; i < 3000; i++) {
-//			Gra2MoLProcessLauncher processLauncher = new Gra2MoLProcessLauncher(createEnricher(), createInterpreter("untClArchivo"));
-//			processLauncher.setActivePhase1(false); // We only need to interpret the transformation
-//			processLauncher.launch();
-//		}
+		System.out.println("* Running Warmup *");
+		for (int i = 0; i < 3000; i++) {
+			Gra2MoLProcessLauncher processLauncher = new Gra2MoLProcessLauncher(createEnricher(), createInterpreter("untClFormatos"));
+			processLauncher.setActivePhase1(false); // We only need to interpret the transformation
+			processLauncher.launch();
+		}
 		
 		printMemory();
 //		

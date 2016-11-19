@@ -1,2 +1,257 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<gastm:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:gastm="http://modelum.es/modernization/gastm"/>
+<gastm:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gastm="http://modelum.es/modernization/gastm" xmlns:sastm="http://modelum.es/modernization/sastm">
+  <files xsi:type="sastm:DelphiUnit" language="Delphi">
+    <locationInfo>
+      <inSourceFile/>
+    </locationInfo>
+    <name nameString="untClAux"/>
+    <interface>
+      <fragments xsi:type="gastm:TypeDefinition">
+        <name/>
+      </fragments>
+      <fragments xsi:type="gastm:TypeDefinition">
+        <name/>
+      </fragments>
+      <fragments xsi:type="gastm:VariableDefinition" isMutable="true">
+        <identifierName nameString="frmPost"/>
+      </fragments>
+      <fragments xsi:type="gastm:VariableDefinition" isMutable="true">
+        <identifierName nameString="ActualizacionesPendientes"/>
+      </fragments>
+    </interface>
+    <implementation>
+      <fragments xsi:type="gastm:FunctionDefinition">
+        <identifierName nameString="ObtenerAppVersion"/>
+        <body xsi:type="sastm:DelphiBlockStatement">
+          <subStatements xsi:type="gastm:BlockStatement">
+            <subStatements xsi:type="gastm:ExpressionStatement">
+              <expression xsi:type="gastm:BinaryExpression">
+                <operator xsi:type="gastm:Assign"/>
+                <leftOperand xsi:type="gastm:IdentifierReference" refersTo="//@files.0/@implementation/@fragments.0/@body.0/@declarations.0">
+                  <name nameString="Size"/>
+                </leftOperand>
+                <rightOperand xsi:type="sastm:DelphiFunctionCallExpression">
+                  <calledFunction xsi:type="gastm:IdentifierReference">
+                    <name nameString="GetFileVersionInfoSize"/>
+                  </calledFunction>
+                  <actualParams xsi:type="gastm:ActualParameterExpression">
+                    <value xsi:type="sastm:DelphiFunctionCallExpression">
+                      <calledFunction xsi:type="gastm:IdentifierReference">
+                        <name nameString="PChar"/>
+                      </calledFunction>
+                      <actualParams xsi:type="gastm:ActualParameterExpression">
+                        <value xsi:type="gastm:IdentifierReference">
+                          <name nameString="Rut"/>
+                        </value>
+                      </actualParams>
+                    </value>
+                  </actualParams>
+                  <actualParams xsi:type="gastm:ActualParameterExpression">
+                    <value xsi:type="gastm:IdentifierReference" refersTo="//@files.0/@implementation/@fragments.0/@body.0/@declarations.0">
+                      <name nameString="Size2"/>
+                    </value>
+                  </actualParams>
+                </rightOperand>
+              </expression>
+            </subStatements>
+            <subStatements xsi:type="gastm:IfStatement">
+              <condition xsi:type="gastm:BinaryExpression">
+                <leftOperand xsi:type="gastm:IdentifierReference" refersTo="//@files.0/@implementation/@fragments.0/@body.0/@declarations.0">
+                  <name nameString="Size"/>
+                </leftOperand>
+                <rightOperand xsi:type="gastm:IntegerLiteral" value="0"/>
+              </condition>
+              <thenBody xsi:type="gastm:BlockStatement">
+                <subStatements xsi:type="gastm:ExpressionStatement">
+                  <expression xsi:type="gastm:FunctionCallExpression">
+                    <calledFunction xsi:type="gastm:IdentifierReference">
+                      <name nameString="GetMem"/>
+                    </calledFunction>
+                    <actualParams xsi:type="gastm:ActualParameterExpression">
+                      <value xsi:type="gastm:IdentifierReference" refersTo="//@files.0/@implementation/@fragments.0/@body.0/@declarations.1">
+                        <name nameString="Pt"/>
+                      </value>
+                    </actualParams>
+                    <actualParams xsi:type="gastm:ActualParameterExpression">
+                      <value xsi:type="gastm:IdentifierReference" refersTo="//@files.0/@implementation/@fragments.0/@body.0/@declarations.0">
+                        <name nameString="Size"/>
+                      </value>
+                    </actualParams>
+                  </expression>
+                </subStatements>
+                <subStatements xsi:type="gastm:TryStatement">
+                  <guardedStatement xsi:type="sastm:DelphiWithStatement">
+                    <subStatements xsi:type="gastm:BlockStatement">
+                      <subStatements xsi:type="gastm:ExpressionStatement">
+                        <expression xsi:type="gastm:BinaryExpression">
+                          <operator xsi:type="gastm:Assign"/>
+                          <leftOperand xsi:type="gastm:IdentifierReference" refersTo="//@files.0/@implementation/@fragments.0/@body.0/@declarations.2">
+                            <name nameString="vers"/>
+                          </leftOperand>
+                          <rightOperand xsi:type="sastm:DelphiFunctionCallExpression">
+                            <calledFunction xsi:type="gastm:IdentifierReference">
+                              <name nameString="HiWord"/>
+                            </calledFunction>
+                            <actualParams xsi:type="gastm:ActualParameterExpression">
+                              <value xsi:type="gastm:IdentifierReference">
+                                <name nameString="dwFileVersionMS"/>
+                              </value>
+                            </actualParams>
+                          </rightOperand>
+                        </expression>
+                      </subStatements>
+                      <subStatements xsi:type="gastm:ExpressionStatement">
+                        <expression xsi:type="gastm:BinaryExpression">
+                          <operator xsi:type="gastm:Assign"/>
+                          <leftOperand xsi:type="gastm:IdentifierReference" refersTo="//@files.0/@implementation/@fragments.0/@body.0/@declarations.2">
+                            <name nameString="vers"/>
+                          </leftOperand>
+                          <rightOperand xsi:type="sastm:DelphiFunctionCallExpression">
+                            <calledFunction xsi:type="gastm:IdentifierReference">
+                              <name nameString="LoWord"/>
+                            </calledFunction>
+                            <actualParams xsi:type="gastm:ActualParameterExpression">
+                              <value xsi:type="gastm:IdentifierReference">
+                                <name nameString="dwFileVersionMS"/>
+                              </value>
+                            </actualParams>
+                          </rightOperand>
+                        </expression>
+                      </subStatements>
+                      <subStatements xsi:type="gastm:ExpressionStatement">
+                        <expression xsi:type="gastm:BinaryExpression">
+                          <operator xsi:type="gastm:Assign"/>
+                          <leftOperand xsi:type="gastm:IdentifierReference" refersTo="//@files.0/@implementation/@fragments.0/@body.0/@declarations.2">
+                            <name nameString="vers"/>
+                          </leftOperand>
+                          <rightOperand xsi:type="sastm:DelphiFunctionCallExpression">
+                            <calledFunction xsi:type="gastm:IdentifierReference">
+                              <name nameString="HiWord"/>
+                            </calledFunction>
+                            <actualParams xsi:type="gastm:ActualParameterExpression">
+                              <value xsi:type="gastm:IdentifierReference">
+                                <name nameString="dwFileVersionLS"/>
+                              </value>
+                            </actualParams>
+                          </rightOperand>
+                        </expression>
+                      </subStatements>
+                      <subStatements xsi:type="gastm:ExpressionStatement">
+                        <expression xsi:type="gastm:BinaryExpression">
+                          <operator xsi:type="gastm:Assign"/>
+                          <leftOperand xsi:type="gastm:IdentifierReference" refersTo="//@files.0/@implementation/@fragments.0/@body.0/@declarations.2">
+                            <name nameString="vers"/>
+                          </leftOperand>
+                          <rightOperand xsi:type="sastm:DelphiFunctionCallExpression">
+                            <calledFunction xsi:type="gastm:IdentifierReference">
+                              <name nameString="LoWord"/>
+                            </calledFunction>
+                            <actualParams xsi:type="gastm:ActualParameterExpression">
+                              <value xsi:type="gastm:IdentifierReference">
+                                <name nameString="dwFileVersionLS"/>
+                              </value>
+                            </actualParams>
+                          </rightOperand>
+                        </expression>
+                      </subStatements>
+                    </subStatements>
+                  </guardedStatement>
+                  <finalStatement xsi:type="gastm:ExpressionStatement">
+                    <expression xsi:type="gastm:BinaryExpression">
+                      <operator xsi:type="gastm:Assign"/>
+                      <leftOperand xsi:type="gastm:IdentifierReference">
+                        <name nameString="result"/>
+                      </leftOperand>
+                      <rightOperand xsi:type="gastm:IdentifierReference" refersTo="//@files.0/@implementation/@fragments.0/@body.0/@declarations.2">
+                        <name nameString="vers"/>
+                      </rightOperand>
+                    </expression>
+                  </finalStatement>
+                </subStatements>
+              </thenBody>
+            </subStatements>
+          </subStatements>
+          <declarations xsi:type="gastm:VariableDefinition" isMutable="true">
+            <identifierName nameString="Size , Size2"/>
+          </declarations>
+          <declarations xsi:type="gastm:VariableDefinition" isMutable="true">
+            <identifierName nameString="Pt , Pt2"/>
+          </declarations>
+          <declarations xsi:type="gastm:VariableDefinition" isMutable="true">
+            <identifierName nameString="vers"/>
+          </declarations>
+        </body>
+      </fragments>
+      <fragments xsi:type="gastm:FunctionDefinition">
+        <identifierName nameString="ActualizaApli"/>
+        <body xsi:type="sastm:DelphiBlockStatement">
+          <subStatements xsi:type="gastm:BlockStatement">
+            <subStatements xsi:type="gastm:IfStatement">
+              <condition xsi:type="gastm:BinaryExpression">
+                <leftOperand xsi:type="gastm:IdentifierReference">
+                  <name nameString="modo"/>
+                </leftOperand>
+                <rightOperand xsi:type="gastm:IntegerLiteral" value="0"/>
+              </condition>
+              <thenBody xsi:type="gastm:BlockStatement">
+                <subStatements xsi:type="gastm:IfStatement"/>
+              </thenBody>
+            </subStatements>
+            <subStatements xsi:type="gastm:IfStatement">
+              <condition xsi:type="gastm:BinaryExpression">
+                <leftOperand xsi:type="sastm:DelphiFunctionCallExpression">
+                  <calledFunction xsi:type="gastm:IdentifierReference">
+                    <name nameString="length"/>
+                  </calledFunction>
+                  <actualParams xsi:type="gastm:ActualParameterExpression">
+                    <value xsi:type="gastm:IdentifierReference" refersTo="//@files.0/@interface/@fragments.2">
+                      <name nameString="frmPost"/>
+                    </value>
+                  </actualParams>
+                </leftOperand>
+                <rightOperand xsi:type="gastm:IntegerLiteral" value="0"/>
+              </condition>
+            </subStatements>
+            <subStatements xsi:type="gastm:ExpressionStatement">
+              <expression xsi:type="gastm:BinaryExpression">
+                <operator xsi:type="gastm:Assign"/>
+                <leftOperand xsi:type="gastm:IdentifierReference" refersTo="//@files.0/@implementation/@fragments.1/@body.0/@declarations.0">
+                  <name nameString="Act"/>
+                </leftOperand>
+                <rightOperand xsi:type="sastm:DelphiFunctionCallExpression">
+                  <calledFunction xsi:type="gastm:QualifiedOverData" refersTo="//@files.0/@implementation/@fragments.1/@body.0/@declarations.0">
+                    <name nameString="TUpdater"/>
+                    <member>
+                      <name nameString="Create"/>
+                    </member>
+                  </calledFunction>
+                  <actualParams xsi:type="gastm:ActualParameterExpression">
+                    <value xsi:type="gastm:IdentifierReference">
+                      <name nameString="Formu"/>
+                    </value>
+                  </actualParams>
+                  <actualParams xsi:type="gastm:ActualParameterExpression">
+                    <value xsi:type="gastm:IdentifierReference">
+                      <name nameString="Modo"/>
+                    </value>
+                  </actualParams>
+                  <actualParams xsi:type="gastm:ActualParameterExpression">
+                    <value xsi:type="gastm:IdentifierReference">
+                      <name nameString="Escenario"/>
+                    </value>
+                  </actualParams>
+                </rightOperand>
+              </expression>
+            </subStatements>
+          </subStatements>
+          <declarations xsi:type="gastm:VariableDefinition" isMutable="true">
+            <identifierName nameString="Act"/>
+          </declarations>
+          <declarations xsi:type="gastm:VariableDefinition" isMutable="true">
+            <identifierName nameString="i"/>
+          </declarations>
+        </body>
+      </fragments>
+    </implementation>
+  </files>
+</gastm:Project>
